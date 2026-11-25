@@ -1,0 +1,284 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>增长与生产率 · 巫妖投资</title><meta name="description" content="经济增长来自投入增加与生产率提高；人均产出能否持续上升，取决于劳动生产率，而不是单纯延长劳动时间。"><link rel="canonical" href="https://economics.51invest.com/learn/growth-and-productivity/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/growth-and-productivity/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/growth-and-productivity/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/growth-and-productivity/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/growth-and-productivity/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">增长与生产率</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">增长与生产率</h1> <p class="article-summary">经济增长来自投入增加与生产率提高；人均产出能否持续上升，取决于劳动生产率，而不是单纯延长劳动时间。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M09 · 长期增长</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>7 分钟 · 11 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>经济增长</strong>（economic growth）是实际产出（通常用实际 GDP 衡量）的持续增加；<strong>劳动生产率</strong>（labor productivity）是单位劳动投入创造的产出，常用每小时工作的实际 GDP 衡量 [1]。<strong>全要素生产率</strong>（total factor productivity，TFP）是产出增长中不能由资本和劳动等可测投入解释的部分，常被用作技术、组织与效率变化的综合代理 [2]。</p>
+<h2>直觉</h2>
+<p>一个经济体可以通过两种方式生产更多：让更多人工作更长时间，或让每个人每小时生产更多。前者受人口与劳动参与率限制，后者可以持续多年。两台同样的机器，由受过更多训练、采用更好流程的工人操作，产出会不同；这体现了人力资本、技术与组织方式的作用 [1]。</p>
+<h2>正式表达</h2>
+<p>设 <code>Y</code> 为实际 GDP，<code>H</code> 为总劳动小时，<code>N</code> 为人口，则：</p>
+<p><code>劳动生产率 = Y ÷ H</code>；</p>
+<p><code>人均 GDP = Y ÷ N = (Y ÷ H) × (H ÷ N)</code>。</p>
+<p><code>Y</code> 按同一基期不变价计，<code>劳动生产率</code> 的单位是「不变价货币/小时」，<code>人均 GDP</code> 的单位是「不变价货币/人」；<code>H</code> 的单位是小时，<code>N</code> 的单位是人。增长率用 <code>g_X = (X_t ÷ X_{t-1} - 1) × 100%</code> 计算。对小变化，<code>g_人均GDP ≈ g_Y - g_N</code>，<code>g_劳动生产率 ≈ g_Y - g_H</code>。若每年按固定速率 <code>g</code> 复合增长，则 <code>期末值 = 期初值 × (1 + g)^年数</code> [1]；已知期初、期末值和年数时，年均增速为 <code>(期末值 ÷ 期初值)^(1 ÷ 年数) - 1</code>。生产函数可写为 <code>Y = A × F(K, H)</code>，其中 <code>K</code> 为资本存量，<code>A</code> 为全要素生产率；<code>A</code> 上升表示同样投入能生产更多 [2]。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>实际值口径。</strong> 比较增长应使用同一基期、同一价格口径的实际 GDP；名义增长包含通胀。公开的人均 GDP 增长多为同比百分比，例如世界银行「人均 GDP 增长（annual %）」按 2015 年不变价美元统计 [3]，跨国或跨期比较要先核对基期与币种。</li>
+<li><strong>劳动投入口径。</strong> 按小时计算与按就业人数计算的生产率不同；工时缩短时，人均产出可能下降而小时产出上升。</li>
+<li><strong>资本深化有边界。</strong> 在常见生产函数假设下，资本/劳动上升的边际产出递减；仅靠堆资本难以维持长期人均增长。</li>
+<li><strong>TFP 是残差。</strong> 它包含技术、组织与配置效率，也包含测量误差和未观测投入，不能直接等同于“技术进步”。</li>
+<li><strong>增长不等于福利。</strong> GDP 不覆盖分配、环境、家务劳动与闲暇；人均 GDP 上升也不表示每个家庭都改善。</li>
+</ol>
+<p>边界说明：本篇登记的 OpenStax 20.2/20.3 页面并不表述 70 法则、资本边际产出递减以及两种生产率口径的区别；本文把这三点作为教科书通识与模型假设给出，属于方法学表述，不是登记来源的引证结论。</p>
+<h2>例子与计算</h2>
+<p>假设某经济体实际 GDP 年增长 3.0%，劳动小时增长 1.0%，人口增长 0.5%。按近似分解：</p>
+<ul>
+<li>劳动生产率增长 ≈ <code>3.0%-1.0% = 2.0%</code>；</li>
+<li>人均劳动小时增长 ≈ <code>1.0%-0.5% = 0.5%</code>；</li>
+<li>人均 GDP 增长 ≈ <code>2.0% + 0.5% = 2.5%</code>，也可写成 <code>3.0%-0.5% = 2.5%</code>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">假设年增长率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实际 GDP</td>
+<td align="right">3.0%</td>
+</tr>
+<tr>
+<td>劳动小时</td>
+<td align="right">1.0%</td>
+</tr>
+<tr>
+<td>人口</td>
+<td align="right">0.5%</td>
+</tr>
+<tr>
+<td>劳动生产率（推算）</td>
+<td align="right">约 2.0%</td>
+</tr>
+<tr>
+<td>人均 GDP（推算）</td>
+<td align="right">约 2.5%</td>
+</tr>
+</tbody></table>
+<p>以上数字均为教学假设，不是任何国家的统计数据，表中的假设增长率与推算增长率都以 %/年 计；加法分解忽略复利交叉项，精确值会略有差异。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-grw-title fig-grw-desc" viewBox="0 0 420 215" width="100%">
+    <title id="fig-grw-title">产出、劳动与人口的增长率</title>
+    <desc id="fig-grw-desc">三根零基线柱，比例每百分点四十像素：实际国内生产总值增长百分之三柱高一百二十像素，劳动小时增长百分之一柱高四十像素，人口增长百分之零点五柱高二十像素。另以文字标出推算的劳动生产率约百分之二与人均国内生产总值约百分之二点五。</desc>
+    <line x1="60" y1="180" x2="380" y2="180" stroke="var(--border)" stroke-width="2"></line>
+    <rect x="90" y="60" width="60" height="120" fill="var(--accent)" opacity="0.85"></rect>
+    <rect x="190" y="140" width="60" height="40" fill="var(--accent)" opacity="0.6"></rect>
+    <rect x="290" y="160" width="60" height="20" fill="var(--accent)" opacity="0.4"></rect>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="60" y="20">年增长率（%，零基线，每 1 个百分点 = 40 像素）</text>
+      <text x="106" y="55">3.0%</text>
+      <text x="206" y="135">1.0%</text>
+      <text x="306" y="155">0.5%</text>
+      <text x="96" y="200">实际 GDP</text>
+      <text x="200" y="200">劳动小时</text>
+      <text x="304" y="200">人口</text>
+      <text x="60" y="38" fill="var(--gold)">推算：劳动生产率 ≈ 2.0%（3.0 − 1.0）；人均 GDP ≈ 2.5%（3.0 − 0.5）</text>
+    </g>
+  </svg>
+  <figcaption>图 1：三根零基线柱给出假设的总增长率（实际 GDP 3.0%、劳动小时 1.0%、人口 0.5%，每百分点 40 像素），推算出的劳动生产率 2.0% 与人均 GDP 2.5% 用文字标注而不是柱高表示，因为它们是差值而非同一口径的水平量。数值为教学假设。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>经济增长就是生产率提高。</strong> 增长也可能来自劳动投入增加；生产率只是单位投入的产出。</p>
+<p><strong>GDP 增长 3%，人均也增长 3%。</strong> 人口增长会稀释人均增长；本例中人均增长约为 2.5%。</p>
+<p><strong>资本积累越多，增长一定越快。</strong> 资本深化受边际产出递减约束，持续增长还需要人力资本、技术与制度改进。</p>
+<p><strong>生产率提高等于工人更辛苦。</strong> 生产率可以由技术、组织、教育和规模经济推动，未必增加劳动时间。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>资本积累</h3>
+<p><strong>定义</strong>：资本积累是储蓄转化为机器、建筑、基础设施和软件等生产性资产，提高未来产出。</p>
+<p><strong>机制</strong>：追加资本受边际报酬递减约束；储蓄率、投资效率、折旧和融资体系决定资本存量增长。</p>
+<p><strong>例子</strong>：例如一国把更多储蓄投入港口和电网，运输和交易成本下降，企业投资更容易。</p>
+<p><strong>边界</strong>：资本积累不是无限增长引擎；低效项目、维护不足和资本外流会降低回报，技术不进步时边际收益会下降。</p>
+<h3>人口</h3>
+<p><strong>定义</strong>：人口通过劳动供给、需求规模、储蓄和创新能力影响经济，数量、年龄结构与质量都重要。</p>
+<p><strong>机制</strong>：人口增长扩大劳动和市场规模，也增加抚养和基础设施需求；生育率、寿命和迁移决定结构变化。</p>
+<p><strong>例子</strong>：例如年轻人口多的国家劳动供给充足，但若教育投入不足，人口红利也可能变成就业压力。</p>
+<p><strong>边界</strong>：人口不是越多越好；资源、就业、女性劳动参与和养老负担决定红利能否实现，预测也受迁移和生育行为影响。</p>
+<h3>技术</h3>
+<p><strong>定义</strong>：技术是生产商品服务所需的知识、工艺和组织方法，技术进步提高全要素生产率。</p>
+<p><strong>机制</strong>：创新通过研发、学习、扩散和竞争提升效率；技术采用还取决于技能、资本、基础设施和制度。</p>
+<p><strong>例子</strong>：例如工厂采用自动化排产，减少停机和库存，同样的人力和设备产出更多。</p>
+<p><strong>边界</strong>：新技术不必然转化为生产率；试点失败、工人技能不足、数据质量和组织阻力会造成“生产率悖论”。</p>
+<h3>人力资本</h3>
+<p><strong>定义</strong>：人力资本是教育、培训、健康和经验形成的生产能力和解决问题的能力。</p>
+<p><strong>机制</strong>：教育和技能提高劳动边际产出，健康减少缺勤和认知损耗；投资回报受质量、匹配和劳动力需求影响。</p>
+<p><strong>例子</strong>：例如护士接受急救培训后，同样工时能处理更多病患并降低差错。</p>
+<p><strong>边界</strong>：受教育年限不等于能力；学校质量、专业错配、技能过时和健康不平等会使回报差异很大。</p>
+<h3>生产率</h3>
+<p><strong>定义</strong>：生产率是单位投入得到的产出，常用劳动生产率、资本生产率和全要素生产率衡量。</p>
+<p><strong>机制</strong>：生产率由技术、资本深化、技能、管理和资源配置决定；跨企业资源错配会拖累总量。</p>
+<p><strong>例子</strong>：例如两名工人一天组装 20 台设备而非 10 台，劳动生产率翻倍；但若设备更贵，资本回报未必提高。</p>
+<p><strong>边界</strong>：生产率不是道德评价；测量受工时、质量、无形投资和行业差异影响，裁员短期提高人均产出也可能损失能力。</p>
+<h3>增长核算和内生增长基础</h3>
+<p><strong>定义</strong>：增长核算把产出增长分解为资本、劳动和全要素生产率贡献；内生增长把技术进步来源纳入模型。</p>
+<p><strong>机制</strong>：增长核算用要素份额加权投入增长，余项即 TFP；内生增长强调研发、人力资本、知识和规模报酬。</p>
+<p><strong>例子</strong>：例如一国资本增长 5%、劳动增长 2%，按份额贡献 3.5 个百分点，余下增长来自效率提升。</p>
+<p><strong>边界</strong>：增长核算的余项是“未知”而非纯技术；测量误差、要素份额变化和制度质量会混淆，内生增长模型也依赖可检验假设。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：GDP 与国民经济核算（ECO-011）、投资与资本形成（ECO-016）。</li>
+<li>进一步阅读：经济周期（ECO-018）、价格指数与通胀（ECO-013）。</li>
+<li>投资分析：实际收益与购买力（INV-003）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">增长与生产率：机制链</title>
+    <desc id="fig-batch-chain-desc">增长与生产率 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">增长与生产率：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">经济增长来自投入增加</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">与生产率提高；人均产…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">经济增长来自投入增</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">加与生产率提高；人</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">均产出能否持续上升</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，取决于劳动生产率</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，而不是单纯延长劳…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：经济增长（econo</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">mic growth）是实际…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：经济增长（eco</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">nomic growth）是</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">实际产出（通常用实</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">际 GDP 衡量）的持</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">续增加；劳动生产率…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">假设某经济体实际</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 年增长 3.0%，劳…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">假设某经济体实际</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 年增长 3.0%，</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">劳动小时增长 1.0%</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，人口增长 0.5%。</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">按近似分解…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：增长与生产率的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">增长与生产率：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">增长与生产率：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">实际值口径。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">经济增长就是生产率提高。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：增长与生产率的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">增长与生产率：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">增长与生产率：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">经济增长来自投入增加与生</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">产率提高；人均产出能否持…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">实际值口径。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">经济增长就是生产率提高。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：增长与生产率的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 实际 GDP 增长 4.0%，劳动小时增长 2.0%，劳动生产率约增长多少？</li>
+<li><strong>计算：</strong> 人均实际 GDP（教学假设值，同一基期不变价，单位：元）从 20,000 增至 24,000，历时 10 年。求年复合增长率；按该速度，翻倍约需多少年（用 70 法则估算：翻倍年数 ≈ <code>70 ÷ 年增长率百分数</code>）？</li>
+<li><strong>适用条件：</strong> 为什么只靠增加资本存量难以让人均产出持续高速增长？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>约 <code>4.0%-2.0% = 2.0%</code>。这是近似分解，精确值为 <code>1.04 ÷ 1.02 - 1 ≈ 1.96%</code>。</li>
+<li><code>(24,000 ÷ 20,000)^(1/10) - 1 ≈ 1.84%</code>；翻倍时间约 <code>70 ÷ 1.84 ≈ 38</code> 年。</li>
+<li>资本/劳动上升会遇到边际产出递减；持续增长需要技术进步、人力资本、组织效率和制度改善，且要扣除人口增长与折旧。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;20.2 Labor Productivity and Economic Growth.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/20-2-labor-productivity-and-economic-growth">https://openstax.org/books/principles-economics-3e/pages/20-2-labor-productivity-and-economic-growth</a>（访问日期：2026-10-30）</li>
+<li>同上书，&quot;20.3 Components of Economic Growth.&quot; <a href="https://openstax.org/books/principles-economics-3e/pages/20-3-components-of-economic-growth">https://openstax.org/books/principles-economics-3e/pages/20-3-components-of-economic-growth</a>（访问日期：2026-10-30）</li>
+<li>World Bank. &quot;GDP per capita growth (annual %).&quot; CC BY-4.0. <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG">https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用产出、劳动小时与人口增长率推算劳动生产率和人均产出增长率</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能说明延长工时与提高生产率在长期增长含义上的差别</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用产出、劳动小时与人口增长率推算劳动生产率和人均产出增长率</li><li>能说明延长工时与提高生产率在长期增长含义上的差别</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li><li> <a href="/learn/investment-and-capital-formation/">ECO-016 · 投资与资本形成</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/business-cycle/">ECO-018 · 经济周期</a> </li><li> <a href="https://invest.51invest.com/learn/real-returns-and-purchasing-power/">INV-003 · 实际收益与购买力</a> </li><li> <a href="/learn/price-indices-and-inflation/">ECO-013 · 价格指数与通胀</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/20-2-labor-productivity-and-economic-growth" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 20.2 Labor Productivity and Economic Growth</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：劳动生产率是单位劳动投入创造的产出价值；人力资本、技术变化与规模经济是其决定因素；人均 GDP 的持续增长依赖生产率提高或互补的资本增加；复合增长可用 GDP 期初值 × (1 + 增长率)^年数 计算。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/20-3-components-of-economic-growth" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 20.3 Components of Economic Growth</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：物质资本、人力资本与技术是经济增长的组成部分；资本深化指人均资本水平上升；增长核算研究分解各投入与生产率的贡献；人均生产函数把产出写成人均资本、人均人力资本与技术的函数。</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG" rel="noopener noreferrer" target="_blank">GDP per capita growth (annual %)</a> <p>World Bank · World Bank</p> <p>访问：2026-10-30 · 许可：CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>支持论点：该指标表示人均 GDP 相对上一年的百分比变化，采用 2015 年不变价美元序列；数据来自各国官方统计、OECD 与世界银行工作人员估算。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/growth-and-productivity/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

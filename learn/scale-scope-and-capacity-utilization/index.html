@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>规模经济、范围经济与产能利用率 · 巫妖投资</title><meta name="description" content="规模经济来自固定成本被更大产量摊薄和专业化，范围经济来自多条产品线共享能力，产能利用率则衡量实际产出离可持续最大产出有多远。三者都能降低成本，但都有边界：协调成本、需求不足和质量折损会把“更大”变成“更贵”。"><link rel="canonical" href="https://economics.51invest.com/learn/scale-scope-and-capacity-utilization/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/scale-scope-and-capacity-utilization/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/scale-scope-and-capacity-utilization/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/scale-scope-and-capacity-utilization/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/scale-scope-and-capacity-utilization/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">规模经济、范围经济与产能利用率</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">规模经济、范围经济与产能利用率</h1> <p class="article-summary">规模经济来自固定成本被更大产量摊薄和专业化，范围经济来自多条产品线共享能力，产能利用率则衡量实际产出离可持续最大产出有多远。三者都能降低成本，但都有边界：协调成本、需求不足和质量折损会把“更大”变成“更贵”。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M03 · 企业与生产</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>6 分钟 · 11 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>读完这一篇，你能用单位成本表判断扩产是否划算，区分规模经济与范围经济，并解释为什么“产能利用率 100%”不一定是好事。</p>
+</blockquote>
+<h2>定义</h2>
+<p><strong>规模经济</strong>（economies of scale）指产量扩大后单位成本下降；<strong>规模不经济</strong>（diseconomies of scale）指产量继续扩大后单位成本反而上升[1]。<strong>范围经济</strong>（economies of scope）指同时生产多种产品或服务比分别生产更便宜。<strong>产能利用率</strong>（capacity utilization）是实际产出除以可持续最大产出，美联储把它定义为产出指数除以产能指数[2]。</p>
+<p>这三个概念经常被混用：规模经济看单一产品“做多少”，范围经济看多产品“一起做”，产能利用率看现有能力“用了多少”。</p>
+<h2>直觉</h2>
+<p>一座工厂每月固定成本 12 万元，不管开工多少都要付；每多生产一件的变量成本是 6 元。开工 6,000 件时，每件要摊 20 元固定成本，单位成本 26 元；开工 10,000 件时，每件只摊 12 元，单位成本 18 元。固定成本被更大产量摊薄，这是规模经济最直观的来源。</p>
+<p>但“更大”不会一直便宜。订单超过可持续产能后，企业要加班、外包、加急运输，变量成本上升；管理层级变多，协调和沟通成本也会上升。此时单位成本可能掉头向上。</p>
+<h2>正式表达</h2>
+<p>设固定成本为 <code>FC</code>，产量为 <code>Q</code>，单位变量成本为 <code>v</code>，平均总成本为：</p>
+<p><code>AC(Q) = FC/Q + v</code></p>
+<p>其中固定成本、可变成本和平均总成本的关系沿用短期成本定义[3]。在只有固定成本被摊薄的简单情形里，<code>AC</code> 随 <code>Q</code> 下降。更一般地，用规模弹性衡量成本对产量的反应：</p>
+<p><code>E_scale = (ΔAC/AC) / (ΔQ/Q)</code></p>
+<p><code>E_scale &lt; 0</code> 表示规模经济，接近 0 表示规模报酬不变，大于 0 表示规模不经济。</p>
+<p>范围经济用成本比较定义：</p>
+<p><code>S = [C(Q1,0) + C(0,Q2) − C(Q1,Q2)] / [C(Q1,0) + C(0,Q2)]</code></p>
+<p><code>S &gt; 0</code> 表示一起生产更便宜；<code>S &lt; 0</code> 表示范围不经济。产能利用率写作：</p>
+<p><code>u = Q / Q_cap</code></p>
+<p>其中 <code>Q_cap</code> 是可持续最大产出，不是理论峰值。美联储强调产能是“现实工作安排、正常停机并假定投入可得”下的可持续最大产出[2]，不是把机器开到冒烟的极限。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>看长期平均成本。</strong> 规模经济要求所有投入都能调整；短期厂房固定，只能谈短期成本曲线。</li>
+<li><strong>固定成本确实不随产量变化。</strong> 如果扩产要新建厂房、增加维护或加班，这部分就不是可摊薄的固定成本。</li>
+<li><strong>变量成本不因质量折损而隐性上升。</strong> 赶工时次品率、返工和客户流失要计入成本。</li>
+<li><strong>需求能吸收更大产量。</strong> 单位成本下降不等于利润上升；卖不出去的库存会占用资金。</li>
+<li><strong>产能按可持续最大产出计量。</strong> 用理论峰值当分母，会低估利用率、误判扩产空间[2]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设某工厂月产能 10,000 件，固定成本 120,000 元，单位变量成本 6 元。不同利用率下的单位成本如下（教学假设，单位为元/件）：</p>
+<table>
+<thead>
+<tr>
+<th align="right">利用率</th>
+<th align="right">产量（件/月）</th>
+<th align="right">固定成本（元）</th>
+<th align="right">可变成本（元）</th>
+<th align="right">总成本（元）</th>
+<th align="right">单位成本（元/件）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">60%</td>
+<td align="right">6,000</td>
+<td align="right">120,000</td>
+<td align="right">36,000</td>
+<td align="right">156,000</td>
+<td align="right">26.00</td>
+</tr>
+<tr>
+<td align="right">80%</td>
+<td align="right">8,000</td>
+<td align="right">120,000</td>
+<td align="right">48,000</td>
+<td align="right">168,000</td>
+<td align="right">21.00</td>
+</tr>
+<tr>
+<td align="right">100%</td>
+<td align="right">10,000</td>
+<td align="right">120,000</td>
+<td align="right">60,000</td>
+<td align="right">180,000</td>
+<td align="right">18.00</td>
+</tr>
+</tbody></table>
+<p>从 60% 提到 80%，单位成本下降 5 元；从 80% 提到 100%，再下降 3 元。摊薄效应在低利用率时最强，越接近满产，边际改善越小。</p>
+<p>再看范围经济。两条产品线各自建仓库，每条固定成本 80,000 元，合计 160,000 元；共用一个仓库固定成本 130,000 元，节省 30,000 元，范围经济为 <code>30,000/160,000 = 18.75%</code>。如果共用后协调、排程和跨产品管理额外增加 40,000 元，净成本反而多 10,000 元，这就是范围不经济。</p>
+<p>以上均为教学假设，不是真实企业数据。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-lrac-title fig-lrac-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-lrac-title">长期平均成本的规模经济与规模不经济</title>
+    <desc id="fig-lrac-desc">横轴为月产量（千件），纵轴为单位成本（元/件）。产量从 10 千件增加到 60 千件时，平均成本从 32 元降到 18 元；超过 70 千件后，协调和加班使平均成本回升到 28 元。曲线为教学示意，不是真实企业数据。</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="58" y1="232" x2="410" y2="232"></line>
+      <line x1="58" y1="232" x2="58" y2="42"></line>
+    </g>
+    <path d="M 78 92 C 130 66, 190 48, 250 54 C 300 60, 330 92, 370 135" fill="none" stroke="var(--accent)" stroke-width="2.6"></path>
+    <circle cx="250" cy="54" r="4" fill="var(--gold)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="46" y="236">0</text>
+      <text x="110" y="248">20</text>
+      <text x="190" y="248">40</text>
+      <text x="270" y="248">60</text>
+      <text x="350" y="248">80</text>
+      <text x="360" y="268">产量（千件/月）</text>
+      <text x="12" y="48">元/件</text>
+      <text x="72" y="70" fill="var(--accent)">规模经济</text>
+      <text x="300" y="74" fill="var(--accent)">规模不经济</text>
+      <text x="250" y="40" text-anchor="middle" fill="var(--gold)">最低 18 元</text>
+      <text x="82" y="92" font-size="10">32 元</text>
+      <text x="330" y="126" font-size="10">28 元</text>
+    </g>
+  </svg>
+  <figcaption>图 1：规模经济的机制是固定成本摊薄与专业化，规模不经济来自协调、加班和质量折损。曲线为教学示意，横轴单位为千件/月，纵轴单位为元/件。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-util-title fig-util-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-util-title">产能利用率与单位成本算例</title>
+    <desc id="fig-util-desc">固定成本 120,000 元、单位变量成本 6 元的教学算例。利用率 60%、80%、100% 对应产量 6,000、8,000、10,000 件，单位成本分别为 26、21、18 元/件。数值来自正文表格。</desc>
+    <line x1="72" y1="220" x2="400" y2="220" stroke="var(--border)" stroke-width="1.5"></line>
+    <g fill="var(--accent)" opacity="0.82">
+      <rect x="96" y="90" width="58" height="130" rx="4"></rect>
+      <rect x="186" y="115" width="58" height="105" rx="4"></rect>
+      <rect x="276" y="130" width="58" height="90" rx="4"></rect>
+    </g>
+    <g fill="var(--text)" font-size="11" font-family="inherit" text-anchor="middle">
+      <text x="125" y="82">26.0 元</text>
+      <text x="215" y="107">21.0 元</text>
+      <text x="305" y="122">18.0 元</text>
+      <text x="125" y="238">60%</text>
+      <text x="215" y="238">80%</text>
+      <text x="305" y="238">100%</text>
+      <text x="125" y="256">6,000 件</text>
+      <text x="215" y="256">8,000 件</text>
+      <text x="305" y="256">10,000 件</text>
+    </g>
+    <text x="20" y="26" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit">固定成本 120,000 元，单位变量成本 6 元</text>
+    <text x="350" y="238" fill="var(--muted)" font-size="10" font-family="inherit">利用率</text>
+    <text x="14" y="64" fill="var(--muted)" font-size="10" font-family="inherit">元/件</text>
+  </svg>
+  <figcaption>图 2：算例显示利用率从 60% 提到 100%，单位成本由 26 元降到 18 元/件；摊薄效应随利用率上升而减弱。教学假设，不是真实企业数据。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-scope-title fig-scope-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-scope-title">范围经济与范围不经济的对照</title>
+    <desc id="fig-scope-desc">两条产品线分别建仓库的固定成本合计 160,000 元；共用仓库固定成本 130,000 元，节省 30,000 元。若共用带来 40,000 元协调成本，净成本变为 170,000 元，反而多 10,000 元。数值为教学假设。</desc>
+    <rect x="24" y="52" width="180" height="148" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <rect x="236" y="52" width="180" height="148" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="42" y="76" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit">分开做：160,000 元</text>
+    <text x="254" y="76" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit">一起做：130,000 元</text>
+    <text x="42" y="104" font-size="11" fill="var(--muted)" font-family="inherit">仓库 A：80,000 元</text>
+    <text x="42" y="128" font-size="11" fill="var(--muted)" font-family="inherit">仓库 B：80,000 元</text>
+    <text x="254" y="104" font-size="11" fill="var(--muted)" font-family="inherit">共用仓库：130,000 元</text>
+    <text x="254" y="128" font-size="11" fill="var(--gold)" font-family="inherit">表面节省：30,000 元</text>
+    <text x="254" y="158" font-size="11" fill="var(--accent)" font-family="inherit">加 40,000 元协调成本</text>
+    <text x="254" y="182" font-size="11" fill="var(--accent)" font-family="inherit">净成本：170,000 元</text>
+    <line x1="204" y1="126" x2="236" y2="126" stroke="var(--border)" stroke-width="1.5"></line>
+    <text x="24" y="232" font-size="11" fill="var(--muted)" font-family="inherit">判断标准：S =（分开成本 − 一起成本）/ 分开成本</text>
+    <text x="24" y="254" font-size="11" fill="var(--muted)" font-family="inherit">S &gt; 0 为范围经济；S &lt; 0 为范围不经济。教学假设。</text>
+  </svg>
+  <figcaption>图 3：范围经济的对照算例。共用能力节省 30,000 元，但协调成本 40,000 元会把 18.75% 的表面节省变成 6.25% 的净不经济；数值为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-scale-boundary-title fig-scale-boundary-desc" viewBox="0 0 440 300" width="100%">
+    <title id="fig-scale-boundary-title">扩产是否降低单位成本的适用边界</title>
+    <desc id="fig-scale-boundary-desc">四个条件依次检查：需求能否吸收新增产量、固定成本是否可摊薄、变量成本是否因加班上升、协调成本是否超过节省。任一条件不满足，扩产就可能不降低成本。教学示意，不是决策模板。</desc>
+    <rect x="24" y="42" width="392" height="48" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="42" y="72" font-size="12" fill="var(--text)" font-family="inherit">1. 需求能吸收新增产量吗？</text>
+    <text x="350" y="72" font-size="11" fill="var(--accent)" font-family="inherit">否 → 库存</text>
+    <rect x="24" y="102" width="392" height="48" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="42" y="132" font-size="12" fill="var(--text)" font-family="inherit">2. 固定成本真能被摊薄吗？</text>
+    <text x="350" y="132" font-size="11" fill="var(--accent)" font-family="inherit">否 → 不变</text>
+    <rect x="24" y="162" width="392" height="48" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="42" y="192" font-size="12" fill="var(--text)" font-family="inherit">3. 变量成本会因加班上升吗？</text>
+    <text x="350" y="192" font-size="11" fill="var(--accent)" font-family="inherit">是 → 变贵</text>
+    <rect x="24" y="222" width="392" height="48" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="42" y="252" font-size="12" fill="var(--text)" font-family="inherit">4. 协调成本小于节省吗？</text>
+    <text x="350" y="252" font-size="11" fill="var(--accent)" font-family="inherit">否 → 不经济</text>
+    <g stroke="var(--border)" stroke-width="1.2">
+      <line x1="220" y1="90" x2="220" y2="102"></line>
+      <line x1="220" y1="150" x2="220" y2="162"></line>
+      <line x1="220" y1="210" x2="220" y2="222"></line>
+    </g>
+  </svg>
+  <figcaption>图 4：扩产的适用边界。需求、固定成本、变量成本和协调成本四个条件都要通过；这是教学示意（4 个检查点），不是企业决策模板。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“产量越大，单位成本一定越低。”</strong> 只在规模经济区间成立。超过可持续产能后，加班、外包、次品和管理层级会把成本推高。</p>
+<p><strong>“产能利用率越高越好。”</strong> 利用率接近 100% 时，设备没有检修余量，交付弹性下降；高于可持续最大产出还会牺牲质量和安全[2]。</p>
+<p><strong>“范围经济就是垂直整合。”</strong> 范围经济看多产品共享能力是否省钱；垂直整合看产业链上下游是否内部化。两者可能重叠，但不是同一个判断。</p>
+<p><strong>“固定成本一定可以摊薄。”</strong> 如果扩产需要新建产能、增加维护或改变组织，新增支出就是新的固定成本，不能按旧分母摊。</p>
+<h2>深化：利用率、经营杠杆与“满产陷阱”</h2>
+<p>产能利用率高不一定是好事，至少要分三种情形。<strong>第一种是需求真实、价格覆盖边际成本</strong>：满产带来摊薄和交付信誉，扩产值得评估。<strong>第二种是需求靠折扣或赊销撑起</strong>：满产只是把固定成本摊薄到亏损订单上，现金流可能更差。<strong>第三种是设备没有维护窗口</strong>：100% 利用率意味着没有停机检修、没有切换产品的时间，故障和次品率上升，长期成本更高。</p>
+<p><strong>经营杠杆</strong>把利用率与利润波动连起来。固定成本占比越高，利用率每下降 10%，单位成本上升越快，利润跌幅越大。月产能 10,000 件、固定成本 12 万元的企业，从 100% 降到 80%，单位成本从 18 元升到 21 元；若售价 24 元，单位利润从 6 元降到 3 元，利润减半。若固定成本只有 6 万元，单位成本从 12 元升到 15 元，单位利润从 12 元降到 9 元，跌幅小得多。</p>
+<p><strong>规模经济与范围经济也会互相抵消。</strong> 共用仓库降低固定成本，但跨产品排程、质量控制和协调会增加变量成本；共用销售团队扩大覆盖，但可能稀释专业度。判断时要比较“合并后的总成本”与“分别经营的总成本”，而不是只看某一项固定成本节省。</p>
+<p><strong>需求约束是规模经济的边界。</strong> 单位成本下降只说明供给端更便宜；如果市场只能吸收 8,000 件，扩到 10,000 件会形成库存和降价压力。规模经济要求产量能被需求吸收，否则只是把成本转移到库存和应收账款。</p>
+<p><strong>政策含义</strong>：产能利用率是周期指标，不是越高越好的目标；合理的维护余量、产品切换能力和供应链缓冲，都是“可持续产能”的一部分[2][3]。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-008 生产与成本</strong> 的关系：那一篇讲短期边际成本与停产点，这一篇讲长期平均成本形状和多产品共享。</li>
+<li>与 <strong>ECO-009 竞争与垄断</strong> 的关系：规模经济可能形成自然垄断或进入壁垒，但“成本低”不等于“有市场力量”。</li>
+<li>与 <strong>ECO-017 增长与生产率</strong> 的关系：规模经济是企业层面的成本现象，生产率的持续上升还要靠技术、组织和配置效率。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>固定成本 90,000 元，单位变量成本 8 元，月产能 6,000 件。分别计算利用率 50%、75%、100% 时的单位成本。</li>
+<li>两条产品线各自固定成本 50,000 元，共用后 80,000 元，协调成本 15,000 元。计算范围经济 <code>S</code>，并判断是否应该共用。</li>
+<li>一家工厂把利用率从 85% 提到 95%，单位成本只降 0.8 元，但次品率从 1% 升到 3%。说明为什么“单位成本”可能低估真实代价。</li>
+<li>固定成本 120,000 元、单位变量成本 6 元、售价 24 元，利用率从 100% 降到 80%，单位利润如何变化？</li>
+<li>为什么 100% 产能利用率可能是“满产陷阱”？写出三个条件。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 7.5 Long-Run Costs and Economies of Scale. <a href="https://openstax.org/books/principles-economics-3e/pages/7-5-long-run-costs-and-economies-of-scale">https://openstax.org/books/principles-economics-3e/pages/7-5-long-run-costs-and-economies-of-scale</a></li>
+<li>Board of Governors of the Federal Reserve System, <em>Industrial Production and Capacity Utilization</em>, G.17 Capacity and Capacity Utilization. <a href="https://www.federalreserve.gov/releases/g17/capnotes.htm">https://www.federalreserve.gov/releases/g17/capnotes.htm</a></li>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 7.3 Costs in the Short Run. <a href="https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run">https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>计算不同产能利用率下的单位成本，并说明固定成本摊薄为什么在低利用率时最强。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用成本比较定义范围经济，并判断共享能力带来的节省是否被协调成本抵消。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>计算不同产能利用率下的单位成本，并说明固定成本摊薄为什么在低利用率时最强。</li><li>用成本比较定义范围经济，并判断共享能力带来的节省是否被协调成本抵消。</li><li>列出扩产降低单位成本的四个适用条件，并识别规模不经济的触发点。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/production-and-cost/">ECO-008 · 生产与成本</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/competition-and-monopoly/">ECO-009 · 竞争与垄断</a> </li><li> <a href="/learn/growth-and-productivity/">ECO-017 · 增长与生产率</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-5-long-run-costs-and-economies-of-scale" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.5 Long-Run Costs and Economies of Scale</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对规模经济、规模不经济、长期平均成本与最低有效规模的定义；正文中的企业数字为教学示例，不标为真实数据。</p> </div><div class="source"> <a href="https://www.federalreserve.gov/releases/g17/capnotes.htm" rel="noopener noreferrer" target="_blank">Industrial Production and Capacity Utilization: G.17 Capacity and Capacity Utilization</a> <p>Board of Governors of the Federal Reserve System · Board of Governors of the Federal Reserve System</p> <p>访问：2026-11-23 · 许可：U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>支持论点：用于核对产能利用率等于产出指数除以产能指数，以及产能是现实工作安排和正常停机下的可持续最大产出；不把理论峰值当作产能。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.3 Costs in the Short Run</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对固定成本、可变成本、平均总成本与边际成本的定义；本文只用这些定义构造单位成本算例。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/scale-scope-and-capacity-utilization/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Income Distribution and Inequality · 51Invest</title><meta name="description" content="Income distribution describes how income is spread across households; quintile shares, the Lorenz curve, and the Gini coefficient measure inequality, but definitions shape the conclusion."><link rel="canonical" href="https://economics.51invest.com/en/learn/income-distribution-and-inequality/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/income-distribution-and-inequality/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/income-distribution-and-inequality/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/income-distribution-and-inequality/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/income-distribution-and-inequality/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Income Distribution and Inequality</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Income Distribution and Inequality</h1> <p class="article-summary">Income distribution describes how income is spread across households; quintile shares, the Lorenz curve, and the Gini coefficient measure inequality, but definitions shape the conclusion.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M16 · 发展制度与政治经济</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>9 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p><strong>Income distribution</strong> is the spread of income across factor owners, households, or individuals; <strong>inequality</strong> is the degree of difference in that distribution. Functional distribution focuses on the shares of labor and capital; personal or household distribution focuses on who receives how much. <strong>These two labels are the article&#39;s own vocabulary</strong>: the two retrieved pages (15.4 and 15.5) contain none of the word faces functional distribution, factor share, labor share, market income, before taxes, after taxes, purchasing power, equivalence, family size, capital gains, mobility or Gini once tags are stripped; 15.4 gives the measuring steps verbatim as &quot;Measure income distribution in quintiles&quot; and &quot;Calculate and graph a Lorenz curve&quot; [1] but never draws the functional/personal distinction.</p>
+<h2>Intuition</h2>
+<p>Line households up from poorest to richest and divide them into five equal-sized groups (quintiles) [1]. If income were perfectly equal, each group would receive 20%. A top group with 50% and a bottom group with 5% indicates a wide gap. The Lorenz curve plots cumulative population shares against cumulative income shares; the farther the curve lies below the 45-degree line, the greater the inequality [1]. The Gini coefficient compresses that gap into a value between 0 and 1; multiplying by 100 gives a Gini index from 0 to 100, and on either scale 0 means perfect equality and the top end means perfect inequality [3].</p>
+<h2>Formal expression</h2>
+<ul>
+<li>Quintile share = income of the group / total income, expressed as a percentage and unitless [1].</li>
+<li>Lorenz curve L(p): cumulative income share at cumulative population share p, with L(0)=0, L(1)=1, and L(p) ≤ p; both p and L(p) are shares between 0 and 1 [1].</li>
+<li>Gini coefficient <code>G = 1 - 2∫₀¹ L(p) dp</code> (the standard formula used here), unitless, ranging from 0 (perfect equality) to 1 (perfect inequality); multiply by 100 for a 0–100 Gini index, where 0 is perfect equality and 100 perfect inequality [3].</li>
+<li>Top-to-bottom quintile ratio = top group share / bottom group share, a ratio and therefore unitless.</li>
+</ul>
+<p>The Gini coefficient is a single summary: different distributions can produce the same value; it also depends on the income definition, unit, and level of analysis.</p>
+<h2>When it applies</h2>
+<ol>
+<li>Income definition: market income, pre-tax or post-tax income, disposable income, and in-kind benefits are not directly comparable. <strong>This item is the article&#39;s own</strong> (the two retrieved pages (15.4 and 15.5) contain none of the word faces functional distribution, factor share, labor share, market income, before taxes, after taxes, purchasing power, equivalence, family size, capital gains, mobility or Gini once tags are stripped; none of those income-concept word faces appear in the two pages).</li>
+<li>Unit: individuals versus households; household size and equivalence scales change the result. <strong>This item is the article&#39;s own</strong> (the two retrieved pages (15.4 and 15.5) contain none of the word faces functional distribution, factor share, labor share, market income, before taxes, after taxes, purchasing power, equivalence, family size, capital gains, mobility or Gini once tags are stripped; equivalence and family size are likewise absent).</li>
+<li>Data: household surveys may miss top incomes, capital gains, and the informal economy. <strong>This item is the article&#39;s own</strong> (the two retrieved pages (15.4 and 15.5) contain none of the word faces functional distribution, factor share, labor share, market income, before taxes, after taxes, purchasing power, equivalence, family size, capital gains, mobility or Gini once tags are stripped; capital gains and under-reporting wording is absent).</li>
+<li>The Gini coefficient is a summary: equal values can hide different distributions, so read it with quintiles, the Lorenz curve, and mobility. <strong>This reading is the article&#39;s own</strong>: the registered source defines only what the Gini measures and what 0 and 100 mean [3]; &quot;the same value can hide different distributions&quot; and &quot;read it with mobility&quot; are our inferences.</li>
+<li>Cross-country comparisons require a common PPP, year, and definition. <strong>This item is the article&#39;s own</strong> (the two retrieved pages (15.4 and 15.5) contain none of the word faces functional distribution, factor share, labor share, market income, before taxes, after taxes, purchasing power, equivalence, family size, capital gains, mobility or Gini once tags are stripped; purchasing power does not appear).</li>
+<li>Normative and causal claims: the channels through which inequality affects growth are disputed, so correlation is not causation.</li>
+</ol>
+<p>Policies such as redistribution, a ladder of opportunity, and inheritance taxes can change the income distribution, but there is a tradeoff between equality and output [2]; evaluation requires stating whether income is measured before or after taxes and who receives the gains.</p>
+<p>Beyond measurement, causes are part of the subject: OpenStax lists changes in household composition (for example a rising share of single-person households) and changes in the wage distribution (technology and globalisation affecting skill groups differently) among the sources of income inequality [1]. The point constrains how a Gini reading should be used: the same value can come from a shifting wage structure, from household composition, or from the age and retirement mix, and those point to different policy levers. The three registered sources are not enough to rank the causes, so no ranking is offered here.</p>
+<h2>Worked example</h2>
+<p>Five households have incomes 10, 20, 30, 40, and 100, totaling 200, all in the same currency unit (no currency, year, or income concept is specified here). Each household is one quintile, so the quintile shares are income divided by the total: 5%, 10%, 15%, 20%, and 50%; the top-to-bottom ratio is <code>50% ÷ 5% = 10</code>. The Lorenz points are (20%,5%), (40%,15%), (60%,30%), (80%,50%), and (100%,100%). Using trapezoids of width 0.2, the area under the curve is <code>0.2 × [(0+0.05)/2 + (0.05+0.15)/2 + (0.15+0.30)/2 + (0.30+0.50)/2 + (0.50+1.00)/2] = 0.30</code>, so the Gini coefficient is <code>1 - 2 × 0.30 = 0.40</code>, and multiplying by 100 gives a Gini index of 40. Shares, ratios, and the Gini coefficient depend only on the relative distribution of income, not on the currency or the size of the unit. All figures are teaching assumptions.</p>
+<table>
+<thead>
+<tr>
+<th>Household</th>
+<th align="right">Income (same currency unit)</th>
+<th align="right">Cumulative population share</th>
+<th align="right">Cumulative income share</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td align="right">10</td>
+<td align="right">20%</td>
+<td align="right">5%</td>
+</tr>
+<tr>
+<td>B</td>
+<td align="right">20</td>
+<td align="right">40%</td>
+<td align="right">15%</td>
+</tr>
+<tr>
+<td>C</td>
+<td align="right">30</td>
+<td align="right">60%</td>
+<td align="right">30%</td>
+</tr>
+<tr>
+<td>D</td>
+<td align="right">40</td>
+<td align="right">80%</td>
+<td align="right">50%</td>
+</tr>
+<tr>
+<td>E</td>
+<td align="right">100</td>
+<td align="right">100%</td>
+<td align="right">100%</td>
+</tr>
+</tbody></table>
+<h2>Figure</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-lorenz-title fig-lorenz-desc" viewBox="0 0 320 300" width="100%">
+    <title id="fig-lorenz-title">Lorenz curve for a hypothetical income distribution</title>
+    <desc id="fig-lorenz-desc">The horizontal axis is the cumulative population share and the vertical axis the cumulative income share; the dashed line is the 45-degree line of perfect equality and the solid line the Lorenz curve. The shaded region is the wedge between the 45-degree line and the curve, with area 0.20 (the 0.50 triangle under the diagonal minus the 0.30 area under the curve), and the Gini coefficient is that wedge relative to the triangle, 0.40. The 0.30 area under the curve is computed in the text and is not shaded here.</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="50" y1="260" x2="280" y2="260"></line>
+      <line x1="50" y1="260" x2="50" y2="30"></line>
+    </g>
+    <polygon points="50,260 280,30 234,145 188,191 142,225.5 96,248.5 50,260" fill="var(--accent-soft)"></polygon>
+    <line x1="50" y1="260" x2="280" y2="30" stroke="var(--muted)" stroke-width="1.4" stroke-dasharray="4 4"></line>
+    <polyline points="50,260 96,248.5 142,225.5 188,191 234,145 280,30" fill="none" stroke="var(--accent)" stroke-width="2"></polyline>
+    <g fill="var(--muted)" font-size="10" font-family="inherit">
+      <text x="50" y="276" text-anchor="middle">0</text>
+      <text x="165" y="276" text-anchor="middle">50%</text>
+      <text x="280" y="276" text-anchor="middle">100%</text>
+      <text x="43" y="263" text-anchor="end">0</text>
+      <text x="43" y="148" text-anchor="end">50%</text>
+      <text x="43" y="33" text-anchor="end">100%</text>
+      <text x="165" y="294" text-anchor="middle">cumulative population share</text>
+      <text x="14" y="145" text-anchor="middle" transform="rotate(-90 14 145)">cumulative income share</text>
+    </g>
+    <text x="238" y="78" fill="var(--muted)" font-size="10" font-family="inherit">45° line</text>
+    <text x="214" y="176" fill="var(--accent)" font-size="10" font-family="inherit">Lorenz curve</text>
+  </svg>
+  <figcaption>Figure 1: Lorenz curve for five households with incomes 10, 20, 30, 40, and 100. Only the wedge between the 45-degree line and the curve is shaded; its area computes to 0.20 by the shoelace formula on the plotted vertices. The 0.30 area under the curve and the 0.40 Gini come from the text (Gini = 1 - 2 x 0.30 = 0.40 = 0.20 / 0.50). The area under the curve is deliberately not shaded, so the shading should not be read as 0.30. A teaching assumption, not real survey data.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>A higher Gini coefficient means a poorer country.</strong> Inequality and income level are different things.</p>
+<p><strong>Income inequality equals wealth inequality.</strong> The two are different objects, and 15.5 separates them verbatim: &quot;Income is a flow of money received, often measured on a monthly or an annual basis. Wealth is the sum of the value of all assets, including money in bank accounts, financial investments, a pension fund, and the value of a home. In calculating wealth, one must subtract all debts&quot; [2]; the same section states verbatim &quot;In the United States, the wealth distribution is more unequal than the income distribution, because differences in income can accumulate over time to make even larger differences in wealth.&quot; [2] - for the United States the wealth distribution is more unequal than the income distribution, because income differences accumulate. &quot;Affected by asset prices&quot; is our addition; that passage does not discuss asset-price movements.</p>
+<p><strong>A Gini of 0.4 means 40% of people are poor.</strong> It is a distribution summary, not a poverty rate.</p>
+<p><strong>The Gini coefficient is enough.</strong> Also examine the Lorenz curve, quintiles, and mobility.</p>
+<p><strong>Redistribution is costless.</strong> 15.5 states the learning outcome verbatim as &quot;Show the tradeoff between incentives and income equality&quot; [2], so an incentive-versus-equality tradeoff is on the page; the &quot;efficiency&quot; and &quot;administrative&quot; terms are ours - the two retrieved pages (15.4 and 15.5) contain none of the word faces functional distribution, factor share, labor share, market income, before taxes, after taxes, purchasing power, equivalence, family size, capital gains, mobility or Gini once tags are stripped - and are not this page&#39;s wording.</p>
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>poverty</h3>
+<p><strong>Definition</strong>: Poverty is insufficient income or consumption for basic needs, and can also be defined multi-dimensionally through capability, health and exclusion.</p>
+<p><strong>Mechanism</strong>: Growth, jobs, education, prices, transfers and shocks determine it; absolute and relative lines answer different questions.</p>
+<p><strong>Example</strong>: For example, food inflation can push a recently escaped household back into poverty even when average income is unchanged.</p>
+<p><strong>Boundary</strong>: Poverty-line choices change counts and targets; subsistence farming, informal work and intra-household inequality can hide real deprivation.</p>
+<h3>inequality</h3>
+<p><strong>Definition</strong>: Inequality is disparity in income, wealth, opportunity and health, split into inequality of outcomes and of opportunity.</p>
+<p><strong>Mechanism</strong>: Market income, taxes and transfers, capital returns, education and inheritance shape distribution; Gini, shares and mobility capture different dimensions.</p>
+<p><strong>Example</strong>: For example, the top 10 percent holding most financial assets gain from asset booms, widening wealth gaps even if wage gaps are modest.</p>
+<p><strong>Boundary</strong>: Inequality is not one moral verdict; moderate incentives and extreme concentration can both be costly, and measurement is distorted by avoidance, in-kind income and longevity.</p>
+<h3>property rights</h3>
+<p><strong>Definition</strong>: Property rights are bundles of rights to use, earn from, transfer and exclude others from a resource, defined by law, custom and contract.</p>
+<p><strong>Mechanism</strong>: Clear, enforceable and transferable rights lower transaction costs and encourage investment; unclear rights breed conflict, short-termism and depletion.</p>
+<p><strong>Example</strong>: For example, farmers with transferable land rights invest more in irrigation and long-term improvement than those facing arbitrary expropriation.</p>
+<p><strong>Boundary</strong>: Property is not absolute ownership; registration, enforcement, expropriation and customary claims determine real strength, and formal titles can exclude vulnerable users.</p>
+<h3>state capacity</h3>
+<p><strong>Definition</strong>: State capacity is the organisational and fiscal ability to tax, enforce law, provide public goods and maintain order.</p>
+<p><strong>Mechanism</strong>: It rests on revenue, bureaucracy, information, infrastructure and legitimacy; wars, crises and resource rents can build or weaken it.</p>
+<p><strong>Example</strong>: For example, a state that can tax and register property is better able to build roads, schools and disaster response.</p>
+<p><strong>Boundary</strong>: Strong capacity is not necessarily good outcomes; it can serve repression or rent-seeking, and accountability, rule of law and participation shape direction.</p>
+<h3>institutions</h3>
+<p><strong>Definition</strong>: Institutions are formal rules, informal norms and enforcement mechanisms governing repeated interaction, shaping incentives, transaction costs and power.</p>
+<p><strong>Mechanism</strong>: Property rights, contracts, taxes, public goods and violence constraints shape investment and innovation; organisations, path dependence and feedback reinforce them.</p>
+<p><strong>Example</strong>: For example, the same technology diffuses at different speeds because patent enforcement, finance and bureaucratic approval differ.</p>
+<p><strong>Boundary</strong>: Institutions are not a universal explanation; culture, geography, technology and shocks matter, institutional variables risk tautology, and transplants need local fit.</p>
+<h3>development policy and transition</h3>
+<p><strong>Definition</strong>: Development policy covers investment, industrial, trade, education and institutional measures for growth, poverty reduction and structural change.</p>
+<p><strong>Mechanism</strong>: Policies allocate resources through public goods, incentives and coordination; capacity, pilots, evaluation and exit shape results, and transitions must handle incumbents.</p>
+<p><strong>Example</strong>: For example, East Asian economies combined basic education, export infrastructure and macro stability for rapid growth, while similar policies failed elsewhere due to weak implementation.</p>
+<p><strong>Boundary</strong>: There is no universal template; industrial picking, subsidy capture, debt and dependence carry risks, and success stories reflect initial conditions and survivorship bias.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Prerequisites: GDP and national accounts (ECO-011); employment and unemployment (ECO-014).</li>
+<li>Related: price indices and inflation (ECO-013); consumption and saving (ECO-015).</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">Income Distribution and Inequality: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">Income Distribution and Inequality — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Income Distribution and Inequality: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Income distributi</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">on describes how…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Income distribut</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">ion describes</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">how income is</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">spread across</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">households…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Income distributi…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Income distribut</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">ion is the</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">spread of</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">income across…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Worked example</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Five households</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">have incomes 10…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Five households</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">have incomes</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">10, 20, 30, 40,</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">and 100, totalin</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">g 200, all in…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 2: Income Distribution and Inequality — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">Income Distribution and Inequality: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Income Distribution and Inequality: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Income distribution is the</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">spread of income across</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">factor owners, households,</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">or individuals; inequality…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A higher Gini coefficient</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">means a poorer country.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 3: Income Distribution and Inequality — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">Income Distribution and Inequality: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Income Distribution and Inequality: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Income distribution</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">describes how income…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Income distribution</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">is the spread of…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A higher Gini coefficient means</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">a poorer country.…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: Income Distribution and Inequality — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> Which measures inequality? A. GDP growth; B. The Gini coefficient; C. The CPI; D. The unemployment rate.</li>
+<li><strong>Calculation.</strong> Five households have incomes 20, 30, 40, 50, and 60 (same currency unit). Find the quintile shares, the top-to-bottom ratio, and the Gini coefficient.</li>
+<li><strong>Conditions.</strong> Why can two countries with the same Gini coefficient have different welfare?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>B.</li>
+<li>Total income is 200; the shares are 10%, 15%, 20%, 25%, and 30%; the top-to-bottom ratio is <code>30% ÷ 10% = 3</code>. The Lorenz points are (20%,10%), (40%,25%), (60%,45%), (80%,70%), and (100%,100%); summing trapezoids of width 0.2 gives an area under the curve of 0.40, so the Gini coefficient is <code>1 - 2 × 0.40 = 0.20</code>, and multiplying by 100 gives a Gini index of 20.</li>
+<li>The countries may differ in income levels, public services, prices, within-group distribution, and mobility; the Gini coefficient summarizes relative distribution, not absolute living standards.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<p>The bracketed numbers [1][2][3] in the text refer to the sources below.</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;15.4 Income Inequality: Measurement and Causes.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes">https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes</a> (accessed 2026-11-03)</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;15.5 Government Policies to Reduce Income Inequality.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality">https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality</a> (accessed 2026-11-03)</li>
+<li>World Bank. &quot;Gini index.&quot; <a href="https://data.worldbank.org/indicator/SI.POV.GINI">https://data.worldbank.org/indicator/SI.POV.GINI</a> (accessed 2026-11-03)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Build a Lorenz curve from quintile shares, recompute the Gini coefficient and interpret its range</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Show how pre-tax, post-tax and primary-distribution bases change the inequality conclusion</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Build a Lorenz curve from quintile shares, recompute the Gini coefficient and interpret its range</li><li>Show how pre-tax, post-tax and primary-distribution bases change the inequality conclusion</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/gdp-and-national-accounts/">ECO-011 · GDP and National Accounts</a> </li><li> <a href="/en/learn/employment-and-unemployment/">ECO-014 · Employment and Unemployment</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/price-indices-and-inflation/">ECO-013 · Price Indices and Inflation</a> </li><li> <a href="/en/learn/consumption-and-saving/">ECO-015 · Consumption and Saving</a> </li><li> <a href="/en/learn/gdp-and-national-accounts/">ECO-011 · GDP and National Accounts</a> </li><li> <a href="/en/learn/employment-and-unemployment/">ECO-014 · Employment and Unemployment</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 15.4 Income Inequality: Measurement and Causes</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-11-03 · License: CC BY-NC-SA 4.0</p> <p>Supports: Quintiles divide households into five equal-sized groups; the Lorenz curve plots cumulative income shares against cumulative population shares; changes in household composition and in the wage distribution (technology, globalization) are among the causes of income inequality. Re-retrieved 2026-11-03 (curl 200) with the learning outcomes quoted verbatim: &quot;Measure income distribution in quintiles&quot; and &quot;Calculate and graph a Lorenz curve&quot;. The page contains none of functional distribution, factor share, Gini, market income, purchasing power, equivalence, capital gains or mobility, so the body&#39;s functional/personal contrast and its list of definitional caveats are no longer credited to it.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 15.5 Government Policies to Reduce Income Inequality</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-11-03 · License: CC BY-NC-SA 4.0</p> <p>Supports: Policies such as redistribution, opportunity ladders, and inheritance taxes can affect income inequality; the section also discusses the tradeoff between equality and output. Three verbatim sentences added on 2026-11-03: the income/wealth distinction &quot;Income is a flow of money received, often measured on a monthly or an annual basis. Wealth is the sum of the value of all assets, including money in bank accounts, financial investments, a pension fund, and the value of a home. In calculating wealth, one must subtract all debts&quot;; the US-specific concentration claim &quot;In the United States, the wealth distribution is more unequal than the income distribution, because differences in income can accumulate over time to make even larger differences in wealth.&quot;; and the learning outcome &quot;Show the tradeoff between incentives and income equality&quot;. The words efficiency and administrative do not occur on the page, so those two labels remain the article&#39;s own summary.</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/SI.POV.GINI" rel="noopener noreferrer" target="_blank">Gini index</a> <p>World Bank · World Bank</p> <p>Accessed: 2026-10-30 · License: CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>Supports: The Gini index measures how far the income distribution deviates from perfect equality; 0 represents perfect equality and 100 perfect inequality; data come from the World Bank&#39;s Poverty and Inequality Platform. Re-retrieved 2026-11-03: the page body is script-rendered, so the only verbatim string checkable here is the indicator title; the definition and the 0/100 endpoints are a summary of the WDI metadata basis, not a quotation read in this environment.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/income-distribution-and-inequality/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

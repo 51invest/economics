@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>增长核算：资本深化、人力资本与 TFP · 巫妖投资</title><meta name="description" content="增长核算把产出增长拆成资本、劳动、人力资本和全要素生产率四块。它能回答“增长主要来自多投入，还是来自更高效地使用投入”，但不能把 TFP 残差直接当成技术进步；测量误差、利用率、配置和租金都会混在里面。"><link rel="canonical" href="https://economics.51invest.com/learn/growth-accounting-capital-deepening-and-tfp/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/growth-accounting-capital-deepening-and-tfp/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/growth-accounting-capital-deepening-and-tfp/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/growth-accounting-capital-deepening-and-tfp/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/growth-accounting-capital-deepening-and-tfp/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">增长核算：资本深化、人力资本与 TFP</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">方法</span> <h1 class="article-title">增长核算：资本深化、人力资本与 TFP</h1> <p class="article-summary">增长核算把产出增长拆成资本、劳动、人力资本和全要素生产率四块。它能回答“增长主要来自多投入，还是来自更高效地使用投入”，但不能把 TFP 残差直接当成技术进步；测量误差、利用率、配置和租金都会混在里面。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M09 · 长期增长</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>6 分钟 · 17 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>读完这一篇，你能用增长核算式分解一个经济体的产出增长，判断资本深化和 TFP 各自贡献多少，并说明为什么“TFP 上升”不是一句可以随便下的结论。</p>
+</blockquote>
+<h2>定义</h2>
+<p><strong>增长核算</strong>（growth accounting）把产出增长分解为各投入要素的贡献和一个残差项。<strong>资本深化</strong>（capital deepening）指每个劳动者拥有的资本增加。<strong>人力资本</strong>（human capital）指劳动者的教育、技能和健康。<strong>全要素生产率</strong>（total factor productivity, TFP）是产出增长中不能被 measured inputs 解释的部分，常被称为“残差”。</p>
+<p>TFP 不是“技术”的同义词。它包含技术变化，也包含组织改进、规模效应、资源配置、产能利用率、测量误差和未观测投入[1]。</p>
+<h2>直觉</h2>
+<p>假设一个经济体产出增长 5%，资本存量增长 6%，劳动投入增长 1%，资本报酬份额为 0.4。资本贡献是 <code>0.4 × 6% = 2.4%</code>，劳动贡献是 <code>0.6 × 1% = 0.6%</code>，两者合计 3.0%。剩下的 2.0% 就是 TFP 贡献。</p>
+<p>这 2.0% 可能来自更好的设备、更好的管理、劳动力从低生产率部门转移到高生产率部门，也可能只是因为资本利用率从低谷回升，或统计口径改变。增长核算给出的是“来源清单”，不是“因果判决”。</p>
+<h2>正式表达</h2>
+<p>在简单形式下，产出增长 <code>g_Y</code> 可以写成：</p>
+<p><code>g_Y = α g_K + (1 − α) g_L + g_A</code></p>
+<p>其中 <code>α</code> 是资本报酬份额，<code>g_K</code> 是资本增长，<code>g_L</code> 是劳动增长，<code>g_A</code> 是 TFP 增长。</p>
+<p>加入人力资本后：</p>
+<p><code>g_Y = α g_K + β g_H + (1 − α − β) g_L + g_A</code></p>
+<p>其中 <code>g_H</code> 是人力资本增长，<code>β</code> 是人力资本报酬份额。若把每个劳动者的产出写成 <code>y = Y/L</code>、资本写成 <code>k = K/L</code>，则：</p>
+<p><code>g_y = α g_k + g_A</code></p>
+<p>这就是“资本深化”的核算形式：人均产出增长等于资本深化贡献加 TFP 贡献。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>要素份额要能解释成本。</strong> <code>α</code> 和 <code>β</code> 通常来自国民收入中劳动和资本的报酬份额；自雇收入、隐性租金和折旧处理会改变份额[2]。</li>
+<li><strong>投入和产出要同口径。</strong> 资本存量、劳动小时、人力资本质量和产出增加值要覆盖同一部门与时期。</li>
+<li><strong>TFP 是残差，不是直接观测。</strong> 未观测投入、测量误差、产能利用率变化都会进入残差[1]。</li>
+<li><strong>短期波动要区分利用率。</strong> 衰退期劳动和资本闲置，TFP 可能被低估；复苏期利用率回升，TFP 可能被高估。</li>
+<li><strong>不能把核算当因果。</strong> 资本贡献高不等于资本“导致”增长；投资、技术和制度可能同时变化。</li>
+</ol>
+<h2>研究问题</h2>
+<p>增长核算回答一个可计算的问题：一段时期产出增长中，多少来自资本积累、多少来自劳动和人力资本、多少来自不能由投入解释的 TFP 残差。它不回答“TFP 为什么变化”，后者需要增长理论、制度分析和因果识别。</p>
+<h2>输入与数据要求</h2>
+<p>需要同一部门、同一期间的产出增加值、资本存量、劳动小时、人力资本指标和要素报酬份额。产出与投入都要做价格调整；资本存量要说明折旧方法；劳动要区分人数与小时；人力资本要说明教育年限、质量或技能口径。数据来源和基期不同，核算结果不能直接比较[2]。</p>
+<h2>假设</h2>
+<p>标准核算假定要素按边际产品获得报酬、技术短期稳定、残差与投入不高度相关。若存在垄断、补贴、外部性、隐性资本或未观测劳动，要素份额会偏离边际贡献，TFP 残差也会吸收这些因素。核算结果是“在给定份额和口径下的分解”，不是自然定律。</p>
+<h2>步骤</h2>
+<ol>
+<li>计算产出、资本、劳动和人力资本的期间增长率。</li>
+<li>取得资本、劳动和人力资本的报酬份额，并检查份额是否稳定。</li>
+<li>用份额乘以对应增长率，得到各投入的贡献。</li>
+<li>从产出增长中减去投入贡献，得到 TFP 残差。</li>
+<li>改变份额、基期和利用率假设，做敏感性检查。</li>
+</ol>
+<h2>结果解读</h2>
+<p>TFP 贡献高，可能说明技术、组织或配置改善，也可能说明测量残差大。TFP 为负，可能是技术退步，也可能是衰退期利用率下降、资本错配或统计口径变化[1]。资本贡献高，说明资本积累多，不说明资本回报高；要结合边际资本产出和投资回报率读。</p>
+<h2>失败条件</h2>
+<p>要素份额剧烈变化、投入未观测、产能利用率大幅波动、数据口径改变、价格调整不一致时，核算结果会失真。把两个口径不同的经济体直接比较，也容易得出错误结论。</p>
+<h2>复现与验证</h2>
+<p>固定数据版本、公式、份额来源和价格基期；公开每一步中间结果；把资本份额上下调 0.05，检查 TFP 贡献排序是否翻转；与官方 TFP 估计对比时，只比较口径相同的部门与期间[1][2]。</p>
+<h2>例子与计算</h2>
+<p>假设两个经济体，资本份额 <code>α = 0.4</code>，劳动份额 0.6（教学假设）：</p>
+<table>
+<thead>
+<tr>
+<th>经济体</th>
+<th align="right">产出增长</th>
+<th align="right">资本增长</th>
+<th align="right">劳动增长</th>
+<th align="right">资本贡献</th>
+<th align="right">劳动贡献</th>
+<th align="right">TFP 贡献</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td align="right">5.0%</td>
+<td align="right">6.0%</td>
+<td align="right">1.0%</td>
+<td align="right">2.4%</td>
+<td align="right">0.6%</td>
+<td align="right">2.0%</td>
+</tr>
+<tr>
+<td>B</td>
+<td align="right">3.0%</td>
+<td align="right">7.0%</td>
+<td align="right">2.0%</td>
+<td align="right">2.8%</td>
+<td align="right">1.2%</td>
+<td align="right">-1.0%</td>
+</tr>
+</tbody></table>
+<p>A 的增长一半以上来自 TFP；B 的资本和劳动贡献合计 4.0%，但 TFP 为 -1.0%，说明投入增加没有完全转化为产出增长。B 可能有产能利用率下降、资本配置低效、测量误差或未观测的负向冲击。不能只说“B 投资不够”；B 的投资很多，但效率在退步。</p>
+<p>再看人均形式。若 A 的资本深化 <code>g_k = 4%</code>，<code>α = 0.4</code>，则资本深化贡献 1.6%；人均产出增长 2.4%，其中 TFP 贡献 0.8%。世界银行的人均 GDP 增长指标也是同一类“人均”口径，可用于对照，但基期和价格调整必须一致[3]。这说明 A 的人均增长更多来自资本深化，而不是 TFP。</p>
+<p>以上数字均为教学假设，不是真实经济体数据。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-growth-waterfall-title fig-growth-waterfall-desc" viewBox="0 0 440 300" width="100%">
+    <title id="fig-growth-waterfall-title">增长核算的分解机制：5% 产出增长从哪里来</title>
+    <desc id="fig-growth-waterfall-desc">资本增长 6% 乘资本份额 0.4，贡献 2.4 个百分点；劳动增长 1% 乘劳动份额 0.6，贡献 0.6 个百分点；两者合计 3.0 个百分点，剩余 2.0 个百分点为 TFP。数值为教学假设。</desc>
+    <line x1="58" y1="230" x2="410" y2="230" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="78" y="112" width="54" height="118" rx="4" fill="var(--accent)" opacity="0.82"></rect>
+    <rect x="152" y="200" width="54" height="30" rx="4" fill="var(--accent)" opacity="0.6"></rect>
+    <rect x="226" y="82" width="54" height="148" rx="4" fill="var(--gold)" opacity="0.8"></rect>
+    <text x="105" y="104" text-anchor="middle" font-size="10.5" fill="var(--text)" font-family="inherit">2.4%</text>
+    <text x="179" y="192" text-anchor="middle" font-size="10.5" fill="var(--text)" font-family="inherit">0.6%</text>
+    <text x="253" y="74" text-anchor="middle" font-size="10.5" fill="var(--text)" font-family="inherit">2.0%</text>
+    <g fill="var(--muted)" font-size="10.5" font-family="inherit" text-anchor="middle">
+      <text x="105" y="248">资本</text>
+      <text x="105" y="264">6% × 0.4</text>
+      <text x="179" y="248">劳动</text>
+      <text x="179" y="264">1% × 0.6</text>
+      <text x="253" y="248">TFP</text>
+      <text x="253" y="264">残差</text>
+    </g>
+    <text x="20" y="28" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit">产出增长 5.0% = 2.4% + 0.6% + 2.0%</text>
+    <text x="310" y="154" font-size="11" fill="var(--gold)" font-family="inherit">合计 5.0%</text>
+    <line x1="300" y1="168" x2="300" y2="230" stroke="var(--border)" stroke-width="1"></line>
+  </svg>
+  <figcaption>图 1：增长核算的分解机制。资本贡献 2.4 个百分点、劳动贡献 0.6 个百分点、TFP 残差 2.0 个百分点；教学假设，单位为百分点。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-growth-compare-title fig-growth-compare-desc" viewBox="0 0 440 300" width="100%">
+    <title id="fig-growth-compare-title">A 与 B 的增长来源对照</title>
+    <desc id="fig-growth-compare-desc">A 的产出增长 5.0%，其中资本 2.4、劳动 0.6、TFP 2.0 个百分点；B 的产出增长 3.0%，资本 2.8、劳动 1.2、TFP −1.0 个百分点。两条堆叠柱展示投入与效率的差异；数值为教学假设。</desc>
+    <line x1="70" y1="220" x2="410" y2="220" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="108" y="112" width="70" height="108" rx="4" fill="var(--accent)" opacity="0.82"></rect>
+    <rect x="108" y="193" width="70" height="27" rx="4" fill="var(--accent)" opacity="0.55"></rect>
+    <rect x="108" y="84" width="70" height="28" rx="4" fill="var(--gold)" opacity="0.82"></rect>
+    <rect x="274" y="94" width="70" height="126" rx="4" fill="var(--accent)" opacity="0.82"></rect>
+    <rect x="274" y="166" width="70" height="54" rx="4" fill="var(--accent)" opacity="0.55"></rect>
+    <rect x="274" y="220" width="70" height="45" rx="4" fill="var(--critical)" opacity="0.55"></rect>
+    <g fill="var(--text)" font-size="10.5" font-family="inherit" text-anchor="middle">
+      <text x="143" y="76">TFP 2.0</text>
+      <text x="143" y="106">资本 2.4</text>
+      <text x="143" y="188">劳动 0.6</text>
+      <text x="309" y="88">资本 2.8</text>
+      <text x="309" y="160">劳动 1.2</text>
+      <text x="309" y="210">TFP −1.0</text>
+      <text x="143" y="242">A：5.0%</text>
+      <text x="309" y="242">B：3.0%</text>
+    </g>
+    <text x="20" y="28" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit">同样多投入，不等于同样多产出</text>
+    <text x="70" y="268" font-size="10" fill="var(--muted)" font-family="inherit">堆叠柱单位：百分点；TFP 为残差；教学假设</text>
+  </svg>
+  <figcaption>图 2：A 与 B 的增长来源对照。A 的 TFP 贡献 2.0 个百分点，B 为 −1.0 个百分点；B 投入更多但效率下降。教学假设，单位为百分点。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-capital-depth-title fig-capital-depth-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-capital-depth-title">资本深化的边际递减机制</title>
+    <desc id="fig-capital-depth-desc">横轴为人均资本，纵轴为人均产出。曲线斜率随人均资本上升而下降，说明同样一笔新增资本在较低资本存量时带来更大产出增量。曲线为教学示意，不含真实数据。</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="62" y1="220" x2="400" y2="220"></line>
+      <line x1="62" y1="220" x2="62" y2="44"></line>
+    </g>
+    <path d="M 82 180 C 140 120, 210 88, 290 72 C 340 64, 370 62, 392 61" fill="none" stroke="var(--accent)" stroke-width="2.6"></path>
+    <line x1="150" y1="114" x2="150" y2="220" stroke="var(--gold)" stroke-width="1" stroke-dasharray="4 4"></line>
+    <line x1="300" y1="70" x2="300" y2="220" stroke="var(--gold)" stroke-width="1" stroke-dasharray="4 4"></line>
+    <text x="156" y="130" font-size="10" fill="var(--gold)" font-family="inherit">同样 +1 单位资本</text>
+    <text x="156" y="146" font-size="10" fill="var(--gold)" font-family="inherit">带来较大增量</text>
+    <text x="306" y="88" font-size="10" fill="var(--gold)" font-family="inherit">增量变小</text>
+    <g fill="var(--muted)" font-size="10.5" font-family="inherit">
+      <text x="48" y="224">0</text>
+      <text x="140" y="238">k1</text>
+      <text x="290" y="238">k2</text>
+      <text x="340" y="258">人均资本 k</text>
+      <text x="12" y="46">人均产出 y</text>
+    </g>
+  </svg>
+  <figcaption>图 3：资本深化的边际递减机制。人均资本从 k1 增到 k2 时，同样一单位新增资本带来的产出增量变小；曲线为教学示意，不含真实数据。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-tfp-boundary-title fig-tfp-boundary-desc" viewBox="0 0 440 310" width="100%">
+    <title id="fig-tfp-boundary-title">TFP 残差的适用边界</title>
+    <desc id="fig-tfp-boundary-desc">TFP 残差包含至少四类内容：技术变化、组织与配置、产能利用率、测量误差与未观测投入。把残差全部写成“技术进步”会高估技术作用，也会漏掉制度和统计问题。教学示意，不是完整分解。</desc>
+    <rect x="20" y="42" width="190" height="70" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="34" y="66" font-size="11" fill="var(--text)" font-family="inherit">技术变化</text>
+    <text x="34" y="86" font-size="10" fill="var(--muted)" font-family="inherit">新产品、工艺、软件</text>
+    <text x="34" y="102" font-size="10" fill="var(--muted)" font-family="inherit">—— 只是其中一块</text>
+    <rect x="230" y="42" width="190" height="70" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="244" y="66" font-size="11" fill="var(--text)" font-family="inherit">组织与配置</text>
+    <text x="244" y="86" font-size="10" fill="var(--muted)" font-family="inherit">管理、分工、要素流动</text>
+    <text x="244" y="102" font-size="10" fill="var(--muted)" font-family="inherit">—— 也会进入残差</text>
+    <rect x="20" y="130" width="190" height="70" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="34" y="154" font-size="11" fill="var(--text)" font-family="inherit">产能利用率</text>
+    <text x="34" y="174" font-size="10" fill="var(--muted)" font-family="inherit">衰退闲置、复苏回升</text>
+    <text x="34" y="190" font-size="10" fill="var(--muted)" font-family="inherit">—— 短期波动会被误读</text>
+    <rect x="230" y="130" width="190" height="70" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="244" y="154" font-size="11" fill="var(--text)" font-family="inherit">测量误差</text>
+    <text x="244" y="174" font-size="10" fill="var(--muted)" font-family="inherit">口径、折旧、隐性投入</text>
+    <text x="244" y="190" font-size="10" fill="var(--muted)" font-family="inherit">—— 残差不是“纯技术”</text>
+    <text x="20" y="236" font-size="10.5" fill="var(--muted)" font-family="inherit">因此：TFP 上升 ≠ 技术突破；TFP 下降 ≠ 技术退步。</text>
+    <text x="20" y="260" font-size="10.5" fill="var(--muted)" font-family="inherit">教学示意：4 类残差来源，不构成完整增长核算。</text>
+  </svg>
+  <figcaption>图 4：TFP 残差的适用边界。技术、组织、利用率和测量误差四类来源都会进入残差；教学示意（4 类），不能把 TFP 直接等同于技术进步。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“TFP 就是技术进步。”</strong> TFP 是残差，包含技术、组织、配置、利用率和测量误差[1]。把它全部归因于技术，会高估技术、低估制度。</p>
+<p><strong>“资本贡献高就是投资驱动成功。”</strong> 如果资本边际效率低，资本贡献高可能只是低回报的投入堆积；还要看 TFP 和回报率。</p>
+<p><strong>“增长核算能证明因果。”</strong> 它是分解，不是识别；投入和 TFP 可能同时受第三因素影响[2]。</p>
+<p><strong>“人均产出增长只靠资本深化。”</strong> 人均增长等于资本深化贡献加 TFP 贡献；长期持续增长主要靠 TFP，但短期资本深化可以很重要。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-017 增长与生产率</strong> 的关系：那一篇讲增长来源和制度，这一篇给出可计算的分解框架。</li>
+<li>与 <strong>ECO-011 宏观均衡</strong> 的关系：资本份额、劳动份额和产出缺口会影响核算结果。</li>
+<li>与 <strong>RES-013 回归与计量</strong> 的关系：增长核算的残差不是因果估计，识别 TFP 变化需要面板、工具变量或自然实验。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>产出增长 4%，资本增长 5%，劳动增长 2%，资本份额 0.35。计算资本贡献、劳动贡献和 TFP 贡献。</li>
+<li>A 国人均资本增长 3%，资本份额 0.4，人均产出增长 2%。计算资本深化贡献和 TFP 贡献。</li>
+<li>衰退期 TFP 从 1.5% 降到 -0.5%，但资本和劳动投入也下降。说明为什么不能直接说“技术退步”。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>U.S. Bureau of Labor Statistics, <em>Productivity and Costs: Multifactor Productivity</em>. <a href="https://www.bls.gov/news.release/prod3.nr0.htm">https://www.bls.gov/news.release/prod3.nr0.htm</a></li>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 20.3 Components of Economic Growth. <a href="https://openstax.org/books/principles-economics-3e/pages/20-3-components-of-economic-growth">https://openstax.org/books/principles-economics-3e/pages/20-3-components-of-economic-growth</a></li>
+<li>World Bank, <em>GDP per capita growth (annual %)</em>, World Development Indicators. <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG">https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>用资本份额和劳动份额分解产出增长，并计算 TFP 残差。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>区分资本深化贡献与 TFP 贡献，解释为什么人均增长不能只靠资本。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>用资本份额和劳动份额分解产出增长，并计算 TFP 残差。</li><li>区分资本深化贡献与 TFP 贡献，解释为什么人均增长不能只靠资本。</li><li>列出 TFP 残差的四类来源，并说明衰退期 TFP 下降为什么不能直接归因于技术退步。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li><li> <a href="/learn/growth-and-productivity/">ECO-017 · 增长与生产率</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="https://research.51invest.com/learn/linear-regression-introduction/">RES-013 · 线性回归入门</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.bls.gov/news.release/prod3.nr0.htm" rel="noopener noreferrer" target="_blank">Productivity and Costs: Multifactor Productivity</a> <p>U.S. Bureau of Labor Statistics · U.S. Bureau of Labor Statistics</p> <p>访问：2026-11-23 · 许可：U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>支持论点：用于核对全要素生产率的定义、贡献口径与残差性质；BLS 的覆盖范围是企业部门，正文不把它直接等同于全经济。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/20-3-components-of-economic-growth" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 20.3 Components of Economic Growth</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对资本深化、人力资本、技术变化与制度对增长的贡献；正文只把这些作为核算分类，不写成单一因果。</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG" rel="noopener noreferrer" target="_blank">GDP per capita growth (annual %)</a> <p>World Bank · World Bank, World Development Indicators</p> <p>访问：2026-11-23 · 许可：CC BY 4.0</p> <p>支持论点：用于核对人均 GDP 增长指标的公开口径；正文不使用真实国别数值，只说明人均增长可与资本深化和 TFP 分解对照。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/growth-accounting-capital-deepening-and-tfp/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

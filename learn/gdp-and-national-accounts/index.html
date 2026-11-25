@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>GDP 与国民经济核算 · 巫妖投资</title><meta name="description" content="GDP 是一定时期内一国境内生产的最终产品和服务的市场价值；生产、收入和支出三种核算方法理论上给出同一总量。"><link rel="canonical" href="https://economics.51invest.com/learn/gdp-and-national-accounts/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/gdp-and-national-accounts/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/gdp-and-national-accounts/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/gdp-and-national-accounts/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/gdp-and-national-accounts/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">GDP 与国民经济核算</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">GDP 与国民经济核算</h1> <p class="article-summary">GDP 是一定时期内一国境内生产的最终产品和服务的市场价值；生产、收入和支出三种核算方法理论上给出同一总量。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M07 · 宏观核算</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>7 分钟 · 12 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>国内生产总值</strong>（gross domestic product，GDP）是一国或地区在一定时期内生产的全部最终产品和服务的市场价值 [1]。它可按生产（增加值）、收入（要素报酬加上生产税净额与折旧）和支出（最终使用）三种方法核算，理论上结果相等；OpenStax 19.1 把生产侧、需求侧与收入侧列为同一总量的不同核算视角[1]。BEA 把 GDP 称为衡量美国经济活动的综合指标，衡量在美国生产的最终产品和服务价值 [2]。</p>
+<h2>直觉</h2>
+<p>面包链：农户卖小麦 100 元，磨坊卖面粉 180 元，面包房卖面包 300 元，零售商卖给消费者 360 元。四笔销售额相加为 940 元，但小麦、面粉和面包是中间投入，直接相加会重复计算。GDP 只计最终销售 360 元；按增加值计为 100 + 80 + 120 + 60 = 360 元，结果一致。</p>
+<h2>正式表达</h2>
+<p>支出法为</p>
+<p><code>Y = C + I + G + (X - M)</code>，</p>
+<p>其中 C 为居民消费，I 为企业投资与存货变动，G 为政府购买，X - M 为净出口 [1]。收入法把工资、租金、利息、利润相加 [1]；标准国民账户还会纳入生产税净额与折旧（本文按标准口径补充，不归给[1]）；生产法把各行业增加值相加。人均 GDP = GDP ÷ 人口。GDP 是流量，单位为货币/时期；比较时须说明名义或实际、是否季调。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>只计最终产品。</strong> 中间投入不计，否则重复计算。</li>
+<li><strong>发生在境内。</strong> 按生产地原则，外资企业在境内生产计入，本国居民境外生产不计入。</li>
+<li><strong>经过市场才计入。</strong> 教材逐字说明：地下经济的服务与非法销售&quot;本应计入、但因无法追踪而没有计入&quot;[1]，自家做早餐这类家庭生产也因不进市场而不计入[1]。本站未取回 SNA 关于&quot;自产自用的货物原则上估算计入&quot;的原文，因此本篇不在这里断言该口径；读者若按 SNA 讨论自有生产货物，需另查其条文。</li>
+<li><strong>是时期流量。</strong> 不衡量财富存量、分配、环境代价或闲暇。</li>
+<li><strong>受修订和口径影响。</strong> 发布方自述此前公布的估计值&quot;含有历史数据并已被修订&quot;[2]，页面上另设更新信息与既发布估计的入口；跨国比较要声明折算口径——世界银行把按市场汇率的 GDP（现价美元）与按购买力平价的 GDP 列为两个不同序列[3]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设某经济体 C = 600 亿元、I = 150 亿元、G = 200 亿元、X = 120 亿元、M = 170 亿元。则</p>
+<p><code>GDP = 600 + 150 + 200 + (120 - 170) = 900</code> 亿元，</p>
+<p>净出口为 -50 亿元。各项占比见下表。若人口为 3000 万人，人均 GDP 为 900 亿元 ÷ 3000 万人 = 3000 元。以上均为教学假设。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">金额（亿元）</th>
+<th align="right">占 GDP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>居民消费 C</td>
+<td align="right">600</td>
+<td align="right">66.7%</td>
+</tr>
+<tr>
+<td>投资 I</td>
+<td align="right">150</td>
+<td align="right">16.7%</td>
+</tr>
+<tr>
+<td>政府购买 G</td>
+<td align="right">200</td>
+<td align="right">22.2%</td>
+</tr>
+<tr>
+<td>净出口 X - M</td>
+<td align="right">-50</td>
+<td align="right">-5.6%</td>
+</tr>
+<tr>
+<td>GDP</td>
+<td align="right">900</td>
+<td align="right">100%</td>
+</tr>
+</tbody></table>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-gdp-title fig-gdp-desc" viewBox="0 0 460 230" width="100%">
+    <title id="fig-gdp-title">生产、收入与支出三种核算视角</title>
+    <desc id="fig-gdp-desc">三个方框分别表示生产、收入和支出，每个方框内的 GDP 都是 900 亿元。箭头把三者连成循环，表示同一笔产出可按增加值、要素收入和最终支出核算。</desc>
+    <defs>
+      <marker id="gdp-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="var(--muted)"></path>
+      </marker>
+    </defs>
+    <g fill="var(--surface-2)" stroke="var(--border)" stroke-width="1.2">
+      <rect x="20" y="64" width="120" height="70" rx="6"></rect>
+      <rect x="170" y="64" width="120" height="70" rx="6"></rect>
+      <rect x="320" y="64" width="120" height="70" rx="6"></rect>
+    </g>
+    <g fill="none" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#gdp-arrow)">
+      <line x1="140" y1="92" x2="168" y2="92"></line>
+      <line x1="290" y1="92" x2="318" y2="92"></line>
+      <path d="M380,134 L380,180 L80,180 L80,136"></path>
+    </g>
+    <g fill="var(--text)" font-size="12" font-family="inherit" text-anchor="middle">
+      <text x="80" y="88">生产</text>
+      <text x="80" y="106" fill="var(--muted)">增加值 900</text>
+      <text x="230" y="84">收入</text>
+      <text x="230" y="102" fill="var(--muted)" font-size="9.5">工资、租金、利息、利润</text>
+      <text x="230" y="120" fill="var(--muted)">900</text>
+      <text x="380" y="88">支出</text>
+      <text x="380" y="106" fill="var(--muted)">C+I+G+NX 900</text>
+      <text x="230" y="205" fill="var(--muted)" font-size="11">同一产出的三种核算视角（假设值）</text>
+    </g>
+  </svg>
+  <figcaption>图 1：假设经济体的 GDP 为 900 亿元，生产、收入和支出三种视角给出同一总量。收入框只列要素收入，生产税净额与折旧未单列。图为教学示意，不是真实统计。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>GDP 是财富。</strong> GDP 是时期流量，财富是存量；灾害重建可能提高 GDP，却不必然提高福利。</p>
+<p><strong>中间品也计入 GDP。</strong> 中间投入不计，只计最终产品或各环节增加值。</p>
+<p><strong>二手房和股票交易计入 GDP。</strong> 只有相关佣金和服务费计入，资产本身转手不计 [1]。</p>
+<p><strong>GDP 增长等于生活水平同比例提高。</strong> 还要看人口、分配、自产自用、环境与闲暇。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>GDP</h3>
+<p><strong>定义</strong>：GDP是一定时期内一国境内生产的最终商品和服务市场价值，按生产地而不是所有者国籍统计。</p>
+<p><strong>机制</strong>：支出法把 GDP 拆成消费、投资、政府支出和净出口；生产法加总增加值，收入法加总要素收入，三者应相互一致。</p>
+<p><strong>例子</strong>：例如一家外资工厂在本国生产并出口，其增加值计入本国 GDP，但利润汇出不影响 GDP 的属地口径。</p>
+<p><strong>边界</strong>：GDP不含家务、地下经济、环境损耗和分配；实际 GDP 还需剔价格影响，不能当作福利总量。</p>
+<h3>收入与支出</h3>
+<p><strong>定义</strong>：国民收入核算从生产、收入和支出三个角度记录同一经济流量，理论上应相等。</p>
+<p><strong>机制</strong>：企业增加值形成工资、利润、租金和税收；这些收入再被家庭消费、储蓄或纳税，储蓄通过金融和投资回到支出。</p>
+<p><strong>例子</strong>：例如工人获得工资后消费一部分、储蓄一部分，储蓄被银行贷给企业投资，支出与生产在总量上闭合。</p>
+<p><strong>边界</strong>：统计误差、库存变动和转移支付会使三方不完全相等；收入不等于可支配收入，转移支付和税收要单独处理。</p>
+<h3>价格指数</h3>
+<p><strong>定义</strong>：价格指数是追踪一篮子商品和服务价格随时间变化的加权指标，用于剔除物价影响。</p>
+<p><strong>机制</strong>：拉氏指数用基期数量加权，帕氏指数用当期数量加权；权重、替代和品质调整决定指数偏差。</p>
+<p><strong>例子</strong>：例如CPI篮子中食品权重较高，食品涨价会明显推高指数，而电子产品降价只部分抵消。</p>
+<p><strong>边界</strong>：价格指数不是单一“生活成本”；不同家庭消费篮子、地区价格和品质变化会造成体感差异，链式加权与 hedonic 调整也有限。</p>
+<h3>名义实际</h3>
+<p><strong>定义</strong>：名义值按当期价格计价，实际值按不变价格或购买力计价；实际值等于名义值经过价格指数调整。</p>
+<p><strong>机制</strong>：实际增长剔除通胀，实际利率近似名义利率减通胀；跨期比较必须统一基期和口径。</p>
+<p><strong>例子</strong>：例如工资名义上涨 5%、物价上涨 6%，实际购买力约下降 1%，名义涨薪不等于生活变好。</p>
+<p><strong>边界</strong>：名义与实际之分不解决分配和品质问题；不同价格指数、税后收入和地区差异会使同一调整得出不同结论。</p>
+<h3>就业</h3>
+<p><strong>定义</strong>：就业统计通常把在参考期内从事有报酬工作或自雇的人计为就业，失业则指可工作、找工作但未就业。</p>
+<p><strong>机制</strong>：失业率是失业人数占劳动力人数之比；参与率、工时、临时工作和隐性失业补充总量视角。</p>
+<p><strong>例子</strong>：例如每周工作一小时以上也可能计入就业，但收入不足和工时过短意味着就业质量低。</p>
+<p><strong>边界</strong>：就业口径随调查、年龄、灰市和休假规则变化；失业率下降可能因劳动参与下降，不能直接读成景气改善。</p>
+<h3>部门账户</h3>
+<p><strong>定义</strong>：部门账户把家庭、企业、政府、金融和外部部门的经济流量与资产负债表分开记录，显示谁储蓄、谁负债。</p>
+<p><strong>机制</strong>：部门净储蓄与投资差额通过金融交易相互融资；政府赤字、家庭储蓄和经常账户赤字存在会计联系。</p>
+<p><strong>例子</strong>：例如家庭净储蓄流入银行，银行购买政府债券，政府赤字与家庭盈余通过金融部门连接。</p>
+<p><strong>边界</strong>：部门账户是会计恒等，不是因果证明；部门内部异质性和估值变化会掩盖风险，时序与合并口径也重要。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：本文无必需先修。</li>
+<li>相关：名义值与实际值（ECO-012）、存量与流量（RES-002）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">GDP 与国民经济核算：机制链</title>
+    <desc id="fig-batch-chain-desc">GDP 与国民经济核算 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 与国民经济核算：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 是一定时期内一</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">国境内生产的最终产品…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 是一定时期内</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">一国境内生产的最终</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">产品和服务的市场价</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">值；生产、收入和支</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">出三种核算方法理论…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：国内生产总值（g</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">ross domestic…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：国内生产总值</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">（gross domestic</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">product，GDP）是一</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">国或地区在一定时期</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">内生产的全部最终产…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">假设某经济体 C =</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">600 亿元、I = 150…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">假设某经济体 C =</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">600 亿元、I =</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">150 亿元、G =</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">200 亿元、X =</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">120 亿元、M =…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：GDP 与国民经济核算的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">GDP 与国民经济核算：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 与国民经济核算：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">只计最终产品。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 是财富。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：GDP 与国民经济核算的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">GDP 与国民经济核算：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 与国民经济核算：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 是一定时期内一国境</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">内生产的最终产品和服务的…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">只计最终产品。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP 是财富。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：GDP 与国民经济核算的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 下列哪项计入 GDP？A. 购买二手车；B. 券商佣金；C. 政府转移支付；D. 自产自用、不进市场的家庭生产。</li>
+<li><strong>计算：</strong> 若 C = 800、I = 200、G = 250、X = 150、M = 200（亿元），GDP、净出口和居民消费占比各是多少？</li>
+<li><strong>适用条件：</strong> 为什么 GDP 不能直接衡量社会福利？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>B。佣金是当期提供的服务；二手车本身（生产于上期）、转移支付（不对应当期生产）不计入。D 按本文采用的市场边界不计入：教材把不进市场的家庭生产列为不计入项[1]；若改用 SNA 的自产自用货物估算口径则结论不同，本站未取回该原文，因此本题以教材的市场边界为准（与&quot;适用条件与边界&quot;第 3 条同一口径，两处不再相互矛盾）。</li>
+<li><code>GDP = 800 + 200 + 250 + (150 - 200) = 1200</code> 亿元；净出口为 -50 亿元；居民消费占 <code>800 ÷ 1200 ≈ 66.7%</code>。</li>
+<li>GDP 不含分配、自产自用、环境代价和闲暇，也不反映存量财富；人均和实际值只是补充，不能替代福利分析。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;19.1 Measuring the Size of the Economy: Gross Domestic Product.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/19-1-measuring-the-size-of-the-economy-gross-domestic-product">https://openstax.org/books/principles-economics-3e/pages/19-1-measuring-the-size-of-the-economy-gross-domestic-product</a>（访问日期：2026-10-30）</li>
+<li>U.S. Bureau of Economic Analysis. &quot;Gross Domestic Product.&quot; <a href="https://www.bea.gov/data/gdp/gross-domestic-product">https://www.bea.gov/data/gdp/gross-domestic-product</a>（访问日期：2026-10-30）</li>
+<li>World Bank. &quot;GDP (current US$).&quot; <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用支出法口径判断哪些交易计入 GDP，并解释生产、收入、支出三法为何给出同一总量</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能指出 GDP 核算在地下活动、非市场服务与质量变化上的边界</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用支出法口径判断哪些交易计入 GDP，并解释生产、收入、支出三法为何给出同一总量</li><li>能指出 GDP 核算在地下活动、非市场服务与质量变化上的边界</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <p class="muted"> 无必需先修。 </p> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/nominal-and-real-values/">ECO-012 · 名义值与实际值</a> </li><li> <a href="https://research.51invest.com/learn/stocks-and-flows/">RES-002 · 存量与流量</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/19-1-measuring-the-size-of-the-economy-gross-domestic-product" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 19.1 Measuring the Size of the Economy: Gross Domestic Product</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：GDP 是一国在给定年份生产的全部最终产品和服务的价值；支出法为 C+I+G+(X−M)；中间品、二手货和转移支付不计入。同页的市场边界逐字为&quot;The entire underground economy of services paid “under the table” and illegal sales should be counted, but is not, because it is impossible to track these sales.&quot;与&quot;Also, production of some goods—such as home production as when you make your breakfast—is not counted because these goods are not sold in the marketplace.&quot;。</p> </div><div class="source"> <a href="https://www.bea.gov/data/gdp/gross-domestic-product" rel="noopener noreferrer" target="_blank">Gross Domestic Product</a> <p>U.S. Bureau of Economic Analysis · U.S. Bureau of Economic Analysis</p> <p>访问：2026-10-30 · 许可：U.S. Government work (public domain), 17 U.S.C. §105</p> <p>支持论点：BEA 把 GDP 描述为衡量美国经济活动的综合指标，衡量在美国生产的最终产品和服务价值。同页逐字声明&quot;Released estimates are subject to revision&quot;性质的说明：&quot;Previously published estimates contain historical data and have since been revised.&quot;，并列有 Information on Updates 与 Previously Published Estimates 两个入口。</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" rel="noopener noreferrer" target="_blank">GDP (current US$)</a> <p>World Bank · World Bank</p> <p>访问：2026-10-30 · 许可：CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>支持论点：GDP 可定义为一定核算期内一个经济领土生产活动产生的总收入，按当期价格以现价美元表示。同一页的指标切换把按市场汇率折算的&quot;GDP (current US$)&quot;与按购买力平价折算的&quot;GDP, PPP (constant 2021 international $)&quot;列为两个不同序列，说明跨国比较必须声明用的是哪一套折算口径。该页正文由脚本渲染，未取得 PPP 的定义句，故本篇不断言 PPP 的换算方法。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/gdp-and-national-accounts/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

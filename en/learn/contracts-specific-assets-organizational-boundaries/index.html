@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Contracts, Specific Assets and Organizational Boundaries: A Transaction-Cost Ledger · 51Invest</title><meta name="description" content="Markets, long-term contracts and internal organization are not three ideologies; they are three ways of handling transaction costs. The more specific the asset, the easier each party is locked in, and the more a sunk investment can be eroded by later renegotiation. Put contracting, monitoring, enforcement and bureaucratic costs on one ledger to decide whether a transaction belongs in the market, in a contract or inside a firm."><link rel="canonical" href="https://economics.51invest.com/en/learn/contracts-specific-assets-organizational-boundaries/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/contracts-specific-assets-organizational-boundaries/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/contracts-specific-assets-organizational-boundaries/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/contracts-specific-assets-organizational-boundaries/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/contracts-specific-assets-organizational-boundaries/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Contracts, Specific Assets and Organizational Boundaries: A Transaction-Cost Ledger</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Contracts, Specific Assets and Organizational Boundaries: A Transaction-Cost Ledger</h1> <p class="article-summary">Markets, long-term contracts and internal organization are not three ideologies; they are three ways of handling transaction costs. The more specific the asset, the easier each party is locked in, and the more a sunk investment can be eroded by later renegotiation. Put contracting, monitoring, enforcement and bureaucratic costs on one ledger to decide whether a transaction belongs in the market, in a contract or inside a firm.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M21 · 法律组织与比较经济</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>6 min · 10 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p>A <strong>transaction cost</strong> is the cost of finding a counterparty, negotiating terms, monitoring performance and resolving disputes. <strong>Asset specificity</strong> is the degree to which an investment is worth much in one relationship and little elsewhere: a mould built for one carmaker, software customized for one client, or a rail link serving one mine. <strong>Quasi-rent</strong> is the difference between an asset&#39;s value in the current relationship and its value in the next-best use; it measures how much the investor would lose if the relationship ended. The <strong>organizational boundary</strong> decides whether a transaction is governed by spot markets, long-term contracts, alliances or a firm&#39;s internal hierarchy[1].</p>
+<p>This article does not argue that &quot;bigger firms are better&quot; or &quot;freer markets are better&quot;. It turns organizational choice into a cost comparison: when the market is cheap, when a contract saves trouble, when internalization is cheaper, and under what conditions those answers fail.</p>
+<h2>Intuition</h2>
+<p>Imagine a parts supplier building a dedicated mould for a carmaker. Once the mould is installed, it can serve only that carmaker; switching customers requires costly re-tooling and the resale value is low. The carmaker now has bargaining power at renewal: the supplier has already sunk the investment and would lose heavily by exiting, so the carmaker can demand a lower price, longer payment terms or extra services. Anticipating this, the supplier may under-invest, delay investment or demand a higher contract price to cover the risk.</p>
+<p>If the parties could write a contract covering every future contingency, the problem would be small. But future demand, technical specifications and quality disputes are hard to foresee completely. The choice becomes: use spot markets (flexible but easy to terminate), use a long-term contract (stable but requiring monitoring and remedies), or buy the supplier (replace negotiation with internal commands, at the cost of bureaucracy and management layers). The boundary is not about who is more virtuous; it is about which governance mode keeps contracting, monitoring, enforcement and residual control costs lower.</p>
+<h2>Formal expression</h2>
+<p>Let the asset&#39;s value in the current relationship be (V_s) and its value in the next-best use be (V_a). The quasi-rent is:</p>
+<p>[
+Q=V_s-V_a
+]</p>
+<p>If the probability of opportunistic renegotiation is (p), the investor&#39;s expected loss of quasi-rent is:</p>
+<p>[
+H=pQ
+]</p>
+<p>Market governance cost can be written as &quot;contracting and monitoring cost plus expected hold-up loss&quot;:</p>
+<p>[
+M(k)=m_0+h k
+]</p>
+<p>where (k) is asset specificity, (m_0) is the base contracting cost and (h) is the bargaining and hold-up cost per unit of specificity. Internal hierarchy cost is:</p>
+<p>[
+G(k)=f+v k
+]</p>
+<p>where (f) is the fixed cost of building a hierarchy, budget, personnel and internal coordination, and (v) is the internal coordination cost per unit of specificity. Setting the two equal gives the organizational boundary:</p>
+<p>[
+k^*=\frac{f-m_0}{h-v}
+]</p>
+<p>When (k&lt;k^<em>), market governance is cheaper; when (k&gt;k^</em>), hierarchy is cheaper. If (h\le v), market cost does not rise faster with specificity, so no boundary exists and the market is always cheaper (this article&#39;s derivation).</p>
+<p>Contract enforcement also depends on whether remedies can actually be delivered. Let damages be (D), the probability of winning and enforcing be (\pi), and litigation cost be (C_L). The injured party&#39;s expected net recovery is:</p>
+<p>[
+E=\pi D-C_L
+]</p>
+<p>Suing is worthwhile only if (E&gt;0). If enforcement probability is low or litigation cost is high, a damages clause is only a number on paper. This condition separates &quot;law on the books&quot; from &quot;law in practice&quot;: formal rights are not the same as enforceable rights[2].</p>
+<h2>Conditions</h2>
+<ol>
+<li>Asset specificity must be observable and measurable; if it is only a subjective feeling, the comparison lacks a reliable scale (this article&#39;s judgment).</li>
+<li>Contracts cannot foresee everything; when technology and demand change quickly, contract gaps widen and relational governance or internalization becomes relatively more attractive[1].</li>
+<li>Courts, arbitration and industry norms determine whether contracts can be enforced; when enforcement is costly, written damages have less deterrent force[2].</li>
+<li>Asymmetric bargaining power changes how quasi-rent is split; the same specific investment produces different outcomes when the parties are evenly matched and when one is highly dependent[2].</li>
+<li>Reputation, repeated dealing and community norms can substitute for some formal contracts, but only when relationships persist and information travels[1].</li>
+<li>Cooperatives, mutual organizations and non-profits do not pursue profit alone; they may replace capital control with member control, but that brings its own governance and financing costs[3].</li>
+</ol>
+<h2>Example and calculation</h2>
+<p>Suppose a parts supplier invests CNY 1 million in a dedicated mould. The mould is worth CNY 1.4 million in the current relationship and CNY 0.9 million in the next-best use. The quasi-rent is:</p>
+<p>[
+Q=140-90=50\text{ ten-thousand CNY}
+]</p>
+<p>If the probability of later renegotiation is 40%, the expected hold-up loss is:</p>
+<p>[
+H=0.4\times50=20\text{ ten-thousand CNY}
+]</p>
+<p>For governance costs, let market governance be (M(k)=8+0.6k) and hierarchy governance be (G(k)=38+0.2k), both in ten-thousand CNY, with (k) an index from 0 to 100. Setting them equal:</p>
+<p>[
+k^*=\frac{38-8}{0.6-0.2}=75
+]</p>
+<table>
+<thead>
+<tr>
+<th align="right">Specificity index</th>
+<th align="right">Market governance cost (CNY)</th>
+<th align="right">Hierarchy governance cost (CNY)</th>
+<th>Lower-cost mode</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">50</td>
+<td align="right">380,000</td>
+<td align="right">480,000</td>
+<td>Market</td>
+</tr>
+<tr>
+<td align="right">90</td>
+<td align="right">620,000</td>
+<td align="right">560,000</td>
+<td>Internal hierarchy</td>
+</tr>
+</tbody></table>
+<p>At (k=50), market governance costs CNY 380,000 and hierarchy costs CNY 480,000; at (k=90), market costs CNY 620,000 and hierarchy costs CNY 560,000. The threshold is near 75. These numbers are teaching assumptions, not the financial statements of a particular firm.</p>
+<p>For contract remedies, let damages be CNY 300,000, enforcement probability 60% and litigation cost CNY 80,000:</p>
+<p>[
+E=0.6×30-8=10\text{ ten-thousand CNY}
+]</p>
+<p>Expected net recovery is CNY 100,000, so suing is worthwhile. If enforcement probability falls to 20%, (E=0.2×30-8=-2) ten-thousand CNY and litigation is not worthwhile; the contract then needs guarantees, arbitration or relational governance to supplement enforcement.</p>
+<h2>Figures</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-mech-title fig-contract-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-contract-mech-title">Mechanism chain from specific assets to governance mode</title>
+    <desc id="fig-contract-mech-desc">Specific investment creates quasi-rent, quasi-rent creates hold-up risk, and hold-up risk raises market governance cost; beyond the threshold, internal hierarchy is cheaper. Teaching mechanism.</desc>
+    <rect x="14" y="44" width="132" height="78" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Specific investment</text>
+    <text x="26" y="90" font-size="10" fill="var(--muted)" font-family="inherit">Serves one relationship</text>
+    <text x="26" y="108" font-size="10" fill="var(--muted)" font-family="inherit">Low value elsewhere</text>
+    <rect x="164" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="176" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Quasi-rent</text>
+    <text x="176" y="90" font-size="10" fill="var(--muted)" font-family="inherit">Value here 140</text>
+    <text x="176" y="108" font-size="10" fill="var(--muted)" font-family="inherit">Next best 90</text>
+    <rect x="314" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="326" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Hold-up risk</text>
+    <text x="326" y="90" font-size="10" fill="var(--muted)" font-family="inherit">Probability 40%</text>
+    <text x="326" y="108" font-size="10" fill="var(--muted)" font-family="inherit">Expected loss 20</text>
+    <line x1="146" y1="83" x2="164" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="296" y1="83" x2="314" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="148" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="172" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Market governance cost rises: contracting, monitoring and hold-up</text>
+    <text x="28" y="192" font-size="10" fill="var(--muted)" font-family="inherit">M(k)=8+0.6k; higher specificity makes market cooperation harder to lock in.</text>
+    <rect x="14" y="220" width="432" height="54" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="244" font-size="10.5" fill="var(--text)" font-family="inherit">Beyond the threshold, hierarchy: G(k)=38+0.2k</text>
+    <text x="28" y="264" font-size="10" fill="var(--muted)" font-family="inherit">Threshold k*=75; internal command replaces repeated bargaining but adds bureaucracy.</text>
+  </svg>
+  <figcaption>Figure 1: Mechanism chain from specific assets to governance mode. Specific investment creates quasi-rent and hold-up risk; higher specificity raises market governance cost, and beyond the threshold internal hierarchy is cheaper. Teaching mechanism, with assumed numbers.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-example-title fig-contract-example-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-contract-example-title">Market versus hierarchy cost example</title>
+    <desc id="fig-contract-example-desc">At specificity index 50, market cost is CNY 380,000 and hierarchy cost is CNY 480,000; at index 90, market cost is CNY 620,000 and hierarchy cost is CNY 560,000; the threshold is near 75. Units: CNY; teaching example.</desc>
+    <rect x="14" y="40" width="432" height="42" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="66" font-size="10.5" fill="var(--text)" font-family="inherit">Cost functions: M(k)=8+0.6k; G(k)=38+0.2k; units: CNY</text>
+    <rect x="14" y="96" width="204" height="122" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Specificity index 50</text>
+    <text x="28" y="144" font-size="10" fill="var(--muted)" font-family="inherit">Market: CNY 380,000</text>
+    <text x="28" y="164" font-size="10" fill="var(--muted)" font-family="inherit">Hierarchy: CNY 480,000</text>
+    <text x="28" y="184" font-size="10" fill="var(--text)" font-family="inherit">Market is lower; choose market</text>
+    <rect x="242" y="96" width="204" height="122" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Specificity index 90</text>
+    <text x="256" y="144" font-size="10" fill="var(--muted)" font-family="inherit">Market: CNY 620,000</text>
+    <text x="256" y="164" font-size="10" fill="var(--muted)" font-family="inherit">Hierarchy: CNY 560,000</text>
+    <text x="256" y="184" font-size="10" fill="var(--text)" font-family="inherit">Hierarchy is lower; internalize</text>
+    <text x="60" y="250" font-size="10" fill="var(--muted)" font-family="inherit">The two cost lines meet near specificity 75; below 75 use the market, above 75 use hierarchy.</text>
+    <text x="60" y="274" font-size="10" fill="var(--muted)" font-family="inherit">Units: CNY and an index; teaching assumptions, not firm accounts.</text>
+  </svg>
+  <figcaption>Figure 2: Market versus hierarchy cost example. At specificity 50, market costs CNY 380,000 and hierarchy CNY 480,000; at specificity 90, market costs CNY 620,000 and hierarchy CNY 560,000; the threshold is near 75. Units: CNY; numbers are teaching assumptions.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-compare-title fig-contract-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-contract-compare-title">Organizational comparison under low and high specificity</title>
+    <desc id="fig-contract-compare-desc">Low-specificity transactions suit spot markets and short contracts, with low bargaining cost and easy exit; high-specificity transactions suit long contracts or internalization to reduce hold-up and renegotiation. Teaching comparison.</desc>
+    <rect x="14" y="38" width="204" height="160" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Low specificity</text>
+    <text x="28" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">Standard parts, generic software, short services</text>
+    <rect x="32" y="104" width="168" height="34" rx="5" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="44" y="126" font-size="9.8" fill="var(--text)" font-family="inherit">Spot market: flexible, low bargaining cost</text>
+    <rect x="32" y="146" width="168" height="34" rx="5" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="44" y="168" font-size="9.8" fill="var(--text)" font-family="inherit">Short contract: renew by batch</text>
+    <text x="28" y="192" font-size="9.6" fill="var(--muted)" font-family="inherit">Low hold-up risk, easy exit.</text>
+    <rect x="242" y="38" width="204" height="160" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">High specificity</text>
+    <text x="256" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">Custom moulds, dedicated pipelines, specialized skills</text>
+    <rect x="260" y="104" width="168" height="34" rx="5" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="272" y="126" font-size="9.8" fill="var(--text)" font-family="inherit">Long contract: guarantees, arbitration, relational governance</text>
+    <rect x="260" y="146" width="168" height="34" rx="5" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="272" y="168" font-size="9.8" fill="var(--text)" font-family="inherit">Internalization: command, budget, unified ownership</text>
+    <text x="256" y="192" font-size="9.6" fill="var(--muted)" font-family="inherit">High hold-up risk, stronger governance needed.</text>
+    <rect x="14" y="238" width="432" height="58" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="262" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Comparison dimensions: specificity, contract gaps, enforcement cost, bargaining power</text>
+    <text x="28" y="282" font-size="10" fill="var(--muted)" font-family="inherit">No organizational form is cheapest for every transaction; the threshold moves with transaction characteristics.</text>
+  </svg>
+  <figcaption>Figure 3: Organizational comparison under low and high specificity. Low specificity suits spot markets and short contracts; high specificity suits long contracts, guarantees and arbitration, or internalization. Teaching comparison, not advice for a specific firm.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-boundary-title fig-contract-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-contract-boundary-title">Six conditions for the organizational boundary</title>
+    <desc id="fig-contract-boundary-desc">Check whether specificity is measurable, how large contract gaps are, whether courts enforce remedies, whether bargaining power is symmetric, whether reputation can substitute for contracts and whether the organization has goals beyond profit; changing any one alters the market-versus-hierarchy comparison. Teaching boundary list.</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. Is specificity measurable? Subjective specificity lacks a reliable scale</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. How large are contract gaps? Fast technology and demand shifts widen them</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. Can remedies be enforced? Enforcement probability and litigation cost matter</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. Is bargaining power symmetric? Dependence changes the split of quasi-rent</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. Can reputation replace contracts? Only with durable relationships and information</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. Is profit the only goal? Cooperatives and non-profits carry other governance costs</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">All six change the conclusion; the boundary is not a one-time choice and moves with technology and relationships.</text>
+  </svg>
+  <figcaption>Figure 4: Six conditions for the organizational boundary. Specificity measurement, contract gaps, remedy enforcement, bargaining power, reputation and organizational goals change the market-versus-hierarchy comparison. Teaching boundary list, not legal advice.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>&quot;Internalization always saves transaction costs.&quot;</strong> Internalization turns external bargaining into internal command but adds budgeting, personnel, coordination and agency costs. It is cheaper only when specificity is high enough that market hold-up losses exceed bureaucratic costs[1].</p>
+<p><strong>&quot;A damages clause is enforceable because it is written.&quot;</strong> A damages clause is only a paper right; when enforcement probability is low, litigation is costly or the counterparty has no attachable assets, expected recovery can be negative[2].</p>
+<p><strong>&quot;Cooperatives have no transaction costs.&quot;</strong> Cooperatives replace capital control with member control and may reduce some hold-up, but member heterogeneity, decision procedures and financing constraints create another set of governance costs[3].</p>
+<h2>Related</h2>
+<ul>
+<li><strong>ECO-031 Law, Organizations and Comparative Economies</strong>: the parent article provides the overall framework of legal incentives, organizations and institutional comparison; this article turns specific assets, quasi-rent, contract remedies and organizational boundaries into a calculable ledger.</li>
+<li><strong>ECO-034 Information Asymmetry, Signaling and Mechanism Design</strong>: part of the hold-up problem comes from asymmetric information and unobservable investment; mechanism design can supply signals, collateral and staged contracts.</li>
+<li><strong>ECO-041 Tariffs, Quotas and Trade Agreements</strong>: cross-border contracts and trade agreements also face commitment and enforcement problems, but states have no higher court with unified jurisdiction, so remedies differ.</li>
+</ul>
+<h2>Exercises</h2>
+<ol>
+<li>Concept check: what is the difference between quasi-rent and profit? Why does a specific asset expose the investor to hold-up?</li>
+<li>Calculation: a specific investment is worth CNY 1.8 million in the current relationship and CNY 1.2 million in the next-best use, with a 30% renegotiation probability. What are the quasi-rent and expected hold-up loss? If the probability falls to 15%, what is the loss?</li>
+<li>Conditions: a firm plans to internalize a supplier. List three conditions to check first and explain why &quot;high transaction cost&quot; alone does not prove that internalization is better.</li>
+</ol>
+<h2>Sources</h2>
+<ol>
+<li>Oliver E. Williamson, <em>Transaction-Cost Economics: The Governance of Contractual Relations</em>, <em>Journal of Law and Economics</em> 22(2), 1979. <a href="https://doi.org/10.1086/466942">https://doi.org/10.1086/466942</a></li>
+<li>World Bank, <em>World Development Report 2017: Governance and the Law</em>. <a href="https://www.worldbank.org/en/publication/wdr2017">https://www.worldbank.org/en/publication/wdr2017</a></li>
+<li>International Cooperative Alliance, <em>Cooperative Identity, Values &amp; Principles</em>. <a href="https://www.ica.coop/en/cooperatives/cooperative-identity">https://www.ica.coop/en/cooperatives/cooperative-identity</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Compute quasi-rent from value in the current relationship and value in the next-best use, and compute expected hold-up loss from the renegotiation probability.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Write market and hierarchy governance costs as functions of specificity, solve for the organizational boundary and explain choices on either side.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Compute quasi-rent from value in the current relationship and value in the next-best use, and compute expected hold-up loss from the renegotiation probability.</li><li>Write market and hierarchy governance costs as functions of specificity, solve for the organizational boundary and explain choices on either side.</li><li>Compute expected net recovery from damages, enforcement probability and litigation cost, and list six conditions for the organizational boundary.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/law-organizations-and-comparative-economies/">ECO-031 · Law, Organizations and Comparative Economies</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/law-organizations-and-comparative-economies/">ECO-031 · Law, Organizations and Comparative Economies</a> </li><li> <a href="/en/learn/information-asymmetry-signaling-and-mechanism-design/">ECO-034 · Information Asymmetry, Signaling and Mechanism Design</a> </li><li> <a href="/en/learn/tariffs-quotas-trade-agreements-welfare-ledger/">ECO-041 · Tariffs, Quotas and Trade Agreements: The Welfare Ledger of Trade Barriers</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://doi.org/10.1086/466942" rel="noopener noreferrer" target="_blank">Transaction-Cost Economics: The Governance of Contractual Relations</a> <p>Oliver E. Williamson · Journal of Law and Economics 22(2), University of Chicago Press</p> <p>Accessed: 2026-11-24 · License: University of Chicago Press journal article; subscription access; citation only</p> <p>Supports: Used to check that transaction-cost economics places asset specificity, opportunism and governance structures in one framework, and distinguishes market, hybrid and hierarchy governance; the quasi-rent, hold-up probability and cost functions are this article’s teaching exposition.</p> </div><div class="source"> <a href="https://www.worldbank.org/en/publication/wdr2017" rel="noopener noreferrer" target="_blank">World Development Report 2017: Governance and the Law</a> <p>World Bank · World Bank</p> <p>Accessed: 2026-11-24 · License: World Bank publication; cite-only under World Bank terms of use</p> <p>Supports: Used to check that effective governance requires credible commitment, coordination and cooperation, and that the role of law depends on power relations, enforcement capacity and social norms; no country’s judicial efficiency is presented as a statistic.</p> </div><div class="source"> <a href="https://www.ica.coop/en/cooperatives/cooperative-identity" rel="noopener noreferrer" target="_blank">Cooperative Identity, Values &amp; Principles</a> <p>International Cooperative Alliance · International Cooperative Alliance</p> <p>Accessed: 2026-11-24 · License: ICA website; citation only</p> <p>Supports: Used to check that a cooperative is a voluntarily united, jointly owned and democratically controlled enterprise, and that member control differs from capital control; the text does not present cooperatives as having no governance costs.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/contracts-specific-assets-organizational-boundaries/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Defaults, Nudges and Public Services: Effects and Limits of Behavioral Interventions · 51Invest</title><meta name="description" content="Defaults and reminders can raise participation in public services, but effects found in a trial are not the effects that survive scale-up. Put average treatment effect, unit cost, sample size, persistence and spillovers on one ledger to judge whether an intervention is worth scaling or only works in a small setting."><link rel="canonical" href="https://economics.51invest.com/en/learn/defaults-nudges-public-services/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/defaults-nudges-public-services/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/defaults-nudges-public-services/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/defaults-nudges-public-services/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/defaults-nudges-public-services/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Defaults, Nudges and Public Services: Effects and Limits of Behavioral Interventions</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Defaults, Nudges and Public Services: Effects and Limits of Behavioral Interventions</h1> <p class="article-summary">Defaults and reminders can raise participation in public services, but effects found in a trial are not the effects that survive scale-up. Put average treatment effect, unit cost, sample size, persistence and spillovers on one ledger to judge whether an intervention is worth scaling or only works in a small setting.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M20 · 行为实验与公共服务</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>5 min · 10 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p><strong>Choice architecture</strong> is how options are presented: defaults, ordering, wording, deadlines and administrative steps all shape choices even when the options themselves are unchanged. A <strong>default</strong> is the option that applies when a user does not actively choose; a <strong>nudge</strong> changes behavior at low cost without restricting choice[1][2]. A <strong>randomized controlled trial (RCT)</strong> assigns subjects randomly to treatment and control groups to estimate a causal effect; the <strong>average treatment effect (ATE)</strong> is the difference in mean outcomes between treated and control units; a <strong>conditional average treatment effect (CATE)</strong> splits that effect by group, place or context[1][3].</p>
+<p>Evaluating a behavioral intervention is not just about &quot;how much did participation rise&quot;. It also asks who the additional participants are, the cost per additional participant, whether the effect persists, whether it crowds out other behavior, and whether it replicates elsewhere.</p>
+<h2>Intuition</h2>
+<p>People do not calculate every decision. Faced with forms, queues and complex options, many follow the preset, postpone, or simply do nothing. A default changes the consequence of inaction from &quot;not enrolled&quot; to &quot;enrolled&quot;, so participation can rise quickly. A reminder letter brings the task back into attention, so it can help with procrastination.</p>
+<p>But defaults and reminders are not magic. A default may enroll people who are not well served by the program; a reminder may work mainly on those already inclined to act. Small trials often have more motivated staff, more homogeneous subjects and less contamination, so effects frequently shrink at scale. More importantly, participation is an intermediate outcome: public services ultimately care about actual treatment, error rates and cost, not form submissions.</p>
+<h2>Formal expression</h2>
+<p>Let (Y_i(1)) and (Y_i(0)) be the outcomes for unit (i) under treatment and control. The average treatment effect is:</p>
+<p>[
+ATE=E[Y_i(1)-Y_i(0)]
+]</p>
+<p>In a randomized trial, it can be estimated by the difference in group means:</p>
+<p>[
+\widehat{ATE}=\bar Y_T-\bar Y_C
+]</p>
+<p>If the outcome is a participation rate (p), with treated rate (p_1) and control rate (p_0), the participation gain is:</p>
+<p>[
+\Delta p=p_1-p_0
+]</p>
+<p>Cost per additional participant is:</p>
+<p>[
+\text{Cost per extra participant}=\frac{C}{N\Delta p}
+]</p>
+<p>where (C) is total intervention cost and (N) is the number of eligible units. This is closer to the decision-maker&#39;s question than &quot;cost per household&quot;: how many additional participants did the spending buy?</p>
+<p>For a two-arm RCT, to detect an effect (\delta) when the outcome standard deviation is (\sigma), the approximate sample size per arm at conventional significance and power is:</p>
+<p>[
+n_{\text{per arm}}\approx\frac{16\sigma^2}{\delta^2}
+]</p>
+<p>The 16 comes from the approximation (2(1.96+0.84)^2\approx15.7). It is a planning starting point; attrition, clustering and multiple comparisons must be handled separately (author&#39;s assessment).</p>
+<h2>Conditions</h2>
+<ol>
+<li>Randomization must be credible. If subjects can select treatment, or staff know assignment and treat groups differently, estimates are biased[1].</li>
+<li>Outcome measures must be pre-specified. Choosing a favorable metric after the fact is not evidence; participation, completion, actual treatment and error rates can point in different directions[1][3].</li>
+<li>Scale changes implementation quality, subject composition and cost. A trial effect is not automatically the effect after rollout[2].</li>
+<li>Default effects may decay over time and may reverse if the default is removed; persistence needs a separate test[2][3].</li>
+<li>Interventions can spill over: a reminder may mobilize family members, or consume staff time. The unit of analysis must match the spillover range[3].</li>
+<li>Ethics and consent matter. Automatic enrollment, exploiting cognitive biases and targeting vulnerable groups require transparency and an exit option[1][2].</li>
+</ol>
+<h2>Example and calculation</h2>
+<p>Suppose a public service has 10,000 eligible residents. Under opt-in, participation is 40%, or 4,000 people. Under an opt-out default, participation is 80%, or 8,000 people. The additional participants are:</p>
+<p>[
+8{,}000-4{,}000=4{,}000\text{ people}
+]</p>
+<p>If redesign and operating cost is 200,000 CNY, cost per additional participant is:</p>
+<p>[
+\frac{200{,}000}{4{,}000}=50\text{ CNY per person}
+]</p>
+<p>With a reminder letter instead: cost is 5 CNY per household, participation rises 4 percentage points, or (10{,}000\times0.04=400) people. Total cost is 50,000 CNY, and cost per additional participant is (50{,}000\div400=125) CNY per person. These are teaching assumptions, not actual program data.</p>
+<p>For an RCT, baseline participation is 40%, the target effect is 4 percentage points ((\delta=0.04)), and the outcome standard deviation is (\sigma=0.5). Each arm needs about:</p>
+<p>[
+n\approx\frac{16\times0.5^2}{0.04^2}=\frac{4}{0.0016}=2{,}500\text{ people}
+]</p>
+<p>or about 5,000 people across both arms. If a cluster trial runs in 20 service sites with 5,000 households each, total sample size is 100,000 households, but effective sample size falls with intra-cluster correlation; power cannot be read directly from 100,000 (author&#39;s assessment).</p>
+<p>For persistence, suppose the default raises participation from 40% to 80% in year one, a gain of 40 percentage points; three years later it is only 20 percentage points above control, so the effect has halved. For heterogeneity, suppose two equally sized groups show +8 percentage points and 0 points; the average effect is +4 points. Neither number means every group receives the average.</p>
+<h2>Figures</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-mech-title fig-nudge-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-nudge-mech-title">Mechanism of a default option</title>
+    <desc id="fig-nudge-mech-desc">A default sets the consequence of inaction to enrollment and lowers form and decision costs; attention and procrastination shape action; higher participation is then constrained by actual treatment and persistence. Teaching mechanism figure.</desc>
+    <rect x="14" y="46" width="128" height="82" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Default setting</text>
+    <text x="26" y="92" font-size="10" fill="var(--muted)" font-family="inherit">Inaction = enrolled</text>
+    <text x="26" y="110" font-size="10" fill="var(--muted)" font-family="inherit">Simpler forms and steps</text>
+    <rect x="166" y="46" width="128" height="82" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="178" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Lower decision cost</text>
+    <text x="178" y="92" font-size="10" fill="var(--muted)" font-family="inherit">One less choice</text>
+    <text x="178" y="110" font-size="10" fill="var(--muted)" font-family="inherit">One less confirmation</text>
+    <rect x="318" y="46" width="128" height="82" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="330" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Participation rises</text>
+    <text x="330" y="92" font-size="10" fill="var(--muted)" font-family="inherit">40% → 80%</text>
+    <text x="330" y="110" font-size="10" fill="var(--muted)" font-family="inherit">4,000 additional people</text>
+    <line x1="142" y1="87" x2="166" y2="87" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="294" y1="87" x2="318" y2="87" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="156" width="432" height="52" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="180" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">But participation is only an intermediate outcome</text>
+    <text x="28" y="199" font-size="10" fill="var(--muted)" font-family="inherit">Also check actual treatment, error rates, who is enrolled, and reversal after the default is removed.</text>
+    <rect x="14" y="226" width="432" height="50" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="249" font-size="10.5" fill="var(--text)" font-family="inherit">Mechanism chain: the default changes inaction, then participation</text>
+    <text x="28" y="267" font-size="10" fill="var(--muted)" font-family="inherit">It does not persuade everyone; it makes the default path easier to follow.</text>
+  </svg>
+  <figcaption>Figure 1: Mechanism of a default option. The default changes the consequence of inaction from "not enrolled" to "enrolled", lowering decision cost and raising participation from 40% to 80%; participation is still only an intermediate outcome, so treatment, errors and persistence also matter. Teaching mechanism, with assumed numbers.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-example-title fig-nudge-example-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-nudge-example-title">Worked example: opt-out default and reminder letters</title>
+    <desc id="fig-nudge-example-desc">Among 10,000 residents, opt-in enrolls 4,000 and opt-out 8,000, a gain of 4,000; redesign costs 200,000 CNY, or 50 CNY per extra participant; reminder letters cost 5 CNY per household, raise participation 4 points or 400 people, and cost 125 CNY per extra participant. Units: households, people, CNY; teaching example.</desc>
+    <rect x="14" y="34" width="432" height="46" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="53" font-size="10.2" fill="var(--text)" font-family="inherit">Start: 10,000 eligible residents</text>
+    <text x="28" y="70" font-size="9.8" fill="var(--muted)" font-family="inherit">opt-in 40% = 4,000; opt-out 80% = 8,000</text>
+    <rect x="14" y="96" width="204" height="126" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Opt-out default</text>
+    <text x="28" y="144" font-size="10" fill="var(--muted)" font-family="inherit">8,000 enrolled (80%)</text>
+    <text x="28" y="166" font-size="10" fill="var(--muted)" font-family="inherit">4,000 additional people</text>
+    <text x="28" y="188" font-size="10" fill="var(--muted)" font-family="inherit">Cost 200,000 CNY</text>
+    <text x="28" y="208" font-size="10" fill="var(--muted)" font-family="inherit">50 CNY per extra participant</text>
+    <rect x="242" y="96" width="204" height="126" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Reminder letters</text>
+    <text x="256" y="144" font-size="10" fill="var(--muted)" font-family="inherit">Participation +4 percentage points</text>
+    <text x="256" y="166" font-size="10" fill="var(--muted)" font-family="inherit">400 additional people</text>
+    <text x="256" y="188" font-size="10" fill="var(--muted)" font-family="inherit">5 CNY per household, 50,000 CNY total</text>
+    <text x="256" y="208" font-size="10" fill="var(--muted)" font-family="inherit">125 CNY per extra participant</text>
+    <text x="72" y="252" font-size="10" fill="var(--muted)" font-family="inherit">For the same 10,000 people, cost per extra participant is 50 and 125 CNY respectively.</text>
+    <text x="72" y="276" font-size="10" fill="var(--muted)" font-family="inherit">Units: households, people, CNY; teaching assumptions, not program data.</text>
+  </svg>
+  <figcaption>Figure 2: Worked example of an opt-out default and reminder letters. Among 10,000 residents, opt-in enrolls 4,000 and opt-out 8,000, a gain of 4,000; redesign costs 200,000 CNY, or 50 CNY per extra participant; reminder letters cost 5 CNY per household, raise participation 4 points or 400 people, and cost 125 CNY per extra participant. Units: households, people and CNY; numbers are teaching assumptions.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-compare-title fig-nudge-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-nudge-compare-title">Trial, scale-up and three-year effects compared</title>
+    <desc id="fig-nudge-compare-desc">A default effect of +40 percentage points in a small RCT may be +30 after scale-up and +20 after three years. Teaching comparison showing decay with scale and time.</desc>
+    <rect x="14" y="38" width="432" height="48" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="67" font-size="10.5" fill="var(--text)" font-family="inherit">The same default has different effects at different stages</text>
+    <rect x="48" y="118" width="72" height="112" fill="var(--accent)" opacity="0.75"></rect>
+    <rect x="184" y="146" width="72" height="84" fill="var(--accent)" opacity="0.55"></rect>
+    <rect x="320" y="174" width="72" height="56" fill="var(--accent)" opacity="0.35"></rect>
+    <line x1="40" y1="230" x2="420" y2="230" stroke="var(--border)" stroke-width="1"></line>
+    <text x="84" y="109" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">+40pp</text>
+    <text x="220" y="137" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">+30pp</text>
+    <text x="356" y="165" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">+20pp</text>
+    <text x="84" y="250" font-size="9.6" text-anchor="middle" fill="var(--muted)" font-family="inherit">Small RCT</text>
+    <text x="220" y="250" font-size="9.6" text-anchor="middle" fill="var(--muted)" font-family="inherit">After scale-up</text>
+    <text x="356" y="250" font-size="9.6" text-anchor="middle" fill="var(--muted)" font-family="inherit">After three years</text>
+    <rect x="14" y="272" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="296" font-size="10" fill="var(--muted)" font-family="inherit">Decay is not automatically failure; separate implementation quality, subject composition and true persistence.</text>
+  </svg>
+  <figcaption>Figure 3: Trial, scale-up and three-year effects compared. The default effect is +40 percentage points in a small RCT, about +30 after scale-up and +20 after three years; effects decay with scale and time. Teaching comparison, with assumed numbers, not a specific program.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-boundary-title fig-nudge-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-nudge-boundary-title">Six boundaries of behavioral interventions</title>
+    <desc id="fig-nudge-boundary-desc">Check external validity, implementation fidelity, outcome measurement, persistence and spillovers, publication bias, and ethics and consent; any change alters trial effects and scalability. Teaching boundary list.</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. External validity: different subjects, places and service processes may not replicate</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. Implementation fidelity: can staff, training and supervision keep up at scale?</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. Outcome measurement: more enrollment is not better treatment or fewer errors</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. Persistence and spillovers: does the effect decay, crowd out time or mobilize families?</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. Publication bias: publishing only significant results inflates the average effect</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. Ethics and consent: automatic enrollment, bias exploitation and vulnerable groups</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">All six change the conclusion; statistical significance is not grounds for scale-up.</text>
+  </svg>
+  <figcaption>Figure 4: Six boundaries of behavioral interventions. External validity, implementation fidelity, outcome measurement, persistence and spillovers, publication bias, and ethics and consent change trial effects and scalability; teaching boundary list, not an ethics review or policy template.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>&quot;Stronger defaults are always better.&quot;</strong> Defaults can raise participation, but they can also enroll people poorly served by the program, raise exit costs and undermine autonomy. Legitimacy depends on transparency, an exit option and actual service quality[1][2].</p>
+<p><strong>&quot;A significant RCT means it is ready to scale.&quot;</strong> Significance means the effect is unlikely to be zero in this sample and implementation setting. Subject composition, implementation quality and cost change at scale; external validity needs a separate test[2][3].</p>
+<p><strong>&quot;Higher participation is success.&quot;</strong> Participation is an intermediate outcome. If participants do not receive treatment, error rates rise, or costs shift to frontline staff, higher enrollment may only move the workload from the form to the counter (author&#39;s assessment).</p>
+<p><strong>&quot;The published average effect is the true effect.&quot;</strong> Journals are more likely to publish significant results; unpublished null trials bias the visible average upward. Assess publication bias and pre-registration[3].</p>
+<h2>Related</h2>
+<ul>
+<li><strong>ECO-030 Behavior, Experiments and Public Services</strong> provides the framework of behavioral economics, experimental methods and service design; this article turns default effects, cost-effectiveness and scale-up limits into an evaluable ledger.</li>
+<li><strong>RES-015 Research Design and Causal Identification</strong> covers the identification logic, sample size and multiple comparisons that RCTs require.</li>
+<li><strong>RES-023 External Validity and Replication</strong> explains why trial results travel only when subjects, implementation and context are accounted for, not merely when they are significant.</li>
+<li><strong>ECO-038 Externalities, Pigouvian Taxes and Cap-and-Trade</strong> reminds us that behavioral interventions can spill over and crowd out, so evaluation should look at net social effects, not only the participant gain.</li>
+</ul>
+<h2>Exercises</h2>
+<ol>
+<li>Concept check: which part of choice architecture do defaults, reminder letters and conventional advertising change? Why does higher participation alone not prove success?</li>
+<li>Calculation: a program has 20,000 eligible people; opt-in participation is 30% and opt-out 55%; redesign costs 500,000 CNY. What is the additional participation and cost per extra participant? If reminder letters raise participation 3 percentage points at 4 CNY per household, what is cost per extra participant?</li>
+<li>Conditions: an RCT shows reminder letters raise participation 5 percentage points, but the pilot has only 3 service sites and staff are trained directly by the research team. Name three conditions to test before scale-up and explain how each could change the effect.</li>
+</ol>
+<h2>Sources</h2>
+<ol>
+<li>World Bank, <em>World Development Report 2015: Mind, Society, and Behavior</em>. <a href="https://www.worldbank.org/en/publication/wdr2015">https://www.worldbank.org/en/publication/wdr2015</a></li>
+<li>OECD, <em>Behavioural Insights and Public Policy: Lessons from Around the World</em>. <a href="https://doi.org/10.1787/9789264270480-en">https://doi.org/10.1787/9789264270480-en</a></li>
+<li>Behavioural Insights Team, <em>EAST: Four Simple Ways to Apply Behavioural Insights</em>. <a href="https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/">https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Write the average treatment effect and participation gain from treated and control participation rates, and compute cost per additional participant.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Use an effect size, outcome standard deviation and approximation to estimate sample size per arm in a two-arm RCT, and explain why clustering lowers effective sample size.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Write the average treatment effect and participation gain from treated and control participation rates, and compute cost per additional participant.</li><li>Use an effect size, outcome standard deviation and approximation to estimate sample size per arm in a two-arm RCT, and explain why clustering lowers effective sample size.</li><li>Distinguish trial, scale-up and three-year effects, list six boundaries of behavioral interventions, and explain how publication bias inflates the average effect.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/behavior-experiments-and-public-services/">ECO-030 · Behavior, Experiments and Public Services</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/behavior-experiments-and-public-services/">ECO-030 · Behavior, Experiments and Public Services</a> </li><li> <a href="https://research.51invest.com/en/learn/causality-and-identification/">RES-015 · Causality and Identification</a> </li><li> <a href="https://research.51invest.com/en/learn/multiple-testing-and-data-snooping/">RES-023 · Multiple Testing and Data Snooping</a> </li><li> <a href="/en/learn/externalities-pigouvian-taxes-and-cap-and-trade/">ECO-038 · Externalities, Pigouvian Taxes and Cap-and-Trade: When Price Tools Work</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://www.worldbank.org/en/publication/wdr2015" rel="noopener noreferrer" target="_blank">World Development Report 2015: Mind, Society, and Behavior</a> <p>World Bank · World Bank</p> <p>Accessed: 2026-11-23 · License: CC BY 3.0 IGO</p> <p>Supports: Used to check that behavioral economics brings psychological, social and contextual factors into development policy, that defaults, reminders and social norms can change choices, and that effects depend on context and implementation; participation rates, costs and sample sizes are teaching assumptions.</p> </div><div class="source"> <a href="https://doi.org/10.1787/9789264270480-en" rel="noopener noreferrer" target="_blank">Behavioural Insights and Public Policy: Lessons from Around the World</a> <p>OECD · OECD Publishing</p> <p>Accessed: 2026-11-23 · License: OECD publishing terms; citation only</p> <p>Supports: Used to check that behavioral insights in public services require experimental evidence, implementation capacity and ethical review, and that scale-up changes effects and costs; the text cites no specific national program data.</p> </div><div class="source"> <a href="https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/" rel="noopener noreferrer" target="_blank">EAST: Four Simple Ways to Apply Behavioural Insights</a> <p>Behavioural Insights Team · Behavioural Insights Team</p> <p>Accessed: 2026-11-23 · License: CC BY-NC-SA 4.0</p> <p>Supports: Used to check that the EAST framework groups behavioral interventions into Easy, Attractive, Social and Timely, that defaults and reduced steps belong to Easy, and that reminders and timing belong to Timely; the framework is not presented as a universal checklist.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/defaults-nudges-public-services/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>能源转型的系统成本：电网、储能与容量市场 · 巫妖投资</title><meta name="description" content="风电和光伏的度电成本下降，不等于整个电力系统变便宜。间歇性电源需要电网扩容、储能、调峰和容量备用，这些“系统成本”不在组件报价里。本文把 LCOE、系统成本与容量市场放进同一张账，算一个 60% 可再生能源系统的真实成本。"><link rel="canonical" href="https://economics.51invest.com/learn/energy-transition-system-cost-grid-storage-capacity-markets/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/energy-transition-system-cost-grid-storage-capacity-markets/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/energy-transition-system-cost-grid-storage-capacity-markets/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/energy-transition-system-cost-grid-storage-capacity-markets/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/energy-transition-system-cost-grid-storage-capacity-markets/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">能源转型的系统成本：电网、储能与容量市场</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">能源转型的系统成本：电网、储能与容量市场</h1> <p class="article-summary">风电和光伏的度电成本下降，不等于整个电力系统变便宜。间歇性电源需要电网扩容、储能、调峰和容量备用，这些“系统成本”不在组件报价里。本文把 LCOE、系统成本与容量市场放进同一张账，算一个 60% 可再生能源系统的真实成本。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M19 · 环境能源与农业</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 14 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义与直觉</h2>
+<p><strong>LCOE</strong>（平准化度电成本）把一座电站的建设、燃料、运维和退役成本折成每度电的成本，用来比较同类电源。它不包括电网扩容、储能、调峰和备用容量，也不包括系统对间歇性的管理成本。</p>
+<p><strong>系统成本</strong>是让整个电力系统可靠运行所需的全部成本：发电、输配电网、储能、调峰机组、容量备用、辅助服务和弃电。LCOE 低的可再生能源，可能因为系统成本高而让总账单更贵；LCOE 高的调峰机组，可能在系统里不可替代。</p>
+<p><strong>容量市场</strong>是为“可用容量”付费，而不是只为发电量付费。它的理由是能量市场在极端稀缺时价格有上限，无法回收备用机组的固定成本；如果没有容量补偿，系统可能缺少足够的可靠容量[1][2]。</p>
+<h2>系统成本账</h2>
+<p>一个高比例可再生能源系统，至少有五类增量成本：</p>
+<ol>
+<li><strong>电网扩容</strong>：输电线路、变电站和配电网升级，把远方风光送到负荷中心。</li>
+<li><strong>储能</strong>：电池、抽水蓄能或压缩空气，把午间光伏移到晚间。</li>
+<li><strong>调峰与灵活性</strong>：燃气、水电或需求响应，填补风光出力不足的时段。</li>
+<li><strong>容量备用</strong>：极端天气和低概率高峰所需的可靠容量。</li>
+<li><strong>弃电与 curtailment</strong>：电网或储能不足时，被迫放弃的发电。</li>
+</ol>
+<p>这些成本可以互相替代。更多储能可以减少调峰机组，更多电网可以减少弃电，更高需求响应可以减少容量备用。系统成本优化不是选一个“ cheapest” 电源，而是选一组成本最低的组合[3][4]。</p>
+<h2>正式表达与示例</h2>
+<p>假设一个 100 GW 峰值负荷的系统，目标 60% 电量来自风光。风光 LCOE 为 0.25 元/度，燃气调峰 LCOE 为 0.55 元/度。若只看 LCOE，风光占比越高越便宜。</p>
+<p>但系统需要：电网扩容 800 亿元（折 0.03 元/度）、4 小时储能 30 GW（折 0.06 元/度）、调峰机组 20 GW（折 0.04 元/度）、容量备用 15 GW（折 0.02 元/度）。系统成本合计 0.15 元/度，风光组合的总成本从 0.25 升到 0.40 元/度；燃气调峰虽然 LCOE 高，但只承担 20% 电量，系统总成本可能更低。</p>
+<p>这不是说可再生能源不好，而是说比较要在“同等可靠性”下做。若储能成本下降 40%、电网扩容延迟，系统成本会显著下降。以上数字均为教学假设，不是真实电网数据。</p>
+<h2>图表</h2>
+<figure>
+<svg role="img" aria-labelledby="fig-energy-transition-system-cost-grid-storage-capacity-markets-1-title fig-energy-transition-system-cost-grid-storage-capacity-markets-1-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-energy-transition-system-cost-grid-storage-capacity-markets-1-title">电力系统的成本链</title>
+<desc id="fig-energy-transition-system-cost-grid-storage-capacity-markets-1-desc">五步：发电 LCOE、电网扩容、储能、调峰备用、弃电。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">LCOE 之外的五类系统成本</text>
+<text x="24" y="54" font-size="11" text-anchor="start">电网、储能、调峰、备用和弃电共同决定总成本。</text>
+<rect x="14" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="69" y="140" font-size="12" text-anchor="middle">发电 LCOE</text>
+<text x="69" y="184" font-size="12" text-anchor="middle" font-weight="700">0.25 元</text>
+<rect x="136" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="191" y="140" font-size="12" text-anchor="middle">电网</text>
+<text x="191" y="184" font-size="12" text-anchor="middle" font-weight="700">+0.03</text>
+<rect x="258" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="313" y="140" font-size="12" text-anchor="middle">储能</text>
+<text x="313" y="184" font-size="12" text-anchor="middle" font-weight="700">+0.06</text>
+<rect x="380" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="435" y="140" font-size="12" text-anchor="middle">调峰备用</text>
+<text x="435" y="184" font-size="12" text-anchor="middle" font-weight="700">+0.06</text>
+<rect x="502" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="557" y="140" font-size="12" text-anchor="middle">系统总成本</text>
+<text x="557" y="184" font-size="12" text-anchor="middle" font-weight="700">0.40 元</text>
+<line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="247" y1="160" x2="257" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="369" y1="160" x2="379" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="491" y1="160" x2="501" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<text x="24" y="246" font-size="11" text-anchor="start">教学示意，不含统计数据。</text>
+</g>
+</svg>
+<figcaption>图 1：电力系统的成本链；传导机制示意。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-energy-transition-system-cost-grid-storage-capacity-markets-2-title fig-energy-transition-system-cost-grid-storage-capacity-markets-2-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-energy-transition-system-cost-grid-storage-capacity-markets-2-title">电源组合的成本比较</title>
+<desc id="fig-energy-transition-system-cost-grid-storage-capacity-markets-2-desc">三种组合：高可再生、高燃气、混合，比较 LCOE 与含系统成本的总成本。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">三种组合的 LCOE 与系统成本</text>
+<text x="24" y="54" font-size="11" text-anchor="start">风光 60% 总成本 0.40；燃气 80% 总成本 0.47；混合</text>
+<text x="24" y="68" font-size="11" text-anchor="start"> 50% 总成本 0.38。</text>
+<line x1="178" y1="64" x2="178" y2="270" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="20" y="97" font-size="12">高可再生</text>
+<rect x="178" y="78" width="144" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="95" font-size="12" font-weight="700">0.40</text>
+<text x="20" y="145" font-size="12">高燃气</text>
+<rect x="178" y="126" width="169.2" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="143" font-size="12" font-weight="700">0.47</text>
+<text x="20" y="193" font-size="12">混合</text>
+<rect x="178" y="174" width="136.8" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="191" font-size="12" font-weight="700">0.38</text>
+<text x="20" y="241" font-size="12">仅LCOE最低</text>
+<rect x="178" y="222" width="90" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="239" font-size="12" font-weight="700">0.25</text>
+<text x="24" y="292" font-size="11" text-anchor="start">教学假设；单位：元/度。</text>
+</g>
+</svg>
+<figcaption>图 2：3 类电源组合的成本算例；教学假设，单位元/度。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-energy-transition-system-cost-grid-storage-capacity-markets-3-title fig-energy-transition-system-cost-grid-storage-capacity-markets-3-desc" viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-energy-transition-system-cost-grid-storage-capacity-markets-3-title">电力系统的四类风险区</title>
+<desc id="fig-energy-transition-system-cost-grid-storage-capacity-markets-3-desc">两轴：可再生占比高低、灵活性充足度高低；四象限对应低风险、储能约束、调峰约束和高风险。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">可再生占比与灵活性充足度</text>
+<text x="24" y="54" font-size="11" text-anchor="start">高占比、低灵活性是高风险区；高灵活性可支撑更高占比。</text>
+<text x="40" y="68" font-size="11">可再生占比高</text>
+<text x="40" y="286" font-size="11">可再生占比低</text>
+<text x="110" y="314" font-size="11" text-anchor="middle">灵活性低</text>
+<text x="500" y="314" font-size="11" text-anchor="middle">灵活性高</text>
+<rect x="96" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="100" font-size="12" text-anchor="start">高风险</text>
+<text x="108" y="130" font-size="11" text-anchor="start">高占比、低灵活</text>
+<text x="108" y="170" font-size="11" font-weight="700">缺储能/备用</text>
+<rect x="338" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="100" font-size="12" text-anchor="start">储能约束</text>
+<text x="350" y="130" font-size="11" text-anchor="start">高占比、高灵活但储能不足</text>
+<text x="350" y="170" font-size="11" font-weight="700">长时缺口</text>
+<rect x="96" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="214" font-size="12" text-anchor="start">调峰约束</text>
+<text x="108" y="244" font-size="11" text-anchor="start">低占比、低灵活</text>
+<text x="108" y="284" font-size="11" font-weight="700">峰值紧张</text>
+<rect x="338" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="214" font-size="12" text-anchor="start">低风险</text>
+<text x="350" y="244" font-size="11" text-anchor="start">低占比、高灵活</text>
+<text x="350" y="284" font-size="11" font-weight="700">系统充裕</text>
+</g>
+</svg>
+<figcaption>图 3：电力系统的四类风险区；对比分类示意。</figcaption>
+</figure>
+
+<p>图 1 把 LCOE 之外的五类系统成本串成一条链；图 2 比较三种电源组合的 LCOE 与系统成本；图 3 用“可再生占比—灵活性充足度”两轴划出四个系统风险区。图中数字均为教学假设。</p>
+<h2>适用条件与边界</h2>
+<p><strong>边界一：系统成本高度本地化。</strong> 资源禀赋、电网结构、负荷曲线和跨区输电能力不同，同一个技术在不同地区的系统成本差异很大。</p>
+<p><strong>边界二：容量市场可能过度付费。</strong> 如果容量需求预测偏高、拍卖设计不竞争，容量市场会给备用机组过多报酬；反过来，容量不足会导致停电风险。</p>
+<p><strong>边界三：储能不是万能。</strong> 4 小时电池适合日间转移，不适合季节性缺电；长时储能、氢、水电和需求响应各有适用时间尺度。</p>
+<p><strong>边界四：政策工具会改变相对成本。</strong> 碳价、配额和补贴会改变不同电源的竞争力；比较系统成本时要说明政策口径。</p>
+<h2>常见误解</h2>
+<p><strong>误解一：LCOE 低就是系统便宜。</strong> LCOE 只覆盖电站自身，不覆盖电网、储能和备用。</p>
+<p><strong>误解二：可再生能源占比越高越难。</strong> 难度取决于灵活性资源；有足够储能、电网和需求响应时，高占比可以稳定运行。</p>
+<p><strong>误解三：容量市场就是补贴化石燃料。</strong> 容量市场可以中立地购买可靠性，储能、需求响应和可调负荷也能参与；设计不当才会变成化石燃料补贴。</p>
+<h2>深化：系统成本、储能与容量市场</h2>
+<p><strong>平准化度电成本（LCOE）不是系统成本</strong>。LCOE 只算发电环节的资本和运营成本，不含并网、备用、储能和消纳成本。风电和光伏的 LCOE 很低，但出力波动需要备用和储能，系统总成本可能高于基荷电源。</p>
+<p><strong>系统成本</strong>包括：发电、输电、配电、备用容量、储能、调峰和弃电。新能源占比越高，系统成本越从“电量成本”转向“容量成本”和“灵活性成本”。比较电源时，要用系统 LCOE 或“价值/成本比”，而不是单机 LCOE。</p>
+<p><strong>储能的经济性</strong>取决于价差、循环寿命和容量成本。日内价差大、弃电多、辅助服务价格高的市场，储能收益好；价差小、容量成本高的市场，储能只能靠容量补偿。储能不是“免费调峰”，它也有损耗和衰减。</p>
+<p><strong>容量市场</strong>为“可调度容量”付费，防止只有能量市场时投资不足。设计难点是：如何定义可用容量、如何处理新能源的置信容量、如何避免过度支付。能量市场加容量市场，还是单一稀缺定价，取决于市场结构和可靠性偏好。</p>
+<p><strong>电网与审批</strong>是常被忽略的瓶颈。输电线路、并网排队和土地许可决定新能源能否送出；电网投资周期长，若不同步，发电建好了也送不出去。</p>
+<p><strong>常见误用</strong>：用 LCOE 比较可调度性不同的电源；把储能当成无损；忽略电网和消纳成本。能源转型的成本要按系统算，不能按单机算。</p>
+<h2>案例：鸭子曲线与容量市场</h2>
+<p><strong>加州“鸭子曲线”</strong> 是新能源高渗透的典型：中午光伏出力高、净负荷低，傍晚光伏退坡、居民用电上升，净负荷快速爬坡。系统需要更多灵活性资源：储能、需求响应、快速启停机组和跨区输电。只增加光伏不增加灵活性，会导致中午弃电、傍晚缺电。</p>
+<p><strong>德州</strong>采用能量市场加稀缺定价，依赖价格尖峰激励可调度容量；<strong>英国</strong>采用容量市场，为可靠容量付费。两种模式都能维持可靠性，但分配风险和投资激励不同：稀缺定价让用户暴露于高价，容量市场让用户支付固定容量费。</p>
+<p><strong>储能收益</strong>要看三块：能量套利（低买高卖）、辅助服务（调频、备用）、容量补偿。只有能量套利时，价差小的市场很难收回投资；容量市场或长期合同能降低融资成本。</p>
+<p><strong>结论</strong>：能源转型的政策组合要同时处理发电、电网、储能和需求侧，不能用单一 LCOE 或单一市场设计判断成败。</p>
+<h2>系统成本判读清单</h2>
+<p>评估能源转型的系统成本，先把“发电便宜”与“用电可靠”分开，再逐项核对：</p>
+<ol>
+<li><strong>成本口径含不含电网和储能？</strong> 只比较平准化发电成本（LCOE）会漏掉输配、调峰和备用容量；系统成本要看完整资产组合。</li>
+<li><strong>容量价值由谁支付？</strong> 能量市场、容量市场、战略储备和需求响应各承担一部分；没有容量价格，尖峰时段会缺投资。</li>
+<li><strong>储能赚的是哪一段价差？</strong> 日内套利、辅助服务和容量补偿的收益结构不同；只靠峰谷价差的项目对政策变化很敏感。</li>
+<li><strong>电网拥堵发生在哪里？</strong> 输电走廊、并网排队和地方反对决定项目能否落地；资源好不等于送得出去。</li>
+<li><strong>政策工具是否会互相打架？</strong> 补贴、碳价、容量市场和优先调度叠加时，可能过度建设或压低灵活资源收益。</li>
+<li><strong>谁承担转型的分布成本？</strong> 电价、税收、就业和社区补偿的分配，决定项目能否获得持续政治支持。</li>
+</ol>
+<p>系统成本不是一张单价的表，而是一组资产、合约和备用能力的组合账。</p>
+<h2>反证条件</h2>
+<p>系统成本的判断依赖技术成本和电网条件，以下变化会改变结论：</p>
+<ol>
+<li><strong>储能成本下降快于预期。</strong> 若长时储能和需求响应成本大幅下降，系统成本会低于静态估算。</li>
+<li><strong>输电瓶颈持续。</strong> 若并网排队和走廊建设滞后，便宜发电无法送达，系统成本被拥堵抬高。</li>
+<li><strong>容量市场过度支付。</strong> 若容量机制奖励现有机组而非新增灵活资源，成本上升而可靠性不升。</li>
+<li><strong>需求灵活性被低估。</strong> 若工业负荷、电动车和热泵能大规模错峰，尖峰容量需求下降。</li>
+<li><strong>政策叠加。</strong> 若补贴、碳价和优先调度同时鼓励同一种资源，会出现过度建设或价格信号失灵。</li>
+</ol>
+<p>系统成本不是静态的 LCOE 加总，而是技术学习、电网约束、容量机制和需求弹性的联合结果。</p>
+<h2>反证条件（续）</h2>
+<p>还有一项：<strong>系统成本的分摊期。</strong> 若电网和储能投资用 30 年摊销、发电资产用 15 年，比较不同技术的总成本时要统一资本成本和寿命，否则会系统性偏向短寿命资产。</p>
+<h2>练习</h2>
+<ol>
+<li><p>区分 LCOE 与系统成本，各列出三项包含与不包含的内容。</p>
+</li>
+<li><p>风光 LCOE 0.25、系统成本 0.15，总成本是多少？</p>
+</li>
+<li><p>若储能成本下降 40%，把储能项从 0.06 降到 0.036，重算总成本。</p>
+</li>
+<li><p>比较更多储能与更多电网两种方案，各适合什么条件？</p>
+</li>
+<li><p>容量市场在什么情况下必要？什么情况下可能过度付费？</p>
+</li>
+<li><p>4 小时电池与长时储能各适合什么时间尺度？</p>
+</li>
+<li><p>判断：可再生能源占比 60% 一定需要 20 GW 调峰机组吗？写出条件。</p>
+</li>
+<li><p>为什么风电光伏的 LCOE 低，系统成本却可能更高？</p>
+</li>
+<li><p>容量市场要解决什么问题？设计难点在哪？</p>
+</li>
+<li><p>鸭子曲线说明新能源高渗透下系统需要什么资源？</p>
+</li>
+<li><p>能量市场稀缺定价与容量市场在风险分配上有什么不同？</p>
+</li>
+</ol>
+<h2>关联</h2>
+<p>先修 ECO-029；对照 ECO-045；相邻 MKT-040、FIN-036。</p>
+<h2>来源</h2>
+<ol>
+<li>IPCC, <em>Climate Change 2022: Mitigation of Climate Change, Summary for Policymakers</em>. Intergovernmental Panel on Climate Change, accessed 2026-11-23. <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/">https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/</a></li>
+<li>IPCC, <em>AR6 Climate Change 2022: Mitigation of Climate Change, Chapter 13: National and Sub-national Policies and Institutions</em>. Intergovernmental Panel on Climate Change, accessed 2026-11-21. <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-13/">https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-13/</a></li>
+<li>World Bank, <em>State and Trends of Carbon Pricing 2024</em>. World Bank, accessed 2026-11-23. <a href="https://openknowledge.worldbank.org/bitstreams/d14ff4b1-823f-4d70-927c-456449772089/download">https://openknowledge.worldbank.org/bitstreams/d14ff4b1-823f-4d70-927c-456449772089/download</a></li>
+<li>OECD, <em>Effective Carbon Rates 2023: Pricing Greenhouse Gas Emissions through Taxes and Emissions Trading</em>. OECD Publishing, accessed 2026-11-23. <a href="https://www.oecd.org/en/publications/effective-carbon-rates-2023_b84d5b36-en.html">https://www.oecd.org/en/publications/effective-carbon-rates-2023_b84d5b36-en.html</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>区分发电的 LCOE 与电力系统的总成本。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用一张系统成本表拆开电网、储能、调峰和备用。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>区分发电的 LCOE 与电力系统的总成本。</li><li>用一张系统成本表拆开电网、储能、调峰和备用。</li><li>判断容量市场在什么条件下是必要的，什么时候会过度付费。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/environment-energy-and-agriculture/">ECO-029 · 环境能源与农业</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/carbon-prices-allowances-abatement-costs/">ECO-045 · 碳价、配额与减排成本：气候政策的配置账</a> </li><li> <a href="https://markets.51invest.com/learn/environmental-capacity-and-specialised-markets/">MKT-040 · 环境容量与专业市场：碳、水与天气如何定价</a> </li><li> <a href="https://finance.51invest.com/learn/cross-border-payments-and-reserve-currencies/">FIN-036 · 跨境支付与储备货币：国际金融的管道</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/" rel="noopener noreferrer" target="_blank">Climate Change 2022: Mitigation of Climate Change, Summary for Policymakers</a> <p>IPCC · Intergovernmental Panel on Climate Change</p> <p>访问：2026-11-23 · 许可：IPCC copyright; cite-only</p> <p>支持论点：支持可再生能源、系统整合与减排路径的总体判断。</p> </div><div class="source"> <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-13/" rel="noopener noreferrer" target="_blank">AR6 Climate Change 2022: Mitigation of Climate Change, Chapter 13: National and Sub-national Policies and Institutions</a> <p>IPCC · Intergovernmental Panel on Climate Change</p> <p>访问：2026-11-21 · 许可：IPCC report; citation only</p> <p>支持论点：支持电网、储能、灵活性和政策工具的系统成本讨论。</p> </div><div class="source"> <a href="https://openknowledge.worldbank.org/bitstreams/d14ff4b1-823f-4d70-927c-456449772089/download" rel="noopener noreferrer" target="_blank">State and Trends of Carbon Pricing 2024</a> <p>World Bank · World Bank</p> <p>访问：2026-11-23 · 许可：CC BY 3.0 IGO</p> <p>支持论点：支持碳定价、配额与电力部门减排的政策背景。</p> </div><div class="source"> <a href="https://www.oecd.org/en/publications/effective-carbon-rates-2023_b84d5b36-en.html" rel="noopener noreferrer" target="_blank">Effective Carbon Rates 2023: Pricing Greenhouse Gas Emissions through Taxes and Emissions Trading</a> <p>OECD · OECD Publishing</p> <p>访问：2026-11-23 · 许可：OECD publishing terms; citation only</p> <p>支持论点：支持有效碳价、税收与排放交易在电力部门的比较。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/energy-transition-system-cost-grid-storage-capacity-markets/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

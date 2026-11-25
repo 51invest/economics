@@ -1,0 +1,186 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>市场集中度、进入壁垒与平台竞争 · 巫妖投资</title><meta name="description" content="市场集中度描述份额如何分布，进入壁垒描述新对手为何难进来，平台竞争则把网络效应、多归属和转换成本放进同一张图。高集中度不自动等于高价格，低集中度也不自动等于竞争充分；关键是市场边界、进入条件和实际行为。"><link rel="canonical" href="https://economics.51invest.com/learn/market-concentration-entry-barriers-and-platform-competition/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/market-concentration-entry-barriers-and-platform-competition/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/market-concentration-entry-barriers-and-platform-competition/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/market-concentration-entry-barriers-and-platform-competition/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/market-concentration-entry-barriers-and-platform-competition/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">市场集中度、进入壁垒与平台竞争</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">市场集中度、进入壁垒与平台竞争</h1> <p class="article-summary">市场集中度描述份额如何分布，进入壁垒描述新对手为何难进来，平台竞争则把网络效应、多归属和转换成本放进同一张图。高集中度不自动等于高价格，低集中度也不自动等于竞争充分；关键是市场边界、进入条件和实际行为。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M04 · 市场结构</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>5 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>读完这一篇，你能计算 HHI、解释合并前后的集中度变化，并判断“份额高”与“有市场力量”为什么不是同一件事。</p>
+</blockquote>
+<h2>定义</h2>
+<p><strong>市场集中度</strong>（market concentration）衡量少数企业占多大份额，常用 <strong>HHI</strong>（Herfindahl-Hirschman Index）和 <strong>CR4</strong>（前四大企业合计份额）。<strong>进入壁垒</strong>（barriers to entry）是新企业进入市场时遇到的成本、法律或网络障碍[2]。<strong>市场力量</strong>（market power）是企业把价格持续抬高到竞争水平之上、而不失去太多客户的能力。</p>
+<p>平台竞争还要看 <strong>网络效应</strong>（network effects）、<strong>多归属</strong>（multi-homing）和 <strong>转换成本</strong>（switching costs）。用户越多，平台对另一边用户越有价值；商家可以同时上多个平台；用户迁移社交关系、评价和历史数据的成本，会改变进入难度[3]。</p>
+<h2>直觉</h2>
+<p>假设一个市场有四家企业，份额分别是 40%、30%、20%、10%。HHI 是份额百分比的平方和：<code>1600 + 900 + 400 + 100 = 3000</code>。如果四家各占 25%，HHI 是 <code>4 × 625 = 2500</code>。份额越不均匀，HHI 越高。</p>
+<p>但 HHI 高不等于价格一定高。若市场每年有新进入者、客户可低成本切换、进口产能充足，现有企业仍可能不敢提价。反过来，HHI 不高但企业通过默契协调、价格透明或渠道控制维持高价，也可能有市场力量。HHI 是筛查指标，不是结论[1]。</p>
+<h2>正式表达</h2>
+<p>HHI 定义为各企业市场份额百分比的平方和：</p>
+<p><code>HHI = Σ s_i²</code>，其中 <code>s_i</code> 是第 i 家企业的百分比份额，范围 0–10,000。</p>
+<p>一次合并后的 HHI 变化为：</p>
+<p><code>ΔHHI = (s_a + s_b)² − s_a² − s_b² = 2 s_a s_b</code></p>
+<p>其中 <code>s_a</code>、<code>s_b</code> 是合并双方的份额。美国司法部与联邦贸易委员会的横向合并指南把 HHI 低于 1,500 视为低集中，1,500–2,500 为中度集中，高于 2,500 为高度集中；这些阈值是筛查起点，不是违法结论[1]。</p>
+<p>市场力量常用勒纳指数表示：</p>
+<p><code>L = (P − MC) / P</code></p>
+<p><code>L</code> 越大，价格相对边际成本越高。但 <code>L</code> 的测量依赖边际成本估计，会计成本、资本成本和风险调整不同会改变结果。</p>
+<p>进入条件可以写成：</p>
+<p><code>进入收益 = 进入后的可维持利润 − 进入沉没成本 − 进入后的竞争损失</code></p>
+<p>只有当进入者预期收益为正，且有能力克服法律、资本、技术和网络壁垒时，进入才会发生。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>先定义相关市场。</strong> 产品替代、地理范围和客户群不同，HHI 会完全不同；不能用全行业份额代替相关市场[1]。</li>
+<li><strong>份额要能反映竞争约束。</strong> 高份额但低利润、产能过剩或进口开放，可能没有相应市场力量。</li>
+<li><strong>区分集中度与行为。</strong> HHI 是结构指标；价格协调、排他协议、掠夺性定价需要另找证据。</li>
+<li><strong>平台要按多边市场分析。</strong> 只算一边的用户份额，会忽略另一边商家、广告主和开发者；网络效应可能同时提高效率和排斥。</li>
+<li><strong>合并阈值不是判决。</strong> 低 HHI 合并通常较少担忧，高 HHI 合并需要进一步审查，但不等于必然违法[1]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设五家企业份额为 35%、25%、20%、12%、8%（教学假设）：</p>
+<p><code>HHI = 35² + 25² + 20² + 12² + 8² = 1225 + 625 + 400 + 144 + 64 = 2458</code></p>
+<p>属于中度集中。若第二、第四家合并，合并后份额 37%，新 HHI 为：</p>
+<p><code>2458 + 2 × 25 × 12 = 2458 + 600 = 3058</code></p>
+<p>增加 600 点，进入高度集中区间。若合并后价格没有变化、客户切换成本很低、产能充足，监管仍可能认为竞争约束足够；若合并消除了唯一的价格挑战者，则需要更深入审查。</p>
+<p>再考虑平台。一个平台有 60% 的用户份额，但 70% 商家同时入驻两个平台，用户多归属率 40%。这时用户份额高，但商家侧可多归属，平台对商家的提价能力受限；如果平台通过排他协议把多归属降到 15%，同样的用户份额就可能对应更强的市场力量。</p>
+<p>以上数字均为教学假设，不是真实市场数据。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-conc-mech-title fig-conc-mech-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-conc-mech-title">集中度到市场力量的传导链与断点</title>
+    <desc id="fig-conc-mech-desc">份额分布进入 HHI，再经过市场范围、进入难度和行为证据，才可能形成市场力量。箭头表示分析顺序，不是自动因果。图中数字为教学示意：40%、30%、20%、10% 对应 HHI 3000。</desc>
+    <rect x="22" y="48" width="96" height="54" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <rect x="152" y="48" width="96" height="54" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <rect x="282" y="48" width="130" height="54" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="40" y="70" font-size="11" fill="var(--text)" font-family="inherit">份额分布</text>
+    <text x="40" y="88" font-size="10" fill="var(--muted)" font-family="inherit">40/30/20/10%</text>
+    <text x="170" y="70" font-size="11" fill="var(--text)" font-family="inherit">HHI</text>
+    <text x="170" y="88" font-size="10" fill="var(--muted)" font-family="inherit">3000 点</text>
+    <text x="186" y="112" font-size="10" fill="var(--accent)" font-family="inherit" text-anchor="middle">传导机制</text>
+    <text x="300" y="70" font-size="11" fill="var(--text)" font-family="inherit">市场力量？</text>
+    <text x="300" y="88" font-size="10" fill="var(--muted)" font-family="inherit">要看约束</text>
+    <g stroke="var(--accent)" stroke-width="1.8" fill="none">
+      <line x1="118" y1="75" x2="152" y2="75"></line>
+      <line x1="248" y1="75" x2="282" y2="75"></line>
+      <path d="M 264 75 l 8 -8 M 264 75 l 8 8"></path>
+    </g>
+    <rect x="22" y="134" width="390" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="40" y="158" font-size="11" fill="var(--text)" font-family="inherit">断点 1：相关市场定义是否过宽或过窄？</text>
+    <rect x="22" y="184" width="390" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="40" y="208" font-size="11" fill="var(--text)" font-family="inherit">断点 2：进入、进口、多归属是否形成约束？</text>
+    <rect x="22" y="234" width="390" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="40" y="258" font-size="11" fill="var(--text)" font-family="inherit">断点 3：有没有价格协调、排他或掠夺行为证据？</text>
+  </svg>
+  <figcaption>图 1：集中度传导到市场力量的机制链：份额分布 → HHI → 市场范围 → 进入难度 → 行为证据。箭头表示分析顺序，不是自动因果；HHI 3000 为教学示意。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-hhi-title fig-hhi-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-hhi-title">HHI 算例：五家企业份额与合并后变化</title>
+    <desc id="fig-hhi-desc">五家企业份额为 35%、25%、20%、12%、8%，HHI 为 2458。第二、第四家合并后份额 37%，HHI 升至 3058，增加 600 点。柱高按份额绘制，数值为教学假设。</desc>
+    <line x1="70" y1="210" x2="410" y2="210" stroke="var(--border)" stroke-width="1.5"></line>
+    <g fill="var(--accent)" opacity="0.82">
+      <rect x="84" y="76" width="42" height="134" rx="3"></rect>
+      <rect x="146" y="114" width="42" height="96" rx="3"></rect>
+      <rect x="208" y="134" width="42" height="76" rx="3"></rect>
+      <rect x="270" y="164" width="42" height="46" rx="3"></rect>
+      <rect x="332" y="180" width="42" height="30" rx="3"></rect>
+    </g>
+    <g fill="var(--text)" font-size="10.5" font-family="inherit" text-anchor="middle">
+      <text x="105" y="68">35%</text>
+      <text x="167" y="106">25%</text>
+      <text x="229" y="126">20%</text>
+      <text x="291" y="156">12%</text>
+      <text x="353" y="172">8%</text>
+      <text x="105" y="228">A</text>
+      <text x="167" y="228">B</text>
+      <text x="229" y="228">C</text>
+      <text x="291" y="228">D</text>
+      <text x="353" y="228">E</text>
+    </g>
+    <text x="20" y="26" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit">HHI = 1225 + 625 + 400 + 144 + 64 = 2458</text>
+    <text x="20" y="48" font-size="11" fill="var(--gold)" font-family="inherit">B + D 合并：2458 + 2 × 25 × 12 = 3058（+600）</text>
+    <text x="70" y="252" font-size="10" fill="var(--muted)" font-family="inherit">份额（%）；柱高按百分比绘制；教学假设</text>
+  </svg>
+  <figcaption>图 2：HHI 算例。五家份额 35/25/20/12/8% 对应 HHI 2458；B 与 D 合并后升到 3058，增加 600 点。数值为教学假设，不是真实市场数据。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-conc-compare-title fig-conc-compare-desc" viewBox="0 0 440 300" width="100%">
+    <title id="fig-conc-compare-title">高集中度与市场力量的四种对照</title>
+    <desc id="fig-conc-compare-desc">四种组合：高 HHI 高价格、 高 HHI 低价格、低 HHI 高价格、低 HHI 低价格。说明集中度只是结构筛查，价格、进入和切换成本才决定实际约束。表内数字为教学示意。</desc>
+    <rect x="22" y="44" width="396" height="42" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="70" font-size="11" fill="var(--text)" font-family="inherit">高 HHI + 高价格：可能有市场力量，需看进入与行为</text>
+    <rect x="22" y="96" width="396" height="42" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="122" font-size="11" fill="var(--text)" font-family="inherit">高 HHI + 低价格：可能产能过剩、进口开放或竞争激烈</text>
+    <rect x="22" y="148" width="396" height="42" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="174" font-size="11" fill="var(--text)" font-family="inherit">低 HHI + 高价格：可能协调、渠道控制或市场定义过窄</text>
+    <rect x="22" y="200" width="396" height="42" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="226" font-size="11" fill="var(--text)" font-family="inherit">低 HHI + 低价格：竞争充分，但仍要检查质量与创新</text>
+    <text x="22" y="274" font-size="10.5" fill="var(--muted)" font-family="inherit">四个格子是教学示意；HHI 不是价格或福利的直接度量。</text>
+  </svg>
+  <figcaption>图 3：集中度与市场力量的四种对照。高 HHI 可以对应低价格，低 HHI 也可以对应高价格；表内组合为教学示意（4 种情形）。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-platform-boundary-title fig-platform-boundary-desc" viewBox="0 0 440 310" width="100%">
+    <title id="fig-platform-boundary-title">平台竞争分析的适用边界</title>
+    <desc id="fig-platform-boundary-desc">平台分析要先问四件事：市场是否多边、用户是否多归属、网络效应是否可绕过、转换成本是否高。若只算一边份额或忽略多归属，HHI 可能高估或低估市场力量。教学示意，不是法律判断。</desc>
+    <rect x="20" y="42" width="400" height="46" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="70" font-size="11" fill="var(--text)" font-family="inherit">1. 市场是单边还是双边/多边？</text>
+    <rect x="20" y="98" width="400" height="46" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="126" font-size="11" fill="var(--text)" font-family="inherit">2. 用户和商家能否多归属？</text>
+    <rect x="20" y="154" width="400" height="46" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="182" font-size="11" fill="var(--text)" font-family="inherit">3. 网络效应能否被兼容或互操作绕过？</text>
+    <rect x="20" y="210" width="400" height="46" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="36" y="238" font-size="11" fill="var(--text)" font-family="inherit">4. 转换成本是否锁定用户与数据？</text>
+    <text x="20" y="286" font-size="10.5" fill="var(--muted)" font-family="inherit">四项都指向同一结论时，份额才更可能转化为持续市场力量。</text>
+  </svg>
+  <figcaption>图 4：平台竞争的四项适用边界：多边市场、多归属、网络效应可绕过性、转换成本。教学示意（4 个检查点），不构成法律或投资判断。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“HHI 超过 2,500 就一定垄断。”</strong> 2,500 是审查筛查线，不是违法结论；还要看市场定义、进入、行为和效率[1]。</p>
+<p><strong>“份额高就是市场力量。”</strong> 高份额可能来自更低价格、更好产品；若利润薄、客户易切换、进口开放，提价能力有限。</p>
+<p><strong>“平台越大，网络效应越强，所以一定反竞争。”</strong> 网络效应可以提高匹配效率，也可以形成进入壁垒；关键看多归属、互操作和排他行为。</p>
+<p><strong>“合并只看合并后 HHI。”</strong> 还要看 HHI 增量、消除的竞争约束、进入难度和效率抵补；单看水平会漏掉“从 2,400 到 2,600”这类关键变化[1]。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-009 竞争与垄断</strong> 的关系：那一篇讲四种市场结构和定价行为，这一篇把集中度、进入壁垒和平台因素拆开。</li>
+<li>与 <strong>MKT-005 市场微观结构</strong> 的关系：市场份额不等于流动性或交易成本，订单簿结构会改变实际竞争。</li>
+<li>与 <strong>RES-013 回归与计量</strong> 的关系：估计 HHI 对价格的影响，需要处理市场定义、内生进入和同时性。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>四家企业份额为 40%、30%、20%、10%，计算 HHI。若后两家合并，计算新 HHI 和 ΔHHI。</li>
+<li>一个市场 HHI 为 2,800，但进口占消费 35%、客户平均切换成本为 0。说明为什么不能直接推断高价格。</li>
+<li>平台用户份额 55%，商家多归属率 80%；若平台签排他协议把多归属降到 20%，分析市场力量可能如何变化。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>U.S. Department of Justice and Federal Trade Commission, <em>Horizontal Merger Guidelines</em>, Appendix A: Herfindahl-Hirschman Index. <a href="https://www.justice.gov/atr/horizontal-merger-guidelines-08192010">https://www.justice.gov/atr/horizontal-merger-guidelines-08192010</a></li>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 9.1 How Monopolies Form: Barriers to Entry. <a href="https://openstax.org/books/principles-economics-3e/pages/9-1-how-monopolies-form-barriers-to-entry">https://openstax.org/books/principles-economics-3e/pages/9-1-how-monopolies-form-barriers-to-entry</a></li>
+<li>Federal Trade Commission, <em>Competition in Digital Technology Markets: Examining Acquisitions of Nascent or Potential Competitors by Digital Platforms</em>. <a href="https://search.ftc.gov/system/files/documents/public_statements/1545208/p180101_testimony_-_acquisitions_of_nascent_or_potential_competitors_by_digital_platforms.pdf">https://search.ftc.gov/system/files/documents/public_statements/1545208/p180101_testimony_-_acquisitions_of_nascent_or_potential_competitors_by_digital_platforms.pdf</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>计算 HHI 和一次合并带来的 ΔHHI，并把结果放进 1,500/2,500 的筛查区间。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>区分高集中度与市场力量，说明进入条件、多归属和转换成本如何改变约束。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>计算 HHI 和一次合并带来的 ΔHHI，并把结果放进 1,500/2,500 的筛查区间。</li><li>区分高集中度与市场力量，说明进入条件、多归属和转换成本如何改变约束。</li><li>列出平台竞争分析的四项边界，并识别只算一边份额会造成的误判。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/competition-and-monopoly/">ECO-009 · 竞争与垄断</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="https://markets.51invest.com/learn/indices-and-investment-benchmarks/">MKT-005 · 指数与投资基准</a> </li><li> <a href="https://research.51invest.com/learn/linear-regression-introduction/">RES-013 · 线性回归入门</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.justice.gov/atr/horizontal-merger-guidelines-08192010" rel="noopener noreferrer" target="_blank">Horizontal Merger Guidelines, Appendix A: Herfindahl-Hirschman Index</a> <p>U.S. Department of Justice; Federal Trade Commission · U.S. Department of Justice; Federal Trade Commission</p> <p>访问：2026-11-23 · 许可：U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>支持论点：用于核对 HHI 公式、合并前后 HHI 变化，以及 1,500/2,500 的筛查区间；正文明确这些阈值不是违法结论。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/9-1-how-monopolies-form-barriers-to-entry" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 9.1 How Monopolies Form: Barriers to Entry</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对进入壁垒的主要类型，包括法律、资源、技术、规模与网络障碍；不把高份额直接写成垄断。</p> </div><div class="source"> <a href="https://search.ftc.gov/system/files/documents/public_statements/1545208/p180101_testimony_-_acquisitions_of_nascent_or_potential_competitors_by_digital_platforms.pdf" rel="noopener noreferrer" target="_blank">Competition in Digital Technology Markets: Examining Acquisitions of Nascent or Potential Competitors by Digital Platforms</a> <p>Federal Trade Commission · Federal Trade Commission</p> <p>访问：2026-11-23 · 许可：U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>支持论点：用于核对数字平台竞争中的网络效应、多归属、转换成本、排他与收购新生竞争对手的分析框架；不把平台规模本身写成违法。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/market-concentration-entry-barriers-and-platform-competition/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

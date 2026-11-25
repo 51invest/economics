@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>行为干预的规模化与伦理：默认选项何时越界 · 巫妖投资</title><meta name="description" content="默认选项、显著性和社会规范在随机试验里有效，不代表规模复制后仍有效。本文把效应量、覆盖人数、实施成本和伦理边界放进同一张账，说明为什么“默认加入”可以提高参与率，也可能在用户不知情时剥夺选择。"><link rel="canonical" href="https://economics.51invest.com/learn/scaling-behavioural-interventions-defaults-ethics/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/scaling-behavioural-interventions-defaults-ethics/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/scaling-behavioural-interventions-defaults-ethics/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/scaling-behavioural-interventions-defaults-ethics/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/scaling-behavioural-interventions-defaults-ethics/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">行为干预的规模化与伦理：默认选项何时越界</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">行为干预的规模化与伦理：默认选项何时越界</h1> <p class="article-summary">默认选项、显著性和社会规范在随机试验里有效，不代表规模复制后仍有效。本文把效应量、覆盖人数、实施成本和伦理边界放进同一张账，说明为什么“默认加入”可以提高参与率，也可能在用户不知情时剥夺选择。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M20 · 行为实验与公共服务</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 14 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义与直觉</h2>
+<p>**行为干预（behavioural interventions）**指不改变价格或强制规则，而通过选择架构影响行为。常见三类：</p>
+<p><strong>默认选项</strong>：用户不主动选择时，系统预设一个结果，例如自动加入养老金计划、器官捐献或绿色电力。默认利用惰性，效果通常比单纯宣传强。</p>
+<p><strong>显著性</strong>：把关键信息放在更容易看到的位置，例如把逾期费用、糖含量或能耗标签放大。它降低注意成本，不改变事实。</p>
+<p><strong>社会规范</strong>：告诉用户“多数人怎么做”，例如“本社区 80% 的家庭按时缴费”。它利用从众心理，但对不同群体的效果可能相反[1][2]。</p>
+<p>三类干预都不是“操纵”，但都可能被滥用。默认选项在用户不知情时改变结果，显著性可能选择性披露，社会规范可能制造羞耻或错误比较。</p>
+<h2>正式表达：规模化账</h2>
+<p>一个干预的规模化净效果可以写成：<code>Net = N × Δp × V − C</code>。<code>N</code> 是覆盖人数，<code>Δp</code> 是行为改变比例，<code>V</code> 是每次行为改变的价值，<code>C</code> 是实施成本。</p>
+<p>随机试验里的 <code>Δp</code> 通常在 1—5 个百分点；规模扩大后，实施质量、目标群体和基线环境变化，<code>Δp</code> 可能衰减。若 <code>N</code> 很大，小的 <code>Δp</code> 也能产生大效果；若 <code>C</code> 随规模线性上升，净效果可能被成本吃掉。</p>
+<p>假设 100 万人符合自动加入资格，基线参与率 5%，默认把参与率提到 35%，即 <code>Δp=30</code> 个百分点；每人每年新增储蓄 1,000 元，<code>V=1,000</code>，实施成本 2,000 万元。<code>Net = 1,000,000×0.30×1,000 − 20,000,000 = 2.8 亿元</code>。但若规模扩大后 <code>Δp</code> 降到 10 个百分点，净效果只剩 8,000 万元；若用户因不知情而退出，实际效果更低。以上数字均为教学假设。</p>
+<h2>伦理边界</h2>
+<p>默认选项的伦理争议集中在三点：</p>
+<ol>
+<li><strong>知情</strong>：用户是否知道默认存在、知道如何退出？如果退出流程复杂，默认就从“帮助”变成“锁定”。</li>
+<li><strong>目标</strong>：默认指向用户自己也会选的目标，还是指向设计者或供应商的利益？例如自动续费、自动升级套餐，和自动加入养老金，性质不同。</li>
+<li><strong>可逆</strong>：退出是否容易、成本是否低？如果退出要打电话、填表或等待，默认就不是可逆的。</li>
+</ol>
+<p>一个可操作的规则是“<strong>可退出、可理解、可比较</strong>”：默认必须清楚披露，退出步骤不多于加入步骤，用户能比较默认与替代方案的成本。满足这三条，默认更接近“助推”；不满足，就更接近“暗黑模式”。</p>
+<p>社会规范也有边界。告诉用户“多数人都在做”可能有效，但如果信息不准确、或者用于羞辱少数群体，就会伤害信任。显著性同样：只放大对自己有利的信息，而隐藏不利信息，是不完整的披露[3][4]。</p>
+<h2>图表</h2>
+<figure>
+<svg role="img" aria-labelledby="fig-scaling-behavioural-interventions-defaults-ethics-1-title fig-scaling-behavioural-interventions-defaults-ethics-1-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-scaling-behavioural-interventions-defaults-ethics-1-title">行为干预的传导链</title>
+<desc id="fig-scaling-behavioural-interventions-defaults-ethics-1-desc">四步：注意、解释、决策、行为；三类干预在不同步骤切入。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">三类行为干预的共同链</text>
+<text x="24" y="54" font-size="11" text-anchor="start">注意、解释、决策、行为四步；默认跳过决策，显著性和规范改变注意。</text>
+<rect x="14" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="69" y="140" font-size="12" text-anchor="middle">注意</text>
+<text x="69" y="184" font-size="12" text-anchor="middle" font-weight="700">显著性</text>
+<rect x="136" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="191" y="140" font-size="12" text-anchor="middle">解释</text>
+<text x="191" y="184" font-size="12" text-anchor="middle" font-weight="700">社会规范</text>
+<rect x="258" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="313" y="140" font-size="12" text-anchor="middle">决策</text>
+<text x="313" y="184" font-size="12" text-anchor="middle" font-weight="700">默认选项</text>
+<rect x="380" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="435" y="140" font-size="12" text-anchor="middle">行为</text>
+<text x="435" y="184" font-size="12" text-anchor="middle" font-weight="700">参与率</text>
+<line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="247" y1="160" x2="257" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="369" y1="160" x2="379" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<text x="24" y="246" font-size="11" text-anchor="start">教学示意，不含统计数据。</text>
+</g>
+</svg>
+<figcaption>图 1：行为干预的传导链；教学示意。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-scaling-behavioural-interventions-defaults-ethics-2-title fig-scaling-behavioural-interventions-defaults-ethics-2-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-scaling-behavioural-interventions-defaults-ethics-2-title">默认选项的参与率</title>
+<desc id="fig-scaling-behavioural-interventions-defaults-ethics-2-desc">三个场景：基线 5%、试验 35%、规模化 15%。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">基线、试验与规模化的参与率</text>
+<text x="24" y="54" font-size="11" text-anchor="start">基线 5%，试验 35%，规模化 15%；效应量从 30 降到 10</text>
+<text x="24" y="68" font-size="11" text-anchor="start"> 个百分点。</text>
+<line x1="178" y1="64" x2="178" y2="270" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="20" y="97" font-size="12">基线</text>
+<rect x="178" y="78" width="51.42857142857142" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="95" font-size="12" font-weight="700">5%</text>
+<text x="20" y="145" font-size="12">试验</text>
+<rect x="178" y="126" width="360" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="143" font-size="12" font-weight="700">35%</text>
+<text x="20" y="193" font-size="12">规模化</text>
+<rect x="178" y="174" width="154.28571428571428" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="191" font-size="12" font-weight="700">15%</text>
+<text x="20" y="241" font-size="12">效应衰减</text>
+<rect x="178" y="222" width="205.7142857142857" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="239" font-size="12" font-weight="700">20pp</text>
+<text x="24" y="292" font-size="11" text-anchor="start">教学假设；单位：%。</text>
+</g>
+</svg>
+<figcaption>图 2：默认选项的参与率；教学假设，单位 %。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-scaling-behavioural-interventions-defaults-ethics-3-title fig-scaling-behavioural-interventions-defaults-ethics-3-desc" viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-scaling-behavioural-interventions-defaults-ethics-3-title">默认选项的伦理矩阵</title>
+<desc id="fig-scaling-behavioural-interventions-defaults-ethics-3-desc">两轴：知情程度高低、退出成本高低；四象限对应助推、可接受默认、暗黑模式和强制。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">知情程度与退出成本的四个区域</text>
+<text x="24" y="54" font-size="11" text-anchor="start">高知情、低退出成本是助推；低知情、高退出成本是暗黑模式。</text>
+<text x="40" y="68" font-size="11">知情高</text>
+<text x="40" y="286" font-size="11">知情低</text>
+<text x="110" y="314" font-size="11" text-anchor="middle">退出成本低</text>
+<text x="500" y="314" font-size="11" text-anchor="middle">退出成本高</text>
+<rect x="96" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="100" font-size="12" text-anchor="start">助推</text>
+<text x="108" y="130" font-size="11" text-anchor="start">知情、易退出</text>
+<text x="108" y="170" font-size="11" font-weight="700">透明默认</text>
+<rect x="338" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="100" font-size="12" text-anchor="start">可接受</text>
+<text x="350" y="130" font-size="11" text-anchor="start">知情、退出较难</text>
+<text x="350" y="170" font-size="11" font-weight="700">需简化</text>
+<rect x="96" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="214" font-size="12" text-anchor="start">暗黑模式</text>
+<text x="108" y="244" font-size="11" text-anchor="start">不知情、易退出</text>
+<text x="108" y="284" font-size="11" font-weight="700">误导</text>
+<rect x="338" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="214" font-size="12" text-anchor="start">强制</text>
+<text x="350" y="244" font-size="11" text-anchor="start">不知情、难退出</text>
+<text x="350" y="284" font-size="11" font-weight="700">锁定</text>
+</g>
+</svg>
+<figcaption>图 3：默认选项的伦理矩阵；对比分类示意。</figcaption>
+</figure>
+
+<p>图 1 把默认、显著性、社会规范三类干预串成“注意—决策—行为”链；图 2 比较基线、试验和规模化后的参与率；图 3 用“知情程度—退出成本”两轴划出助推、暗黑模式和强制三个区域。图中数字均为教学假设。</p>
+<h2>适用条件与边界</h2>
+<p><strong>边界一：效果异质。</strong> 默认对惰性强的群体有效，对已经有明确偏好的人效果小；社会规范对高度同质社区更有效，对异质城市可能反效果。</p>
+<p><strong>边界二：基线变化。</strong> 如果价格、可达性或信任已经改变，行为干预的效果会被抵消；单靠助推不能替代基础设施。</p>
+<p><strong>边界三：实施质量。</strong> 规模化后，基层执行、培训和数据反馈决定效果；试点里的精心执行不一定能复制。</p>
+<p><strong>边界四：伦理审查。</strong> 涉及健康、金融、器官捐献等高风险领域，需要独立伦理审查和公开评估，而不是由实施部门自行判断。</p>
+<h2>常见误解</h2>
+<p><strong>误解一：助推一定比强制温和。</strong> 默认可以在用户不知情时改变结果，温和与否取决于知情和退出成本。</p>
+<p><strong>误解二：试验有效就能规模化。</strong> 效应量会衰减，成本会上升，目标群体也会变化；规模化需要重新评估。</p>
+<p><strong>误解三：行为干预不需要透明度。</strong> 默认、显著性、社会规范都涉及信息呈现，透明度是合法性的前提。</p>
+<h2>深化：效应量、异质性与伦理边界</h2>
+<p><strong>行为干预的效应量通常很小</strong>。默认选项、提醒短信、简化表格的效应，在实验室里可能显著，放大到全国后常被稀释；发表偏差又会高估平均效应。评估时要看预注册、样本量和置信区间，而不是只看“显著”。</p>
+<p><strong>异质性</strong>决定谁能受益。默认储蓄计划对缺乏金融知识的人有效，对高收入、高教育人群可能无效；提醒短信对忘记预约的人有效，对有意回避的人无效。政策不能假设“所有人都会被同一推动改变”。</p>
+<p><strong>规模化的衰减</strong>来自三个机制：目标人群更复杂、执行质量下降、公众产生免疫。小规模试点由研究者亲自执行，规模化后由基层执行， fidelity 下降；反复推送会让用户忽略。</p>
+<p><strong>伦理边界</strong>：默认选项是否利用惰性？信息框架是否操纵？政府是否有权替个人做选择？透明、可退出、保留选择自由是底线；对弱势群体，还要避免“助推变成剥夺”。</p>
+<p><strong>评估方法</strong>：随机对照试验、阶梯式推广、准实验和长期跟踪。短期行为改变不等于长期福利改善；要看储蓄率、健康结果、债务水平等最终指标。</p>
+<p><strong>常见误用</strong>：把相关性当成因果；把试点效应直接外推；忽略执行成本和公平性。行为工具适合作为“低成本补充”，不能替代结构性政策。</p>
+<h2>案例：自动加入与提醒短信</h2>
+<p><strong>自动加入养老金</strong>是最成功的默认选项之一。美国 401(k) 自动加入把参与率从约 50% 提高到 80% 以上，但默认储蓄率往往偏低，且自动加入者的储蓄率上升慢于主动选择者。设计要配合“自动升级”和“默认投资组合”，否则参与率高、充足率低。</p>
+<p><strong>提醒短信</strong>对预约、缴费和服药有效，但效应随时间衰减；反复提醒会让人产生“狼来了”的免疫。最佳做法是限频、个性化、带明确行动链接，而不是无限推送。</p>
+<p><strong>伦理争议</strong>：默认加入是否侵犯自主？支持者说选择自由仍在（可退出），反对者说惰性被利用。透明、易退出和定期重选是折中。</p>
+<p><strong>评估</strong>：自动加入的长期效果要看储蓄率、资产配置和退休充足率，不只是参与率；短信要看实际行为改变，不只是打开率。</p>
+<h2>行为干预设计清单</h2>
+<p>设计或评估一个“助推”，先回答六项，别把效应量当成唯一标准：</p>
+<ol>
+<li><strong>默认改变了谁的选择成本？</strong> 自动加入降低行动成本，但也可能把不作为包装成同意；要区分便利和同意。</li>
+<li><strong>效应量在多大规模上可复现？</strong> 小样本、单一机构和短期实验的结果，放大到全国后常会缩水；先看预注册复现。</li>
+<li><strong>异质性是否被提前说明？</strong> 对低收入、低识字或高信任群体，同一提示可能效果相反；平均效应会掩盖伤害。</li>
+<li><strong>退出是否足够容易？</strong> 退出摩擦越小，干预越接近“选择架构”；退出困难时，伦理边界从助推转向操纵。</li>
+<li><strong>有没有替代解释？</strong> 提醒、默认和social norm 常同时变化；要用对照组分拆注意力、承诺和从众。</li>
+<li><strong>长期效果和副作用是什么？</strong> 短期参保率上升可能伴随长期不缴费；要跟踪续保、理解和公平感。</li>
+</ol>
+<p>行为干预的质量不在“有没有用”，而在“对谁、多久、以什么代价有用”。</p>
+<h2>反证条件</h2>
+<p>行为干预的结论依赖效应能否持续和退出是否自由：</p>
+<ol>
+<li><strong>默认效应衰减。</strong> 若自动加入的留存优势几年后消失，长期福利增益小于短期读数。</li>
+<li><strong>退出摩擦变大。</strong> 若退出流程复杂、信息不透明，干预从“选择架构”滑向“操纵”，同意的合法性下降。</li>
+<li><strong>异质性伤害被平均掩盖。</strong> 若对低信任或低识字群体效果为负，平均效应为正也不能证明政策可取。</li>
+<li><strong>信任被透支。</strong> 若频繁使用默认和提醒削弱公众对政策的信任，后续干预的成本会上升。</li>
+<li><strong>替代解释未排除。</strong> 若提醒、承诺和从众同时变化，无法判断哪个机制起作用，复制就会失败。</li>
+</ol>
+<p>行为干预的质量不是平均效应大小，而是长期、异质、退出自由和信任四个维度的合计数。</p>
+<h2>反证条件（续）</h2>
+<p>还有一项：<strong>干预是否可被识别为“官方推荐”。</strong> 若默认或提醒被公众视为政府背书，效果可能来自合法性而非认知偏差，复制到低信任环境会失效。</p>
+<p><strong>实践含义：</strong> 评价助推要看长期留存、退出自由和对低信任群体的影响；平均效应为正，不足以证明政策正当。</p>
+<p><strong>数据附注：</strong> 报告 attrition、效应量和置信区间；只报显著结果，会高估干预效果。</p>
+<h2>练习</h2>
+<ol>
+<li><p>区分默认选项、显著性和社会规范，各举一个公共服务例子。</p>
+</li>
+<li><p>100 万人、Δp=20 个百分点、V=800 元、C=1,500 万元，计算净效果。</p>
+</li>
+<li><p>若规模化后 Δp 降到 8 个百分点，重算上题净效果。</p>
+</li>
+<li><p>默认选项满足“可退出、可理解、可比较”各意味着什么？</p>
+</li>
+<li><p>社会规范在什么群体可能反效果？举一个例子。</p>
+</li>
+<li><p>比较助推与强制：各在什么条件下更合适？</p>
+</li>
+<li><p>判断：一个自动续费默认是助推还是暗黑模式？写出三个判断条件。</p>
+</li>
+<li><p>为什么行为干预从试点放大到全国后效应会衰减？</p>
+</li>
+<li><p>默认选项的伦理底线是什么？</p>
+</li>
+<li><p>自动加入养老金为什么可能“参与率高、充足率低”？</p>
+</li>
+<li><p>提醒短信的效应为什么会随时间衰减？</p>
+</li>
+</ol>
+<h2>关联</h2>
+<p>先修 ECO-030；对照 ECO-046；相邻 RES-031、FIN-039。</p>
+<h2>来源</h2>
+<ol>
+<li>Sendhil Mullainathan and Richard H. Thaler, <em>Behavioral Economics</em>. Econlib, The Concise Encyclopedia of Economics, accessed 2026-10-30. <a href="https://www.econlib.org/library/Enc/BehavioralEconomics.html">https://www.econlib.org/library/Enc/BehavioralEconomics.html</a></li>
+<li>World Bank, <em>World Development Report 2015: Mind, Society, and Behavior</em>. World Bank, accessed 2026-11-21. <a href="https://documents1.worldbank.org/curated/en/645741468339541646/txt/World-development-report-2015-mind-society-and-behavior.txt">https://documents1.worldbank.org/curated/en/645741468339541646/txt/World-development-report-2015-mind-society-and-behavior.txt</a></li>
+<li>OECD, <em>Behavioural Insights and Public Policy: Lessons from Around the World</em>. OECD Publishing, accessed 2026-11-21. <a href="https://www.oecd.org/en/publications/behavioural-insights-and-public-policy_9789264270480-en.html">https://www.oecd.org/en/publications/behavioural-insights-and-public-policy_9789264270480-en.html</a></li>
+<li>Behavioural Insights Team, <em>EAST: Four Simple Ways to Apply Behavioural Insights</em>. Behavioural Insights Team, accessed 2026-11-23. <a href="https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/">https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>区分默认选项、显著性和社会规范三类干预。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用效应量×覆盖人数×成本估算规模化后的净效果。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>区分默认选项、显著性和社会规范三类干预。</li><li>用效应量×覆盖人数×成本估算规模化后的净效果。</li><li>判断默认选项在什么条件下越界，如何设计可退出机制。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/behavior-experiments-and-public-services/">ECO-030 · 行为实验与公共服务</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/defaults-nudges-public-services/">ECO-046 · 默认选项、助推与公共服务：行为干预的效应与边界</a> </li><li> <a href="https://research.51invest.com/learn/regression-and-econometrics-coefficients-standard-errors-causality/">RES-031 · 回归与计量：系数、标准误与因果</a> </li><li> <a href="https://finance.51invest.com/learn/disclosure-suitability-and-conflicts-of-interest/">FIN-039 · 披露、适当性与利益冲突：监管的三本账</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.econlib.org/library/Enc/BehavioralEconomics.html" rel="noopener noreferrer" target="_blank">Behavioral Economics</a> <p>Sendhil Mullainathan and Richard H. Thaler · Econlib, The Concise Encyclopedia of Economics</p> <p>访问：2026-10-30 · 许可：Liberty Fund / Online Library of Liberty: cited and linked only, site terms not confirmed</p> <p>支持论点：支持有限理性、启发式与默认选项的行为经济学框架。</p> </div><div class="source"> <a href="https://documents1.worldbank.org/curated/en/645741468339541646/txt/World-development-report-2015-mind-society-and-behavior.txt" rel="noopener noreferrer" target="_blank">World Development Report 2015: Mind, Society, and Behavior</a> <p>World Bank · World Bank</p> <p>访问：2026-11-21 · 许可：CC BY 3.0 IGO</p> <p>支持论点：支持发展政策中的行为洞察、社会规范与规模化的证据边界。</p> </div><div class="source"> <a href="https://www.oecd.org/en/publications/behavioural-insights-and-public-policy_9789264270480-en.html" rel="noopener noreferrer" target="_blank">Behavioural Insights and Public Policy: Lessons from Around the World</a> <p>OECD · OECD Publishing</p> <p>访问：2026-11-21 · 许可：OECD publishing terms; citation only</p> <p>支持论点：支持行为洞察在公共服务中的政策设计与实施经验。</p> </div><div class="source"> <a href="https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/" rel="noopener noreferrer" target="_blank">EAST: Four Simple Ways to Apply Behavioural Insights</a> <p>Behavioural Insights Team · Behavioural Insights Team</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：支持 EAST 框架（容易、吸引、社会、及时）与低成本干预。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/scaling-behavioural-interventions-defaults-ethics/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

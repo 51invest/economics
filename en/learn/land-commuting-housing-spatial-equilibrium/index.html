@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Land, Commuting and Housing: The Price Ledger of Spatial Equilibrium · 51Invest</title><meta name="description" content="Urban space is priced by three ledgers at once: access to jobs, the cost of commuting and congestion, and how housing supply responds to price. Put rent gradients, commuting costs and supply elasticity together, and the same urban growth can show up as higher prices in one city and longer commutes and lower density in another."><link rel="canonical" href="https://economics.51invest.com/en/learn/land-commuting-housing-spatial-equilibrium/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/land-commuting-housing-spatial-equilibrium/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/land-commuting-housing-spatial-equilibrium/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/land-commuting-housing-spatial-equilibrium/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/land-commuting-housing-spatial-equilibrium/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Land, Commuting and Housing: The Price Ledger of Spatial Equilibrium</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Land, Commuting and Housing: The Price Ledger of Spatial Equilibrium</h1> <p class="article-summary">Urban space is priced by three ledgers at once: access to jobs, the cost of commuting and congestion, and how housing supply responds to price. Put rent gradients, commuting costs and supply elasticity together, and the same urban growth can show up as higher prices in one city and longer commutes and lower density in another.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M18 · 城市区域与空间</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>6 min · 10 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p><strong>Spatial equilibrium</strong> describes how households and firms choose locations, housing size and travel modes so that the net utility of different sites is roughly equalised: land near employment centres commands higher rent, while distant sites carry higher commuting costs. A <strong>rent gradient</strong> is the rate at which land price falls with distance from the centre; <strong>commuting cost</strong> includes money, time and congestion discomfort; <strong>housing supply elasticity</strong> measures how much new housing appears when prices rise[1][2].</p>
+<p>This article does not ask how large a city &quot;should&quot; be. It separates a calculable price ledger: how accessibility is capitalised into land rent, how commuting cost limits city radius, and how supply and land-use regulation decide whether new population shows up in prices or in space. Because countries define urban and rural areas differently, comparisons of urban population shares should start by checking the definition[3].</p>
+<h2>Intuition</h2>
+<p>Picture a city with one employment centre. Households near the centre can walk to work but pay high rent; households at the edge pay lower rent but spend more time and money commuting. If the edge is cheap enough, households move out; if commuting is too expensive, they prefer to pay higher rent near the centre. Their choices bring the rent saved and the extra commute into balance. That balance determines the city radius and the shape of the rent curve.</p>
+<p>When population grows, the same land must hold more households. If housing can be built quickly, new demand mostly becomes more housing and prices rise modestly. If land and construction are constrained, new demand mostly becomes higher rents and more intense bidding. The same growth can therefore appear as &quot;higher housing prices&quot; in one place and &quot;outward expansion plus longer commutes&quot; in another. This is not a moral judgement; it is a difference in supply conditions.</p>
+<h2>Formal expression</h2>
+<p>In a monocentric city with commuting cost rising linearly with distance, land rent can be written as:</p>
+<p>[
+R(d)=R_0-gd
+]</p>
+<p>where (R_0) is central rent, (g) is the fall in rent per kilometre, and (d) is distance from the centre. If edge rent is (R_{\text{edge}}), the city radius is:</p>
+<p>[
+d^*=\frac{R_0-R_{\text{edge}}}{g}
+]</p>
+<p>For a household at distance (d), the daily round-trip money cost is:</p>
+<p>[
+C(d)=2cd
+]</p>
+<p>where (c) is the one-way cost per kilometre and the factor 2 accounts for the return trip. A fuller version adds time value (vT(d)), where (T(d)) is one-way travel time and (v) is the value of time per hour. Combining the parts gives net locational cost:</p>
+<p>[
+\text{NetCost}(d)=R(d)h+2cd+2vT(d)
+]</p>
+<p>where (h) is housing floor area. Spatial equilibrium means this net cost tends to equalise across sites that households consider comparable.</p>
+<p>Housing supply responds to price according to:</p>
+<p>[
+\frac{\Delta H}{H}=\varepsilon_s\frac{\Delta P}{P}
+]</p>
+<p>where (\varepsilon_s) is housing supply elasticity. When demand rises by (\Delta H_d), a low elasticity requires a large price increase to produce a small supply response; a high elasticity produces more housing for a smaller price increase.</p>
+<p>Road congestion can be approximated by average travel time rising with vehicle volume:</p>
+<p>[
+T(N)=t_0+\kappa N
+]</p>
+<p>where (t_0) is free-flow time, (\kappa) is the average delay added per vehicle, and (N) is the number of vehicles. If each entering vehicle raises everyone else&#39;s travel time, marginal social cost exceeds average cost. That gap is the congestion externality and the analytical case for congestion pricing (author&#39;s derivation).</p>
+<h2>Conditions</h2>
+<ol>
+<li>The monocentric model assumes most jobs are downtown. Polycentric employment, suburban jobs and remote work change commute directions and rent gradients (author&#39;s assessment).</li>
+<li>Rent gradients require tradable land and enforceable property rights. When land is allocated administratively, rationing rules replace the price signal[1].</li>
+<li>Commuting cost is more than fuel: reliability, transfers, walking safety and crowding discomfort all matter. Counting only out-of-pocket cash understates the cost[2].</li>
+<li>Housing supply elasticity depends on land availability, floor-area limits, construction lags, infrastructure and community opposition. It can differ by neighbourhood within the same city[2].</li>
+<li>Transport investment changes accessibility, and therefore rents and migration. New road capacity can induce additional driving; it should not be judged only by short-run congestion relief (author&#39;s assessment).</li>
+<li>Spatial equilibrium does not guarantee distributive fairness. Low-income households may end up with longer commutes or worse housing; an efficiency gain is not automatically an equity gain[1][2].</li>
+</ol>
+<h2>Example and calculation</h2>
+<p>Take a teaching city with central rent (R_0=4{,}000) CNY per square metre, edge rent (R_{\text{edge}}=500), and a rent gradient (g=350) CNY per kilometre. The city radius is:</p>
+<p>[
+d^*=\frac{4{,}000-500}{350}=10\text{ km}
+]</p>
+<p>For a 50-square-metre dwelling, central land value is (4{,}000\times50=200{,}000) CNY and edge land value is (500\times50=25{,}000) CNY, a difference of 175,000 CNY. This is land value only, excluding construction and locational amenities.</p>
+<p>For commuting, assume a one-way money cost of 2 CNY per kilometre. A 10-kilometre round trip costs (2\times2\times10=40) CNY per day. If the one-way trip takes 30 minutes and time is valued at 40 CNY per hour, the round-trip time cost is (2\times0.5\times40=40) CNY per day, for a total of 80 CNY per day. These are teaching assumptions, not observed commuting statistics for a particular city.</p>
+<p>For housing supply, suppose the city has 10,000 households and demand rises 5%, or 500 households. With supply elasticity (\varepsilon_s=0.5), price must rise 10% to bring forth 5% more housing. With (\varepsilon_s=0.2), price must rise 25%:</p>
+<table>
+<thead>
+<tr>
+<th>Supply elasticity</th>
+<th align="right">Demand increase</th>
+<th align="right">Required price increase</th>
+<th align="right">New housing</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0.5</td>
+<td align="right">5%</td>
+<td align="right">10%</td>
+<td align="right">5%</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td align="right">5%</td>
+<td align="right">25%</td>
+<td align="right">5%</td>
+</tr>
+</tbody></table>
+<p>For congestion, assume free-flow one-way travel time is 20 minutes and each additional vehicle adds 0.0008 minutes of average delay. At 30,000 vehicles, one-way time is about 44 minutes; at 50,000 vehicles, it is about 60 minutes. More vehicles mean longer average commutes, but each driver bears only their own time, not the delay imposed on others (author&#39;s linear congestion calculation).</p>
+<h2>Figures</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-mech-title fig-spatial-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-spatial-mech-title">Mechanism chain from rent gradient to commuting cost</title>
+    <desc id="fig-spatial-mech-desc">An employment centre draws households closer and raises central rent; moving outward lowers rent but raises commuting cost; the two offset at spatial equilibrium, and city radius equals the rent difference divided by the rent gradient. Teaching mechanism figure.</desc>
+    <rect x="14" y="44" width="132" height="78" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Employment centre</text>
+    <text x="26" y="90" font-size="10" fill="var(--muted)" font-family="inherit">Jobs and amenities cluster</text>
+    <text x="26" y="108" font-size="10" fill="var(--muted)" font-family="inherit">Households want to be close</text>
+    <rect x="164" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="176" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Rent rises</text>
+    <text x="176" y="90" font-size="10" fill="var(--muted)" font-family="inherit">Centre: CNY 4,000/m²</text>
+    <text x="176" y="108" font-size="10" fill="var(--muted)" font-family="inherit">Edge: CNY 500/m²</text>
+    <rect x="314" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="326" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Commuting cost rises</text>
+    <text x="326" y="90" font-size="10" fill="var(--muted)" font-family="inherit">Longer distance, more fare and time</text>
+    <text x="326" y="108" font-size="10" fill="var(--muted)" font-family="inherit">Edge households bear more</text>
+    <line x1="146" y1="83" x2="164" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="296" y1="83" x2="314" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="148" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="172" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Spatial equilibrium: net locational cost tends to equalise</text>
+    <text x="28" y="192" font-size="10" fill="var(--muted)" font-family="inherit">Rent saved = extra commuting and time cost; households choose locations between them.</text>
+    <rect x="14" y="220" width="432" height="54" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="244" font-size="10.5" fill="var(--text)" font-family="inherit">City radius: centre-edge rent difference ÷ rent gradient</text>
+    <text x="28" y="264" font-size="10" fill="var(--muted)" font-family="inherit">(4,000 − 500) ÷ 350 = 10 km; teaching assumptions, not city statistics.</text>
+  </svg>
+  <figcaption>Figure 1: Mechanism chain from rent gradient to commuting cost. An employment centre raises central rent; moving outward lowers rent but raises commuting cost. The two offset at spatial equilibrium, and city radius equals the rent difference divided by the gradient. Teaching mechanism, with assumed numbers.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-example-title fig-spatial-example-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-spatial-example-title">Housing supply elasticity worked example</title>
+    <desc id="fig-spatial-example-desc">A city of 10,000 households faces a 5% demand increase of 500 households; supply elasticity 0.5 requires a 10% price rise and elasticity 0.2 requires 25%, while both deliver 5% more housing. Units: households and percent; teaching example.</desc>
+    <rect x="14" y="40" width="432" height="42" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="66" font-size="10.5" fill="var(--text)" font-family="inherit">Start: 10,000 households; demand +5% = 500 households</text>
+    <rect x="14" y="96" width="204" height="122" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">High elasticity ε = 0.5</text>
+    <text x="28" y="144" font-size="10" fill="var(--muted)" font-family="inherit">Price +10%</text>
+    <text x="28" y="164" font-size="10" fill="var(--muted)" font-family="inherit">New housing 5% = 500 units</text>
+    <text x="28" y="184" font-size="10" fill="var(--muted)" font-family="inherit">More supply absorbs demand</text>
+    <rect x="242" y="96" width="204" height="122" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Low elasticity ε = 0.2</text>
+    <text x="256" y="144" font-size="10" fill="var(--muted)" font-family="inherit">Price +25%</text>
+    <text x="256" y="164" font-size="10" fill="var(--muted)" font-family="inherit">New housing still 5% = 500 units</text>
+    <text x="256" y="184" font-size="10" fill="var(--muted)" font-family="inherit">More demand goes into price</text>
+    <text x="70" y="250" font-size="10" fill="var(--muted)" font-family="inherit">The same 500-unit demand increase produces a 15-percentage-point difference in price growth.</text>
+    <text x="70" y="274" font-size="10" fill="var(--muted)" font-family="inherit">Units: households and percent; teaching assumptions, not city data.</text>
+  </svg>
+  <figcaption>Figure 2: Housing supply elasticity worked example. A city of 10,000 households faces a 5% demand increase of 500 households; elasticity 0.5 requires a 10% price rise, elasticity 0.2 requires 25%, and both deliver 5% more housing. Units: households and percent; numbers are teaching assumptions.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-compare-title fig-spatial-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-spatial-compare-title">Price response under high and low housing supply elasticity</title>
+    <desc id="fig-spatial-compare-desc">With the same 5% increase in housing demand, a high-elasticity city raises prices 10% and a low-elasticity city 25%; high elasticity accommodates growth, while low elasticity turns more of it into rent. Teaching comparison.</desc>
+    <rect x="14" y="38" width="204" height="160" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">High supply elasticity</text>
+    <text x="28" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">Looser land and construction constraints</text>
+    <line x1="34" y1="168" x2="188" y2="168" stroke="var(--border)" stroke-width="1"></line>
+    <rect x="48" y="124" width="34" height="44" fill="var(--accent)" opacity="0.7"></rect>
+    <rect x="112" y="108" width="34" height="60" fill="var(--accent)" opacity="0.45"></rect>
+    <text x="65" y="116" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">Demand</text>
+    <text x="129" y="100" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">Supply</text>
+    <text x="28" y="190" font-size="10" fill="var(--muted)" font-family="inherit">Price +10%; new supply +5%</text>
+    <rect x="242" y="38" width="204" height="160" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">Low supply elasticity</text>
+    <text x="256" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">Tighter land and construction constraints</text>
+    <line x1="262" y1="168" x2="416" y2="168" stroke="var(--border)" stroke-width="1"></line>
+    <rect x="276" y="112" width="34" height="56" fill="var(--accent)" opacity="0.7"></rect>
+    <rect x="340" y="90" width="34" height="78" fill="var(--accent)" opacity="0.45"></rect>
+    <text x="293" y="104" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">Demand</text>
+    <text x="357" y="82" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">Supply</text>
+    <text x="256" y="190" font-size="10" fill="var(--muted)" font-family="inherit">Price +25%; new supply still +5%</text>
+    <rect x="14" y="238" width="432" height="58" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="262" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">The same demand shock splits differently between price and space</text>
+    <text x="28" y="282" font-size="10" fill="var(--muted)" font-family="inherit">Low elasticity is not automatic evidence of market failure; it may reflect infrastructure, ecology or community constraints.</text>
+  </svg>
+  <figcaption>Figure 3: Price response under high and low housing supply elasticity. With the same 5% demand increase, a high-elasticity city raises prices 10% and a low-elasticity city 25%; high elasticity accommodates growth, while low elasticity turns more of it into rent. Teaching comparison, with assumed numbers.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-boundary-title fig-spatial-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-spatial-boundary-title">Six boundaries of the urban spatial model</title>
+    <desc id="fig-spatial-boundary-desc">Check whether employment is truly monocentric, land rights are enforceable, commuting cost is complete, housing supply is constrained, transport investment induces new trips, and distributional effects are ignored; any change alters rent and supply conclusions. Teaching boundary list.</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. Is employment really monocentric? Polycentres and remote work change commutes</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. Are land rights enforceable? Rationing rules can replace the price signal</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. Is commuting cost complete? Time, transfers, reliability and crowding all count</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. What constrains housing supply? Land, floor limits, construction lags and opposition</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. Can transport investment induce new trips? Short-run relief is not long-run relief</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. Are distributional effects visible? Low-income households may bear longer commutes</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">All six change the conclusion; average rent and average commute are not a complete welfare test.</text>
+  </svg>
+  <figcaption>Figure 4: Six boundaries of the urban spatial model. Employment structure, land rights, commuting-cost measurement, housing constraints, induced transport demand and distributional effects change the conclusion; this is a teaching boundary list, not a planning brief.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>&quot;High rent is just speculation.&quot;</strong> Rent first reflects accessibility and scarcity: land near jobs, schools, transport and public services attracts higher bids. Speculation can amplify swings, but it does not explain the basic shape of a rent gradient[1].</p>
+<p><strong>&quot;Higher supply elasticity is always better.&quot;</strong> High elasticity can damp price growth, but it can also push the city toward low-density expansion and raise infrastructure, commuting and ecological costs[2]. Elasticity is a condition, not a single objective.</p>
+<p><strong>&quot;Congestion charging is just another tax.&quot;</strong> The external cost comes from the time each vehicle adds to everyone else&#39;s trip; charging puts that cost back into the travel decision. How the revenue is used and whether public transport is available determines the equity outcome (author&#39;s assessment).</p>
+<h2>Related</h2>
+<ul>
+<li><strong>ECO-028 Cities, Regions and Space</strong> provides the broad framework of agglomeration, housing, transport and regional structure; this article turns rent gradients, commuting costs and supply elasticity into a calculable price ledger.</li>
+<li><strong>ECO-029 Environment, Energy and Agriculture</strong> connects land expansion and commuting to environmental external costs; spatial policy cannot look at housing prices alone.</li>
+<li><strong>ECO-038 Externalities, Pigouvian Taxes and Cap-and-Trade</strong> treats congestion pricing as an urban case of externality pricing, where road capacity and alternatives shape the result.</li>
+</ul>
+<h2>Exercises</h2>
+<ol>
+<li>Concept check: what three parts make up net locational cost in spatial equilibrium? Why can central rent be high and edge rent low while households still choose both locations?</li>
+<li>Calculation: with central rent 5,000 CNY per square metre, edge rent 600, a rent gradient of 400 CNY per kilometre, what is the city radius? If the gradient falls to 300, what is the new radius?</li>
+<li>Conditions: a city faces a 5% increase in housing demand, but land supply is tightly regulated and construction takes years. How might prices, commuting distance and low-density expansion change? Name two conditions that must be assessed together.</li>
+</ol>
+<h2>Sources</h2>
+<ol>
+<li>World Bank, <em>World Development Report 2009: Reshaping Economic Geography</em>. <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/730971468139804495">https://documents.worldbank.org/en/publication/documents-reports/documentdetail/730971468139804495</a></li>
+<li>OECD, <em>Rethinking Urban Sprawl: Moving Towards Sustainable Cities</em>. <a href="https://doi.org/10.1787/9789264189881-en">https://doi.org/10.1787/9789264189881-en</a></li>
+<li>Our World in Data, <em>Urbanization</em>. <a href="https://ourworldindata.org/urbanization">https://ourworldindata.org/urbanization</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Compute city radius from central rent, edge rent and the rent gradient, and convert one-way distance into a round-trip commuting cost.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Use housing supply elasticity and a demand increase to compute the price rise, and explain why the same new demand looks different in high- and low-elasticity cities.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Compute city radius from central rent, edge rent and the rent gradient, and convert one-way distance into a round-trip commuting cost.</li><li>Use housing supply elasticity and a demand increase to compute the price rise, and explain why the same new demand looks different in high- and low-elasticity cities.</li><li>Use a linear congestion function and spatial-equilibrium conditions to list six boundaries, and explain why distributional effects are not captured by average commuting time.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/cities-regions-and-space/">ECO-028 · Cities, Regions and Space</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/cities-regions-and-space/">ECO-028 · Cities, Regions and Space</a> </li><li> <a href="/en/learn/environment-energy-and-agriculture/">ECO-029 · Environment, Energy and Agriculture</a> </li><li> <a href="/en/learn/externalities-pigouvian-taxes-and-cap-and-trade/">ECO-038 · Externalities, Pigouvian Taxes and Cap-and-Trade: When Price Tools Work</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/730971468139804495" rel="noopener noreferrer" target="_blank">World Development Report 2009: Reshaping Economic Geography</a> <p>World Bank · World Bank</p> <p>Accessed: 2026-11-23 · License: World Bank publication; cite-only under World Bank terms of use</p> <p>Supports: Used to check that economic geography is the spatial concentration and dispersion of production, people and living standards, and that accessibility, urban expansion and land institutions shape spatial outcomes; no city rent or commuting figure is presented as a statistic.</p> </div><div class="source"> <a href="https://doi.org/10.1787/9789264189881-en" rel="noopener noreferrer" target="_blank">Rethinking Urban Sprawl: Moving Towards Sustainable Cities</a> <p>OECD · OECD Publishing</p> <p>Accessed: 2026-11-23 · License: OECD publishing terms; citation only</p> <p>Supports: Used to check that urban sprawl involves density, land consumption, transport and environmental costs, and that policy assessment must consider housing, commuting and infrastructure together; the text cites no specific city statistic.</p> </div><div class="source"> <a href="https://ourworldindata.org/urbanization" rel="noopener noreferrer" target="_blank">Urbanization</a> <p>Our World in Data · Our World in Data</p> <p>Accessed: 2026-11-23 · License: CC BY 4.0</p> <p>Supports: Used to check that urbanization is the rising share of population living in urban areas, that countries define urban areas differently, and that comparisons should check definitions first; no global urbanization rate is presented as an observed value for a specific year.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/land-commuting-housing-spatial-equilibrium/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

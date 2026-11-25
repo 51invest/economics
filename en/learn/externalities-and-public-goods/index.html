@@ -1,0 +1,290 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Externalities and Public Goods · 51Invest</title><meta name="description" content="Externalities are effects on third parties that prices do not reflect, while public goods are nonexcludable and non-rival; both make market provision diverge from the efficient quantity."><link rel="canonical" href="https://economics.51invest.com/en/learn/externalities-and-public-goods/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/externalities-and-public-goods/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/externalities-and-public-goods/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/externalities-and-public-goods/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/externalities-and-public-goods/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Externalities and Public Goods</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Externalities and Public Goods</h1> <p class="article-summary">Externalities are effects on third parties that prices do not reflect, while public goods are nonexcludable and non-rival; both make market provision diverge from the efficient quantity.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M06 · 福利与市场失灵</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>6 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p><strong>Externalities</strong> are effects of a market exchange on third parties that prices do not reflect. A <strong>negative externality</strong> harms third parties; a <strong>positive externality</strong> benefits them [1]. A <strong>public good</strong> is both nonexcludable and non-rival: no one can prevent others from using it, and one person&#39;s use does not reduce what others can use [3].</p>
+<h2>Intuition</h2>
+<p>A factory discharges wastewater, and downstream residents bear the cleanup cost. The factory counts materials and wages but not the pollution, so output exceeds the social optimum [1]. Vaccination lowers others&#39; infection risk, a positive externality, so the market may provide too little. A flood barrier cannot protect only those who pay, and protecting one more household costs almost nothing. If each household decides alone and hopes others will pay, the barrier may never be built even when total benefits exceed the cost.</p>
+<h2>Formal expression</h2>
+<p>Let Q be output, P price, PMC private marginal cost, and MEC marginal external cost. Then <code>SMC = PMC + MEC</code>. Market equilibrium satisfies <code>P = PMC</code>, while the optimum satisfies <code>P = SMC</code>; with a negative externality the market produces too much [1]. A Pigouvian tax equal to MEC at the optimal quantity aligns private and social costs [2]. The efficiency condition for a public good is <code>Σ MRS_i = MC</code>: the sum of users&#39; marginal rates of substitution equals marginal cost. With voluntary payment, free riding pushes provision lower [3].</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>The effect does not pass through prices.</strong> Effects transmitted through input prices or wages are pecuniary externalities, not the externalities discussed here.</li>
+<li><strong>External cost can be measured.</strong> A Pigouvian tax needs an estimate of marginal external damage; error moves the tax from the optimum.</li>
+<li><strong>Both public-good properties hold.</strong> Nonexcludable but rival goods are common resources [3]; non-rival but excludable goods are closer to club goods.</li>
+<li><strong>Distribution and administrative cost are set aside.</strong> The efficiency condition does not say who bears the pollution or the tax.</li>
+<li><strong>The comparison is static.</strong> Curves are stable; accumulated pollution or technical change alters the optimal tax.</li>
+</ol>
+<p>Scope note: the Samuelson condition ΣMRS=MC, the phrases “monetary externality” and “club good”, and the precise rule that a Pigouvian tax should equal the marginal external cost at the optimum are all outside the supports of the three OpenStax sources registered here (the 13.3 review found no term “club good”, and 12.3 does not state the precise rule). They are presented as textbook convention and model assumptions: a methodological statement, not a conclusion quoted from the registered sources.</p>
+<h2>Worked example</h2>
+<p>All numbers are teaching assumptions. Demand is <code>P = 110 - Q</code>, <code>PMC = 20 + Q</code> (yuan per unit), and each unit imposes <code>MEC = 30</code> yuan, so <code>SMC = 50 + Q</code>.</p>
+<p>Market: <code>110 - Q = 20 + Q</code> gives Q = 45 and P = 65 yuan.
+Social optimum: <code>110 - Q = 50 + Q</code> gives Q = 30 and P = 80 yuan.</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th align="right">Output Q</th>
+<th align="right">Price P</th>
+<th align="right">Private cost PMC</th>
+<th align="right">Social cost SMC</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Market equilibrium</td>
+<td align="right">45</td>
+<td align="right">65</td>
+<td align="right">65</td>
+<td align="right">95</td>
+</tr>
+<tr>
+<td>Social optimum</td>
+<td align="right">30</td>
+<td align="right">80</td>
+<td align="right">50</td>
+<td align="right">80</td>
+</tr>
+</tbody></table>
+<p>The market overproduces by 45 − 30 = 15 units. The gap between SMC and demand widens linearly from 0 yuan at Q = 30 to 30 yuan at Q = 45, so the deadweight loss is the triangle between the two curves, <code>0.5 × 30 × 15 = 225</code> yuan. A tax of 30 yuan per unit, equal to MEC, raises effective private marginal cost to <code>50 + Q</code>, the same as SMC; consumers pay 80 yuan, producers net 80 − 30 = 50 yuan per unit, and output returns to 30 units. Public-good example: a flood barrier costs 100 yuan and two households each value it at 60 yuan. Total value, 120 yuan, exceeds the cost, so building it is efficient [3], but neither household gains by paying alone (100 yuan of cost for 60 yuan of benefit).</p>
+<h2>Figure</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-externality-title fig-externality-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-externality-title">Market equilibrium and social optimum under a negative externality</title>
+    <desc id="fig-externality-desc">Axes: output and price. Demand slopes down; private and social marginal cost slope up. Market equilibrium: 45 units at 65 yuan; social optimum: 30 at 80; shaded triangle: deadweight loss 225 yuan.</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="60" y1="230" x2="400" y2="230"></line>
+      <line x1="60" y1="230" x2="60" y2="40"></line>
+    </g>
+    <line x1="60" y1="40" x2="380" y2="144" stroke="var(--accent)" stroke-width="2.2"></line>
+    <line x1="60" y1="195" x2="380" y2="92" stroke="var(--muted)" stroke-width="2"></line>
+    <line x1="60" y1="144" x2="380" y2="40" stroke="var(--gold)" stroke-width="2.2"></line>
+    <polygon points="220,92 300,118 300,66" fill="var(--accent)" opacity="0.18"></polygon>
+    <g stroke="var(--border)" stroke-width="1" stroke-dasharray="3 3">
+      <line x1="300" y1="118" x2="300" y2="230"></line>
+      <line x1="220" y1="92" x2="220" y2="230"></line>
+      <line x1="60" y1="118" x2="300" y2="118"></line>
+      <line x1="60" y1="92" x2="220" y2="92"></line>
+    </g>
+    <circle cx="300" cy="118" r="4" fill="var(--accent)"></circle>
+    <circle cx="220" cy="92" r="4" fill="var(--gold)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="352" y="248">output Q</text>
+      <text x="16" y="38">price P</text>
+      <text x="40" y="250">0</text>
+      <text x="212" y="248">30</text>
+      <text x="292" y="248">45</text>
+      <text x="38" y="121">65</text>
+      <text x="38" y="96">80</text>
+      <text x="38" y="70">95</text>
+      <text x="330" y="162" fill="var(--accent)">demand D</text>
+      <text x="350" y="114" fill="var(--muted)">PMC</text>
+      <text x="338" y="48" fill="var(--gold)">SMC</text>
+      <text x="281" y="97" fill="var(--accent)">DWL</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: market output 45 exceeds the social optimum 30; the shaded area is a deadweight loss of 225 yuan. A teaching model, not real industry data.; sample: the article’s own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>Any side effect is an externality.</strong> Lost profit from competition is price transmission, not an externality.</p>
+<p><strong>Public goods are whatever government provides.</strong> The test is the two properties, not the provider.</p>
+<p><strong>Positive externalities cause overproduction.</strong> They cause underprovision; negative externalities cause overproduction.</p>
+<p><strong>A Pigouvian tax bans pollution.</strong> It makes firms bear the external cost and usually leaves some output.</p>
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>externality</h3>
+<p><strong>Definition</strong>: An externality is an uncompensated cost or unpaid benefit imposed on parties outside a transaction, either negative or positive.</p>
+<p><strong>Mechanism</strong>: It makes private costs and benefits diverge from social ones, so output is too high or low; Pigouvian taxes, subsidies, property rights and regulation can internalise it.</p>
+<p><strong>Example</strong>: For example, factory pollution imposes health costs on downstream residents not reflected in steel prices, so output tends to be too high.</p>
+<p><strong>Boundary</strong>: Externalities require causal impact and welfare relevance; identifying affected parties, measuring costs and avoiding double counting are hard, and Coasean solutions need clear rights and low transaction costs.</p>
+<h3>public goods</h3>
+<p><strong>Definition</strong>: Public goods are non-excludable and non-rival: one person&#39;s use does not exclude others or reduce what they can use.</p>
+<p><strong>Mechanism</strong>: Non-excludability invites free riding and underprovision; public provision, tax finance, club goods and co-production are common responses.</p>
+<p><strong>Example</strong>: For example, street lighting illuminates the whole street and cannot be limited to payers, so voluntary funding often falls short.</p>
+<p><strong>Boundary</strong>: Pure public goods are rare and many are quasi-public; exclusion technology, congestion and community boundaries change publicness, and public provision is not automatically efficient.</p>
+<h3>common-pool resources</h3>
+<p><strong>Definition</strong>: Common-pool resources are non-excludable but rival, such as fisheries, pastures and groundwater, and overuse can exhaust them.</p>
+<p><strong>Mechanism</strong>: Each user bears only part of the cost, so collective action tends toward over-extraction; quotas, property rights, community rules and pricing can restrain use.</p>
+<p><strong>Example</strong>: For example, each boat in an open fishery catches a little more until the stock collapses, with short-term gain and shared long-term cost.</p>
+<p><strong>Boundary</strong>: Tragedy of the commons is not inevitable; Ostrom-style community governance can work with clear boundaries, cheap monitoring and participatory rules, though scale and mobility weaken it.</p>
+<h3>efficiency and equity</h3>
+<p><strong>Definition</strong>: Efficiency means achieving goals with minimal waste under given resources and technology; equity concerns how benefits, opportunities and burdens are distributed.</p>
+<p><strong>Mechanism</strong>: Efficiency gains can widen inequality and redistribution can weaken incentives; compensation principles, opportunity fairness and maximin criteria offer different standards.</p>
+<p><strong>Example</strong>: For example, removing a subsidy may allocate resources better yet sharply raise low-income households&#39; burdens, requiring offsetting transfers.</p>
+<p><strong>Boundary</strong>: There is no unique aggregation of efficiency and equity; welfare functions, rights and procedural justice carry different weights, so a Pareto improvement is not automatically acceptable.</p>
+<h3>general equilibrium and social choice</h3>
+<p><strong>Definition</strong>: General equilibrium studies how prices and quantities clear across many markets at once; social choice studies how individual preferences aggregate into collective decisions.</p>
+<p><strong>Mechanism</strong>: General equilibrium stresses budgets, relative prices and cross-market feedback; social choice uses Arrow conditions, voting rules and welfare functions to aggregate preferences.</p>
+<p><strong>Example</strong>: For example, an energy price rise affects transport, food and wages at once, so partial-market analysis misses the chain.</p>
+<p><strong>Boundary</strong>: General equilibrium relies on strong assumptions such as perfect competition, no externalities and stable preferences; social choice faces disputes over intensity, capability and procedural legitimacy.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Prerequisites: supply, demand, and equilibrium (ECO-005); competition and monopoly (ECO-009).</li>
+<li>Related: production and cost (ECO-008); GDP and national accounts (ECO-011).</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">Externalities and Public Goods: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">Externalities and Public Goods — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities and Public Goods: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">are effects on…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">are effects on</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">third parties</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">that prices do</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">not reflect…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">are effects of</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">a market exchang</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">e on third…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Worked example</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">All numbers are</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">teaching assumpti…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">All numbers are</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">teaching assumpt</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">ions.</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 2: Externalities and Public Goods — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">Externalities and Public Goods: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities and Public Goods: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities are effects</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">of a market exchange on</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">third parties that prices</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">do not reflect.…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Any side effect is an</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">externality.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 3: Externalities and Public Goods — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">Externalities and Public Goods: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities and Public Goods: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities are</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">effects on third…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Externalities are</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">effects of a market…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Any side effect is an</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">externality.…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: Externalities and Public Goods — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> Which is closest to a public good? A. A toll road; B. National defense; C. Bread; D. Pay television.</li>
+<li><strong>Calculation.</strong> If <code>MEC</code> rises to 40 yuan with demand and <code>PMC</code> unchanged, what are the social optimum quantity and price?</li>
+<li><strong>Conditions.</strong> Why should the Pigouvian tax equal MEC at the optimal quantity rather than at the market quantity?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>B. Defense is hard to exclude and one more user does not reduce protection. The other options are excludable, so they are not pure public goods (toll roads and pay TV are closer to club goods).</li>
+<li><code>SMC = 60 + Q</code>; <code>110 - Q = 60 + Q</code> gives Q = 25 units and P = 85 yuan. MEC is a constant 40 yuan per unit, so the Pigouvian tax should be 40 yuan per unit.</li>
+<li>The policy target is the social optimum, so the tax is set at the optimal quantity; if external cost varies with output, taxing the market-quantity value yields a different equilibrium.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<ol>
+<li>Greenlaw, Shapiro, and MacDonald. <em>Principles of Economics 3e</em>, &quot;12.1 The Economics of Pollution.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution">https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution</a> (accessed 2026-10-30)</li>
+<li>Greenlaw, Shapiro, and MacDonald. <em>Principles of Economics 3e</em>, &quot;12.3 Market-Oriented Environmental Tools.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools">https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools</a> (accessed 2026-10-30)</li>
+<li>Greenlaw, Shapiro, and MacDonald. <em>Principles of Economics 3e</em>, &quot;13.3 Public Goods.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods">https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods</a> (accessed 2026-10-30)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Identify one externality and one public good and explain why private provision falls short of the efficient quantity</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Compare taxation, regulation and property rights, stating where each applies and where it fails</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Identify one externality and one public good and explain why private provision falls short of the efficient quantity</li><li>Compare taxation, regulation and property rights, stating where each applies and where it fails</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/supply-demand-equilibrium/">ECO-005 · Supply, Demand and Equilibrium</a> </li><li> <a href="/en/learn/competition-and-monopoly/">ECO-009 · Competition and Monopoly</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/production-and-cost/">ECO-008 · Production and Cost</a> </li><li> <a href="/en/learn/gdp-and-national-accounts/">ECO-011 · GDP and National Accounts</a> </li><li> <a href="/en/learn/supply-demand-equilibrium/">ECO-005 · Supply, Demand and Equilibrium</a> </li><li> <a href="/en/learn/competition-and-monopoly/">ECO-009 · Competition and Monopoly</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 12.1 The Economics of Pollution</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: A negative externality is the effect of a market exchange on a third party outside the exchange; social cost equals private cost plus external pollution cost; the market produces more than the socially optimal quantity.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 12.3 Market-Oriented Environmental Tools</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Pollution charges and marketable permits are market-oriented tools that let firms choose lower-cost ways to reduce emissions.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 13.3 Public Goods</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Public goods are nonexcludable and non-rival; free riding leads to underprovision, with national defense and broadcast as common examples.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/externalities-and-public-goods/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

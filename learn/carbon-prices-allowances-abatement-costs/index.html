@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>碳价、配额与减排成本：气候政策的配置账 · 巫妖投资</title><meta name="description" content="碳税把排放价格固定下来，排放交易把排放总量固定下来；两者都让企业先做最便宜的减排，但配额如何分配、收入如何使用、排放是否泄漏，决定了同一碳价背后的成本由谁承担。气候政策的核心不是选一个工具名称，而是把边际减排成本、覆盖范围和配套政策对齐。"><link rel="canonical" href="https://economics.51invest.com/learn/carbon-prices-allowances-abatement-costs/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/carbon-prices-allowances-abatement-costs/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/carbon-prices-allowances-abatement-costs/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/carbon-prices-allowances-abatement-costs/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/carbon-prices-allowances-abatement-costs/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">碳价、配额与减排成本：气候政策的配置账</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">碳价、配额与减排成本：气候政策的配置账</h1> <p class="article-summary">碳税把排放价格固定下来，排放交易把排放总量固定下来；两者都让企业先做最便宜的减排，但配额如何分配、收入如何使用、排放是否泄漏，决定了同一碳价背后的成本由谁承担。气候政策的核心不是选一个工具名称，而是把边际减排成本、覆盖范围和配套政策对齐。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M19 · 环境能源与农业</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>5 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>碳定价</strong>（carbon pricing）是给温室气体排放加上价格的政策，主要包括<strong>碳税</strong>（carbon tax）和<strong>排放交易体系</strong>（emissions trading system, ETS）。碳税按每吨二氧化碳当量设定税率；排放交易设定可排放总量（cap），并发放或拍卖<strong>配额</strong>（allowance），配额价格由供需形成[1][2]。<strong>边际减排成本</strong>（marginal abatement cost, MAC）是再多减一吨排放所需的增量成本；<strong>免费分配</strong>（free allocation）把配额按历史排放或产出基准发给受管制企业，<strong>拍卖</strong>（auction）则把配额卖给出价方[1][2]。</p>
+<p>本文的重点不是“碳税好还是排放交易好”，而是三种账要分开：减排成本账、财政收入账、排放泄漏账。工具名称相同，配额分配和收入用途不同，最终谁付钱、谁受益也会不同。</p>
+<h2>直觉</h2>
+<p>一家企业有多条减排路径：先换节能灯，成本低；再改工艺，成本中等；最后停产或搬迁，成本很高。碳价上升时，企业会从最便宜的路径开始做，直到“再减一吨的成本”等于碳价。这个顺序就是边际减排成本曲线。</p>
+<p>碳税告诉企业“每吨排放要付多少钱”，但排放总量随经济活动和减排反应变化；排放交易告诉企业“总共只许排这么多”，但配额价格会随经济波动。前者价格确定、数量不确定，后者数量确定、价格不确定。若把税率设在与目标上限对应的配额价格上，两者在理想条件下可以等价；现实中覆盖范围、免费配额、抵消机制和市场监管会让它们不同（本文判断）。</p>
+<h2>正式表达</h2>
+<p>设基线排放为 (E_0)，减排量为 (R)，剩余排放为 (E=E_0-R)。在线性简化下，边际减排成本曲线为：</p>
+<p>[
+MAC(R)=a+bR,\qquad b&gt;0
+]</p>
+<p>碳税为 (t) 时，企业减排到：</p>
+<p>[
+a+bR=t\quad\Rightarrow\quad R=\frac{t-a}{b}
+]</p>
+<p>排放交易设定上限 (R=\bar R) 时，配额价格为：</p>
+<p>[
+p=MAC(\bar R)=a+b\bar R
+]</p>
+<p>总减排成本是边际成本曲线下方、从 0 到 (R) 的面积：</p>
+<p>[
+C(R)=aR+\tfrac{1}{2}bR^2
+]</p>
+<p>若配额全部拍卖，政府收入为：</p>
+<p>[
+G=p(E_0-R)
+]</p>
+<p>若配额免费分配，同样的稀缺租金转移给配额持有人，而不是进入公共预算；边际减排激励仍然来自配额价格，但平均成本与分配结果不同[1][2]。</p>
+<p>排放泄漏可以写成：</p>
+<p>[
+L=\frac{\Delta E_{\text{import}}}{\Delta E_{\text{domestic}}}
+]</p>
+<p>其中 (\Delta E_{\text{import}}) 是因国内减排而转移到进口品的排放，(\Delta E_{\text{domestic}}) 是国内减排量。国内减排 10 Mt、进口增加 2 Mt 时，全球净减排只有 8 Mt，泄漏率为 20%（本文按简化口径计算）。</p>
+<h2>适用条件</h2>
+<ol>
+<li>碳价只覆盖部分排放源时，未被覆盖的部门可能扩张；覆盖率和抵扣规则决定实际减排效果[1][3]。</li>
+<li>排放交易需要可靠的监测、报告与核查（MRV），否则配额总量和实际排放会对不上[1]。</li>
+<li>碳税和排放交易都可以设价格上限、价格下限或成本控制机制；这些设计改变价格与数量的不确定性[2][3]。</li>
+<li>免费配额可能保护受贸易暴露企业，但也会把稀缺租金给现有排放者；拍卖收入可用于减税、补贴或公共投资[1][2]。</li>
+<li>碳价不能单独承担全部减排任务：标准、公共投资、研发支持和电网规划可以降低减排成本、解决锁定效应和网络瓶颈[3]。</li>
+<li>分配后果要看家庭能源支出、地区就业和收入使用；统一碳价不等于统一负担（本文判断）。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>设某教学经济体基线排放 (E_0=100) Mt/年，边际减排成本曲线 (MAC(R)=20+4R)，其中 (R) 以 Mt 计，成本以元/吨计。</p>
+<p>若碳税 (t=60) 元/吨，企业减排到：</p>
+<p>[
+20+4R=60\quad\Rightarrow\quad R=10\text{ Mt}
+]</p>
+<p>剩余排放 90 Mt，拍卖收入为 (60\times90=5{,}400) 百万元（54 亿元）；减排成本为：</p>
+<p>[
+20\times10+\tfrac{1}{2}\times4\times10^2=200+200=400\text{ 百万元}
+]</p>
+<p>即 4 亿元。以上为教学假设，不是实际经济体数据。</p>
+<p>若排放上限设为 10 Mt，配额价格为 (20+4\times10=60) 元/吨，结果与 60 元碳税相同；若上限收紧到 15 Mt，配额价格升到 (20+4\times15=80) 元/吨，拍卖收入为 (80\times85=6{,}800) 百万元（68 亿元），减排成本为：</p>
+<p>[
+20\times15+\tfrac{1}{2}\times4\times15^2=300+450=750\text{ 百万元}
+]</p>
+<p>即 7.5 亿元。若配额免费发放，企业仍面对 80 元/吨的机会成本，但 6,800 百万元租金留在配额持有人手中；若拍卖并把收入用于降低其他扭曲性税收，净财政成本要另算。</p>
+<p>若国内减排 10 Mt、因产业转移使进口品排放增加 2 Mt，则全球净减排 8 Mt，泄漏率 (2\div10=0.20)，即 20%。这提醒读者：只报国内排放下降，不等于全球排放等幅下降。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-carbon-mech-title fig-carbon-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-carbon-mech-title">边际减排成本曲线如何决定减排量</title>
+    <desc id="fig-carbon-mech-desc">边际减排成本随减排量上升；碳税 60 元/吨对应 10 Mt 减排，排放上限 15 Mt 对应 80 元/吨配额价格。企业先做低成本减排，再逐步进入高成本项目。教学机制图。</desc>
+    <line x1="70" y1="238" x2="420" y2="238" stroke="var(--border)" stroke-width="1.2"></line>
+    <line x1="70" y1="238" x2="70" y2="52" stroke="var(--border)" stroke-width="1.2"></line>
+    <polyline points="70,188 150,164 230,140 310,116 390,92" fill="none" stroke="var(--accent)" stroke-width="2.5"></polyline>
+    <line x1="70" y1="140" x2="420" y2="140" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5 4"></line>
+    <line x1="230" y1="140" x2="230" y2="238" stroke="var(--muted)" stroke-width="1" stroke-dasharray="5 4"></line>
+    <text x="70" y="42" font-size="10" fill="var(--muted)" font-family="inherit">成本（元/吨）</text>
+    <text x="370" y="262" font-size="10" fill="var(--muted)" font-family="inherit">减排量 R（Mt）</text>
+    <text x="236" y="132" font-size="10" fill="var(--text)" font-family="inherit">60 元 → 10 Mt</text>
+    <text x="318" y="106" font-size="10" fill="var(--text)" font-family="inherit">80 元 → 15 Mt</text>
+    <text x="76" y="158" font-size="9.5" fill="var(--muted)" font-family="inherit">低成本项目先做</text>
+    <text x="240" y="208" font-size="9.5" fill="var(--muted)" font-family="inherit">减排越多，边际成本越高</text>
+    <rect x="298" y="42" width="148" height="50" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="310" y="62" font-size="9.5" fill="var(--text)" font-family="inherit">MAC(R)=20+4R</text>
+    <text x="310" y="80" font-size="9" fill="var(--muted)" font-family="inherit">教学函数，R 以 Mt 计</text>
+  </svg>
+  <figcaption>图 1：边际减排成本曲线如何决定减排量。企业从低成本项目开始减排，碳税 60 元/吨对应 10 Mt，排放上限 15 Mt 对应 80 元/吨；减排越多，边际成本越高。教学机制图，数字为假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-carbon-example-title fig-carbon-example-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-carbon-example-title">60 元碳税与 15 Mt 上限的算例</title>
+    <desc id="fig-carbon-example-desc">60 元碳税使减排 10 Mt，拍卖收入 5,400 百万元，减排成本 400 百万元；15 Mt 上限对应 80 元/吨，拍卖收入 6,800 百万元，减排成本 750 百万元。单位为 Mt、百万元、元/吨，教学算例。</desc>
+    <rect x="14" y="38" width="204" height="150" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">碳税 60 元/吨</text>
+    <text x="28" y="86" font-size="10" fill="var(--muted)" font-family="inherit">减排 10 Mt；剩余 90 Mt</text>
+    <text x="28" y="108" font-size="10" fill="var(--muted)" font-family="inherit">拍卖收入 5,400 百万元</text>
+    <text x="28" y="130" font-size="10" fill="var(--muted)" font-family="inherit">减排成本 400 百万元</text>
+    <text x="28" y="158" font-size="10" fill="var(--muted)" font-family="inherit">价格固定，数量随反应变化</text>
+    <rect x="242" y="38" width="204" height="150" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">上限 15 Mt</text>
+    <text x="256" y="86" font-size="10" fill="var(--muted)" font-family="inherit">配额价格 80 元/吨</text>
+    <text x="256" y="108" font-size="10" fill="var(--muted)" font-family="inherit">拍卖收入 6,800 百万元</text>
+    <text x="256" y="130" font-size="10" fill="var(--muted)" font-family="inherit">减排成本 750 百万元</text>
+    <text x="256" y="158" font-size="10" fill="var(--muted)" font-family="inherit">数量固定，价格随供需变化</text>
+    <rect x="14" y="208" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="232" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">同为碳定价，固定价格与固定数量不是同一张账</text>
+    <text x="28" y="251" font-size="10" fill="var(--muted)" font-family="inherit">收入、成本、配额分配和泄漏要分开记；数字为教学假设。</text>
+  </svg>
+  <figcaption>图 2：60 元碳税与 15 Mt 上限的算例。60 元碳税使减排 10 Mt，拍卖收入 5,400 百万元、减排成本 400 百万元；15 Mt 上限对应 80 元/吨、收入 6,800 百万元、成本 750 百万元。单位为 Mt、百万元、元/吨，数字为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-carbon-compare-title fig-carbon-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-carbon-compare-title">碳税与排放交易的对比</title>
+    <desc id="fig-carbon-compare-desc">碳税固定价格、数量随反应变化；排放交易固定数量、价格随供需变化；配额拍卖把租金归公共预算，免费分配把租金归持有人；两者都需覆盖范围、MRV 与配套政策。教学对比表。</desc>
+    <rect x="14" y="34" width="136" height="52" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="26" y="56" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">碳税</text>
+    <text x="26" y="76" font-size="9.6" fill="var(--muted)" font-family="inherit">价格确定 / 数量不确定</text>
+    <rect x="162" y="34" width="136" height="52" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="174" y="56" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">排放交易</text>
+    <text x="174" y="76" font-size="9.6" fill="var(--muted)" font-family="inherit">数量确定 / 价格不确定</text>
+    <rect x="310" y="34" width="136" height="52" rx="7" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="322" y="56" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">共同条件</text>
+    <text x="322" y="76" font-size="9.6" fill="var(--muted)" font-family="inherit">覆盖、MRV、配套政策</text>
+    <rect x="14" y="104" width="136" height="86" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="26" y="126" font-size="10" fill="var(--muted)" font-family="inherit">收入归政府</text>
+    <text x="26" y="148" font-size="10" fill="var(--muted)" font-family="inherit">税率可预测</text>
+    <text x="26" y="170" font-size="10" fill="var(--muted)" font-family="inherit">易与税制整合</text>
+    <rect x="162" y="104" width="136" height="86" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="174" y="126" font-size="10" fill="var(--muted)" font-family="inherit">拍卖：收入归预算</text>
+    <text x="174" y="148" font-size="10" fill="var(--muted)" font-family="inherit">免费：租金归持有人</text>
+    <text x="174" y="170" font-size="10" fill="var(--muted)" font-family="inherit">可设总量与价格走廊</text>
+    <rect x="310" y="104" width="136" height="86" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="322" y="126" font-size="10" fill="var(--muted)" font-family="inherit">避免泄漏</text>
+    <text x="322" y="148" font-size="10" fill="var(--muted)" font-family="inherit">保护脆弱家庭</text>
+    <text x="322" y="170" font-size="10" fill="var(--muted)" font-family="inherit">投资替代技术</text>
+    <rect x="14" y="208" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="232" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">工具选择取决于目标：控总量、控价格，还是保产业竞争力</text>
+    <text x="28" y="251" font-size="10" fill="var(--muted)" font-family="inherit">同一个“碳价”可以由不同工具、不同分配规则实现。</text>
+    <rect x="14" y="276" width="432" height="34" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="297" font-size="10" fill="var(--muted)" font-family="inherit">不能把碳税与排放交易当成同一种政策换名字。</text>
+  </svg>
+  <figcaption>图 3：碳税与排放交易的对比。碳税固定价格、排放交易固定数量；拍卖把租金归预算，免费分配把租金归持有人；两者都需要覆盖范围、MRV 和配套政策。教学对比表，不是政策推荐。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-carbon-boundary-title fig-carbon-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-carbon-boundary-title">碳定价的六个适用边界</title>
+    <desc id="fig-carbon-boundary-desc">检查覆盖率、MRV、价格或数量不确定性、配额分配、泄漏与收入用途、分配后果；任一项改变，碳价效果和成本归属都会变。教学边界清单。</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. 覆盖率够吗？未覆盖部门可能扩张，抵消机制也会改变净减排</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. MRV 可靠吗？配额总量与实际排放必须对得上</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. 价格和数量谁不确定？碳税与排放交易承担不同的波动风险</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. 配额怎么分？拍卖、免费分配和基准更新改变租金归属</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. 会泄漏吗？产业转移可能把排放搬到境外，全球净减排缩水</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. 收入怎么用？减税、补贴、公共投资和家庭返还的分配后果不同</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">六项都改变结论；碳价水平不是气候政策的全部。</text>
+  </svg>
+  <figcaption>图 4：碳定价的六个适用边界。覆盖率、MRV、价格/数量不确定性、配额分配、泄漏与收入用途、分配后果会改变效果与成本归属；教学边界清单，不是政策建议表。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“碳税和排放交易只是名字不同。”</strong> 两者都能给排放定价，但碳税固定价格、排放交易固定数量；在理想条件下可以设成等价，现实中的覆盖、配额分配和价格控制会让结果不同[1][2]。</p>
+<p><strong>“免费配额没有成本。”</strong> 免费配额仍有机会成本：持有人可以把配额卖掉，也可以用配额覆盖排放。免费分配主要改变租金归属，不消除边际减排激励[1][2]。</p>
+<p><strong>“国内减排多少，全球就减排多少。”</strong> 若减排导致产业转移或进口增加，国内下降可能被境外上升部分抵消；评估时要看泄漏率和全球净减排[1][3]。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-029 环境能源与农业</strong> 的关系：母文讲外部性、资源与能源转型的总体框架；本文把边际减排成本、配额和泄漏写成可计算的配置账。</li>
+<li>与 <strong>ECO-038 外部性、庇古税与总量控制</strong> 的关系：母文比较价格工具与数量工具；本文进一步拆碳税、排放交易和配额分配的差异。</li>
+<li>与 <strong>ECO-043 研发、扩散与平台</strong> 的关系：碳价需要低碳技术、电网和储能等配套创新，单靠价格不能解决技术锁定。</li>
+<li>与 <strong>ECO-040 财政乘数</strong> 的关系：碳收入的使用会影响总需求与分配，但财政刺激不能替代减排激励。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>概念辨别：碳税和排放交易分别固定什么变量？配额拍卖与免费分配在边际激励和租金归属上有什么不同？</li>
+<li>计算：基线排放 80 Mt，(MAC(R)=10+5R)，碳税 50 元/吨时减排多少？剩余排放和拍卖收入各是多少？减排成本是多少？</li>
+<li>适用条件：某国实施碳税，但覆盖部门很少、边境调节缺失、收入用于普遍补贴。指出三个会削弱减排效果或恶化分配的条件，并说明需要补充哪类配套政策。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>World Bank, <em>State and Trends of Carbon Pricing 2024</em>. <a href="https://openknowledge.worldbank.org/bitstreams/d14ff4b1-823f-4d70-927c-456449772089/download">https://openknowledge.worldbank.org/bitstreams/d14ff4b1-823f-4d70-927c-456449772089/download</a></li>
+<li>OECD, <em>Effective Carbon Rates 2023: Pricing Greenhouse Gas Emissions through Taxes and Emissions Trading</em>. <a href="https://www.oecd.org/en/publications/effective-carbon-rates-2023_b84d5b36-en.html">https://www.oecd.org/en/publications/effective-carbon-rates-2023_b84d5b36-en.html</a></li>
+<li>IPCC, <em>Climate Change 2022: Mitigation of Climate Change, Summary for Policymakers</em>. <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/">https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>把线性边际减排成本曲线写成碳税与排放上限下的减排量，并解释配额价格如何由上限决定。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用基线排放、税率或配额上限计算剩余排放、拍卖收入和减排成本，并区分拍卖与免费分配的租金归属。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>把线性边际减排成本曲线写成碳税与排放上限下的减排量，并解释配额价格如何由上限决定。</li><li>用基线排放、税率或配额上限计算剩余排放、拍卖收入和减排成本，并区分拍卖与免费分配的租金归属。</li><li>用国内减排与进口排放计算泄漏率，列出碳定价的六个适用边界并说明为何国内减排不等于全球净减排。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/environment-energy-and-agriculture/">ECO-029 · 环境能源与农业</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/environment-energy-and-agriculture/">ECO-029 · 环境能源与农业</a> </li><li> <a href="/learn/externalities-pigouvian-taxes-and-cap-and-trade/">ECO-038 · 外部性、庇古税与总量控制：价格工具何时有效</a> </li><li> <a href="/learn/rd-diffusion-platforms-innovation-policy/">ECO-043 · 研发、扩散与平台：创新政策的收益与边界</a> </li><li> <a href="/learn/fiscal-multipliers-spending-taxes-and-stabilizers/">ECO-040 · 财政乘数：支出、税收与自动稳定器</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openknowledge.worldbank.org/bitstreams/d14ff4b1-823f-4d70-927c-456449772089/download" rel="noopener noreferrer" target="_blank">State and Trends of Carbon Pricing 2024</a> <p>World Bank · World Bank</p> <p>访问：2026-11-23 · 许可：CC BY 3.0 IGO</p> <p>支持论点：用于核对碳税与排放交易是主要碳定价工具、配额拍卖产生公共收入、免费分配把租金给受管制企业，以及覆盖范围与收入使用影响政策效果；正文税率、配额与金额为教学假设。</p> </div><div class="source"> <a href="https://www.oecd.org/en/publications/effective-carbon-rates-2023_b84d5b36-en.html" rel="noopener noreferrer" target="_blank">Effective Carbon Rates 2023: Pricing Greenhouse Gas Emissions through Taxes and Emissions Trading</a> <p>OECD · OECD Publishing</p> <p>访问：2026-11-23 · 许可：OECD publishing terms; citation only</p> <p>支持论点：用于核对有效碳率覆盖能源与工业排放、不同国家与部门的碳价差异，以及碳税和排放交易可以并存；正文不把某一国家的碳价写成普遍水平。</p> </div><div class="source"> <a href="https://www.ipcc.ch/report/ar6/wg3/chapter/summary-for-policymakers/" rel="noopener noreferrer" target="_blank">Climate Change 2022: Mitigation of Climate Change, Summary for Policymakers</a> <p>IPCC · Intergovernmental Panel on Climate Change</p> <p>访问：2026-11-23 · 许可：IPCC copyright; cite-only</p> <p>支持论点：用于核对碳定价是减缓气候变化的政策工具之一，政策组合、技术扩散和需求侧改变共同影响减排，且单靠碳价不能解决所有部门壁垒；正文不引用具体全球减排统计。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/carbon-prices-allowances-abatement-costs/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

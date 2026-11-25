@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>关税落在谁头上：中间品、原产地与价值链 · 巫妖投资</title><meta name="description" content="关税的法定纳税人是进口商，经济负担却由消费者、进口商、出口商和上游供应商分担。中间品、原产地规则和价值链会把一个看似简单的税率放大成有效保护率、合规成本和双重征税。本文用有效保护率和一个三国价值链算例，拆开“关税落在谁头上”。"><link rel="canonical" href="https://economics.51invest.com/learn/who-pays-tariffs-intermediates-origin-value-chains/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/who-pays-tariffs-intermediates-origin-value-chains/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/who-pays-tariffs-intermediates-origin-value-chains/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/who-pays-tariffs-intermediates-origin-value-chains/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/who-pays-tariffs-intermediates-origin-value-chains/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">关税落在谁头上：中间品、原产地与价值链</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">关税落在谁头上：中间品、原产地与价值链</h1> <p class="article-summary">关税的法定纳税人是进口商，经济负担却由消费者、进口商、出口商和上游供应商分担。中间品、原产地规则和价值链会把一个看似简单的税率放大成有效保护率、合规成本和双重征税。本文用有效保护率和一个三国价值链算例，拆开“关税落在谁头上”。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M13 · 国际贸易</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 14 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义与直觉</h2>
+<p><strong>关税</strong>是对跨境商品征收的税[1]。法定纳税人是进口商，但经济负担不一定由进口商承担。如果进口国需求弹性低、出口国供给弹性高，进口商可以把大部分税负转嫁给国内消费者；如果进口国需求弹性高、出口国有替代市场，出口商可能被迫降价，负担落在出口国生产者。<strong>incidence</strong>（税负归宿）问的就是“谁最终少拿了钱”，不是“谁去海关交税”。</p>
+<p><strong>有效保护率</strong>（effective rate of protection, ERP）把最终品关税和中间品关税合在一起。其逻辑是：关税保护的是国内增加值，不是总产值；如果中间品也要交税，保护被削弱。公式为 <code>ERP = (t_f − a·t_i)/(1 − a)</code>，其中 <code>t_f</code> 是最终品税率，<code>t_i</code> 是中间品税率，<code>a</code> 是中间品成本占最终品产值的比例。</p>
+<p><strong>原产地规则</strong>决定一件商品能不能享受协定税率。它通常要求“实质性改变”，但实质性改变的标准可以是税则归类改变、区域价值成分或特定工序。规则越复杂，合规成本越高；低税率可能被原产地文件、审计和追溯成本吃掉。</p>
+<h2>三种价格效应</h2>
+<p>关税至少产生三种价格效应：</p>
+<ol>
+<li><strong>名义保护</strong>：最终品关税直接抬高进口品价格，给国内同类生产者一个价格伞[2]。</li>
+<li><strong>有效保护</strong>：中间品关税抬高投入成本，抵消一部分最终品保护；如果中间品税率高于最终品税率，有效保护率可能为负。</li>
+<li><strong>合规成本</strong>：原产地证明、供应链追溯、海关估价和反规避调查，都是按货值或按票计算的固定成本；对小批量、多品种的企业，合规成本占比更高。</li>
+</ol>
+<p>这三种效应叠加后，同一个 10% 的名义税率，对不同企业可能是 15% 的有效保护、5% 的有效保护，甚至是负保护。只看税则表上的税率，会误判产业受到的保护。</p>
+<h2>正式表达与示例</h2>
+<p>假设一件最终品价值 100 元，其中中间品成本 50 元，国内增加值为 50 元。最终品关税 <code>t_f = 20%</code>，中间品关税 <code>t_i = 5%</code>。代入公式：</p>
+<p><code>ERP = (0.20 − 0.5×0.05)/(1 − 0.5) = 0.35</code>，即 35%。</p>
+<p>名义税率只有 20%，但国内增加值受到的保护是 35%，因为中间品只被轻税。若中间品税率升到 20%，<code>ERP = (0.20 − 0.5×0.20)/0.5 = 20%</code>，保护回到名义水平。若中间品税率升到 30%，<code>ERP = (0.20 − 0.15)/0.5 = 10%</code>，保护被削掉一半。</p>
+<p>再看原产地。假设三国价值链：A 国出口中间品到 B 国加工，再出口到 C 国。C 国对最终品征 10%，但原产地规则要求区域价值成分达到 60%。B 国加工只增加 35% 价值，达不到门槛，最终品按 10% 征税；如果企业为了达标把采购从 A 国转到成本更高的 C 国供应商，合规成本就变成了新的贸易壁垒。以上数字均为教学假设。</p>
+<h2>分配效应</h2>
+<p>关税的负担至少分给四类人：进口国消费者面对更高价格；进口商承担库存、汇率和合规风险；国内生产者获得价格伞，但可能付出更高的中间品成本；出口国生产者可能被迫降价或失去市场。政府获得关税收入，这部分可以用于补偿受损群体，也可以变成财政一般收入。</p>
+<p>分配效应还跨部门[4]。对最终品征关税，保护的是最终品生产者；对中间品征关税，保护的是中间品生产者，却伤害使用中间品的下游。若下游是劳动密集、出口导向的行业，关税可能在保护上游的同时减少下游就业。判断一项关税“保护了谁”，要把上下游的就业和利润一起看。</p>
+<p>消费者剩余的损失通常大于生产者剩余和关税收入之和，差额是效率成本；但效率成本不是全部，还要看分配是否可接受、调整是否可逆。一个总剩余略降但保护了特定地区的关税，可能在政治上通过，在经济上低效。</p>
+<h2>图表</h2>
+<figure>
+<svg role="img" aria-labelledby="fig-who-pays-tariffs-intermediates-origin-value-chains-1-title fig-who-pays-tariffs-intermediates-origin-value-chains-1-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-who-pays-tariffs-intermediates-origin-value-chains-1-title">关税的价格传导链</title>
+<desc id="fig-who-pays-tariffs-intermediates-origin-value-chains-1-desc">四步：海关征税、进口商转嫁、国内加成、供应链调整。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">关税从海关到最终价格</text>
+<text x="24" y="54" font-size="11" text-anchor="start">税、转嫁、加成和供应链调整四步决定最终价格。</text>
+<rect x="14" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="69" y="140" font-size="12" text-anchor="middle">海关征税</text>
+<text x="69" y="184" font-size="12" text-anchor="middle" font-weight="700">10%</text>
+<rect x="136" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="191" y="140" font-size="12" text-anchor="middle">进口商转嫁</text>
+<text x="191" y="184" font-size="12" text-anchor="middle" font-weight="700">+6%</text>
+<rect x="258" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="313" y="140" font-size="12" text-anchor="middle">国内加成</text>
+<text x="313" y="184" font-size="12" text-anchor="middle" font-weight="700">+4%</text>
+<rect x="380" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="435" y="140" font-size="12" text-anchor="middle">最终价格</text>
+<text x="435" y="184" font-size="12" text-anchor="middle" font-weight="700">+10%</text>
+<line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="247" y1="160" x2="257" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="369" y1="160" x2="379" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<text x="24" y="246" font-size="11" text-anchor="start">教学示意，不含统计数据。</text>
+</g>
+</svg>
+<figcaption>图 1：关税的价格传导链；教学示意。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-who-pays-tariffs-intermediates-origin-value-chains-2-title fig-who-pays-tariffs-intermediates-origin-value-chains-2-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-who-pays-tariffs-intermediates-origin-value-chains-2-title">中间品税率如何改变保护</title>
+<desc id="fig-who-pays-tariffs-intermediates-origin-value-chains-2-desc">同一 20% 最终品税率下，三种中间品税率给出 35%、20%、10% 的有效保护。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">名义税率与有效保护率</text>
+<text x="24" y="54" font-size="11" text-anchor="start">最终品 20%；中间品 5%/20%/30% 对应 ERP 35%/</text>
+<text x="24" y="68" font-size="11" text-anchor="start">20%/10%。</text>
+<line x1="178" y1="64" x2="178" y2="270" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="20" y="97" font-size="12">中间品5%</text>
+<rect x="178" y="78" width="360" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="95" font-size="12" font-weight="700">35%</text>
+<text x="20" y="145" font-size="12">中间品20%</text>
+<rect x="178" y="126" width="205.7142857142857" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="143" font-size="12" font-weight="700">20%</text>
+<text x="20" y="193" font-size="12">中间品30%</text>
+<rect x="178" y="174" width="102.85714285714285" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="191" font-size="12" font-weight="700">10%</text>
+<text x="20" y="241" font-size="12">名义税率</text>
+<rect x="178" y="222" width="205.7142857142857" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="239" font-size="12" font-weight="700">20%</text>
+<text x="24" y="292" font-size="11" text-anchor="start">教学假设；单位：%。</text>
+</g>
+</svg>
+<figcaption>图 2：名义税率与有效保护率；教学假设，单位 %。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-who-pays-tariffs-intermediates-origin-value-chains-3-title fig-who-pays-tariffs-intermediates-origin-value-chains-3-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-who-pays-tariffs-intermediates-origin-value-chains-3-title">原产地合规的三条路径</title>
+<desc id="fig-who-pays-tariffs-intermediates-origin-value-chains-3-desc">三区：税则归类改变、区域价值≥60%、特定工序；都不满足则按最惠国税率。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">原产地规则的三条路径</text>
+<text x="24" y="54" font-size="11" text-anchor="start">税则改变、区域价值、特定工序；满足任一条才享优惠税率。</text>
+<line x1="40" y1="190" x2="600" y2="190" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+<rect x="40" y="160" width="186.66666666666666" height="60" fill="currentColor" opacity="0.06" stroke="currentColor" stroke-width="1"/>
+<text x="133.33333333333331" y="182" font-size="12" text-anchor="middle">税则改变</text>
+<text x="133.33333333333331" y="206" font-size="10" text-anchor="middle">四位税号变化</text>
+<rect x="226.66666666666666" y="160" width="186.66666666666666" height="60" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="1"/>
+<text x="320" y="182" font-size="12" text-anchor="middle">区域价值</text>
+<text x="320" y="206" font-size="10" text-anchor="middle">≥60%</text>
+<rect x="413.3333333333333" y="160" width="186.66666666666666" height="60" fill="currentColor" opacity="0.14" stroke="currentColor" stroke-width="1"/>
+<text x="506.66666666666663" y="182" font-size="12" text-anchor="middle">特定工序</text>
+<text x="506.66666666666663" y="206" font-size="10" text-anchor="middle">规定的加工</text>
+<line x1="226.66666666666666" y1="148" x2="226.66666666666666" y2="232" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="226.66666666666666" y="252" font-size="11" text-anchor="middle">满足</text>
+<line x1="413.3333333333333" y1="148" x2="413.3333333333333" y2="232" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="413.3333333333333" y="252" font-size="11" text-anchor="middle">不满足</text>
+<text x="24" y="286" font-size="11" text-anchor="start">阈值 60% 为教学示例。</text>
+</g>
+</svg>
+<figcaption>图 3：原产地合规的三条路径；对比分类示意。</figcaption>
+</figure>
+
+<p>图 1 把关税从海关到最终价格的传导拆成四步；图 2 比较名义税率与三种中间品情形下的有效保护率；图 3 把原产地规则的三条路径——税则改变、区域价值、特定工序——画成决策分岔。图中数字均为教学假设。</p>
+<h2>政策设计</h2>
+<p>如果目标是保护国内增加值，而不是保护上游租金，政策设计应遵循三条：</p>
+<ol>
+<li><strong>最终品与中间品税率要匹配。</strong> 对最终品高税、对中间品低税，会提高有效保护；反过来会形成负保护，惩罚下游。</li>
+<li><strong>原产地规则要与能力匹配。</strong> 区域价值门槛过高，小企业无法达标；税则改变标准更简单，但可能被轻微加工规避。规则设计要在防规避和可合规之间取平衡。</li>
+<li><strong>配套调整援助。</strong> 关税会重新分配就业和利润，受损群体需要培训、转移支付或区域政策；没有 adjustment assistance，保护会变成长期补贴。</li>
+</ol>
+<p>关税不是唯一工具。配额、技术标准、补贴和政府采购也能保护国内产业，但它们的租金归属、透明度和合规成本不同；选择工具时要一起算。</p>
+<h2>适用条件与边界</h2>
+<p>关税分析有四个容易忽略的边界：</p>
+<p><strong>弹性决定归宿。</strong> 需求弹性越低、供给弹性越高，税负越容易转给进口国消费者；反之，出口商承担更多。简单说“关税由进口商付”只描述了法律关系。</p>
+<p><strong>中间品会重复计税。</strong> 全球价值链中，同一笔价值可能多次跨境，每次都被征一次关税；累积税负可能远高于单看最终品的税率[3]。</p>
+<p><strong>原产地规则有战略用途。</strong> 规则可以防止转运规避，也可以被用来把竞争对手排除在优惠区之外；判断规则是否“必要”，要看它是否与防止规避成比例。</p>
+<p><strong>汇率与一般均衡会反馈。</strong> 关税可能推高进口国物价、压低出口国汇率，进而改变贸易量和税负分担；局部算例不能替代一般均衡分析。</p>
+<h2>常见误解</h2>
+<p><strong>误解一：关税全由进口商承担。</strong> 进口商只是法定纳税人；税负归宿取决于相对弹性。</p>
+<p><strong>误解二：名义税率就是保护程度。</strong> 中间品关税会改变有效保护率；负保护并不罕见。</p>
+<p><strong>误解三：原产地规则只是行政手续。</strong> 规则设计会改变采购地、生产工序和投资地点，是实质性的贸易政策工具。</p>
+<h2>深化：关税归宿、原产地与中间品</h2>
+<p><strong>关税名义上由进口商缴纳，经济上由谁承担取决于议价和替代</strong>。若进口商能把成本转给消费者，且消费者没有替代品，关税主要由消费者承担；若消费者可以转向国产或第三国产品，进口商和出口商会分担；若出口商降价保市场份额，则由出口国承担。汇率调整也会吸收一部分。</p>
+<p><strong>中间品让归宿更复杂</strong>。一个零部件被征关税，下游制造商成本上升；若下游再出口，关税可能变成“出口税”，损害本国竞争力。全球价值链越深，关税越容易重复计征、越难追溯。</p>
+<p><strong>原产地规则</strong>决定“哪里制造”。实质改变标准、区域价值含量和累积规则，会让同一产品在不同协定下税率不同；企业可能调整供应链、转口或增加本地加工，成本可能高于关税本身。</p>
+<p><strong>2018—2019 年中美关税的经验</strong>：研究普遍发现关税成本大部分转给美国进口商和消费者，但转嫁程度因产品、替代性和时间而异；受影响的行业就业和投资下降，供应链在多年内重组。</p>
+<p><strong>政策评估</strong>不能只看关税收入。要看消费者价格、生产者成本、供应链重组、贸易转移和报复；关税是谈判工具，也是产业政策工具，目标不同，评价标准不同。</p>
+<p><strong>常见误用</strong>：把“关税由外国出口商支付”当成事实；把关税收入当成净收益；忽略中间品和原产地规则的合规成本。</p>
+<h2>反证条件</h2>
+<p>关税归宿的结论依赖三个环节，任一环节变化都要重算：</p>
+<ol>
+<li><strong>进口商是否吸收。</strong> 若进口商压缩利润而非提价，消费者承担的比例下降，关税更像利润税。</li>
+<li><strong>原产地规则是否可绕开。</strong> 若转口和微小加工被允许，关税覆盖被高估，实际保护低于名义税率。</li>
+<li><strong>中间品是否被排除。</strong> 若关税只覆盖最终品，有效保护率与名义税率差异很大；中间品加税会叠加成本。</li>
+<li><strong>汇率是否调整。</strong> 若本币贬值抵消关税，进口价格和贸易余额的短期反应会被削弱。</li>
+</ol>
+<p>把“谁进口、原产地在哪、中间品多少、汇率怎么动”四件事拆开，才能判断关税到底打中了谁。</p>
+<h2>反证条件（续）</h2>
+<p>还有一项：<strong>关税是否被配额或许可证替代。</strong> 若数量限制取代关税，价格效应和租金分配会完全不同，单看税率会低估保护程度。</p>
+<h2>练习</h2>
+<ol>
+<li><p>区分：关税的法定纳税人、税负归宿和有效保护率分别回答什么问题？</p>
+</li>
+<li><p>最终品 100 元、中间品 40 元、<code>t_f=15%</code>、<code>t_i=10%</code>，计算 ERP。</p>
+</li>
+<li><p>若中间品税率升到 25%，重算上题 ERP，并解释为什么保护下降。</p>
+</li>
+<li><p>一个 10% 最终品关税、60% 区域价值门槛、实际区域价值 45% 的案例，合规结果是什么？</p>
+</li>
+<li><p>比较需求弹性低与高两种市场，关税更容易由谁承担？</p>
+</li>
+<li><p>原产地规则的三类标准各有什么合规成本？各举一个例子。</p>
+</li>
+<li><p>判断：关税一定保护国内产业吗？用负保护的情形说明。</p>
+</li>
+<li><p>关税的经济归宿由哪些因素决定？</p>
+</li>
+<li><p>中间品被征关税为什么可能变成“出口税”？</p>
+</li>
+</ol>
+<h2>关联</h2>
+<p>先修 ECO-023；对照 ECO-041；延伸 ECO-048。</p>
+<h2>来源</h2>
+<ol>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 34.1 Protectionism: An Indirect Subsidy from Consumers to Producers</em>. OpenStax, accessed 2026-11-23. <a href="https://openstax.org/books/principles-economics-3e/pages/34-1-protectionism-an-indirect-subsidy-from-consumers-to-producers">https://openstax.org/books/principles-economics-3e/pages/34-1-protectionism-an-indirect-subsidy-from-consumers-to-producers</a></li>
+<li>World Trade Organization, <em>Tariffs</em>. World Trade Organization, accessed 2026-11-23. <a href="https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm">https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm</a></li>
+<li>OECD, <em>Trade in Value-Added (TiVA)</em>. OECD, accessed 2026-11-24. <a href="https://www.oecd.org/en/topics/sub-issues/trade-in-value-added.html">https://www.oecd.org/en/topics/sub-issues/trade-in-value-added.html</a></li>
+<li>World Bank, <em>World Development Report 2020: Trading for Development in the Age of Global Value Chains</em>. World Bank, accessed 2026-11-21. <a href="https://www.worldbank.org/en/publication/wdr2020">https://www.worldbank.org/en/publication/wdr2020</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>区分关税的法定纳税人、经济负担与实际 incidence。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用有效保护率公式把最终品税率和中间品税率合成一个数。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>区分关税的法定纳税人、经济负担与实际 incidence。</li><li>用有效保护率公式把最终品税率和中间品税率合成一个数。</li><li>判断原产地规则何时把低关税变成高合规成本。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/comparative-advantage-and-trade/">ECO-023 · 比较优势与贸易</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/tariffs-quotas-trade-agreements-welfare-ledger/">ECO-041 · 关税、配额与贸易协定：贸易壁垒的福利账</a> </li><li> <a href="/learn/china-external-balance-and-value-chain-position/">ECO-048 · 中国的国际收支与产业链位置：外部账怎么读</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/34-1-protectionism-an-indirect-subsidy-from-consumers-to-producers" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 34.1 Protectionism: An Indirect Subsidy from Consumers to Producers</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：支持关税作为消费者向生产者转移的福利账。</p> </div><div class="source"> <a href="https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm" rel="noopener noreferrer" target="_blank">Tariffs</a> <p>World Trade Organization · World Trade Organization</p> <p>访问：2026-11-23 · 许可：WTO website and official documents: copyright WTO; official documents free for public use, other material non-commercial with attribution; cite-only</p> <p>支持论点：支持关税税目、从价/从量税和约束税率的制度口径。</p> </div><div class="source"> <a href="https://www.oecd.org/en/topics/sub-issues/trade-in-value-added.html" rel="noopener noreferrer" target="_blank">Trade in Value-Added (TiVA)</a> <p>OECD · OECD</p> <p>访问：2026-11-24 · 许可：OECD publishing terms; citation only</p> <p>支持论点：支持贸易增加值、中间品跨境重复计算与价值链口径。</p> </div><div class="source"> <a href="https://www.worldbank.org/en/publication/wdr2020" rel="noopener noreferrer" target="_blank">World Development Report 2020: Trading for Development in the Age of Global Value Chains</a> <p>World Bank · World Bank</p> <p>访问：2026-11-21 · 许可：CC BY 3.0 IGO</p> <p>支持论点：支持全球价值链下关税、原产地和合规成本的机制。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/who-pays-tariffs-intermediates-origin-value-chains/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

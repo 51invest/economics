@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>默认选项、助推与公共服务：行为干预的效应与边界 · 巫妖投资</title><meta name="description" content="默认选项和提醒能提高公共服务参与率，但试验里的效应不等于规模化后的效应。把平均处理效应、单位成本、样本量、持续性和外溢放在同一张账上，才能判断一项行为干预是值得推广，还是只在一个小场景里有效。"><link rel="canonical" href="https://economics.51invest.com/learn/defaults-nudges-public-services/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/defaults-nudges-public-services/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/defaults-nudges-public-services/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/defaults-nudges-public-services/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/defaults-nudges-public-services/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">默认选项、助推与公共服务：行为干预的效应与边界</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">默认选项、助推与公共服务：行为干预的效应与边界</h1> <p class="article-summary">默认选项和提醒能提高公共服务参与率，但试验里的效应不等于规模化后的效应。把平均处理效应、单位成本、样本量、持续性和外溢放在同一张账上，才能判断一项行为干预是值得推广，还是只在一个小场景里有效。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M20 · 行为实验与公共服务</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>6 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>选择架构</strong>（choice architecture）指选项的呈现方式：默认、顺序、措辞、截止日期和办理流程都会影响选择，即使没有改变选项本身。<strong>默认选项</strong>（default）是用户不主动选择时自动生效的选项；<strong>助推</strong>（nudge）是以低成本、不限制选择自由的方式改变行为[1][2]。<strong>随机对照试验</strong>（randomized controlled trial, RCT）把对象随机分到处理组和对照组，用结果差异估计因果效应；<strong>平均处理效应</strong>（average treatment effect, ATE）是处理组与对照组结果均值之差；<strong>条件平均处理效应</strong>（CATE）是按群体、地区或情境拆分的效应[1][3]。</p>
+<p>行为干预的评估不能只看“参与率提高了多少”。还要看：提高的参与者是不是本来就会参加的人、单位新增参与者成本、效应能否持续、是否挤出了其他行为、在别的地区是否同样有效。</p>
+<h2>直觉</h2>
+<p>人不是每件事都精算。面对表格、排队和复杂选项，很多人会沿用预设、拖到最后一刻，或干脆不办。默认把“不行动”的结果从“未参加”改成“参加”，所以能快速提高参与率；提醒信把事项重新放回注意力中，所以对拖延有效。</p>
+<p>但默认和提醒不是魔法。默认可能把不合适的人带入计划，提醒可能只对本来就有意愿的人有效；小规模试验里的工作人员更用心、对象更同质、污染更少，规模化后效应常会缩小。更关键的是，参与率只是中间结果：公共服务最终要看实际待遇、错误率和成本，而不是表格提交量。</p>
+<h2>正式表达</h2>
+<p>设 (Y_i(1)) 和 (Y_i(0)) 分别表示对象 (i) 在处理和对照条件下的结果。平均处理效应为：</p>
+<p>[
+ATE=E[Y_i(1)-Y_i(0)]
+]</p>
+<p>在随机试验中，可用两组均值差估计：</p>
+<p>[
+\widehat{ATE}=\bar Y_T-\bar Y_C
+]</p>
+<p>若结果是参与率 (p)，处理组为 (p_1)、对照组为 (p_0)，则参与率增量为：</p>
+<p>[
+\Delta p=p_1-p_0
+]</p>
+<p>单位新增参与者成本为：</p>
+<p>[
+\text{Cost per extra participant}=\frac{C}{N\Delta p}
+]</p>
+<p>其中 (C) 是干预总成本，(N) 是符合条件的对象数。这个指标比“每户成本”更接近决策者真正关心的问题：多花这笔钱，换来了多少额外参与者。</p>
+<p>两臂 RCT 中，若希望检测到效应 (\delta)、结果标准差为 (\sigma)，在常规显著性水平与功效下，每组所需样本量近似为：</p>
+<p>[
+n_{\text{per arm}}\approx\frac{16\sigma^2}{\delta^2}
+]</p>
+<p>这里的 16 来自 (2(1.96+0.84)^2\approx15.7) 的近似；它只是规划起点，实际还要考虑 attrition、聚类和多重比较（本文判断）。</p>
+<h2>适用条件</h2>
+<ol>
+<li>随机化必须可信：若对象可以自选处理、工作人员知道分组并区别对待，估计会有选择偏差[1]。</li>
+<li>结果指标要预先定义，不能事后挑一个好看的指标；参与率、完成率、实际待遇和错误率可能指向不同结论[1][3]。</li>
+<li>规模化会改变实施质量、对象构成和成本；试验效应不能直接当作推广后的效应[2]。</li>
+<li>默认效应可能随时间衰减，也可能在取消默认后反转；持续性需要单独检验[2][3]。</li>
+<li>干预可能有外溢：提醒一个人可能带动家庭成员，也可能挤占工作人员时间；分析单位要和溢出范围匹配[3]。</li>
+<li>伦理与同意不能忽略：默认自动加入、利用认知偏差、对脆弱群体推送，都需要透明和可退出机制[1][2]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设某公共服务有 10,000 名符合条件的居民。若采用“主动选择加入”（opt-in），参与率为 40%，即 4,000 人；若改为“默认加入、可退出”（opt-out），参与率为 80%，即 8,000 人。增量参与者为：</p>
+<p>[
+8{,}000-4{,}000=4{,}000\text{ 人}
+]</p>
+<p>若改版与运营成本为 200,000 元，则单位新增参与者成本为：</p>
+<p>[
+\frac{200{,}000}{4{,}000}=50\text{ 元/人}
+]</p>
+<p>若改用提醒信：每户成本 5 元，参与率提高 4 个百分点，即 (10{,}000\times0.04=400) 人；总成本 50,000 元，单位新增参与者成本为 (50{,}000\div400=125) 元/人。以上为教学假设，不是实际项目数据。</p>
+<p>若计划做 RCT，基线参与率 40%，希望检测到 4 个百分点的提升（(\delta=0.04)），结果标准差 (\sigma=0.5)，每组约需：</p>
+<p>[
+n\approx\frac{16\times0.5^2}{0.04^2}=\frac{4}{0.0016}=2{,}500\text{ 人}
+]</p>
+<p>两组合计约 5,000 人。若在 20 个服务点、每点 5,000 户做聚类试验，总样本 100,000 户，但有效样本量会因组内相关性而下降，不能按 100,000 直接算功效（本文判断）。</p>
+<p>持续性方面，假设默认效应第一年把参与率从 40% 提高到 80%，即 +40 个百分点；三年后只比对照高 20 个百分点，说明效应减半。异质性方面，假设两个等规模群体中，群体 A 的效应为 +8 个百分点、群体 B 为 0，则平均效应为 +4 个百分点。这两个数字提醒读者：平均效应不是每个群体都能拿到的效应。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-mech-title fig-nudge-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-nudge-mech-title">默认选项的作用机制</title>
+    <desc id="fig-nudge-mech-desc">默认把不行动的结果设为参加，降低表格与决策成本；注意力与拖延影响行动；参与率上升后又受实际待遇和持续性约束。教学机制图。</desc>
+    <rect x="14" y="46" width="128" height="82" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">默认设置</text>
+    <text x="26" y="92" font-size="10" fill="var(--muted)" font-family="inherit">不行动 = 参加</text>
+    <text x="26" y="110" font-size="10" fill="var(--muted)" font-family="inherit">表格与步骤简化</text>
+    <rect x="166" y="46" width="128" height="82" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="178" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">决策成本下降</text>
+    <text x="178" y="92" font-size="10" fill="var(--muted)" font-family="inherit">少一步选择</text>
+    <text x="178" y="110" font-size="10" fill="var(--muted)" font-family="inherit">少一次来回确认</text>
+    <rect x="318" y="46" width="128" height="82" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="330" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">参与率上升</text>
+    <text x="330" y="92" font-size="10" fill="var(--muted)" font-family="inherit">40% → 80%</text>
+    <text x="330" y="110" font-size="10" fill="var(--muted)" font-family="inherit">增量 4,000 人</text>
+    <line x1="142" y1="87" x2="166" y2="87" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="294" y1="87" x2="318" y2="87" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="156" width="432" height="52" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="180" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">但参与率只是中间结果</text>
+    <text x="28" y="199" font-size="10" fill="var(--muted)" font-family="inherit">还要看实际待遇、错误率、谁被带入、以及取消默认后的反转。</text>
+    <rect x="14" y="226" width="432" height="50" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="249" font-size="10.5" fill="var(--text)" font-family="inherit">机制链：默认改变不行动的后果，再改变参与</text>
+    <text x="28" y="267" font-size="10" fill="var(--muted)" font-family="inherit">不是“说服”每个人，而是让默认路径更容易走。</text>
+  </svg>
+  <figcaption>图 1：默认选项的作用机制。默认把“不行动”的结果从“未参加”改为“参加”，降低决策成本，参与率从 40% 升到 80%；但参与率只是中间结果，还要看待遇、错误率和持续性。教学机制图，数字为假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-example-title fig-nudge-example-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-nudge-example-title">默认加入与提醒信的算例</title>
+    <desc id="fig-nudge-example-desc">10,000 名居民中，opt-in 参与 4,000 人，opt-out 参与 8,000 人，增量 4,000 人；改版成本 200,000 元，单位新增参与者 50 元；提醒信成本 5 元/户、提升 4 个百分点即 400 人，单位新增 125 元。单位为户、人、元，教学算例。</desc>
+    <rect x="14" y="34" width="432" height="46" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="53" font-size="10.2" fill="var(--text)" font-family="inherit">起点：10,000 名符合条件的居民</text>
+    <text x="28" y="70" font-size="9.8" fill="var(--muted)" font-family="inherit">opt-in 40% = 4,000 人；opt-out 80% = 8,000 人</text>
+    <rect x="14" y="92" width="204" height="126" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="116" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">默认加入（opt-out）</text>
+    <text x="28" y="140" font-size="10" fill="var(--muted)" font-family="inherit">参与 8,000 人（80%）</text>
+    <text x="28" y="162" font-size="10" fill="var(--muted)" font-family="inherit">增量 4,000 人</text>
+    <text x="28" y="184" font-size="10" fill="var(--muted)" font-family="inherit">成本 200,000 元</text>
+    <text x="28" y="204" font-size="10" fill="var(--muted)" font-family="inherit">50 元/新增参与者</text>
+    <rect x="242" y="92" width="204" height="126" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="116" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">提醒信</text>
+    <text x="256" y="140" font-size="10" fill="var(--muted)" font-family="inherit">参与率 +4 个百分点</text>
+    <text x="256" y="162" font-size="10" fill="var(--muted)" font-family="inherit">增量 400 人</text>
+    <text x="256" y="184" font-size="10" fill="var(--muted)" font-family="inherit">成本 5 元/户，共 50,000 元</text>
+    <text x="256" y="204" font-size="10" fill="var(--muted)" font-family="inherit">125 元/新增参与者</text>
+    <text x="72" y="248" font-size="10" fill="var(--muted)" font-family="inherit">同样 10,000 人，两种工具的单位新增参与者成本分别为 50 元和 125 元。</text>
+    <text x="72" y="274" font-size="10" fill="var(--muted)" font-family="inherit">单位：户、人、元；教学假设，不是实际项目数据。</text>
+  </svg>
+  <figcaption>图 2：默认加入与提醒信的算例。10,000 名居民中，opt-in 参与 4,000 人、opt-out 参与 8,000 人，增量 4,000 人；改版成本 200,000 元，单位新增参与者 50 元；提醒信每户 5 元、提升 4 个百分点即 400 人，单位新增 125 元。单位为户、人、元，数字为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-compare-title fig-nudge-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-nudge-compare-title">试验效应、规模化效应与三年后效应的对比</title>
+    <desc id="fig-nudge-compare-desc">小规模 RCT 中默认效应为 +40 个百分点；规模化后可能降到 +20 个百分点；三年后进一步降到 +10 个百分点。教学对比图，展示效应随规模和时间的衰减。</desc>
+    <rect x="14" y="38" width="432" height="48" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="67" font-size="10.5" fill="var(--text)" font-family="inherit">同一默认干预在不同阶段的效应，不是同一个数字</text>
+    <rect x="48" y="118" width="72" height="112" fill="var(--accent)" opacity="0.75"></rect>
+    <rect x="184" y="146" width="72" height="84" fill="var(--accent)" opacity="0.55"></rect>
+    <rect x="320" y="174" width="72" height="56" fill="var(--accent)" opacity="0.35"></rect>
+    <line x1="40" y1="230" x2="420" y2="230" stroke="var(--border)" stroke-width="1"></line>
+    <text x="84" y="109" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">+40pp</text>
+    <text x="220" y="137" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">+30pp</text>
+    <text x="356" y="165" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">+20pp</text>
+    <text x="84" y="250" font-size="9.6" text-anchor="middle" fill="var(--muted)" font-family="inherit">小规模 RCT</text>
+    <text x="220" y="250" font-size="9.6" text-anchor="middle" fill="var(--muted)" font-family="inherit">规模化</text>
+    <text x="356" y="250" font-size="9.6" text-anchor="middle" fill="var(--muted)" font-family="inherit">三年后</text>
+    <rect x="14" y="272" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="296" font-size="10" fill="var(--muted)" font-family="inherit">效应衰减不自动等于失败；要区分实施质量下降、对象变化和真实持续效应。</text>
+  </svg>
+  <figcaption>图 3：试验效应、规模化效应与三年后效应的对比。小规模 RCT 的默认效应为 +40 个百分点，规模化后可能为 +30，三年后为 +20；效应随规模和时间衰减。教学对比图，数字为假设，不代表任何具体项目。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-nudge-boundary-title fig-nudge-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-nudge-boundary-title">行为干预的六个适用边界</title>
+    <desc id="fig-nudge-boundary-desc">检查外部有效性、实施保真度、结果指标、持续性与外溢、发表偏差、伦理与同意；任一项改变，试验效应和推广价值都会变。教学边界清单。</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. 外部有效性：对象、地区、服务流程不同，效应可能不复制</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. 实施保真度：规模化后人员、培训和监督是否跟得上</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. 结果指标：参与率上升不等于待遇改善或错误率下降</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. 持续性与外溢：效应会衰减吗？会挤占他人时间或带动家庭吗？</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. 发表偏差：只发表显著结果，会把平均效应抬高</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. 伦理与同意：默认加入、认知偏差利用与脆弱群体保护</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">六项都改变结论；统计显著不等于值得推广。</text>
+  </svg>
+  <figcaption>图 4：行为干预的六个适用边界。外部有效性、实施保真度、结果指标、持续性与外溢、发表偏差、伦理与同意会改变试验效应和推广价值；教学边界清单，不是伦理审查或政策模板。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“默认越强越好。”</strong> 默认能提高参与率，但也可能把不合适的人带入计划、增加后续退出成本，甚至侵犯自主选择。默认的合法性取决于透明度、可退出性和实际服务质量[1][2]。</p>
+<p><strong>“RCT 显著就说明可以推广。”</strong> 显著只说明在这个样本、这个实施条件下效应不太可能为零；规模化后的对象构成、实施质量和成本都会变，外部有效性要单独检验[2][3]。</p>
+<p><strong>“参与率提高就是成功。”</strong> 参与只是中间结果。若参与者没有拿到待遇、错误率上升或成本转嫁给基层，参与率上升可能只是把工作从表格前移到柜台后（本文判断）。</p>
+<p><strong>“发表的平均效应就是真实效应。”</strong> 期刊更可能发表显著结果，未发表的无效应试验会让公开平均偏高；评估时要考虑发表偏差和预注册[3]。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-030 行为、实验与公共服务</strong> 的关系：母文给出行为经济学、实验方法和公共服务设计的总体框架；本文把默认效应、成本效果和推广边界写成可计算的评估账。</li>
+<li>与 <strong>RES-015 研究设计与因果识别</strong> 的关系：RCT 的识别逻辑、样本量和多重比较需要与研究设计规范配合。</li>
+<li>与 <strong>RES-023 外部有效性与复制</strong> 的关系：试验结果能否推广，取决于对象、实施和情境，而不是只看显著性。</li>
+<li>与 <strong>ECO-038 外部性、庇古税与总量控制</strong> 的关系：行为干预也可能有外溢和挤出，评估时要看社会净效果，而不只是参与者增量。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>概念辨别：默认选项、提醒信和传统宣传分别改变了选择架构的哪一部分？为什么“参与率提高”不能单独证明干预成功？</li>
+<li>计算：某项目 20,000 名符合条件者，opt-in 参与率 30%，opt-out 参与率 55%，改版成本 500,000 元。增量参与者是多少？单位新增参与者成本是多少？若提醒信提升 3 个百分点、每户 4 元，单位新增成本是多少？</li>
+<li>适用条件：某地 RCT 显示提醒信提高参与率 5 个百分点，但试点只有 3 个服务点、工作人员由研究团队直接培训。列出三项在推广前必须检验的条件，并说明各自会怎样改变效应。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>World Bank, <em>World Development Report 2015: Mind, Society, and Behavior</em>. <a href="https://www.worldbank.org/en/publication/wdr2015">https://www.worldbank.org/en/publication/wdr2015</a></li>
+<li>OECD, <em>Behavioural Insights and Public Policy: Lessons from Around the World</em>. <a href="https://doi.org/10.1787/9789264270480-en">https://doi.org/10.1787/9789264270480-en</a></li>
+<li>Behavioural Insights Team, <em>EAST: Four Simple Ways to Apply Behavioural Insights</em>. <a href="https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/">https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>用处理组与对照组参与率写出平均处理效应和参与率增量，并计算单位新增参与者成本。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用效应量、结果标准差和近似公式估算两臂 RCT 每组样本量，并解释聚类为何降低有效样本量。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>用处理组与对照组参与率写出平均处理效应和参与率增量，并计算单位新增参与者成本。</li><li>用效应量、结果标准差和近似公式估算两臂 RCT 每组样本量，并解释聚类为何降低有效样本量。</li><li>区分试验效应、规模化效应和三年后效应，列出行为干预的六个适用边界并说明发表偏差如何抬高平均效应。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/behavior-experiments-and-public-services/">ECO-030 · 行为实验与公共服务</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/behavior-experiments-and-public-services/">ECO-030 · 行为实验与公共服务</a> </li><li> <a href="https://research.51invest.com/learn/causality-and-identification/">RES-015 · 因果关系与识别</a> </li><li> <a href="https://research.51invest.com/learn/multiple-testing-and-data-snooping/">RES-023 · 多重检验与数据窥探</a> </li><li> <a href="/learn/externalities-pigouvian-taxes-and-cap-and-trade/">ECO-038 · 外部性、庇古税与总量控制：价格工具何时有效</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.worldbank.org/en/publication/wdr2015" rel="noopener noreferrer" target="_blank">World Development Report 2015: Mind, Society, and Behavior</a> <p>World Bank · World Bank</p> <p>访问：2026-11-23 · 许可：CC BY 3.0 IGO</p> <p>支持论点：用于核对行为经济学把心理、社会与情境因素带入发展政策，默认、提醒和社会规范可以改变选择，但干预效果受情境与实施影响；正文参与率、成本与样本量为教学假设。</p> </div><div class="source"> <a href="https://doi.org/10.1787/9789264270480-en" rel="noopener noreferrer" target="_blank">Behavioural Insights and Public Policy: Lessons from Around the World</a> <p>OECD · OECD Publishing</p> <p>访问：2026-11-23 · 许可：OECD publishing terms; citation only</p> <p>支持论点：用于核对行为洞察在公共服务中的应用需要试验证据、实施能力与伦理审视，且规模化会改变效果和成本；正文不引用具体国家项目数据。</p> </div><div class="source"> <a href="https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/" rel="noopener noreferrer" target="_blank">EAST: Four Simple Ways to Apply Behavioural Insights</a> <p>Behavioural Insights Team · Behavioural Insights Team</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对 EAST 框架把行为干预分为 Easy、Attractive、Social、Timely 四类，默认与减少步骤属于 Easy，提醒与时机属于 Timely；正文不把框架当成万能清单。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/defaults-nudges-public-services/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

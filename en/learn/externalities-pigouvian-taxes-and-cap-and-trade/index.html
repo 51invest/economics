@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Externalities, Pigouvian Taxes and Cap-and-Trade: When Price Tools Work · 51Invest</title><meta name="description" content="Externalities let private cost omit social cost. A Pigouvian tax puts a price on the damage and feeds it back into decisions, while cap-and-trade fixes the quantity of emissions and lets the permit price adjust. Both can correct overproduction, but price certainty and quantity certainty cannot both be guaranteed; damage measurement, leakage and transaction cost decide when they work."><link rel="canonical" href="https://economics.51invest.com/en/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/externalities-pigouvian-taxes-and-cap-and-trade/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Externalities, Pigouvian Taxes and Cap-and-Trade: When Price Tools Work</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Externalities, Pigouvian Taxes and Cap-and-Trade: When Price Tools Work</h1> <p class="article-summary">Externalities let private cost omit social cost. A Pigouvian tax puts a price on the damage and feeds it back into decisions, while cap-and-trade fixes the quantity of emissions and lets the permit price adjust. Both can correct overproduction, but price certainty and quantity certainty cannot both be guaranteed; damage measurement, leakage and transaction cost decide when they work.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M06 · 福利与市场失灵</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>6 min · 10 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>By the end of this article, you can use marginal external damage to set a starting Pigouvian tax, compare a tax with tradable permits under uncertainty, and judge when putting a price on pollution fails.</p>
+</blockquote>
+<h2>Definition</h2>
+<p>An <strong>externality</strong> is a cost or benefit imposed on a third party that is not settled through a price. A negative externality makes private marginal cost lower than social marginal cost, so the market produces too much [1]. A <strong>Pigouvian tax</strong> is a corrective tax per unit of external damage that makes private cost include social cost. <strong>Cap-and-trade</strong> sets an emissions ceiling and lets regulated entities trade permits; the price is set by scarcity rather than by a tax authority [2].</p>
+<p>This article uses “price tools” for two families: a tax that prices damage directly, and a permit system that prices emissions indirectly through a quantity limit. Neither is merely “making firms pay”. Both change the marginal decision: how much social cost does one more unit of output carry?</p>
+<h2>Intuition</h2>
+<p>A factory emits 100,000 tonnes of carbon dioxide a year. Each tonne causes 40 yuan of damage, but the emission itself is free. The factory sees fuel, equipment and labour, not the 4 million yuan of external damage, so output and emissions exceed the social optimum.</p>
+<p>If the government taxes each tonne at 40 yuan, every extra tonne costs the factory 40 yuan. It can reduce emissions, change the process, or keep emitting and pay. Whenever abatement costs less than 40 yuan, abatement is cheaper than the tax; above 40 yuan, paying is cheaper. The tax turns “what society would pay to avoid one tonne” into a marginal price for the firm.</p>
+<p>Cap-and-trade takes another route: the government issues permits for 60,000 tonnes, and the factory cannot emit more. Firms with cheap abatement cut first; firms with expensive abatement buy permits. The permit price ends up near the cost of the last tonne abated [2]. A tax fixes the price and lets quantity respond; a cap fixes quantity and lets the market discover the price.</p>
+<h2>Formal expression</h2>
+<p>Let private marginal cost be <code>MPC</code>, marginal external damage <code>MEC</code>, and social marginal cost:</p>
+<p><code>MSC = MPC + MEC</code></p>
+<p>Without correction, the firm sets <code>MPC = price</code>, so output is above the social optimum where <code>MSC = price</code>. A Pigouvian tax <code>t</code> starts at marginal external damage at the target quantity:</p>
+<p><code>t* = MEC(Q*)</code></p>
+<p>If marginal damage rises with emissions, <code>t*</code> is not a constant; a fixed tax is only approximately optimal in a target range. Cap-and-trade fixes <code>Q</code> at <code>Q_cap</code>, and the permit price <code>p</code> in a competitive market approaches marginal abatement cost:</p>
+<p><code>p ≈ MAC(Q_cap)</code></p>
+<p>where <code>MAC</code> is marginal abatement cost. Tax revenue is <code>t × Q</code>; auction revenue is <code>p × Q_cap</code>. If permits are given away free, the revenue goes to permit holders rather than the government, but the quantity constraint remains.</p>
+<p>Under uncertainty there is a key difference: if marginal damage is steeper than marginal abatement cost, a quantity instrument is closer to the optimum; if marginal abatement cost is steeper, a price instrument is closer. This is why price and quantity tools are not interchangeable, and why the practical argument is often “estimate damage first” versus “estimate cost first”.</p>
+<p>The damage estimate itself is not a single number. EPA&#39;s social-cost work shows that estimates depend on the discount rate, the damage function and the emissions scenario [3].</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>Damage can be measured per unit.</strong> A Pigouvian tax needs an estimate of marginal damage per tonne. If damage is threshold-based or highly non-linear, a fixed tax can miss badly.</li>
+<li><strong>Marginal damage is relatively stable.</strong> Firms respond to the tax; if damage varies sharply by location, time or exposed population, one uniform rate misallocates abatement.</li>
+<li><strong>Emission points can be defined and measured.</strong> Point sources fit taxes or permits. Non-point sources such as farm runoff or traffic congestion may have monitoring and enforcement costs above the benefit.</li>
+<li><strong>Leakage is contained.</strong> If dirty production moves to an unregulated region, global emissions may not fall; border adjustment, coverage and cross-border agreements determine whether total damage falls.</li>
+<li><strong>Transaction cost does not eat the saving.</strong> Permit markets need registries, monitoring, penalties and secondary trading. With few participants, market power can distort the permit price.</li>
+<li><strong>Revenue use is stated.</strong> Tax or auction revenue can cut other distorting taxes, be rebated, or fund abatement. The use changes distribution, not the marginal abatement incentive.</li>
+</ol>
+<h2>Worked example</h2>
+<p>A plant emits 100,000 tonnes of carbon dioxide a year, and marginal external damage is 40 yuan per tonne. Abatement options are shown below (teaching assumptions):</p>
+<table>
+<thead>
+<tr>
+<th align="right">Abatement (10,000 tonnes)</th>
+<th align="right">Marginal abatement cost (yuan/tonne)</th>
+<th align="right">Cumulative abatement cost (10,000 yuan)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0–2</td>
+<td align="right">20</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td align="right">2–4</td>
+<td align="right">40</td>
+<td align="right">80</td>
+</tr>
+<tr>
+<td align="right">4–6</td>
+<td align="right">60</td>
+<td align="right">120</td>
+</tr>
+<tr>
+<td align="right">6–8</td>
+<td align="right">90</td>
+<td align="right">180</td>
+</tr>
+</tbody></table>
+<p>With no policy, emissions are 100,000 tonnes, external damage is <code>40 × 100,000 = 4 million yuan</code>, and abatement cost is zero.</p>
+<p>With a 40 yuan Pigouvian tax, the factory abates the first 40,000 tonnes: the first 20,000 cost 20 yuan, below the tax; the next 20,000 cost 40 yuan, equal to the tax; further abatement costs 60 yuan, above the tax, so the factory pays instead. Emissions fall to 60,000 tonnes. Tax paid is <code>40 × 60,000 = 2.4 million yuan</code>; abatement cost is <code>20 × 20,000 + 40 × 20,000 = 1.2 million yuan</code>. Social cost is abatement plus external damage: <code>1.2 + 40 × 60,000 = 3.6 million yuan</code>, below the 4 million yuan without policy.</p>
+<p>A cap of 60,000 tonnes puts marginal abatement cost at 40 yuan, so the permit price is about 40 yuan; abatement and social cost match the 40 yuan tax. If the cap is tightened to 40,000 tonnes, the last 20,000 tonnes cost 60 yuan to abate and the permit price rises to 60 yuan. Abatement cost becomes <code>400,000 + 800,000 + 1.2 million = 2.4 million yuan</code>; external damage is <code>40 × 40,000 = 1.6 million yuan</code>; social cost is 4 million yuan. The cap is too tight: marginal abatement cost exceeds marginal damage, and society pays more than the last tonnes are worth.</p>
+<p>Conversely, if actual marginal damage is 60 yuan rather than 40, the 40 yuan tax abates too little, while a 40,000 tonne cap is close to optimal. Which instrument is closer depends on the true damage and cost curves, not on the label.</p>
+<p>These are teaching assumptions, not real firm or carbon-market data.</p>
+<h2>Figures</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-mech-title fig-ext-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-ext-mech-title">The mechanism from omitted external cost to policy correction</title>
+    <desc id="fig-ext-mech-desc">The factory emits 100,000 tonnes and each tonne causes 40 yuan of external damage, so the private accounts omit 4 million yuan. A 40 yuan tax or a 60,000 tonne cap puts marginal damage back into the decision and cuts emissions to 60,000 tonnes. Teaching diagram, not real firm data.</desc>
+    <rect x="16" y="52" width="124" height="96" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="76" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">Emissions 100k t</text>
+    <text x="30" y="98" font-size="10" fill="var(--muted)" font-family="inherit">Fuel, equipment, labour</text>
+    <text x="30" y="118" font-size="10" fill="var(--muted)" font-family="inherit">Private cost misses damage</text>
+    <rect x="168" y="52" width="124" height="96" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="182" y="76" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">Damage CNY 4m</text>
+    <text x="182" y="98" font-size="10" fill="var(--muted)" font-family="inherit">CNY 40/t × 100k t</text>
+    <text x="182" y="118" font-size="10" fill="var(--muted)" font-family="inherit">Third parties bear it</text>
+    <rect x="320" y="52" width="124" height="96" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="334" y="76" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">Output too high</text>
+    <text x="334" y="98" font-size="10" fill="var(--muted)" font-family="inherit">Social cost &gt; private cost</text>
+    <text x="334" y="118" font-size="10" fill="var(--muted)" font-family="inherit">Market is not optimal</text>
+    <line x1="140" y1="100" x2="168" y2="100" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="292" y1="100" x2="320" y2="100" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="16" y="182" width="428" height="52" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="30" y="204" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">Correction: CNY 40/t tax, or a 60k tonne cap</text>
+    <text x="30" y="224" font-size="10" fill="var(--muted)" font-family="inherit">Each extra tonne now costs CNY 40 or one permit</text>
+    <rect x="16" y="250" width="428" height="36" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="30" y="273" font-size="10.5" fill="var(--accent)" font-family="inherit">Result: 60k t; abatement CNY 1.2m + damage CNY 2.4m = social cost CNY 3.6m</text>
+  </svg>
+  <figcaption>Figure 1: the externality chain. Private accounts omit CNY 4m of damage; a tax or cap puts marginal damage back into the decision and cuts emissions from 100k to 60k tonnes. Teaching numbers.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-mac-title fig-ext-mac-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-ext-mac-title">Marginal abatement cost steps and a CNY 40 Pigouvian tax</title>
+    <desc id="fig-ext-mac-desc">Four abatement blocks cost 20, 40, 60 and 90 yuan per tonne, 20,000 tonnes each. A 40 yuan tax accepts the first two blocks, 40,000 tonnes in total, and emissions fall to 60,000 tonnes. Teaching example, not real abatement data.</desc>
+    <line x1="90" y1="236" x2="420" y2="236" stroke="var(--border)" stroke-width="1.2"></line>
+    <line x1="90" y1="236" x2="90" y2="38" stroke="var(--border)" stroke-width="1.2"></line>
+    <rect x="100" y="196" width="64" height="40" fill="var(--accent)" opacity="0.82"></rect>
+    <rect x="176" y="156" width="64" height="80" fill="var(--accent)" opacity="0.82"></rect>
+    <rect x="252" y="116" width="64" height="120" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <rect x="328" y="66" width="64" height="170" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <line x1="90" y1="156" x2="420" y2="156" stroke="var(--gold)" stroke-width="2"></line>
+    <text x="426" y="160" font-size="10" fill="var(--gold)" font-family="inherit" text-anchor="end">tax CNY 40</text>
+    <g fill="var(--text)" font-size="10" font-family="inherit" text-anchor="middle">
+      <text x="132" y="188">CNY 20</text>
+      <text x="208" y="148">CNY 40</text>
+      <text x="284" y="108">CNY 60</text>
+      <text x="360" y="58">CNY 90</text>
+      <text x="132" y="256">0–20k t</text>
+      <text x="208" y="256">20–40k t</text>
+      <text x="284" y="256">40–60k t</text>
+      <text x="360" y="256">60–80k t</text>
+    </g>
+    <text x="92" y="30" font-size="10.5" fill="var(--muted)" font-family="inherit">Abatement cost (CNY/t)</text>
+    <text x="32" y="150" font-size="10" fill="var(--accent)" font-family="inherit">Abated</text>
+    <text x="32" y="166" font-size="10" fill="var(--muted)" font-family="inherit">40k t</text>
+  </svg>
+  <figcaption>Figure 2: a CNY 40 tax accepts only abatement blocks costing CNY 40 or less, 40,000 tonnes in total; blocks at CNY 60 and 90 pay the tax instead. Teaching assumptions.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-compare-title fig-ext-compare-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-ext-compare-title">Five comparison dimensions for a tax and a cap</title>
+    <desc id="fig-ext-compare-desc">A tax fixes price and lets quantity respond; revenue goes to government. A cap fixes quantity and lets price respond; auction revenue goes to government or permits are given away. They differ in uncertainty, distribution and transaction cost. Teaching comparison, not a policy recommendation.</desc>
+    <rect x="16" y="44" width="208" height="236" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <rect x="236" y="44" width="208" height="236" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="30" y="68" font-size="12" font-weight="650" fill="var(--accent)" font-family="inherit">Pigouvian tax</text>
+    <text x="250" y="68" font-size="12" font-weight="650" fill="var(--accent)" font-family="inherit">Cap-and-trade</text>
+    <g fill="var(--text)" font-size="10" font-family="inherit">
+      <text x="30" y="96">Price is fixed</text><text x="250" y="96">Quantity is fixed</text>
+      <text x="30" y="126">Quantity responds</text><text x="250" y="126">Price responds</text>
+      <text x="30" y="156">Tax revenue to government</text><text x="250" y="156">Auction to government; free allocation to firms</text>
+      <text x="30" y="186">Better when damage is stable</text><text x="250" y="186">Better when the cap is firm</text>
+      <text x="30" y="216">Rate changes are political</text><text x="250" y="216">Allocation is political</text>
+      <text x="30" y="246">A price floor cannot guarantee quantity</text><text x="250" y="246">A price ceiling cannot guarantee delivery</text>
+    </g>
+    <text x="16" y="24" font-size="10.5" fill="var(--muted)" font-family="inherit">Same goal: put marginal damage into the firm's decision; the difference is whether price or quantity is fixed first.</text>
+  </svg>
+  <figcaption>Figure 3: tax versus cap. A tax fixes price and lets quantity respond; a cap fixes quantity and lets price respond. Both internalise marginal damage, but price certainty and quantity certainty cannot both be guaranteed. Teaching comparison.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-boundary-title fig-ext-boundary-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-ext-boundary-title">Five checks before pricing an externality</title>
+    <desc id="fig-ext-boundary-desc">Check whether damage can be measured per unit, whether marginal damage is stable, whether emission points can be monitored, whether leakage occurs, and whether transaction and enforcement costs are manageable. If any check fails, a price tool may turn abatement into an accounting game. Teaching checklist.</desc>
+    <rect x="16" y="40" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="67" font-size="10.5" fill="var(--text)" font-family="inherit">1. Can damage be measured per unit? No → assess damage first</text>
+    <rect x="16" y="94" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="121" font-size="10.5" fill="var(--text)" font-family="inherit">2. Is marginal damage stable? No → zone, time or threshold tools</text>
+    <rect x="16" y="148" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="175" font-size="10.5" fill="var(--text)" font-family="inherit">3. Can emission points be monitored? Non-point → input tax or joint governance</text>
+    <rect x="16" y="202" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="229" font-size="10.5" fill="var(--text)" font-family="inherit">4. Will production leak? Yes → border adjustment or wider coverage</text>
+    <rect x="16" y="256" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="283" font-size="10.5" fill="var(--text)" font-family="inherit">5. Are trading and enforcement costs manageable? No → simplify or regulate</text>
+  </svg>
+  <figcaption>Figure 4: the boundary of price tools. Damage measurement, marginal stability, point monitoring, leakage and transaction cost all have to pass; this is a teaching checklist, not a policy template.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>“A Pigouvian tax equals total external damage.”</strong> The optimal rate equals marginal external damage at the target quantity, not total damage divided by every tonne. Total damage includes stock effects; marginal damage is the last tonne.</p>
+<p><strong>“A cap is always greener than a tax.”</strong> A tighter cap does emit less, but if it is too tight, marginal abatement cost exceeds marginal damage and society pays too much for the last tonnes. A quantity tool guarantees the cap, not efficiency.</p>
+<p><strong>“Tax revenue is a free bonus.”</strong> The tax is a transfer, not a resource. The real costs are abatement and damage. Revenue use affects distribution and other tax burdens, but the transfer itself is not a social gain.</p>
+<p><strong>“Free permits and auctions are equivalent.”</strong> The marginal abatement incentive may be the same, but distribution is not: free allocation gives scarcity rents to incumbent emitters; auction keeps them in the public budget.</p>
+<p><strong>“Every externality can be priced.”</strong> Non-point sources, damage thresholds, severe leakage and high enforcement cost can defeat price tools. Direct regulation, standards or public investment may work better.</p>
+<h2>Related</h2>
+<ul>
+<li><strong>ECO-005 Demand, Supply and Market Equilibrium</strong> provides the no-policy benchmark: an externality puts the social cost curve above the private cost curve, and equilibrium quantity and price have to be read on the same supply-and-demand diagram.</li>
+<li><strong>ECO-010 Externalities and Public Goods</strong> defines externalities, positive and negative spillovers and public goods; this article focuses on policy tools and the tax-versus-cap comparison.</li>
+<li><strong>ECO-009 Competition and Monopoly</strong> matters because permit markets can also suffer from market power; competition and environmental policy have to be read together.</li>
+<li><strong>ECO-029 Environment, Energy and Agriculture</strong> is the application layer: carbon pricing, energy transition and farm runoff.</li>
+</ul>
+<h2>Exercises</h2>
+<ol>
+<li>Concept check: which instrument fixes price and which fixes quantity? Which is more suitable when the damage ceiling must not be breached?</li>
+<li>Calculation: marginal damage is CNY 30/t and abatement options cost CNY 10, 30 and 50 per tonne, 10,000 tonnes each. How much does a firm abate under a CNY 30 tax, and what is the social cost?</li>
+<li>Boundary: farm runoff is hard to measure. Is a tax on nitrogen content or a permit for each field more feasible? Explain.</li>
+</ol>
+<h2>Sources</h2>
+<ol>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 12.1 The Economics of Pollution. <a href="https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution">https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution</a></li>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 12.3 Market-Oriented Environmental Tools. <a href="https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools">https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools</a></li>
+<li>U.S. Environmental Protection Agency, <em>EPA&#39;s Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances</em>. <a href="https://www.epa.gov/environmental-economics/scghg">https://www.epa.gov/environmental-economics/scghg</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Use marginal external damage to set a starting Pigouvian tax and state the relation between social and private marginal cost.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Compare abatement, social cost and permit price under a tax and tradable permits with a step-cost example.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Use marginal external damage to set a starting Pigouvian tax and state the relation between social and private marginal cost.</li><li>Compare abatement, social cost and permit price under a tax and tradable permits with a step-cost example.</li><li>List six conditions for effective price tools and identify failures from damage thresholds, non-point sources and leakage.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/externalities-and-public-goods/">ECO-010 · Externalities and Public Goods</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/supply-demand-equilibrium/">ECO-005 · Supply, Demand and Equilibrium</a> </li><li> <a href="/en/learn/competition-and-monopoly/">ECO-009 · Competition and Monopoly</a> </li><li> <a href="/en/learn/environment-energy-and-agriculture/">ECO-029 · Environment, Energy and Agriculture</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 12.1 The Economics of Pollution</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-11-23 · License: CC BY-NC-SA 4.0</p> <p>Supports: Used to check the definitions of negative externality, social cost as private cost plus external cost, and market output above the social optimum; firm numbers are teaching examples.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 12.3 Market-Oriented Environmental Tools</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-11-23 · License: CC BY-NC-SA 4.0</p> <p>Supports: Used to check the distinction between Pigouvian taxes, tradable permits, quantity caps and price tools; the text does not treat tax revenue or free allocation as a net social gain.</p> </div><div class="source"> <a href="https://www.epa.gov/environmental-economics/scghg" rel="noopener noreferrer" target="_blank">EPA&#39;s Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances</a> <p>U.S. Environmental Protection Agency · U.S. Environmental Protection Agency</p> <p>Accessed: 2026-11-23 · License: U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>Supports: Used to check that social-cost estimates depend on the discount rate, damage function and emissions scenario rather than a single fixed number; the teaching tax rate is not presented as an official social cost.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/externalities-pigouvian-taxes-and-cap-and-trade/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

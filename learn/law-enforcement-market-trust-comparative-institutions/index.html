@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>法律执行与市场信任：比较制度的可检验部分 · 巫妖投资</title><meta name="description" content="法律能不能促进市场信任，不在于条文写得多好，而在于产权是否清楚、合同是否可执行、违约成本是否可计算。本文用交易成本、执行成本和信任替代三条线，拆开“制度好—增长快”的黑箱，留下可检验的部分。"><link rel="canonical" href="https://economics.51invest.com/learn/law-enforcement-market-trust-comparative-institutions/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/law-enforcement-market-trust-comparative-institutions/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/law-enforcement-market-trust-comparative-institutions/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/law-enforcement-market-trust-comparative-institutions/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/law-enforcement-market-trust-comparative-institutions/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">法律执行与市场信任：比较制度的可检验部分</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">法律执行与市场信任：比较制度的可检验部分</h1> <p class="article-summary">法律能不能促进市场信任，不在于条文写得多好，而在于产权是否清楚、合同是否可执行、违约成本是否可计算。本文用交易成本、执行成本和信任替代三条线，拆开“制度好—增长快”的黑箱，留下可检验的部分。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M21 · 法律组织与比较经济</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 13 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义与直觉</h2>
+<p>**法律执行（law enforcement）**不是“有没有法”，而是“权利能否被主张、合同能否被履行、违约能否被惩罚”。市场信任来自三个可观察的机制：产权清楚，交易者知道什么归谁；合同可执行，违约有可计算的赔偿；执行成本可承受，打官司或仲裁不比交易本身更贵。</p>
+<p><strong>交易成本</strong>包括搜寻、谈判、签约、监督和执行的费用。当交易成本高时，企业会用关系、纵向一体化或合作社替代市场合同；当交易成本低时，市场合同更有效率。制度比较的任务不是证明“法律越多越好”，而是识别在什么交易特征下，哪种治理结构更省成本[1][2]。</p>
+<p><strong>比较制度</strong>容易滑向宏观叙事：把“好制度”与“高增长”配对，却说不清机制。可检验的部分是具体的：产权登记时间、合同执行天数、违约赔偿比例、仲裁覆盖率。这些变量能放进回归，也能放进企业决策账。</p>
+<h2>三条机制</h2>
+<p><strong>产权机制</strong>：登记和公示降低“这到底是谁的”争议成本。产权越清楚，抵押、转让和投资越容易；产权不清楚，交易需要更多尽调和担保，成本上升。</p>
+<p><strong>合同机制</strong>：法院或仲裁机构提供第三方执行。合同越完整、违约赔偿越可计算，交易者越敢与陌生人合作；但合同越完整，起草和监督成本也越高。</p>
+<p><strong>信任替代</strong>：当正式执行贵或慢时，关系、声誉和社区规范可以替代合同。关系治理在重复交易、专用资产和小圈子里有效；一旦交易范围扩大、参与者退出，关系信任会衰减，正式执行重新变得重要[3][4]。</p>
+<p>三条机制不是替代关系，而是互补。正式执行提供底线，关系信任降低日常监督成本；产权清楚降低尽调成本，合同执行降低违约风险。</p>
+<h2>正式表达与示例</h2>
+<p>假设一笔 100 万元的设备采购，买方担心卖方交付不合格。正式合同方案：律师费、公证和仲裁条款 2 万元，执行时间 6 个月，违约赔偿 20 万元。关系方案：不签详细合同，靠长期合作和行业声誉，监督成本 1 万元，但违约时只能停止合作，损失可能 30 万元。</p>
+<p>若违约概率 5%，正式方案的期望成本为 <code>2 + 0.05×20 = 3 万元</code>；关系方案的期望成本为 <code>1 + 0.05×30 = 2.5 万元</code>。在这个例子里，关系治理更省。但若违约概率升到 15%，正式方案为 <code>2 + 3 = 5 万元</code>，关系方案为 <code>1 + 4.5 = 5.5 万元</code>，正式合同更优。</p>
+<p>若交易对象是陌生人、金额更大、专用资产更多，关系治理的违约损失会更高，正式执行的价值上升。以上数字均为教学假设，不是实际诉讼成本。</p>
+<h2>图表</h2>
+<figure>
+<svg role="img" aria-labelledby="fig-law-enforcement-market-trust-comparative-institutions-1-title fig-law-enforcement-market-trust-comparative-institutions-1-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-law-enforcement-market-trust-comparative-institutions-1-title">法律与市场信任的传导链</title>
+<desc id="fig-law-enforcement-market-trust-comparative-institutions-1-desc">四步：产权登记、合同签订、执行成本、信任替代。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">法律执行如何降低交易成本</text>
+<text x="24" y="54" font-size="11" text-anchor="start">产权、合同、执行、信任四步；执行成本高时关系治理替代。</text>
+<rect x="14" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="69" y="140" font-size="12" text-anchor="middle">产权登记</text>
+<text x="69" y="184" font-size="12" text-anchor="middle" font-weight="700">清楚</text>
+<rect x="136" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="191" y="140" font-size="12" text-anchor="middle">合同签订</text>
+<text x="191" y="184" font-size="12" text-anchor="middle" font-weight="700">可执行</text>
+<rect x="258" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="313" y="140" font-size="12" text-anchor="middle">执行成本</text>
+<text x="313" y="184" font-size="12" text-anchor="middle" font-weight="700">2 万元</text>
+<rect x="380" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="435" y="140" font-size="12" text-anchor="middle">信任替代</text>
+<text x="435" y="184" font-size="12" text-anchor="middle" font-weight="700">关系/声誉</text>
+<line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="247" y1="160" x2="257" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="369" y1="160" x2="379" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<text x="24" y="246" font-size="11" text-anchor="start">教学示意，不含统计数据。</text>
+</g>
+</svg>
+<figcaption>图 1：法律与市场信任的传导链；教学示意。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-law-enforcement-market-trust-comparative-institutions-2-title fig-law-enforcement-market-trust-comparative-institutions-2-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-law-enforcement-market-trust-comparative-institutions-2-title">两种治理的期望成本</title>
+<desc id="fig-law-enforcement-market-trust-comparative-institutions-2-desc">在 5% 和 15% 违约概率下比较正式合同与关系治理的期望成本。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">正式合同与关系治理的期望成本</text>
+<text x="24" y="54" font-size="11" text-anchor="start">违约概率 5% 时关系 2.5 万、正式 3 万；15% 时正式 5</text>
+<text x="24" y="68" font-size="11" text-anchor="start"> 万、关系 5.5 万。</text>
+<line x1="178" y1="64" x2="178" y2="270" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="20" y="97" font-size="12">关系 5%</text>
+<rect x="178" y="78" width="163.63636363636363" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="95" font-size="12" font-weight="700">2.5</text>
+<text x="20" y="145" font-size="12">正式 5%</text>
+<rect x="178" y="126" width="196.36363636363635" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="143" font-size="12" font-weight="700">3.0</text>
+<text x="20" y="193" font-size="12">正式 15%</text>
+<rect x="178" y="174" width="327.27272727272725" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="191" font-size="12" font-weight="700">5.0</text>
+<text x="20" y="241" font-size="12">关系 15%</text>
+<rect x="178" y="222" width="360" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="239" font-size="12" font-weight="700">5.5</text>
+<text x="24" y="292" font-size="11" text-anchor="start">教学假设；单位：万元。</text>
+</g>
+</svg>
+<figcaption>图 2：两种治理的期望成本；教学假设，单位万元。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-law-enforcement-market-trust-comparative-institutions-3-title fig-law-enforcement-market-trust-comparative-institutions-3-desc" viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-law-enforcement-market-trust-comparative-institutions-3-title">治理结构的四象限</title>
+<desc id="fig-law-enforcement-market-trust-comparative-institutions-3-desc">两轴：交易频率高低、资产专用性高低；四象限对应市场、关系、一体化和合作社。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">交易频率与资产专用性的治理选择</text>
+<text x="24" y="54" font-size="11" text-anchor="start">高频、专用资产适合一体化；低频、通用资产适合市场合同。</text>
+<text x="40" y="68" font-size="11">高频</text>
+<text x="40" y="286" font-size="11">低频</text>
+<text x="110" y="314" font-size="11" text-anchor="middle">低专用性</text>
+<text x="500" y="314" font-size="11" text-anchor="middle">高专用性</text>
+<rect x="96" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="100" font-size="12" text-anchor="start">关系</text>
+<text x="108" y="130" font-size="11" text-anchor="start">高频、低专用</text>
+<text x="108" y="170" font-size="11" font-weight="700">长期合作</text>
+<rect x="338" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="100" font-size="12" text-anchor="start">一体化</text>
+<text x="350" y="130" font-size="11" text-anchor="start">高频、高专用</text>
+<text x="350" y="170" font-size="11" font-weight="700">纵向整合</text>
+<rect x="96" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="214" font-size="12" text-anchor="start">市场</text>
+<text x="108" y="244" font-size="11" text-anchor="start">低频、低专用</text>
+<text x="108" y="284" font-size="11" font-weight="700">现货合同</text>
+<rect x="338" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="214" font-size="12" text-anchor="start">合作社</text>
+<text x="350" y="244" font-size="11" text-anchor="start">低频、高专用</text>
+<text x="350" y="284" font-size="11" font-weight="700">共同治理</text>
+</g>
+</svg>
+<figcaption>图 3：治理结构的四象限；对比分类示意。</figcaption>
+</figure>
+
+<p>图 1 把产权、合同、执行成本和信任替代串成一条链；图 2 比较正式合同与关系治理在两种违约概率下的期望成本；图 3 用“交易频率—资产专用性”两轴划出市场、关系、一体化和合作社四种治理。图中数字均为教学假设。</p>
+<h2>适用条件与边界</h2>
+<p><strong>边界一：法律条文不等于执行。</strong> 登记率、法官数量、仲裁覆盖率和判决执行率才是可观察变量；条文写得再好，执行慢也会推高交易成本。</p>
+<p><strong>边界二：关系治理有规模极限。</strong> 熟人网络在小型、重复交易中有效；陌生人、跨地区、一次性交易需要正式执行。</p>
+<p><strong>边界三：制度比较有遗漏变量。</strong> 增长快的国家可能同时有地理、人口、技术和外部援助优势；把增长全归因于法律，会高估制度的作用。</p>
+<p><strong>边界四：非市场组织也有治理成本。</strong> 合作社、家族企业、国有企业可以降低某些交易成本，但内部监督、激励和退出规则也会产生成本；不能假设非市场组织天然更信任。</p>
+<h2>常见误解</h2>
+<p><strong>误解一：法律越多，市场越信任。</strong> 关键在執行质量和产权清晰度，不是条文数量。</p>
+<p><strong>误解二：关系信任是落后制度。</strong> 关系治理在特定交易中更省成本；它与正式执行互补，不是简单替代。</p>
+<p><strong>误解三：比较制度只能讲宏观故事。</strong> 产权登记、合同执行、违约赔偿都可以量化；可检验的机制比宏大叙事更有解释力。</p>
+<h2>深化：国家能力、非正式制度与执法信任</h2>
+<p><strong>执法信任不是“警察多”</strong>。它取决于三个能力：发现违规（信息）、执行裁决（司法）、持续监督（行政）。缺一项，规则就会变成“选择性执法”：有关系的能逃，没关系的受罚，信任反而下降。</p>
+<p><strong>非正式制度</strong>（宗族、行会、社区规范）能补正式执法的空白，但也可能保护内部人、排斥外来者。市场越大、交易越匿名，非正式制度越不够用，正式合同和法庭越重要。</p>
+<p><strong>国家能力</strong>包括征税、登记、统计和执法。没有财产登记，抵押品无法执行；没有企业登记，责任无法追溯；没有统计，政策无法评估。执法能力是国家能力的一部分，不是孤立变量。</p>
+<p><strong>比较制度</strong>要避免“最优制度”幻觉。美国靠法院和集体诉讼，德国靠行会和职业监管，中国靠行政监管和专项整治；各有成本，不能简单移植。制度匹配取决于市场结构、历史和法律传统。</p>
+<p><strong>信任的测量</strong>：合同执行时间、法庭效率、腐败感知、企业调查中的“对法院信心”、以及非正式支付比例。单一指标会误导，组合看才能区分“规则缺失”和“执行不力”。</p>
+<p><strong>常见误用</strong>：把“严打”当成“法治”；把“信任”当成文化问题；把“非正式制度”当成落后。执法信任是制度、能力和信息共同作用的结果。</p>
+<h2>制度比较清单</h2>
+<p>比较“法律执行”与“市场信任”，不要停在“有法/无法”，按七项拆：</p>
+<ol>
+<li><strong>产权是否可主张？</strong> 登记、抵押、转让和征收规则决定资产能否变现；纸面权利不等于可交易权利。</li>
+<li><strong>合同违约的赔偿是否可计算？</strong> 赔偿范围、执行时间和诉讼成本决定当事人是否愿意签约。</li>
+<li><strong>执行成本由谁承担？</strong> 法院、仲裁、担保和关系网络各有成本；对小额交易，程序成本可能高于交易本身。</li>
+<li><strong>非正式制度补了什么？</strong> 家族、行会、宗族和平台规则能降低执行成本，也可能排斥外人。</li>
+<li><strong>执法是否可预测？</strong> 选择性执法和频繁改规会提高风险溢价；企业会用关系或退出替代合同。</li>
+<li><strong>跨境交易能否执行？</strong> 法律辖区、仲裁地和资产所在地不一致时，执行难度上升。</li>
+<li><strong>制度比较的基准是什么？</strong> 不是“法律越多越好”，而是在给定交易特征下，哪种治理结构更省总成本。</li>
+</ol>
+<p>把正式法律、非正式规则和执行成本放在同一张表上，才能解释“同样的法，不同的信任”。</p>
+<h2>反证条件</h2>
+<p>法律执行与市场信任的结论依赖正式制度和非正式制度的相对成本：</p>
+<ol>
+<li><strong>非正式制度已能执行。</strong> 若家族、行会或平台规则足以约束违约，正式法院的边际作用有限。</li>
+<li><strong>执法被精英俘获。</strong> 若产权登记和判决执行偏向特定群体，纸面权利无法转化为普遍信任。</li>
+<li><strong>数字平台降低交易成本。</strong> 若平台担保、评分和争议解决替代法院，小额交易对正式法律的依赖下降。</li>
+<li><strong>跨境仲裁可绕开本地法院。</strong> 若合同选择境外仲裁和资产所在地执行，本地执法质量的影响被削弱。</li>
+<li><strong>法律模糊是故意的。</strong> 若规则故意留白以便选择性执行，可预测性下降，企业会用关系替代合同。</li>
+<li><strong>只测 de jure 不测 de facto。</strong> 若用法律条文数量代替实际执行结果，结论会高估制度质量。</li>
+</ol>
+<p>信任不是“法律多不多”，而是权利可主张、合同可执行、成本可承受三者在实际交易中的组合。</p>
+<h2>反证条件（续）</h2>
+<p>还有三项：</p>
+<ol start="7">
+<li><strong>执行成本被保险或担保替代。</strong> 若保险公司、保理商和平台担保承担违约损失，法院的重要性下降，信任转移到私人中介。</li>
+<li><strong>司法能力不足。</strong> 若法官、法院和执法队伍数量与专业度不足，法律条文无法转化为可执行判决。</li>
+<li><strong>只测陈述信任，不测交易信任。</strong> 若用问卷信任度代替实际合同、违约和复购数据， stated trust 与 revealed trust 会背离。</li>
+</ol>
+<p><strong>实践含义：</strong> 制度建设的重点不是通过更多法律，而是降低权利主张、合同执行和纠纷解决的实际成本；正式法院与非正式规则要互补，而不是互相替代。</p>
+<p><strong>数据附注：</strong> 用 de facto 执行指标（结案率、执行时间、违约回收率），而不是法律条文数量；否则制度质量会被高估。</p>
+<p><strong>范围说明：</strong> 还要测法律服务可及性和代理质量；正式权利平等，可能伴随实际 access 不平等。执行成本不只在法院，也在语言、时间和法律援助。</p>
+<p><strong>最后：</strong> 法律援助和代理质量是执行成本的一部分，不是单独的福利议题；它们决定权利是否真的可用。</p>
+<h2>练习</h2>
+<ol>
+<li><p>把法律对市场的作用拆成产权、合同执行、违约成本三条线，各写一句。</p>
+</li>
+<li><p>100 万元交易、正式成本 2 万元、违约概率 5%、赔偿 20 万元，计算期望成本。</p>
+</li>
+<li><p>若违约概率升到 15%，重算正式合同与关系治理的期望成本。</p>
+</li>
+<li><p>什么交易特征下关系治理更有效？各举一个例子。</p>
+</li>
+<li><p>为什么“法律条文多”不等于“执行好”？给出两个可观察指标。</p>
+</li>
+<li><p>比较合作社与市场合同在治理成本上的差异。</p>
+</li>
+<li><p>判断：制度比较研究能否只靠人均收入回归？写出两个遗漏变量。</p>
+</li>
+<li><p>执法信任为什么取决于发现、裁决和监督三项能力？</p>
+</li>
+<li><p>非正式制度在什么条件下能补正式执法，什么条件下会阻碍市场扩展？</p>
+</li>
+</ol>
+<h2>关联</h2>
+<p>先修 ECO-031；对照 ECO-047；相邻 FIN-039、HIS-032。</p>
+<h2>来源</h2>
+<ol>
+<li>Oliver E. Williamson, <em>Transaction-Cost Economics: The Governance of Contractual Relations</em>. Journal of Law and Economics 22(2), University of Chicago Press, accessed 2026-11-24. <a href="https://doi.org/10.1086/466942">https://doi.org/10.1086/466942</a></li>
+<li>World Bank, <em>World Development Report 2017: Governance and the Law</em>. World Bank, accessed 2026-11-21. <a href="https://www.worldbank.org/en/publication/wdr2017">https://www.worldbank.org/en/publication/wdr2017</a></li>
+<li>International Cooperative Alliance, <em>Statement on the Cooperative Identity</em>. International Cooperative Alliance, accessed 2026-11-21. <a href="https://ica.coop/en/whats-co-op/co-operative-identity-values-principles">https://ica.coop/en/whats-co-op/co-operative-identity-values-principles</a></li>
+<li>Federal Trade Commission, <em>The Antitrust Laws</em>. Federal Trade Commission, accessed 2026-11-03. <a href="https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/antitrust-laws">https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/antitrust-laws</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>把法律对市场的作用拆成产权、合同执行和违约成本三条线。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用执行成本算一笔交易在正式合同与关系治理之间的取舍。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>把法律对市场的作用拆成产权、合同执行和违约成本三条线。</li><li>用执行成本算一笔交易在正式合同与关系治理之间的取舍。</li><li>识别比较制度研究中不可检验的宏观叙事，保留可检验的机制。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/law-organizations-and-comparative-economies/">ECO-031 · 法律组织与比较经济</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/contracts-specific-assets-organizational-boundaries/">ECO-047 · 合约、专用资产与组织边界：交易成本的价格账</a> </li><li> <a href="https://finance.51invest.com/learn/disclosure-suitability-and-conflicts-of-interest/">FIN-039 · 披露、适当性与利益冲突：监管的三本账</a> </li><li> <a href="https://history.51invest.com/learn/great-divergence-and-institutional-comparison/">HIS-032 · 大分流与制度比较：区域历史的证据</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://doi.org/10.1086/466942" rel="noopener noreferrer" target="_blank">Transaction-Cost Economics: The Governance of Contractual Relations</a> <p>Oliver E. Williamson · Journal of Law and Economics 22(2), University of Chicago Press</p> <p>访问：2026-11-24 · 许可：University of Chicago Press journal article; subscription access; citation only</p> <p>支持论点：支持交易成本、专用资产与治理结构选择的理论框架。</p> </div><div class="source"> <a href="https://www.worldbank.org/en/publication/wdr2017" rel="noopener noreferrer" target="_blank">World Development Report 2017: Governance and the Law</a> <p>World Bank · World Bank</p> <p>访问：2026-11-21 · 许可：CC BY 3.0 IGO</p> <p>支持论点：支持治理、法律执行与市场信任在发展中的机制。</p> </div><div class="source"> <a href="https://ica.coop/en/whats-co-op/co-operative-identity-values-principles" rel="noopener noreferrer" target="_blank">Statement on the Cooperative Identity</a> <p>International Cooperative Alliance · International Cooperative Alliance</p> <p>访问：2026-11-21 · 许可：ICA publication; citation only</p> <p>支持论点：支持合作社等非市场组织的治理原则与边界。</p> </div><div class="source"> <a href="https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/antitrust-laws" rel="noopener noreferrer" target="_blank">The Antitrust Laws</a> <p>Federal Trade Commission · Federal Trade Commission</p> <p>访问：2026-11-03 · 许可：U.S. Government work: public domain, not subject to copyright restrictions (17 U.S.C. 105); attribution requested</p> <p>支持论点：支持竞争法、市场行为与执法机构的制度比较。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/law-enforcement-market-trust-comparative-institutions/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

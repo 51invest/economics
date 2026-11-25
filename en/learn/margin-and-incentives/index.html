@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Margin and Incentives · 51Invest</title><meta name="description" content="Marginal decisions compare the benefit and cost of one more unit, and incentives change those two quantities."><link rel="canonical" href="https://economics.51invest.com/en/learn/margin-and-incentives/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/margin-and-incentives/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/margin-and-incentives/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/margin-and-incentives/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/margin-and-incentives/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Margin and Incentives</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Margin and Incentives</h1> <p class="article-summary">Marginal decisions compare the benefit and cost of one more unit, and incentives change those two quantities.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M01 · 经济学导论</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>5 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p>The <strong>margin</strong> is the change produced by one more or one fewer unit. <strong>Marginal analysis</strong> compares the extra benefit of one more unit with its extra cost; an <strong>incentive</strong> is a condition that changes those quantities and thus behavior. OpenStax&#39;s <em>Principles of Economics 3e</em> describes most choices as examining &quot;the benefits and costs of choosing a little more or a little less&quot; [1].</p>
+<h2>Intuition</h2>
+<p>A bakery has already rented its shop, so rent does not change with today&#39;s output. The question is not whether opening is worthwhile but whether one more batch is: the batch brings ¥30 (Chinese yuan) and costs flour, electricity and casual labor. If that extra cost is below the extra revenue, bake it. Higher flour prices raise the cost; a subsidy raises the revenue. Both change the incentive without touching rent already paid.</p>
+<h2>Formal expression</h2>
+<ul>
+<li>Marginal benefit <code>MB = change in total revenue ÷ change in quantity</code></li>
+<li>Marginal cost <code>MC = change in total cost ÷ change in quantity</code></li>
+<li>Decision rule: increase quantity when <code>MB &gt; MC</code>, reduce it when <code>MB &lt; MC</code>, and stop adjusting when <code>MB = MC</code>.</li>
+</ul>
+<p>Units are currency per output unit; with discrete units, use the gap between rows. Because the rule compares changes only, fixed costs do not enter. Incentives change MB or MC through prices, taxes, subsidies, rules or default options. U.S. federal income tax illustrates the idea: the Internal Revenue Service states that you pay the higher rate only on &quot;the part that&#39;s in the new tax bracket&quot; [2].</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>The input is variable.</strong> If it cannot be adjusted within the period, there is no marginal amount.</li>
+<li><strong>Units can be compared.</strong> A large indivisible project should be compared as a whole.</li>
+<li><strong>Other things are equal.</strong> MB and MC hold for given prices and technology; MC usually rises with scale.</li>
+<li><strong>Incentives are met with responses, including avoidance.</strong> Behavior may change for other reasons, or only formally meet the target.</li>
+</ol>
+<h2>Worked example</h2>
+<p>Suppose each batch sells for ¥30, with these marginal costs, all in yuan per batch (teaching assumptions):</p>
+<table>
+<thead>
+<tr>
+<th align="right">Batch</th>
+<th align="right">Marginal cost</th>
+<th align="right">Marginal benefit</th>
+<th align="right">Profit on batch</th>
+<th align="right">Cumulative profit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">30</td>
+<td align="right">18</td>
+<td align="right">18</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">18</td>
+<td align="right">30</td>
+<td align="right">12</td>
+<td align="right">30</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">24</td>
+<td align="right">30</td>
+<td align="right">6</td>
+<td align="right">36</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">31</td>
+<td align="right">30</td>
+<td align="right">-1</td>
+<td align="right">35</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">40</td>
+<td align="right">30</td>
+<td align="right">-10</td>
+<td align="right">25</td>
+</tr>
+</tbody></table>
+<p>The fourth batch costs ¥31 against a benefit of ¥30, so the optimum is 3 batches and profit is 18 + 12 + 6 = ¥36. With a subsidy of ¥5 per batch, marginal benefit becomes ¥35: batch 4 (¥31) is worth baking and batch 5 (¥40) is not, so output rises to 4 batches and profit is 35 + 4 × 5 = ¥55. The same cost table, a different decision.</p>
+<h2>Figure</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-mc-title fig-mc-desc" viewBox="0 0 440 260" width="100%">
+    <title id="fig-mc-title">Step marginal cost and a level marginal benefit</title>
+    <desc id="fig-mc-desc">The horizontal axis is batches per day and the vertical axis is yuan per batch. Marginal cost rises step by step at 12, 18, 24, 31 and 40 yuan; marginal benefit is a level line at 30 yuan. The fourth batch costs more than it returns, so the optimal quantity is three batches.</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="70" y1="210" x2="400" y2="210"></line>
+      <line x1="70" y1="40" x2="70" y2="210"></line>
+    </g>
+    <line x1="90" y1="108" x2="365" y2="108" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4"></line>
+    <path d="M90 169 H140 V149 H190 V128 H240 V105 H290 V74 H340" fill="none" stroke="var(--gold)" stroke-width="2.5"></path>
+    <circle cx="240" cy="108" r="4" fill="var(--text)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="50" y="112">30</text>
+      <text x="46" y="54">¥</text>
+      <text x="262" y="100" fill="var(--accent)">MB 30</text>
+      <text x="286" y="66" fill="var(--gold)">MC</text>
+      <text x="232" y="226">3</text>
+      <text x="62" y="226">0</text>
+      <text x="340" y="226">batches/day</text>
+      <text x="196" y="98">optimum</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: Output stops where marginal cost exceeds marginal benefit. A teaching model, not a real bakery; numbers are in the table above.; sample: the article’s own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>Margin equals average.</strong> The first three batches average ¥18, yet the fourth costs ¥31; deciding on the average would overproduce.</p>
+<p><strong>Marginal analysis means ignoring costs.</strong> Fixed costs do not affect one more batch, but they do affect whether to renew the lease.</p>
+<p><strong>Incentives are only money.</strong> Time, reputation, compliance and default options also change the benefits and costs of behavior.</p>
+<p><strong>A stronger incentive always works.</strong> Piece rates can raise output at the expense of quality, and targets can be met in substitute ways.</p>
+<h2>Deeper note: three margins, three questions</h2>
+<p>Practice uses at least three margins, and mixing them turns different questions into one ledger. <strong>Gross margin</strong> is (revenue − direct materials)/revenue and asks how much each yuan of sales leaves; <strong>contribution margin</strong> is revenue − variable cost and asks how much a extra unit covers fixed cost; <strong>net margin</strong> also deducts selling, administration and capital charges and asks whether the unit truly adds profit. For the bakery, flour and electricity are variable and rent is fixed; judging by gross margin overstates the value of another batch because delivery and selling costs are missing.</p>
+<p><strong>Incentive design</strong> must target the right margin. Paying stores on revenue encourages discounting for volume; paying on contribution margin encourages discount and return control; paying on net profit allocates head-office cost to stores and may suppress incremental business that covers fixed cost. The closer the metric is to net profit, the more it constrains full cost, but the more likely stores reject short-term orders with positive contribution and negative net profit.</p>
+<p>A common trap is <strong>treating average cost as marginal cost</strong>. Suppose a plant has 1 million units of capacity and average cost of 10 yuan; unit 1,000,001 needs overtime and air freight, with marginal cost of 18. If a customer pays 15, average cost says a 5-yuan profit, marginal cost says a 3-yuan loss; the right answer is to decline unless learning-curve or channel benefits are quantified.</p>
+<p><strong>Incentives are also gamed.</strong> Output targets sacrifice quality, gross-margin targets hide after-sales cost, customer-count targets subsidise low-value users. Write down the gap between the measured metric and the ultimate goal, and cross-check with audits, refund rates, retention and long-run profit.</p>
+<p><strong>Boundary</strong>: marginal analysis suits divisible incremental decisions; whole projects, acquisitions and exits compare all costs and benefits. Fixed cost does not enter the short-run margin but determines long-run exit; mixing the two yields extremes such as &#39;every extra unit loses money&#39; or &#39;never exit&#39;[2].</p>
+<h2>Related</h2>
+<ul>
+<li>Prerequisite: What economics studies (ECO-001).</li>
+<li>Related: opportunity cost and sunk cost (ECO-003), Supply, Demand and Equilibrium (ECO-005), elasticity of demand (ECO-006).</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">Margin and Incentives: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">Margin and Incentives — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Margin and Incentives: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Marginal risks</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">distinction the…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Marginal risks</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">distinction the</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">benefit and</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">cost of one</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">more unit, and…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition: The</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">margin is the…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition: The</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">margin is the</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">change produced</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">by one more or</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">one fewer unit.…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Worked example</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose each</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">batch sells for…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose each</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">batch sells for</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">¥30, with these</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">marginal costs,</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">all in yuan per…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 2: Margin and Incentives — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">Margin and Incentives: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Margin and Incentives: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">The margin is the change</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">produced by one more or one</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">fewer unit.</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Margin equals average.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 3: Margin and Incentives — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">Margin and Incentives: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Margin and Incentives: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Marginal risks</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">compare the benefit…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">The margin is the</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">change produced by…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Margin equals average.</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: Margin and Incentives — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> Which is a marginal decision? A. Renewing the shop lease; B. One more hour of overtime; C. Last year&#39;s renovation cost; D. Closing the store.</li>
+<li><strong>Calculation.</strong> Using the table, what are the optimal quantity and profit with a ¥3 subsidy per batch?</li>
+<li><strong>Conditions.</strong> Why does a fixed cost not affect one more batch, yet may affect whether to open the shop?</li>
+<li><strong>Deeper.</strong> An order sells for 15, average cost is 10 and marginal cost is 18: accept it? Explain the two lenses.</li>
+<li><strong>Deeper.</strong> How does paying stores on revenue change behaviour? What does a contribution-margin scheme improve and what may it still miss?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>B. A, C and D concern the whole operation or past spending.</li>
+<li>Marginal benefit is ¥33: batch 4 at ¥31 is worth baking and batch 5 at ¥40 is not, so quantity is 4 batches and profit is 35 + 4 × 3 = ¥47.</li>
+<li>Fixed cost does not vary with output, so it does not change the extra cost of one more batch. Opening the shop compares all costs with all revenues, so fixed costs count.</li>
+<li>Decline. Average cost shows a 5-yuan profit; marginal cost shows a 3-yuan loss. Incremental decisions use marginal cost unless learning-curve or channel benefits can be quantified.</li>
+<li>Revenue-based pay encourages discounting for volume and neglects returns and after-sales; contribution-margin pay encourages discount and variable-cost control but may still ignore fixed-cost allocation and long-run brand effects.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;2.1 How Individuals Make Choices Based on Their Budget Constraint.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint">https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint</a> (accessed 2026-10-30)</li>
+<li>Internal Revenue Service. &quot;Federal income tax rates and brackets.&quot; License: U.S. Government work. <a href="https://www.irs.gov/filing/federal-income-tax-rates-and-brackets">https://www.irs.gov/filing/federal-income-tax-rates-and-brackets</a> (accessed 2026-10-30)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Explain a change in behaviour by comparing the benefit and cost of one more unit, identifying which side the incentive moved</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Separate sunk from marginal costs in a decision and give one example of mistakenly acting on sunk cost</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Explain a change in behaviour by comparing the benefit and cost of one more unit, identifying which side the incentive moved</li><li>Separate sunk from marginal costs in a decision and give one example of mistakenly acting on sunk cost</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/what-economics-studies/">ECO-001 · What Economics Studies</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/opportunity-cost/">ECO-003 · Opportunity Cost and Sunk Cost</a> </li><li> <a href="/en/learn/supply-demand-equilibrium/">ECO-005 · Supply, Demand and Equilibrium</a> </li><li> <a href="/en/learn/elasticity-of-demand/">ECO-006 · Elasticity of Demand</a> </li><li> <a href="/en/learn/what-economics-studies/">ECO-001 · What Economics Studies</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 2.1 How Individuals Make Choices Based on Their Budget Constraint</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Most choices involve marginal analysis, that is, examining the benefits and costs of choosing a little more or a little less.</p> </div><div class="source"> <a href="https://www.irs.gov/filing/federal-income-tax-rates-and-brackets" rel="noopener noreferrer" target="_blank">Federal income tax rates and brackets</a> <p>Internal Revenue Service · Internal Revenue Service, United States</p> <p>Accessed: 2026-10-30 · License: U.S. Government work: IRS 站点声明 IRS.gov 上由联邦雇员在职务范围内创建或维护的内容不受版权保护、可自由复制（请求注明出处）</p> <p>Supports: A higher rate applies only to the part of income that falls in the new tax bracket, so rates apply to marginal income.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/margin-and-incentives/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

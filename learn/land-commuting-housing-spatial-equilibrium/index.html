@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>城市土地与通勤：空间均衡的价格账 · 巫妖投资</title><meta name="description" content="城市空间由三笔账共同定价：靠近就业中心带来的便利、通勤与拥挤的成本、以及住房供给对价格的响应。把地租梯度、通勤成本和供给弹性放在一起，才能解释为什么同样的城市增长有时表现为更高房价，有时表现为更长通勤和更低密度。"><link rel="canonical" href="https://economics.51invest.com/learn/land-commuting-housing-spatial-equilibrium/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/land-commuting-housing-spatial-equilibrium/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/land-commuting-housing-spatial-equilibrium/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/land-commuting-housing-spatial-equilibrium/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/land-commuting-housing-spatial-equilibrium/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">城市土地与通勤：空间均衡的价格账</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">城市土地与通勤：空间均衡的价格账</h1> <p class="article-summary">城市空间由三笔账共同定价：靠近就业中心带来的便利、通勤与拥挤的成本、以及住房供给对价格的响应。把地租梯度、通勤成本和供给弹性放在一起，才能解释为什么同样的城市增长有时表现为更高房价，有时表现为更长通勤和更低密度。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M18 · 城市区域与空间</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>6 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>城市空间均衡</strong>（spatial equilibrium）指在一个城市内部，家庭与企业通过选择区位、住房面积和通勤方式，使不同地点的净效用大致相等：靠近就业中心的地方地租更高，远离中心的地方通勤成本更高，二者相互抵消。<strong>地租梯度</strong>（rent gradient）是单位土地价格随距中心距离变化的速度；<strong>通勤成本</strong>（commuting cost）包括货币支出、时间和拥挤带来的不适；<strong>住房供给弹性</strong>（housing supply elasticity）衡量价格变化能带来多少新增住房[1][2]。</p>
+<p>本文不讨论“城市应该多大”这类规范问题，而是拆解一个可计算的价格账：可达性如何资本化进地租，通勤成本如何限制城市半径，住房供给和土地管制如何决定新增人口是落在价格上还是落在空间上。城乡划分标准在各国并不一致，比较城市人口占比前要先核对定义[3]。</p>
+<h2>直觉</h2>
+<p>想象一个只有单一就业中心的城市。住在中心的人走路通勤，但房租高；住在外围的人房租低，但每天要花更多时间和车费。若外围足够便宜，家庭愿意搬出去；若通勤太贵，家庭宁愿付高租金留在中心。家庭的选择把“省下的房租”和“多付的通勤”拉到一个平衡点，这个平衡点决定了城市半径和地租曲线。</p>
+<p>城市人口增加时，同样的土地要容纳更多家庭。若住房可以快速建起来，新增需求主要变成更多住房，价格涨得有限；若土地和建设受限，新增需求主要变成更高地租和更激烈的竞价。于是，同样的城市增长，可能在一个地方表现为“房价上涨”，在另一个地方表现为“向外扩张 + 通勤变长”。这不是道德问题，而是供给条件不同。</p>
+<h2>正式表达</h2>
+<p>在单中心、通勤成本随距离线性增加的简化下，地租可以写成：</p>
+<p>[
+R(d)=R_0-gd
+]</p>
+<p>其中 (R_0) 是中心地租，(g) 是每公里地租下降速度，(d) 是距中心距离。若城市边缘地租为 (R_{\text{edge}})，城市半径由下式决定：</p>
+<p>[
+d^*=\frac{R_0-R_{\text{edge}}}{g}
+]</p>
+<p>家庭住在外围时，每日往返通勤的货币与时间成本为：</p>
+<p>[
+C(d)=2cd
+]</p>
+<p>其中 (c) 是每公里单程成本，乘 2 表示往返。更完整的写法还要加上时间价值 (vT(d))，其中 (T(d)) 是单程通勤时间，(v) 是每小时时间价值。把两部分合起来，家庭的净区位成本是：</p>
+<p>[
+\text{NetCost}(d)=R(d)h+2cd+2vT(d)
+]</p>
+<p>其中 (h) 是住房面积。不同地点的净成本趋于相等，是空间均衡的核心含义。</p>
+<p>住房供给对价格的反应可以写成：</p>
+<p>[
+\frac{\Delta H}{H}=\varepsilon_s\frac{\Delta P}{P}
+]</p>
+<p>其中 (\varepsilon_s) 是住房供给弹性。需求增加 (\Delta H_d) 时，若 (\varepsilon_s) 很小，价格必须大幅上升才能带来少量新增供给；若 (\varepsilon_s) 较大，价格上升较少就能带来较多新增住房。</p>
+<p>道路拥挤可以用平均通行时间随车辆数上升的线性近似表示：</p>
+<p>[
+T(N)=t_0+\kappa N
+]</p>
+<p>其中 (t_0) 是自由流时间，(\kappa) 是每增加一辆车带来的平均延误，(N) 是道路上的车辆数。若每辆车的进入提高了其他人的通行时间，边际社会成本会高于平均成本；这正是拥堵外部性，也是拥堵收费的理论依据（本文推导）。</p>
+<h2>适用条件</h2>
+<ol>
+<li>单中心模型假定大多数就业集中在中心；多中心、郊区就业和远程办公会改变通勤方向与地租梯度（本文判断）。</li>
+<li>地租梯度只在土地市场可交易、产权可执行时成立；若土地供给由行政分配，价格信号会被配给规则替代[1]。</li>
+<li>通勤成本不只是车费：时间可靠性、换乘、步行安全和拥挤不适都应计入；只算油费会低估实际成本[2]。</li>
+<li>住房供给弹性受土地供应、容积率、建设周期、基础设施和社区反对影响；同一城市不同街区也可能不同[2]。</li>
+<li>交通投资会改变可达性，从而改变地租和迁移；新建道路在短期内可能诱发更多驾车出行，不能只按“减少拥堵”评估（本文判断）。</li>
+<li>空间均衡不保证分配公平：低收入家庭可能被迫承担更长通勤或更差住房，效率改善不等于公平改善[1][2]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设一座教学城市：中心地租 (R_0=4{,}000) 元/平方米，边缘地租 (R_{\text{edge}}=500) 元/平方米，地租梯度 (g=350) 元/公里。城市半径为：</p>
+<p>[
+d^*=\frac{4{,}000-500}{350}=10\text{ 公里}
+]</p>
+<p>一个 50 平方米的住房，中心土地价值为 (4{,}000\times50=200{,}000) 元，边缘为 (500\times50=25{,}000) 元，差额 175,000 元（仅为土地价值，不含建筑与区位品质）。</p>
+<p>通勤方面，设单程每公里成本 2 元，10 公里往返的货币成本为 (2\times2\times10=40) 元/日；若单程 30 分钟、时间价值 40 元/小时，往返时间成本为 (2\times0.5\times40=40) 元/日，合计 80 元/日。以上为教学假设，不是某一城市的实际通勤统计。</p>
+<p>住房供给方面，设城市现有 10,000 户，需求增加 5%，即新增 500 户需求。若供给弹性 (\varepsilon_s=0.5)，价格需要上升 10% 才能带来 5% 的新增供给；若 (\varepsilon_s=0.2)，价格需要上升 25%：</p>
+<table>
+<thead>
+<tr>
+<th>供给弹性</th>
+<th align="right">需求增量</th>
+<th align="right">需要的价格涨幅</th>
+<th align="right">新增住房</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0.5</td>
+<td align="right">5%</td>
+<td align="right">10%</td>
+<td align="right">5%</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td align="right">5%</td>
+<td align="right">25%</td>
+<td align="right">5%</td>
+</tr>
+</tbody></table>
+<p>拥堵方面，设自由流单程 20 分钟，每增加 1 辆车平均延误 0.0008 分钟。30,000 辆车时单程约 44 分钟，50,000 辆车时约 60 分钟；车辆越多，平均通勤时间越长，但每辆车只承担自己的时间，不承担它给别人增加的延误（本文按线性拥堵函数计算）。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-mech-title fig-spatial-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-spatial-mech-title">地租梯度与通勤成本的机制链</title>
+    <desc id="fig-spatial-mech-desc">就业中心吸引家庭靠近，中心地租上升；向外围移动地租下降但通勤成本上升；两者在空间均衡处相抵，城市半径由中心与边缘地租差除以地租梯度决定。教学机制图。</desc>
+    <rect x="14" y="44" width="132" height="78" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">就业中心</text>
+    <text x="26" y="90" font-size="10" fill="var(--muted)" font-family="inherit">岗位与便利集中</text>
+    <text x="26" y="108" font-size="10" fill="var(--muted)" font-family="inherit">家庭愿意靠近</text>
+    <rect x="164" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="176" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">地租上升</text>
+    <text x="176" y="90" font-size="10" fill="var(--muted)" font-family="inherit">中心 4,000 元/平方米</text>
+    <text x="176" y="108" font-size="10" fill="var(--muted)" font-family="inherit">外围 500 元/平方米</text>
+    <rect x="314" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="326" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">通勤成本上升</text>
+    <text x="326" y="90" font-size="10" fill="var(--muted)" font-family="inherit">距离越远，车费与时间越多</text>
+    <text x="326" y="108" font-size="10" fill="var(--muted)" font-family="inherit">外围家庭承担更多</text>
+    <line x1="146" y1="83" x2="164" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="296" y1="83" x2="314" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="148" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="172" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">空间均衡：净区位成本趋于相等</text>
+    <text x="28" y="192" font-size="10" fill="var(--muted)" font-family="inherit">省下的地租 = 多付的通勤 + 时间成本；家庭在两者之间选择区位。</text>
+    <rect x="14" y="220" width="432" height="54" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="244" font-size="10.5" fill="var(--text)" font-family="inherit">城市半径：中心与边缘地租差 ÷ 地租梯度</text>
+    <text x="28" y="264" font-size="10" fill="var(--muted)" font-family="inherit">(4,000 − 500) ÷ 350 = 10 公里；教学假设，不是城市统计。</text>
+  </svg>
+  <figcaption>图 1：地租梯度与通勤成本的机制链。就业中心推高中心地租，向外围移动地租下降但通勤成本上升；两者在空间均衡处相抵，城市半径由地租差除以梯度决定。教学机制图，数字为假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-example-title fig-spatial-example-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-spatial-example-title">住房供给弹性算例</title>
+    <desc id="fig-spatial-example-desc">10,000 户城市新增 5% 需求即 500 户；供给弹性 0.5 时价格上升 10%，弹性 0.2 时价格上升 25%，但都只带来 5% 的新增住房。单位为户、百分比，教学算例。</desc>
+    <rect x="14" y="40" width="432" height="42" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="66" font-size="10.5" fill="var(--text)" font-family="inherit">起点：10,000 户；需求增加 5% = 500 户</text>
+    <rect x="14" y="96" width="204" height="122" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">高供给弹性 ε = 0.5</text>
+    <text x="28" y="144" font-size="10" fill="var(--muted)" font-family="inherit">价格 +10%</text>
+    <text x="28" y="164" font-size="10" fill="var(--muted)" font-family="inherit">新增住房 5% = 500 户</text>
+    <text x="28" y="184" font-size="10" fill="var(--muted)" font-family="inherit">更多供给吸收需求</text>
+    <rect x="242" y="96" width="204" height="122" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">低供给弹性 ε = 0.2</text>
+    <text x="256" y="144" font-size="10" fill="var(--muted)" font-family="inherit">价格 +25%</text>
+    <text x="256" y="164" font-size="10" fill="var(--muted)" font-family="inherit">新增住房仍是 5% = 500 户</text>
+    <text x="256" y="184" font-size="10" fill="var(--muted)" font-family="inherit">更多需求进入价格</text>
+    <text x="70" y="250" font-size="10" fill="var(--muted)" font-family="inherit">同样的 500 户新增需求，因供给弹性不同，价格涨幅相差 15 个百分点。</text>
+    <text x="70" y="274" font-size="10" fill="var(--muted)" font-family="inherit">单位：户、百分比；教学假设，不是实际城市数据。</text>
+  </svg>
+  <figcaption>图 2：住房供给弹性算例。10,000 户城市新增 5%（500 户）需求；供给弹性 0.5 时价格上升 10%，弹性 0.2 时价格上升 25%，新增住房都为 5%。单位为户、百分比，数字为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-compare-title fig-spatial-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-spatial-compare-title">高供给弹性与低供给弹性的价格响应对比</title>
+    <desc id="fig-spatial-compare-desc">同样新增 5% 住房需求，高弹性城市价格上升 10%，低弹性城市价格上升 25%；高弹性更容易扩容，低弹性更容易把增长转成租金。教学对比图。</desc>
+    <rect x="14" y="38" width="204" height="160" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">高供给弹性</text>
+    <text x="28" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">土地与建设约束较松</text>
+    <line x1="34" y1="168" x2="188" y2="168" stroke="var(--border)" stroke-width="1"></line>
+    <rect x="48" y="124" width="34" height="44" fill="var(--accent)" opacity="0.7"></rect>
+    <rect x="112" y="108" width="34" height="60" fill="var(--accent)" opacity="0.45"></rect>
+    <text x="65" y="116" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">需求</text>
+    <text x="129" y="100" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">供给</text>
+    <text x="28" y="190" font-size="10" fill="var(--muted)" font-family="inherit">价格 +10%；新增供给 5%</text>
+    <rect x="242" y="38" width="204" height="160" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">低供给弹性</text>
+    <text x="256" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">土地与建设约束较紧</text>
+    <line x1="262" y1="168" x2="416" y2="168" stroke="var(--border)" stroke-width="1"></line>
+    <rect x="276" y="112" width="34" height="56" fill="var(--accent)" opacity="0.7"></rect>
+    <rect x="340" y="90" width="34" height="78" fill="var(--accent)" opacity="0.45"></rect>
+    <text x="293" y="104" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">需求</text>
+    <text x="357" y="82" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">供给</text>
+    <text x="256" y="190" font-size="10" fill="var(--muted)" font-family="inherit">价格 +25%；新增供给仍 5%</text>
+    <rect x="14" y="238" width="432" height="58" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="262" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">同样的需求冲击，价格与空间扩张的分工不同</text>
+    <text x="28" y="282" font-size="10" fill="var(--muted)" font-family="inherit">低弹性不是“市场失败”的自动证据；它还可能是基础设施、生态或社区约束的选择。</text>
+  </svg>
+  <figcaption>图 3：高供给弹性与低供给弹性的价格响应对比。同样新增 5% 需求，高弹性城市价格上升 10%，低弹性城市上升 25%；高弹性更容易扩容，低弹性更容易把增长转成租金。教学对比图，数字为假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-spatial-boundary-title fig-spatial-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-spatial-boundary-title">城市空间模型的六个适用边界</title>
+    <desc id="fig-spatial-boundary-desc">检查就业是否单中心、土地产权是否可执行、通勤成本是否完整、住房供给是否受管制、交通投资是否诱发新增出行、分配后果是否被忽略；任一项改变，地租与供给结论都会变。教学边界清单。</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. 就业是否真在单中心？多中心与远程办公改变通勤方向</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. 土地产权可执行吗？配给规则会替代价格信号</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. 通勤成本算全了吗？时间、换乘、可靠性与拥挤都要计入</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. 住房供给受什么约束？土地、容积率、建设周期与社区反对</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. 交通投资会诱发新增出行吗？短期减堵不等于长期减堵</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. 分配后果被看见了吗？低收入家庭可能承担更长通勤</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">六项都改变结论；平均地租和平均通勤时间不是完整的福利判断。</text>
+  </svg>
+  <figcaption>图 4：城市空间模型的六个适用边界。就业结构、土地产权、通勤成本口径、住房供给约束、交通诱发需求和分配后果会改变结论；教学边界清单，不是规划建议书。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“地租高只是因为投机。”</strong> 地租首先反映可达性和稀缺性：靠近就业中心、学校、交通和公共服务的土地，家庭愿意付更高价格。投机可以放大波动，但不能解释地租梯度的基本形状[1]。</p>
+<p><strong>“住房供给弹性越大越好。”</strong> 高弹性可以压低房价涨幅，但也可能把城市推向低密度扩张，增加基础设施、通勤和生态成本[2]。供给弹性是条件，不是单一目标。</p>
+<p><strong>“拥堵收费只是政府多收一笔钱。”</strong> 拥堵的外部成本来自每辆车给别人增加的时间损失；收费是把这部分成本放回出行决策。收入怎么用、是否配套公共交通，决定了公平后果（本文判断）。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-028 城市区域与空间</strong> 的关系：母文给出集聚、住房、交通和区域结构的总体框架；本文把地租梯度、通勤成本和供给弹性写成可计算的价格账。</li>
+<li>与 <strong>ECO-029 环境能源与农业</strong> 的关系：土地扩张和通勤会带来环境外部成本，空间政策不能只看房价。</li>
+<li>与 <strong>ECO-038 外部性、庇古税与总量控制</strong> 的关系：拥堵收费是外部性定价的一个城市案例，但道路容量和替代方式决定工具效果。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>概念辨别：空间均衡中的“净区位成本”包含哪三部分？为什么中心地租高、外围地租低，但家庭未必都住中心？</li>
+<li>计算：中心地租 5,000 元/平方米、边缘 600 元/平方米、梯度 400 元/公里，城市半径是多少？若梯度降到 300 元/公里，半径变成多少？</li>
+<li>适用条件：一座城市新增 5% 住房需求，但土地供应受严格管制、建设周期很长。价格、通勤距离和低密度扩张分别可能怎样变化？说明两项需要一起评估的条件。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>World Bank, <em>World Development Report 2009: Reshaping Economic Geography</em>. <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/730971468139804495">https://documents.worldbank.org/en/publication/documents-reports/documentdetail/730971468139804495</a></li>
+<li>OECD, <em>Rethinking Urban Sprawl: Moving Towards Sustainable Cities</em>. <a href="https://doi.org/10.1787/9789264189881-en">https://doi.org/10.1787/9789264189881-en</a></li>
+<li>Our World in Data, <em>Urbanization</em>. <a href="https://ourworldindata.org/urbanization">https://ourworldindata.org/urbanization</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>用中心地租、边缘地租和地租梯度计算城市半径，并把单程距离换算成往返通勤成本。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用住房供给弹性和需求增量计算价格涨幅，说明同样新增需求为何在高弹性与低弹性城市表现不同。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>用中心地租、边缘地租和地租梯度计算城市半径，并把单程距离换算成往返通勤成本。</li><li>用住房供给弹性和需求增量计算价格涨幅，说明同样新增需求为何在高弹性与低弹性城市表现不同。</li><li>用线性拥堵函数和空间均衡条件列出六个适用边界，并指出分配后果为何不能由平均通勤时间代表。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/cities-regions-and-space/">ECO-028 · 城市区域与空间</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/cities-regions-and-space/">ECO-028 · 城市区域与空间</a> </li><li> <a href="/learn/environment-energy-and-agriculture/">ECO-029 · 环境能源与农业</a> </li><li> <a href="/learn/externalities-pigouvian-taxes-and-cap-and-trade/">ECO-038 · 外部性、庇古税与总量控制：价格工具何时有效</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/730971468139804495" rel="noopener noreferrer" target="_blank">World Development Report 2009: Reshaping Economic Geography</a> <p>World Bank · World Bank</p> <p>访问：2026-11-23 · 许可：World Bank publication; cite-only under World Bank terms of use</p> <p>支持论点：用于核对经济地理是生产、人口与生活水平在空间上的集中与分散过程，以及可达性、城市扩张和土地制度对空间结果的影响；正文不把某个城市的地租或通勤数字写成统计。</p> </div><div class="source"> <a href="https://doi.org/10.1787/9789264189881-en" rel="noopener noreferrer" target="_blank">Rethinking Urban Sprawl: Moving Towards Sustainable Cities</a> <p>OECD · OECD Publishing</p> <p>访问：2026-11-23 · 许可：OECD publishing terms; citation only</p> <p>支持论点：用于核对城市扩张涉及密度、土地消费、交通与环境成本，且政策评估需要同时看住房、通勤和基础设施；正文不引用具体城市统计。</p> </div><div class="source"> <a href="https://ourworldindata.org/urbanization" rel="noopener noreferrer" target="_blank">Urbanization</a> <p>Our World in Data · Our World in Data</p> <p>访问：2026-11-23 · 许可：CC BY 4.0</p> <p>支持论点：用于核对城市化是城市人口占比上升的过程、各国城乡定义不同、比较城市人口占比需先核对口径；正文不把全球城市化率写成某一年的实测值。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/land-commuting-housing-spatial-equilibrium/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

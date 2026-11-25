@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Platform Entry Barriers: Data, Network Effects and Interoperability · 51Invest</title><meta name="description" content="Platform entry barriers are not just 'many users'. Network effects, data feedback, switching costs and multi-homing jointly determine whether a new platform can reach minimum viable scale. This article puts two-sided subsidies, the data flywheel and interoperability duties into one entry account, and explains why antitrust looks at contestability rather than market share alone."><link rel="canonical" href="https://economics.51invest.com/en/learn/platform-entry-barriers-data-network-effects-interoperability/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/platform-entry-barriers-data-network-effects-interoperability/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/platform-entry-barriers-data-network-effects-interoperability/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/platform-entry-barriers-data-network-effects-interoperability/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/platform-entry-barriers-data-network-effects-interoperability/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Platform Entry Barriers: Data, Network Effects and Interoperability</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Platform Entry Barriers: Data, Network Effects and Interoperability</h1> <p class="article-summary">Platform entry barriers are not just &#39;many users&#39;. Network effects, data feedback, switching costs and multi-homing jointly determine whether a new platform can reach minimum viable scale. This article puts two-sided subsidies, the data flywheel and interoperability duties into one entry account, and explains why antitrust looks at contestability rather than market share alone.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M17 · 产业创新与数字经济</strong></div> <div class="meta-item"><span>Level</span><strong>Systematic</strong></div> <div class="meta-item"><span>Read</span><strong>7 min · 13 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition and intuition</h2>
+<p>A <strong>platform</strong> connects two or more user groups and facilitates transactions through rules, matching and infrastructure. Its value depends on the number of users on the same side (direct network effects) and on the other side (indirect network effects). A payment platform is valuable because many merchants accept it; a social platform is valuable because many friends are on it.</p>
+<p>An <strong>entry barrier</strong> is the extra cost a potential entrant pays to reach comparable scale. Platform barriers come in four forms: critical mass from network effects, quality advantages from data feedback, lock-in from switching costs, and the ease of multi-homing[1]. A high share is not a high barrier: if users can switch with one click and merchants connect to several platforms, entry can still occur.</p>
+<p><strong>Interoperability</strong> lowers switching costs by letting users carry data, social graphs or payment accounts to a new platform. It can turn winner-take-all into winner-can-be-challenged, but it also trades off security, privacy and investment incentives.</p>
+<h2>The data flywheel</h2>
+<p>The data-barrier mechanism is not &#39;more data is always better&#39;, but a feedback loop: data improves the model, the model improves experience, experience raises retention, retention produces more data[4]. The loop is weak early and strong after critical mass; a later entrant with the same algorithm may offer a worse experience because it lacks data volume.</p>
+<p>Data is not unlimited scale economy. It depreciates, is biased and carries privacy costs; when marginal returns diminish, the flywheel slows. To judge whether data is a barrier, ask three questions: is the data unique, is it replicable, and does it directly improve the key experience? If one answer is no, algorithm, distribution or content procurement can offset the data advantage.</p>
+<h2>Formal expression and worked example</h2>
+<p>Suppose a new platform needs 10 million users for minimum viable scale. Each acquired user costs 20 yuan in subsidy; growth follows <code>U_t = U_0 + 0.3×subsidy×reach</code>, and unit service cost falls 2% per additional million users.</p>
+<p>Case A: subsidy only. It acquires 5 million users in year one and still has an 8% unit-cost disadvantage; another 5 million in year two reaches critical mass, with cumulative subsidy of 200 million yuan. Case B: subsidy plus interoperability. Interoperability lets 30% of the incumbent&#39;s users migrate cheaply, reaching 7 million in year one and 10 million in year two, with cumulative subsidy of 120 million yuan.</p>
+<p>Interoperability is not free: the platform must build interfaces, run security audits and bear data-breach liability. If compliance costs 30 million yuan, it is still cheaper than pure subsidy. But interoperability may also let the incumbent absorb the entrant&#39;s innovation; policy must weigh entry against free riding. All numbers are teaching assumptions.</p>
+<h2>Regulatory toolbox</h2>
+<p>Five tools target platform entry barriers, each with a cost:</p>
+<p><strong>Ex ante prohibition</strong> of mergers or exclusive agreements with exclusionary effects[2]. Direct, but regulators must predict future competition and can misjudge.</p>
+<p><strong>Interoperability duties</strong> requiring open data, social graphs or payment interfaces. They lower switching costs but trade off security, privacy and investment incentives.</p>
+<p><strong>Data portability</strong> lets users bring historical data to a new platform. Lighter than full interoperability, but weaker against strong network effects.</p>
+<p><strong>Conduct remedies</strong> banning self-preferencing, exclusionary pricing or default pre-installation. Targeted, but firms can re-route around a specific rule.</p>
+<p><strong>Structural separation</strong> of infrastructure and competitive businesses. It weakens cross-subsidy but may sacrifice scope economies.</p>
+<p>Match the tool to the barrier: interoperability and portability for switching costs, data access for data feedback, ex ante review for acquisitions that kill nascent competition. The wrong tool turns competition policy into a compliance burden.</p>
+<h2>Figures</h2>
+<figure>
+<svg role="img" aria-labelledby="fig-platform-entry-barriers-data-network-effects-interoperability-1-title fig-platform-entry-barriers-data-network-effects-interoperability-1-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-platform-entry-barriers-data-network-effects-interoperability-1-title">Four layers of platform entry barriers</title>
+<desc id="fig-platform-entry-barriers-data-network-effects-interoperability-1-desc">Four steps: network effects, critical mass, data feedback, switching costs.</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">How platform entry barriers form</text>
+<text x="24" y="54" font-size="11" text-anchor="start">Network effects reach critical mas</text>
+<text x="24" y="68" font-size="11" text-anchor="start">s, data feedback reinforces qualit</text>
+<text x="24" y="82" font-size="11" text-anchor="start">y, and switching costs lock users </text>
+<text x="24" y="96" font-size="11" text-anchor="start">in.</text>
+<rect x="14" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="69" y="140" font-size="12" text-anchor="middle">Network effects</text>
+<text x="69" y="184" font-size="12" text-anchor="middle" font-weight="700">Same/cross side</text>
+<rect x="136" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="191" y="140" font-size="12" text-anchor="middle">Critical mass</text>
+<text x="191" y="184" font-size="12" text-anchor="middle" font-weight="700">10 million</text>
+<rect x="258" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="313" y="140" font-size="12" text-anchor="middle">Data feedback</text>
+<text x="313" y="184" font-size="12" text-anchor="middle" font-weight="700">Experience + retention</text>
+<rect x="380" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="435" y="140" font-size="12" text-anchor="middle">Switching cost</text>
+<text x="435" y="184" font-size="12" text-anchor="middle" font-weight="700">Lock-in</text>
+<line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="247" y1="160" x2="257" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="369" y1="160" x2="379" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<text x="24" y="246" font-size="11" text-anchor="start">Teaching diagram, no statistical data.</text>
+</g>
+</svg>
+<figcaption>Figure 1: four layers of platform entry barriers; teaching diagram.</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-platform-entry-barriers-data-network-effects-interoperability-2-title fig-platform-entry-barriers-data-network-effects-interoperability-2-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-platform-entry-barriers-data-network-effects-interoperability-2-title">Cost of two entry paths</title>
+<desc id="fig-platform-entry-barriers-data-network-effects-interoperability-2-desc">Pure subsidy 200 million; subsidy plus interoperability 120 million subsidy + 30 million compliance.</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">Subsidy alone versus subsidy plus</text>
+<text x="24" y="49" font-size="16" text-anchor="start">interoperability</text>
+<text x="24" y="54" font-size="11" text-anchor="start">Pure subsidy costs 200 million yua</text>
+<text x="24" y="68" font-size="11" text-anchor="start">n; subsidy plus interoperability c</text>
+<text x="24" y="82" font-size="11" text-anchor="start">osts 120 million plus 30 million c</text>
+<text x="24" y="96" font-size="11" text-anchor="start">ompliance.</text>
+<line x1="178" y1="64" x2="178" y2="270" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="20" y="97" font-size="12">Subsidy only</text>
+<rect x="178" y="78" width="360" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="95" font-size="12" font-weight="700">200m</text>
+<text x="20" y="145" font-size="12">Subsidy + interop</text>
+<rect x="178" y="126" width="216" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="143" font-size="12" font-weight="700">120m</text>
+<text x="20" y="193" font-size="12">Compliance</text>
+<rect x="178" y="174" width="54" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="191" font-size="12" font-weight="700">30m</text>
+<text x="20" y="241" font-size="12">Total</text>
+<rect x="178" y="222" width="270" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="239" font-size="12" font-weight="700">150m</text>
+<text x="24" y="292" font-size="11" text-anchor="start">Teaching assumptions; unit: 100 million yuan.</text>
+</g>
+</svg>
+<figcaption>Figure 2: cost of two entry paths; teaching assumptions, unit 100 million yuan.</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-platform-entry-barriers-data-network-effects-interoperability-3-title fig-platform-entry-barriers-data-network-effects-interoperability-3-desc" viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-platform-entry-barriers-data-network-effects-interoperability-3-title">Two-dimensional matrix of platform competition</title>
+<desc id="fig-platform-entry-barriers-data-network-effects-interoperability-3-desc">Axes: high/low switching cost and high/low multi-homing; four quadrants map to lock-in, contestability, partial lock-in and fragile monopoly.</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">Four states of switching cost and</text>
+<text x="24" y="49" font-size="16" text-anchor="start">multi-homing</text>
+<text x="24" y="54" font-size="11" text-anchor="start">The barrier is strongest when swit</text>
+<text x="24" y="68" font-size="11" text-anchor="start">ching costs are high and multi-hom</text>
+<text x="24" y="82" font-size="11" text-anchor="start">ing is low; most contestable when </text>
+<text x="24" y="96" font-size="11" text-anchor="start">both are low.</text>
+<text x="40" y="68" font-size="11">High switching cost</text>
+<text x="40" y="286" font-size="11">Low switching cost</text>
+<text x="110" y="314" font-size="11" text-anchor="middle">High multi-homing</text>
+<text x="500" y="314" font-size="11" text-anchor="middle">Low multi-homing</text>
+<rect x="96" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="100" font-size="12" text-anchor="start">Partial lock-in</text>
+<text x="108" y="130" font-size="11" text-anchor="start">Can multi-home but migration</text>
+<text x="108" y="144" font-size="11" text-anchor="start">is costly</text>
+<text x="108" y="170" font-size="11" font-weight="700">Medium barrier</text>
+<rect x="338" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="100" font-size="12" text-anchor="start">Strong lock-in</text>
+<text x="350" y="130" font-size="11" text-anchor="start">Costly migration, little</text>
+<text x="350" y="144" font-size="11" text-anchor="start">multi-homing</text>
+<text x="350" y="170" font-size="11" font-weight="700">High barrier</text>
+<rect x="96" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="214" font-size="12" text-anchor="start">Contestable</text>
+<text x="108" y="244" font-size="11" text-anchor="start">Cheap migration, high</text>
+<text x="108" y="258" font-size="11" text-anchor="start">multi-homing</text>
+<text x="108" y="284" font-size="11" font-weight="700">Low barrier</text>
+<rect x="338" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="214" font-size="12" text-anchor="start">Fragile monopoly</text>
+<text x="350" y="244" font-size="11" text-anchor="start">Cheap migration, little</text>
+<text x="350" y="258" font-size="11" text-anchor="start">multi-homing</text>
+<text x="350" y="284" font-size="11" font-weight="700">Volatile share</text>
+</g>
+</svg>
+<figcaption>Figure 3: two-dimensional matrix of platform competition; comparison and classification diagram.</figcaption>
+</figure>
+
+<p>Figure 1 shows how network effects, data feedback, switching costs and critical mass form an entry barrier. Figure 2 compares user growth and cost under subsidy alone versus subsidy plus interoperability. Figure 3 uses switching cost and multi-homing axes to mark four competitive states. All numbers are teaching assumptions.</p>
+<h2>Conditions and boundaries</h2>
+<p><strong>Boundary 1: direction of network effects.</strong> Negative network effects (congestion, noise, spam) make scale a burden; a larger platform can offer a worse experience.</p>
+<p><strong>Boundary 2: prevalence of multi-homing.</strong> Users and merchants may use several platforms, weakening the barrier; but multi-homing has switching and time costs, not zero.</p>
+<p><strong>Boundary 3: compliance cost of data protection.</strong> Interoperability requires data portability and may leak privacy or enable targeted marketing; privacy and security standards must accompany it.</p>
+<p><strong>Boundary 4: dynamic competition.</strong> Today&#39;s barrier may erode with technology; antitrust looks at contestability, not static share.</p>
+<p><strong>Boundary 5: acquiring nascent competitors.</strong> A platform buying a small firm can eliminate future competition[3], or integrate technology into a larger ecosystem. Judgement needs post-acquisition innovation, prices and user choice, not deal size alone.</p>
+<h2>Common mistakes</h2>
+<p><strong>Mistake 1: many users means monopoly.</strong> A high share with multi-homing and low switching costs can still be contestable.</p>
+<p><strong>Mistake 2: more data always raises the barrier.</strong> Data depreciates and has diminishing returns; only unique, replicable data that directly improves experience is a barrier.</p>
+<p><strong>Mistake 3: interoperability always helps competition.</strong> It lowers switching costs but can let large platforms absorb small-platform innovation; poor design turns competition into free riding.</p>
+<h2>Deeper note: network effects, multihoming and contestability</h2>
+<p><strong>Network effects are not one force.</strong> Direct effects mean more users make the service more valuable to each other (social, messaging); indirect effects mean more on one side makes the other side more valuable (sellers and buyers, developers and users). Direct effects tend toward winner-take-all; indirect effects can support coexistence depending on multihoming costs.</p>
+<p><strong>Multihoming</strong> is the key variable. If users can use two platforms at once, an entrant need not build the whole network from scratch; if multihoming is costly (exclusivity, data migration, identity), the market tips easily. Interoperability, data portability and open APIs lower multihoming costs.</p>
+<p><strong>Data barriers</strong> depend on whether data are scarce, replicable and subject to network effects. Behavioural data can be copied and may not bar entry; transaction histories, social graphs and proprietary labelled data may be hard to replicate. Returns to data scale also diminish.</p>
+<p><strong>Market definition</strong> cannot rest on product features alone. Messaging, short video and e-commerce may compete for attention, but antitrust market definition needs demand and supply substitution, not &#39;all on a phone&#39;.</p>
+<p><strong>Contestability</strong> depends on sunk costs, switching costs and entry speed. If entry requires huge subsidies, exclusive content and licences, multiple platforms can still be uncompetitive.</p>
+<p><strong>Regulatory tools</strong>: interoperability, data portability, non-discriminatory access, merger review and behavioural remedies. Interoperability lowers barriers but raises privacy, security and free-riding issues; design must separate &#39;core facilities&#39; from &#39;value-added features&#39;.</p>
+<p><strong>Common misuses</strong>: equating many users with monopoly; treating network effects as unbreakable; ignoring multihoming and switching costs. Platform power must be specified by market, conduct and entry conditions.</p>
+<h2>What would change the conclusion</h2>
+<p>Platform barriers depend on user behaviour and regulatory boundaries:</p>
+<ol>
+<li><strong>Is multihoming common?</strong> If users and merchants use several platforms, network effects weaken and scale no longer equals lock-in.</li>
+<li><strong>Is data portable?</strong> If data can move and privacy rules limit reuse, data economies of scale are capped by regulation.</li>
+<li><strong>Is interoperability mandated?</strong> If messaging, payments or identity must interoperate, entry barriers fall and incumbent network value is shared.</li>
+<li><strong>Are switching costs low enough?</strong> If migration tools, contract exit and reputation portability are easy, users leave more cheaply and pricing power is constrained.</li>
+<li><strong>Are subsidies sustainable?</strong> If growth relies on subsidies rather than genuine network effects, retention falls once subsidies end.</li>
+</ol>
+<p>A platform moat is not &#39;many users&#39; but the entry cost set by multihoming, data portability, interoperability and switching costs.</p>
+<h2>What would change the conclusion (continued)</h2>
+<p>One more: <strong>break-up or mandated API access.</strong> If structural separation or open interfaces reduce data aggregation, regulation directly lowers the incumbent&#39;s entry barrier.</p>
+<p><strong>Practical implication:</strong> platform regulation should measure multihoming, data-portability cost and interoperability benefits before calling a barrier; judging monopoly by user scale alone can harm contestable markets.</p>
+<p><strong>Data note:</strong> market definition changes concentration; excluding offline substitutes and global competitors overstates barriers.</p>
+<p><strong>Scope note:</strong> define the relevant market before measuring share and barriers; mixing markets distorts concentration.</p>
+<h2>Exercises</h2>
+<ol>
+<li><p>Distinguish direct network effects, indirect network effects and data feedback.</p>
+</li>
+<li><p>With a 10 million-user critical mass and 20 yuan unit subsidy, what cumulative subsidy does pure subsidy require?</p>
+</li>
+<li><p>If interoperability lets 30% of users migrate cheaply, recalculate the subsidy requirement.</p>
+</li>
+<li><p>Judge whether a platform with 60% share, multi-homing and low switching costs necessarily has a high entry barrier.</p>
+</li>
+<li><p>What are the three conditions for data to be a barrier? Give a counterexample for each.</p>
+</li>
+<li><p>What policy costs come with interoperability, and how should privacy and security be designed?</p>
+</li>
+<li><p>When can a platform acquisition of a nascent competitor promote competition, and when can it eliminate it?</p>
+</li>
+<li><p>How do direct and indirect network effects differ in producing winner-take-all outcomes?</p>
+</li>
+<li><p>Why does interoperability lower entry barriers, and what risks does it bring?</p>
+</li>
+</ol>
+<h2>Related</h2>
+<p>Prerequisite ECO-027; compare ECO-043; neighbours FIN-037 and RES-033.</p>
+<h2>Sources</h2>
+<ol>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 9.1 How Monopolies Form: Barriers to Entry</em>. OpenStax, accessed 2026-11-23. <a href="https://openstax.org/books/principles-economics-3e/pages/9-1-how-monopolies-form-barriers-to-entry">https://openstax.org/books/principles-economics-3e/pages/9-1-how-monopolies-form-barriers-to-entry</a></li>
+<li>Federal Trade Commission, <em>The Antitrust Laws</em>. Federal Trade Commission, accessed 2026-11-03. <a href="https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/antitrust-laws">https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/antitrust-laws</a></li>
+<li>Federal Trade Commission, <em>Competition in Digital Technology Markets: Examining Acquisitions of Nascent or Potential Competitors by Digital Platforms</em>. Federal Trade Commission, accessed 2026-11-23. <a href="https://search.ftc.gov/system/files/documents/public_statements/1545208/p180101_testimony_-_acquisitions_of_nascent_or_potential_competitors_by_digital_platforms.pdf">https://search.ftc.gov/system/files/documents/public_statements/1545208/p180101_testimony_-_acquisitions_of_nascent_or_potential_competitors_by_digital_platforms.pdf</a></li>
+<li>OECD, <em>Artificial Intelligence in Society</em>. OECD Publishing, accessed 2026-11-21. <a href="https://www.oecd.org/en/publications/artificial-intelligence-in-society_eedfee77-en.html">https://www.oecd.org/en/publications/artificial-intelligence-in-society_eedfee77-en.html</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Distinguish direct network effects, indirect network effects and data feedback.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Use a critical-mass example to judge whether subsidy or interoperability is more effective.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Distinguish direct network effects, indirect network effects and data feedback.</li><li>Use a critical-mass example to judge whether subsidy or interoperability is more effective.</li><li>Separate high share from high entry barriers and identify contestability.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/industry-innovation-and-digital-economy/">ECO-027 · Industry, Innovation and the Digital Economy</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/rd-diffusion-platforms-innovation-policy/">ECO-043 · R&amp;D, Diffusion and Platforms: Returns and Limits of Innovation Policy</a> </li><li> <a href="https://finance.51invest.com/en/learn/tokenized-deposits-and-stablecoin-infrastructure/">FIN-037 · Tokenized Deposits and Stablecoins: The Ledger of Payment Infrastructure</a> </li><li> <a href="https://research.51invest.com/en/learn/alternative-data-and-complex-systems-signal-noise-networks/">RES-033 · Alternative Data and Complex Systems: Signal, Noise and Networks</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/9-1-how-monopolies-form-barriers-to-entry" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 9.1 How Monopolies Form: Barriers to Entry</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-11-23 · License: CC BY-NC-SA 4.0</p> <p>Supports: Supports the general framework of entry barriers, scale economies and network effects.</p> </div><div class="source"> <a href="https://www.ftc.gov/advice-guidance/competition-guidance/guide-antitrust-laws/antitrust-laws" rel="noopener noreferrer" target="_blank">The Antitrust Laws</a> <p>Federal Trade Commission · Federal Trade Commission</p> <p>Accessed: 2026-11-03 · License: U.S. Government work: public domain, not subject to copyright restrictions (17 U.S.C. 105); attribution requested</p> <p>Supports: Supports antitrust law, market definition and exclusionary conduct enforcement.</p> </div><div class="source"> <a href="https://search.ftc.gov/system/files/documents/public_statements/1545208/p180101_testimony_-_acquisitions_of_nascent_or_potential_competitors_by_digital_platforms.pdf" rel="noopener noreferrer" target="_blank">Competition in Digital Technology Markets: Examining Acquisitions of Nascent or Potential Competitors by Digital Platforms</a> <p>Federal Trade Commission · Federal Trade Commission</p> <p>Accessed: 2026-11-23 · License: U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>Supports: Supports competition analysis of digital-platform acquisitions of nascent competitors and data barriers.</p> </div><div class="source"> <a href="https://www.oecd.org/en/publications/artificial-intelligence-in-society_eedfee77-en.html" rel="noopener noreferrer" target="_blank">Artificial Intelligence in Society</a> <p>OECD · OECD Publishing</p> <p>Accessed: 2026-11-21 · License: OECD publishing terms; citation only</p> <p>Supports: Supports the policy discussion boundaries of AI, data and the platform economy.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/platform-entry-barriers-data-network-effects-interoperability/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

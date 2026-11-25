@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>效用与预算约束 · 巫妖投资</title><meta name="description" content="效用衡量消费者从商品组合中获得的满足，预算约束划定可负担范围；最后一元的边际效用相等时，组合达到最优。"><link rel="canonical" href="https://economics.51invest.com/learn/utility-and-budget-constraint/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/utility-and-budget-constraint/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/utility-and-budget-constraint/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/utility-and-budget-constraint/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/utility-and-budget-constraint/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">效用与预算约束</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">效用与预算约束</h1> <p class="article-summary">效用衡量消费者从商品组合中获得的满足，预算约束划定可负担范围；最后一元的边际效用相等时，组合达到最优。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M02 · 消费者与家庭</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>4 分钟 · 11 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>效用</strong>（utility）是消费者从商品组合中获得的满足程度；<strong>预算约束</strong>（budget constraint）是在给定收入和价格下，消费者支出不超过收入的条件，预算线则是恰好花光收入的组合。两者结合决定最优消费组合。OpenStax《Principles of Economics 3e》把预算约束表述为可负担的两种商品组合[2]，并以每一元的边际效用相等刻画效用最大化的选择[1]。</p>
+<h2>直觉</h2>
+<p>假设每月可用于两种商品的收入为 120 元，餐每份 10 元，书每本 20 元。多买一本书就要少买两顿饭[2]。书的价格是餐的两倍，所以即使最后一本书的边际效用高于最后一餐，也不能直接说书更值得买；应比较每花一元的边际效用。把支出从餐转向书，直到两种商品最后一元的边际效用相同；此时任何小幅交换都会降低总效用。</p>
+<h2>正式表达</h2>
+<p>预算约束为 <code>10X + 20Y ≤ 120</code>；恰好花完收入时取等号，即预算线
+<code>10X + 20Y = 120</code>，
+其中 X 为餐数，Y 为书数。横轴截距为 12，纵轴截距为 6，斜率为 <code>-10/20 = -0.5</code>，即多买 1 本书须放弃 2 份餐。</p>
+<p>为便于计算，假设效用函数 <code>U = √(X·Y)</code>（教学假设，单位为“效用单位”）。边际效用为
+<code>MU_X = ΔU/ΔX = 0.5·√(Y/X)</code>，
+<code>MU_Y = ΔU/ΔY = 0.5·√(X/Y)</code>。
+最优条件为 <code>MU_X / P_X = MU_Y / P_Y</code>，等价于 <code>MU_X / MU_Y = P_X / P_Y</code>。在 X=6、Y=3 处，<code>MU_X ≈ 0.354</code>，<code>MU_Y ≈ 0.707</code>，每元边际效用均为 <code>0.0354</code>；支出为 60+60=120 元，<code>U = √18 ≈ 4.24</code>。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>收入和价格给定。</strong> 讨论期内不借入、不储蓄，预算是一次性支出上限。</li>
+<li><strong>商品可细分。</strong> 等边际条件适用于可以小幅调整的内点解；整本购买、最低消费量等离散情形应直接比较可行组合的总效用。</li>
+<li><strong>偏好稳定且可排序。</strong> 效用只要求个人内部排序，不要求人际可比；效用单位的绝对大小没有意义。</li>
+<li><strong>没有不确定性和策略互动。</strong> 价格、质量已知，消费不受他人行为影响。</li>
+<li><strong>角点解需单独判断。</strong> 只消费一种商品时，条件变为不等式，不能把等边际条件机械套用。</li>
+</ol>
+<p>边界说明：“效用是序数的”是本文采用的教科书建模约定；OpenStax 6.1 明确说明不同人的 utils 不可比较、同一人的 utils 是主观度量，但没有使用“序数效用”一词。本文把整句作为方法学表述，不当作来源原句。</p>
+<h2>例子与计算</h2>
+<p>沿用 120 元预算、餐 10 元、书 20 元与 <code>U = √(X·Y)</code>：</p>
+<table>
+<thead>
+<tr>
+<th>组合</th>
+<th align="right">餐 X</th>
+<th align="right">书 Y</th>
+<th align="right">支出</th>
+<th align="right">效用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">120</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td>B</td>
+<td align="right">8</td>
+<td align="right">2</td>
+<td align="right">120</td>
+<td align="right">4.00</td>
+</tr>
+<tr>
+<td>C</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">120</td>
+<td align="right">4.24</td>
+</tr>
+<tr>
+<td>D</td>
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">120</td>
+<td align="right">4.00</td>
+</tr>
+<tr>
+<td>E</td>
+<td align="right">0</td>
+<td align="right">6</td>
+<td align="right">120</td>
+<td align="right">0</td>
+</tr>
+</tbody></table>
+<p>C 的效用最高。把 B 调整为 C：少 2 份餐、多 1 本书，支出仍为 120 元，效用从 4.00 升到 4.24。C 处两种商品最后一元的边际效用相等，继续交换只会降低效用。以上价格、收入和效用函数均为教学假设，不是对真实家庭的估计。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-budget-title fig-budget-desc" viewBox="0 0 420 260" width="100%">
+    <title id="fig-budget-title">预算线与最优消费组合</title>
+    <desc id="fig-budget-desc">横轴为餐数，纵轴为书数。预算线从 12 份餐、0 本书连到 0 份餐、6 本书；最优组合 C 为 6 份餐、3 本书。直线上的点都可负担。</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="60" y1="210" x2="380" y2="210"></line>
+      <line x1="60" y1="210" x2="60" y2="45"></line>
+    </g>
+    <line x1="360" y1="210" x2="60" y2="60" stroke="var(--accent)" stroke-width="2.5"></line>
+    <circle cx="210" cy="135" r="4.5" fill="var(--gold)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="352" y="226">12</text>
+      <text x="44" y="64">6</text>
+      <text x="40" y="226">0</text>
+      <text x="300" y="245">餐数 X</text>
+      <text x="18" y="38">书数 Y</text>
+      <text x="245" y="192" fill="var(--accent)">10X + 20Y = 120</text>
+      <text x="218" y="128" fill="var(--gold)">C（6，3）</text>
+    </g>
+  </svg>
+  <figcaption>图 1：预算线 10X+20Y=120 与最优组合 C（6 份餐、3 本书）。直线上的组合都可负担；C 是表中效用最高的组合。图为教学模型，不是真实消费数据。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>效用等于有用或道德价值。</strong> 效用只表示消费者自己的偏好排序；一件“有用”的东西可能并不被偏好。</p>
+<p><strong>预算约束要求花光收入。</strong> 约束是“不超过”；储蓄也是收入的一种用途。</p>
+<p><strong>边际效用递减意味着总效用下降。</strong> 只要边际效用仍为正，总效用继续上升，只是增速放慢。</p>
+<p><strong>等边际条件比较平均效用。</strong> 条件比较最后一单位、每一元带来的边际效用，不是平均数。</p>
+<p><strong>效用可以跨人比较。</strong> 现代消费者理论只要求个人内部排序，不能据效用数字判断谁更幸福。</p>
+<h2>关联</h2>
+<ul>
+<li>先修：稀缺与选择（ECO-002）、边际与激励（ECO-004）。</li>
+<li>相关：需求弹性（ECO-006）、生产与成本（ECO-008）、竞争与垄断（ECO-009）。</li>
+<li>另见：供给需求与均衡（ECO-005）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">效用与预算约束：机制链</title>
+    <desc id="fig-batch-chain-desc">效用与预算约束 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">效用与预算约束：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">效用衡量消费者从商品</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">组合中获得的满足，预…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">效用衡量消费者从商</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">品组合中获得的满足</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，预算约束划定可负</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">担范围；最后一元的</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">边际效用相等时，组…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：效用（utility）</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">是消费者从商品组合中…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：效用（utilit</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">y）是消费者从商品</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">组合中获得的满足程</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">度；预算约束（budge</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">t constraint）是…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">沿用 120 元预算、餐</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start"> 10 元、书 20…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">沿用 120 元预算、</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">餐 10 元、书 20</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">元与 U = √(X·Y)：</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start"> | 组合 | 餐 X</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">| 书 Y | 支出 |…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：效用与预算约束的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">效用与预算约束：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">效用与预算约束：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收入和价格给定。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">效用等于有用或道德价值。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：效用与预算约束的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">效用与预算约束：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">效用与预算约束：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">效用衡量消费者从商品组合</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">中获得的满足，预算约束划…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收入和价格给定。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">效用等于有用或道德价值。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：效用与预算约束的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 下列哪一项是预算线（预算约束取等号）？A. <code>10X+20Y=120</code>；B. <code>U=√(X·Y)</code>；C. <code>MU_X/P_X=MU_Y/P_Y</code>；D. <code>P=MC</code>。</li>
+<li><strong>计算：</strong> 收入升到 180 元，价格与效用函数不变。最优组合与效用是多少？</li>
+<li><strong>适用条件：</strong> 为什么整本书不能拆分时，不能直接用等边际条件？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>A。B 是效用函数，C 是最优条件，D 是完全竞争厂商的定价条件。</li>
+<li>最优条件给出 <code>Y=0.5X</code>；预算 <code>10X+20Y=180</code> 即 <code>20X=180</code>，所以 X=9、Y=4.5，<code>U=√40.5≈6.36</code>。</li>
+<li>等边际条件假设可以小幅调整数量；整本书只能按本增加，应比较相邻可行组合的总效用，或使用离散的边际效用表。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “6.1 Consumption Choices.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/6-1-consumption-choices">https://openstax.org/books/principles-economics-3e/pages/6-1-consumption-choices</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “2.1 How Individuals Make Choices Based on Their Budget Constraint.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint">https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用预算约束式判定给定商品组合是否可负担，并求出约束线斜率的经济含义</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能用每元边际效用相等条件检验一个组合是否最优，并说明该条件依赖的假设</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用预算约束式判定给定商品组合是否可负担，并求出约束线斜率的经济含义</li><li>能用每元边际效用相等条件检验一个组合是否最优，并说明该条件依赖的假设</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/scarcity-and-choice/">ECO-002 · 稀缺与选择</a> </li><li> <a href="/learn/margin-and-incentives/">ECO-004 · 边际与激励</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li><li> <a href="/learn/elasticity-of-demand/">ECO-006 · 需求弹性</a> </li><li> <a href="/learn/production-and-cost/">ECO-008 · 生产与成本</a> </li><li> <a href="/learn/scarcity-and-choice/">ECO-002 · 稀缺与选择</a> </li><li> <a href="/learn/margin-and-incentives/">ECO-004 · 边际与激励</a> </li><li> <a href="/learn/competition-and-monopoly/">ECO-009 · 竞争与垄断</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/6-1-consumption-choices" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 6.1 Consumption Choices</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：效用是消费者从商品组合获得的满足；不同人的 utils 不可比较；预算约束列出可负担的组合；最优选择使各商品最后一单位每元边际效用相等。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 2.1 How Individuals Make Choices Based on Their Budget Constraint</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：预算约束可写成 预算 = P1Q1 + P2Q2；沿预算线增加一种商品必须放弃另一种商品，放弃量即机会成本。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/utility-and-budget-constraint/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

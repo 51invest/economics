@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>关税、配额与贸易协定：贸易壁垒的福利账 · 巫妖投资</title><meta name="description" content="关税和配额都抬高国内价格，但关税收入归政府、配额租金归许可证持有人，贸易协定则降低成员间壁垒而保留规则成本。福利账要把消费者损失、生产者收益、财政收入和效率损失分开记。"><link rel="canonical" href="https://economics.51invest.com/learn/tariffs-quotas-trade-agreements-welfare-ledger/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/tariffs-quotas-trade-agreements-welfare-ledger/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/tariffs-quotas-trade-agreements-welfare-ledger/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/tariffs-quotas-trade-agreements-welfare-ledger/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/tariffs-quotas-trade-agreements-welfare-ledger/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">关税、配额与贸易协定：贸易壁垒的福利账</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">关税、配额与贸易协定：贸易壁垒的福利账</h1> <p class="article-summary">关税和配额都抬高国内价格，但关税收入归政府、配额租金归许可证持有人，贸易协定则降低成员间壁垒而保留规则成本。福利账要把消费者损失、生产者收益、财政收入和效率损失分开记。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M13 · 国际贸易</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>5 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>关税</strong>（tariff）是对进口商品征收的税，按价格征收的叫从价关税，按数量征收的叫从量关税[1]。<strong>进口配额</strong>（import quota）直接限制可进口数量；配额下的高价差产生<strong>配额租金</strong>（quota rent），归谁取决于许可证分配[1]。<strong>贸易协定</strong>（trade agreement）是两个或多个经济体互相降低关税与非关税壁垒的互惠安排；世界贸易组织把这类安排称为区域贸易协定，并要求成员通报[2][3]。</p>
+<p>三者都改变进口品的国内价格与数量，但收入归属和行政成本不同。本文把“贸易壁垒”作为统称，不把关税、配额和协定混成一种工具。</p>
+<h2>直觉</h2>
+<p>一件进口小家电到岸价 100 元。对它征 25% 关税，国内价格变成 125 元。国内厂商原来生产 20 万件，现在愿意生产 35 万件；消费者原来买 100 万件，现在只买 85 万件；进口从 80 万件降到 50 万件。消费者多付的钱没有消失，而是分成了三块：国内生产者多拿的收益、政府关税收入、以及被扭曲掉的效率损失。</p>
+<p>配额也能把价格抬到 125 元，但它不直接给政府收入。配额许可证值 25 元/件，谁拿到许可证，谁就拿到这部分租金。贸易协定把成员之间的关税降下来，价格可能回到 100 元；但原产地规则、标准与海关手续仍会产生成本。</p>
+<h2>正式表达</h2>
+<p>从价关税下，国内价格与到岸价的关系是：</p>
+<p>[
+P_d = P_w(1+t)
+]</p>
+<p>其中 (P_w) 是到岸价，(t) 是从价税率。进口量等于国内需求减国内供给：</p>
+<p>[
+M = Q_d(P_d) - Q_s(P_d)
+]</p>
+<p>关税收入为：</p>
+<p>[
+R_t = t P_w M
+]</p>
+<p>配额把进口量固定为 (M_q)，国内价格由 (Q_d(P_d)-Q_s(P_d)=M_q) 决定；配额租金为：</p>
+<p>[
+R_q = (P_d-P_w)M_q
+]</p>
+<p>在小国、竞争性市场、线性供需的简化下，关税的净福利变化可以写成：</p>
+<p>[
+\Delta W = \Delta PS + \Delta CS + R_t = -(A+B)
+]</p>
+<p>其中 A 是生产扭曲损失，B 是消费扭曲损失，生产者收益、消费者损失和关税收入三项转移相抵后只剩这两个三角形。</p>
+<h2>适用条件</h2>
+<ol>
+<li>关税效果取决于市场结构和国内竞争；国内厂商若有市场势力，部分关税可能变成更高利润而不是更多产出（本文判断）。</li>
+<li>配额的关键不是数量上限本身，而是许可证如何分配、能否交易、租金归谁[1]。</li>
+<li>贸易协定的收益来自成员间壁垒下降，但原产地规则、卫生标准和海关程序会改变实际成本[2][3]。</li>
+<li>小国假设下，本国政策不改变世界价格；大国则可能通过需求变化影响世界价格，获得或损失贸易条件收益（本文判断）。</li>
+<li>调整成本真实存在：进口竞争部门的失业、地区衰退和再培训需求，不能被“总量收益”自动抵消[1]。</li>
+<li>关税与配额都可能被非关税壁垒替代；只盯税率会漏掉标准、许可和国营贸易等限制[1]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设某国小家电市场为线性供需，到岸价 100 元/件。自由贸易时：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">自由贸易</th>
+<th align="right">25% 关税</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>国内价格（元/件）</td>
+<td align="right">100</td>
+<td align="right">125</td>
+</tr>
+<tr>
+<td>国内供给（万件）</td>
+<td align="right">20</td>
+<td align="right">35</td>
+</tr>
+<tr>
+<td>国内需求（万件）</td>
+<td align="right">100</td>
+<td align="right">85</td>
+</tr>
+<tr>
+<td>进口（万件）</td>
+<td align="right">80</td>
+<td align="right">50</td>
+</tr>
+</tbody></table>
+<p>消费者剩余损失：</p>
+<p>[
+25 \times 85 + \tfrac{1}{2}\times 25 \times 15 = 2{,}312.5
+]</p>
+<p>生产者剩余增加：</p>
+<p>[
+25 \times 20 + \tfrac{1}{2}\times 25 \times 15 = 687.5
+]</p>
+<p>关税收入：</p>
+<p>[
+25 \times 50 = 1{,}250
+]</p>
+<p>净福利变化为 (-2{,}312.5 + 687.5 + 1{,}250 = -375) 万元/年。生产扭曲和消费扭曲各 187.5 万元，合计 375 万元，正好等于净损失。以上为教学假设，不是实际行业数据。</p>
+<p>若改用 50 万件配额，价格同为 125 元，配额租金为 (25 \times 50 = 1{,}250) 万元。许可证拍卖且收入用于公共预算时，账面分配接近关税；许可证免费发给国内进口商时，租金成为私人收益；若外国出口商管理“自愿出口限制”，租金流向外国，国内净损失扩大到 1,625 万元（本文按同一供需假设计算）。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-tariff-mech-title fig-tariff-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-tariff-mech-title">25% 关税从价格楔子到数量变化的机制链</title>
+    <desc id="fig-tariff-mech-desc">到岸价 100 元，加 25% 关税后国内价格 125 元；国内供给从 20 万件升到 35 万件，需求从 100 万件降到 85 万件，进口从 80 万件降到 50 万件。教学机制图。</desc>
+    <rect x="14" y="48" width="120" height="74" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="72" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">到岸价 100 元</text>
+    <text x="26" y="94" font-size="10" fill="var(--muted)" font-family="inherit">进口成本基准</text>
+    <text x="26" y="110" font-size="10" fill="var(--muted)" font-family="inherit">未含关税</text>
+    <rect x="170" y="48" width="120" height="74" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="182" y="72" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">关税 25%</text>
+    <text x="182" y="94" font-size="10" fill="var(--muted)" font-family="inherit">价格楔子 25 元</text>
+    <text x="182" y="110" font-size="10" fill="var(--muted)" font-family="inherit">国内价 125 元</text>
+    <rect x="326" y="48" width="120" height="74" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="338" y="72" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">数量响应</text>
+    <text x="338" y="94" font-size="10" fill="var(--muted)" font-family="inherit">供给 20→35 万件</text>
+    <text x="338" y="110" font-size="10" fill="var(--muted)" font-family="inherit">需求 100→85 万件</text>
+    <line x1="134" y1="85" x2="170" y2="85" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="290" y1="85" x2="326" y2="85" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="154" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="178" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">进口 = 需求 − 国内供给</text>
+    <text x="28" y="198" font-size="10" fill="var(--muted)" font-family="inherit">85 − 35 = 50 万件；自由贸易时 100 − 20 = 80 万件</text>
+    <rect x="14" y="226" width="432" height="52" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="250" font-size="10.5" fill="var(--text)" font-family="inherit">福利分解：消费者损失 − 生产者收益 − 关税收入 = 净损失</text>
+    <text x="28" y="268" font-size="10" fill="var(--muted)" font-family="inherit">价格楔子同时改变生产、消费和财政收入，不能只看进口下降。</text>
+  </svg>
+  <figcaption>图 1：25% 关税的机制链。到岸价 100 元加上 25 元关税后，国内价格 125 元，供给增加、需求下降、进口收缩；教学机制图，数字为假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-tariff-welfare-title fig-tariff-welfare-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-tariff-welfare-title">25% 关税算例的福利分解</title>
+    <desc id="fig-tariff-welfare-desc">消费者损失 2,312.5 万元，生产者收益 687.5 万元，关税收入 1,250 万元，净福利损失 375 万元；生产扭曲和消费扭曲各 187.5 万元。单位为万元/年，教学算例。</desc>
+    <line x1="70" y1="224" x2="430" y2="224" stroke="var(--border)" stroke-width="1.2"></line>
+    <rect x="92" y="46" width="58" height="178" fill="var(--accent)" opacity="0.85"></rect>
+    <rect x="184" y="171" width="58" height="53" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <rect x="276" y="128" width="58" height="96" fill="var(--surface)" stroke="var(--border)"></rect>
+    <rect x="368" y="195" width="58" height="29" fill="var(--accent)" opacity="0.55"></rect>
+    <g fill="var(--text)" font-size="10" font-family="inherit" text-anchor="middle">
+      <text x="121" y="38">−2,312.5</text>
+      <text x="213" y="163">+687.5</text>
+      <text x="305" y="120">+1,250</text>
+      <text x="397" y="187">−375</text>
+      <text x="121" y="244">消费者损失</text>
+      <text x="213" y="244">生产者收益</text>
+      <text x="305" y="244">关税收入</text>
+      <text x="397" y="244">净福利</text>
+    </g>
+    <text x="70" y="24" font-size="10.5" fill="var(--muted)" font-family="inherit">单位：万元/年；价格为 100→125 元，进口 80→50 万件</text>
+    <text x="70" y="286" font-size="10" fill="var(--muted)" font-family="inherit">生产扭曲 187.5 + 消费扭曲 187.5 = 净损失 375 万元。教学算例。</text>
+  </svg>
+  <figcaption>图 2：25% 关税的福利分解算例。消费者损失 2,312.5 万元，生产者收益 687.5 万元，关税收入 1,250 万元；净损失 375 万元，来自两个各 187.5 万元的扭曲三角形。单位为万元/年，数字为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-tariff-compare-title fig-tariff-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-tariff-compare-title">关税、配额与贸易协定的对比</title>
+    <desc id="fig-tariff-compare-desc">25% 关税与 50 万件配额都把国内价格推到 125 元、进口压到 50 万件；关税收入归政府，配额租金归许可证持有人，贸易协定把成员间价格降回 100 元但保留原产地与海关成本。教学对比表。</desc>
+    <rect x="14" y="34" width="136" height="52" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="26" y="56" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">25% 关税</text>
+    <text x="26" y="76" font-size="9.6" fill="var(--muted)" font-family="inherit">价格 125 / 进口 50</text>
+    <rect x="162" y="34" width="136" height="52" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="174" y="56" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">50 万件配额</text>
+    <text x="174" y="76" font-size="9.6" fill="var(--muted)" font-family="inherit">价格 125 / 进口 50</text>
+    <rect x="310" y="34" width="136" height="52" rx="7" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="322" y="56" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">成员间协定</text>
+    <text x="322" y="76" font-size="9.6" fill="var(--muted)" font-family="inherit">价格 100 / 进口 80</text>
+    <rect x="14" y="104" width="136" height="86" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="26" y="126" font-size="10" fill="var(--muted)" font-family="inherit">收入归政府</text>
+    <text x="26" y="148" font-size="10" fill="var(--muted)" font-family="inherit">关税 1,250</text>
+    <text x="26" y="170" font-size="10" fill="var(--muted)" font-family="inherit">行政成本较低</text>
+    <rect x="162" y="104" width="136" height="86" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="174" y="126" font-size="10" fill="var(--muted)" font-family="inherit">租金归持证人</text>
+    <text x="174" y="148" font-size="10" fill="var(--muted)" font-family="inherit">配额租金 1,250</text>
+    <text x="174" y="170" font-size="10" fill="var(--muted)" font-family="inherit">分配规则关键</text>
+    <rect x="310" y="104" width="136" height="86" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="322" y="126" font-size="10" fill="var(--muted)" font-family="inherit">成员间零关税</text>
+    <text x="322" y="148" font-size="10" fill="var(--muted)" font-family="inherit">原产地规则</text>
+    <text x="322" y="170" font-size="10" fill="var(--muted)" font-family="inherit">海关与标准成本</text>
+    <rect x="14" y="208" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="232" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">同为进口限制，收入归属和行政成本不同</text>
+    <text x="28" y="251" font-size="10" fill="var(--muted)" font-family="inherit">配额租金若流向外国出口商，国内净损失大于等值关税。</text>
+    <rect x="14" y="276" width="432" height="34" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="297" font-size="10" fill="var(--muted)" font-family="inherit">协定降低成员间壁垒，但不自动消除非关税措施和调整成本。</text>
+  </svg>
+  <figcaption>图 3：关税、配额与贸易协定的对比。关税与配额在价格和进口量上可等价，但收入归属不同；协定降低成员间价格，却保留原产地、海关和标准成本。教学对比表，单位为元/件、万件、万元/年。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-tariff-boundary-title fig-tariff-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-tariff-boundary-title">贸易工具适用的六个边界</title>
+    <desc id="fig-tariff-boundary-desc">检查市场结构、配额租金归属、原产地规则、国家大小、调整成本和替代性非关税壁垒；任一项改变，关税或配额的福利结论都会变。教学边界清单。</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. 国内市场竞争吗？有市场势力时，关税可能变成利润而非产出</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. 配额租金归谁？拍卖、持证人还是外国出口商，分配结果不同</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. 原产地规则多严？越严，协定的实际自由化程度越低</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. 国家足够小吗？大国会改变世界价格，贸易条件收益另算</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. 调整成本能补偿吗？失业、地区衰退和再培训不能被总量收益抹平</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. 是否被非关税壁垒替代？标准、许可和海关程序同样限制进口</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">六项都改变结论；关税税率只是贸易政策的一个变量。</text>
+  </svg>
+  <figcaption>图 4：贸易工具适用的六个边界。市场结构、配额租金、原产地规则、国家大小、调整成本和非关税壁垒会改变福利结论；教学边界清单，不是政策建议表。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“关税一定由外国出口商支付。”</strong> 只有在大国压价、外国厂商吸收成本时，部分关税才由出口方承担；小国进口商和消费者通常承担大部分（本文判断，基于供需归宿逻辑）。</p>
+<p><strong>“配额和等值关税完全一样。”</strong> 价格和数量可以相同，但配额租金的归属不同；许可证免费分配会把稀缺租金送给持证人[1]。</p>
+<p><strong>“贸易协定等于零壁垒。”</strong> 协定降低成员间关税，但原产地规则、标准、海关程序和排除清单仍决定实际市场准入[2][3]。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-023 比较优势与贸易</strong> 的关系：母文讲机会成本与分工收益；本文讲分工收益如何在关税、配额和协定下被重新分配。</li>
+<li>与 <strong>ECO-009 竞争与垄断</strong> 的关系：国内厂商的市场势力会改变关税归宿，不能假设完全竞争。</li>
+<li>与 <strong>ECO-032 中国与全球经济</strong> 的关系：贸易摩擦、价值链和区域协定是本文工具的现实场景。</li>
+<li>与 <strong>ECO-040 财政乘数</strong> 的关系：关税收入是财政来源之一，但效率损失和分配后果不能只看收入。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>概念辨别：关税和配额分别把价格还是数量作为政策变量？配额租金与关税收入在归属上有什么差别？</li>
+<li>计算：到岸价 80 元，征 20% 关税，国内价多少？若国内供给增加 10 万件、需求减少 12 万件，进口变化多少？用线性近似算净福利损失。</li>
+<li>适用条件：某国想加入关税同盟，但原产地规则极严、海关手续繁琐。协定降税带来的价格下降会被哪些成本抵消？说明两项需要一起评估的条件。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 34.1 Protectionism: An Indirect Subsidy from Consumers to Producers. <a href="https://openstax.org/books/principles-economics-3e/pages/34-1-protectionism-an-indirect-subsidy-from-consumers-to-producers">https://openstax.org/books/principles-economics-3e/pages/34-1-protectionism-an-indirect-subsidy-from-consumers-to-producers</a></li>
+<li>World Trade Organization, <em>Tariffs</em>. <a href="https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm">https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm</a></li>
+<li>World Trade Organization, <em>Regional Trade Agreements</em>. <a href="https://www.wto.org/english/tratop_e/region_e/region_e.htm">https://www.wto.org/english/tratop_e/region_e/region_e.htm</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>把从价关税写成国内价格楔子，并用线性供需算例分解消费者损失、生产者收益和关税收入。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>比较关税、配额与贸易协定的价格、进口量、租金归属和行政成本。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>把从价关税写成国内价格楔子，并用线性供需算例分解消费者损失、生产者收益和关税收入。</li><li>比较关税、配额与贸易协定的价格、进口量、租金归属和行政成本。</li><li>列出贸易工具适用的六个边界，并解释配额租金流向外国出口商时福利为何更差。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/comparative-advantage-and-trade/">ECO-023 · 比较优势与贸易</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/competition-and-monopoly/">ECO-009 · 竞争与垄断</a> </li><li> <a href="/learn/china-and-the-global-economy/">ECO-032 · 中国与全球经济</a> </li><li> <a href="/learn/fiscal-multipliers-spending-taxes-and-stabilizers/">ECO-040 · 财政乘数：支出、税收与自动稳定器</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/34-1-protectionism-an-indirect-subsidy-from-consumers-to-producers" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 34.1 Protectionism: An Indirect Subsidy from Consumers to Producers</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对保护主义、关税、进口配额与非关税壁垒的定义，以及关税和配额如何抬高国内价格、减少进口并改变剩余分配；正文数字为教学示例。</p> </div><div class="source"> <a href="https://www.wto.org/english/tratop_e/tariffs_e/tariffs_e.htm" rel="noopener noreferrer" target="_blank">Tariffs</a> <p>World Trade Organization · World Trade Organization</p> <p>访问：2026-11-23 · 许可：WTO website and official documents: copyright WTO; official documents free for public use, other material non-commercial with attribution; cite-only</p> <p>支持论点：用于核对关税是进口货物海关税、给予本地产品价格优势并形成政府收入，以及约束税率与实际税率的区别；正文不把某一成员税率写成普遍水平。</p> </div><div class="source"> <a href="https://www.wto.org/english/tratop_e/region_e/region_e.htm" rel="noopener noreferrer" target="_blank">Regional Trade Agreements</a> <p>World Trade Organization · World Trade Organization</p> <p>访问：2026-11-23 · 许可：WTO website and official documents: copyright WTO; official documents free for public use, other material non-commercial with attribution; cite-only</p> <p>支持论点：用于核对区域贸易协定是两方或多方互惠的优惠贸易安排、构成最惠国待遇的例外并须向 WTO 通报；正文不把协定等同于零壁垒。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/tariffs-quotas-trade-agreements-welfare-ledger/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

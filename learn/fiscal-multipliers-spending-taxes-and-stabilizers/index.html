@@ -1,0 +1,194 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>财政乘数：支出、税收与自动稳定器 · 巫妖投资</title><meta name="description" content="财政乘数不是固定常数，而是“第一轮冲击 → 收入 → 消费 → 再收入”的反馈链被漏损后的结果。政府购买、减税和转移支付的乘数不同，自动稳定器会在下行时自动缓冲，但开放经济、债务约束和供给瓶颈会改变最终效果。"><link rel="canonical" href="https://economics.51invest.com/learn/fiscal-multipliers-spending-taxes-and-stabilizers/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/fiscal-multipliers-spending-taxes-and-stabilizers/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/fiscal-multipliers-spending-taxes-and-stabilizers/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/fiscal-multipliers-spending-taxes-and-stabilizers/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/fiscal-multipliers-spending-taxes-and-stabilizers/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">财政乘数：支出、税收与自动稳定器</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">财政乘数：支出、税收与自动稳定器</h1> <p class="article-summary">财政乘数不是固定常数，而是“第一轮冲击 → 收入 → 消费 → 再收入”的反馈链被漏损后的结果。政府购买、减税和转移支付的乘数不同，自动稳定器会在下行时自动缓冲，但开放经济、债务约束和供给瓶颈会改变最终效果。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M12 · 财政与公共经济</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>6 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>读完这一篇，你能用边际消费倾向、税率和进口倾向算出支出乘数，区分政府购买、减税和转移支付的第一轮差别，并解释为什么“乘数 1.6”不是任何时点都成立的常数。</p>
+</blockquote>
+<h2>定义</h2>
+<p><strong>财政乘数</strong>（fiscal multiplier）指政府购买、税收或转移支付每变化一个单位，均衡产出变化多少倍。政府购买直接进入总需求；减税和转移支付先增加可支配收入，再按边际消费倾向转化为消费[1]。<strong>自动稳定器</strong>（automatic stabilizers）是无需临时立法、随经济周期自动变化的税收和转移支付，例如累进所得税、失业保险和低收入补助[2]。</p>
+<p>三者不是同一个乘数。政府购买的第一轮就是需求；减税的第一轮是收入，只有被消费的部分才成为需求；转移支付类似减税，但可能流向消费倾向更高或更低的家庭。财政刺激对产出和通胀的影响还取决于政策设计与经济状态，不能把单一乘数当成固定预测[3]。</p>
+<h2>直觉</h2>
+<p>假设政府多修 100 亿元道路。建筑公司拿到 100 亿元，支付工资、材料和利润；工人和供应商把其中一部分花掉，成为别人的收入；别人再花掉一部分，如此循环。每一轮都有一部分漏出：储蓄、税收和进口。</p>
+<p>如果边际消费倾向是 0.6，税率是 0.2，进口倾向是 0.1，那么每一轮新增收入中，消费支出是 <code>0.6 × (1 − 0.2) = 0.48</code>，进口漏出 0.1，留下 0.38 进入下一轮。总乘数为：</p>
+<p><code>k = 1 / (1 − 0.48 + 0.1) = 1 / 0.62 ≈ 1.61</code></p>
+<p>100 亿元政府购买最终带来约 161 亿元产出。若减税 50 亿元，第一轮可支配收入增加 50 亿元，消费增加 <code>0.6 × 50 = 30</code> 亿元；之后按同样反馈链滚动，总需求增加约 <code>30 / 0.62 ≈ 48</code> 亿元。减税乘数约 0.97，明显小于政府购买乘数。</p>
+<p>自动稳定器的作用更隐蔽。经济下行、收入减少 100 亿元时，税收按 20% 自动减少 20 亿元，转移支付增加 5 亿元，可支配收入只减少 75 亿元，消费只减少 45 亿元；没有稳定器时，消费会减少 60 亿元。稳定器没有“新政策”，但会在下行时自动放缓冲。</p>
+<h2>正式表达</h2>
+<p>在封闭经济、比例税和线性消费的简化模型中，政府购买乘数为：</p>
+<p><code>k_G = 1 / (1 − c(1 − t) + m)</code></p>
+<p>其中 <code>c</code> 是边际消费倾向，<code>t</code> 是税率，<code>m</code> 是边际进口倾向。政府购买变化 <code>ΔG</code> 对产出的影响为 <code>ΔY = k_G × ΔG</code>。</p>
+<p>减税乘数为：</p>
+<p><code>k_T = −c / (1 − c(1 − t) + m)</code></p>
+<p>即减税 <code>ΔT</code>（负数）带来 <code>ΔY = k_T × ΔT</code>。若减税 50 亿元，<code>ΔT = −50</code>，则 <code>ΔY = −0.6 / 0.62 × (−50) ≈ 48</code> 亿元。</p>
+<p>转移支付乘数与减税相同，前提是转移支付被完全视为可支配收入且按同样消费倾向支出。若转移支付流向流动性约束更强的家庭，边际消费倾向可能更高，乘数更大；若流向储蓄率更高的家庭，乘数更小。</p>
+<p>平衡预算乘数在简化模型中为：</p>
+<p><code>k_B = (1 − c) / (1 − c(1 − t) + m)</code></p>
+<p>政府购买和税收同时增加 1,000 亿元时，产出增加约 <code>0.4 / 0.62 × 1,000 ≈ 645</code> 亿元，而不是 1,000 亿元。</p>
+<p>自动稳定器的缓冲强度可以写成：收入下降 <code>ΔY</code> 时，税收自动减少 <code>t × ΔY</code>，转移支付自动增加 <code>s × ΔY</code>，可支配收入变化为 <code>(1 − t + s) × ΔY</code>。稳定器越大，消费的第一次下降越小。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>存在闲置产能。</strong> 乘数在需求不足、资源闲置时较大；接近充分就业时，政府购买会推高价格和利率，乘数变小。</li>
+<li><strong>家庭按收入消费。</strong> 流动性约束强、储蓄少的家庭消费倾向高，乘数较大；高储蓄家庭拿到减税后可能先还债或储蓄。</li>
+<li><strong>税率和进口漏出稳定。</strong> 税率提高、进口倾向上升会降低乘数；开放小经济体乘数通常更小。</li>
+<li><strong>货币政策不抵消。</strong> 财政扩张若推高利率、挤出投资，净乘数下降；利率接近下限时，财政乘数通常更大。</li>
+<li><strong>债务可持续。</strong> 高债务国家扩张可能提高风险溢价，家庭和企业预期未来增税，从而压低当前消费。</li>
+<li><strong>供给瓶颈不紧。</strong> 建筑、设备、劳动力短缺时，支出会更多转化为价格上涨，而不是实际产出。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设边际消费倾向 <code>c = 0.6</code>，税率 <code>t = 0.2</code>，边际进口倾向 <code>m = 0.1</code>。乘数分母为 <code>1 − 0.6 × 0.8 + 0.1 = 0.62</code>，政府购买乘数 <code>k_G = 1.61</code>。</p>
+<p>政府购买 1,000 亿元，产出增加约 <code>1.61 × 1,000 = 1,610</code> 亿元。减税 500 亿元，第一轮消费增加 300 亿元，总产出增加约 <code>300 / 0.62 = 484</code> 亿元，乘数约 0.97。若把 500 亿元用于转移支付，且接受者消费倾向也是 0.6，效果与减税接近；若接受者消费倾向是 0.8，则第一轮消费增加 400 亿元，总产出增加约 <code>400 / 0.62 = 645</code> 亿元。</p>
+<p>自动稳定器：经济下行使税前收入减少 1,000 亿元。税收减少 200 亿元，转移支付增加 50 亿元，可支配收入减少 750 亿元；消费减少 <code>0.6 × 750 = 450</code> 亿元。没有稳定器时，可支配收入减少 1,000 亿元，消费减少 600 亿元。稳定器把消费的第一轮下降从 600 亿元降到 450 亿元。</p>
+<p>若进口倾向从 0.1 升到 0.2，分母变成 0.72，政府购买乘数降到 1.39，1,000 亿元支出只带来约 1,390 亿元产出。若经济接近充分就业，乘数还会进一步下降。</p>
+<p>以上均为教学假设，不是真实财政数据。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-fm-mech-title fig-fm-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-fm-mech-title">政府支出通过收入与消费循环形成乘数</title>
+    <desc id="fig-fm-mech-desc">政府购买 1,000 亿元进入企业收入，支付工资和利润后成为家庭收入；家庭按 0.6 的边际消费倾向消费，缴纳 20% 税收并进口 10%，剩余 0.38 进入下一轮。循环总和约为 1,610 亿元。教学示意图。</desc>
+    <rect x="14" y="46" width="118" height="74" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">政府购买</text>
+    <text x="26" y="92" font-size="10" fill="var(--muted)" font-family="inherit">1,000 亿元</text>
+    <text x="26" y="110" font-size="10" fill="var(--muted)" font-family="inherit">第一轮直接需求</text>
+    <rect x="156" y="46" width="118" height="74" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="168" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">企业收入</text>
+    <text x="168" y="92" font-size="10" fill="var(--muted)" font-family="inherit">工资、材料、利润</text>
+    <text x="168" y="110" font-size="10" fill="var(--muted)" font-family="inherit">转为家庭收入</text>
+    <rect x="298" y="46" width="148" height="74" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="310" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">家庭可支配收入</text>
+    <text x="310" y="92" font-size="10" fill="var(--muted)" font-family="inherit">消费 0.6 × 0.8 = 0.48</text>
+    <text x="310" y="110" font-size="10" fill="var(--muted)" font-family="inherit">税 0.2、进口 0.1</text>
+    <line x1="132" y1="82" x2="156" y2="82" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="274" y1="82" x2="298" y2="82" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="164" width="432" height="58" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="188" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">下一轮：0.48 消费 − 0.10 进口 = 0.38 进入收入</text>
+    <text x="28" y="210" font-size="10" fill="var(--muted)" font-family="inherit">循环总和 = 1 / (1 − 0.38) ≈ 1.61</text>
+    <rect x="14" y="238" width="432" height="40" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="263" font-size="10.5" fill="var(--text)" font-family="inherit">1,000 亿元支出 → 约 1,610 亿元产出；税、储蓄、进口是漏出</text>
+  </svg>
+  <figcaption>图 1：政府支出的乘数机制链。第一轮是直接需求，之后每轮按消费倾向滚动，税收、储蓄和进口形成漏出；教学假设下 1,000 亿元支出带来约 1,610 亿元产出。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-fm-calc-title fig-fm-calc-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-fm-calc-title">1,000 亿元政府购买、500 亿元减税与转移支付的产出比较</title>
+    <desc id="fig-fm-calc-desc">在 c=0.6、t=0.2、m=0.1 的假设下，政府购买乘数 1.61，1,000 亿元带来约 1,610 亿元产出；减税 500 亿元带来约 484 亿元；转移支付 500 亿元在消费倾向 0.6 时约 484 亿元，在 0.8 时约 645 亿元。教学柱状图。</desc>
+    <line x1="90" y1="230" x2="420" y2="230" stroke="var(--border)" stroke-width="1.2"></line>
+    <rect x="108" y="78" width="56" height="152" fill="var(--accent)" opacity="0.85"></rect>
+    <rect x="196" y="184" width="56" height="46" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <rect x="284" y="169" width="56" height="61" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <rect x="372" y="169" width="40" height="61" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <g fill="var(--text)" font-size="10" font-family="inherit" text-anchor="middle">
+      <text x="136" y="70">1,610</text>
+      <text x="224" y="176">484</text>
+      <text x="312" y="161">645</text>
+      <text x="392" y="161">484</text>
+      <text x="136" y="250">政府购买</text>
+      <text x="136" y="266">1,000 亿</text>
+      <text x="224" y="250">减税</text>
+      <text x="224" y="266">500 亿</text>
+      <text x="312" y="250">转移支付</text>
+      <text x="312" y="266">c=0.8</text>
+      <text x="392" y="250">转移支付</text>
+      <text x="392" y="266">c=0.6</text>
+    </g>
+    <text x="90" y="30" font-size="10.5" fill="var(--muted)" font-family="inherit">产出增量（亿元），c=0.6、t=0.2、m=0.1</text>
+    <text x="90" y="292" font-size="10" fill="var(--muted)" font-family="inherit">同样的财政成本，第一轮直接进入需求决定乘数大小。</text>
+  </svg>
+  <figcaption>图 2：三种工具的产出对比。政府购买第一轮直接进入需求，乘数最大；减税和转移支付先经过可支配收入，再按消费倾向转化。转移支付乘数取决于接受者消费倾向。教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-fm-stab-title fig-fm-stab-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-fm-stab-title">自动稳定器如何缓冲收入下降</title>
+    <desc id="fig-fm-stab-desc">税前收入下降 1,000 亿元时，20% 税率使税收自动减少 200 亿元，转移支付增加 50 亿元，可支配收入只减少 750 亿元；消费按 0.6 的倾向减少 450 亿元，而没有稳定器时消费减少 600 亿元。教学算例。</desc>
+    <rect x="14" y="46" width="204" height="92" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">没有稳定器</text>
+    <text x="28" y="94" font-size="10" fill="var(--muted)" font-family="inherit">收入 −1,000 亿元</text>
+    <text x="28" y="116" font-size="10" fill="var(--muted)" font-family="inherit">消费 −600 亿元</text>
+    <text x="28" y="134" font-size="10" fill="var(--muted)" font-family="inherit">需求直接下滑</text>
+    <rect x="240" y="46" width="206" height="92" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="254" y="70" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">有自动稳定器</text>
+    <text x="254" y="94" font-size="10" fill="var(--muted)" font-family="inherit">税收 −200 / 转移 +50</text>
+    <text x="254" y="116" font-size="10" fill="var(--muted)" font-family="inherit">可支配收入 −750</text>
+    <text x="254" y="134" font-size="10" fill="var(--muted)" font-family="inherit">消费 −450 亿元</text>
+    <rect x="14" y="170" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="194" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">缓冲 = 150 亿元消费，不需要临时立法</text>
+    <text x="28" y="214" font-size="10" fill="var(--muted)" font-family="inherit">累进税和失业保险随收入自动变化，下降时减税、增支。</text>
+    <rect x="14" y="246" width="432" height="34" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="268" font-size="10" fill="var(--muted)" font-family="inherit">注意：稳定器缓冲需求，不修复供给；结构性失业需要别的工具。</text>
+  </svg>
+  <figcaption>图 3：自动稳定器的缓冲。收入下降时税收自动减少、转移支付自动增加，可支配收入和消费的第一次下降被缩小；教学算例，不是实际财政规模。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-fm-boundary-title fig-fm-boundary-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-fm-boundary-title">财政乘数大小的六个边界条件</title>
+    <desc id="fig-fm-boundary-desc">乘数取决于闲置产能、家庭消费倾向、税率与进口漏出、货币政策反应、债务可持续性和供给瓶颈。任一条改变，同样的 1,000 亿元支出可能产生完全不同的产出效果。教学检查表。</desc>
+    <rect x="14" y="38" width="432" height="40" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="63" font-size="10.5" fill="var(--text)" font-family="inherit">1. 有闲置产能吗？有 → 乘数较大；接近充分就业 → 乘数小</text>
+    <rect x="14" y="88" width="432" height="40" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="113" font-size="10.5" fill="var(--text)" font-family="inherit">2. 家庭受流动性约束吗？是 → 消费倾向高，乘数大</text>
+    <rect x="14" y="138" width="432" height="40" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="163" font-size="10.5" fill="var(--text)" font-family="inherit">3. 税率和进口漏出高吗？高 → 乘数被压低</text>
+    <rect x="14" y="188" width="432" height="40" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="213" font-size="10.5" fill="var(--text)" font-family="inherit">4. 货币政策会抵消吗？会 → 利率上升挤出投资</text>
+    <rect x="14" y="238" width="432" height="40" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="263" font-size="10.5" fill="var(--text)" font-family="inherit">5. 债务可持续吗？高债务 → 风险溢价和增税预期</text>
+    <rect x="14" y="288" width="432" height="28" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="307" font-size="10.5" fill="var(--text)" font-family="inherit">6. 供给瓶颈紧吗？紧 → 支出更多变成价格而非产出</text>
+  </svg>
+  <figcaption>图 4：乘数的边界。闲置产能、消费倾向、税率与进口、货币政策、债务和供给瓶颈共同决定乘数；教学检查表，不是固定系数表。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“乘数是一个固定常数。”</strong> 乘数随经济状态变化。资源闲置时较大，充分就业、进口漏出高或债务风险高时较小。把 1.6 当成永久参数会高估刺激效果。</p>
+<p><strong>“减税 100 亿元等于政府购买 100 亿元。”</strong> 减税先增加可支配收入，只有被消费的部分进入需求；政府购买第一轮就进入需求。两者乘数不同，转移支付还取决于接受者消费倾向。</p>
+<p><strong>“自动稳定器会扩大赤字，所以不好。”</strong> 经济下行时赤字扩大是稳定器的设计功能；强行平衡预算会加深衰退。判断财政立场要看结构性余额，而不是单看周期赤字。</p>
+<p><strong>“财政扩张一定挤出投资。”</strong> 挤出取决于利率反应和闲置产能。需求不足、利率不敏感时，挤出较小；接近充分就业时，挤出更明显。</p>
+<p><strong>“乘数计算可以精确预测产出。”</strong> 模型给出方向和政策排序，不是精确预测。预期、供给瓶颈、金融条件和统计口径都会造成误差。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-020 财政政策与乘数</strong> 的关系：那一篇讲预算、赤字和稳定政策；这一篇拆开乘数公式、三种工具和自动稳定器。</li>
+<li>与 <strong>ECO-019 货币政策传导</strong> 的关系：财政扩张的效果取决于货币政策是否抵消；利率、信贷和汇率渠道会改变净乘数。</li>
+<li>与 <strong>ECO-011 公共财政与税收</strong> 的关系：税收结构影响可支配收入、消费倾向和自动稳定器强度。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>概念辨别：政府购买、减税和转移支付的第一轮需求差别是什么？哪一个乘数通常最大？</li>
+<li>计算：c=0.7、t=0.2、m=0.1，政府购买乘数是多少？500 亿元支出带来多少产出？</li>
+<li>适用条件：某经济体接近充分就业、进口倾向高、央行正在加息。为什么同样 1,000 亿元支出的乘数可能远低于 1.6？</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 30.4 Using Fiscal Policy to Fight Recession, Unemployment, and Inflation. <a href="https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation">https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation</a></li>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 25.2 The Building Blocks of Keynesian Analysis. <a href="https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis">https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis</a></li>
+<li>Board of Governors of the Federal Reserve System, <em>FEDS 2010-43, The Effect of Fiscal Stimulus on Output and Inflation</em>. <a href="https://www.federalreserve.gov/pubs/feds/2010/201043/">https://www.federalreserve.gov/pubs/feds/2010/201043/</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>用边际消费倾向、税率和进口倾向计算政府购买乘数，并解释漏出如何压低乘数。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>区分政府购买、减税和转移支付的第一轮需求差别，比较同一财政成本下的产出效果。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>用边际消费倾向、税率和进口倾向计算政府购买乘数，并解释漏出如何压低乘数。</li><li>区分政府购买、减税和转移支付的第一轮需求差别，比较同一财政成本下的产出效果。</li><li>说明自动稳定器如何缓冲收入下降，并列出乘数大小的六个边界条件。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/fiscal-policy-and-multiplier/">ECO-020 · 财政政策与乘数</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/monetary-policy-transmission/">ECO-019 · 货币政策传导</a> </li><li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 30.4 Using Fiscal Policy to Fight Recession, Unemployment, and Inflation</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对扩张性财政政策通过增加支出或减税移动总需求，以及支出工具与税收工具的选择差异；正文数字为教学示例。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 25.2 The Building Blocks of Keynesian Analysis</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对边际消费倾向、支出乘数与总需求反馈链的基本结构；正文把税率和进口倾向作为扩展漏出，不冒充原模型。</p> </div><div class="source"> <a href="https://www.federalreserve.gov/pubs/feds/2010/201043/" rel="noopener noreferrer" target="_blank">FEDS 2010-43, The Effect of Fiscal Stimulus on Output and Inflation</a> <p>Board of Governors of the Federal Reserve System · Board of Governors of the Federal Reserve System</p> <p>访问：2026-11-23 · 许可：U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>支持论点：用于核对财政刺激对产出和通胀的影响取决于政策设计与经济状态，不能把单一乘数当成固定预测；正文不引用未核实的具体估计。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/fiscal-multipliers-spending-taxes-and-stabilizers/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>国际收支 · 巫妖投资</title><meta name="description" content="国际收支是一国居民与非居民在一定时期内全部经济交易的系统记录；经常账户逆差对应境外资金净流入。"><link rel="canonical" href="https://economics.51invest.com/learn/balance-of-payments/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/balance-of-payments/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/balance-of-payments/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/balance-of-payments/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/balance-of-payments/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">国际收支</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">国际收支</h1> <p class="article-summary">国际收支是一国居民与非居民在一定时期内全部经济交易的系统记录；经常账户逆差对应境外资金净流入。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M14 · 开放宏观</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>6 分钟 · 12 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>国际收支</strong>（balance of payments，BOP）是一国居民与非居民在一定时期内全部经济交易的系统记录[2]。它分为经常账户、资本账户和金融账户[2]；按复式记账编制（本文方法说明，不在[2]的 supports 内）。经常账户记录货物、服务、初次与二次收入[1][2]，金融账户记录对外资产与负债的变动[2]。</p>
+<h2>直觉</h2>
+<p>出口一笔货物，一方面在经常账户记下这笔货物出口，另一方面在金融账户记下对外资产增加或对外负债减少；进口则相反。若进口多于出口，经常账户出现逆差，差额须通过出售资产、借债或动用储备融资。国际收支表会计上总是平衡，经常账户却可有顺逆差。</p>
+<h2>正式表达</h2>
+<p>贸易差额为</p>
+<p><code>NX = X - M</code>，</p>
+<p>其中 X 为出口、M 为进口，两者都是一定时期内的流量，以货币金额计（下文示例用亿元人民币）[1]。忽略要素收入与转移支付时，经常账户差额近似等于 NX；完整口径的经常账户还包括服务、初次收入与二次收入[1]。国民储蓄 <code>S = Y - C - G</code>，即私人储蓄与政府储蓄之和，于是</p>
+<p><code>S - I = NX</code>。</p>
+<p>逆差意味着投资超过储蓄，差额由境外资金净流入弥补[3]；顺差则意味着本国对外净贷出。储备变动记入金融账户，净误差与遗漏是平衡项。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>居民原则。</strong> 记录居民与非居民交易，不按国籍[2]。</li>
+<li><strong>复式记账。</strong> 每笔交易同时记贷方和借方，按市场价估值；数据会修订。</li>
+<li><strong>经常账户不等于贸易差额。</strong> 服务、投资收益和转移可能很大[1]。</li>
+<li><strong>逆差未必是坏事。</strong> 可能用于进口资本品；可持续性取决于融资结构与偿债能力。</li>
+<li><strong>符号口径。</strong> 不同机构对金融账户、储备和误差项处理不同，比较前须统一。</li>
+</ol>
+<p>边界说明：国际收支采用复式记账、储备资产属金融账户、净误差与遗漏是平衡项这三点，以及&quot;按市值估值&quot;和&quot;数据会修订&quot;两项做法，均不在本篇登记来源的 supports 之内；本文把它们作为国民核算的教科书通识与惯例给出，属方法学表述，不是登记来源的引证结论。</p>
+<h2>例子与计算</h2>
+<p>假设某经济体 Y = 1000、C = 600、G = 200、I = 220、X = 150、M = 170（亿元人民币），初次收入与二次收入净额为零。则</p>
+<p><code>NX = 150 - 170 = -20</code>，
+<code>S = 1000 - 600 - 200 = 200</code>，
+<code>S - I = 200 - 220 = -20</code>。</p>
+<p>逆差 20 亿元人民币对应 20 亿元人民币的境外资金净流入。以上为教学假设。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">金额（亿元人民币）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GDP，Y</td>
+<td align="right">1000</td>
+</tr>
+<tr>
+<td>消费，C</td>
+<td align="right">600</td>
+</tr>
+<tr>
+<td>政府购买，G</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td>投资，I</td>
+<td align="right">220</td>
+</tr>
+<tr>
+<td>出口，X</td>
+<td align="right">150</td>
+</tr>
+<tr>
+<td>进口，M</td>
+<td align="right">170</td>
+</tr>
+<tr>
+<td>贸易差额，NX</td>
+<td align="right">-20</td>
+</tr>
+<tr>
+<td>国民储蓄，S</td>
+<td align="right">200</td>
+</tr>
+<tr>
+<td>S - I</td>
+<td align="right">-20</td>
+</tr>
+</tbody></table>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-bop-title fig-bop-desc" viewBox="0 0 460 220" width="100%">
+    <title id="fig-bop-title">经常账户逆差与金融账户净流入</title>
+    <desc id="fig-bop-desc">左框为出口 150、进口 170、差额 -20；右框为境外资金净流入 20；箭头表示逆差由净流入融资。</desc>
+    <defs>
+      <marker id="bop-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="var(--muted)"></path>
+      </marker>
+    </defs>
+    <g fill="var(--surface)" stroke="var(--border)" stroke-width="1.2">
+      <rect x="24" y="48" width="170" height="124" rx="6"></rect>
+      <rect x="266" y="48" width="170" height="124" rx="6"></rect>
+    </g>
+    <g fill="none" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#bop-arrow)">
+      <line x1="196" y1="110" x2="262" y2="110"></line>
+    </g>
+    <g fill="var(--text)" font-size="13" font-family="inherit" text-anchor="middle">
+      <text x="109" y="74" font-weight="600">经常账户</text>
+      <text x="109" y="100">出口 +150</text>
+      <text x="109" y="122">进口 -170</text>
+      <text x="109" y="150" fill="var(--muted)">差额 -20</text>
+      <text x="351" y="74" font-weight="600">金融账户</text>
+      <text x="351" y="100">境外资金</text>
+      <text x="351" y="122">净流入 +20</text>
+      <text x="351" y="150" fill="var(--muted)">为逆差融资</text>
+      <text x="230" y="198" fill="var(--muted)" font-size="11">简化关系（教学假设）</text>
+    </g>
+  </svg>
+  <figcaption>图 1：假设经济体逆差 20 亿元人民币，由 20 亿元人民币境外资金净流入融资。图为教学示意，金额见上表。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>国际收支平衡等于经常账户平衡。</strong> 会计平衡不等于经常账户为零。</p>
+<p><strong>逆差国一定在失血。</strong> 逆差对应资本净流入，可能支持投资；用于消费或短期外债才有风险。</p>
+<p><strong>国际收支只记货物贸易。</strong> 服务、收入、转移和金融交易都记录。</p>
+<p><strong>储备变动是误差项。</strong> 储备属于金融账户；净误差与遗漏才是平衡项。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>国际收支</h3>
+<p><strong>定义</strong>：国际收支是居民与非居民之间全部经济交易的系统记录，包括经常账户、资本和金融账户。</p>
+<p><strong>机制</strong>：经常账户记录货物、服务、收入和转移，金融账户记录投资与储备变化；会计上总和为零，但统计误差存在。</p>
+<p><strong>例子</strong>：例如一国货物出口大于进口，经常账户顺差，通常对应对外资产增加或资本流入。</p>
+<p><strong>边界</strong>：经常账户顺差不是“赚了”的同义词；它反映储蓄投资缺口、汇率和资本流动，错误与遗漏也提示数据问题。</p>
+<h3>资本流动</h3>
+<p><strong>定义</strong>：资本流动是跨境投资、贷款、存款和证券交易，分为直接投资、证券投资和其他金融流。</p>
+<p><strong>机制</strong>：资本流动受利率差、增长预期、风险和开放政策驱动；突然停止和逆转会冲击汇率、银行和资产负债表。</p>
+<p><strong>例子</strong>：例如美联储加息吸引资金流入高收益市场，若风险偏好反转，资金迅速撤出，本币贬值和融资成本上升。</p>
+<p><strong>边界</strong>：资本流动不等于发展融资；热钱、期限错配和外汇负债会放大脆弱性，资本管制和宏观审慎可改变构成。</p>
+<h3>汇率制度</h3>
+<p><strong>定义</strong>：汇率制度是一国管理本币对外价格的方式，从固定、爬行钉住到浮动和区域安排。</p>
+<p><strong>机制</strong>：固定汇率提供可预期性但需储备和货币政策服从；浮动汇率吸收冲击却可能波动过大，中间制度面临投机压力。</p>
+<p><strong>例子</strong>：例如小型开放经济体钉住美元，出口报价稳定，但美国加息时本国也被动收紧。</p>
+<p><strong>边界</strong>：没有适合所有国家的制度；经济规模、贸易结构、资本开放和通胀史决定选择，固定与浮动都可能危机。</p>
+<h3>国际失衡和国际货币关系</h3>
+<p><strong>定义</strong>：国际失衡是各国经常账户和储蓄投资缺口的持续分化，国际货币关系是规则、储备和支付网络的安排。</p>
+<p><strong>机制</strong>：盈余国储蓄外流、赤字国借入，通过汇率、利率和资产价格调整；主导货币发行国享有特权也承担义务。</p>
+<p><strong>例子</strong>：例如石油出口国积累主权基金，进口国发行债券融资，全球储蓄在美元资产中循环。</p>
+<p><strong>边界</strong>：失衡不必然崩溃；调整可能通过增长、汇率或危机完成，储备货币地位带来便利也带来道德风险和地缘政治摩擦。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：GDP 与国民经济核算（ECO-011）。</li>
+<li>相关：汇率制度与开放经济（ECO-022）、名义值与实际值（ECO-012）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">国际收支：机制链</title>
+    <desc id="fig-batch-chain-desc">国际收支 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支是一国居民与</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">非居民在一定时期内全…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支是一国居民</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">与非居民在一定时期</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">内全部经济交易的系</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">统记录；经常账户逆</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">差对应境外资金净流…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：国际收支（balan</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">ce of payments，BO…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：国际收支（bal</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">ance of payments</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，BOP）是一国居民与</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">非居民在一定时期内</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">全部经济交易的系统…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">假设某经济体 Y =</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">1000、C = 600、G…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">假设某经济体 Y =</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">1000、C =</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">600、G = 200、I</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">= 220、X =</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">150、M = 170（亿…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：国际收支的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">国际收支：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">居民原则。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支平衡等于经常账户平衡。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：国际收支的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">国际收支：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支是一国居民与非居</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">民在一定时期内全部经济交…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">居民原则。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">国际收支平衡等于经常账户平衡。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：国际收支的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 下列哪项记入经常账户？A. 外国投资者购买本国股票；B. 本国居民出境旅游支出；C. 央行增加外汇储备；D. 本国银行偿还外债。</li>
+<li><strong>计算：</strong> 若 Y = 900、C = 550、G = 180、I = 200、X = 140、M = 170（亿元人民币），求 S、NX 和逆差对应的资金流。</li>
+<li><strong>适用条件：</strong> 为什么经常账户逆差不一定说明经济变差？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>B。旅游是服务进口；股票、储备和外债偿还记入金融账户。</li>
+<li><code>S = 900 - 550 - 180 = 170</code>；<code>NX = 140 - 170 = -30</code>；逆差 30 亿元人民币对应 30 亿元人民币的境外资金净流入（<code>S - I = 170 - 200 = -30</code>）。</li>
+<li>逆差可能来自进口资本品、投资超过储蓄或平滑消费；要看融资期限、资金用途和偿债能力。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<p>正文中的 [1][2][3] 对应以下来源。</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;23.1 Measuring Trade Balances.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/23-1-measuring-trade-balances">https://openstax.org/books/principles-economics-3e/pages/23-1-measuring-trade-balances</a>（访问日期：2026-10-30）</li>
+<li>U.S. Bureau of Economic Analysis. &quot;Balance of Payments.&quot; <a href="https://www.bea.gov/help/glossary/balance-payments">https://www.bea.gov/help/glossary/balance-payments</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;23.4 The National Saving and Investment Identity.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/23-4-the-national-saving-and-investment-identity">https://openstax.org/books/principles-economics-3e/pages/23-4-the-national-saving-and-investment-identity</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用经常账户与资本金融账户的关系解释逆差为何对应境外资金净流入</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能区分储备资产变动与其他账户项在记录上的含义</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用经常账户与资本金融账户的关系解释逆差为何对应境外资金净流入</li><li>能区分储备资产变动与其他账户项在记录上的含义</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/nominal-and-real-values/">ECO-012 · 名义值与实际值</a> </li><li> <a href="/learn/exchange-rate-regimes/">ECO-022 · 汇率制度与开放经济</a> </li><li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/23-1-measuring-trade-balances" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 23.1 Measuring Trade Balances</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：贸易差额是出口减进口；货物贸易差额只涵盖货物；经常账户包括货物、服务、收入和无偿转移。</p> </div><div class="source"> <a href="https://www.bea.gov/help/glossary/balance-payments" rel="noopener noreferrer" target="_blank">Balance of Payments</a> <p>U.S. Bureau of Economic Analysis · U.S. Bureau of Economic Analysis</p> <p>访问：2026-10-30 · 许可：U.S. Government work (public domain), 17 U.S.C. §105</p> <p>支持论点：国际收支记录一定时期内美国居民与外国居民之间的交易，包括货物、服务、收入、资产和负债，并分为经常账户、资本账户和金融账户。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/23-4-the-national-saving-and-investment-identity" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 23.4 The National Saving and Investment Identity</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：国民储蓄与投资恒等式（S 为私人储蓄，G−T 为政府储蓄）表明，贸易逆差反映国内投资超过私人储蓄与政府储蓄之和，差额由外国资本流入弥补。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/balance-of-payments/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

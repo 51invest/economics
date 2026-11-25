@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>生产与成本 · 巫妖投资</title><meta name="description" content="生产函数把投入转换为产出，成本随产量与投入价格变化；本篇只覆盖短期成本与产量决策，边际成本决定多生产一单位是否值得，平均可变成本决定短期是否停产，平均总成本决定该价格能否覆盖全部成本。"><link rel="canonical" href="https://economics.51invest.com/learn/production-and-cost/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/production-and-cost/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/production-and-cost/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/production-and-cost/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/production-and-cost/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">生产与成本</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">生产与成本</h1> <p class="article-summary">生产函数把投入转换为产出，成本随产量与投入价格变化；本篇只覆盖短期成本与产量决策，边际成本决定多生产一单位是否值得，平均可变成本决定短期是否停产，平均总成本决定该价格能否覆盖全部成本。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M03 · 企业与生产</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>8 分钟 · 12 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>读完这一篇，你能用一张成本表判断该生产多少、什么时候该停，以及为什么“多生产一件”的成本不是平均成本。</p>
+</blockquote>
+<h2>定义</h2>
+<p><strong>生产函数</strong>（production function）描述在给定技术下投入与产出的关系；<strong>成本</strong>（cost）是生产所使用资源的经济价值。短期至少有一种投入固定，长期所有投入都可调整[2]。固定成本不随产量变化，可变成本随产量变化；边际成本是增产一单位的总成本增量，平均总成本是总成本除以产量[3]。</p>
+<h2>直觉</h2>
+<p>假设工作室每天租金 60 元、每名工人工资 30 元，租金当天固定。第一名工人增加 10 件产出，第二名 8 件，第三名 6 件：设备与空间不变，后来者分到的工具和场地越来越少，这就是边际产量递减[2]。多生产一件的边际成本先低后高，平均成本先降后升。</p>
+<h2>正式表达</h2>
+<p>短期生产函数写作 <code>Q = f(L, K̄)</code>，资本 K 固定，劳动 L 可变；边际产量为 <code>MP_L = ΔQ/ΔL</code>。</p>
+<p>成本关系为
+<code>TC = FC + VC</code>，
+<code>ATC = TC/Q</code>，
+<code>AVC = VC/Q</code>，
+<code>MC = ΔTC/ΔQ</code>[3]。
+经济成本还包括自有资金、场地和业主时间的隐性成本；会计利润只扣显性支出，经济利润同时扣显性与隐性成本[1]。对价格接受者，利润最大化的产量满足 <code>P = MC</code>，并且要保证价格高于最低平均可变成本才继续经营[4]。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>技术给定。</strong> 讨论期内没有显著技术进步、学习效应或质量变化。</li>
+<li><strong>短期至少一种投入固定。</strong> 厂房、设备或土地不能立即调整，长期可重新选择全部投入。</li>
+<li><strong>投入可细分且同质。</strong> 劳动小时、原料可连续增加；投入不可分时应比较离散表。</li>
+<li><strong>成本按机会成本计量。</strong> 自有资源也应按其最佳替代用途计价，否则会高估经济利润。</li>
+<li><strong><code>P = MC</code> 只适用于价格接受者。</strong> 教材的推导前提是竞争性企业是价格接受者、可在市价卖出任意数量[4]；垄断者面对向下倾斜的需求曲线，按 <code>MR = MC</code> 定产[5]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设工作室每天固定成本 60 元，每名工人工资 30 元，产出与成本如下（成本单位均为元；教学假设）：</p>
+<table>
+<thead>
+<tr>
+<th align="right">工人 L</th>
+<th align="right">产量 Q</th>
+<th align="right">边际产量</th>
+<th align="right">固定成本</th>
+<th align="right">可变成本</th>
+<th align="right">总成本</th>
+<th align="right">边际成本</th>
+<th align="right">平均总成本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">—</td>
+<td align="right">60</td>
+<td align="right">0</td>
+<td align="right">60</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">60</td>
+<td align="right">30</td>
+<td align="right">90</td>
+<td align="right">3.00</td>
+<td align="right">9.00</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">18</td>
+<td align="right">8</td>
+<td align="right">60</td>
+<td align="right">60</td>
+<td align="right">120</td>
+<td align="right">3.75</td>
+<td align="right">6.67</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">24</td>
+<td align="right">6</td>
+<td align="right">60</td>
+<td align="right">90</td>
+<td align="right">150</td>
+<td align="right">5.00</td>
+<td align="right">6.25</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">28</td>
+<td align="right">4</td>
+<td align="right">60</td>
+<td align="right">120</td>
+<td align="right">180</td>
+<td align="right">7.50</td>
+<td align="right">6.43</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">30</td>
+<td align="right">2</td>
+<td align="right">60</td>
+<td align="right">150</td>
+<td align="right">210</td>
+<td align="right">15.00</td>
+<td align="right">7.00</td>
+</tr>
+</tbody></table>
+<p>若产品价格为每件 7 元，产量 24 件时收入为 168 元，总成本为 150 元，利润为 18 元。再增产 4 件，每件的边际成本为 7.50 元，高于价格 7 元，因此停在 24 件；28 件时利润为 196−180=16 元。以上均为教学假设，不是真实企业数据。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-cost-title fig-cost-desc" viewBox="0 0 420 260" width="100%">
+    <title id="fig-cost-title">平均总成本与边际成本</title>
+    <desc id="fig-cost-desc">横轴为产量，纵轴为每件成本（元）。平均总成本在产量 24 件时最低，为 6.25 元；边际成本低于平均总成本时把平均成本拉低，高于时把它推高[3]。数值见上表。</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="60" y1="210" x2="380" y2="210"></line>
+      <line x1="60" y1="210" x2="60" y2="45"></line>
+    </g>
+    <polyline points="160,125.6 240,147.5 300,151.4 340,149.7 360,144.4" fill="none" stroke="var(--gold)" stroke-width="2.5"></polyline>
+    <polyline points="110,181.9 200,174.8 270,163.1 320,139.7 350,69.4" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4"></polyline>
+    <circle cx="300" cy="151.4" r="4" fill="var(--gold)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="46" y="214">0</text>
+      <text x="150" y="226">10</text>
+      <text x="250" y="226">20</text>
+      <text x="350" y="226">30</text>
+      <text x="350" y="245">产量 Q</text>
+      <text x="14" y="38">成本/件</text>
+      <text x="306" y="145" fill="var(--gold)">ATC</text>
+      <text x="354" y="76" fill="var(--accent)">MC</text>
+      <text x="300" y="176" text-anchor="middle" fill="var(--gold)">最低 6.25</text>
+    </g>
+  </svg>
+  <figcaption>图 1：边际成本低于平均总成本时，平均成本下降；高于时上升。图为按上表绘制的教学模型，不是真实企业成本。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>固定成本会影响多生产一件的决策。</strong> 固定成本不随产量变化，不进入边际成本；它影响是否续租或退出。</p>
+<p><strong>平均成本等于边际成本。</strong> 两者只在平均成本最低点附近相交；用平均成本定价会忽略下一件的真实增量。</p>
+<p><strong>边际产量递减意味着产量下降。</strong> 只要边际产量仍为正，总产量继续上升，只是增速放慢。</p>
+<p><strong>会计利润等于经济利润。</strong> 会计利润不扣隐性成本，可能高估经营的真实回报。</p>
+<h2>图解：产量、成本和停不停</h2>
+<p>下面三张图把“多生产一件”拆成三个问题：新增产量为什么递减、利润被谁拿走、价格低于哪条线才该停。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-mp-bars-title fig-mp-bars-desc" viewBox="0 0 440 250" width="100%">
+    <title id="fig-mp-bars-title">边际产量随工人增加而递减</title>
+    <desc id="fig-mp-bars-desc">固定租金 60 元、每名工人工资 30 元的教学例子里，第 1 至第 5 名工人新增产量分别为 10、8、6、4、2 件。柱高按每件 12 像素绘制，总产量仍在增加，但新增产量递减。</desc>
+    <text x="20" y="24" font-size="12.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">第 1 名工人增 10 件，第 5 名只增 2 件</text>
+    <line x1="50" y1="210" x2="400" y2="210" stroke="var(--border)" stroke-width="1.5"/>
+    <g fill="var(--accent)" opacity="0.85">
+      <rect x="70" y="90" width="40" height="120"/>
+      <rect x="130" y="114" width="40" height="96"/>
+      <rect x="190" y="138" width="40" height="72"/>
+      <rect x="250" y="162" width="40" height="48"/>
+      <rect x="310" y="186" width="40" height="24"/>
+    </g>
+    <g font-family="inherit" font-size="10.5" fill="var(--text)" text-anchor="middle">
+      <text x="90" y="82">10</text><text x="150" y="106">8</text><text x="210" y="130">6</text><text x="270" y="154">4</text><text x="330" y="178">2</text>
+    </g>
+    <g font-family="inherit" font-size="9.5" fill="var(--muted)" text-anchor="middle">
+      <text x="90" y="228">1 人</text><text x="150" y="228">2 人</text><text x="210" y="228">3 人</text><text x="270" y="228">4 人</text><text x="330" y="228">5 人</text>
+      <text x="20" y="244" text-anchor="start">单位：件/天；数字为教学假设。</text>
+    </g>
+  </svg>
+  <figcaption>图 2：固定租金 60 元、每名工人 30 元的教学例子里，第 1 至第 5 名工人的新增产量为 10、8、6、4、2 件/天。柱高按每件 12 像素绘制；总产量仍在上升，但边际产量递减。数字为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-profit-waterfall-title fig-profit-waterfall-desc" viewBox="0 0 440 270" width="100%">
+    <title id="fig-profit-waterfall-title">24 件产量下，收入如何变成 18 元利润</title>
+    <desc id="fig-profit-waterfall-desc">价格 7 元、产量 24 件时收入 168 元；扣可变成本 90 元余 78 元，再扣固定成本 60 元余 18 元。图中每 1 元约 0.95 像素，金额为教学假设。</desc>
+    <text x="20" y="24" font-size="12.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">168 元收入，最后剩下 18 元利润</text>
+    <line x1="20" y1="232" x2="420" y2="232" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="50" y="72" width="50" height="160" fill="var(--accent)" opacity="0.85"/>
+    <rect x="130" y="72" width="50" height="86" fill="var(--gold)" opacity="0.65"/>
+    <rect x="210" y="158" width="50" height="57" fill="var(--gold)" opacity="0.65"/>
+    <rect x="290" y="215" width="50" height="17" fill="var(--accent)" opacity="0.85"/>
+    <line x1="100" y1="158" x2="130" y2="158" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="180" y1="215" x2="210" y2="215" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="260" y1="215" x2="290" y2="215" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <g font-family="inherit" font-size="10.5" fill="var(--text)" text-anchor="middle">
+      <text x="75" y="64">168</text><text x="155" y="64">−90</text><text x="235" y="150">−60</text><text x="315" y="207">18</text>
+    </g>
+    <g font-family="inherit" font-size="9.5" fill="var(--muted)" text-anchor="middle">
+      <text x="75" y="250">收入</text><text x="155" y="250">可变成本</text><text x="235" y="250">固定成本</text><text x="315" y="250">利润</text>
+      <text x="20" y="266" text-anchor="start">单位：元/天；7 元/件、24 件为教学假设。</text>
+    </g>
+  </svg>
+  <figcaption>图 3：价格为 7 元/件、产量 24 件时，收入 168 元的利润传导为：扣可变成本 90 元余 78 元，再扣固定成本 60 元余 18 元。可变成本随产量变化，固定成本不随产量变化。单位元/天；数字为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-output-tree-title fig-output-tree-desc" viewBox="0 0 440 260" width="100%">
+    <title id="fig-output-tree-title">价格 7 元时，产量停在哪、什么时候停产</title>
+    <desc id="fig-output-tree-desc">先看下一批 4 件的边际成本 7.50 元是否高于价格 7 元：高于则不扩产，停在 24 件。再看价格是否高于最低平均可变成本 3.00 元：高于则短期继续经营，低于则停产。</desc>
+    <text x="20" y="24" font-size="12.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">先看下一件的边际成本，再看平均可变成本</text>
+    <rect x="20" y="40" width="400" height="40" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="36" y="58" font-size="10" fill="var(--secondary)" font-family="inherit">Q=24 件、P=7 元：下一批 4 件的边际成本是 7.50 元。</text>
+    <text x="36" y="73" font-size="10" font-weight="650" fill="var(--accent)" font-family="inherit">7.50 &gt; 7，扩产会减少利润，所以停在 24 件。</text>
+    <line x1="220" y1="80" x2="220" y2="104" stroke="var(--border)" stroke-width="1.5"/>
+    <path d="M216 101 L220 105 L224 101" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="35" y="106" width="370" height="38" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+    <text x="220" y="124" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">短期还要看：P 是否高于最低平均可变成本 3.00 元？</text>
+    <text x="220" y="138" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">固定成本 60 元在停产时仍要付，不进入“多做一件”的比较。</text>
+    <line x1="150" y1="144" x2="110" y2="174" stroke="var(--border)" stroke-width="1.5"/>
+    <line x1="290" y1="144" x2="330" y2="174" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="30" y="176" width="160" height="44" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"/>
+    <text x="110" y="194" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">P &gt; 3.00：继续经营</text>
+    <text x="110" y="209" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">产量 24 件，覆盖可变成本</text>
+    <rect x="250" y="176" width="160" height="44" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="330" y="194" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">P &lt; 3.00：停产</text>
+    <text x="330" y="209" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">生产越多亏越多，但固定成本照付</text>
+    <text x="20" y="250" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">决策路径示意；3.00 元/件来自表中最低平均可变成本，数字为教学假设。</text>
+  </svg>
+  <figcaption>图 4：价格 7 元时，下一批 4 件的边际成本 7.50 元高于价格，所以停在 24 件；短期继续经营的条件是价格高于最低平均可变成本 3.00 元/件。固定成本不随产量变化，停产时仍要承担。图为决策路径示意，数字为教学假设。</figcaption>
+</figure>
+
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>生产函数</h3>
+<p><strong>定义</strong>：生产函数描述给定技术下投入组合与最大产出之间的关系，常用劳动、资本和材料表示。</p>
+<p><strong>机制</strong>：边际产品递减意味着其他投入不变时，增加一单位投入带来的新增产出下降；技术进步使整条生产函数上移。</p>
+<p><strong>例子</strong>：例如一块农田增加化肥，前几袋增产明显，继续增加则增产递减，过量还可能减产。</p>
+<p><strong>边界</strong>：生产函数是技术关系的简化，不包含组织、激励和质量差异；短期固定投入与长期可调整投入要分开。</p>
+<h3>成本</h3>
+<p><strong>定义</strong>：成本是生产一定产出所放弃的资源价值，包括显性货币支出和隐性机会成本。</p>
+<p><strong>机制</strong>：总成本分为固定成本和可变成本；平均成本与边际成本决定短期供给和停产点，边际成本等于边际收益时利润最大。</p>
+<p><strong>例子</strong>：例如面包店月租是固定成本，面粉和工时是可变成本；多烤一炉面包的新增成本主要是面粉和加班工资。</p>
+<p><strong>边界</strong>：会计成本与经济学家成本口径不同；沉没成本不应进入边际决策，联合成本需要可分离的分配规则。</p>
+<h3>规模经济</h3>
+<p><strong>定义</strong>：规模经济是产出扩大时单位成本下降的现象，来自分工、专用设备、批量采购和学习效应。</p>
+<p><strong>机制</strong>：规模经济使长期平均成本向下；规模不经济来自管理复杂度、协调成本和瓶颈，长期成本曲线可能先降后平再升。</p>
+<p><strong>例子</strong>：例如汽车厂年产 10 万辆比年产 1 万辆更能摊薄模具和研发费用，但年产 100 万辆时管理和物流可能变复杂。</p>
+<p><strong>边界</strong>：规模经济不等于越大越好；范围经济、网络效应和最低有效规模要分开，市场容量和运输成本会限制实现。</p>
+<h3>利润</h3>
+<p><strong>定义</strong>：经济利润是总收入减去全部机会成本，会计利润只扣显性成本；正常利润是对企业家才能的报酬。</p>
+<p><strong>机制</strong>：竞争会把经济利润压向零，但进入壁垒、创新租金和风险补偿可使利润持续；利润信号引导资源进入或退出。</p>
+<p><strong>例子</strong>：例如一家餐厅账面盈利 20 万元，但店主放弃的工资和自有铺面租金共 25 万元，经济利润为负。</p>
+<p><strong>边界</strong>：利润受会计口径、时间跨度、风险和垄断租金影响；短期暴利不证明长期可复制，亏损也可能是投资期或沉没成本。</p>
+<h3>进入退出</h3>
+<p><strong>定义</strong>：进入是新的生产者进入市场，退出是现有生产者停止生产并释放资源；两者改变竞争程度和价格。</p>
+<p><strong>机制</strong>：正经济利润吸引进入，供给增加压低价格；亏损促使退出，供给减少支撑价格；进入壁垒决定调整速度。</p>
+<p><strong>例子</strong>：例如网约车早期补贴带来大量司机进入，随后供给过剩、补贴下降，部分司机退出。</p>
+<p><strong>边界</strong>：进入退出受牌照、资本、沉没成本和退出壁垒限制；短期价格信号可能滞后，且进入者质量与规模并不相同。</p>
+<h3>企业边界</h3>
+<p><strong>定义</strong>：企业边界决定哪些活动由企业内部组织、哪些通过市场交易，核心是比较内部协调成本与市场交易成本。</p>
+<p><strong>机制</strong>：专用资产、频繁交易和不确定性提高市场交易成本，推动纵向一体化；规模扩大又带来管理成本和激励弱化。</p>
+<p><strong>例子</strong>：例如汽车厂把座椅生产外包给多家供应商，但把关键发动机留在内部，以保护技术和协调质量。</p>
+<p><strong>边界</strong>：边界不是固定线；外包、平台和长期合约可介于市场与层级之间，资产专用性和契约不完全程度会改变选择。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：边际与激励（ECO-004）。</li>
+<li>相关：效用与预算约束（ECO-007）、竞争与垄断（ECO-009）、需求弹性（ECO-006）。</li>
+<li>另见：供给需求与均衡（ECO-005）。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 下列哪一项在短期属于固定成本？A. 厂房租金；B. 小时工资；C. 面粉；D. 按用电量计费的电费。</li>
+<li><strong>计算：</strong> 若产品价格为每件 8 元，最优产量、收入、总成本与利润各是多少？</li>
+<li><strong>适用条件：</strong> 为什么 <code>P = MC</code> 不适用于垄断者？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>A。租金在短期不随产量变化；工资与面粉随产量变化。电费按本题设定随生产规模变动，故归为可变成本——若供电合同含与实际用电量无关的固定容量费，那一部分应归入固定成本，分类取决于合同而非项目名。</li>
+<li>产量 28 件：再增产的 4 件每件边际成本 7.50 元，低于 8 元；再增产 2 件则每件边际成本 15 元，高于 8 元。收入 8×28=224 元，总成本 180 元，利润 44 元。</li>
+<li>垄断者面对向下倾斜的需求曲线，多卖一单位必须降低价格，边际收益低于价格；其最优条件是 <code>MR = MC</code>，而不是 <code>P = MC</code>。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “7.1 Explicit and Implicit Costs, and Accounting and Economic Profit.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit">https://openstax.org/books/principles-economics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “7.2 Production in the Short Run.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/7-2-production-in-the-short-run">https://openstax.org/books/principles-economics-3e/pages/7-2-production-in-the-short-run</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “7.3 Costs in the Short Run.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run">https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “8.2 How Perfectly Competitive Firms Make Output Decisions.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions">https://openstax.org/books/principles-economics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions</a>（访问日期：2026-11-03）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “9.2 How a Profit-Maximizing Monopoly Chooses Output and Price.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price">https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price</a>（访问日期：2026-11-03）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能区分边际成本与平均成本，并说明“多生产一单位是否值得”由哪一个决定</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能用投入价格或技术变化解释成本曲线的移动，并指出长期盈亏看哪一指标</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能区分边际成本与平均成本，并说明“多生产一单位是否值得”由哪一个决定</li><li>能用投入价格或技术变化解释成本曲线的移动，并指出长期盈亏看哪一指标</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/margin-and-incentives/">ECO-004 · 边际与激励</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li><li> <a href="/learn/utility-and-budget-constraint/">ECO-007 · 效用与预算约束</a> </li><li> <a href="/learn/competition-and-monopoly/">ECO-009 · 竞争与垄断</a> </li><li> <a href="/learn/margin-and-incentives/">ECO-004 · 边际与激励</a> </li><li> <a href="/learn/elasticity-of-demand/">ECO-006 · 需求弹性</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.1 Explicit and Implicit Costs, and Accounting and Economic Profit</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：显性成本是实际支付，隐性成本是自有资源的机会成本；会计利润只减显性成本，经济利润同时减显性与隐性成本。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-2-production-in-the-short-run" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.2 Production in the Short Run</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：短期中固定投入不能轻易调整，可变投入可以调整；固定资本存在时，边际产量最终递减。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.3 Costs in the Short Run</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：总成本等于固定成本加可变成本；平均总成本是总成本除以产量，边际成本是总成本增量除以产量增量；边际成本低于平均总成本时后者下降。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 8.2 How Perfectly Competitive Firms Make Output Decisions</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：价格接受者的产量规则逐字为&quot;we can also write the profit-maximizing rule for a perfectly competitive firm as a recommendation to produce at the quantity of output where P = MC.&quot;，配套的停产条件逐字为&quot;This rule means that the firm checks the market price, and then looks at its marginal cost to determine the quantity to produce—and makes sure that the price is greater than the minimum average variable cost.&quot;；价格接受者本身定义为&quot;Since a perfectly competitive firm is a price taker, it can sell whatever quantity it wishes at the market-determined price.&quot;。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 9.2 How a Profit-Maximizing Monopoly Chooses Output and Price</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：垄断者的规则逐字为&quot;a profit-maximizing monopoly should follow the rule of producing up to the quantity where marginal revenue is equal to marginal cost&quot;，且该节只给 MR=MC，不讨论无谓损失。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/production-and-cost/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>汇率制度与开放经济 · 巫妖投资</title><meta name="description" content="汇率制度决定名义汇率由市场、规则还是官方干预确定；固定与浮动的取舍，核心是汇率稳定与货币政策独立性。"><link rel="canonical" href="https://economics.51invest.com/learn/exchange-rate-regimes/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/exchange-rate-regimes/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/exchange-rate-regimes/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/exchange-rate-regimes/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/exchange-rate-regimes/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">汇率制度与开放经济</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">汇率制度与开放经济</h1> <p class="article-summary">汇率制度决定名义汇率由市场、规则还是官方干预确定；固定与浮动的取舍，核心是汇率稳定与货币政策独立性。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M14 · 开放宏观</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>5 分钟 · 11 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>汇率制度</strong>（exchange-rate regime）是一国货币当局对汇率确定、调整和干预的制度安排。名义汇率 E 是单位外币折合的本币数量，即以一种货币表示的另一种货币的价格[1]；实际汇率 q 调整两国物价，衡量本国商品竞争力。</p>
+<h2>直觉</h2>
+<p>同一商品在本国卖 100 元、外国卖 10 外币。若 E = 7.20 元/外币，外国商品折合 72 元，比本国便宜，进口有吸引力。固定汇率像钉住价格，名义稳定却常需干预；浮动汇率随供求移动，能吸收冲击，也可能大起大落。</p>
+<p>这一节讲的是方向，后文的指数口径讲的是可算的量：直觉上“本币更值钱”或“本币不值钱”对应的是名义汇率 E 的移动[1]，而实际汇率还要把两国价格水平一起折进来，所以下文的表按 q = E × P* ÷ P 逐项算。这样分开之后，“本币贬值”这句话在不同层上可以是三件不同的事：E 上升、q 是否上升取决于 P 与 P* 的相对变化、贸易量是否变化又取决于弹性与合同货币（这一层拆解属本文表述，本篇不给新数字，也不在这里主张任何经验结论）。读后文的表时先确认在哪一层上读。</p>
+<h2>正式表达</h2>
+<p><code>q = E × P* / P</code>，其中 E 以本币单位/外币单位计（下文示例为元/外币单位），P* 为外国价格指数，P 为本国价格指数，指数无币种；q 与 E 同单位。q 上升表示本国商品相对便宜，即实际贬值；反之升值。名义汇率升值指 E 下降，贬值指 E 上升[1]。名义有效汇率是双边汇率按贸易权重的几何平均，实际有效汇率再用相对消费者物价调整，用作国际竞争力指标[3]。</p>
+<p>制度谱系：</p>
+<ul>
+<li><strong>浮动。</strong> 市场决定，央行可干预但不承诺固定水平；货币政策较独立，汇率波动较大[2]。</li>
+<li><strong>软钉住。</strong> 市场为主，央行干预以防大幅波动；货币政策受约束[2]。</li>
+<li><strong>硬钉住。</strong> 法定固定平价或货币局；利率被迫跟随锚货币，独立货币政策基本消失[2]。共同货币是另一类安排，经济效果类似硬钉住，但属于货币主权合并[2]。按 IMF 的十类口径，硬钉住包括“无独立法定货币”与货币局：前者指使用他国货币作为唯一法定货币或参加共同货币区，后者指以立法承诺按固定汇率兑换锚货币并限制发行[4]。</li>
+</ul>
+<h2>适用条件</h2>
+<ol>
+<li><strong>三元取舍。</strong> 固定汇率、资本自由流动与独立货币政策不能同时实现；硬钉住下货币政策服从汇率[2]。</li>
+<li><strong>储备与信誉。</strong> 捍卫平价需要储备、管制或紧缩；预期可能引发投机攻击。</li>
+<li><strong>名义与实际。</strong> 名义贬值未必带来实际贬值；进口涨价可能推高通胀。</li>
+<li><strong>浮动不等于零干预。</strong> 央行仍可能平滑波动和管理储备。</li>
+<li><strong>数据口径。</strong> 官方、市场与平行汇率，期间平均与期末，双边与有效汇率不可混用。</li>
+</ol>
+<p>边界说明：q = E × P*/P 的定义式、&quot;三元取舍&quot;中的资本流动项、J 曲线与需求弹性的关系、投机攻击的机制，以及平行汇率的口径，均不在本篇登记来源的 supports 之内；本文把它们作为教科书通识与模型假设给出，属方法学表述，不是登记来源的引证结论。</p>
+<h2>例子与计算</h2>
+<p>设 E = 7.20 元/外币、P = 100、P* = 100（P、P* 为价格指数，示例期初均为 100，无币种），则 <code>q = 7.20 × 100 / 100 = 7.20</code> 元/外币。若本国物价上涨 5%，P = 105、E 不变，<code>q = 7.20 × 100 / 105 ≈ 6.857</code> 元/外币（表中记作 6.86），q 下降 <code>1 - 100 / 105 ≈ 4.8%</code>，即实际升值。要恢复 q = 7.20 元/外币，E 需升至 7.56 元/外币，即名义贬值 <code>(7.56 - 7.20) / 7.20 = 5%</code>。硬钉住 7.20 元/外币时，当局不能调整 E，竞争力只能靠成本下降。以上为假设。</p>
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th align="right">E（元/外币）</th>
+<th align="right">P（指数）</th>
+<th align="right">P*（指数）</th>
+<th align="right">q（元/外币）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>初始</td>
+<td align="right">7.20</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">7.20</td>
+</tr>
+<tr>
+<td>本国物价 +5%</td>
+<td align="right">7.20</td>
+<td align="right">105</td>
+<td align="right">100</td>
+<td align="right">6.86</td>
+</tr>
+<tr>
+<td>本币贬值 5%</td>
+<td align="right">7.56</td>
+<td align="right">105</td>
+<td align="right">100</td>
+<td align="right">7.20</td>
+</tr>
+</tbody></table>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-regime-title fig-regime-desc" viewBox="0 0 460 190" width="100%">
+    <title id="fig-regime-title">汇率制度谱系</title>
+    <desc id="fig-regime-desc">从左到右为浮动、软钉住、硬钉住；左侧更灵活、货币政策更独立，右侧更稳定、货币政策受约束。</desc>
+    <defs>
+      <marker id="regime-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="var(--muted)"></path>
+      </marker>
+    </defs>
+    <g fill="var(--muted)" font-size="10" font-family="inherit" text-anchor="middle">
+      <text x="80" y="28">汇率更灵活</text>
+      <text x="80" y="43">货币政策更独立</text>
+      <text x="380" y="28">汇率更稳定</text>
+      <text x="380" y="43">货币政策受约束</text>
+    </g>
+    <g fill="var(--surface)" stroke="var(--border)" stroke-width="1.2">
+      <rect x="20" y="66" width="120" height="66" rx="6"></rect>
+      <rect x="170" y="66" width="120" height="66" rx="6"></rect>
+      <rect x="320" y="66" width="120" height="66" rx="6"></rect>
+    </g>
+    <g fill="none" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#regime-arrow)">
+      <line x1="142" y1="99" x2="166" y2="99"></line>
+      <line x1="292" y1="99" x2="316" y2="99"></line>
+    </g>
+    <g fill="var(--text)" font-size="13" font-family="inherit" text-anchor="middle">
+      <text x="80" y="92" font-weight="600">浮动</text>
+      <text x="80" y="114" fill="var(--muted)" font-size="11">市场决定</text>
+      <text x="230" y="92" font-weight="600">软钉住</text>
+      <text x="230" y="114" fill="var(--muted)" font-size="11">央行干预</text>
+      <text x="380" y="92" font-weight="600">硬钉住</text>
+      <text x="380" y="114" fill="var(--muted)" font-size="11">固定平价</text>
+      <text x="230" y="166" fill="var(--muted)" font-size="11">教学示意，不对应官方分类</text>
+    </g>
+  </svg>
+  <figcaption>图 1：从左到右，汇率稳定性上升，货币政策独立性下降。图为教学示意，不对应官方分类。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>固定汇率总是更好。</strong> 名义稳定可能牺牲货币政策，实际汇率也可能失调。</p>
+<p><strong>浮动汇率完全不用干预。</strong> 多数央行仍会干预。</p>
+<p><strong>贬值一定改善贸易收支。</strong> 还看 J 曲线、进口含量与需求弹性。</p>
+<p><strong>名义汇率等于实际汇率。</strong> 物价差异会抵消名义变化。</p>
+<h2>关联</h2>
+<ul>
+<li>先修：国际收支（ECO-021）。</li>
+<li>相关：货币政策传导（ECO-019）、名义值与实际值（ECO-012）、比较优势与贸易（ECO-023）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">汇率制度与开放经济：机制链</title>
+    <desc id="fig-batch-chain-desc">汇率制度与开放经济 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">汇率制度与开放经济：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">汇率制度决定名义汇率</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">由市场、规则还是官方…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">汇率制度决定名义汇</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">率由市场、规则还是</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">官方干预确定；固定</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">与浮动的取舍，核心</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">是汇率稳定与货币政…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：汇率制度（excha</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">nge-rate regime）是…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：汇率制度（exc</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">hange-rate</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">regime）是一国货币</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">当局对汇率确定、调</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">整和干预的制度安排…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">设 E = 7.20</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">元/外币、P =…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">设 E = 7.20</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">元/外币、P =</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">100、P* =</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">100（P、P*</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">为价格指数，示例期…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：汇率制度与开放经济的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">汇率制度与开放经济：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">汇率制度与开放经济：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">三元取舍。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">固定汇率总是更好。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：汇率制度与开放经济的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">汇率制度与开放经济：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">汇率制度与开放经济：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">汇率制度决定名义汇率由市</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">场、规则还是官方干预确定…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">三元取舍。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">固定汇率总是更好。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：汇率制度与开放经济的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 哪种制度最限制独立货币政策？A. 自由浮动；B. 软钉住；C. 硬钉住；D. 浮动加通胀目标。</li>
+<li><strong>计算：</strong> 若 E = 6.90 元/外币、P = 100、P* = 100（价格指数，示例期初为 100），P 升至 110，q 变为多少？要恢复原 q，E 应为多少？</li>
+<li><strong>适用条件：</strong> 锚货币加息时，硬钉住经济体为何可能陷入衰退？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>C。硬钉住要求利率跟随锚货币，独立货币政策基本消失。</li>
+<li><code>q = 6.90 × 100 / 110 ≈ 6.27</code> 元/外币；<code>E = 6.90 × 110 / 100 = 7.59</code> 元/外币（此时 <code>q = 7.59 × 100 / 110 = 6.90</code>，回到原值）。</li>
+<li>为维持平价须跟随加息，内需收缩且不能独立宽松；若市场怀疑平价，储备流失会加剧压力。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<p>正文中的 [1][2][3] 对应以下来源。</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;29.1 How the Foreign Exchange Market Works.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/29-1-how-the-foreign-exchange-market-works">https://openstax.org/books/principles-economics-3e/pages/29-1-how-the-foreign-exchange-market-works</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;29.4 Exchange Rate Policies.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/29-4-exchange-rate-policies">https://openstax.org/books/principles-economics-3e/pages/29-4-exchange-rate-policies</a>（访问日期：2026-10-30）</li>
+<li>Bank for International Settlements. &quot;Effective exchange rates.&quot; <a href="https://data.bis.org/topics/EER">https://data.bis.org/topics/EER</a>（访问日期：2026-10-30）</li>
+<li>Habermeier, Karl, Annamaria Kokenyne, Romain Veyrune, and Harald Anderson. &quot;Revised System for the Classification of Exchange Rate Arrangements.&quot; IMF Working Paper 09/211, 2009. <a href="https://www.imf.org/external/pubs/ft/wp/2009/wp09211.pdf">https://www.imf.org/external/pubs/ft/wp/2009/wp09211.pdf</a>（访问日期：2026-11-21）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能按钉住、管理浮动与自由浮动的规则差异说明名义汇率如何形成</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能用“汇率稳定与货币政策独立性”的取舍比较两种制度并指出所需条件</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能按钉住、管理浮动与自由浮动的规则差异说明名义汇率如何形成</li><li>能用“汇率稳定与货币政策独立性”的取舍比较两种制度并指出所需条件</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/balance-of-payments/">ECO-021 · 国际收支</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/monetary-policy-transmission/">ECO-019 · 货币政策传导</a> </li><li> <a href="/learn/nominal-and-real-values/">ECO-012 · 名义值与实际值</a> </li><li> <a href="/learn/balance-of-payments/">ECO-021 · 国际收支</a> </li><li> <a href="/learn/comparative-advantage-and-trade/">ECO-023 · 比较优势与贸易</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/29-1-how-the-foreign-exchange-market-works" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 29.1 How the Foreign Exchange Market Works</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：外汇市场是用一种货币购买另一种货币的市场；汇率是以另一种货币单位表示的一种货币价格；升值指一单位本币可换更多外币，贬值指换更少。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/29-4-exchange-rate-policies" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 29.4 Exchange Rate Policies</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：浮动汇率由市场决定；软钉住允许市场决定但央行干预以防止大幅波动；硬钉住固定汇率；共同货币合并货币主权；硬钉住下国内货币政策只服务于维持汇率。</p> </div><div class="source"> <a href="https://data.bis.org/topics/EER" rel="noopener noreferrer" target="_blank">Effective exchange rates</a> <p>Bank for International Settlements · Bank for International Settlements</p> <p>访问：2026-10-30 · 许可：BIS statistics terms of permitted use; unrestricted with attribution</p> <p>支持论点：名义有效汇率是双边汇率按贸易权重的几何平均；实际有效汇率再用相对消费者价格调整，用作国际竞争力指标。</p> </div><div class="source"> <a href="https://www.imf.org/external/pubs/ft/wp/2009/wp09211.pdf" rel="noopener noreferrer" target="_blank">Revised System for the Classification of Exchange Rate Arrangements (IMF Working Paper 09/211)</a> <p>Karl Habermeier; Annamaria Kokenyne; Romain Veyrune; Harald Anderson · International Monetary Fund</p> <p>访问：2026-11-21 · 许可：IMF terms: linking permitted, personal non-commercial use only</p> <p>支持论点：IMF 2009 年修订分类把汇率安排分为硬钉住、软钉住、浮动与其余管理四组十类；硬钉住包括“无独立法定货币”和货币局，前者指另一国货币作为唯一法定货币（可发行辅币）或参加共同货币区，后者指以立法承诺按固定汇率兑换锚货币并限制发行。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/exchange-rate-regimes/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

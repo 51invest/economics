@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Three Phillips Curves: Wages, Expectations and Supply Shocks · 51Invest</title><meta name="description" content="The Phillips curve is not one line with a fixed slope. The wage-bargaining version trades inflation against unemployment; the expectations-augmented version removes anticipated inflation from the trade-off; the supply-shock version shifts the whole curve. Only the three together explain why the same unemployment rate can come with high or low inflation."><link rel="canonical" href="https://economics.51invest.com/en/learn/three-phillips-curves-wages-expectations-supply-shocks/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/three-phillips-curves-wages-expectations-supply-shocks/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/three-phillips-curves-wages-expectations-supply-shocks/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/three-phillips-curves-wages-expectations-supply-shocks/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/three-phillips-curves-wages-expectations-supply-shocks/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Three Phillips Curves: Wages, Expectations and Supply Shocks</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Three Phillips Curves: Wages, Expectations and Supply Shocks</h1> <p class="article-summary">The Phillips curve is not one line with a fixed slope. The wage-bargaining version trades inflation against unemployment; the expectations-augmented version removes anticipated inflation from the trade-off; the supply-shock version shifts the whole curve. Only the three together explain why the same unemployment rate can come with high or low inflation.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M10 · 通胀与就业</strong></div> <div class="meta-item"><span>Level</span><strong>Systematic</strong></div> <div class="meta-item"><span>Read</span><strong>7 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition and intuition</h2>
+<p>The <strong>Phillips curve</strong> describes the empirical relation between inflation and unemployment. The simplest version comes from wage bargaining: when unemployment is low, the labour market is tight and workers or unions can push for higher pay; firms pass wage costs into prices, so low unemployment comes with high inflation. In this version inflation is a wage-pressure outcome, not a direct result of the money supply[1].</p>
+<p>The simple version failed in the 1970s: oil shocks pushed inflation and unemployment up together. That produced the <strong>expectations-augmented</strong> and <strong>supply-shock</strong> versions. The first splits inflation into anticipated and unanticipated components; the second adds energy, imported inputs and supply-chain costs as forces that shift the whole curve. The three versions are not substitutes; they explain the same phenomenon at different time scales.</p>
+<h2>Three versions</h2>
+<p><strong>Wage bargaining:</strong> <code>π = π_w − β(u − u*)</code>. <code>π_w</code> is baseline inflation from wage settlements, <code>u</code> is unemployment, <code>u*</code> the natural rate, and <code>β</code> measures how tight labour markets push inflation. When <code>u</code> is below <code>u*</code>, inflation runs above the wage baseline; when above, it runs below.</p>
+<p><strong>Expectations-augmented:</strong> <code>π = π^e − β(u − u*) + ε</code>. <code>π^e</code> is expected inflation. The key change: if the central bank can lower <code>π^e</code>, the same unemployment rate supports lower actual inflation. If expectations become unanchored, disinflation requires a larger unemployment cost.</p>
+<p><strong>Supply-shock:</strong> <code>π = π^e − β(u − u*) + s</code>. <code>s</code> is a shock to energy, imported intermediates, freight or food. When <code>s &gt; 0</code>, the curve shifts up: the same unemployment rate comes with higher inflation. The stagflation of the 1970s was a sequence of positive <code>s</code> combined with sticky <code>π^e</code>.</p>
+<h2>Formal expression and worked example</h2>
+<p>Let the natural rate be <code>u* = 4%</code>, <code>β = 1.5</code>, current unemployment <code>u = 6%</code>, expected inflation <code>π^e = 2%</code>, and a supply shock <code>s = 1%</code>. Substituting into the expectations-augmented version:</p>
+<p><code>π = 2% − 1.5×(6% − 4%) + 1% = 0%</code>.</p>
+<p>At the same 6% unemployment, without the supply shock inflation would be <code>−1%</code>, i.e. deflation; if expectations rose to 4%, inflation would be 2%. Unemployment alone does not determine inflation; expectations and shocks matter as much.</p>
+<p>Now the cost of disinflation. If inflation is 5% and the target is 2%, it must fall by 3 percentage points. If the sacrifice ratio is 2 percentage points of unemployment for 1 point of inflation per year, disinflation costs about 6 unemployment-rate points (for example, unemployment 2 points above the natural rate for three years). The sacrifice ratio is not a physical constant; it depends on how fast expectations fall and on labour-market institutions. All numbers are teaching assumptions.</p>
+<h2>Figures</h2>
+<figure>
+<svg role="img" aria-labelledby="fig-three-phillips-curves-wages-expectations-supply-shocks-1-title fig-three-phillips-curves-wages-expectations-supply-shocks-1-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-three-phillips-curves-wages-expectations-supply-shocks-1-title">Three layers of the Phillips curve</title>
+<desc id="fig-three-phillips-curves-wages-expectations-supply-shocks-1-desc">Five-step chain: labour-market tightness, wage bargaining, expectation formation, supply shock and realised inflation.</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">The wage-expectation-shock chain</text>
+<text x="24" y="54" font-size="11" text-anchor="start">Wage bargaining sets baseline infl</text>
+<text x="24" y="68" font-size="11" text-anchor="start">ation, expectations determine pers</text>
+<text x="24" y="82" font-size="11" text-anchor="start">istence, supply shocks shift the c</text>
+<text x="24" y="96" font-size="11" text-anchor="start">urve.</text>
+<rect x="14" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="69" y="140" font-size="12" text-anchor="middle">Labour tightness</text>
+<text x="69" y="184" font-size="12" text-anchor="middle" font-weight="700">u below u*</text>
+<rect x="136" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="191" y="140" font-size="12" text-anchor="middle">Wage bargain</text>
+<text x="191" y="184" font-size="12" text-anchor="middle" font-weight="700">π_w rises</text>
+<rect x="258" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="313" y="140" font-size="12" text-anchor="middle">Expectations</text>
+<text x="313" y="184" font-size="12" text-anchor="middle" font-weight="700">π^e follows</text>
+<rect x="380" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="435" y="140" font-size="12" text-anchor="middle">Supply shock</text>
+<text x="435" y="184" font-size="12" text-anchor="middle" font-weight="700">s shifts curve</text>
+<rect x="502" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="557" y="140" font-size="12" text-anchor="middle">Realised</text>
+<text x="557" y="155" font-size="12" text-anchor="middle">inflation</text>
+<text x="557" y="184" font-size="12" text-anchor="middle" font-weight="700">π lands</text>
+<line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="247" y1="160" x2="257" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="369" y1="160" x2="379" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="491" y1="160" x2="501" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<text x="24" y="246" font-size="11" text-anchor="start">Teaching diagram, no statistical data.</text>
+</g>
+</svg>
+<figcaption>Figure 1: three layers of the Phillips curve; teaching diagram.</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-three-phillips-curves-wages-expectations-supply-shocks-2-title fig-three-phillips-curves-wages-expectations-supply-shocks-2-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-three-phillips-curves-wages-expectations-supply-shocks-2-title">Three inflation readings</title>
+<desc id="fig-three-phillips-curves-wages-expectations-supply-shocks-2-desc">With u=6%, u*=4% and β=1.5, the three versions give 0%, −1% and 0% inflation.</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">One unemployment rate, three inflation</text>
+<text x="24" y="49" font-size="16" text-anchor="start">readings</text>
+<text x="24" y="54" font-size="11" text-anchor="start">At 6% unemployment: wage version 0</text>
+<text x="24" y="68" font-size="11" text-anchor="start">%, expectations version −1%, suppl</text>
+<text x="24" y="82" font-size="11" text-anchor="start">y-shock version 0%.</text>
+<line x1="178" y1="64" x2="178" y2="270" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="20" y="97" font-size="12">Wage</text>
+<rect x="178" y="78" width="8" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="95" font-size="12" font-weight="700">0%</text>
+<text x="20" y="145" font-size="12">Expectations</text>
+<rect x="178" y="126" width="180" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="143" font-size="12" font-weight="700">−1%</text>
+<text x="20" y="193" font-size="12">Supply shock</text>
+<rect x="178" y="174" width="8" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="191" font-size="12" font-weight="700">0%</text>
+<text x="20" y="241" font-size="12">Expectations 4%</text>
+<rect x="178" y="222" width="360" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="239" font-size="12" font-weight="700">2%</text>
+<text x="24" y="292" font-size="11" text-anchor="start">Teaching assumptions; unit: %.</text>
+</g>
+</svg>
+<figcaption>Figure 2: three inflation readings at the same unemployment rate; teaching assumptions, unit %.</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-three-phillips-curves-wages-expectations-supply-shocks-3-title fig-three-phillips-curves-wages-expectations-supply-shocks-3-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-three-phillips-curves-wages-expectations-supply-shocks-3-title">Three-zone diagnosis of inflation</title>
+<desc id="fig-three-phillips-curves-wages-expectations-supply-shocks-3-desc">Three-zone decision diagram: demand-led looks at the output gap, expectation-led at anchoring, supply-led at import and energy prices.</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">Diagnose the source first</text>
+<text x="24" y="54" font-size="11" text-anchor="start">Demand, expectation and supply sou</text>
+<text x="24" y="68" font-size="11" text-anchor="start">rces call for different tools; mis</text>
+<text x="24" y="82" font-size="11" text-anchor="start">diagnosis leads to the wrong treat</text>
+<text x="24" y="96" font-size="11" text-anchor="start">ment.</text>
+<line x1="40" y1="190" x2="600" y2="190" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+<rect x="40" y="160" width="186.66666666666666" height="60" fill="currentColor" opacity="0.06" stroke="currentColor" stroke-width="1"/>
+<text x="133.33333333333331" y="182" font-size="12" text-anchor="middle">Demand-led</text>
+<text x="133.33333333333331" y="206" font-size="10" text-anchor="middle">Positive output gap</text>
+<rect x="226.66666666666666" y="160" width="186.66666666666666" height="60" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="1"/>
+<text x="320" y="182" font-size="12" text-anchor="middle">Expectation-led</text>
+<text x="320" y="206" font-size="10" text-anchor="middle">π^e unanchored</text>
+<rect x="413.3333333333333" y="160" width="186.66666666666666" height="60" fill="currentColor" opacity="0.14" stroke="currentColor" stroke-width="1"/>
+<text x="506.66666666666663" y="182" font-size="12" text-anchor="middle">Supply-led</text>
+<text x="506.66666666666663" y="206" font-size="10" text-anchor="middle">Positive, concentrated</text>
+<text x="506.66666666666663" y="219" font-size="10" text-anchor="middle">s</text>
+<line x1="226.66666666666666" y1="148" x2="226.66666666666666" y2="232" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="226.66666666666666" y="252" font-size="11" text-anchor="middle">Demand</text>
+<line x1="413.3333333333333" y1="148" x2="413.3333333333333" y2="232" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="413.3333333333333" y="252" font-size="11" text-anchor="middle">Expectation</text>
+<line x1="600" y1="148" x2="600" y2="232" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="600" y="252" font-size="11" text-anchor="middle">Supply</text>
+<text x="24" y="286" font-size="11" text-anchor="start">Thresholds are teaching boundaries, not statistical</text>
+<text x="24" y="300" font-size="11" text-anchor="start">cut-offs.</text>
+</g>
+</svg>
+<figcaption>Figure 3: three-zone diagnosis of inflation; teaching diagram.</figcaption>
+</figure>
+
+<p>Figure 1 links wage bargaining, expectations and supply shocks into one transmission chain. Figure 2 shows three versions giving different inflation for the same unemployment rate. Figure 3 separates demand-led, expectation-led and supply-led episodes into three policy zones. All numbers are teaching assumptions.</p>
+<h2>Conditions and boundaries</h2>
+<p>The Phillips curve becomes unreliable in four situations:</p>
+<ol>
+<li><strong>Expectations are unanchored.</strong> If households and firms stop believing the central bank will return inflation to target[4], <code>π^e</code> follows actual inflation, the curve steepens and disinflation costs rise.</li>
+<li><strong>Supply shocks dominate.</strong> A large one-off rise in energy or food prices cannot be offset quickly by demand compression; tightening also cuts output, so policy must allocate the cost between second-round inflation and recession.</li>
+<li><strong>Labour-market structure changes.</strong> Union density, minimum wages, contract length and migration all change <code>β</code>; the same unemployment rate produces different wage pressure under different institutions.</li>
+<li><strong>Measurement error.</strong> The unemployment rate counts only active job-seekers; discouraged workers drop out, so true labour-market slack may be underestimated[2].</li>
+</ol>
+<p>The Phillips curve is useful for direction and cost estimates, not as a precise autopilot.</p>
+<h2>Common mistakes</h2>
+<p><strong>Mistake 1: low unemployment always means high inflation.</strong> That holds only in the wage-bargaining version with stable expectations and no supply shock. When expectations fall or supply shocks are negative, low unemployment can coexist with low inflation.</p>
+<p><strong>Mistake 2: disinflation always requires high unemployment.</strong> If expectations are anchored and supply shocks fade, inflation can fall without a large unemployment cost; credibility determines the price[3].</p>
+<p><strong>Mistake 3: the Phillips curve has disappeared.</strong> The 2021–2023 inflation rebound shows it has not; it was shifted by supply shocks and expectations. Ignoring <code>s</code> and <code>π^e</code> misreads the data.</p>
+<h2>Deeper note: identifying the three Phillips curves and their policy meaning</h2>
+<p><strong>The &#39;three Phillips curves&#39; usually mean three relationships</strong>: unemployment and wage growth, unemployment and price inflation, and inflation and inflation expectations. They are not three lines on one chart but three mechanisms; mixing them turns wage pressure into price pressure, or an expectation shift into demand overheating.</p>
+<p><strong>The wage curve</strong> reads labour-market tightness: low unemployment and high vacancies push wage growth up. But between wages and prices sit productivity, margins and import costs; 5% wage growth with 2% productivity growth leaves unit labour cost up 3%, so price pressure is limited.</p>
+<p><strong>The price curve</strong> reads the output gap and cost shocks. Demand overheating lifts core inflation, but energy and food shocks lift headline inflation without necessarily lifting core; 2011 and 2022 differ exactly here. Central banks watch core and expectations more than short-run headline moves.</p>
+<p><strong>The expectations curve</strong> asks whether expectations are anchored. If household and business long-run expectations rise with actual inflation, wage bargaining and pricing front-run it, and policy must be larger. Expectations are the least stable part of the Phillips curve and the focus of communication.</p>
+<p><strong>Identification is hard</strong>: all three curves can be shifted by supply shocks, globalisation, union density, minimum wages and migration. Single-country, single-period estimates go stale; cross-country comparisons must control for institutions.</p>
+<p><strong>Policy meaning</strong>: for demand overheating, rate hikes work by lowering the gap and expectations; for supply shocks, hikes cannot add energy supply and only prevent second-round pass-through; for de-anchored expectations, policy must be faster and more persistent. Separating the three avoids &#39;inflation means hike&#39;.</p>
+<p><strong>Common misuses</strong>: equating low unemployment with high inflation; equating wage growth with price growth; treating one supply shock as demand overheating. Read the three curves separately, with lags and revisions.</p>
+<h2>What would change the conclusion</h2>
+<p>The three-curve account depends on identification assumptions. Reassess it if any of the following fails:</p>
+<ol>
+<li><strong>Lagged expectation measures.</strong> If survey expectations only reflect past inflation, the expectation-augmented slope is overstated; cross-check with market pricing and forward-looking surveys.</li>
+<li><strong>Persistent supply shocks.</strong> If energy or supply-chain shocks permanently change cost structures rather than fading, the sacrifice ratio rises and short-term rate hikes do less.</li>
+<li><strong>Mismeasured labour slack.</strong> If discouraged workers, gig work and part-time status are misclassified, unemployment does not represent true slack and beta is biased.</li>
+<li><strong>A credibility regime shift.</strong> If confidence in the inflation target changes institutionally, the same unemployment rate maps to different expected and actual inflation.</li>
+<li><strong>Price controls or subsidies suppressing the print.</strong> If administrative measures temporarily hold down measured inflation, the slope is artificial and cannot be extrapolated.</li>
+<li><strong>A sample spanning different monetary regimes.</strong> If the estimate covers the gold standard, Bretton Woods and floating rates, beta averages heterogeneous structures rather than one law.</li>
+</ol>
+<p>Falsifiers do not reject the model; they specify the institutions and measurements under which it holds.</p>
+<h2>What would change the conclusion (continued)</h2>
+<p>Three further conditions would change the three-curve judgement:</p>
+<ol start="7">
+<li><strong>Bargaining coverage falls.</strong> If union density and collective-bargaining coverage decline, the wage curve flattens and low unemployment pushes wages less.</li>
+<li><strong>Import prices dominate inflation.</strong> If globalisation makes imported goods and intermediates the main inflation source, domestic slack explains less and the supply-shock version matters more.</li>
+<li><strong>Core and headline are mixed.</strong> If the slope is estimated on headline but policy is judged on core, energy and food noise misleads the conclusion.</li>
+</ol>
+<p><strong>Practical implication:</strong> the test of a Phillips curve is not fit but whether the policy conclusion survives a different expectation measure or monetary regime. If it does not, the curve describes an institution, not a law of nature.</p>
+<p><strong>Data note:</strong> estimate the curve with consistent frequency and seasonal adjustment for inflation, unemployment and expectations; mixing headline with core or unemployment with underemployment changes the slope.</p>
+<p><strong>Scope note:</strong> cross-country comparisons need the same expectation survey and unemployment definition; institutional differences may themselves explain slope differences.</p>
+<h2>Exercises</h2>
+<ol>
+<li><p>Use the wage-bargaining version to explain why inflation may rise when unemployment falls from 5% to 4%.</p>
+</li>
+<li><p>Given <code>u*=4%</code>, <code>β=1.2</code>, <code>π^e=2%</code>, <code>s=0</code>, calculate inflation at <code>u=3%</code>, <code>4%</code> and <code>6%</code>.</p>
+</li>
+<li><p>If inflation must fall from 4% to 2% and the sacrifice ratio is 1.5, estimate the required unemployment-rate years.</p>
+</li>
+<li><p>Identify which version best explains 1970s stagflation and state the roles of <code>s</code> and <code>π^e</code>.</p>
+</li>
+<li><p>Compare high- and low-credibility central banks: which faces a smaller unemployment cost of disinflation, and why?</p>
+</li>
+<li><p>Give a real-world combination of low unemployment and low inflation, and list at least two possible explanations.</p>
+</li>
+<li><p>Use the framework to judge whether an oil-price shock followed by an immediate rate hike must lower inflation; state the conditions.</p>
+</li>
+<li><p>With 5% wage growth and 2% productivity growth, how much does unit labour cost rise, and what does that mean for prices?</p>
+</li>
+<li><p>How does policy response differ between a supply shock and demand overheating?</p>
+</li>
+</ol>
+<h2>Related</h2>
+<p>Prerequisite ECO-013; compare ECO-014; neighbours ECO-039 and ECO-046.</p>
+<h2>Sources</h2>
+<ol>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 22.1 Tracking Inflation</em>. OpenStax, accessed 2026-10-30. <a href="https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation">https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation</a></li>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 21.1 How Economists Define and Compute Unemployment Rate</em>. OpenStax, accessed 2026-10-30. <a href="https://openstax.org/books/principles-economics-3e/pages/21-1-how-economists-define-and-compute-unemployment-rate">https://openstax.org/books/principles-economics-3e/pages/21-1-how-economists-define-and-compute-unemployment-rate</a></li>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 28.4 Monetary Policy and Economic Outcomes</em>. OpenStax, accessed 2026-10-30. <a href="https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes">https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes</a></li>
+<li>Board of Governors of the Federal Reserve System, <em>Monetary Policy: What Are Its Goals? How Does It Work?</em>. Board of Governors of the Federal Reserve System, accessed 2026-10-30. <a href="https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm">https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Distinguish the wage-bargaining, expectations-augmented and supply-shock Phillips curves.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Use the sacrifice ratio to turn disinflation into a measurable output and unemployment cost.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Distinguish the wage-bargaining, expectations-augmented and supply-shock Phillips curves.</li><li>Use the sacrifice ratio to turn disinflation into a measurable output and unemployment cost.</li><li>Identify whether an inflation episode is demand-led, expectation-led or supply-led.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/price-indices-and-inflation/">ECO-013 · Price Indices and Inflation</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/employment-and-unemployment/">ECO-014 · Employment and Unemployment</a> </li><li> <a href="/en/learn/monetary-policy-transmission-channels-and-lags/">ECO-039 · Monetary Policy Transmission: Interest-Rate, Credit and Balance-Sheet Channels</a> </li><li> <a href="/en/learn/defaults-nudges-public-services/">ECO-046 · Defaults, Nudges and Public Services: Effects and Limits of Behavioral Interventions</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 22.1 Tracking Inflation</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Supports inflation measurement and the distinction between nominal and real variables.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/21-1-how-economists-define-and-compute-unemployment-rate" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 21.1 How Economists Define and Compute Unemployment Rate</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Supports the unemployment-rate definition, labour-market slack and the natural-rate convention.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 28.4 Monetary Policy and Economic Outcomes</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Supports how monetary policy transmits to output, employment and inflation.</p> </div><div class="source"> <a href="https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm" rel="noopener noreferrer" target="_blank">Monetary Policy: What Are Its Goals? How Does It Work?</a> <p>Board of Governors of the Federal Reserve System · Board of Governors of the Federal Reserve System</p> <p>Accessed: 2026-10-30 · License: U.S. Government work (public domain), 17 U.S.C. §105</p> <p>Supports: Supports the Federal Reserve&#39;s dual mandate, expectation management and policy constraints.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/three-phillips-curves-wages-expectations-supply-shocks/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

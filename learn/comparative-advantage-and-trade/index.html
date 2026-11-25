@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>比较优势与贸易 · 巫妖投资</title><meta name="description" content="比较优势按机会成本而非绝对生产率判断分工；即使一方在所有产品上都更高效，双方仍可通过专业化与贸易获益。"><link rel="canonical" href="https://economics.51invest.com/learn/comparative-advantage-and-trade/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/comparative-advantage-and-trade/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/comparative-advantage-and-trade/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/comparative-advantage-and-trade/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/comparative-advantage-and-trade/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">比较优势与贸易</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">比较优势与贸易</h1> <p class="article-summary">比较优势按机会成本而非绝对生产率判断分工；即使一方在所有产品上都更高效，双方仍可通过专业化与贸易获益。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M13 · 国际贸易</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 13 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>绝对优势</strong>（absolute advantage）指能生产更多 [1]；在相同资源投入下比较时，这等价于“生产同样数量只需更少资源”，后一句是本文的等价表述。<strong>比较优势</strong>（comparative advantage）指以更低机会成本生产某产品 [1]。贸易收益来自比较优势：各国专业化生产机会成本较低的产品再交换，可在资源不变时提高产出 [1]。</p>
+<h2>直觉</h2>
+<p>两国各 100 小时劳动。沙特生产一桶油需 1 小时、一蒲式耳玉米需 4 小时；美国分别需 2 小时和 1 小时 [1]。沙特产油更省时，美国产玉米更省时。即使一国在两种产品上都更高效，只要机会成本不同，分工仍能增加总产出 [2]。关键不在谁绝对更快，而在多生产一单位要放弃多少另一种产品。</p>
+<h2>正式表达</h2>
+<p>以劳动为唯一投入（本文数字均以劳动小时与实物单位计，不出现价格或币种）：</p>
+<ul>
+<li>沙特：1 桶油 = 1/4 蒲式耳玉米；1 蒲式耳玉米 = 4 桶油。</li>
+<li>美国：1 桶油 = 2 蒲式耳玉米；1 蒲式耳玉米 = 1/2 桶油。</li>
+</ul>
+<p>沙特产油的机会成本 0.25 蒲式耳玉米/桶低于美国的 2 蒲式耳玉米/桶，具比较优势；美国产玉米的机会成本 0.5 桶油/蒲式耳低于沙特的 4 桶油/蒲式耳 [1]。贸易条件应落在 0.25 与 2 蒲式耳玉米/桶油之间，区间两端就是两国的机会成本，落在此区间内双方都能获益（以上数字为本文教学假设）。</p>
+<p>补充一个常用口径：世界银行的&quot;Trade (% of GDP)&quot;指标把贸易额定义为货物与服务出口加进口占 GDP 的百分比 [3]，用于衡量贸易相对经济总量的规模；它衡量的是开放度，不能替代上文的机会成本比较，也不用于本篇的任何计算。</p>
+<h2>适用条件</h2>
+<ol>
+<li>机会成本不同是贸易基础；即使一方在所有产品上都更高效，双方仍可能获益——该页逐字写 &quot;Even when one country has an absolute advantage in all products, trade can still benefit both sides. This is because gains from trade come from specializing in one’s comparative advantage.&quot;[2]。</li>
+<li>模型假设充分就业、资源可流动、机会成本不变；现实中调整有摩擦，可能失业或地区受损。<strong>本条为本文所列</strong>：本站取回的 33.1／33.2／33.3／33.4 四页正文（剥标签后）均无 full employment、mobility、transportation costs、nontradable、product differentiation、compensation、winners、losers 词面，因此这几项假设不挂来源标记。</li>
+<li>关税会改变分工：该页逐字写 &quot;Tariffs are taxes that governments place on imported goods for a variety of reasons.&quot;[4]；规模经济与产品多样性也有影响，逐字为 &quot;it is difficult to measure the potential advantages to consumers of having a variety of products available and a greater degree of competition among producers&quot;[4]。运输成本与非贸易品两项<strong>属本文所列</strong>（该四页无 transportation costs／nontradable 词面）；&quot;产品差异化&quot;是本文用词，原文写的是可获得的产品多样性（variety of products）。</li>
+<li>贸易带来总量收益，但国内分配未必均衡；补偿政策影响谁受益。<strong>本条为本文所列</strong>：本站取回的 33.1／33.2／33.3／33.4 四页正文（剥标签后）均无 full employment、mobility、transportation costs、nontradable、product differentiation、compensation、winners、losers 词面；33.4 只逐字说明部分收益难以在统计中衡量（见上条引文），并未给出国内分配与补偿政策的论述，故不将本条挂给该页。</li>
+<li>比较优势可变：33.4 逐字指出 &quot;Perhaps the most important unmeasured factor is that trade between countries, especially when firms are splitting up the value chain of production, often involves a transfer of knowledge that can involve skills in production, technology, management, finance, and law.&quot;[4]，即贸易可带来生产技能、技术、管理等方面的知识转移，从而改变一国的成本结构；&quot;投资和技术会改变机会成本、静态结论不能外推&quot;是本文据此作出的推论。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>各 100 小时。分工前沙特 60 桶油 + 10 蒲式耳玉米，美国 20 桶油 + 60 蒲式耳玉米；合计 80 桶油、70 蒲式耳玉米。分工前沙特用工 <code>60×1 + 10×4 = 100</code> 小时，美国用工 <code>20×2 + 60×1 = 100</code> 小时，与各自 100 小时约束一致。专业化后沙特 100 桶油、美国 100 蒲式耳玉米；合计 100 桶油、100 蒲式耳玉米，增加 20 桶油、30 蒲式耳玉米 [1]。以上为假设。</p>
+<table>
+<thead>
+<tr>
+<th>国家</th>
+<th align="right">油（小时/桶）</th>
+<th align="right">玉米（小时/蒲式耳）</th>
+<th align="right">油的机会成本（玉米/桶）</th>
+<th align="right">玉米的机会成本（油/蒲式耳）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>沙特</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">0.25</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>美国</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">0.5</td>
+</tr>
+</tbody></table>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-trade-title fig-trade-desc" viewBox="0 0 420 240" width="100%">
+    <title id="fig-trade-title">分工前后的总产出</title>
+    <desc id="fig-trade-desc">油从 80 桶增至 100 桶，玉米从 70 蒲式耳增至 100 蒲式耳。</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="46" y1="190" x2="400" y2="190"></line>
+      <line x1="46" y1="130" x2="400" y2="130" stroke-dasharray="3 4"></line>
+      <line x1="46" y1="70" x2="400" y2="70" stroke-dasharray="3 4"></line>
+    </g>
+    <g fill="var(--muted)" font-size="10" font-family="inherit">
+      <text x="40" y="194" text-anchor="end">0</text>
+      <text x="40" y="134" text-anchor="end">50</text>
+      <text x="40" y="74" text-anchor="end">100</text>
+    </g>
+    <g>
+      <rect x="80" y="94" width="40" height="96" fill="var(--muted)"></rect>
+      <rect x="130" y="70" width="40" height="120" fill="var(--accent)"></rect>
+      <rect x="260" y="106" width="40" height="84" fill="var(--muted)"></rect>
+      <rect x="310" y="70" width="40" height="120" fill="var(--accent)"></rect>
+    </g>
+    <g fill="var(--text)" font-size="11" font-family="inherit" text-anchor="middle">
+      <text x="100" y="86">80</text>
+      <text x="150" y="62">100</text>
+      <text x="280" y="98">70</text>
+      <text x="330" y="62">100</text>
+      <text x="125" y="214">油（桶）</text>
+      <text x="305" y="214">玉米（蒲式耳）</text>
+    </g>
+    <g fill="var(--muted)" font-size="10" font-family="inherit">
+      <rect x="250" y="16" width="10" height="10" fill="var(--muted)"></rect>
+      <text x="266" y="25">分工前</text>
+      <rect x="318" y="16" width="10" height="10" fill="var(--accent)"></rect>
+      <text x="334" y="25">分工后</text>
+    </g>
+  </svg>
+  <figcaption>图 1：分工前合计 80 桶油、70 蒲式耳玉米；完全专业化后为 100 桶油、100 蒲式耳玉米。纵轴刻度（0—100）只是各自数量的读数：桶与蒲式耳是两种不同实物单位，两类柱高不可跨单位换算或比较大小。图为教学示例，不是真实产量数据。</figcaption>
+</figure>
+
+<h2>图解：分工、收益、边界</h2>
+<figure id="figure-trade-three-layers">
+  <svg role="img" aria-labelledby="fig-trade-layers-title fig-trade-layers-desc" viewBox="0 0 380 420" width="100%">
+    <title id="fig-trade-layers-title">比较优势的三层解释：机会成本、分工收益与适用边界</title>
+    <desc id="fig-trade-layers-desc">第一层比较沙特与美国生产油和玉米的机会成本；第二层给出各一百小时分工前后油八十到一百桶、玉米七十到一百蒲式耳；第三层列出充分就业、关税运输、分配补偿和技术变化四条边界。</desc>
+    <text x="20" y="22" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">比较优势：分工、收益、边界</text>
+    <text x="20" y="43" font-size="9" fill="var(--muted)" font-family="inherit">沙特 1 小时/桶油、4 小时/蒲式耳玉米；美国 2 小时/桶油、1 小时/蒲式耳玉米</text>
+    <rect x="16" y="54" width="348" height="104" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="28" y="70" font-size="9.8" font-weight="650" fill="var(--accent)" font-family="inherit">① 机会成本决定分工</text>
+    <text x="28" y="90" font-size="8.8" fill="var(--secondary)" font-family="inherit">沙特：1 桶油 = 0.25 蒲式耳玉米，产油的机会成本更低</text>
+    <text x="28" y="108" font-size="8.8" fill="var(--secondary)" font-family="inherit">美国：1 蒲式耳玉米 = 0.5 桶油，产玉米的机会成本更低</text>
+    <text x="28" y="128" font-size="8.8" fill="var(--muted)" font-family="inherit">贸易条件应落在 0.25–2 蒲式耳玉米/桶之间；两端是两国机会成本</text>
+    <rect x="16" y="164" width="348" height="104" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="28" y="180" font-size="9.8" font-weight="650" fill="var(--accent)" font-family="inherit">② 各 100 小时，分工前后</text>
+    <text x="28" y="201" font-size="9.4" font-weight="600" fill="var(--text)" font-family="inherit">油：80 → 100 桶（+20）</text>
+    <text x="28" y="220" font-size="9.4" font-weight="600" fill="var(--text)" font-family="inherit">玉米：70 → 100 蒲式耳（+30）</text>
+    <text x="28" y="241" font-size="8.8" fill="var(--muted)" font-family="inherit">总产出增加；桶与蒲式耳是两种单位，不能直接相加</text>
+    <rect x="16" y="274" width="348" height="104" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="28" y="290" font-size="9.8" font-weight="650" fill="var(--accent)" font-family="inherit">③ 什么时候不成立</text>
+    <text x="28" y="311" font-size="8.6" fill="var(--secondary)" font-family="inherit">充分就业、资源可流动、机会成本不变，是静态分工的前提</text>
+    <text x="28" y="329" font-size="8.6" fill="var(--secondary)" font-family="inherit">关税、运输成本和非贸易品会改变实际分工</text>
+    <text x="28" y="347" font-size="8.6" fill="var(--secondary)" font-family="inherit">总量收益不等于人人受益；分配冲突与补偿要另算</text>
+    <text x="28" y="365" font-size="8.6" fill="var(--secondary)" font-family="inherit">投资与技术会改变机会成本，静态结论不能外推</text>
+    <text x="20" y="400" font-size="8.6" fill="var(--muted)" font-family="inherit">图为教学示例；数字来自正文的 100 小时劳动算例，不是真实产量。</text>
+  </svg>
+  <figcaption>图 2：三层一起读比较优势。先比机会成本：沙特产油 0.25 蒲式耳玉米/桶、美国产玉米 0.5 桶油/蒲式耳；再看分工：各 100 小时下油 80→100 桶、玉米 70→100 蒲式耳；最后看边界：充分就业与资源流动是模型前提，关税、运输、分配和技术变化都会改写静态结论。数字为教学假设。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>绝对优势等于比较优势。</strong> 一方可在所有产品上更高效，仍应生产机会成本较低的产品。</p>
+<p><strong>贸易是零和。</strong> 总量收益可双方都有，但国内分配未必均等。</p>
+<p><strong>比较优势永久不变。</strong> 投资和技术会改变机会成本。</p>
+<p><strong>出口越多越好。</strong> 一国从贸易中真正得到的是它能进口的商品：33.2 逐字以墨西哥为例写 &quot;it will be able to consume more of both goods than before trade. Mexico will be unambiguously better off.&quot;[2]，即收益体现在可消费的更多商品上，33.4 也逐字说部分收益体现为&quot;可获得的产品多样性与更有力的竞争&quot;[4]。顺差本身不等于福利，是本文据此作出的判断。</p>
+<p>世界银行的口径把贸易额定义为货物与服务出口加进口，以占 GDP 的百分比表示，数值来自各国官方统计与国民账户[3]。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>比较优势</h3>
+<p><strong>定义</strong>：比较优势是一国以相对更低的机会成本生产某商品，因而专业化并交换可以增加总产出。</p>
+<p><strong>机制</strong>：即使一方绝对生产率全面较低，只要相对成本不同，双方仍可通过分工获益；贸易条件决定收益分配。</p>
+<p><strong>例子</strong>：例如甲国生产一单位布放弃 2 单位酒，乙国放弃 0.5 单位酒，乙国生产布的机会成本更高，甲国应多产布。</p>
+<p><strong>边界</strong>：比较优势依赖相对成本而非绝对优势；运输、关税、规模、技术和要素流动会改变优势，收益也不均等。</p>
+<h3>规模与贸易</h3>
+<p><strong>定义</strong>：规模与贸易指更大市场支持更大生产批量、更多品种和更细分工，从而降低单位成本。</p>
+<p><strong>机制</strong>：规模经济与需求多样性并存时，产业内贸易和产品差异化会出现；市场准入和标准也影响规模实现。</p>
+<p><strong>例子</strong>：例如两国都生产汽车，但各自专注不同车型并互相出口，消费者获得更多款式和更低成本。</p>
+<p><strong>边界</strong>：规模收益不一定导致本国全胜；市场分割、运输成本和先发优势会锁定分工，太小市场难以支撑多个供应商。</p>
+<h3>关税</h3>
+<p><strong>定义</strong>：关税是对进口或出口商品征收的税，抬高跨境价格并改变生产、消费和收入分配。</p>
+<p><strong>机制</strong>：进口关税保护国内生产者、增加财政收入，但提高消费者价格、可能引发报复并削弱全球分工。</p>
+<p><strong>例子</strong>：例如对进口钢加征 20% 关税，国内钢厂受益，用钢的汽车厂成本上升，出口竞争力可能下降。</p>
+<p><strong>边界</strong>：关税效果取决于需求弹性、替代来源和汇率反应；高关税不等于高福利，配额、补贴和原产地规则也会改变结果。</p>
+<h3>贸易协定</h3>
+<p><strong>定义</strong>：贸易协定是两国或多国降低关税、协调规则和开放市场的有约束安排，常含争端解决机制。</p>
+<p><strong>机制</strong>：协定通过降低边界成本、提高可预期性促进贸易和投资，但也可能造成贸易转移、监管主权让渡和分配争议。</p>
+<p><strong>例子</strong>：例如区域协定取消成员国关税，成员间贸易上升，但区外低成本供应商可能被排除。</p>
+<p><strong>边界</strong>：协定不是自动共赢；原产地规则、劳工环境标准、补偿机制和退出条款决定实际效果，谈判也受国内政治约束。</p>
+<h3>价值链与分配效应</h3>
+<p><strong>定义</strong>：全球价值链把研发、零件、组装、物流和销售分到不同国家，贸易统计因而重复计算中间品。</p>
+<p><strong>机制</strong>：分工提高效率和专业化，但租金集中在设计、品牌和关键零部件；劳动、环境和税务竞争影响分配。</p>
+<p><strong>例子</strong>：例如手机零件在多国生产、在中国组装，出口额包含大量进口中间品，增加值远低于总值。</p>
+<p><strong>边界</strong>：价值链提升韧性也带来断链风险；地缘政治、疫情和运输成本会促使近岸化，收益在资本、劳动和地区间不均。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：稀缺与选择（ECO-002）、供给需求与均衡（ECO-005）。</li>
+<li>相关：国际收支（ECO-021）、汇率制度与开放经济（ECO-022）、增长与生产率（ECO-017）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">相对优势与贸易：机制链</title>
+    <desc id="fig-batch-chain-desc">相对优势与贸易 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">区分优势与贸易：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">区分优势按机会成本而</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">非绝对生产率判断分工…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">区分优势按机会成本</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">而非绝对生产率判断</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">分工；即使一方在所</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">有产品上都更高效，</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">双方仍可通过专业化…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：绝对优势（absol</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">ute advantage）指能…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：绝对优势（abs</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">olute advantage）</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">指能生产更多</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">；在相同资源投入下</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">区分时，这等价于“…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">各 100 小时。分工前</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">沙特 60 桶油 + 10…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">各 100 小时。分工</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">前沙特 60 桶油 +</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">10 蒲式耳玉米，美</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">国 20 桶油 + 60</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">蒲式耳玉米；合计…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 3：相对优势与贸易的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">比较优势与贸易：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">比较优势与贸易：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">机会成本不同是贸易基础；即使一方</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">在所有产品上都更高效，双方仍可能</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">获益——该页逐字写 &quot;Even when</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">one country has an absolute…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">绝对优势等于比较优势。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：比较优势与贸易的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">比较优势与贸易：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">比较优势与贸易：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">比较优势按机会成本而非绝</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">对生产率判断分工；即使一…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">机会成本不同是贸易基础；</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">即使一方在所有产品上都更…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">绝对优势等于比较优势。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 5：比较优势与贸易的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 比较优势指？A. 用更少资源生产更多；B. 更低机会成本；C. 更低工资；D. 更大出口量。</li>
+<li><strong>计算：</strong> A 国 1 小时/单位 X、3 小时/单位 Y；B 国 2 小时/单位 X、4 小时/单位 Y。求两国生产 X、Y 的机会成本与分工。</li>
+<li><strong>适用条件：</strong> 简单模型为何可能高估贸易收益？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>B。</li>
+<li>X 的机会成本：A 为 <code>1/3</code> 单位 Y，B 为 <code>1/2</code>，A 有比较优势；Y 的机会成本：A 为 <code>3</code> 单位 X，B 为 <code>2</code>，B 有比较优势。A 在两种产品上都有绝对优势，但分工仍按比较优势。</li>
+<li>本文所列的假设（充分就业、资源可流动、调整无成本）在现实中不成立；关税等壁垒确有文献支持（33.4 逐字定义关税为政府对进口商品征收的税），而失业与分配冲突部分属本文推断，故这些削减收益的具体渠道并非都有同一来源。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<p>正文中的 [1][2][3][4] 对应以下来源。</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;33.1 Absolute and Comparative Advantage.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/33-1-absolute-and-comparative-advantage">https://openstax.org/books/principles-economics-3e/pages/33-1-absolute-and-comparative-advantage</a>（访问日期：2026-11-03）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;33.2 What Happens When a Country Has an Absolute Advantage in All Goods.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/33-2-what-happens-when-a-country-has-an-absolute-advantage-in-all-goods">https://openstax.org/books/principles-economics-3e/pages/33-2-what-happens-when-a-country-has-an-absolute-advantage-in-all-goods</a>（访问日期：2026-11-03）</li>
+<li>World Bank. &quot;Trade (% of GDP).&quot; <a href="https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS">https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS</a>（访问日期：2026-11-03）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;33.4 The Benefits of Reducing Barriers to International Trade.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/33-4-the-benefits-of-reducing-barriers-to-international-trade">https://openstax.org/books/principles-economics-3e/pages/33-4-the-benefits-of-reducing-barriers-to-international-trade</a>（访问日期：2026-11-03）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用单位产品所需投入算出两类产品的机会成本并判断谁有比较优势</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能解释“各方都更高效时仍有贸易收益”的推理，并指出该结论的前提</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用单位产品所需投入算出两类产品的机会成本并判断谁有比较优势</li><li>能解释“各方都更高效时仍有贸易收益”的推理，并指出该结论的前提</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/scarcity-and-choice/">ECO-002 · 稀缺与选择</a> </li><li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/growth-and-productivity/">ECO-017 · 增长与生产率</a> </li><li> <a href="/learn/balance-of-payments/">ECO-021 · 国际收支</a> </li><li> <a href="/learn/exchange-rate-regimes/">ECO-022 · 汇率制度与开放经济</a> </li><li> <a href="/learn/scarcity-and-choice/">ECO-002 · 稀缺与选择</a> </li><li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/33-1-absolute-and-comparative-advantage" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 33.1 Absolute and Comparative Advantage</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：绝对优势指一国能生产更多该产品（该页逐字为 &quot;A country has an absolute advantage ... if it can produce more of that good&quot;）；在相同资源投入下比较时，等价于生产同样数量只需更少资源，后一句是本文的等价表述，不是该页逐字句。比较优势是更低的机会成本。本文的 1 小时/4 小时、2 小时/1 小时及 80/70→100/100 数字为教学假设，不由该页逐字给出；该页用自己的例子说明机会成本逻辑。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/33-2-what-happens-when-a-country-has-an-absolute-advantage-in-all-goods" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 33.2 What Happens When a Country Has an Absolute Advantage in All Goods</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：即使一国在所有产品上都具有绝对优势，双方仍可通过按比较优势专业化并从贸易中获益。 2026-11-03 复取（curl 200）并补逐字句：&quot;Even when one country has an absolute advantage in all products, trade can still benefit both sides. This is because gains from trade come from specializing in one’s comparative advantage.&quot; 与 &quot;it will be able to consume more of both goods than before trade. Mexico will be unambiguously better off.&quot;。前者承担正文&quot;即使一方全面领先仍可能获益&quot;，后者承担&quot;贸易的收益体现在可消费的更多商品&quot;。该页仍以墨西哥—美国的鞋帽／冰箱例子给出，不作真实贸易数据引用。</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS" rel="noopener noreferrer" target="_blank">Trade (% of GDP)</a> <p>World Bank · World Bank</p> <p>访问：2026-11-03 · 许可：CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>支持论点：贸易额是货物与服务出口加进口，以占 GDP 的百分比表示，数据来自各国官方统计和国民账户。 2026-11-03 复取（curl 200，1,178,612 字节）：本页正文由脚本渲染，本机可核的逐字串只有页面标题指标名 &quot;Trade (% of GDP)&quot;；上文的定义式表述是该指标的标准口径概述，本机未能读到其元数据正文，故不冒充逐字引用。正文只用它给出开放度的衡量口径，不参与任何计算。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/33-4-the-benefits-of-reducing-barriers-to-international-trade" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 33.4 The Benefits of Reducing Barriers to International Trade</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax, Rice University</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：逐字登记（2026-11-03 curl 200，剥标签正文切片）：关税定义 &quot;Tariffs are taxes that governments place on imported goods for a variety of reasons.&quot;；难以衡量的收益 &quot;the estimate of gains may be on the low side because some of the gains from trade are not measured especially well in economic statistics. For example, it is difficult to measure the potential advantages to consumers of having a variety of products available and a greater degree of competition among producers.&quot;；知识转移 &quot;Perhaps the most important unmeasured factor is that trade between countries, especially when firms are splitting up the value chain of production, often involves a transfer of knowledge that can involve skills in production, technology, management, finance, and law.&quot;。该页把关税界定为政府对进口商品征收的税，并指出部分贸易收益在统计中难以衡量（产品多样性与竞争强度）、最重要的是价值链分工带来的知识转移。正文用这三句承担&quot;关税改变分工&quot;&quot;收益不完全可测&quot;&quot;比较优势可随知识／技术变化&quot;三点；运输成本、非贸易品、国内分配与补偿政策不属该页表述（四页词面实测为 0），已标为本文所列。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/comparative-advantage-and-trade/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

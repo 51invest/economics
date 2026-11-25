@@ -1,0 +1,296 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Supply, Demand and Equilibrium · 51Invest</title><meta name="description" content="Demand and supply curves relate price and quantity; equilibrium is their intersection, and movements along a curve differ from shifts of the curve."><link rel="canonical" href="https://economics.51invest.com/en/learn/supply-demand-equilibrium/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/supply-demand-equilibrium/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/supply-demand-equilibrium/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/supply-demand-equilibrium/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/supply-demand-equilibrium/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Supply, Demand and Equilibrium</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Supply, Demand and Equilibrium</h1> <p class="article-summary">Demand and supply curves relate price and quantity; equilibrium is their intersection, and movements along a curve differ from shifts of the curve.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M02 · 消费者与家庭</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>7 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-equilibrium"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p>A demand curve shows the quantity consumers are willing and able to buy at different prices, holding other conditions constant. A supply curve shows the quantity producers are willing and able to sell. The market equilibrium is the intersection: at that price, quantity demanded equals quantity supplied. OpenStax’s <em>Principles of Economics</em> describes equilibrium as the intersection of demand and supply and stresses that a movement along a curve is not the same as a shift of the curve[1].</p>
+<h2>Intuition</h2>
+<p>At a high price, sellers want to supply more while buyers want to purchase less, creating a surplus. At a low price, buyers want more while sellers offer less, creating a shortage. In a competitive market, price tends to adjust toward the level that clears the market.</p>
+<h2>Formal expression</h2>
+<p>A simple linear teaching model:</p>
+<div class="formula" role="math" aria-label="Quantity demanded equals one hundred minus two times price">Q_d = 100 - 2P</div>
+<div class="formula" role="math" aria-label="Quantity supplied equals twenty plus two times price">Q_s = 20 + 2P</div>
+
+<p>At equilibrium, <code>Q_d = Q_s</code>:</p>
+<div class="formula" role="math" aria-label="One hundred minus two price equals twenty plus two price">100 - 2P = 20 + 2P → P = 20, Q = 60</div>
+
+<table>
+<thead>
+<tr>
+<th align="right">Price P</th>
+<th align="right">Quantity demanded</th>
+<th align="right">Quantity supplied</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">10</td>
+<td align="right">80</td>
+<td align="right">40</td>
+<td>Shortage of 40</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td align="right">60</td>
+<td align="right">60</td>
+<td>Equilibrium</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td align="right">40</td>
+<td align="right">80</td>
+<td>Surplus of 40</td>
+</tr>
+</tbody></table>
+<figure>
+  <svg role="img" aria-labelledby="fig-sd-title-en fig-sd-desc-en" viewBox="0 0 440 260" width="100%">
+    <title id="fig-sd-title-en">Demand, supply and market equilibrium</title>
+    <desc id="fig-sd-desc-en">The horizontal axis is quantity and the vertical axis is price. The demand curve slopes down and the supply curve slopes up; they intersect at a price of twenty and a quantity of sixty.</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="70" y1="210" x2="400" y2="210"></line>
+      <line x1="70" y1="40" x2="70" y2="210"></line>
+      <line x1="70" y1="125" x2="230" y2="125" stroke-dasharray="3 4"></line>
+      <line x1="230" y1="125" x2="230" y2="210" stroke-dasharray="3 4"></line>
+    </g>
+    <line x1="123" y1="40" x2="337" y2="210" stroke="var(--accent)" stroke-width="2.5"></line>
+    <line x1="123" y1="210" x2="337" y2="40" stroke="var(--gold)" stroke-width="2.5"></line>
+    <circle cx="230" cy="125" r="4" fill="var(--text)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="100" y="112">Equilibrium (60, 20)</text>
+      <text x="340" y="222">Quantity</text>
+      <text x="38" y="45">Price</text>
+      <text x="55" y="130">20</text>
+      <text x="220" y="225">60</text>
+      <text x="315" y="190" fill="var(--accent)">Demand</text>
+      <text x="315" y="75" fill="var(--gold)">Supply</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: Equilibrium in a linear supply-and-demand model. The figure is a teaching model, not a fit to a real market.; sample: the article’s own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Movements versus shifts</h2>
+<p>A price change causes a movement along a curve: a lower price raises quantity demanded, and a higher price lowers it. Changes in income, preferences, substitute prices, expectations or the number of buyers shift the demand curve. Changes in input costs, technology, taxes, expectations or the number of sellers shift the supply curve.</p>
+<p>The direction cannot be inferred from price alone. If the observed price rises, demand may have shifted right (price up, quantity up) or supply may have shifted left (price up, quantity down): the two give the same price signal and opposite quantity responses, so identifying the cause requires the observed quantity and other context. Conversely, in a comparative-static exercise that moves only one curve, a simultaneous rise in price and quantity is compatible only with a rightward demand shift; a rightward supply shift would push the price down and raise quantity.</p>
+<h2>Four-step analysis</h2>
+<p>OpenStax’s four-step process is a useful comparative-static method[2]:</p>
+<ol>
+<li>Draw the initial model and equilibrium.</li>
+<li>Identify which curve is affected: demand, supply, or both.</li>
+<li>Determine the direction of the shift: right or left.</li>
+<li>Compare the new equilibrium with the old one and state the direction of price and quantity changes.</li>
+</ol>
+<p>Example: demand becomes <code>Q_d = 120 - 2P</code> while supply remains <code>Q_s = 20 + 2P</code>. Solving gives <code>120 - 2P = 20 + 2P → P = 25, Q = 70</code>. A rightward demand shift raises both equilibrium price and quantity. If supply shifts to <code>Q_s = 40 + 2P</code>, then <code>100 - 2P = 40 + 2P → P = 15, Q = 70</code>; the equilibrium price falls and quantity rises.</p>
+<h2>Assumptions and limits</h2>
+<p>The model usually assumes many buyers and sellers, a homogeneous product, available information, no price controls or significant market power, and other conditions held constant. Real markets may have product differentiation, monopoly, externalities, public goods, search frictions, expectations and sticky prices; a simple intersection may not explain the outcome.</p>
+<p>Equilibrium is not the same as fairness or social optimality. The model shows how price and quantity become mutually consistent under its assumptions; it does not evaluate distribution, external costs or market power. Comparative statics asks what would happen if a curve shifted while other conditions stayed fixed; it is not a forecast of timing or magnitude.</p>
+<h2>Common mistakes</h2>
+<p><strong>A price increase proves demand increased.</strong> Not necessarily: a supply decrease also raises price. A movement along the demand curve only describes the price-quantity relation, not the cause of the shift.</p>
+<p><strong>The equilibrium price always prevails.</strong> Price controls, menu costs, inventories and expectations can keep a market away from equilibrium; the model is a benchmark, not a record of reality.</p>
+<p><strong>The model answers every economic question.</strong> It is suited to competitive price-quantity analysis; externalities, public goods, market power and macroeconomic aggregates need other models.</p>
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>preferences</h3>
+<p><strong>Definition</strong>: Preferences rank consumption bundles given information and constraints; they describe wants rather than realized demand.</p>
+<p><strong>Mechanism</strong>: Preferences enter the budget constraint through the marginal rate of substitution: how much of one good a consumer will give up for another, so a change in ranking shifts demand.</p>
+<p><strong>Example</strong>: For example, a consumer with similar ratings for two coffees picks the cheaper cup, but new information can reorder the ranking.</p>
+<p><strong>Boundary</strong>: Preferences shift with habits, information and income; revealed preference only infers rankings from choices, which budgets, supply or defaults may distort.</p>
+<h3>utility</h3>
+<p><strong>Definition</strong>: Utility is the subjective satisfaction a consumer derives from a bundle; it is an ordinal ranking, not money income or physical output.</p>
+<p><strong>Mechanism</strong>: Constrained utility maximization equalizes marginal utility per unit of price across goods, which traces an individual demand curve.</p>
+<p><strong>Example</strong>: For example, the first glass of water is valued highly when thirsty and the fifth much less, so the same water is valued differently by quantity.</p>
+<p><strong>Boundary</strong>: Utility cannot be compared directly across people; cardinal and ordinal versions are modelling conventions, and real choices also face cognitive limits and emotion.</p>
+<h3>budget constraint</h3>
+<p><strong>Definition</strong>: A budget constraint is the boundary of affordable bundles at given income and prices, written as income equal to total spending.</p>
+<p><strong>Mechanism</strong>: Price or income changes rotate or shift the budget line; the substitution effect moves along an indifference curve while the income effect moves to a new curve.</p>
+<p><strong>Example</strong>: For example, with income 100, apples at 5 and bread at 10, all bread buys ten loaves; a cut in apple prices rotates the line outward.</p>
+<p><strong>Boundary</strong>: The constraint assumes current spending cannot exceed current income and ignores borrowing, transfers and liquidity limits, although households also allocate across time.</p>
+<h3>demand</h3>
+<p><strong>Definition</strong>: Demand is the quantity consumers are willing and able to buy at each price, shaped by preferences, income, related prices and expectations.</p>
+<p><strong>Mechanism</strong>: A lower price raises quantity demanded through substitution and changes real purchasing power through the income effect; normal goods usually have downward-sloping demand.</p>
+<p><strong>Example</strong>: For example, cutting a bus fare from 3 to 2 yuan moves some drivers to the bus and raises quantity demanded; a fare increase does the reverse.</p>
+<p><strong>Boundary</strong>: Demand is not mere desire: Giffen goods, status goods, rationing and liquidity constraints can make price and quantity move together, so the good and institution must be specified.</p>
+<h3>income and substitution effects</h3>
+<p><strong>Definition</strong>: The income effect is the quantity response to a change in real purchasing power; the substitution effect is the response to relative prices.</p>
+<p><strong>Mechanism</strong>: The Slutsky decomposition splits total demand change into substitution and income effects; for normal goods they reinforce, while inferior goods can have an offsetting income effect.</p>
+<p><strong>Example</strong>: For example, a higher wage makes leisure more expensive and substitution raises work hours, while higher income may reduce them; the net depends on the two effects.</p>
+<p><strong>Boundary</strong>: The decomposition depends on how compensation is defined; Hicksian and Slutsky compensation differ, and labour supply, credit constraints and habit formation can break the simple dichotomy.</p>
+<h3>elasticity</h3>
+<p><strong>Definition</strong>: Elasticity is the percentage response of quantity to a change in price, income or a related good&#39;s price, expressed as a unit-free ratio.</p>
+<p><strong>Mechanism</strong>: Demand is elastic when its absolute price elasticity exceeds one and inelastic when below one; elasticity determines whether a price cut raises or lowers revenue.</p>
+<p><strong>Example</strong>: For example, a 10 percent salt price rise that cuts purchases by 1 percent is inelastic and raises total spending, while holiday packages may be elastic.</p>
+<p><strong>Boundary</strong>: Elasticity varies by price range, horizon and substitutes; point and arc measures differ, and short-run and long-run elasticities often diverge.</p>
+<h3>intertemporal choice</h3>
+<p><strong>Definition</strong>: Intertemporal choice allocates consumption and saving across time, centring on the marginal rate of substitution between present and future consumption.</p>
+<p><strong>Mechanism</strong>: Interest rates discount future consumption into today&#39;s terms; the Fisher equation separates nominal rates into real rates and expected inflation, while borrowing limits can distort smoothing.</p>
+<p><strong>Example</strong>: For example, at a 5 percent annual rate, forgoing 100 yuan today buys about 105 yuan next year; a higher borrowing rate makes earlier consumption more expensive.</p>
+<p><strong>Boundary</strong>: Intertemporal models assume borrowing, known lifespans and stable preferences; liquidity constraints, uncertainty, bequests and self-control make actual saving diverge.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Related reading (this article sets no required prerequisites): What economics studies (ECO-001), Scarcity and choice (ECO-002), Opportunity Cost and Sunk Cost (ECO-003), and Margin and incentives (ECO-004).</li>
+<li>Applications: elasticity, consumer and producer surplus, price controls, tax incidence and international trade.</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">Supply, Demand and Equilibrium: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">Supply, Demand and Equilibrium — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Supply, Demand and Equilibrium: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Demand and</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">supply curves…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Demand and</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">supply curves</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">relate price</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">and quantity;</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">equilibrium is…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition: A</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">demand curve…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition: A</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">demand curve</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">shows the</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">quantity consume</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">rs are willing…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">A demand curve</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">shows the quantit…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A demand curve</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">shows the</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">quantity consume</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">rs are willing</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">and able to buy…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 2: Supply, Demand and Equilibrium — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">Supply, Demand and Equilibrium: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Supply, Demand and Equilibrium: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A demand curve shows the</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">quantity consumers are</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">willing and able to buy at</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">different prices, holding…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A price increase proves</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">demand increased.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 3: Supply, Demand and Equilibrium — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">Supply, Demand and Equilibrium: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Supply, Demand and Equilibrium: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Demand and supply</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">curves relate price…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A demand curve shows</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">the quantity…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A price increase proves demand</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">increased.…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: Supply, Demand and Equilibrium — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Calculation.</strong> If <code>Q_d = 100 - 2P</code> and <code>Q_s = 20 + 2P</code>, find equilibrium price and quantity. At a price of 30, is there a shortage or surplus, and how large?</li>
+<li><strong>Shift.</strong> For a normal good, a rise in consumer income shifts demand right while supply is unchanged. What happens to equilibrium price and quantity?</li>
+<li><strong>Boundary.</strong> Why can’t an observed price increase by itself prove a rightward demand shift? Give one alternative explanation.</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>Equilibrium is <code>100 - 2P = 20 + 2P</code>, so <code>P = 20</code> and <code>Q = 60</code>. At P = 30, quantity demanded is 40 and quantity supplied is 80, a surplus of 40.</li>
+<li>For a normal good, a rightward demand shift normally raises both equilibrium price and quantity; the size depends on the slopes.</li>
+<li>A leftward supply shift also raises price. Measurement, quality changes or frictions may also affect observed prices, so more information is needed to identify the shift.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “3.1 Demand, Supply, and Equilibrium in Markets for Goods and Services.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services">https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services</a> (accessed 2026-10-30)</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “3.3 Changes in Equilibrium Price and Quantity: The Four-Step Process.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/3-3-changes-in-equilibrium-price-and-quantity-the-four-step-process">https://openstax.org/books/principles-economics-3e/pages/3-3-changes-in-equilibrium-price-and-quantity-the-four-step-process</a> (accessed 2026-10-30)</li>
+</ol>
+  <section class="article-demo" id="demo-equilibrium" data-demo="equilibrium" data-lang="en" aria-labelledby="demo-equilibrium-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-equilibrium-title">What happens when price moves away from equilibrium</h2> <p class="demo-intro">Move the price away from the equilibrium point and watch quantity demanded, quantity supplied and the gap. Equilibrium is the intersection of the two curves, not a fixed number.</p> </header>     <div class="demo-grid"> <div class="demo-controls"> <div class="demo-field"> <label for="equilibrium-price"><span>Market price</span><output data-for="price">30</output></label> <input id="equilibrium-price" data-role="price" data-default="30" type="range" min="10" max="50" step="1" value="30"> </div> <p class="demo-hint">Linear example in the article: Qd = 120 − 2P, Qs = 20 + P; equilibrium is about 33.3.</p> </div> <div class="demo-output"> <div class="demo-stats"> <div class="demo-stat"><span>Quantity demanded</span><strong data-out="qd">—</strong></div> <div class="demo-stat"><span>Quantity supplied</span><strong data-out="qs">—</strong></div> <div class="demo-stat"><span>Gap</span><strong data-out="gap">—</strong></div> </div> <div class="demo-chart"> <p class="demo-chart-label">Quantity demanded and supplied at this price</p> <div class="demo-bars demo-bars-compact" data-chart="equilibrium"></div> </div> <p class="demo-action" data-out="state"></p> </div> </div>      <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Distinguish demand and supply curves from market equilibrium, and explain how equilibrium price and quantity form.</li><li>Distinguish movements along a curve from shifts of the curve, and analyze an exogenous change with a four-step process.</li><li>Explain the assumptions, comparative-static meaning and limits of the supply-and-demand model.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <p class="muted"> None. </p> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/what-economics-studies/">ECO-001 · What Economics Studies</a> </li><li> <a href="/en/learn/scarcity-and-choice/">ECO-002 · Scarcity and Choice</a> </li><li> <a href="/en/learn/opportunity-cost/">ECO-003 · Opportunity Cost and Sunk Cost</a> </li><li> <a href="/en/learn/margin-and-incentives/">ECO-004 · Margin and Incentives</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 3.1 Demand, Supply, and Equilibrium in Markets for Goods and Services</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Demand and supply curves relate price and quantity; equilibrium is their intersection, and movements along a curve differ from shifts.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/3-3-changes-in-equilibrium-price-and-quantity-the-four-step-process" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 3.3 Changes in Equilibrium Price and Quantity: The Four-Step Process</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: A four-step process analyzes a new equilibrium after a curve shifts: draw the initial model, identify the affected curve, determine the shift direction, and compare equilibria.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/supply-demand-equilibrium/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

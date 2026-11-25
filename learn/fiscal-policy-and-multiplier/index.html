@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>财政政策与乘数 · 巫妖投资</title><meta name="description" content="财政政策通过政府支出与税收影响总需求；乘数把初始支出变化放大为更大的均衡产出变化，但受漏出、挤出与供给约束限制。"><link rel="canonical" href="https://economics.51invest.com/learn/fiscal-policy-and-multiplier/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/fiscal-policy-and-multiplier/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/fiscal-policy-and-multiplier/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/fiscal-policy-and-multiplier/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/fiscal-policy-and-multiplier/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">财政政策与乘数</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">财政政策与乘数</h1> <p class="article-summary">财政政策通过政府支出与税收影响总需求；乘数把初始支出变化放大为更大的均衡产出变化，但受漏出、挤出与供给约束限制。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M12 · 财政与公共经济</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>8 分钟 · 12 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>财政政策</strong>（fiscal policy）是政府通过支出与税收影响经济 [1][3]。<strong>乘数</strong>（multiplier）是自主支出每变化一单位引起的均衡产出变化 [2]；政府购买乘数（也称支出乘数，expenditure multiplier）<code>k_G = 1 ÷ (1 - MPC)</code>，一次性税收乘数 <code>k_T = -MPC ÷ (1 - MPC)</code>，其中 MPC 为边际消费倾向。财政政策既包括相机抉择的支出与税收调整，也包括随周期自动变化的自动稳定器 [3]。</p>
+<h2>直觉</h2>
+<p>政府购买 100 个单位，直接形成需求；获得收入的家庭按 MPC 消费一部分，商家再获得收入并继续支出。若 MPC=0.6，第一轮 100，第二轮 60，第三轮 36……总和为 <code>100 ÷ (1-0.6)=250</code>。这个多轮收入—支出过程就是乘数效应 [2]。减税先增加可支配收入，再按 MPC 转化为消费，因此同样规模下通常小于政府购买 [3]。</p>
+<h2>正式表达</h2>
+<p><code>MPC + MPS = 1</code>，MPS 为边际储蓄倾向。</p>
+<p><code>k_G = 1 ÷ (1 - MPC) = 1 ÷ MPS</code>；<code>ΔY = k_G × ΔG</code>。</p>
+<p><code>k_T = -MPC ÷ (1 - MPC)</code>；<code>ΔY = k_T × ΔT</code>。</p>
+<p>若 <code>ΔG = ΔT</code>，平衡预算乘数为 1，<code>ΔY = ΔG</code>。模型假设价格固定、存在闲置产能、利率不变、封闭经济、一次性税收，且家庭不因预期未来税收而调整储蓄。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>挤出效应。</strong> 政府借款推高利率，可能减少私人投资；乘数因此变小 [3]。</li>
+<li><strong>进口漏出。</strong> 部分需求流向进口，小型开放经济体的乘数通常更小 [3]。</li>
+<li><strong>李嘉图等价。</strong> 家庭若预期未来增税，可能把减税储蓄起来。</li>
+<li><strong>供给约束。</strong> 接近充分就业时，扩张更多推高价格而非产出 [3]。</li>
+<li><strong>时滞与政治。</strong> 支出与减税的选择常带有政治偏好 [1]；识别、立法、执行都需要时间。</li>
+<li><strong>乘数不唯一。</strong> 估算随国家、时期、工具与经济状态变化，也受货币条件与财政可持续性影响 [3]；支出乘数通常大于减税和转移支付乘数，但并非必然。</li>
+</ol>
+<p>边界说明：税收乘数公式、平衡预算乘数等于 1、李嘉图等价与三类政策时滞四点，均不在登记来源的 supports 之内；本文把它们作为教科书通识与模型假设给出，属方法学表述，不是登记来源的引证结论。</p>
+<h2>例子与计算</h2>
+<p>假设 MPC=0.6（边际消费倾向是无量纲比例），政府购买增加 100 个单位；下文“单位”指同一个未指明的货币单位，不使用任何国家的财政数据：</p>
+<p><code>k_G = 1 ÷ (1 - 0.6) = 2.5</code>；<code>ΔY = 2.5 × 100 = 250</code> 个单位。</p>
+<p>一次性减税 100 个单位：</p>
+<p><code>k_T = -0.6 ÷ 0.4 = -1.5</code>；<code>ΔY = -1.5 × (-100) = +150</code> 个单位。</p>
+<p>平衡预算情形为 <code>ΔY = 2.5 × 100 + (-1.5) × 100 = 100</code> 个单位。</p>
+<table>
+<thead>
+<tr>
+<th>措施</th>
+<th align="right">假设变化（单位）</th>
+<th align="right">乘数</th>
+<th align="right">均衡产出变化（单位）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>政府购买</td>
+<td align="right">+100</td>
+<td align="right">2.5</td>
+<td align="right">+250</td>
+</tr>
+<tr>
+<td>一次性减税</td>
+<td align="right">-100</td>
+<td align="right">-1.5</td>
+<td align="right">+150</td>
+</tr>
+<tr>
+<td>平衡预算</td>
+<td align="right">+100 支出、+100 税收</td>
+<td align="right">—</td>
+<td align="right">+100</td>
+</tr>
+</tbody></table>
+<p>以上均为教学假设：封闭经济、固定价格、无挤出、一次性税；现实乘数通常不同。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-mult-title fig-mult-desc" viewBox="0 0 420 215" width="100%">
+    <title id="fig-mult-title">同等规模财政措施的产出效应</title>
+    <desc id="fig-mult-desc">三根零基线柱，比例每单位 0.5 像素：政府购买增加一百，均衡产出增加二百五十，柱高一百二十五像素；一次性减税一百，产出增加一百五十，柱高七十五像素；平衡预算增加一百支出与一百税收，产出增加一百，柱高五十像素。</desc>
+    <line x1="60" y1="180" x2="380" y2="180" stroke="var(--border)" stroke-width="2"></line>
+    <rect x="90" y="55" width="60" height="125" fill="var(--accent)" opacity="0.85"></rect>
+    <rect x="190" y="105" width="60" height="75" fill="var(--accent)" opacity="0.6"></rect>
+    <rect x="290" y="130" width="60" height="50" fill="var(--gold)" opacity="0.85"></rect>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="60" y="20">均衡产出变化（零基线，每 1 单位 = 0.5 像素）</text>
+      <text x="106" y="50">+250</text>
+      <text x="206" y="100">+150</text>
+      <text x="306" y="125">+100</text>
+      <text x="84" y="200">购买 +100（×2.5）</text>
+      <text x="184" y="200">减税 100（×1.5）</text>
+      <text x="284" y="200">平衡预算（×1.0）</text>
+    </g>
+  </svg>
+  <figcaption>图 1：同样 100 单位的财政动作，均衡产出变化分别为 +250（购买乘数 2.5）、+150（减税乘数 1.5）与 +100（平衡预算乘数 1.0）。柱自零基线起、每单位 0.5 像素；三组数字就是正文表内 措施 × 乘数 的结果，属教学假设。</figcaption>
+</figure>
+
+<h2>图解：100 怎样变成 250</h2>
+<figure id="figure-multiplier-rounds">
+  <svg role="img" aria-labelledby="fig-mult-rounds-title fig-mult-rounds-desc" viewBox="0 0 380 300" width="100%">
+    <title id="fig-mult-rounds-title">乘数的五段：100 变成 250</title>
+    <desc id="fig-mult-rounds-desc">横向堆叠条总长三百像素，按一百、六十、三十六、二十一点六和余下三十二点四分段；前四段每段为上一段的百分之六十，最后一段是第五轮及以后各轮之和，五段合计二百五十。</desc>
+    <text x="20" y="22" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">政府购买 100，分轮进入收入与支出</text>
+    <text x="20" y="43" font-size="9.5" fill="var(--muted)" font-family="inherit">MPC = 0.6｜每轮只把上一轮的 60% 带入下一轮</text>
+    <text x="20" y="58" font-size="9.5" fill="var(--muted)" font-family="inherit">每段金额</text>
+    <rect x="40" y="82" width="120" height="46" fill="var(--accent)" opacity="0.9" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="160" y="82" width="72" height="46" fill="var(--accent)" opacity="0.72" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="232" y="82" width="43.2" height="46" fill="var(--accent)" opacity="0.55" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="275.2" y="82" width="25.92" height="46" fill="var(--accent)" opacity="0.4" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="301.12" y="82" width="38.88" height="46" fill="var(--gold)" opacity="0.55" stroke="var(--surface)" stroke-width="0.8"/>
+    <g fill="var(--secondary)" font-size="10" font-weight="600" text-anchor="middle" font-family="inherit">
+      <text x="100" y="74">100</text>
+      <text x="196" y="74">60</text>
+      <text x="253.6" y="74">36</text>
+      <text x="288.2" y="74">21.6</text>
+      <text x="320.6" y="74">32.4</text>
+    </g>
+    <line x1="40" y1="143" x2="340" y2="143" stroke="var(--border)" stroke-width="1"/>
+    <g fill="var(--muted)" font-size="9" text-anchor="middle" font-family="inherit">
+      <text x="100" y="158">第 1 轮</text>
+      <text x="196" y="158">第 2 轮</text>
+      <text x="253.6" y="158">第 3 轮</text>
+      <text x="288.2" y="158">第 4 轮</text>
+      <text x="320.6" y="158">其余</text>
+    </g>
+    <text x="340" y="176" font-size="10.5" font-weight="650" fill="var(--text)" text-anchor="end" font-family="inherit">合计 250</text>
+    <text x="190" y="204" font-size="11" font-weight="600" fill="var(--text)" text-anchor="middle" font-family="inherit">100 + 60 + 36 + 21.6 + 32.4 = 250</text>
+    <text x="190" y="225" font-size="10.5" fill="var(--accent)" text-anchor="middle" font-family="inherit">100 ÷ (1 − 0.6) = 250</text>
+    <text x="20" y="250" font-size="9.2" fill="var(--muted)" font-family="inherit">40% 未进入下一轮；本算例只含储蓄漏出，未计税收、进口与挤出。</text>
+    <text x="20" y="268" font-size="9.2" fill="var(--muted)" font-family="inherit">“其余 32.4”是第 5 轮及以后各轮之和，不是单独一轮。</text>
+  </svg>
+  <figcaption>图 2：政府购买 100 单位、MPC=0.6 时，支出按 100、60、36、21.6 和余下 32.4 分轮累加，总额 250。前四轮各把上一轮的 60% 带入下一轮，余下 32.4 是第 5 轮及以后各轮之和；40% 漏出。这是封闭经济、固定价格、无挤出的教学算例，不是财政数据。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>乘数总是大于 1。</strong> 开放经济、挤出、供给受限或信心效应下，乘数可能小于 1，甚至为负 [3]。</p>
+<p><strong>政府购买和减税乘数相同。</strong> 政府购买直接进入总需求；减税先经过储蓄漏出，通常较小 [3]。</p>
+<p><strong>乘数是常数。</strong> 它依赖模型、闲置产能、利率反应、进口和预期 [3]。</p>
+<p><strong>财政政策只有支出。</strong> 税收、转移支付和自动稳定器同样重要 [1][3]。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>税收</h3>
+<p><strong>定义</strong>：税收是政府强制征收的收入，用于公共支出、再分配和稳定经济，税基和税率共同决定负担。</p>
+<p><strong>机制</strong>：税收改变工作、投资、消费和选址激励；累进、累退和比例税对分配影响不同，归宿取决于供需弹性。</p>
+<p><strong>例子</strong>：例如对含糖饮料征税，若生产者能转嫁，消费者支付更高价格，购买量下降幅度取决于弹性。</p>
+<p><strong>边界</strong>：税收不是免费收入；征管成本、避税、资本流动和地下经济会侵蚀税基，过高税率也可能减少总产出。</p>
+<h3>支出</h3>
+<p><strong>定义</strong>：政府支出是公共消费、投资、转移支付和利息等支出，提供公共品、社会保障和需求支持。</p>
+<p><strong>机制</strong>：支出通过购买商品、补贴家庭和投资基础设施影响总需求与供给能力；结构比总量更决定长期效果。</p>
+<p><strong>例子</strong>：例如修建地铁既是当期需求，也降低通勤成本、扩大劳动力市场，形成长期供给收益。</p>
+<p><strong>边界</strong>：支出不是越多越好；低效项目、腐败、挤占私人投资和债务利息会降低回报，转移支付还需防漏和激励设计。</p>
+<h3>乘数</h3>
+<p><strong>定义</strong>：乘数是一单位财政支出或减税引起的总产出变化的倍数，反映支出的再循环效应。</p>
+<p><strong>机制</strong>：乘数大小取决于边际消费倾向、闲置产能、税率、进口和利率反应；经济萧条时通常更高。</p>
+<p><strong>例子</strong>：例如政府修路支付工资，工人消费带动本地商店收入，商店再进货，形成多轮支出。</p>
+<p><strong>边界</strong>：乘数不是固定常数；供给瓶颈、价格上升、债务担忧和货币政策抵消会使其接近零甚至为负。</p>
+<h3>公债</h3>
+<p><strong>定义</strong>：公债是政府未偿还的借款余额，发行债券弥补赤字并连接当前支出与未来税负。</p>
+<p><strong>机制</strong>：债务可持续性取决于利率、增长率、初级赤字和期限结构；内债与外债、本币与外币风险不同。</p>
+<p><strong>例子</strong>：例如政府发债建学校，若学校提升生产率和税基，未来偿债能力可能增强；若只用于经常支出则压力更大。</p>
+<p><strong>边界</strong>：公债不是家庭债务的简单类比；主权可征税、滚续和货币融资，但也有违约、通胀和挤占私人融资的风险。</p>
+<h3>社保</h3>
+<p><strong>定义</strong>：社会保障是通过缴费或税收筹资、对养老、医疗、失业和贫困风险进行集合保障的制度。</p>
+<p><strong>机制</strong>：现收现付用当期缴费支付当期受益，基金积累把缴费投资起来；人口、工资增长和收益率决定可持续性。</p>
+<p><strong>例子</strong>：例如老龄化使养老金缴费者减少、领取者增加，现收现付制度需要提高缴费、延后退休或降低替代率。</p>
+<p><strong>边界</strong>：社保不是纯储蓄；代际契约、再分配和劳动激励相互交织，资格规则、便携性和基金治理会影响效果。</p>
+<h3>财政货币关系和公共选择</h3>
+<p><strong>定义</strong>：财政货币关系指政府预算、债务管理与央行货币操作如何相互影响；公共选择研究政治规则如何塑造财政决定。</p>
+<p><strong>机制</strong>：财政扩张可能迫使央行配合或推高利率；央行购债、透支和最后贷款人角色会模糊边界，规则与独立性是关键。</p>
+<p><strong>例子</strong>：例如政府大举发债时，若央行同时购债压低利率，市场可能担心财政货币化，通胀预期上升。</p>
+<p><strong>边界</strong>：没有单一最优制度；选举周期、利益集团和预算软约束会导致顺周期支出，央行独立性也不能消除财政风险。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：GDP 与国民经济核算（ECO-011）、经济周期（ECO-018）。</li>
+<li>延伸：货币政策传导（ECO-019）、宏观情景分析（INV-006）、消费与储蓄（ECO-015）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">财政政策与乘数：机制链</title>
+    <desc id="fig-batch-chain-desc">财政政策与乘数 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">财政政策与乘数：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">财政政策通过政府支出</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">与税收影响总需求；乘…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">财政政策通过政府支</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">出与税收影响总需求</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">；乘数把初始支出变</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">化放大为更大的均衡</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">产出变化，但受漏出…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：财政政策（fisca</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">l policy）是政府通…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：财政政策（fis</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">cal policy）是政</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">府通过支出与税收影</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">响经济 。乘数（mul</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">tiplier）是自主支…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">假设 MPC=0.6（边际</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">消费倾向是无量纲比例…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">假设 MPC=0.6（边</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">际消费倾向是无量纲</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">比例），政府购买增</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">加 100 个单位；下</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">文“单位”指同一个…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 3：财政政策与乘数的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">财政政策与乘数：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">财政政策与乘数：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">挤出效应。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">乘数总是大于 1。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：财政政策与乘数的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">财政政策与乘数：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">财政政策与乘数：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">财政政策通过政府支出与税</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收影响总需求；乘数把初始…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">挤出效应。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">乘数总是大于 1。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 5：财政政策与乘数的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> MPC=0.75 时，政府购买乘数与一次性税收乘数各是多少？</li>
+<li><strong>计算：</strong> MPC=0.8，政府购买增加 50 个单位。简单模型下均衡产出增加多少？若挤出使有效乘数降为 3，增加多少？</li>
+<li><strong>适用条件：</strong> 为什么现实中的财政乘数可能小于简单模型？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li><code>k_G = 1 ÷ (1-0.75) = 4</code>；<code>k_T = -0.75 ÷ 0.25 = -3</code>。</li>
+<li>简单模型 <code>k_G = 1 ÷ (1-0.8) = 5</code>，<code>ΔY = 5 × 50 = 250</code> 个单位；有效乘数为 3 时，<code>ΔY = 3 × 50 = 150</code> 个单位。</li>
+<li>挤出、进口漏出、李嘉图等价、供给约束、时滞与不确定性都会使实际乘数小于简单模型。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<p>正文中的 [1][2][3] 对应以下来源。</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;30.4 Using Fiscal Policy to Fight Recession, Unemployment, and Inflation.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation">https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation</a>（访问日期：2026-10-30）</li>
+<li>同上书，&quot;25.2 The Building Blocks of Keynesian Analysis.&quot; <a href="https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis">https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis</a>（访问日期：2026-10-30）</li>
+<li>Horton, Mark, and Asmaa El-Ganainy. &quot;Fiscal Policy: Taking and Giving Away.&quot; International Monetary Fund. <a href="https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy">https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用乘数计算政府购买、减税与平衡预算三种措施的均衡产出变化，并解释大小次序</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能指出漏出、挤出与供给约束如何使实际乘数小于简单公式值</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用乘数计算政府购买、减税与平衡预算三种措施的均衡产出变化，并解释大小次序</li><li>能指出漏出、挤出与供给约束如何使实际乘数小于简单公式值</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li><li> <a href="/learn/business-cycle/">ECO-018 · 经济周期</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/monetary-policy-transmission/">ECO-019 · 货币政策传导</a> </li><li> <a href="https://invest.51invest.com/learn/macro-scenario-analysis/">INV-006 · 宏观情景分析</a> </li><li> <a href="/learn/consumption-and-saving/">ECO-015 · 消费与储蓄</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 30.4 Using Fiscal Policy to Fight Recession, Unemployment, and Inflation</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：财政政策是使用政府支出与税收政策影响经济路径；扩张性财政政策通过增加支出或减税使总需求外移，收缩性政策使其内移；使用支出还是减税常带有政治偏好。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 25.2 The Building Blocks of Keynesian Analysis</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：支出乘数指支出变化引起大于一比一的 GDP 变化；其原因是甲方的支出成为乙方的收入，并引发后续支出与收入；乘数在正负方向都起作用，且部分支出乘数可能小于 1。</p> </div><div class="source"> <a href="https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy" rel="noopener noreferrer" target="_blank">Fiscal Policy: Taking and Giving Away</a> <p>Mark Horton; Asmaa El-Ganainy · International Monetary Fund</p> <p>访问：2026-10-30 · 许可：IMF terms: linking permitted, personal non-commercial use only</p> <p>支持论点：财政政策是使用政府支出与税收影响经济；GDP = C + I + G + NX，政府直接控制 G，并通过税收、转移支付与支出影响 C、I、NX；自动稳定器无需政府新行动即可发挥作用；乘数受储蓄与进口漏出、货币条件、财政可持续性影响，支出措施通常大于减税或转移支付，小型开放经济体通常更小；约束包括通胀担忧、外汇储备、汇率压力与挤出；乘数在开放经济、挤出、供给受限或信心效应下可能小于 1，甚至为负。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/fiscal-policy-and-multiplier/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

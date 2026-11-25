@@ -1,0 +1,306 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>收入分配与不平等 · 巫妖投资</title><meta name="description" content="收入分配描述收入在家庭之间的分布；五分位份额、洛伦兹曲线和基尼系数衡量不平等，但口径决定结论。"><link rel="canonical" href="https://economics.51invest.com/learn/income-distribution-and-inequality/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/income-distribution-and-inequality/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/income-distribution-and-inequality/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/income-distribution-and-inequality/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/income-distribution-and-inequality/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">收入分配与不平等</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">收入分配与不平等</h1> <p class="article-summary">收入分配描述收入在家庭之间的分布；五分位份额、洛伦兹曲线和基尼系数衡量不平等，但口径决定结论。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M16 · 发展制度与政治经济</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 12 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>收入分配</strong>（income distribution）指收入在要素所有者、家庭或个人之间的分布；<strong>不平等</strong>（inequality）是这种分布的差异程度。功能性分配关注劳动、资本等要素报酬份额；个人分配关注谁得到多少收入。<strong>这两分法是本文的用语</strong>：本站取回的 15.4 与 15.5 两页正文（剥标签后）均无 functional distribution、factor share、labor share、market income、before taxes、after taxes、purchasing power、equivalence、family size、capital gains、mobility、Gini 词面，15.4 只逐字给出 &quot;Measure income distribution in quintiles&quot; 与 &quot;Calculate and graph a Lorenz curve&quot; 这类衡量步骤[1]，不区分功能性个人分配。</p>
+<h2>直觉</h2>
+<p>把家庭按收入从低到高排队，分成人数相等的五组（五分位）[1]。若完全平均，每组应得 20%。最高组占 50%、最低组占 5%，差距很大。洛伦兹曲线把累计人口份额与累计收入份额对应；曲线离 45 度线越远，不平等越高 [1]。基尼系数把这一差距压缩为一个 0 到 1 的数值，乘 100 就是 0 到 100 的基尼指数；两种刻度下 0 都表示完全平等，另一端都表示完全不平等 [3]。</p>
+<h2>正式表达</h2>
+<ul>
+<li>五分位份额 = 该组收入 / 总收入，以百分比计，无量纲 [1]。</li>
+<li>洛伦兹曲线 L(p)：人口累计份额 p 对应的收入累计份额，L(0)=0，L(1)=1，且 L(p) ≤ p；p 与 L(p) 均为 0 到 1 的份额 [1]。</li>
+<li>基尼系数 <code>G = 1 - 2∫₀¹ L(p) dp</code>（标准公式，本文给出），无量纲，取值 0（完全平等）到 1（完全不平等）；乘 100 即 0–100 的基尼指数，0 为完全平等、100 为完全不平等 [3]。</li>
+<li>最高/最低五分位比 = 最高组份额 / 最低组份额，是比值，无量纲。</li>
+</ul>
+<p>基尼系数是单一汇总值，不同分布可能得到相同数值；它还依赖收入定义、单位与分析层面。</p>
+<h2>适用条件</h2>
+<ol>
+<li>收入定义：市场收入、税前/税后、可支配收入、实物福利；不同定义不可直接比较。<strong>本条为本文所列</strong>（本站取回的 15.4 与 15.5 两页正文（剥标签后）均无 functional distribution、factor share、labor share、market income、before taxes、after taxes、purchasing power、equivalence、family size、capital gains、mobility、Gini 词面，市场收入／税前税后等口径词面在两页均无）。</li>
+<li>单位：个人还是家庭；家庭规模与等价规模会改变结果。<strong>本条为本文所列</strong>（本站取回的 15.4 与 15.5 两页正文（剥标签后）均无 functional distribution、factor share、labor share、market income、before taxes、after taxes、purchasing power、equivalence、family size、capital gains、mobility、Gini 词面，equivalence／family size 词面同样为 0）。</li>
+<li>数据：住户调查可能漏掉最高收入、资本收益与非正规经济。<strong>本条为本文所列</strong>（本站取回的 15.4 与 15.5 两页正文（剥标签后）均无 functional distribution、factor share、labor share、market income、before taxes、after taxes、purchasing power、equivalence、family size、capital gains、mobility、Gini 词面，capital gains 与 underreport 类词面为 0）。</li>
+<li>基尼系数是汇总指标：相同数值可能对应不同分布，需结合五分位、洛伦兹曲线与流动性。<strong>本条为本文的读法</strong>：来源只逐字定义基尼系数衡量收入分布偏离完全平等的程度、0 与 100 的端点含义[3]，&quot;同一数值可对应不同分布&quot;与&quot;要结合流动性&quot;是本文推论。</li>
+<li>跨国比较需统一购买力平价、年份与口径。<strong>本条为本文所列</strong>（本站取回的 15.4 与 15.5 两页正文（剥标签后）均无 functional distribution、factor share、labor share、market income、before taxes、after taxes、purchasing power、equivalence、family size、capital gains、mobility、Gini 词面，purchasing power 词面为 0）。</li>
+<li>规范与因果：不平等影响增长的渠道有争议，不能把相关性写成因果。</li>
+</ol>
+<p>再分配、机会阶梯（ladder of opportunity）与遗产税等政策可改变收入分配，但存在平等与产出之间的权衡 [2]；评估时要写明按税前还是税后收入衡量、以及谁得到收益。</p>
+<p>测量之外，成因同样是分配研究的问题：OpenStax 把家庭结构的变化（例如单身家庭比例上升）与工资分布的变化（技术与全球化对不同技能工人的影响不同）列为收入不平等的来源之一[1]。这句话的作用在于限定基尼系数的读法：同一数值既可能来自工资结构的变化，也可能来自家庭构成或退休年龄结构的变化，三种情况下合适的政策着力点并不相同；而本文的三条登记来源不足以判断各因素各占多少，因此不给成因排序。</p>
+<h2>例子与计算</h2>
+<p>五户收入 10、20、30、40、100，合计 200，均以同一货币单位计（本文不指定币种，也不指定年份与收入口径）。每户各自构成一个五分位组，份额即该户收入除以合计：5%、10%、15%、20%、50%；最高/最低比为 <code>50% ÷ 5% = 10</code>。洛伦兹点为 (20%,5%)、(40%,15%)、(60%,30%)、(80%,50%)、(100%,100%)。按梯形面积，每段宽 0.2，曲线下面积 <code>0.2×[(0+0.05)/2 + (0.05+0.15)/2 + (0.15+0.30)/2 + (0.30+0.50)/2 + (0.50+1.00)/2] = 0.30</code>，基尼系数 <code>1 - 2×0.30 = 0.40</code>，乘 100 得基尼指数 40。份额、比值与基尼系数只依赖收入的相对分布，与币种和单位大小无关。以上为教学假设。</p>
+<table>
+<thead>
+<tr>
+<th>家庭</th>
+<th align="right">收入（同一货币单位）</th>
+<th align="right">累计人口份额</th>
+<th align="right">累计收入份额</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td align="right">10</td>
+<td align="right">20%</td>
+<td align="right">5%</td>
+</tr>
+<tr>
+<td>B</td>
+<td align="right">20</td>
+<td align="right">40%</td>
+<td align="right">15%</td>
+</tr>
+<tr>
+<td>C</td>
+<td align="right">30</td>
+<td align="right">60%</td>
+<td align="right">30%</td>
+</tr>
+<tr>
+<td>D</td>
+<td align="right">40</td>
+<td align="right">80%</td>
+<td align="right">50%</td>
+</tr>
+<tr>
+<td>E</td>
+<td align="right">100</td>
+<td align="right">100%</td>
+<td align="right">100%</td>
+</tr>
+</tbody></table>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-lorenz-title fig-lorenz-desc" viewBox="0 0 320 300" width="100%">
+    <title id="fig-lorenz-title">假设收入分布的洛伦兹曲线</title>
+    <desc id="fig-lorenz-desc">横轴为累计人口份额，纵轴为累计收入份额；虚线为 45 度完全平等线，实线为洛伦兹曲线。着色区域是 45 度线与曲线之间的楔形，其面积为 0.20（= 对角线下三角形面积 0.50 减曲线下面积 0.30），基尼系数等于楔形面积除以三角形面积：0.20 ÷ 0.50 = 0.40。曲线下面积 0.30 在正文计算，图中未着色。</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="50" y1="260" x2="280" y2="260"></line>
+      <line x1="50" y1="260" x2="50" y2="30"></line>
+    </g>
+    <polygon points="50,260 280,30 234,145 188,191 142,225.5 96,248.5 50,260" fill="var(--accent-soft)"></polygon>
+    <line x1="50" y1="260" x2="280" y2="30" stroke="var(--muted)" stroke-width="1.4" stroke-dasharray="4 4"></line>
+    <polyline points="50,260 96,248.5 142,225.5 188,191 234,145 280,30" fill="none" stroke="var(--accent)" stroke-width="2"></polyline>
+    <g fill="var(--muted)" font-size="10" font-family="inherit">
+      <text x="50" y="276" text-anchor="middle">0</text>
+      <text x="165" y="276" text-anchor="middle">50%</text>
+      <text x="280" y="276" text-anchor="middle">100%</text>
+      <text x="43" y="263" text-anchor="end">0</text>
+      <text x="43" y="148" text-anchor="end">50%</text>
+      <text x="43" y="33" text-anchor="end">100%</text>
+      <text x="165" y="294" text-anchor="middle">累计人口份额</text>
+      <text x="14" y="145" text-anchor="middle" transform="rotate(-90 14 145)">累计收入份额</text>
+    </g>
+    <text x="238" y="78" fill="var(--muted)" font-size="10" font-family="inherit">45° 线</text>
+    <text x="214" y="176" fill="var(--accent)" font-size="10" font-family="inherit">洛伦兹曲线</text>
+  </svg>
+  <figcaption>图 1：五户收入 10、20、30、40、100 的洛伦兹曲线。着色的只是 45 度线与曲线之间的楔形，其面积按顶点坐标用鞋带公式核算为 0.20；曲线下面积 0.30 与基尼系数 0.40 由正文给出（基尼 = 1 − 2×0.30 = 0.40 = 0.20 ÷ 0.50）。图中没有把曲线下区域着色，读者不必把阴影读成 0.30。图为教学假设，不是真实数据。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>基尼系数越高一定越穷。</strong> 不平等与收入水平是两件事。</p>
+<p><strong>收入不平等等于财富不平等。</strong> 两者口径不同，15.5 逐字区分：&quot;Income is a flow of money received, often measured on a monthly or an annual basis. Wealth is the sum of the value of all assets, including money in bank accounts, financial investments, a pension fund, and the value of a home. In calculating wealth, one must subtract all debts&quot;[2]；该节并逐字写 &quot;In the United States, the wealth distribution is more unequal than the income distribution, because differences in income can accumulate over time to make even larger differences in wealth.&quot;[2]——即就美国而言财富分布比收入分布更不平等，机制是收入差距可随时间累积。&quot;受资产价格影响&quot;是本文补充，该节此处未谈资产价格波动。</p>
+<p><strong>基尼系数 0.4 表示 40% 的人贫困。</strong> 它是分布汇总，不是贫困率。</p>
+<p><strong>只看基尼系数就够。</strong> 还需看洛伦兹曲线、五分位与流动性。</p>
+<p><strong>再分配没有成本。</strong> 15.5 逐字把学习要点写成 &quot;Show the tradeoff between incentives and income equality&quot;[2]，即激励与收入平等之间存在权衡；至于&quot;效率&quot;与&quot;行政能力&quot;两项，本站取回的 15.4 与 15.5 两页正文（剥标签后）均无 functional distribution、factor share、labor share、market income、before taxes、after taxes、purchasing power、equivalence、family size、capital gains、mobility、Gini 词面，故这两词是本文的概括，不属该页表述。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>贫困</h3>
+<p><strong>定义</strong>：贫困是收入或消费不足以满足基本需要，也可按能力、健康和社会排斥多维定义。</p>
+<p><strong>机制</strong>：贫困由增长、就业、教育、价格、转移支付和冲击共同决定；绝对线与相对线回答不同问题。</p>
+<p><strong>例子</strong>：例如食品价格上涨会使刚脱贫家庭重新陷入贫困，即使平均收入未变。</p>
+<p><strong>边界</strong>：贫困线选择影响人数和政策目标；自给农业、非正规就业和家庭内部不平等会使统计漏掉真实贫困。</p>
+<h3>不平等</h3>
+<p><strong>定义</strong>：不平等是收入、财富、机会和健康等在不同人群间的差距，分为结果不平等和机会不平等。</p>
+<p><strong>机制</strong>：市场收入、税收转移、资本回报、教育和继承共同塑造分配；基尼系数、份额和流动性描述不同维度。</p>
+<p><strong>例子</strong>：例如前 10% 家庭持有大部分金融资产，资产涨价使财富差距扩大，而工资差距可能较小。</p>
+<p><strong>边界</strong>：不平等本身不是单一善恶；适度激励与过度集中都可能有害，测量受避税、实物收入和寿命影响。</p>
+<h3>产权</h3>
+<p><strong>定义</strong>：产权是使用、收益、转让和排除他人使用资源的权利束，可由法律、习俗和合同界定。</p>
+<p><strong>机制</strong>：清晰、可执行且可转让的产权降低交易成本、鼓励投资；产权不清会导致冲突、短视和资源耗竭。</p>
+<p><strong>例子</strong>：例如农民拥有可转让土地承包权，更愿意修水利和长期投入；若随时可能被收回，投资意愿下降。</p>
+<p><strong>边界</strong>：产权不是绝对所有权；登记、执法、征收和习惯权利决定实际强度，正式产权也可能排除弱势使用者。</p>
+<h3>国家能力</h3>
+<p><strong>定义</strong>：国家能力是国家征收、执行法律、提供公共品和维持秩序的组织与财政能力。</p>
+<p><strong>机制</strong>：能力来自税收、官僚、信息、基础设施和合法性；战争、危机和资源租金既可建设也可削弱能力。</p>
+<p><strong>例子</strong>：例如能有效征税和登记财产的国家，更有能力修路、办学和应对灾害。</p>
+<p><strong>边界</strong>：强能力不等于好结果；能力可被用于压制或寻租，问责、法治和公民参与决定方向。</p>
+<h3>制度</h3>
+<p><strong>定义</strong>：制度是约束重复互动的正式规则、非正式规范和執行机制，影响激励、交易成本与权力分配。</p>
+<p><strong>机制</strong>：产权、契约、税收、公共品和暴力约束组合决定投资与创新；制度通过组织、路径依赖和反馈自我强化。</p>
+<p><strong>例子</strong>：例如同一技术在两国的采用速度不同，可能源于专利执行、融资渠道和官僚审批差异。</p>
+<p><strong>边界</strong>：制度不是万能解释；文化、地理、技术和外部冲击也重要，制度变量易同义反复，移植需适配本地条件。</p>
+<h3>发展政策和转型</h3>
+<p><strong>定义</strong>：发展政策是政府为增长、减贫和结构转型采取的投资、产业、贸易、教育和制度安排。</p>
+<p><strong>机制</strong>：政策通过公共品、激励和协调影响资源分配；能力、试点、评估和退出机制决定效果，转型还需处理既得利益。</p>
+<p><strong>例子</strong>：例如东亚国家投资基础教育和出口基础设施，配合宏观稳定，形成较快增长；同样政策在别处可能因执行弱而失败。</p>
+<p><strong>边界</strong>：没有通用模板；产业选择、补贴俘获、债务和外部依赖会带来风险，成功案例也有初始条件和幸存者偏差。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：GDP 与国民经济核算（ECO-011）、就业与失业（ECO-014）。</li>
+<li>相关：价格指数与通胀（ECO-013）、消费与储蓄（ECO-015）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">收入分配与不平等：机制链</title>
+    <desc id="fig-batch-chain-desc">收入分配与不平等 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">收入分配与不平等：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">收入分配描述收入在家</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">庭之间的分布；五分位…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收入分配描述收入在</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">家庭之间的分布；五</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">分位份额、洛伦兹曲</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">线和基尼系数衡量不</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">平等，但口径决定结…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：收入分配（incom</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">e distribution）指…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：收入分配（inc</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">ome distribution</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">）指收入在要素所有</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">者、家庭或个人之间</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">的分布；不平等（ine…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">五户收入 10、20、30</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">、40、100，合计…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">五户收入 10、20、</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">30、40、100，合计</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start"> 200，均以同一货币</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">单位计（本文不指定</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">币种，也不指定年份…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：收入分配与不平等的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">收入分配与不平等：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">收入分配与不平等：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收入定义：市场收入、税前/税后、</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">可支配收入、实物福利；不同定义不</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">可直接比较。本条为本文所列（本站</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">取回的 15.4 与 15.5…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">基尼系数越高一定越穷。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：收入分配与不平等的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">收入分配与不平等：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">收入分配与不平等：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收入分配描述收入在家庭之</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">间的分布；五分位份额、洛…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收入定义：市场收入、税前</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">/税后、可支配收入、实物…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">基尼系数越高一定越穷。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：收入分配与不平等的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 哪个指标衡量不平等？A. GDP 增速；B. 基尼系数；C. CPI；D. 失业率。</li>
+<li><strong>计算：</strong> 五户收入 20、30、40、50、60（同一货币单位），求五分位份额、最高/最低比和基尼系数。</li>
+<li><strong>适用条件：</strong> 为什么基尼系数相同的两国福利可能不同？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>B。</li>
+<li>合计 200；份额为 10%、15%、20%、25%、30%；最高/最低比为 <code>30% ÷ 10% = 3</code>。洛伦兹点为 (20%,10%)、(40%,25%)、(60%,45%)、(80%,70%)、(100%,100%)，按宽 0.2 的梯形求和得曲线下面积 0.40，基尼系数 <code>1 - 2×0.40 = 0.20</code>，乘 100 得基尼指数 20。</li>
+<li>两国收入水平、公共服务、价格、组内分布与流动性不同；基尼系数只汇总相对分布，不衡量绝对生活水平。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<p>正文中的 [1][2][3] 对应以下来源。</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;15.4 Income Inequality: Measurement and Causes.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes">https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes</a>（访问日期：2026-11-03）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;15.5 Government Policies to Reduce Income Inequality.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality">https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality</a>（访问日期：2026-11-03）</li>
+<li>World Bank. &quot;Gini index.&quot; <a href="https://data.worldbank.org/indicator/SI.POV.GINI">https://data.worldbank.org/indicator/SI.POV.GINI</a>（访问日期：2026-11-03）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用五分位份额构造洛伦兹曲线并复算基尼系数，说明其取值区间含义</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能指出税前税后、初次再分配三口径如何改变不平等结论</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用五分位份额构造洛伦兹曲线并复算基尼系数，说明其取值区间含义</li><li>能指出税前税后、初次再分配三口径如何改变不平等结论</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li><li> <a href="/learn/employment-and-unemployment/">ECO-014 · 就业与失业</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/price-indices-and-inflation/">ECO-013 · 价格指数与通胀</a> </li><li> <a href="/learn/consumption-and-saving/">ECO-015 · 消费与储蓄</a> </li><li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li><li> <a href="/learn/employment-and-unemployment/">ECO-014 · 就业与失业</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 15.4 Income Inequality: Measurement and Causes</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：五分位把家庭按收入分为人数相等的五组；洛伦兹曲线把累计收入份额与累计人口份额对应；家庭结构变化和工资分布变化（技术、全球化）是收入不平等的原因之一。 2026-11-03 复取（curl 200）并逐字登记学习要点 &quot;Measure income distribution in quintiles&quot; 与 &quot;Calculate and graph a Lorenz curve&quot;；该页不出现 functional distribution／factor share／Gini／market income／purchasing power／equivalence／capital gains／mobility 等词面，因此正文的「功能性/个人分配」对照与口径清单不再挂该页。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 15.5 Government Policies to Reduce Income Inequality</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：再分配、机会阶梯和遗产税等政策可影响收入不平等；该节还讨论平等与产出之间的权衡。 2026-11-03 逐字补三句：收入与财富的区分 &quot;Income is a flow of money received, often measured on a monthly or an annual basis. Wealth is the sum of the value of all assets, including money in bank accounts, financial investments, a pension fund, and the value of a home. In calculating wealth, one must subtract all debts&quot;；就美国而言财富分布更不平等 &quot;In the United States, the wealth distribution is more unequal than the income distribution, because differences in income can accumulate over time to make even larger differences in wealth.&quot;；权衡的学习要点 &quot;Show the tradeoff between incentives and income equality&quot;。该页不出现 efficiency 与 administrative 词面，故「效率」「行政能力」两个词仍属本文概括。</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/SI.POV.GINI" rel="noopener noreferrer" target="_blank">Gini index</a> <p>World Bank · World Bank</p> <p>访问：2026-10-30 · 许可：CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>支持论点：基尼系数衡量收入分布偏离完全平等的程度；0 表示完全平等，100 表示完全不平等；数据来自世界银行贫困与不平等平台。 2026-11-03 复取：该页正文脚本渲染，本机可核逐字串为指标名 &quot;Gini index&quot;；定义与 0/100 端点解释按世行 WDI 元数据口径概述，不冒充逐字引用。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/income-distribution-and-inequality/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

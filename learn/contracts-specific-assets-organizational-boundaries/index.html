@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>合约、专用资产与组织边界：交易成本的价格账 · 巫妖投资</title><meta name="description" content="市场、长期合约和企业内部组织不是三种意识形态，而是三套处理交易成本的办法。专用资产越高，签约双方越容易被“锁定”，事前投资就越可能被事后重新谈判侵蚀；把签约、监督、执行和官僚成本放在同一张账上，才能判断一项交易该放在市场、合约还是企业里。"><link rel="canonical" href="https://economics.51invest.com/learn/contracts-specific-assets-organizational-boundaries/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/contracts-specific-assets-organizational-boundaries/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/contracts-specific-assets-organizational-boundaries/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/contracts-specific-assets-organizational-boundaries/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/contracts-specific-assets-organizational-boundaries/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">合约、专用资产与组织边界：交易成本的价格账</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">合约、专用资产与组织边界：交易成本的价格账</h1> <p class="article-summary">市场、长期合约和企业内部组织不是三种意识形态，而是三套处理交易成本的办法。专用资产越高，签约双方越容易被“锁定”，事前投资就越可能被事后重新谈判侵蚀；把签约、监督、执行和官僚成本放在同一张账上，才能判断一项交易该放在市场、合约还是企业里。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M21 · 法律组织与比较经济</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>6 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>交易成本</strong>（transaction cost）是寻找交易对象、谈判条款、监督履约和处理争议的成本。<strong>资产专用性</strong>（asset specificity）指一项投资在特定关系中价值很高、转到别处价值很低的程度；例如只为一家汽车厂开模的零件、只服务一个客户的定制软件、只连接一座矿山的铁路。<strong>准租金</strong>（quasi-rent）是资产在当前关系中的价值与次优用途价值之差；它测量的是关系一旦中断，投资方会损失多少。<strong>组织边界</strong>（organizational boundary）决定一项交易由市场现货、长期合约、合资/联盟还是企业内部层级来完成[1]。</p>
+<p>本文不讨论“企业越大越好”或“市场越自由越好”，而是把组织选择写成一笔可计算的成本比较：什么时候市场便宜，什么时候合约能省事，什么时候内部化更划算，以及这些答案在什么条件下失效。</p>
+<h2>直觉</h2>
+<p>设想一家零件厂要为整车厂生产一种专用模具。模具投下去以后，只能给这家整车厂用；换客户要重新改造，残值很低。这时，整车厂在合同重新谈判时就有了议价优势：零件厂已经投入，退出会损失惨重，整车厂可以要求降价、延长账期或增加配套服务。零件厂预见到这一点，事前就可能少投资、推迟投资，或者要求更高的合同价格来补偿风险。</p>
+<p>如果双方能写出一份把所有可能情况都规定清楚的合同，问题就小；但未来需求、技术规格、质量争议很难全部预见。于是选择变成：用现货市场（灵活但容易被终止）、用长期合约（稳定但需要监督和救济）、还是把零件厂买下来（用内部命令替代谈判，但增加官僚成本和管理层级）。组织边界不是“谁更道德”，而是哪一种治理方式把签约、监督、执行和剩余控制权的成本压得更低。</p>
+<h2>正式表达</h2>
+<p>设某项资产在当前关系中的价值为 (V_s)，在次优用途中的价值为 (V_a)，则准租金为：</p>
+<p>[
+Q=V_s-V_a
+]</p>
+<p>若事后发生机会主义重新谈判的概率为 (p)，投资方预期损失的准租金为：</p>
+<p>[
+H=pQ
+]</p>
+<p>市场治理的总成本可以写成“签约与监督成本 + 预期套牢损失”：</p>
+<p>[
+M(k)=m_0+h k
+]</p>
+<p>其中 (k) 是资产专用性，(m_0) 是基础签约成本，(h) 是每单位专用性带来的谈判与套牢成本。企业内部层级治理的成本写成：</p>
+<p>[
+G(k)=f+v k
+]</p>
+<p>其中 (f) 是建立层级、预算、人事和内部协调的固定成本，(v) 是每单位专用性增加的内部协调成本。令两者相等，得到组织边界：</p>
+<p>[
+k^*=\frac{f-m_0}{h-v}
+]</p>
+<p>当 (k&lt;k^<em>) 时市场治理更便宜；当 (k&gt;k^</em>) 时层级治理更便宜；当 (h\le v) 时市场成本不会随专用性更快上升，边界不存在，市场始终更便宜（本文推导）。</p>
+<p>合约执行还取决于救济能否真正落地。设违约金为 (D)，胜诉并执行的概率为 (\pi)，诉讼成本为 (C_L)，则守约方预期净回收为：</p>
+<p>[
+E=\pi D-C_L
+]</p>
+<p>只有 (E&gt;0) 时才值得起诉；若执行概率太低或诉讼成本太高，合同里的违约金只是纸面数字。这个条件把“法律条文”与“实际履约”区分开：纸面权利不等于可执行权利[2]。</p>
+<h2>适用条件</h2>
+<ol>
+<li>资产专用性必须可观察、可度量；若专用性只是主观感受，组织比较就缺少可靠刻度（本文判断）。</li>
+<li>合同不可能完全预见未来；技术变化快、需求波动大时，合同缺口更大，关系型治理和内部化的相对优势上升[1]。</li>
+<li>法院、仲裁和行业规范决定合约能否执行；执行成本高时，书面违约金的威慑力会被削弱[2]。</li>
+<li>谈判力量不对称会改变准租金的分配；同一笔专用投资，在双方势均力敌和一方高度依赖时，结果不同[2]。</li>
+<li>声誉、重复交易和社区规范可以替代部分正式合同，但它们只在关系可持续、信息可传播时有效[1]。</li>
+<li>合作社、互助组织和非营利组织的目标不只是利润；它们可能用成员控制替代资本控制，但也会带来治理和融资成本[3]。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设零件厂为整车厂投入 100 万元建设专用模具。模具在当前关系中的价值为 140 万元，在次优用途中的价值为 90 万元，则准租金为：</p>
+<p>[
+Q=140-90=50\text{ 万元}
+]</p>
+<p>若事后重新谈判概率为 40%，预期套牢损失为：</p>
+<p>[
+H=0.4\times50=20\text{ 万元}
+]</p>
+<p>组织成本方面，设市场治理为 (M(k)=8+0.6k)，层级治理为 (G(k)=38+0.2k)，单位均为万元，(k) 以 0 到 100 的专用性指数表示。令两者相等：</p>
+<p>[
+k^*=\frac{38-8}{0.6-0.2}=75
+]</p>
+<table>
+<thead>
+<tr>
+<th align="right">专用性指数</th>
+<th align="right">市场治理成本</th>
+<th align="right">层级治理成本</th>
+<th>较低成本的组织</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">50</td>
+<td align="right">38 万元</td>
+<td align="right">48 万元</td>
+<td>市场</td>
+</tr>
+<tr>
+<td align="right">90</td>
+<td align="right">62 万元</td>
+<td align="right">56 万元</td>
+<td>企业内部</td>
+</tr>
+</tbody></table>
+<p>在 (k=50) 时，市场治理成本 38 万元，低于层级治理的 48 万元；在 (k=90) 时，市场治理成本 62 万元，高于层级治理的 56 万元。边界在 75 附近。以上数字为教学假设，不是某家企业的实际财务数据。</p>
+<p>合约救济方面，设违约金 30 万元、执行概率 60%、诉讼成本 8 万元：</p>
+<p>[
+E=0.6×30-8=10\text{ 万元}
+]</p>
+<p>预期净回收 10 万元，守约方值得起诉。若执行概率降到 20%，则 (E=0.2×30-8=-2) 万元，起诉不划算；此时合同需要担保、仲裁或关系型治理来补足执行。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-mech-title fig-contract-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-contract-mech-title">专用资产到治理模式的机制链</title>
+    <desc id="fig-contract-mech-desc">专用投资形成准租金，准租金带来套牢风险；套牢风险提高市场治理成本，当专用性超过临界点后，企业内部层级治理更便宜。教学机制图。</desc>
+    <rect x="14" y="44" width="132" height="78" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="26" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">专用资产投入</text>
+    <text x="26" y="90" font-size="10" fill="var(--muted)" font-family="inherit">只服务一个关系</text>
+    <text x="26" y="108" font-size="10" fill="var(--muted)" font-family="inherit">转用途价值很低</text>
+    <rect x="164" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="176" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">形成准租金</text>
+    <text x="176" y="90" font-size="10" fill="var(--muted)" font-family="inherit">当前价值 140 万元</text>
+    <text x="176" y="108" font-size="10" fill="var(--muted)" font-family="inherit">次优价值 90 万元</text>
+    <rect x="314" y="44" width="132" height="78" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="326" y="68" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">套牢与重新谈判</text>
+    <text x="326" y="90" font-size="10" fill="var(--muted)" font-family="inherit">概率 40%</text>
+    <text x="326" y="108" font-size="10" fill="var(--muted)" font-family="inherit">预期损失 20 万元</text>
+    <line x1="146" y1="83" x2="164" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="296" y1="83" x2="314" y2="83" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="14" y="148" width="432" height="54" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="172" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">市场治理成本上升：签约、监督与套牢损失</text>
+    <text x="28" y="192" font-size="10" fill="var(--muted)" font-family="inherit">M(k)=8+0.6k；专用性越高，市场越难锁定合作。</text>
+    <rect x="14" y="220" width="432" height="54" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="28" y="244" font-size="10.5" fill="var(--text)" font-family="inherit">越过临界点改用层级：G(k)=38+0.2k</text>
+    <text x="28" y="264" font-size="10" fill="var(--muted)" font-family="inherit">临界点 k*=75；内部命令替代重复谈判，但增加官僚成本。</text>
+  </svg>
+  <figcaption>图 1：专用资产到治理模式的机制链。专用投资形成准租金，准租金带来套牢风险；专用性越高，市场治理成本越高，超过临界点后企业内部层级更便宜。教学机制图，数字为假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-example-title fig-contract-example-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-contract-example-title">市场与层级治理成本算例</title>
+    <desc id="fig-contract-example-desc">专用性指数 50 时市场成本 38 万元、层级成本 48 万元；指数 90 时市场成本 62 万元、层级成本 56 万元；临界点在 75 附近。单位为万元，教学算例。</desc>
+    <rect x="14" y="40" width="432" height="42" rx="7" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="66" font-size="10.5" fill="var(--text)" font-family="inherit">成本函数：M(k)=8+0.6k；G(k)=38+0.2k；单位万元</text>
+    <rect x="14" y="96" width="204" height="122" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">专用性指数 50</text>
+    <text x="28" y="144" font-size="10" fill="var(--muted)" font-family="inherit">市场治理：38 万元</text>
+    <text x="28" y="164" font-size="10" fill="var(--muted)" font-family="inherit">层级治理：48 万元</text>
+    <text x="28" y="184" font-size="10" fill="var(--text)" font-family="inherit">市场更低，选择市场</text>
+    <rect x="242" y="96" width="204" height="122" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="120" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">专用性指数 90</text>
+    <text x="256" y="144" font-size="10" fill="var(--muted)" font-family="inherit">市场治理：62 万元</text>
+    <text x="256" y="164" font-size="10" fill="var(--muted)" font-family="inherit">层级治理：56 万元</text>
+    <text x="256" y="184" font-size="10" fill="var(--text)" font-family="inherit">层级更低，选择内部化</text>
+    <text x="70" y="250" font-size="10" fill="var(--muted)" font-family="inherit">两条成本线在专用性 75 附近相等；低于 75 用市场，高于 75 用层级。</text>
+    <text x="70" y="274" font-size="10" fill="var(--muted)" font-family="inherit">单位：万元、专用性指数；教学假设，不是企业实际报表。</text>
+  </svg>
+  <figcaption>图 2：市场与层级治理成本算例。专用性 50 时市场 38 万元、层级 48 万元；专用性 90 时市场 62 万元、层级 56 万元；临界点在 75 附近。单位为万元，数字为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-compare-title fig-contract-compare-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-contract-compare-title">低专用性与高专用性的组织对比</title>
+    <desc id="fig-contract-compare-desc">低专用性交易适合现货市场和短期合约，谈判成本低、退出容易；高专用性交易适合长期合约或内部化，以降低套牢和重新谈判。教学对比图。</desc>
+    <rect x="14" y="38" width="204" height="160" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">低专用性</text>
+    <text x="28" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">标准零件、通用软件、短周期服务</text>
+    <rect x="32" y="104" width="168" height="34" rx="5" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="44" y="126" font-size="9.8" fill="var(--text)" font-family="inherit">现货市场：灵活、谈判成本低</text>
+    <rect x="32" y="146" width="168" height="34" rx="5" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="44" y="168" font-size="9.8" fill="var(--text)" font-family="inherit">短期合约：按批次续签</text>
+    <text x="28" y="192" font-size="9.6" fill="var(--muted)" font-family="inherit">套牢风险低，退出容易。</text>
+    <rect x="242" y="38" width="204" height="160" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="256" y="62" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">高专用性</text>
+    <text x="256" y="84" font-size="9.6" fill="var(--muted)" font-family="inherit">定制模具、专用管线、专属技能</text>
+    <rect x="260" y="104" width="168" height="34" rx="5" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="272" y="126" font-size="9.8" fill="var(--text)" font-family="inherit">长期合约：担保、仲裁、关系治理</text>
+    <rect x="260" y="146" width="168" height="34" rx="5" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="272" y="168" font-size="9.8" fill="var(--text)" font-family="inherit">内部化：命令、预算与统一所有权</text>
+    <text x="256" y="192" font-size="9.6" fill="var(--muted)" font-family="inherit">套牢风险高，需要更强治理。</text>
+    <rect x="14" y="238" width="432" height="58" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="28" y="262" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit">组织形式的对比维度：专用性、合同缺口、执行成本、谈判力量</text>
+    <text x="28" y="282" font-size="10" fill="var(--muted)" font-family="inherit">没有一种组织形式在所有交易中都便宜；临界点随交易特征移动。</text>
+  </svg>
+  <figcaption>图 3：低专用性与高专用性的组织对比。低专用性适合现货与短期合约；高专用性适合长期合约、担保仲裁或内部化。教学对比图，不对应具体企业。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-contract-boundary-title fig-contract-boundary-desc" viewBox="0 0 460 340" width="100%">
+    <title id="fig-contract-boundary-title">组织边界的六个适用条件</title>
+    <desc id="fig-contract-boundary-desc">检查专用性能否度量、合同缺口多大、法院执行是否可靠、谈判力量是否对称、声誉能否替代合同、组织目标是否只有利润；任一项改变，市场与层级的比较都会变。教学边界清单。</desc>
+    <rect x="14" y="34" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="58" font-size="10.3" fill="var(--text)" font-family="inherit">1. 专用性能度量吗？主观专用性缺少可靠刻度</text>
+    <rect x="14" y="80" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="104" font-size="10.3" fill="var(--text)" font-family="inherit">2. 合同缺口有多大？技术快变与需求波动会扩大缺口</text>
+    <rect x="14" y="126" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="150" font-size="10.3" fill="var(--text)" font-family="inherit">3. 救济能执行吗？执行概率与诉讼成本决定违约金效力</text>
+    <rect x="14" y="172" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="196" font-size="10.3" fill="var(--text)" font-family="inherit">4. 谈判力量对称吗？一方高度依赖会改变准租金分配</text>
+    <rect x="14" y="218" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="242" font-size="10.3" fill="var(--text)" font-family="inherit">5. 声誉能替代合同吗？只在关系可持续、信息可传播时有效</text>
+    <rect x="14" y="264" width="432" height="38" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="28" y="288" font-size="10.3" fill="var(--text)" font-family="inherit">6. 组织目标只有利润吗？合作社与非营利组织另有治理成本</text>
+    <text x="28" y="326" font-size="10" fill="var(--muted)" font-family="inherit">六项都改变结论；组织边界不是一次性选择，会随技术和关系变化。</text>
+  </svg>
+  <figcaption>图 4：组织边界的六个适用条件。专用性度量、合同缺口、救济执行、谈判力量、声誉与组织目标会改变市场与层级的比较；教学边界清单，不是企业法务意见。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“内部化一定省交易成本。”</strong> 内部化把外部谈判变成内部命令，但增加了预算、人事、协调和代理成本。只有当专用性高到市场治理的套牢损失超过官僚成本时，内部化才更便宜[1]。</p>
+<p><strong>“合同写了违约金就一定能执行。”</strong> 违约金只是纸面权利；执行概率低、诉讼成本高或对方没有可执行资产时，守约方的预期回收可能为负[2]。</p>
+<p><strong>“合作社没有交易成本。”</strong> 合作社用成员控制替代资本控制，可以减少某些套牢，但成员异质、决策程序和融资约束会带来另一组治理成本[3]。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-031 法律组织与比较经济</strong> 的关系：母文给出法律激励、组织与制度比较的总体框架；本文把专用资产、准租金、合约救济和组织边界写成可计算的价格账。</li>
+<li>与 <strong>ECO-034 信息不对称、信号与机制设计</strong> 的关系：套牢问题的一部分来自信息不对称和不可观察的投入；机制设计可以提供信号、抵押和分阶段合约。</li>
+<li>与 <strong>ECO-041 关税、配额与贸易协定</strong> 的关系：跨境合约和贸易协定同样要处理承诺与执行，但国家间没有统一的高一级法院，救济机制不同。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>概念辨别：准租金与利润有什么区别？为什么专用资产会让投资方面临套牢风险？</li>
+<li>计算：某项专用投资在当前关系中价值 180 万元、次优用途价值 120 万元，重新谈判概率 30%。准租金和预期套牢损失各是多少？若概率降到 15%，损失变成多少？</li>
+<li>适用条件：一家企业准备把供应商内部化。请列出三项需要先核对的条件，并说明为什么“交易成本高”本身不足以证明内部化更好。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>Oliver E. Williamson, <em>Transaction-Cost Economics: The Governance of Contractual Relations</em>, <em>Journal of Law and Economics</em> 22(2), 1979. <a href="https://doi.org/10.1086/466942">https://doi.org/10.1086/466942</a></li>
+<li>World Bank, <em>World Development Report 2017: Governance and the Law</em>. <a href="https://www.worldbank.org/en/publication/wdr2017">https://www.worldbank.org/en/publication/wdr2017</a></li>
+<li>International Cooperative Alliance, <em>Cooperative Identity, Values &amp; Principles</em>. <a href="https://www.ica.coop/en/cooperatives/cooperative-identity">https://www.ica.coop/en/cooperatives/cooperative-identity</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>用当前关系价值与次优用途价值计算准租金，并用重新谈判概率计算预期套牢损失。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>把市场治理成本和层级治理成本写成专用性的函数，求出组织边界并解释边界两侧的选择。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>用当前关系价值与次优用途价值计算准租金，并用重新谈判概率计算预期套牢损失。</li><li>把市场治理成本和层级治理成本写成专用性的函数，求出组织边界并解释边界两侧的选择。</li><li>用违约金、执行概率和诉讼成本计算预期净回收，并列出组织边界的六个适用条件。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/law-organizations-and-comparative-economies/">ECO-031 · 法律组织与比较经济</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/law-organizations-and-comparative-economies/">ECO-031 · 法律组织与比较经济</a> </li><li> <a href="/learn/information-asymmetry-signaling-and-mechanism-design/">ECO-034 · 信息不对称、信号与机制设计</a> </li><li> <a href="/learn/tariffs-quotas-trade-agreements-welfare-ledger/">ECO-041 · 关税、配额与贸易协定：贸易壁垒的福利账</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://doi.org/10.1086/466942" rel="noopener noreferrer" target="_blank">Transaction-Cost Economics: The Governance of Contractual Relations</a> <p>Oliver E. Williamson · Journal of Law and Economics 22(2), University of Chicago Press</p> <p>访问：2026-11-24 · 许可：University of Chicago Press journal article; subscription access; citation only</p> <p>支持论点：用于核对交易成本经济学把资产专用性、机会主义与治理结构放在同一分析框架，并区分市场、混合与层级治理；正文的准租金、套牢概率和成本函数为本文教学表达。</p> </div><div class="source"> <a href="https://www.worldbank.org/en/publication/wdr2017" rel="noopener noreferrer" target="_blank">World Development Report 2017: Governance and the Law</a> <p>World Bank · World Bank</p> <p>访问：2026-11-24 · 许可：World Bank publication; cite-only under World Bank terms of use</p> <p>支持论点：用于核对有效治理需要可信承诺、协调与合作，法律的实际作用取决于权力关系、执行能力与社会规范；正文不把某一国司法效率写成统计。</p> </div><div class="source"> <a href="https://www.ica.coop/en/cooperatives/cooperative-identity" rel="noopener noreferrer" target="_blank">Cooperative Identity, Values &amp; Principles</a> <p>International Cooperative Alliance · International Cooperative Alliance</p> <p>访问：2026-11-24 · 许可：ICA website; citation only</p> <p>支持论点：用于核对合作社是成员自愿联合、共同拥有和民主控制的企业，成员控制与资本控制的目标不同；正文不把合作社写成没有治理成本的组织。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/contracts-specific-assets-organizational-boundaries/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Fiscal Policy and the Multiplier · 51Invest</title><meta name="description" content="Fiscal policy affects aggregate demand through spending and taxes; the multiplier magnifies an initial change in spending, but leakages, crowding out, and supply limits constrain it."><link rel="canonical" href="https://economics.51invest.com/en/learn/fiscal-policy-and-multiplier/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/fiscal-policy-and-multiplier/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/fiscal-policy-and-multiplier/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/fiscal-policy-and-multiplier/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/fiscal-policy-and-multiplier/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Fiscal Policy and the Multiplier</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Fiscal Policy and the Multiplier</h1> <p class="article-summary">Fiscal policy affects aggregate demand through spending and taxes; the multiplier magnifies an initial change in spending, but leakages, crowding out, and supply limits constrain it.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M12 · 财政与公共经济</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>8 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p><strong>Fiscal policy</strong> is the use of government spending and taxation to influence the economy [1][3]. A <strong>multiplier</strong> is the equilibrium-output change from a one-unit change in autonomous spending [2]. The government-purchase multiplier (also called the expenditure multiplier) is <code>k_G = 1 ÷ (1 - MPC)</code>, and the lump-sum tax multiplier is <code>k_T = -MPC ÷ (1 - MPC)</code>, where MPC is the marginal propensity to consume. Fiscal policy includes both discretionary changes and automatic stabilizers, which move with the cycle without new action [3].</p>
+<h2>Intuition</h2>
+<p>Government purchases of 100 units add demand directly; recipients spend a fraction, MPC, of that income, and the firms receiving that spending spend again. With MPC = 0.6, the rounds are 100, 60, 36, ... and total <code>100 ÷ (1 - 0.6) = 250</code>. This round-by-round income-spending chain is the multiplier effect [2]. A tax cut raises disposable income first and then raises consumption by the MPC fraction, so it is usually smaller than a purchase of the same size [3].</p>
+<h2>Formal expression</h2>
+<p><code>MPC + MPS = 1</code>, where MPS is the marginal propensity to save.</p>
+<p><code>k_G = 1 ÷ (1 - MPC) = 1 ÷ MPS</code>; <code>ΔY = k_G × ΔG</code>.</p>
+<p><code>k_T = -MPC ÷ (1 - MPC)</code>; <code>ΔY = k_T × ΔT</code>.</p>
+<p>If <code>ΔG = ΔT</code>, the balanced-budget multiplier is 1, so <code>ΔY = ΔG</code>. The model assumes fixed prices, spare capacity, constant interest rates, a closed economy, lump-sum taxes, and no Ricardian response.</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>Crowding out.</strong> Government borrowing can raise interest rates and reduce private investment, shrinking the multiplier [3].</li>
+<li><strong>Import leakage.</strong> Some demand leaks to imports, so multipliers are typically smaller in small open economies [3].</li>
+<li><strong>Ricardian equivalence.</strong> Households expecting future tax increases may save a tax cut instead of spending it.</li>
+<li><strong>Supply constraints.</strong> Near full employment, expansion raises prices more than output [3].</li>
+<li><strong>Lags and politics.</strong> The spending-versus-tax choice often carries a political preference [1]; recognition, legislation, and implementation take time.</li>
+<li><strong>No single multiplier.</strong> Estimates vary by country, period, instrument, and state of the economy, and are shaped by monetary conditions and fiscal sustainability [3]; spending multipliers are often larger than tax or transfer multipliers, but not always.</li>
+</ol>
+<p>Scope note: the tax-multiplier formula, the balanced-budget multiplier equal to one, Ricardian equivalence, and the three policy lags are all outside the supports of the registered sources. This article presents them as textbook convention and model assumptions — a methodological statement, not a conclusion quoted from the registered sources.</p>
+<h2>Worked example</h2>
+<p>Suppose MPC = 0.6 (the marginal propensity to consume is a dimensionless ratio) and government purchases rise by 100 units; below, &quot;units&quot; means one and the same unspecified currency unit, and no country&#39;s fiscal data are used:</p>
+<p><code>k_G = 1 ÷ (1 - 0.6) = 2.5</code>; <code>ΔY = 2.5 × 100 = 250</code> units.</p>
+<p>A lump-sum tax cut of 100 units:</p>
+<p><code>k_T = -0.6 ÷ 0.4 = -1.5</code>; <code>ΔY = -1.5 × (-100) = +150</code> units.</p>
+<p>With <code>ΔG = ΔT = 100</code>, the balanced-budget case is <code>ΔY = 2.5 × 100 + (-1.5) × 100 = 100</code> units.</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th align="right">Assumed change (units)</th>
+<th align="right">Multiplier</th>
+<th align="right">Output change (units)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Government purchases</td>
+<td align="right">+100</td>
+<td align="right">2.5</td>
+<td align="right">+250</td>
+</tr>
+<tr>
+<td>Lump-sum tax cut</td>
+<td align="right">-100</td>
+<td align="right">-1.5</td>
+<td align="right">+150</td>
+</tr>
+<tr>
+<td>Balanced budget</td>
+<td align="right">+100 spending, +100 taxes</td>
+<td align="right">—</td>
+<td align="right">+100</td>
+</tr>
+</tbody></table>
+<p>All figures are teaching assumptions: closed economy, fixed prices, no crowding out, lump-sum taxes; real-world multipliers generally differ.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-mult-title fig-mult-desc" viewBox="0 0 420 215" width="100%">
+    <title id="fig-mult-title">Output effects of fiscal measures of the same size</title>
+    <desc id="fig-mult-desc">Three zero-based bars at 0.5 pixels per unit: government purchases up 100 raise equilibrium output by 250, a bar 125 pixels tall; a lump-sum tax cut of 100 raises output by 150, a bar 75 pixels tall; a balanced-budget move of 100 spending against 100 taxes raises output by 100, a bar 50 pixels tall.</desc>
+    <line x1="60" y1="180" x2="380" y2="180" stroke="var(--border)" stroke-width="2"></line>
+    <rect x="90" y="55" width="60" height="125" fill="var(--accent)" opacity="0.85"></rect>
+    <rect x="190" y="105" width="60" height="75" fill="var(--accent)" opacity="0.6"></rect>
+    <rect x="290" y="130" width="60" height="50" fill="var(--gold)" opacity="0.85"></rect>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="60" y="20">Change in equilibrium output (zero baseline, 0.5 px per unit)</text>
+      <text x="106" y="50">+250</text>
+      <text x="206" y="100">+150</text>
+      <text x="306" y="125">+100</text>
+      <text x="60" y="200" font-size="10.2">purchases +100 (×2.5)</text>
+      <text x="170" y="200" font-size="10.2">tax cut of 100 (×1.5)</text>
+      <text x="270" y="200" font-size="10.2">balanced budget (×1.0)</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: for the same 100 units of fiscal action, equilibrium output changes by +250 (purchases multiplier 2.5), +150 (tax-cut multiplier 1.5) and +100 (balanced-budget multiplier 1.0). Bars start at zero at 0.5 pixels per unit; the three values are exactly the measure × multiplier products in the table above, and are teaching assumptions.</figcaption>
+</figure>
+
+<h2>Diagram: how 100 becomes 250</h2>
+<figure id="figure-multiplier-rounds">
+  <svg role="img" aria-labelledby="fig-mult-rounds-title-en fig-mult-rounds-desc-en" viewBox="0 0 380 300" width="100%">
+    <title id="fig-mult-rounds-title-en">The five segments of the multiplier: 100 becomes 250</title>
+    <desc id="fig-mult-rounds-desc-en">A 300-pixel stacked bar divided into 100, 60, 36, 21.6 and 32.4 in later rounds; the first four segments are each 60% of the previous one, and the last segment is the sum of round 5 onward; the five parts total 250.</desc>
+    <text x="20" y="22" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">Government purchases of 100, entering income round by round</text>
+    <text x="20" y="43" font-size="9.5" fill="var(--muted)" font-family="inherit">MPC = 0.6 | each round carries only 60% into the next</text>
+    <text x="20" y="58" font-size="9.5" fill="var(--muted)" font-family="inherit">Amount per segment</text>
+    <rect x="40" y="82" width="120" height="46" fill="var(--accent)" opacity="0.9" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="160" y="82" width="72" height="46" fill="var(--accent)" opacity="0.72" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="232" y="82" width="43.2" height="46" fill="var(--accent)" opacity="0.55" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="275.2" y="82" width="25.92" height="46" fill="var(--accent)" opacity="0.4" stroke="var(--surface)" stroke-width="0.8"/>
+    <rect x="301.12" y="82" width="38.88" height="46" fill="var(--gold)" opacity="0.55" stroke="var(--surface)" stroke-width="0.8"/>
+    <g fill="var(--secondary)" font-size="10" font-weight="600" text-anchor="middle" font-family="inherit">
+      <text x="100" y="74">100</text>
+      <text x="196" y="74">60</text>
+      <text x="253.6" y="74">36</text>
+      <text x="288.2" y="74">21.6</text>
+      <text x="320.6" y="74">32.4</text>
+    </g>
+    <line x1="40" y1="143" x2="340" y2="143" stroke="var(--border)" stroke-width="1"/>
+    <g fill="var(--muted)" font-size="9" text-anchor="middle" font-family="inherit">
+      <text x="100" y="158">Round 1</text>
+      <text x="196" y="158">Round 2</text>
+      <text x="253.6" y="158">Round 3</text>
+      <text x="288.2" y="158">Round 4</text>
+      <text x="320.6" y="158">Later</text>
+    </g>
+    <text x="340" y="176" font-size="10.5" font-weight="650" fill="var(--text)" text-anchor="end" font-family="inherit">Total 250</text>
+    <text x="190" y="204" font-size="11" font-weight="600" fill="var(--text)" text-anchor="middle" font-family="inherit">100 + 60 + 36 + 21.6 + 32.4 = 250</text>
+    <text x="190" y="225" font-size="10.5" fill="var(--accent)" text-anchor="middle" font-family="inherit">100 ÷ (1 − 0.6) = 250</text>
+    <text x="20" y="250" font-size="9.2" fill="var(--muted)" font-family="inherit">40% does not enter the next round; this example includes saving leakage only.</text>
+    <text x="20" y="268" font-size="9.2" fill="var(--muted)" font-family="inherit">“Later rounds, 32.4” is the sum from round 5 onward, not a single round.</text>
+  </svg>
+  <figcaption>Figure 2: with government purchases of 100 and MPC = 0.6, spending accumulates as 100, 60, 36, 21.6 and 32.4 in later rounds, totalling 250. The first four rounds carry 60% of the previous round forward, and the remaining 32.4 is the sum of round 5 onward; 40% leaks out. This is a closed-economy, fixed-price, no-crowding-out teaching example, not fiscal data.; sample: the article’s own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>The multiplier is always greater than one.</strong> With imports, crowding out, supply limits, or confidence effects, it can be below one or negative [3].</p>
+<p><strong>Government purchases and tax cuts have the same multiplier.</strong> Purchases enter demand directly; tax cuts leak into saving first, so they are usually smaller [3].</p>
+<p><strong>The multiplier is fixed.</strong> It depends on the model, spare capacity, interest-rate responses, imports, and expectations [3].</p>
+<p><strong>Fiscal policy is only about spending.</strong> Taxes, transfers, and automatic stabilizers matter too [1][3].</p>
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>taxation</h3>
+<p><strong>Definition</strong>: Taxation is compulsory government revenue for public spending, redistribution and stabilisation; the tax base and rate together determine the burden.</p>
+<p><strong>Mechanism</strong>: Taxes change work, investment, consumption and location incentives; progressive, regressive and proportional taxes distribute burdens differently, and incidence depends on elasticities.</p>
+<p><strong>Example</strong>: For example, a sugar tax may be passed to consumers through higher prices, with the demand fall depending on elasticity.</p>
+<p><strong>Boundary</strong>: Taxes are not free revenue; administration costs, avoidance, capital mobility and informal activity erode the base, and very high rates can reduce output.</p>
+<h3>government spending</h3>
+<p><strong>Definition</strong>: Government spending covers public consumption, investment, transfers and interest, providing public goods, social insurance and demand support.</p>
+<p><strong>Mechanism</strong>: Spending affects demand and supply through purchases, household transfers and infrastructure; composition matters more than the total for long-run results.</p>
+<p><strong>Example</strong>: For example, building a metro adds current demand and lowers commuting costs, widening labour markets and adding supply capacity.</p>
+<p><strong>Boundary</strong>: More spending is not automatically better; low-return projects, corruption, crowding out and interest costs reduce returns, and transfers need targeting and incentive design.</p>
+<h3>multiplier</h3>
+<p><strong>Definition</strong>: The multiplier is the total output change per unit of fiscal spending or tax cut, reflecting re-spending effects.</p>
+<p><strong>Mechanism</strong>: Its size depends on marginal propensity to consume, idle capacity, taxes, imports and interest-rate responses; it is usually larger in a slump.</p>
+<p><strong>Example</strong>: For example, road-building wages are spent at local shops, whose owners restock, generating further rounds of spending.</p>
+<p><strong>Boundary</strong>: The multiplier is not a constant; supply bottlenecks, inflation, debt concerns and monetary offset can push it toward zero or even negative.</p>
+<h3>public debt</h3>
+<p><strong>Definition</strong>: Public debt is the stock of government borrowing outstanding; bond issuance finances deficits and links current spending to future taxes.</p>
+<p><strong>Mechanism</strong>: Sustainability depends on interest rates, growth, the primary deficit and maturity structure; domestic versus foreign and local versus foreign-currency debt carry different risks.</p>
+<p><strong>Example</strong>: For example, debt-financed schools may raise productivity and the tax base, while borrowing for recurrent spending creates more pressure.</p>
+<p><strong>Boundary</strong>: Public debt is not simply household debt; sovereigns can tax, roll over and monetise, but also face default, inflation and crowding out of private finance.</p>
+<h3>social insurance</h3>
+<p><strong>Definition</strong>: Social insurance pools pension, health, unemployment and poverty risks, financed by contributions or taxes.</p>
+<p><strong>Mechanism</strong>: Pay-as-you-go uses current contributions for current benefits, while funded schemes invest contributions; demographics, wage growth and returns determine sustainability.</p>
+<p><strong>Example</strong>: For example, ageing reduces contributors and raises beneficiaries, forcing higher contributions, later retirement or lower replacement rates in a PAYG system.</p>
+<p><strong>Boundary</strong>: Social insurance is not pure saving; intergenerational contracts, redistribution and work incentives interact, and eligibility, portability and governance shape outcomes.</p>
+<h3>fiscal-monetary interaction and public choice</h3>
+<p><strong>Definition</strong>: Fiscal-monetary interaction concerns how budgets, debt management and central-bank operations affect each other; public choice studies how political rules shape fiscal decisions.</p>
+<p><strong>Mechanism</strong>: Fiscal expansion may force central-bank accommodation or raise rates; bond purchases, overdrafts and lender-of-last-resort roles blur boundaries, making rules and independence crucial.</p>
+<p><strong>Example</strong>: For example, if the central bank buys bonds while the government borrows heavily, markets may fear monetisation and inflation expectations rise.</p>
+<p><strong>Boundary</strong>: No single institution is optimal; election cycles, interest groups and soft budget constraints produce procyclical spending, and central-bank independence cannot remove fiscal risk.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Required prerequisite: GDP and National Accounts (ECO-011), The Business Cycle (ECO-018).</li>
+<li>Related reading: Monetary Policy Transmission (ECO-019), Macro Scenario Analysis (INV-006), Consumption and Saving (ECO-015).</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">Fiscal Policy and the Multiplier: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">Fiscal Policy and the Multiplier — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal Policy and the Multiplier: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal policy</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">affects aggregate…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal policy</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">affects aggregat</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">e demand through</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start"> spending and</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">taxes; the…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal policy is…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal policy</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">is the use of</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">government</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">spending and…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Worked example</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose MPC =</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">0.6 (the marginal…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose MPC =</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">0.6 (the margina</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">l propensity to</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">consume is a</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">dimensionless…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 3: Fiscal Policy and the Multiplier — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">Fiscal Policy and the Multiplier: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal Policy and the Multiplier: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal policy is the use of</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">government spending and</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">taxation to influence the</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">economy .…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">The multiplier is always</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">greater than one.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: Fiscal Policy and the Multiplier — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">Fiscal Policy and the Multiplier: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal Policy and the Multiplier: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal policy</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">affects aggregate…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Fiscal policy is the</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">use of government…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">The multiplier is always</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">greater than one.…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 5: Fiscal Policy and the Multiplier — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> If MPC = 0.75, what are the government-purchase and lump-sum tax multipliers?</li>
+<li><strong>Calculation.</strong> If MPC = 0.8 and purchases rise by 50 units, what is the simple-model output gain? What if crowding out cuts the multiplier to 3?</li>
+<li><strong>Conditions.</strong> Why might the real-world fiscal multiplier be smaller than the simple model predicts?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li><code>k_G = 1 ÷ (1 - 0.75) = 4</code>; <code>k_T = -0.75 ÷ 0.25 = -3</code>.</li>
+<li>Simple model: <code>k_G = 1 ÷ (1 - 0.8) = 5</code>, so <code>ΔY = 5 × 50 = 250</code> units; with the multiplier cut to 3, <code>ΔY = 3 × 50 = 150</code> units.</li>
+<li>Crowding out, import leakage, Ricardian equivalence, supply constraints, lags, and uncertainty.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<p>The bracketed numbers in the text refer to the sources below.</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;30.4 Using Fiscal Policy to Fight Recession, Unemployment, and Inflation.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation">https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation</a> (accessed 2026-10-30)</li>
+<li>Same book, &quot;25.2 The Building Blocks of Keynesian Analysis.&quot; <a href="https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis">https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis</a> (accessed 2026-10-30)</li>
+<li>Horton, Mark, and Asmaa El-Ganainy. &quot;Fiscal Policy: Taking and Giving Away.&quot; International Monetary Fund. <a href="https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy">https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy</a> (accessed 2026-10-30)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Compute the output effect of spending, a tax cut and a balanced budget with their multipliers, and explain the ranking</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Show how leakages, crowding out and supply limits make the realised multiplier smaller than the formula</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Compute the output effect of spending, a tax cut and a balanced budget with their multipliers, and explain the ranking</li><li>Show how leakages, crowding out and supply limits make the realised multiplier smaller than the formula</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/gdp-and-national-accounts/">ECO-011 · GDP and National Accounts</a> </li><li> <a href="/en/learn/business-cycle/">ECO-018 · The Business Cycle</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/monetary-policy-transmission/">ECO-019 · Monetary Policy Transmission</a> </li><li> <a href="https://invest.51invest.com/en/learn/macro-scenario-analysis/">INV-006 · Macro Scenario Analysis</a> </li><li> <a href="/en/learn/consumption-and-saving/">ECO-015 · Consumption and Saving</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/30-4-using-fiscal-policy-to-fight-recession-unemployment-and-inflation" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 30.4 Using Fiscal Policy to Fight Recession, Unemployment, and Inflation</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Fiscal policy is the use of government spending and tax policy to influence the path of the economy; expansionary policy shifts aggregate demand outward through higher spending or tax cuts, while contractionary policy shifts it inward; the choice between spending and tax tools often has a political dimension.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/25-2-the-building-blocks-of-keynesian-analysis" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 25.2 The Building Blocks of Keynesian Analysis</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: The expenditure multiplier means a change in spending causes a more than proportionate change in GDP; one person&#39;s spending becomes another&#39;s income and leads to further spending and income; the multiplier works in both directions, and some expenditure multipliers can be less than one.</p> </div><div class="source"> <a href="https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy" rel="noopener noreferrer" target="_blank">Fiscal Policy: Taking and Giving Away</a> <p>Mark Horton; Asmaa El-Ganainy · International Monetary Fund</p> <p>Accessed: 2026-10-30 · License: IMF terms: linking permitted, personal non-commercial use only</p> <p>Supports: Fiscal policy is the use of government spending and taxation to influence the economy; GDP = C + I + G + NX, with government controlling G directly and influencing C, I, and NX through taxes, transfers, and spending; automatic stabilizers act without new legislation; multipliers depend on savings and import leakages, monetary conditions, and fiscal sustainability, tend to be larger for spending than for tax cuts or transfers, and are lower in small open economies; constraints include inflation concerns, reserves, exchange-rate pressure, and crowding out; multipliers can be below one or even negative if expansion raises concerns about fiscal sustainability, in which case the private sector may offset the stimulus by saving more or moving funds offshore.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/fiscal-policy-and-multiplier/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>GDP and National Accounts · 51Invest</title><meta name="description" content="GDP is the market value of final goods and services produced within a country in a period; production, income, and expenditure measures should give the same total."><link rel="canonical" href="https://economics.51invest.com/en/learn/gdp-and-national-accounts/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/gdp-and-national-accounts/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/gdp-and-national-accounts/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/gdp-and-national-accounts/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/gdp-and-national-accounts/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">GDP and National Accounts</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">GDP and National Accounts</h1> <p class="article-summary">GDP is the market value of final goods and services produced within a country in a period; production, income, and expenditure measures should give the same total.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M07 · 宏观核算</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>7 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p><strong>Gross domestic product (GDP)</strong> is the market value of all final goods and services produced within a country or territory in a given period [1]. It can be measured through production (value added), income (factor payments plus production taxes net of subsidies and depreciation), or expenditure (final uses), and the three approaches should agree in theory; OpenStax 19.1 presents the production-side, demand-side and income-side measures as views of the same total[1]. BEA calls GDP a comprehensive measure of U.S. economic activity that measures the value of the final goods and services produced in the United States [2].</p>
+<h2>Intuition</h2>
+<p>Consider a bread chain: a farmer sells wheat for 100 yuan, a mill sells flour for 180 yuan, a bakery sells bread for 300 yuan, and a retailer sells it to consumers for 360 yuan. Summing the four sales gives 940 yuan, but wheat, flour, and bread are intermediate inputs, so direct addition double counts. GDP counts only the final sale of 360 yuan. Value added gives 100 + 80 + 120 + 60 = 360 yuan, the same total.</p>
+<h2>Formal expression</h2>
+<p>The expenditure approach is</p>
+<p><code>Y = C + I + G + (X - M)</code>,</p>
+<p>where C is household consumption, I is business investment and inventory change, G is government purchases, and X - M is net exports [1]. The income approach adds wages, rents, interest, and profits [1]; standard national accounts also include production taxes net of subsidies and depreciation (a standard presentation added here, not attributed to [1]); the production approach adds value added across industries. GDP per capita = GDP ÷ population. GDP is a flow measured in currency per period; comparisons must state nominal or real and whether the data are seasonally adjusted.</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>Only final goods count.</strong> Intermediate inputs are excluded to avoid double counting.</li>
+<li><strong>Production occurs inside the territory.</strong> Under the domestic principle, foreign-owned firms producing locally count, while residents producing abroad do not.</li>
+<li><strong>Only market production is counted.</strong> The textbook states verbatim: &quot;The entire underground economy of services paid “under the table” and illegal sales should be counted, but is not, because it is impossible to track these sales.&quot;[1] and &quot;Also, production of some goods—such as home production as when you make your breakfast—is not counted because these goods are not sold in the marketplace.&quot;[1]. This site did not retrieve the SNA text on estimating own-account production of goods, so no claim about that convention is made here; readers working within SNA should consult its provisions directly.</li>
+<li><strong>GDP is a period flow.</strong> It does not measure wealth stocks, distribution, environmental costs, or leisure.</li>
+<li><strong>Revisions and conventions matter.</strong> The publishing agency states verbatim &quot;Previously published estimates contain historical data and have since been revised.&quot;[2]. For cross-country comparison the conversion basis must be declared: the World Bank keeps &quot;GDP (current US$)&quot; and &quot;GDP, PPP (constant 2021 international $)&quot; as two distinct series[3].</li>
+</ol>
+<h2>Worked example</h2>
+<p>Suppose an economy has C = 600, I = 150, G = 200, X = 120, and M = 170, all in 100 million yuan. Then</p>
+<p><code>GDP = 600 + 150 + 200 + (120 - 170) = 900</code> (100 million yuan),</p>
+<p>and net exports are -50. The shares are shown below. With a population of 30 million, GDP per capita is 900 × 100 million ÷ 30 million = 3,000 yuan. All figures are teaching assumptions.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th align="right">100 million yuan</th>
+<th align="right">Share of GDP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Household consumption C</td>
+<td align="right">600</td>
+<td align="right">66.7%</td>
+</tr>
+<tr>
+<td>Investment I</td>
+<td align="right">150</td>
+<td align="right">16.7%</td>
+</tr>
+<tr>
+<td>Government purchases G</td>
+<td align="right">200</td>
+<td align="right">22.2%</td>
+</tr>
+<tr>
+<td>Net exports X - M</td>
+<td align="right">-50</td>
+<td align="right">-5.6%</td>
+</tr>
+<tr>
+<td>GDP</td>
+<td align="right">900</td>
+<td align="right">100%</td>
+</tr>
+</tbody></table>
+<h2>Figure</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-gdp-title fig-gdp-desc" viewBox="0 0 460 230" width="100%">
+    <title id="fig-gdp-title">Production, income, and expenditure views of GDP</title>
+    <desc id="fig-gdp-desc">Three boxes show production, income, and expenditure, each with GDP of 900 (100 million yuan). Arrows link them in a loop, showing that the same output can be measured as value added, factor income, or final expenditure.</desc>
+    <defs>
+      <marker id="gdp-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+        <path d="M0,0 L6,3 L0,6 Z" fill="var(--muted)"></path>
+      </marker>
+    </defs>
+    <g fill="var(--surface-2)" stroke="var(--border)" stroke-width="1.2">
+      <rect x="20" y="64" width="120" height="70" rx="6"></rect>
+      <rect x="170" y="64" width="120" height="70" rx="6"></rect>
+      <rect x="320" y="64" width="120" height="70" rx="6"></rect>
+    </g>
+    <g fill="none" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#gdp-arrow)">
+      <line x1="140" y1="92" x2="168" y2="92"></line>
+      <line x1="290" y1="92" x2="318" y2="92"></line>
+      <path d="M380,134 L380,180 L80,180 L80,136"></path>
+    </g>
+    <g fill="var(--text)" font-size="12" font-family="inherit" text-anchor="middle">
+      <text x="80" y="88">production</text>
+      <text x="80" y="106" fill="var(--muted)">value added 900</text>
+      <text x="230" y="84">income</text>
+      <text x="230" y="102" fill="var(--muted)" font-size="8">wages, interest, rents, profits</text>
+      <text x="230" y="120" fill="var(--muted)">900</text>
+      <text x="380" y="88">expenditure</text>
+      <text x="380" y="106" fill="var(--muted)">C+I+G+NX 900</text>
+      <text x="230" y="205" fill="var(--muted)" font-size="11">three views of the same output (hypothetical)</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: in this hypothetical economy GDP is 900 (100 million yuan), and the production, income, and expenditure views give the same total. The income box lists factor incomes only; production taxes net of subsidies and depreciation are not itemised. A teaching diagram, not real statistics.; sample: the article’s own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>GDP is wealth.</strong> GDP is a period flow; wealth is a stock. Disaster reconstruction can raise GDP without raising welfare.</p>
+<p><strong>Intermediate goods are included.</strong> Only final output or value added is counted.</p>
+<p><strong>Used homes and stock trades count.</strong> Only the associated commissions and services count, not the asset transfer [1].</p>
+<p><strong>GDP growth equals a proportional rise in living standards.</strong> Population, distribution, home production, environment, and leisure also matter.</p>
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>GDP</h3>
+<p><strong>Definition</strong>: GDP is the market value of final goods and services produced within a country in a period, measured by location rather than ownership nationality.</p>
+<p><strong>Mechanism</strong>: The expenditure approach sums consumption, investment, government spending and net exports; production sums value added, and income sums factor payments, all of which should reconcile.</p>
+<p><strong>Example</strong>: For example, a foreign-owned factory producing and exporting locally adds to local GDP, while profit repatriation does not change the location basis.</p>
+<p><strong>Boundary</strong>: GDP excludes household work, the informal economy, environmental depletion and distribution; real GDP also removes price effects, so it is not a welfare total.</p>
+<h3>income and expenditure</h3>
+<p><strong>Definition</strong>: National accounts record the same economic flow from production, income and expenditure sides, which should balance in theory.</p>
+<p><strong>Mechanism</strong>: Firm value added becomes wages, profits, rents and taxes; households then consume, save or pay taxes, and saving returns to spending through finance and investment.</p>
+<p><strong>Example</strong>: For example, workers consume part of wages and save the rest; banks lend the saving to firms for investment, closing the aggregate flow.</p>
+<p><strong>Boundary</strong>: Statistical discrepancies, inventories and transfers prevent exact equality; income differs from disposable income, and taxes and transfers must be handled separately.</p>
+<h3>price index</h3>
+<p><strong>Definition</strong>: A price index tracks the weighted price of a basket of goods and services over time and is used to strip out inflation.</p>
+<p><strong>Mechanism</strong>: Laspeyres uses base-period quantities and Paasche current quantities; weights, substitution and quality adjustment determine index bias.</p>
+<p><strong>Example</strong>: For example, food has a large CPI weight, so food inflation lifts the index while cheaper electronics offset only part.</p>
+<p><strong>Boundary</strong>: A price index is not a single cost of living; household baskets, regional prices and quality change create different experiences, and chained weighting and hedonic adjustment are imperfect.</p>
+<h3>nominal and real</h3>
+<p><strong>Definition</strong>: Nominal values use current prices, while real values use constant prices or purchasing power; real equals nominal adjusted by a price index.</p>
+<p><strong>Mechanism</strong>: Real growth removes inflation and the real interest rate is approximately the nominal rate minus inflation; comparisons require a common base and definition.</p>
+<p><strong>Example</strong>: For example, a 5 percent nominal wage rise with 6 percent inflation cuts purchasing power by about 1 percent, so a raise is not necessarily better living.</p>
+<p><strong>Boundary</strong>: The nominal-real split does not settle distribution or quality; different indices, after-tax income and regions can produce different adjusted conclusions.</p>
+<h3>employment</h3>
+<p><strong>Definition</strong>: Employment counts people with paid work or self-employment during a reference period, while unemployment counts those able to work, seeking work and without a job.</p>
+<p><strong>Mechanism</strong>: The unemployment rate divides unemployed by the labour force; participation, hours, temporary work and hidden unemployment add context.</p>
+<p><strong>Example</strong>: For example, working one hour a week can count as employed, yet low pay and short hours mean poor job quality.</p>
+<p><strong>Boundary</strong>: Definitions vary by survey, age, informal work and leave rules; a falling unemployment rate may reflect falling participation, not necessarily stronger demand.</p>
+<h3>sector accounts</h3>
+<p><strong>Definition</strong>: Sector accounts record flows and balance sheets separately for households, firms, government, finance and the external sector, showing who saves and who borrows.</p>
+<p><strong>Mechanism</strong>: A sector&#39;s net saving and investment gap is financed through financial transactions; government deficits, household saving and current-account deficits are accounting-linked.</p>
+<p><strong>Example</strong>: For example, household saving flows into banks, which buy government bonds, linking the deficit to the surplus through finance.</p>
+<p><strong>Boundary</strong>: Sector accounts are accounting identities, not causal proof; within-sector heterogeneity and valuation changes hide risk, and timing and consolidation matter.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Prerequisites: none.</li>
+<li>Related: nominal and real values (ECO-012); stocks and flows (RES-002).</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">GDP and National Accounts: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">GDP and National Accounts — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP and National Accounts: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP is the</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">market value of…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP is the</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">market value of</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">final goods and</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">services produce</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">d within a…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Gross domestic…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Gross domestic</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">product (GDP)</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">is the market</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">value of all…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Worked example</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose an</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">economy has C =…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose an</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">economy has C =</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">600, I = 150, G</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">= 200, X = 120,</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">and M = 170…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 2: GDP and National Accounts — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">GDP and National Accounts: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP and National Accounts: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Gross domestic product</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">(GDP) is the market value</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">of all final goods and</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">services produced within a…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP is wealth.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 3: GDP and National Accounts — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">GDP and National Accounts: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">GDP and National Accounts: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP is the market</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">value of final goods…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Gross domestic</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">product (GDP) is the…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP is wealth.</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: GDP and National Accounts — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> Which counts in GDP? A. A used car purchase; B. A broker&#39;s commission; C. A government transfer; D. Home production kept out of the market.</li>
+<li><strong>Calculation.</strong> If C = 800, I = 200, G = 250, X = 150, and M = 200 (100 million yuan), what are GDP, net exports, and the consumption share?</li>
+<li><strong>Conditions.</strong> Why can GDP not measure social welfare directly?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>B. The commission is a current service. The used car (produced in an earlier period) and the transfer (no current production) are excluded. D is excluded under the market boundary this article adopts: the textbook lists non-market home production as not counted[1]. Under the SNA convention for own-account production of goods the answer would differ; this site did not retrieve that text, so the question is answered on the textbook boundary — the same basis as condition 3 above, so the two no longer conflict.</li>
+<li><code>GDP = 800 + 200 + 250 + (150 - 200) = 1,200</code> (100 million yuan); net exports are -50; consumption is <code>800 ÷ 1,200 ≈ 66.7%</code>.</li>
+<li>GDP omits distribution, home production, environmental costs, and leisure, and it is not a wealth stock; per capita and real values are supplements, not welfare measures.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;19.1 Measuring the Size of the Economy: Gross Domestic Product.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/19-1-measuring-the-size-of-the-economy-gross-domestic-product">https://openstax.org/books/principles-economics-3e/pages/19-1-measuring-the-size-of-the-economy-gross-domestic-product</a> (accessed 2026-10-30)</li>
+<li>U.S. Bureau of Economic Analysis. &quot;Gross Domestic Product.&quot; <a href="https://www.bea.gov/data/gdp/gross-domestic-product">https://www.bea.gov/data/gdp/gross-domestic-product</a> (accessed 2026-10-30)</li>
+<li>World Bank. &quot;GDP (current US$).&quot; <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD</a> (accessed 2026-10-30)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Decide what counts in GDP under the expenditure approach and explain why the production, income and expenditure routes agree</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>State what national accounting misses: underground activity, non-market services and quality change</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Decide what counts in GDP under the expenditure approach and explain why the production, income and expenditure routes agree</li><li>State what national accounting misses: underground activity, non-market services and quality change</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <p class="muted"> None. </p> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/nominal-and-real-values/">ECO-012 · Nominal and Real Values</a> </li><li> <a href="https://research.51invest.com/en/learn/stocks-and-flows/">RES-002 · Stocks and Flows</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/19-1-measuring-the-size-of-the-economy-gross-domestic-product" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 19.1 Measuring the Size of the Economy: Gross Domestic Product</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports:  The same page&#39;s market boundary reads verbatim &quot;The entire underground economy of services paid “under the table” and illegal sales should be counted, but is not, because it is impossible to track these sales.&quot; and &quot;Also, production of some goods—such as home production as when you make your breakfast—is not counted because these goods are not sold in the marketplace.&quot;</p> </div><div class="source"> <a href="https://www.bea.gov/data/gdp/gross-domestic-product" rel="noopener noreferrer" target="_blank">Gross Domestic Product</a> <p>U.S. Bureau of Economic Analysis · U.S. Bureau of Economic Analysis</p> <p>Accessed: 2026-10-30 · License: U.S. Government work (public domain), 17 U.S.C. §105</p> <p>Supports:  The same page states verbatim &quot;Previously published estimates contain historical data and have since been revised.&quot;, with entries for Information on Updates and Previously Published Estimates.</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" rel="noopener noreferrer" target="_blank">GDP (current US$)</a> <p>World Bank · World Bank</p> <p>Accessed: 2026-10-30 · License: CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>Supports:  The indicator switcher on the same page lists &quot;GDP (current US$)&quot;, converted at market exchange rates, and &quot;GDP, PPP (constant 2021 international $)&quot;, converted at purchasing power parity, as two distinct series, so a cross-country comparison must state which conversion it uses. The page&#39;s descriptive text is script-rendered and no PPP definition was retrieved, so this article does not assert how PPP conversion works.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/gdp-and-national-accounts/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

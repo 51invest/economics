@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Production and Cost · 51Invest</title><meta name="description" content="A production function turns inputs into output, and costs depend on output and input prices. This article covers short-run cost and output decisions only. Marginal cost decides whether one more unit is worth making; average variable cost decides whether to shut down in the short run, and average total cost whether the price covers all costs."><link rel="canonical" href="https://economics.51invest.com/en/learn/production-and-cost/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/production-and-cost/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/production-and-cost/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/production-and-cost/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/production-and-cost/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Production and Cost</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Production and Cost</h1> <p class="article-summary">A production function turns inputs into output, and costs depend on output and input prices. This article covers short-run cost and output decisions only. Marginal cost decides whether one more unit is worth making; average variable cost decides whether to shut down in the short run, and average total cost whether the price covers all costs.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M03 · 企业与生产</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>7 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>By the end of this article, you can use a cost table to choose an output level, decide when to shut down, and explain why the cost of the next unit is not average cost.</p>
+</blockquote>
+<h2>Definition</h2>
+<p>A <strong>production function</strong> describes how inputs become output under a given technology. <strong>Cost</strong> is the economic value of the resources used in production. In the short run at least one input is fixed; in the long run all inputs can change [2]. Fixed costs do not vary with output, variable costs do, and marginal cost is the change in total cost from one more unit. Average total cost is total cost divided by output [3].</p>
+<h2>Intuition</h2>
+<p>A workshop pays 60 yuan a day in rent and 30 yuan per worker; rent is fixed for the day. The first worker adds 10 units, the second 8, the third 6: equipment and space are fixed, so later workers have less to work with. That is diminishing marginal product [2]. Marginal cost starts low and average cost falls; then both turn upward as bottlenecks appear.</p>
+<h2>Formal expression</h2>
+<p>The short-run production function is <code>Q = f(L, K̄)</code>, with capital K fixed and labor L variable; marginal product is <code>MP_L = ΔQ/ΔL</code>.</p>
+<p>The cost relationships are
+<code>TC = FC + VC</code>,
+<code>ATC = TC/Q</code>,
+<code>AVC = VC/Q</code>,
+<code>MC = ΔTC/ΔQ</code> [3].
+Economic cost also includes the implicit cost of owned funds, premises and the owner&#39;s time. Accounting profit subtracts only explicit payments, while economic profit subtracts both explicit and implicit costs [1]. For a price-taking firm the profit-maximizing output satisfies <code>P = MC</code>, and it stays in operation only while price exceeds the minimum average variable cost[4].</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>Technology is given.</strong> There is no significant innovation, learning effect or change in product quality during the period.</li>
+<li><strong>At least one input is fixed in the short run.</strong> Buildings, equipment or land cannot be adjusted immediately; in the long run all inputs can be re-chosen.</li>
+<li><strong>Inputs are divisible and homogeneous.</strong> Labor hours and materials can be added continuously; with indivisible inputs, compare discrete rows instead.</li>
+<li><strong>Costs use opportunity cost.</strong> Owned resources should be valued at their best alternative use, or economic profit will be overstated.</li>
+<li><strong><code>P = MC</code> applies only to price takers.</strong> The textbook derives it for a firm that takes the market price and can sell any quantity at it[4]; a monopolist faces a downward-sloping demand curve and chooses output where <code>MR = MC</code>[5].</li>
+</ol>
+<h2>Worked example</h2>
+<p>Suppose the workshop has fixed cost of 60 yuan a day and each worker costs 30 yuan; all costs in the table are in yuan (teaching assumptions):</p>
+<table>
+<thead>
+<tr>
+<th align="right">Workers L</th>
+<th align="right">Output Q</th>
+<th align="right">Marginal product</th>
+<th align="right">Fixed cost</th>
+<th align="right">Variable cost</th>
+<th align="right">Total cost</th>
+<th align="right">Marginal cost</th>
+<th align="right">Average total cost</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">—</td>
+<td align="right">60</td>
+<td align="right">0</td>
+<td align="right">60</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">60</td>
+<td align="right">30</td>
+<td align="right">90</td>
+<td align="right">3.00</td>
+<td align="right">9.00</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">18</td>
+<td align="right">8</td>
+<td align="right">60</td>
+<td align="right">60</td>
+<td align="right">120</td>
+<td align="right">3.75</td>
+<td align="right">6.67</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">24</td>
+<td align="right">6</td>
+<td align="right">60</td>
+<td align="right">90</td>
+<td align="right">150</td>
+<td align="right">5.00</td>
+<td align="right">6.25</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">28</td>
+<td align="right">4</td>
+<td align="right">60</td>
+<td align="right">120</td>
+<td align="right">180</td>
+<td align="right">7.50</td>
+<td align="right">6.43</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">30</td>
+<td align="right">2</td>
+<td align="right">60</td>
+<td align="right">150</td>
+<td align="right">210</td>
+<td align="right">15.00</td>
+<td align="right">7.00</td>
+</tr>
+</tbody></table>
+<p>At a price of 7 yuan per unit, output of 24 units gives revenue of 168 yuan, total cost of 150 yuan and profit of 18 yuan. The next 4 units cost 7.50 yuan each, above the price of 7 yuan, so production stops at 24. Profit at 28 units is 196 − 180 = 16 yuan. All figures are teaching assumptions, not real firm data.</p>
+<h2>Figure</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-cost-title fig-cost-desc" viewBox="0 0 420 260" width="100%">
+    <title id="fig-cost-title">Average total cost and marginal cost</title>
+    <desc id="fig-cost-desc">The horizontal axis is output and the vertical axis is cost per unit in yuan. Average total cost is lowest at 24 units, at 6.25 yuan; marginal cost pulls average cost down when it is below it and pushes it up when it is above [3]. Values are in the table.</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="60" y1="210" x2="380" y2="210"></line>
+      <line x1="60" y1="210" x2="60" y2="45"></line>
+    </g>
+    <polyline points="160,125.6 240,147.5 300,151.4 340,149.7 360,144.4" fill="none" stroke="var(--gold)" stroke-width="2.5"></polyline>
+    <polyline points="110,181.9 200,174.8 270,163.1 320,139.7 350,69.4" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4"></polyline>
+    <circle cx="300" cy="151.4" r="4" fill="var(--gold)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="46" y="214">0</text>
+      <text x="150" y="226">10</text>
+      <text x="250" y="226">20</text>
+      <text x="350" y="226">30</text>
+      <text x="340" y="245">output Q</text>
+      <text x="10" y="38">cost/unit</text>
+      <text x="306" y="145" fill="var(--gold)">ATC</text>
+      <text x="354" y="76" fill="var(--accent)">MC</text>
+      <text x="300" y="176" text-anchor="middle" fill="var(--gold)">min 6.25</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: average total cost and marginal cost. Average cost falls while marginal cost is below it and rises once marginal cost is above it. A teaching model drawn from the table, not real firm costs.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>Fixed cost affects the decision to make one more unit.</strong> Fixed cost does not vary with output and is not part of marginal cost; it matters for whether to renew the lease or exit.</p>
+<p><strong>Average cost equals marginal cost.</strong> They meet only near the minimum of average cost; pricing on average cost ignores the true increment of the next unit.</p>
+<p><strong>Diminishing marginal product means output falls.</strong> Total output keeps rising while marginal product is positive, only more slowly.</p>
+<p><strong>Accounting profit equals economic profit.</strong> Accounting profit omits implicit costs and can overstate the true return.</p>
+<h2>Figures in plain language</h2>
+<p>The three figures turn “one more unit” into three questions: why the next worker adds less, where the profit goes, and which cost line determines whether to keep producing.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-mp-bars-title-en fig-mp-bars-desc-en" viewBox="0 0 440 250" width="100%">
+    <title id="fig-mp-bars-title-en">Marginal output falls as more workers are added</title>
+    <desc id="fig-mp-bars-desc-en">With fixed rent of 60 yuan and a wage of 30 yuan per worker, workers 1 to 5 add 10, 8, 6, 4, and 2 units. Bar height uses 12 pixels per unit; total output still rises, but the increment falls.</desc>
+    <text x="20" y="24" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Worker 1 adds 10 units; worker 5 adds 2</text>
+    <line x1="50" y1="210" x2="400" y2="210" stroke="var(--border)" stroke-width="1.5"/>
+    <g fill="var(--accent)" opacity="0.85">
+      <rect x="70" y="90" width="40" height="120"/>
+      <rect x="130" y="114" width="40" height="96"/>
+      <rect x="190" y="138" width="40" height="72"/>
+      <rect x="250" y="162" width="40" height="48"/>
+      <rect x="310" y="186" width="40" height="24"/>
+    </g>
+    <g font-family="inherit" font-size="10.5" fill="var(--text)" text-anchor="middle">
+      <text x="90" y="82">10</text><text x="150" y="106">8</text><text x="210" y="130">6</text><text x="270" y="154">4</text><text x="330" y="178">2</text>
+    </g>
+    <g font-family="inherit" font-size="9" fill="var(--muted)" text-anchor="middle">
+      <text x="90" y="228">1 worker</text><text x="150" y="228">2</text><text x="210" y="228">3</text><text x="270" y="228">4</text><text x="330" y="228">5</text>
+      <text x="20" y="244" text-anchor="start">Unit: units per day; illustrative assumptions.</text>
+    </g>
+  </svg>
+  <figcaption>Figure 2: With fixed rent of 60 yuan and a wage of 30 yuan per worker, workers 1 to 5 add 10, 8, 6, 4, and 2 units per day. Bar height uses 12 pixels per unit. Total output still rises, but marginal output falls. Figures are illustrative.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-profit-waterfall-title-en fig-profit-waterfall-desc-en" viewBox="0 0 440 270" width="100%">
+    <title id="fig-profit-waterfall-title-en">At 24 units, how 168 yuan of revenue becomes 18 yuan of profit</title>
+    <desc id="fig-profit-waterfall-desc-en">At a price of 7 yuan and output of 24 units, revenue is 168; variable cost of 90 leaves 78; fixed cost of 60 leaves 18. Scale is about 0.95 pixels per yuan; illustrative.</desc>
+    <text x="20" y="24" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">168 yuan of revenue leaves 18 yuan of profit</text>
+    <line x1="20" y1="232" x2="420" y2="232" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="50" y="72" width="50" height="160" fill="var(--accent)" opacity="0.85"/>
+    <rect x="130" y="72" width="50" height="86" fill="var(--gold)" opacity="0.65"/>
+    <rect x="210" y="158" width="50" height="57" fill="var(--gold)" opacity="0.65"/>
+    <rect x="290" y="215" width="50" height="17" fill="var(--accent)" opacity="0.85"/>
+    <line x1="100" y1="158" x2="130" y2="158" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="180" y1="215" x2="210" y2="215" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="260" y1="215" x2="290" y2="215" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <g font-family="inherit" font-size="10.5" fill="var(--text)" text-anchor="middle">
+      <text x="75" y="64">168</text><text x="155" y="64">−90</text><text x="235" y="150">−60</text><text x="315" y="207">18</text>
+    </g>
+    <g font-family="inherit" font-size="9" fill="var(--muted)" text-anchor="middle">
+      <text x="75" y="250">Revenue</text><text x="155" y="250">Variable cost</text><text x="235" y="250">Fixed cost</text><text x="315" y="250">Profit</text>
+      <text x="20" y="266" text-anchor="start">Unit: yuan per day; 7 yuan per unit and 24 units are illustrative.</text>
+    </g>
+  </svg>
+  <figcaption>Figure 3: At a price of 7 yuan per unit and output of 24 units, the profit pass-through from 168 yuan of revenue is: variable cost of 90 leaves 78; fixed cost of 60 leaves 18. Variable cost changes with output; fixed cost does not. Unit: yuan per day; figures are illustrative.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-output-tree-title-en fig-output-tree-desc-en" viewBox="0 0 440 260" width="100%">
+    <title id="fig-output-tree-title-en">At a price of 7 yuan, where output stops and when to shut down</title>
+    <desc id="fig-output-tree-desc-en">First compare the marginal cost of the next four units, 7.50, with the price of 7: because it is higher, do not expand and stop at 24 units. Then compare the price with the minimum average variable cost of 3.00: stay in business if the price is higher, shut down if it is lower.</desc>
+    <text x="20" y="24" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Check marginal cost first, then average variable cost</text>
+    <rect x="20" y="40" width="400" height="40" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="36" y="58" font-size="10" fill="var(--secondary)" font-family="inherit">At Q = 24 and P = 7, the next four units have marginal cost 7.50.</text>
+    <text x="36" y="73" font-size="10" font-weight="650" fill="var(--accent)" font-family="inherit">7.50 &gt; 7, so expanding would cut profit; stop at 24.</text>
+    <line x1="220" y1="80" x2="220" y2="104" stroke="var(--border)" stroke-width="1.5"/>
+    <path d="M216 101 L220 105 L224 101" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="35" y="106" width="370" height="38" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+    <text x="220" y="124" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">Short run: is P above minimum average variable cost of 3.00?</text>
+    <text x="220" y="138" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">The 60 yuan fixed cost is paid even if output stops, so it is not in the next-unit comparison.</text>
+    <line x1="150" y1="144" x2="110" y2="174" stroke="var(--border)" stroke-width="1.5"/>
+    <line x1="290" y1="144" x2="330" y2="174" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="30" y="176" width="160" height="44" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"/>
+    <text x="110" y="194" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">P &gt; 3.00: keep producing</text>
+    <text x="110" y="209" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">24 units cover variable cost</text>
+    <rect x="250" y="176" width="160" height="44" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="330" y="194" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">P &lt; 3.00: shut down</text>
+    <text x="330" y="209" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">More output loses more; fixed cost remains</text>
+    <text x="20" y="250" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">Decision path; 3.00 is the table's minimum average variable cost.</text>
+  </svg>
+  <figcaption>Figure 4: At a price of 7 yuan, the next four units have a marginal cost of 7.50, above the price, so output stops at 24. In the short run, the firm keeps producing only if the price is above the minimum average variable cost of 3.00 per unit. Fixed cost is not part of the next-unit decision. Decision-path illustration; figures are illustrative.</figcaption>
+</figure>
+
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>production function</h3>
+<p><strong>Definition</strong>: A production function maps input combinations to the maximum output attainable with a given technology, usually labour, capital and materials.</p>
+<p><strong>Mechanism</strong>: Diminishing marginal product means extra output from one more input falls as other inputs stay fixed; technical progress shifts the whole function upward.</p>
+<p><strong>Example</strong>: For example, the first bags of fertiliser raise a field&#39;s yield sharply, later bags add less and too much can reduce output.</p>
+<p><strong>Boundary</strong>: The function simplifies technology and omits organisation, incentives and quality; short-run fixed inputs must be separated from long-run adjustable ones.</p>
+<h3>cost</h3>
+<p><strong>Definition</strong>: Cost is the value of resources forgone to produce output, including explicit payments and implicit opportunity costs.</p>
+<p><strong>Mechanism</strong>: Total cost splits into fixed and variable components; average and marginal cost shape short-run supply and shutdown, and profit peaks where marginal cost equals marginal revenue.</p>
+<p><strong>Example</strong>: For example, a bakery&#39;s rent is fixed while flour and labour hours are variable; the extra cost of another batch is mainly ingredients and overtime.</p>
+<p><strong>Boundary</strong>: Accounting and economic cost differ; sunk costs should not drive marginal decisions, and joint costs need a defensible allocation rule.</p>
+<h3>economies of scale</h3>
+<p><strong>Definition</strong>: Economies of scale mean unit costs fall as output expands, driven by specialisation, dedicated equipment, bulk purchasing and learning.</p>
+<p><strong>Mechanism</strong>: They slope long-run average cost downward; diseconomies arise from managerial complexity, coordination and bottlenecks, so the curve may fall, flatten and then rise.</p>
+<p><strong>Example</strong>: For example, an auto plant making 100,000 cars spreads tooling and R&amp;D better than one making 10,000, but at one million management and logistics may become harder.</p>
+<p><strong>Boundary</strong>: Scale is not automatically good; economies of scope, network effects and minimum efficient scale differ, and market size and transport costs limit realisation.</p>
+<h3>profit</h3>
+<p><strong>Definition</strong>: Economic profit is total revenue minus all opportunity costs, while accounting profit deducts only explicit costs; normal profit rewards entrepreneurship.</p>
+<p><strong>Mechanism</strong>: Competition tends to drive economic profit toward zero, but entry barriers, innovation rents and risk premia can sustain it; profit signals resource entry and exit.</p>
+<p><strong>Example</strong>: For example, a restaurant reports 200,000 yuan accounting profit but forgoes 250,000 in owner wages and shop rent, so economic profit is negative.</p>
+<p><strong>Boundary</strong>: Profit depends on accounting rules, horizon, risk and monopoly rents; a short boom does not prove replicability, and losses may reflect investment or sunk costs.</p>
+<h3>entry and exit</h3>
+<p><strong>Definition</strong>: Entry brings new producers into a market and exit removes existing ones, changing competition and prices.</p>
+<p><strong>Mechanism</strong>: Positive economic profit attracts entry and expands supply, while losses trigger exit and contraction; entry barriers determine how fast adjustment occurs.</p>
+<p><strong>Example</strong>: For example, ride-hailing subsidies attracted many drivers, then excess supply and lower subsidies pushed some to leave.</p>
+<p><strong>Boundary</strong>: Entry and exit face licences, capital, sunk costs and exit barriers; price signals lag, and entrants differ in quality and scale.</p>
+<h3>boundaries of the firm</h3>
+<p><strong>Definition</strong>: Firm boundaries decide which activities are organised internally and which are bought in markets, balancing coordination costs against transaction costs.</p>
+<p><strong>Mechanism</strong>: Specific assets, frequent transactions and uncertainty raise market costs and encourage vertical integration, while larger firms face managerial and incentive costs.</p>
+<p><strong>Example</strong>: For example, an automaker sources seats from several suppliers but keeps critical engines in-house to protect technology and quality.</p>
+<p><strong>Boundary</strong>: Boundaries are not fixed; outsourcing, platforms and long-term contracts sit between markets and hierarchies, and asset specificity and incomplete contracts shift the choice.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Prerequisite: margin and incentives (ECO-004).</li>
+<li>Related: utility and the budget constraint (ECO-007), competition and monopoly (ECO-009), elasticity of demand (ECO-006).</li>
+<li>See also: Supply, Demand and Equilibrium (ECO-005).</li>
+</ul>
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> Which is a fixed cost in the short run? A. Workshop rent; B. Hourly wages; C. Flour; D. Electricity billed by usage.</li>
+<li><strong>Calculation.</strong> At a price of 8 yuan per unit, what are the optimal output, revenue, total cost and profit?</li>
+<li><strong>Conditions.</strong> Why does <code>P = MC</code> not apply to a monopolist?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>A. Rent does not vary with output in the short run; wages and flour do. Electricity counts as variable here because the question bills it by usage — if a supply contract carries a fixed capacity charge unrelated to units used, that part belongs to fixed cost, so the classification follows the contract rather than the label.</li>
+<li>Output is 28 units: the next 4 units cost 7.50 yuan each, below 8, while the following 2 units cost 15 yuan each, above 8. Revenue is 8 × 28 = 224 yuan, total cost 180 yuan and profit 44 yuan.</li>
+<li>A monopolist faces a downward-sloping demand curve, so selling one more unit requires a lower price and marginal revenue is below price. Its optimum is <code>MR = MC</code>, not <code>P = MC</code>.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;7.1 Explicit and Implicit Costs, and Accounting and Economic Profit.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit">https://openstax.org/books/principles-economics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit</a> (accessed 2026-10-30)</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;7.2 Production in the Short Run.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/7-2-production-in-the-short-run">https://openstax.org/books/principles-economics-3e/pages/7-2-production-in-the-short-run</a> (accessed 2026-10-30)</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;7.3 Costs in the Short Run.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run">https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run</a> (accessed 2026-10-30)</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “8.2 How Perfectly Competitive Firms Make Output Decisions.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions">https://openstax.org/books/principles-economics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions</a> (accessed 2026-11-03)</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “9.2 How a Profit-Maximizing Monopoly Chooses Output and Price.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price">https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price</a> (accessed 2026-11-03)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Tell marginal from average cost and say which one decides whether one more unit is worth producing</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Use a change in input prices or technology to shift the cost curve and identify the metric for long-run viability</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Tell marginal from average cost and say which one decides whether one more unit is worth producing</li><li>Use a change in input prices or technology to shift the cost curve and identify the metric for long-run viability</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/margin-and-incentives/">ECO-004 · Margin and Incentives</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/supply-demand-equilibrium/">ECO-005 · Supply, Demand and Equilibrium</a> </li><li> <a href="/en/learn/utility-and-budget-constraint/">ECO-007 · Utility and the Budget Constraint</a> </li><li> <a href="/en/learn/competition-and-monopoly/">ECO-009 · Competition and Monopoly</a> </li><li> <a href="/en/learn/margin-and-incentives/">ECO-004 · Margin and Incentives</a> </li><li> <a href="/en/learn/elasticity-of-demand/">ECO-006 · Elasticity of Demand</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-1-explicit-and-implicit-costs-and-accounting-and-economic-profit" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.1 Explicit and Implicit Costs, and Accounting and Economic Profit</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Explicit costs are payments, implicit costs are the opportunity cost of owned resources; accounting profit subtracts explicit costs only, while economic profit subtracts both.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-2-production-in-the-short-run" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.2 Production in the Short Run</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: In the short run fixed inputs cannot easily be adjusted while variable inputs can; with fixed capital, marginal product eventually diminishes.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/7-3-costs-in-the-short-run" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 7.3 Costs in the Short Run</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Total cost equals fixed plus variable cost; average total cost is total cost divided by output and marginal cost is the change in total cost divided by the change in output; average cost falls while marginal cost is below it.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/8-2-how-perfectly-competitive-firms-make-output-decisions" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 8.2 How Perfectly Competitive Firms Make Output Decisions</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-11-03 · License: CC BY-NC-SA 4.0</p> <p>Supports: The price-taker output rule reads verbatim &quot;we can also write the profit-maximizing rule for a perfectly competitive firm as a recommendation to produce at the quantity of output where P = MC.&quot; with the shutdown condition &quot;This rule means that the firm checks the market price, and then looks at its marginal cost to determine the quantity to produce—and makes sure that the price is greater than the minimum average variable cost.&quot;, and the price taker is defined as &quot;Since a perfectly competitive firm is a price taker, it can sell whatever quantity it wishes at the market-determined price..&quot;</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/9-2-how-a-profit-maximizing-monopoly-chooses-output-and-price" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 9.2 How a Profit-Maximizing Monopoly Chooses Output and Price</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-11-03 · License: CC BY-NC-SA 4.0</p> <p>Supports: The monopoly rule reads verbatim &quot;a profit-maximizing monopoly should follow the rule of producing up to the quantity where marginal revenue is equal to marginal cost&quot;; that section gives MR = MC only and does not discuss deadweight loss.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/production-and-cost/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

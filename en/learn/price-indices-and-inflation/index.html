@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Price Indices and Inflation · 51Invest</title><meta name="description" content="A price index tracks the cost of a fixed basket, and inflation is its percentage change; the index level itself is not the inflation rate."><link rel="canonical" href="https://economics.51invest.com/en/learn/price-indices-and-inflation/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/price-indices-and-inflation/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/price-indices-and-inflation/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/price-indices-and-inflation/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/price-indices-and-inflation/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Price Indices and Inflation</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Price Indices and Inflation</h1> <p class="article-summary">A price index tracks the cost of a fixed basket, and inflation is its percentage change; the index level itself is not the inflation rate.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M10 · 通胀与就业</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>6 min · 11 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p>A <strong>price index</strong> compares the total cost of the same basket of goods and services in two periods, with the base period set to 100 [1]. <strong>Inflation</strong> is a sustained rise in the price level, measured as the percentage change in a price index [1]. The <strong>consumer price index</strong> (CPI) is built from a household consumption basket [1]. The World Bank carries it as a comparable country series under the labels &quot;Inflation, consumer prices (annual %)&quot; and &quot;International Financial Statistics database, International Monetary Fund (IMF)&quot; (verbatim text sits in source 3&#39;s supports), i.e. an <strong>annual, year-on-year</strong> percentage [3]; the <code>π_t</code> used in this article is a period-over-period change, so the two bases must not be mixed and a citation of that series has to say it is an annual rate. How the basket and weights are set differs by jurisdiction: the textbook gives the U.S. procedure, where a Consumer Expenditure Survey of about 7,000 households determines the representative basket [2]; this article does not generalise that to every statistical agency. The weights show the relative importance of each spending category.</p>
+<h2>Intuition</h2>
+<p>Suppose a basket of three goods costs 200 yuan in the base period and 214 yuan now. The index is <code>214 ÷ 200 × 100 = 107</code>. That means prices are 7% above the base period, not &quot;107% higher.&quot; If the previous index was 105, the current inflation rate is <code>107 ÷ 105 - 1 ≈ 1.90%</code>. The index answers &quot;how much more expensive than the base period,&quot; while the inflation rate answers &quot;how much more expensive than the previous period.&quot; The two are not interchangeable.</p>
+<h2>Formal expression</h2>
+<p><code>I_t = (basket cost_t ÷ basket cost_0) × 100</code>; <code>I_t</code> is the index level, expressed in index points with the base period equal to 100, so it carries no currency; basket costs are in the currency used here (yuan) [1].</p>
+<p><code>π_t = (I_t ÷ I_{t-1} - 1) × 100%</code>; <code>π_t</code> is the inflation rate of the current period relative to the previous one, in percent [1].</p>
+<p>Deflating a nominal figure gives its value in base-period prices: <code>real value = nominal value ÷ (I_t ÷ 100)</code>; the real value is in the same currency as the nominal value, but stated at base-period prices. The CPI uses a fixed-weight basket drawn from consumer expenditure surveys and covers household consumption [2]. The GDP deflator is <code>nominal GDP ÷ real GDP × 100</code> and covers all GDP components [2]. Because coverage and weights differ, the two measures usually differ.</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>The basket must represent the population.</strong> A national average basket does not describe the spending patterns of low-income or elderly households, and the same headline index can feel very different across households.</li>
+<li><strong>Fixed weights create substitution bias.</strong> Consumers substitute toward goods whose prices rise less, so fixed weights can overstate the rise in the cost of living [2].</li>
+<li><strong>Quality and new goods.</strong> Quality improvements and new products enter the basket with a lag; incomplete adjustment biases the index upward [2].</li>
+<li><strong>Level versus rate.</strong> Rebasing changes the index level but usually not the inflation rate.</li>
+<li><strong>Prices do not move together.</strong> The index is a weighted average, so it can rise while some individual prices fall [1].</li>
+</ol>
+<h2>Worked example</h2>
+<p>Suppose a basket costs 200 yuan in the base period, 210 yuan in year 1, and 214 yuan in year 2. The index is <code>210 ÷ 200 × 100 = 105</code> in year 1 and <code>214 ÷ 200 × 100 = 107</code> in year 2. Year-1 inflation is <code>105 ÷ 100 - 1 = 5.00%</code> and year-2 inflation is <code>107 ÷ 105 - 1 ≈ 1.90%</code>; the cumulative rise relative to the base period is <code>107 ÷ 100 - 1 = 7%</code>. Each inflation rate in the table is the change relative to the previous period, in percent. All figures are teaching assumptions, not statistics.</p>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th align="right">Basket cost (yuan)</th>
+<th align="right">Index (base = 100)</th>
+<th align="right">Inflation rate (vs. previous period)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Base period</td>
+<td align="right">200</td>
+<td align="right">100</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>Year 1</td>
+<td align="right">210</td>
+<td align="right">105</td>
+<td align="right">5.00%</td>
+</tr>
+<tr>
+<td>Year 2</td>
+<td align="right">214</td>
+<td align="right">107</td>
+<td align="right">1.90%</td>
+</tr>
+</tbody></table>
+<figure>
+  <svg role="img" aria-labelledby="fig-idx-title fig-idx-desc" viewBox="0 0 420 215" width="100%">
+    <title id="fig-idx-title">Price index rebased to 100 in the base period</title>
+    <desc id="fig-idx-desc">Three bars drawn from a zero baseline: base period 100, year 1 105, year 2 107. Bar heights are exactly proportional to the index. The year-on-year inflation rates are 5.00% and 1.90%.</desc>
+    <line x1="60" y1="180" x2="380" y2="180" stroke="var(--border)" stroke-width="2"></line>
+    <rect x="90" y="34.5" width="60" height="145.5" fill="var(--accent)" opacity="0.5"></rect>
+    <rect x="190" y="27.3" width="60" height="152.7" fill="var(--accent)" opacity="0.7"></rect>
+    <rect x="290" y="24.4" width="60" height="155.6" fill="var(--accent)" opacity="0.9"></rect>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="60" y="16">Index (base = 100)</text>
+      <text x="112" y="30">100</text>
+      <text x="212" y="23">105</text>
+      <text x="312" y="20">107</text>
+      <text x="160" y="60">+5.00%</text>
+      <text x="262" y="60">+1.90%</text>
+      <text x="100" y="200">Base</text>
+      <text x="196" y="200">Year 1</text>
+      <text x="296" y="200">Year 2</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: basket costs of 200, 210 and 214 rebased to a &quot;base = 100&quot; index give 100, 105 and 107, with inflation of +5.00% and +1.90% between consecutive periods. Bars start at zero and their heights are exactly proportional to the index; the amounts are teaching assumptions, not any real index.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>An index of 107 means prices rose 107%.</strong> It means prices rose 7% relative to the base period [1].</p>
+<p><strong>Falling inflation means falling prices.</strong> Inflation falling from 5% to 2% still means prices are rising, only more slowly; a sustained fall in prices is deflation.</p>
+<p><strong>A higher CPI means every good became more expensive.</strong> The index is a weighted average, and individual prices can fall.</p>
+<p><strong>One index can deflate everything.</strong> Coverage and weights differ, so the index should match the series being deflated.</p>
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>wages and prices</h3>
+<p><strong>Definition</strong>: Wages are labour compensation and prices are the level of goods and services; they interact through costs, demand and expectations.</p>
+<p><strong>Mechanism</strong>: Wage growth above productivity raises unit labour costs and may lead firms to price higher, while price inflation feeds back into wage bargaining.</p>
+<p><strong>Example</strong>: For example, a restaurant raises menu prices after a minimum-wage increase, but weaker demand can blunt the wage-to-price pass-through.</p>
+<p><strong>Boundary</strong>: A wage-price spiral is not automatic; bargaining power, productivity, import prices and monetary policy determine pass-through, and real wages depend on inflation.</p>
+<h3>unemployment</h3>
+<p><strong>Definition</strong>: Unemployment is the state of being able to work, seeking work and lacking a job; the rate divides unemployed people by the labour force.</p>
+<p><strong>Mechanism</strong>: Frictional unemployment reflects matching and turnover, structural unemployment reflects skill-job mismatch, and cyclical unemployment reflects weak demand.</p>
+<p><strong>Example</strong>: For example, after automation, assemblers lacking new skills may stay jobless even when nearby logistics jobs are open.</p>
+<p><strong>Boundary</strong>: Statistics may miss discouraged workers and zero-hour jobs; low unemployment can coexist with poor job quality, so one indicator is not enough.</p>
+<h3>inflation expectations</h3>
+<p><strong>Definition</strong>: Inflation expectations are households&#39;, firms&#39; and markets&#39; views of future price growth, feeding into wages, pricing and financial contracts.</p>
+<p><strong>Mechanism</strong>: Expectations can become self-fulfilling through front-loading purchases, wage indexation and interest pricing; central-bank communication, rules and credibility shape anchoring.</p>
+<p><strong>Example</strong>: For example, a firm expecting 5 percent cost growth writes that increase into contracts, bringing actual inflation closer to the expectation.</p>
+<p><strong>Boundary</strong>: Expectations are unobservable; surveys, market breakevens and models are noisy, and household and market expectations can diverge.</p>
+<h3>Phillips curve</h3>
+<p><strong>Definition</strong>: The Phillips curve describes a short-run negative relationship between unemployment and wage or price inflation.</p>
+<p><strong>Mechanism</strong>: Expected inflation and supply shocks shift the curve; in the long run, if expectations adjust, unemployment returns to its natural rate and the trade-off weakens.</p>
+<p><strong>Example</strong>: For example, overheating lowers unemployment and firms bid up wages, raising inflation; tightening then lifts unemployment and cools prices.</p>
+<p><strong>Boundary</strong>: The curve is not a stable law; globalisation, energy shocks, productivity and monetary institutions change its slope, and empirical versions are sensitive to sample and definition.</p>
+<h3>deflation and stagflation</h3>
+<p><strong>Definition</strong>: Deflation is a sustained fall in the general price level; stagflation is the unusual combination of stagnation or high unemployment with inflation.</p>
+<p><strong>Mechanism</strong>: Deflation raises real debt burdens and delays spending, potentially creating a spiral; stagflation often combines supply shocks, wage indexation and loose policy.</p>
+<p><strong>Example</strong>: For example, an energy shock raises costs, cuts output and lifts prices, producing stagflation, while a demand collapse can bring deflation.</p>
+<p><strong>Boundary</strong>: Deflation is not always harmful because technology can lower prices benignly; stagflation cannot be blamed on one policy, and supply versus demand shocks must be separated.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Prerequisites: GDP and National Accounts (ECO-011), nominal and real values (ECO-012).</li>
+<li>Read on: real returns and purchasing power (INV-003), indexing, logarithms and growth rates (RES-006).</li>
+<li>The glossary points the definition of &quot;consumer price index (CPI)&quot; to this article; the distinction between an index level and an inflation rate is covered under &quot;Common mistakes&quot; above.</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">Price Indices and Inflation: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">Price Indices and Inflation — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Price Indices and Inflation: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">A price index</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">tracks the cost…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A price index</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">tracks the cost</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">of a fixed</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">basket, and</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">inflation is…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition: A</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">price index…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition: A</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">price index</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">distinctions</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">the total cost</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">of the same…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Worked example</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose a basket</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">costs 200 yuan…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose a</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">basket costs</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">200 yuan in the</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">base period,</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">210 yuan in…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 2: Price Indices and Inflation — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">Price Indices and Inflation: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Price Indices and Inflation: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A price index compares the</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">total cost of the same</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">basket of goods and</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">services in two periods…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">An index of 107 means</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">prices rose 107%.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 3: Price Indices and Inflation — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">Price Indices and Inflation: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Price Indices and Inflation: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A price index tracks</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">the cost of a fixed…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">A price index</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">compares the total…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">An index of 107 means prices</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">rose 107%.…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: Price Indices and Inflation — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> An index rises from 120 to 126. What is the inflation rate?</li>
+<li><strong>Calculation.</strong> Basket cost rises from 250 yuan in the base period to 262.5 yuan in the current period, and the previous index was 102. Find the current index and the current inflation rate.</li>
+<li><strong>Conditions.</strong> Why might a fixed-weight CPI overstate the rise in the cost of living?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li><code>126 ÷ 120 - 1 = 5%</code>. The value 126 is an index level, not an inflation rate.</li>
+<li>The index is <code>262.5 ÷ 250 × 100 = 105</code>; inflation is <code>105 ÷ 102 - 1 ≈ 2.94%</code>.</li>
+<li>Consumers substitute away from goods that become relatively expensive, new products enter the basket with a lag, and quality improvements are hard to price fully, so fixed weights can overstate the rise in the cost of living.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<p>The bracketed numbers in the text refer to the sources below.</p>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;22.1 Tracking Inflation.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation">https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation</a> (accessed 2026-10-30)</li>
+<li>Same book, &quot;22.2 How to Measure Changes in the Cost of Living.&quot; <a href="https://openstax.org/books/principles-economics-3e/pages/22-2-how-to-measure-changes-in-the-cost-of-living">https://openstax.org/books/principles-economics-3e/pages/22-2-how-to-measure-changes-in-the-cost-of-living</a> (accessed 2026-10-30)</li>
+<li>World Bank. &quot;Inflation, consumer prices (annual %).&quot; <a href="https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG">https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG</a> (accessed 2026-10-30)</li>
+</ol>
+ <section class="article-related-charts"> <h2>Related data charts</h2> <p>These charts put the article concept onto a checkable time series; their numbers come from source snapshots, not this article’s teaching assumptions.</p> <ul> <li> <a href="https://51invest.com/en/charts/chart-002/"> U.S. inflation and the effective federal funds rate </a> </li><li> <a href="https://51invest.com/en/charts/chart-003/"> U.S. unemployment and inflation </a> </li><li> <a href="https://51invest.com/en/charts/chart-010/"> Consumer price inflation in major economies </a> </li><li> <a href="https://51invest.com/en/charts/chart-011/"> Euro-area inflation and the deposit facility rate </a> </li> </ul> </section> <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Rebase a fixed basket into an index with base equal to 100 and recover the inflation rate from two consecutive index values</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Separate the index level, the point difference and the percentage change, and say what each is used for</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Rebase a fixed basket into an index with base equal to 100 and recover the inflation rate from two consecutive index values</li><li>Separate the index level, the point difference and the percentage change, and say what each is used for</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/gdp-and-national-accounts/">ECO-011 · GDP and National Accounts</a> </li><li> <a href="/en/learn/nominal-and-real-values/">ECO-012 · Nominal and Real Values</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="https://invest.51invest.com/en/learn/real-returns-and-purchasing-power/">INV-003 · Real Returns and Purchasing Power</a> </li><li> <a href="https://research.51invest.com/en/learn/indexing-logarithms-and-growth-rates/">RES-006 · Indexing, Logarithms and Growth Rates</a> </li><li> <a href="/en/learn/gdp-and-national-accounts/">ECO-011 · GDP and National Accounts</a> </li><li> <a href="/en/learn/nominal-and-real-values/">ECO-012 · Nominal and Real Values</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/22-1-tracking-inflation" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 22.1 Tracking Inflation</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Inflation is the percentage change in the price level; a price index uses a base year of 100; the CPI is a weighted average of a consumption basket, and the inflation rate is (new level − old level) ÷ old level × 100.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/22-2-how-to-measure-changes-in-the-cost-of-living" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 22.2 How to Measure Changes in the Cost of Living</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports:  The same page states the US procedure verbatim: &quot;We do this by using the Consumer Expenditure Survey, a national survey of about 7,000 households, which provides detailed information on spending habits.&quot;, and its learning outcomes are scoped to &quot;By the end of this section, you will be able to: Use the Consumer Price Index (CPI) to calculate U.S. inflation rates&quot; (the US BLS index). It does not claim that every country sets weights from an expenditure survey.</p> </div><div class="source"> <a href="https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG" rel="noopener noreferrer" target="_blank">Inflation, consumer prices (annual %)</a> <p>World Bank · World Bank</p> <p>Accessed: 2026-10-30 · License: CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>Supports:  The page heading and provenance read verbatim &quot;Inflation, consumer prices (annual %) International Financial Statistics database, International Monetary Fund&quot;, with &quot;License: CC BY-4.0&quot;: the series is an **annual, year-on-year** percentage compiled from the IMF&#39;s financial statistics database.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/price-indices-and-inflation/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

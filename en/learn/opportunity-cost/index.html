@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Opportunity Cost and Sunk Cost · 51Invest</title><meta name="description" content="Opportunity cost measures the value of the next-best alternative; a sunk cost is already unrecoverable and should not keep driving the next decision."><link rel="canonical" href="https://economics.51invest.com/en/learn/opportunity-cost/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/opportunity-cost/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/opportunity-cost/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/opportunity-cost/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/opportunity-cost/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Opportunity Cost and Sunk Cost</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Opportunity Cost and Sunk Cost</h1> <p class="article-summary">Opportunity cost measures the value of the next-best alternative; a sunk cost is already unrecoverable and should not keep driving the next decision.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M01 · 经济学导论</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>5 min · 11 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>By the end of this article, you can price a choice against its next-best alternative, separate accounting from economic profit, and make a forward-looking decision when money is already sunk.</p>
+</blockquote>
+<h2>Definition</h2>
+<p><strong>Opportunity cost</strong> is the value of the next-best alternative forgone when a choice is made. It is not the same as money already paid, and it may not appear in accounting records. OpenStax&#39;s <em>Principles of Economics 3e</em> defines it in the same terms (paraphrased here, not quoted verbatim); Econlib&#39;s entry stresses that a resource is valued by its best alternative use.</p>
+<p>A <strong>sunk cost</strong>, by contrast, is an expense that has already occurred and cannot be recovered. Whether the decision maker continues or stops, that expense will not change, so it should not justify the next marginal decision.</p>
+<h2>Intuition</h2>
+<p>Suppose you have two hours on Friday evening. You can study statistics or take a paid shift. The shift pays ¥200. If you study, the opportunity cost includes the ¥200 of forgone income and possibly less rest. If you take the shift, the opportunity cost includes the long-run benefit of studying. Neither option is free; they differ in what is given up.</p>
+<p>The example also shows that opportunity cost is not only money. Time, attention, an owned building, and owned funds all have alternative uses. Valuing those uses makes the real cost of each option comparable.</p>
+<h2>Formal expression</h2>
+<ul>
+<li>Explicit cost: money actually paid to an outside party.</li>
+<li>Implicit cost: income forgone by using an owned resource, such as rent on an owned building or the owner&#39;s wage.</li>
+<li>Economic cost = explicit cost + implicit cost.</li>
+<li>Economic profit = total revenue - economic cost.</li>
+<li>Accounting profit = total revenue - explicit cost.</li>
+</ul>
+<p>Therefore:</p>
+<div class="formula" role="math" aria-label="Economic profit equals total revenue minus explicit cost minus implicit cost">Economic profit = total revenue - explicit cost - implicit cost</div>
+
+<p>A budget constraint can be written with a simple model. Suppose 40 hours are available each week, the market wage is ¥100 per hour, hours worked are <code>h_w</code>, and hours studied are <code>h_s</code>:</p>
+<div class="formula" role="math" aria-label="Hours worked plus hours studied is at most forty; income equals one hundred times hours worked">h_w + h_s ≤ 40, income = 100 × h_w</div>
+
+<p>In this simplified model, one more hour of study has an opportunity cost of ¥100 in forgone wages. The long-run return to study, risk, and preferences are not included and must be stated separately.</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>Use the next-best alternative only.</strong> Opportunity cost is not the sum of every option not chosen. When several alternatives exist, the relevant value is normally the highest-valued one.</li>
+<li><strong>Compare future increments affected by the choice.</strong> An expense that has already occurred and cannot be recovered does not change with the current decision; it is a sunk cost.</li>
+<li><strong>Do not treat non-monetary benefits as zero.</strong> Health, learning, risk, and leisure have value. When they cannot be monetized, state the comparison basis rather than pretending they do not exist.</li>
+<li><strong>Market prices are not always available.</strong> Owned assets, regulated prices, or missing markets require estimates from rent, shadow prices, or replacement cost, with assumptions made explicit.</li>
+</ol>
+<h2>Worked example</h2>
+<p>A small shop operates in a building it owns. Suppose the building could be rented for ¥8,000 per month. The shop&#39;s monthly revenue is ¥30,000 and its explicit costs are ¥20,000.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th align="right">Amount (¥ per month)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shop revenue</td>
+<td align="right">30,000</td>
+</tr>
+<tr>
+<td>Explicit costs</td>
+<td align="right">20,000</td>
+</tr>
+<tr>
+<td>Forgone rent (implicit cost)</td>
+<td align="right">8,000</td>
+</tr>
+<tr>
+<td>Accounting profit</td>
+<td align="right">10,000</td>
+</tr>
+<tr>
+<td>Economic profit</td>
+<td align="right">2,000</td>
+</tr>
+</tbody></table>
+<p>Amounts are in yuan (¥). Accounting profit is <code>30,000 - 20,000 = 10,000</code>; economic profit is <code>30,000 - 20,000 - 8,000 = 2,000</code>. If comparable nearby space rents for 15,000, economic profit becomes <code>-5,000</code>: the shop still reports an accounting profit, but it is worse than renting out the space once the opportunity cost is included.</p>
+<p>The rent figures are illustrative assumptions, not observed market data for a particular location.</p>
+<h2>Figure</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-budget-title-en fig-budget-desc-en" viewBox="0 0 420 260" width="100%">
+    <title id="fig-budget-title-en">Study and work combinations under a budget constraint</title>
+    <desc id="fig-budget-desc-en">The horizontal axis shows weekly study hours and the vertical axis shows weekly work hours, with forty hours in total. Combination A is ten study hours and thirty work hours; combination B is twenty study hours and twenty work hours. Moving from A to B adds ten study hours and removes ten work hours.</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="60" y1="210" x2="380" y2="210"></line>
+      <line x1="60" y1="30" x2="60" y2="210"></line>
+      <line x1="60" y1="165" x2="380" y2="165" stroke-dasharray="3 4"></line>
+      <line x1="60" y1="120" x2="380" y2="120" stroke-dasharray="3 4"></line>
+      <line x1="60" y1="75" x2="380" y2="75" stroke-dasharray="3 4"></line>
+      <line x1="140" y1="30" x2="140" y2="210" stroke-dasharray="3 4"></line>
+      <line x1="220" y1="30" x2="220" y2="210" stroke-dasharray="3 4"></line>
+      <line x1="300" y1="30" x2="300" y2="210" stroke-dasharray="3 4"></line>
+    </g>
+    <line x1="60" y1="30" x2="380" y2="210" stroke="var(--accent)" stroke-width="2.5"></line>
+    <circle cx="140" cy="75" r="4" fill="var(--accent)"></circle>
+    <circle cx="220" cy="120" r="4" fill="var(--gold)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="52" y="225">0</text>
+      <text x="136" y="225">10</text>
+      <text x="216" y="225">20</text>
+      <text x="296" y="225">30</text>
+      <text x="376" y="225">40</text>
+      <text x="195" y="245">Study hours per week</text>
+      <text x="18" y="125" transform="rotate(-90 18 125)">Work hours per week</text>
+      <text x="150" y="66">A (10, 30)</text>
+      <text x="234" y="112">B (20, 20)</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: Study and work combinations under a simplified 40-hour budget constraint. The figure represents a time constraint only; it is not an estimate of real wages, preferences, or returns to study.</figcaption>
+</figure>
+
+<p>Data table:</p>
+<table>
+<thead>
+<tr>
+<th>Combination</th>
+<th align="right">Study hours</th>
+<th align="right">Work hours</th>
+<th align="right">Wages earned (¥)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td align="right">10</td>
+<td align="right">30</td>
+<td align="right">3,000</td>
+</tr>
+<tr>
+<td>B</td>
+<td align="right">20</td>
+<td align="right">20</td>
+<td align="right">2,000</td>
+</tr>
+<tr>
+<td>Change from A to B</td>
+<td align="right">+10</td>
+<td align="right">-10</td>
+<td align="right">-1,000</td>
+</tr>
+</tbody></table>
+<p>The table lists wages <strong>earned</strong> in each combination, not wages forgone. Moving from A to B adds 10 study hours and cuts pay from ¥3,000 to ¥2,000; the ¥1,000 no longer earned is what those 10 hours give up in this example, and that is the opportunity cost.</p>
+<h2>Common mistakes</h2>
+<p><strong>“Free” means no cost.</strong> Free activities still consume time, attention, and queueing opportunities that could be used elsewhere.</p>
+<p><strong>Sunk cost is opportunity cost.</strong> It is not. A non-refundable movie ticket does not change because you stay to the end. Whether to stay should compare the value of the remaining 90 minutes in “finish the film” versus “leave and do something else.” Arkes and Blumer found that people often continue a course of action because of prior investment, even when that investment cannot be recovered; this is the sunk cost effect [3].</p>
+<p><strong>A positive accounting profit means the activity is worth continuing.</strong> Accounting profit does not deduct the opportunity cost of owned resources. Positive economic profit means the use is at least as good as its next-best alternative.</p>
+<p><strong>A larger opportunity cost is always worse.</strong> Opportunity cost is the price of a choice, not the loss itself. Compare the net benefits of alternatives rather than staring at one cost figure.</p>
+<h2>Figures in plain language</h2>
+<p>The three figures below do not repeat the definitions. They show how the money is peeled away layer by layer, why a sunk cost should stay out of the next branch, and where accounting profit and economic profit diverge.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-oc-waterfall-title-en fig-oc-waterfall-desc-en" viewBox="0 0 440 280" width="100%">
+    <title id="fig-oc-waterfall-title-en">A shop's revenue-to-economic-profit waterfall</title>
+    <desc id="fig-oc-waterfall-desc-en">Starting from monthly revenue of 30,000 yuan, subtract 20,000 of explicit cost to leave 10,000 of accounting profit; subtract 8,000 of forgone rent to leave 2,000 of economic profit. The vertical scale is about four pixels per 1,000 yuan; all amounts are illustrative.</desc>
+    <text x="20" y="24" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">From 30,000 revenue to 2,000 economic profit</text>
+    <line x1="20" y1="240" x2="420" y2="240" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="50" y="120" width="50" height="120" fill="var(--accent)" opacity="0.85"/>
+    <rect x="130" y="120" width="50" height="80" fill="var(--gold)" opacity="0.65"/>
+    <rect x="210" y="200" width="50" height="32" fill="var(--gold)" opacity="0.65"/>
+    <rect x="290" y="232" width="50" height="8" fill="var(--accent)" opacity="0.85"/>
+    <line x1="100" y1="200" x2="130" y2="200" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="180" y1="232" x2="210" y2="232" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="260" y1="232" x2="290" y2="232" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="50" y1="200" x2="290" y2="200" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 4"/>
+    <g font-family="inherit" font-size="10.5" fill="var(--text)">
+      <text x="75" y="112" text-anchor="middle">30,000</text>
+      <text x="155" y="112" text-anchor="middle">−20,000</text>
+      <text x="235" y="192" text-anchor="middle">−8,000</text>
+      <text x="315" y="224" text-anchor="middle">2,000</text>
+    </g>
+    <g font-family="inherit" font-size="9.5" fill="var(--muted)">
+      <text x="75" y="258" text-anchor="middle">Revenue</text>
+      <text x="155" y="258" text-anchor="middle">Explicit cost</text>
+      <text x="235" y="258" text-anchor="middle">Forgone rent</text>
+      <text x="315" y="258" text-anchor="middle">Economic profit</text>
+      <text x="284" y="196" fill="var(--secondary)">Accounting profit 10,000</text>
+      <text x="20" y="276" text-anchor="start">Unit: yuan per month; illustrative assumptions, not an actual shop.</text>
+    </g>
+  </svg>
+  <figcaption>Figure 2: Cost pass-through for the same shop, from 30,000 yuan of monthly revenue to 2,000 yuan of economic profit. Explicit cost of 20,000 is deducted first, leaving accounting profit of 10,000; forgone rent of 8,000 is then deducted, leaving economic profit of 2,000. Unit: yuan per month; figures are illustrative assumptions, not observed shop data.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-oc-sunk-tree-title-en fig-oc-sunk-tree-desc-en" viewBox="0 0 440 250" width="100%">
+    <title id="fig-oc-sunk-tree-title-en">A paid ticket is sunk and stays outside the decision</title>
+    <desc id="fig-oc-sunk-tree-desc-en">The ticket has already been paid and cannot be refunded, so it is a sunk cost outside the branch. The only branch compares the value of spending the remaining 90 minutes finishing the film with the value of leaving to do something else: finish if the former is higher, leave if the latter is higher.</desc>
+    <text x="20" y="24" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">The ticket is already paid; it does not belong in this branch</text>
+    <rect x="20" y="40" width="400" height="42" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="36" y="58" font-size="10" fill="var(--secondary)" font-family="inherit">Ticket bought, non-refundable: the payment is unchanged either way.</text>
+    <text x="36" y="73" font-size="10" font-weight="650" fill="var(--gold)" font-family="inherit">It is sunk, not an incremental cost of the next choice.</text>
+    <line x1="220" y1="82" x2="220" y2="104" stroke="var(--border)" stroke-width="1.5"/>
+    <path d="M216 101 L220 105 L224 101" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="40" y="106" width="360" height="42" rx="8" fill="var(--surface)" stroke="var(--border)"/>
+    <text x="220" y="124" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">Remaining 90 minutes: finish the film vs leave for something else</text>
+    <text x="220" y="140" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">Compare future increments only, not the money already spent.</text>
+    <line x1="150" y1="148" x2="110" y2="176" stroke="var(--border)" stroke-width="1.5"/>
+    <line x1="290" y1="148" x2="330" y2="176" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="30" y="178" width="160" height="42" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"/>
+    <text x="110" y="196" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">Finishing is worth more</text>
+    <text x="110" y="211" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">Stay; do not use the ticket price as a reason</text>
+    <rect x="250" y="178" width="160" height="42" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="330" y="196" font-size="10" text-anchor="middle" fill="var(--text)" font-family="inherit">Leaving is worth more</text>
+    <text x="330" y="211" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">Leave; the ticket money is lost either way</text>
+    <text x="20" y="242" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">Decision path; 90 minutes and ticket price are everyday assumptions.</text>
+  </svg>
+  <figcaption>Figure 3: The ticket is already paid and non-refundable, so it is a sunk cost outside the tree. The only comparison is the future value of the remaining 90 minutes: stay if finishing is worth more than leaving, leave if the alternative is worth more. Decision-path illustration; time and ticket price are everyday assumptions.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-oc-profit-matrix-title-en fig-oc-profit-matrix-desc-en" viewBox="0 0 440 250" width="100%">
+    <title id="fig-oc-profit-matrix-title-en">Two profit ledgers for the same shop</title>
+    <desc id="fig-oc-profit-matrix-desc-en">The accounting ledger subtracts 20,000 of explicit cost from 30,000 revenue and shows 10,000. The economic ledger also subtracts 8,000 of forgone rent and shows 2,000. The gap is 8,000 yuan per month; all amounts are illustrative.</desc>
+    <text x="20" y="24" font-size="12" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Same shop, two ledgers: 8,000 yuan apart</text>
+    <line x1="220" y1="42" x2="220" y2="218" stroke="var(--border)" stroke-width="1"/>
+    <text x="110" y="62" font-size="10.5" font-weight="650" text-anchor="middle" fill="var(--accent)" font-family="inherit">Accounting profit</text>
+    <text x="330" y="62" font-size="10.5" font-weight="650" text-anchor="middle" fill="var(--accent)" font-family="inherit">Economic profit</text>
+    <g font-family="inherit" font-size="9.5" fill="var(--secondary)">
+      <text x="30" y="90">Revenue 30,000</text>
+      <text x="30" y="116">− Explicit cost 20,000</text>
+      <text x="30" y="142">= 10,000</text>
+      <text x="250" y="90">Revenue 30,000</text>
+      <text x="250" y="116">− Explicit cost 20,000</text>
+      <text x="250" y="142">− Implicit cost 8,000</text>
+      <text x="250" y="168">= 2,000</text>
+    </g>
+    <rect x="30" y="154" width="160" height="34" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="110" y="175" font-size="9" text-anchor="middle" fill="var(--muted)" font-family="inherit">Only cash paid to outside parties</text>
+    <rect x="250" y="180" width="160" height="34" rx="6" fill="var(--accent-soft)" stroke="var(--accent)"/>
+    <text x="330" y="201" font-size="9" text-anchor="middle" fill="var(--text)" font-family="inherit">Also the best alternative use of owned resources</text>
+    <text x="20" y="240" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">Unit: yuan per month; figures are illustrative assumptions.</text>
+  </svg>
+  <figcaption>Figure 4: For the same shop, accounting profit deducts only 20,000 of explicit cost and shows 10,000; economic profit also deducts 8,000 of forgone rent and shows 2,000. The two ledgers differ by 8,000 yuan per month; figures are illustrative.</figcaption>
+</figure>
+
+<h2>Related</h2>
+<ul>
+<li>Economics station: <a href="../../">back to the station</a></li>
+<li>Continue with: What economics studies (ECO-001), Scarcity and choice (ECO-002), and Margin and incentives (ECO-004).</li>
+<li>The topic connects to budget constraints, production and cost, economic profit, and cost definitions in research methods.</li>
+</ul>
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> Which of the following are opportunity costs? A. A non-refundable course fee already paid; B. Wages forgone by starting a business; C. Rent forgone by using an owned office; D. Advertising spending from last month.</li>
+<li><strong>Calculation.</strong> The hourly wage is ¥80 and 20 hours are available in a week. What income is forgone by choosing 5 additional hours of study? What else must be compared to judge whether the choice is worthwhile?</li>
+<li><strong>Conditions.</strong> Why should a sunk cost not affect a marginal decision about whether to continue? Explain using “future increments.”</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>B and C. A and D are expenses that have already occurred and cannot be recovered; they are sunk costs. They may affect psychology, but they are not the value of a current next-best alternative.</li>
+<li>Forgone income is <code>5 × 80 = 400</code> yuan. One must also compare the future benefits of study, their probability, the value of time, and uncertainty. The ¥400 is only the current monetary opportunity cost, not a complete conclusion.</li>
+<li>Because the sunk cost does not change whether one continues or stops. A marginal decision compares the future incremental benefits and costs of continuing versus stopping. Including a sunk cost lets an unrecoverable expense influence a choice that should be judged on its own forward-looking terms.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<ol>
+<li>OpenStax. <em>Principles of Economics 3e</em>, “2.1 How Individuals Make Choices Based on Their Budget Constraint.” CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint">https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint</a> (accessed 2026-10-30)</li>
+<li>Henderson, David R. “Opportunity Cost.” <em>The Concise Encyclopedia of Economics</em>, Liberty Fund (Econlib), 2018. <a href="https://www.econlib.org/library/Enc/OpportunityCost.html">https://www.econlib.org/library/Enc/OpportunityCost.html</a> (accessed 2026-10-30)</li>
+<li>Arkes, Hal R., and Catherine Blumer. “The Psychology of Sunk Cost.” <em>Organizational Behavior and Human Decision Processes</em> 35, no. 1 (1985): 124–140. <a href="https://doi.org/10.1016/0749-5978(85)90049-4">https://doi.org/10.1016/0749-5978(85)90049-4</a> (accessed 2026-10-30)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Explain opportunity cost as the value of the next-best alternative, distinguishing explicit from implicit costs.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>Calculate the opportunity cost of a choice within a simple budget constraint.</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Explain opportunity cost as the value of the next-best alternative, distinguishing explicit from implicit costs.</li><li>Calculate the opportunity cost of a choice within a simple budget constraint.</li><li>Identify a sunk cost and explain why it should not drive a marginal decision.</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <p class="muted"> None. </p> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="/en/learn/what-economics-studies/">ECO-001 · What Economics Studies</a> </li><li> <a href="/en/learn/scarcity-and-choice/">ECO-002 · Scarcity and Choice</a> </li><li> <a href="/en/learn/margin-and-incentives/">ECO-004 · Margin and Incentives</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 2.1 How Individuals Make Choices Based on Their Budget Constraint</a> <p>OpenStax · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Opportunity cost is the value of the next-best alternative; a budget constraint represents affordable combinations.</p> </div><div class="source"> <a href="https://www.econlib.org/library/Enc/OpportunityCost.html" rel="noopener noreferrer" target="_blank">Opportunity Cost</a> <p>David R. Henderson · The Concise Encyclopedia of Economics, Liberty Fund (Econlib)</p> <p>Accessed: 2026-10-30 · License: Liberty Fund / Online Library of Liberty: cited and linked only, site terms not confirmed</p> <p>Supports: Opportunity cost is measured by the best alternative use of a resource, so decisions compare alternatives.</p> </div><div class="source"> <a href="https://doi.org/10.1016/0749-5978(85)90049-4" rel="noopener noreferrer" target="_blank">The psychology of sunk cost</a> <p>Hal R. Arkes; Catherine Blumer · Organizational Behavior and Human Decision Processes, 35(1), 124–140</p> <p>Accessed: 2026-10-30 · License: Restricted: Elsevier TDM licence only; no open reuse licence. Cited and linked only; no text, data or figures copied.</p> <p>Supports: People may continue a course of action because of prior irreversible investments.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/opportunity-cost/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

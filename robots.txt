@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://economics.51invest.com/sitemap.xml

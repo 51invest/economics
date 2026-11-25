@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>外部性、庇古税与总量控制：价格工具何时有效 · 巫妖投资</title><meta name="description" content="外部性让私人成本漏掉社会成本，庇古税用价格把损害装回决策，总量控制则直接限制排放数量。两种工具都能纠正过度生产，但价格确定性与数量确定性不能同时保证；损害测度、泄漏和交易成本决定它们何时有效。"><link rel="canonical" href="https://economics.51invest.com/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/externalities-pigouvian-taxes-and-cap-and-trade/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/externalities-pigouvian-taxes-and-cap-and-trade/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">外部性、庇古税与总量控制：价格工具何时有效</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">外部性、庇古税与总量控制：价格工具何时有效</h1> <p class="article-summary">外部性让私人成本漏掉社会成本，庇古税用价格把损害装回决策，总量控制则直接限制排放数量。两种工具都能纠正过度生产，但价格确定性与数量确定性不能同时保证；损害测度、泄漏和交易成本决定它们何时有效。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M06 · 福利与市场失灵</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>7 分钟 · 10 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>读完这一篇，你能用边际外部损害给庇古税定一个起点，比较税收与可交易许可证在不确定下的差别，并判断“给污染定价”在哪些情形下反而失效。</p>
+</blockquote>
+<h2>定义</h2>
+<p><strong>外部性</strong>（externality）指一项活动对第三方造成成本或收益，却没有通过价格结算。负外部性让私人边际成本低于社会边际成本，市场因此生产过多[1]。<strong>庇古税</strong>（Pigouvian tax）是按单位外部损害征收的矫正税，目标是让私人成本重新包含社会成本。<strong>总量控制与交易</strong>（cap-and-trade）先设定排放上限，再让受管制主体交易许可证；价格由稀缺程度决定，而不是由税务机关直接设定[2]。</p>
+<p>本文把“价格工具”指为两类：一是直接给损害定价的税，二是通过许可证数量间接定价的排放权。两者都不是“让企业多交钱”这么简单，它们改变的是边际决策：多生产一单位，企业要多承担多少社会成本。</p>
+<h2>直觉</h2>
+<p>一家工厂每年排放 10 万吨二氧化碳，每吨造成 40 元损害，但排放本身不花钱。工厂只看到燃料、设备和人工，看不到这 400 万元外部损害，于是产量和排放都高于社会最优。</p>
+<p>如果政府按每吨 40 元征税，工厂每多排一吨就多付 40 元。它有三种选择：少排、换工艺、继续排并交税。只要减排成本低于 40 元，减排就比交税便宜；高于 40 元，交税更便宜。税率把“社会愿意为少一吨损害付多少钱”变成企业的边际价格。</p>
+<p>总量控制走另一条路：政府直接发 6 万吨许可证，工厂只能排放这么多。许可证不够时，减排成本低的工厂先减，成本高的工厂买许可证。许可证价格最后会落在“完成最后一吨减排要花多少钱”附近[2]。税先定价格、数量由企业反应决定；上限先定数量、价格由市场竞价决定。</p>
+<h2>正式表达</h2>
+<p>设私人边际成本为 <code>MPC</code>，边际外部损害为 <code>MEC</code>，社会边际成本为：</p>
+<p><code>MSC = MPC + MEC</code></p>
+<p>没有矫正时，企业按 <code>MPC = 价格</code> 决策，产量高于 <code>MSC = 价格</code> 时的社会最优产量。庇古税 <code>t</code> 的最优起点是目标产量处的边际外部损害：</p>
+<p><code>t* = MEC(Q*)</code></p>
+<p>如果边际损害随排放上升，<code>t*</code> 不是固定常数；用一个固定税率只在某一目标区间内接近最优。总量控制把 <code>Q</code> 直接限制在 <code>Q_cap</code>，许可证价格 <code>p</code> 在竞争性市场中接近边际减排成本：</p>
+<p><code>p ≈ MAC(Q_cap)</code></p>
+<p>其中 <code>MAC</code> 是边际减排成本。税收收入为 <code>t × Q</code>，许可证拍卖收入为 <code>p × Q_cap</code>；如果许可证免费发放，收入归持有者而不是政府，但数量约束仍然存在。损害估计本身也不是唯一数字：EPA 的说明显示，社会成本取决于贴现率、损害函数和排放情景[3]。</p>
+<p>不确定性下有一个关键区别：如果边际损害比边际减排成本更陡，数量工具更接近最优；如果边际减排成本更陡，价格工具更接近最优。这就是价格工具与数量工具不能互相替代的原因，也是“先算损害还是先算成本”的实践分歧。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>损害能被测度并按单位表达。</strong> 庇古税要求知道每吨污染的大致边际损害；如果损害是阈值型、非线性的，固定税率可能严重偏离。</li>
+<li><strong>边际损害相对稳定。</strong> 税率一旦设定，企业会按它调整；损害随地点、时段、暴露人群变化很大时，统一税率会错配。</li>
+<li><strong>排放点可界定、可计量。</strong> 点源排放适合税收或许可证；农业面源、交通拥堵等非点源，计量和执法成本可能高于收益。</li>
+<li><strong>泄漏可控。</strong> 如果高污染生产转移到未管制地区，全球排放未必下降；边境调节、覆盖范围和跨区协议决定政策是否真的减少总损害。</li>
+<li><strong>交易成本不吞掉节省。</strong> 许可证市场需要登记、核查、处罚和二级市场；参与主体太少时，市场势力会压低或抬高价格。</li>
+<li><strong>收入使用有交代。</strong> 税收或拍卖收入可以降低其他扭曲税、直接返还或用于治理；不同的使用方式改变分配结果，但不改变边际减排激励。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设某厂年排放 10 万吨二氧化碳，边际外部损害为 40 元/吨。减排选项如下（教学假设）：</p>
+<table>
+<thead>
+<tr>
+<th align="right">减排量（万吨）</th>
+<th align="right">边际减排成本（元/吨）</th>
+<th align="right">累计减排成本（万元）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">0–2</td>
+<td align="right">20</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td align="right">2–4</td>
+<td align="right">40</td>
+<td align="right">80</td>
+</tr>
+<tr>
+<td align="right">4–6</td>
+<td align="right">60</td>
+<td align="right">120</td>
+</tr>
+<tr>
+<td align="right">6–8</td>
+<td align="right">90</td>
+<td align="right">180</td>
+</tr>
+</tbody></table>
+<p>没有政策时，排放 10 万吨，外部损害为 <code>40 × 10 万 = 400 万元</code>，减排成本为 0。</p>
+<p>征 40 元/吨的庇古税后，工厂会减排前 4 万吨：前 2 万吨减排成本 20 元低于税，后 2 万吨等于税，继续减排不亏；第 5–6 万吨成本 60 元高于税，工厂宁愿交税。排放降到 6 万吨，缴税 <code>40 × 6 万 = 240 万元</code>，减排成本 <code>20 × 2 万 + 40 × 2 万 = 120 万元</code>。社会成本是减排成本加外部损害：<code>120 + 40 × 6 万 = 360 万元</code>，低于无政策时的 400 万元。</p>
+<p>总量控制设上限 6 万吨，边际减排成本落在 40 元/吨，许可证价格约为 40 元；减排量和社会成本与 40 元税相同。若上限收紧到 4 万吨，最后 2 万吨的减排成本是 60 元，许可证价格升到 60 元；减排成本变为 <code>40 + 80 + 120 = 240 万元</code>，外部损害 <code>40 × 4 万 = 160 万元</code>，社会成本 400 万元。上限过紧，边际减排成本超过边际损害，社会为最后 2 万吨付出了高于损害的价格。</p>
+<p>反过来，如果实际上边际损害是 60 元而不是 40 元，40 元税会少减排 2 万吨，而 4 万吨上限刚好接近最优。这个例子说明：谁更接近最优，取决于真实损害曲线和减排成本曲线，而不是工具名称。</p>
+<p>以上均为教学假设，不是真实企业或真实碳市场数据。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-mech-title fig-ext-mech-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-ext-mech-title">外部性从私人成本漏损到政策矫正的机制</title>
+    <desc id="fig-ext-mech-desc">工厂排放 10 万吨，每吨外部损害 40 元，私人账本漏掉 400 万元；庇古税 40 元/吨或许可证上限 6 万吨把边际损害装回决策，排放降到 6 万吨。图为教学示意，不是真实企业数据。</desc>
+    <rect x="16" y="52" width="124" height="96" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="76" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">排放 10 万吨</text>
+    <text x="30" y="98" font-size="10" fill="var(--muted)" font-family="inherit">燃料、设备、人工</text>
+    <text x="30" y="118" font-size="10" fill="var(--muted)" font-family="inherit">私人成本看不到损害</text>
+    <rect x="168" y="52" width="124" height="96" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="182" y="76" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">外部损害 400 万元</text>
+    <text x="182" y="98" font-size="10" fill="var(--muted)" font-family="inherit">40 元/吨 × 10 万吨</text>
+    <text x="182" y="118" font-size="10" fill="var(--muted)" font-family="inherit">第三方承担，不进价格</text>
+    <rect x="320" y="52" width="124" height="96" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="334" y="76" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">产量与排放偏高</text>
+    <text x="334" y="98" font-size="10" fill="var(--muted)" font-family="inherit">社会边际成本 &gt; 私人</text>
+    <text x="334" y="118" font-size="10" fill="var(--muted)" font-family="inherit">市场均衡不是社会最优</text>
+    <line x1="140" y1="100" x2="168" y2="100" stroke="var(--border)" stroke-width="1.5"></line>
+    <line x1="292" y1="100" x2="320" y2="100" stroke="var(--border)" stroke-width="1.5"></line>
+    <rect x="16" y="182" width="428" height="52" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"></rect>
+    <text x="30" y="204" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit">矫正：税 40 元/吨，或上限 6 万吨</text>
+    <text x="30" y="224" font-size="10" fill="var(--muted)" font-family="inherit">企业每多排一吨，必须多付 40 元或少一吨许可证</text>
+    <rect x="16" y="250" width="428" height="36" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="30" y="273" font-size="10.5" fill="var(--accent)" font-family="inherit">结果：排放 6 万吨；减排成本 120 万元 + 外部损害 240 万元 = 社会成本 360 万元</text>
+  </svg>
+  <figcaption>图 1：外部性的机制链。私人账本漏掉 400 万元外部损害，税或上限把边际损害装回企业决策，排放从 10 万吨降到 6 万吨。数值为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-mac-title fig-ext-mac-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-ext-mac-title">边际减排成本阶梯与 40 元庇古税</title>
+    <desc id="fig-ext-mac-desc">四段减排成本分别为 20、40、60、90 元/吨，每段 2 万吨；40 元税率接受前两段共 4 万吨减排，排放降到 6 万吨。图为教学算例，不是真实减排成本数据。</desc>
+    <line x1="90" y1="236" x2="420" y2="236" stroke="var(--border)" stroke-width="1.2"></line>
+    <line x1="90" y1="236" x2="90" y2="38" stroke="var(--border)" stroke-width="1.2"></line>
+    <rect x="100" y="196" width="64" height="40" fill="var(--accent)" opacity="0.82"></rect>
+    <rect x="176" y="156" width="64" height="80" fill="var(--accent)" opacity="0.82"></rect>
+    <rect x="252" y="116" width="64" height="120" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <rect x="328" y="66" width="64" height="170" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <line x1="90" y1="156" x2="420" y2="156" stroke="var(--gold)" stroke-width="2"></line>
+    <text x="426" y="160" font-size="10" fill="var(--gold)" font-family="inherit" text-anchor="end">税 40 元</text>
+    <g fill="var(--text)" font-size="10" font-family="inherit" text-anchor="middle">
+      <text x="132" y="188">20 元</text>
+      <text x="208" y="148">40 元</text>
+      <text x="284" y="108">60 元</text>
+      <text x="360" y="58">90 元</text>
+      <text x="132" y="256">0–2 万吨</text>
+      <text x="208" y="256">2–4 万吨</text>
+      <text x="284" y="256">4–6 万吨</text>
+      <text x="360" y="256">6–8 万吨</text>
+    </g>
+    <text x="92" y="30" font-size="10.5" fill="var(--muted)" font-family="inherit">减排成本（元/吨）</text>
+    <text x="32" y="150" font-size="10" fill="var(--accent)" font-family="inherit">税下减排</text>
+    <text x="32" y="166" font-size="10" fill="var(--muted)" font-family="inherit">4 万吨</text>
+  </svg>
+  <figcaption>图 2：40 元税只接受成本低于或等于 40 元的减排段，共减排 4 万吨；成本 60 和 90 元的后两段继续交税更便宜。数值为教学假设。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-compare-title fig-ext-compare-desc" viewBox="0 0 460 300" width="100%">
+    <title id="fig-ext-compare-title">庇古税与总量控制的五个比较维度</title>
+    <desc id="fig-ext-compare-desc">庇古税固定价格、数量随反应变化，收入归政府；总量控制固定数量、价格由市场决定，拍卖收入归政府或免费发放给企业。两者在不确定、分配和交易成本上不同。图为教学对照，不是政策建议。</desc>
+    <rect x="16" y="44" width="208" height="236" rx="8" fill="var(--surface)" stroke="var(--border)"></rect>
+    <rect x="236" y="44" width="208" height="236" rx="8" fill="var(--surface-2)" stroke="var(--border)"></rect>
+    <text x="30" y="68" font-size="12" font-weight="650" fill="var(--accent)" font-family="inherit">庇古税</text>
+    <text x="250" y="68" font-size="12" font-weight="650" fill="var(--accent)" font-family="inherit">总量控制</text>
+    <g fill="var(--text)" font-size="10" font-family="inherit">
+      <text x="30" y="96">价格确定</text><text x="250" y="96">数量确定</text>
+      <text x="30" y="126">数量随企业反应变化</text><text x="250" y="126">价格随稀缺程度变化</text>
+      <text x="30" y="156">税收归政府</text><text x="250" y="156">拍卖归政府，免费发放归企业</text>
+      <text x="30" y="186">适合损害较稳定</text><text x="250" y="186">适合上限较确定</text>
+      <text x="30" y="216">调整税率有政治成本</text><text x="250" y="216">配额分配有政治成本</text>
+      <text x="30" y="246">价格下限可设，但难保数量</text><text x="250" y="246">价格上限可设，但难保交付</text>
+    </g>
+    <text x="16" y="24" font-size="10.5" fill="var(--muted)" font-family="inherit">同一个目标：让边际损害进入企业决策；差别在价格与数量哪个先被固定。</text>
+  </svg>
+  <figcaption>图 3：税与上限的对照。税先固定价格、数量由反应决定；上限先固定数量、价格由市场决定。两者都能把边际损害内部化，但价格确定性和数量确定性不可同时保证。教学对照，不是政策建议。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-ext-boundary-title fig-ext-boundary-desc" viewBox="0 0 460 320" width="100%">
+    <title id="fig-ext-boundary-title">给外部性定价前要过的五道检查</title>
+    <desc id="fig-ext-boundary-desc">依次检查损害能否按单位测度、边际损害是否稳定、排放点能否计量、是否发生泄漏、交易与执法成本是否可控。任何一项不通过，价格工具都可能把名义减排变成账面游戏。图为教学示意。</desc>
+    <rect x="16" y="40" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="67" font-size="10.5" fill="var(--text)" font-family="inherit">1. 损害能按单位测度吗？不能 → 先做损害评估，不要急着定价</text>
+    <rect x="16" y="94" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="121" font-size="10.5" fill="var(--text)" font-family="inherit">2. 边际损害稳定吗？不稳定 → 分区、分时或阈值型工具</text>
+    <rect x="16" y="148" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="175" font-size="10.5" fill="var(--text)" font-family="inherit">3. 排放点可计量吗？面源 → 监控、投入品税或共同治理</text>
+    <rect x="16" y="202" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="229" font-size="10.5" fill="var(--text)" font-family="inherit">4. 会泄漏到未管制地区吗？会 → 边境调节或更宽覆盖</text>
+    <rect x="16" y="256" width="428" height="44" rx="7" fill="var(--surface)" stroke="var(--border)"></rect>
+    <text x="30" y="283" font-size="10.5" fill="var(--text)" font-family="inherit">5. 交易与执法成本可控吗？不可控 → 简化工具或直接监管</text>
+  </svg>
+  <figcaption>图 4：价格工具的适用边界。损害测度、边际稳定性、排放点计量、泄漏和交易成本五项都要过；这是教学检查表，不是政策模板。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>“庇古税一定等于全部外部损害。”</strong> 最优税率等于目标产量处的边际外部损害，不是把总损害平均摊到每一吨。总损害包含存量影响，边际损害只看最后一吨。</p>
+<p><strong>“总量控制一定比税更环保。”</strong> 上限更紧当然排放更少，但过紧会让边际减排成本高于边际损害，社会为最后几吨付出过多。数量工具保证上限，不保证效率。</p>
+<p><strong>“税收收入是额外收益，可以随便花。”</strong> 税收是转移，不是资源；真正成本是减排和损害。收入使用影响分配和其余税负，但不能把转移收入当成社会净收益。</p>
+<p><strong>“许可证免费发放和拍卖等价。”</strong> 对边际减排激励可能等价，但分配差别很大：免费发放把稀缺租金送给现有排放者，拍卖把租金留给公共预算。</p>
+<p><strong>“外部性都能用价格解决。”</strong> 非点源、损害阈值、严重泄漏和高执法成本会让价格工具失灵；此时直接监管、技术标准或公共投资可能更有效。</p>
+<h2>关联</h2>
+<ul>
+<li>与 <strong>ECO-005 需求、供给与市场均衡</strong> 的关系：外部性使社会成本曲线高于私人成本曲线，均衡产量和价格要放在同一张供需图上读。</li>
+<li>与 <strong>ECO-010 外部性与公共品</strong> 的关系：那一篇讲外部性定义、正负外部性和公共品；这一篇讲负外部性的政策工具、税率与上限的比较。</li>
+<li>与 <strong>ECO-009 竞争与垄断</strong> 的关系：许可证市场也可能出现市场势力；竞争政策与环保政策要一起看。</li>
+<li>与 <strong>ECO-029 环境、能源与农业</strong> 的关系：碳定价、能源转型和农业面源污染，是本文工具的具体应用场景。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li>概念辨别：庇古税和总量控制分别固定了价格还是数量？哪一个更适合“损害上限绝对不能突破”的场景？</li>
+<li>计算：边际损害 30 元/吨，减排选项为 10 元、30 元、50 元各 1 万吨。征 30 元税时企业减排多少？社会成本是多少？</li>
+<li>适用条件：某地农业化肥面源污染难以计量，直接按化肥含氮量征税与给每块田发许可证，哪个更可行？说明理由。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 12.1 The Economics of Pollution. <a href="https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution">https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution</a></li>
+<li>OpenStax, <em>Principles of Economics 3e</em>, 12.3 Market-Oriented Environmental Tools. <a href="https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools">https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools</a></li>
+<li>U.S. Environmental Protection Agency, <em>EPA&#39;s Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances</em>. <a href="https://www.epa.gov/environmental-economics/scghg">https://www.epa.gov/environmental-economics/scghg</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>用边际外部损害设定庇古税起点，并写出社会边际成本与私人边际成本的关系。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用减排阶梯算例比较税收与可交易许可证下的减排量、社会成本和许可证价格。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>用边际外部损害设定庇古税起点，并写出社会边际成本与私人边际成本的关系。</li><li>用减排阶梯算例比较税收与可交易许可证下的减排量、社会成本和许可证价格。</li><li>列出价格工具有效的六个条件，并识别损害阈值、非点源与泄漏造成的失效。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/externalities-and-public-goods/">ECO-010 · 外部性与公共品</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li><li> <a href="/learn/competition-and-monopoly/">ECO-009 · 竞争与垄断</a> </li><li> <a href="/learn/environment-energy-and-agriculture/">ECO-029 · 环境能源与农业</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 12.1 The Economics of Pollution</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对负外部性、社会成本等于私人成本加外部成本，以及市场产量高于社会最优产量的定义；正文企业数字为教学示例。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/12-3-market-oriented-environmental-tools" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 12.3 Market-Oriented Environmental Tools</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-23 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对庇古税、可交易许可证、数量上限与价格工具的区别；正文不把税收收入或免费分配写成社会净收益。</p> </div><div class="source"> <a href="https://www.epa.gov/environmental-economics/scghg" rel="noopener noreferrer" target="_blank">EPA&#39;s Report on the Social Cost of Greenhouse Gases: Estimates Incorporating Recent Scientific Advances</a> <p>U.S. Environmental Protection Agency · U.S. Environmental Protection Agency</p> <p>访问：2026-11-23 · 许可：U.S. Government work; public domain (17 U.S.C. §105); cite-only</p> <p>支持论点：用于核对社会成本估计依赖贴现率、损害函数和排放情景，不是单一固定数字；正文不把教学税率写成官方社会成本。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/externalities-pigouvian-taxes-and-cap-and-trade/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

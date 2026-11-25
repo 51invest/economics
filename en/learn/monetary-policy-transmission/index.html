@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>Monetary Policy Transmission · 51Invest</title><meta name="description" content="Monetary policy affects aggregate demand through interest rates, credit, asset prices, exchange rates, and expectations, with lags and leakages from the policy rate to output and inflation."><link rel="canonical" href="https://economics.51invest.com/en/learn/monetary-policy-transmission/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/monetary-policy-transmission/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/monetary-policy-transmission/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/monetary-policy-transmission/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">Skip to content</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/en/" data-main-home aria-label="51Invest"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">51Invest</span> <span class="brand-caption">WUYAO INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="Knowledge stations"> <a class="nav-link" href="https://51invest.com/en/" data-main-home> Home </a> <a class="nav-link active" href="/en/" aria-current="page"> Economics </a><a class="nav-link" href="https://finance.51invest.com/en/"> Finance </a><a class="nav-link" href="https://markets.51invest.com/en/"> Markets </a><a class="nav-link" href="https://invest.51invest.com/en/"> Investing </a><a class="nav-link" href="https://history.51invest.com/en/"> History </a><a class="nav-link" href="https://research.51invest.com/en/"> Research </a> <a class="nav-link" href="https://51invest.com/en/contents/"> Content map </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/learn/monetary-policy-transmission/" hreflang="zh-CN" lang="zh-CN" data-language-link="zh" aria-label="Switch to Chinese" title="Switch to Chinese"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="Theme: System" title="Theme: System" data-label-auto="Theme: System" data-label-light="Theme: Light" data-label-dark="Theme: Dark"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">System</span> <span class="theme-text" data-theme-text="light">Light</span> <span class="theme-text" data-theme-text="dark">Dark</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/en/" data-main-home>Home</a> <span class="sep">/</span> <a href="/en/">Economics</a> <span class="sep">/</span> <span aria-current="page">Monetary Policy Transmission</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">Concept</span> <h1 class="article-title">Monetary Policy Transmission</h1> <p class="article-summary">Monetary policy affects aggregate demand through interest rates, credit, asset prices, exchange rates, and expectations, with lags and leakages from the policy rate to output and inflation.</p>  <div class="meta-grid"> <div class="meta-item"><span>Module</span><strong>ECO-M11 · 货币政策与金融传导</strong></div> <div class="meta-item"><span>Level</span><strong>Foundation</strong></div> <div class="meta-item"><span>Read</span><strong>8 min · 12 sections</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> This article has an interactive demo <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>Definition</h2>
+<p><strong>Monetary policy transmission</strong> is the process by which a central bank uses its tools to change financial conditions and thereby affect aggregate demand, output, employment, and inflation. Tools include the policy rate, reserve remuneration, asset purchases, and forward guidance; channels include interest rates, credit, asset prices, exchange rates, and expectations [1].</p>
+<h2>Intuition</h2>
+<p>A policy-rate cut first changes what banks pay for overnight reserves [1][2], and the move then passes through to loan, bond, and deposit rates [2]. Lower financing costs make marginal projects viable; higher asset prices raise wealth; a weaker currency aids exports [1]. These effects support demand [3] but take time and can be weakened by bank risk appetite, debt, and supply constraints.</p>
+<h2>Formal expression</h2>
+<p>The real rate is approximately <code>r ≈ i - π^e</code>, where <code>i</code> is the nominal rate and <code>π^e</code> expected inflation.</p>
+<p>The chain is:</p>
+<p><code>policy rate i_p → market rate i_m → lending rate i_l</code> [2]; <code>investment I, consumption C, net exports NX → aggregate demand AD → output Y, price level P</code> [3].</p>
+<p><code>AD = C + I + G + NX</code>; investment and durable consumption are more sensitive to the real rate. In the short run, output responds to demand, and inflation usually responds more slowly.</p>
+<h2>When it applies</h2>
+<ol>
+<li><strong>Incomplete pass-through.</strong> Bank markups, fixed-rate contracts, and segmented markets prevent one-for-one lending-rate moves; weak bank capital or credit rationing can also blunt rate cuts.</li>
+<li><strong>Zero bound and lags.</strong> Near zero, conventional cuts have little room [1][3], and policy takes time to affect output and inflation.</li>
+<li><strong>Supply shocks.</strong> Tightening can reduce demand and inflation, but cannot add energy, food, or labor supply, and it sacrifices output.</li>
+<li><strong>Open economy.</strong> Exchange rates, capital flows, and foreign policy change the direction and strength of transmission.</li>
+</ol>
+<p>Scope note: the approximation r≈i−π^e, the identity AD=C+I+G+NX, policy lags, and incomplete pass-through with credit rationing lie outside the supports of the registered sources; asset purchases and forward guidance are supported by [1]. They are presented as textbook convention and model assumptions: a methodological statement, not a conclusion quoted from the registered sources.</p>
+<h2>Worked example</h2>
+<p>Suppose a central bank cuts its policy rate from 4.50% to 4.00% (-50 basis points, that is 0.50 percentage points). This is a teaching model with no currency implied, and every rate in the table below is an annualized percentage; expected inflation is 2.00%, and the average bank lending spread is 1.50 percentage points. A project has an expected nominal return of 5.75% (annualized). The example assumes an unchanged lending spread and one-for-one pass-through from the policy rate to the lending rate.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th align="right">Before cut</th>
+<th align="right">After cut</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Policy rate</td>
+<td align="right">4.50%</td>
+<td align="right">4.00%</td>
+</tr>
+<tr>
+<td>Expected inflation</td>
+<td align="right">2.00%</td>
+<td align="right">2.00%</td>
+</tr>
+<tr>
+<td>Real policy rate</td>
+<td align="right">2.50%</td>
+<td align="right">2.00%</td>
+</tr>
+<tr>
+<td>Lending rate</td>
+<td align="right">6.00%</td>
+<td align="right">5.50%</td>
+</tr>
+<tr>
+<td>Project nominal return</td>
+<td align="right">5.75%</td>
+<td align="right">5.75%</td>
+</tr>
+<tr>
+<td>Project viable?</td>
+<td align="right">No</td>
+<td align="right">Yes</td>
+</tr>
+</tbody></table>
+<p>Before the cut, the 6.00% lending rate exceeds the 5.75% return, so the project is not financed; after the cut, 5.50% is below 5.75%, so it becomes viable. The viability test here compares the nominal lending rate with the nominal project return. All figures are teaching assumptions, not actual data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-trans-title fig-trans-desc" viewBox="0 0 420 210" width="100%">
+    <title id="fig-trans-title">The lending rate falls below the project return, making it viable</title>
+    <desc id="fig-trans-desc">A zero-based percentage scale, forty-five point seven pixels per point. The upper bar is the pre-cut lending rate of 6.00 percent, 274.3 pixels long; the lower bar is 5.50 percent after the cut, 251.4 pixels. A dashed vertical line marks the project's 5.75 percent nominal return: the first bar passes it, the second stops short.</desc>
+    <line x1="60" y1="170" x2="380" y2="170" stroke="var(--border)" stroke-width="2"></line>
+    <rect x="60" y="80" width="274.3" height="26" fill="var(--accent)" opacity="0.7"></rect>
+    <rect x="60" y="130" width="251.4" height="26" fill="var(--gold)" opacity="0.85"></rect>
+    <line x1="322.9" y1="55" x2="322.9" y2="165" stroke="var(--muted)" stroke-width="2" stroke-dasharray="5 3"></line>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="60" y="20">Percent (zero baseline, 45.714 px per point)</text>
+      <text x="62" y="74">before: lending rate 6.00% → not viable</text>
+      <text x="62" y="124">after: lending rate 5.50% → viable</text>
+      <text x="222" y="50">project return 5.75%</text>
+      <text x="60" y="192">policy rate 4.50%→4.00%; real policy rate 2.50%→2.00% (inflation 2.00%)</text>
+    </g>
+  </svg>
+  <figcaption>Figure 1: where transmission ends - the project's nominal return stays at 5.75% (dashed line) while the lending rate moves from 6.00% to 5.50%, crossing from above to below and flipping viability (zero-based bars, 45.714 pixels per percentage point). Upstream, the policy rate falls from 4.50% to 4.00% and the real policy rate from 2.50% to 2.00%. Numbers are teaching assumptions.</figcaption>
+</figure>
+
+<p>Figure 1 zooms in on the end of the chain. Figure 2 connects the baseline chain: a lower policy rate first moves funding and market rates, then lending rates, and only then project viability; each link can leak.</p>
+<h2>Diagram: from policy rate to project</h2>
+<figure id="figure-trans-chain">
+  <svg role="img" aria-labelledby="fig-trans-chain-title-en fig-trans-chain-desc-en" viewBox="0 0 380 300" width="100%">
+    <title id="fig-trans-chain-title-en">The baseline chain of monetary transmission</title>
+    <desc id="fig-trans-chain-desc-en">Four links: policy and market rates fall from 4.50 to 4.00 percent; the loan rate falls from 6.00 to 5.50 percent; the project return stays at 5.75 percent; the project moves from not viable to viable. The dashed box lists leakages: weak pass-through, credit rationing, weak demand, expectations and supply constraints.</desc>
+    <g font-family="inherit">
+      <rect x="4" y="44" width="88" height="84" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <rect x="98" y="44" width="88" height="84" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <rect x="192" y="44" width="88" height="84" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <rect x="286" y="44" width="88" height="84" rx="9" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <g text-anchor="middle">
+        <text x="48" y="66" font-size="10.2" font-weight="650" fill="var(--text)">Policy → market</text>
+        <text x="48" y="88" font-size="11.2" font-weight="600" fill="var(--accent)">4.50→4.00%</text>
+        <text x="48" y="106" font-size="9.8" fill="var(--secondary)">real 2.50→2.00%</text>
+        <text x="48" y="120" font-size="9.8" fill="var(--muted)">−50 bp</text>
+        <text x="142" y="66" font-size="11.2" font-weight="650" fill="var(--text)">Loan rate</text>
+        <text x="142" y="88" font-size="11.2" font-weight="600" fill="var(--accent)">6.00→5.50%</text>
+        <text x="142" y="106" font-size="9.8" fill="var(--secondary)">spread 1.50pp</text>
+        <text x="142" y="120" font-size="9.2" fill="var(--muted)">bank pass-through</text>
+        <text x="236" y="66" font-size="10.6" font-weight="650" fill="var(--text)">Project return</text>
+        <text x="236" y="88" font-size="11.2" font-weight="600" fill="var(--accent)">5.75% fixed</text>
+        <text x="236" y="106" font-size="9.8" fill="var(--secondary)">nominal, annual</text>
+        <text x="236" y="120" font-size="9.8" fill="var(--muted)">before financing</text>
+        <text x="330" y="66" font-size="11.2" font-weight="650" fill="var(--text)">Viable?</text>
+        <text x="330" y="88" font-size="11.2" font-weight="600" fill="var(--gold)">No → Yes</text>
+        <text x="330" y="106" font-size="9.2" fill="var(--secondary)">loan below return</text>
+        <text x="330" y="120" font-size="9.2" fill="var(--muted)">threshold flips</text>
+      </g>
+      <g stroke="var(--muted)" stroke-width="1.5">
+        <line x1="92" y1="86" x2="95" y2="86"/>
+        <path d="M95 82 L98 86 L95 90 z" fill="var(--muted)" stroke="none"/>
+        <line x1="186" y1="86" x2="189" y2="86"/>
+        <path d="M189 82 L192 86 L189 90 z" fill="var(--muted)" stroke="none"/>
+        <line x1="280" y1="86" x2="283" y2="86"/>
+        <path d="M283 82 L286 86 L283 90 z" fill="var(--muted)" stroke="none"/>
+      </g>
+      <rect x="4" y="154" width="372" height="72" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-dasharray="5 4"/>
+      <text x="18" y="176" font-size="11.2" font-weight="650" fill="var(--gold)">Leakages shorten the chain</text>
+      <text x="18" y="196" font-size="9.8" fill="var(--secondary)">weak pass-through · credit rationing · demand · expectations · supply</text>
+      <text x="18" y="214" font-size="9.8" fill="var(--muted)">They change size and timing, and can even break the chain.</text>
+      <text x="4" y="254" font-size="10.4" fill="var(--text)">The endpoint turns on one comparison: loan rate below project return?</text>
+      <text x="4" y="276" font-size="9.8" fill="var(--muted)">Real rates, growth, lags and credit set the speed and reach.</text>
+    </g>
+  </svg>
+  <figcaption>Figure 2: the baseline chain from policy rate to project viability. The numbers match Table 1 and are teaching assumptions; the arrows describe a baseline, not a certainty. Lags and leakages can lengthen or weaken the chain.</figcaption>
+</figure>
+
+<h2>Common mistakes</h2>
+<p><strong>The central bank sets mortgage or credit-card rates directly.</strong> It mainly influences short-term funding through the policy rate and reserve operations [2]; market, term, and credit risk also set other rates.</p>
+<p><strong>A cut raises GDP immediately.</strong> Transmission takes time and can be offset by credit conditions, expectations, and supply constraints.</p>
+<p><strong>Monetary policy controls inflation precisely.</strong> Inflation also depends on energy, food, exchange rates, wages, and supply shocks.</p>
+<p><strong>Transmission works only through interest rates.</strong> Credit, asset prices, exchange rates, and expectations are channels as well.</p>
+<p><strong>A low policy rate means loose policy.</strong> With lower inflation, a low nominal rate can still be tight in real terms; judge the stance by the real rate <code>r ≈ i - π^e</code>.</p>
+<!-- kp-supplement:start -->
+<h2>Knowledge-point review</h2>
+<h3>interest-rate channel</h3>
+<p><strong>Definition</strong>: The interest-rate channel is how monetary policy changes short-term rates, borrowing costs and asset prices to affect demand.</p>
+<p><strong>Mechanism</strong>: Rate cuts lower financing costs and lift valuations, stimulating investment and durable consumption; hikes do the reverse, with lags.</p>
+<p><strong>Example</strong>: For example, a cut makes factory loans cheaper and lowers mortgage payments, potentially raising investment and spending.</p>
+<p><strong>Boundary</strong>: The channel can fail near the zero bound, under high debt or pessimistic expectations; a nominal cut with a high real rate may stimulate little.</p>
+<h3>credit channel</h3>
+<p><strong>Definition</strong>: The credit channel is how monetary policy affects firm financing through bank loan supply, spreads and collateral terms, not only the risk-free rate.</p>
+<p><strong>Mechanism</strong>: Banks fund themselves with deposits and wholesale money, so policy changes alter lendable funds, risk appetite and credit standards, amplifying or dampening policy.</p>
+<p><strong>Example</strong>: For example, a rate cut may fail to reach small firms if banks tighten approvals over bad loans.</p>
+<p><strong>Boundary</strong>: The channel depends on bank capital, regulation and borrower quality; economies with more direct finance rely less on bank credit.</p>
+<h3>balance-sheet channel</h3>
+<p><strong>Definition</strong>: The balance-sheet channel is how policy changes asset prices, collateral values and debt burdens, altering borrowers&#39; financing capacity.</p>
+<p><strong>Mechanism</strong>: Rate cuts lift asset prices and reduce floating-rate debt, improving net worth and loan-to-value; asset falls trigger deleveraging and credit contraction.</p>
+<p><strong>Example</strong>: For example, falling house prices leave households with less collateral, banks lend less and families cut spending even when rates are low.</p>
+<p><strong>Boundary</strong>: The channel can amplify cycles and inequality; asset holders gain more, non-holders feel little, and valuations need not reflect cash flow.</p>
+<h3>policy tools</h3>
+<p><strong>Definition</strong>: Monetary tools include policy rates, reserve requirements, open-market operations, lending facilities and forward guidance, used to adjust liquidity and financing conditions.</p>
+<p><strong>Mechanism</strong>: Conventional tools set short-rate prices and quantities; unconventional tools buy assets, lend to targeted sectors or guide expectations, but exit is harder.</p>
+<p><strong>Example</strong>: For example, a central bank injects short-term funds through repos or buys government bonds to lower long rates and support credit.</p>
+<p><strong>Boundary</strong>: Tool effects depend on transmission, fiscal coordination and regulation; prolonged unconventional use can distort pricing and build risk.</p>
+<h3>expectations and constraints</h3>
+<p><strong>Definition</strong>: Expectations and constraints mean policy works through beliefs about future policy, inflation and risk, within legal, exchange-rate, fiscal and financial-stability limits.</p>
+<p><strong>Mechanism</strong>: Credible, persistent and clearly communicated policy anchors expectations; abrupt reversals, vague rules or political interference raise uncertainty and weaken transmission.</p>
+<p><strong>Example</strong>: For example, a clear long-run inflation target can reduce front-loading in wage talks and require less tightening.</p>
+<p><strong>Boundary</strong>: Central banks are not unconstrained; exchange-rate goals, debt sustainability, financial stability and independence limit options, and communication cannot replace real adjustment.</p>
+<!-- kp-supplement:end -->
+
+<h2>Related</h2>
+<ul>
+<li>Required prerequisite: GDP and National Accounts (ECO-011), Price Indices and Inflation (ECO-013), The Business Cycle (ECO-018).</li>
+<li>Related reading: Central Bank Balance Sheets (FIN-005), Fiscal Policy and the Multiplier (ECO-020).</li>
+</ul>
+<h2>Figures in plain language</h2>
+<p>The three figures below check the mechanism, boundary and comparison in this article; labels come from its own sections, not new data.</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">Monetary Policy Transmission: mechanism chain</title>
+    <desc id="fig-batch-chain-desc">Monetary Policy Transmission — three-step structure: problem, mechanism, judgment. Labels come from the article's sections, not new data.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary Policy Transmission: mechanism chain</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Labels come from the article's sections; all three steps matter.</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Problem</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary policy</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">affects aggregate…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary policy</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">affects aggregat</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">e demand through</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start"> interest</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">rates, credit…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Definition</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary policy…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Definition:</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary policy</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">transmission is</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">the process by</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">which a central…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Worked example</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose a central</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start"> bank cuts its…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Suppose a</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">central bank</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">cuts its policy</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">rate from 4.50%</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">to 4.00% (-50…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Reading order: test the problem, then the mechanism, then whether the judgment overreaches.</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">If a middle step lacks evidence, later conclusions are hypotheses, not facts.</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Structural illustration, not a new data chart; sample is the article's own argument.</text>
+  </svg>
+  <figcaption>Figure 3: Monetary Policy Transmission — mechanism chain: problem, mechanism, judgment. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">Monetary Policy Transmission: boundary</title>
+    <desc id="fig-batch-boundary-desc">Separates conditions where the claim holds from those where it fails; a local example is not universal.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary Policy Transmission: when does it hold?</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">Check the conditions before the conclusion</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">If conditions, definitions or samples change, recompute the conclusion</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Holds</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary policy transmission</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start"> is the process by which a</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">central bank uses its tools</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">to change financial…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Fails / rewrite</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">The central bank sets</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">mortgage or credit-card</text>
+      <text x="188" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">rates directly.</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">Boundary illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 4: Monetary Policy Transmission — boundary: when the claim holds, and when it fails. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">Monetary Policy Transmission: object, conditions and common mistakes</title>
+    <desc id="fig-batch-compare-desc">Three rows compare the concept, its conditions and common mistakes; comparison is not equivalence and does not replace a definition.</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary Policy Transmission: object, conditions and common mistakes at a glance</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">This article</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">Commonly confused</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Object</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary policy</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">affects aggregate…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Adjacent concepts / common claims</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Conditions</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Monetary policy</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">transmission is the…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">The central bank sets mortgage</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">or credit-card rates directly.…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">Check</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Define first, then compare; never judge</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">labels only</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">Correlation is not causation; a local case is not universal</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">Comparison illustration; sample is the article's own argument; units as stated in the text.</text>
+  </svg>
+  <figcaption>Figure 5: Monetary Policy Transmission — comparison of object, conditions and common mistakes. Sample: the article's own argument; units as stated in the text.</figcaption>
+</figure>
+
+<h2>Exercises</h2>
+<ol>
+<li><strong>Concept check.</strong> Name three transmission channels and one intermediate variable for each.</li>
+<li><strong>Calculation.</strong> The policy rate falls from 3.00% to 2.75%, expected inflation is 2.00%, and the lending spread is 1.20 percentage points. Find the real policy and lending rates. Is a 4.10% project viable before and after?</li>
+<li><strong>Conditions.</strong> Why might investment fail to rise after a rate cut?</li>
+</ol>
+<details>
+<summary>Suggested answers</summary>
+
+<ol>
+<li>Interest-rate channel: lending rate; credit channel: lending standards; asset-price channel: equity or house prices; exchange-rate channel: the currency; expectations channel: expected future policy rates. Any three.</li>
+<li>Real policy: <code>3.00%-2.00% = 1.00%</code> to <code>2.75%-2.00% = 0.75%</code>; lending: <code>3.00% + 1.20% = 4.20%</code> to <code>2.75% + 1.20% = 3.95%</code>. Before, 4.20% &gt; 4.10%, no; after, 3.95% &lt; 4.10%, yes.</li>
+<li>Banks may not pass through the cut, firms may be pessimistic, demand may be weak, credit may be rationed, the zero bound may bind, supply may be constrained, or transmission may take time.</li>
+</ol>
+</details>
+
+<h2>Sources</h2>
+<p>The bracketed numbers in the text refer to the sources below.</p>
+<ol>
+<li>Board of Governors of the Federal Reserve System. &quot;Monetary Policy: What Are Its Goals? How Does It Work?&quot; <a href="https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm">https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm</a> (accessed 2026-10-30)</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;28.3 How a Central Bank Executes Monetary Policy.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/28-3-how-a-central-bank-executes-monetary-policy">https://openstax.org/books/principles-economics-3e/pages/28-3-how-a-central-bank-executes-monetary-policy</a> (accessed 2026-10-30)</li>
+<li>Same book, &quot;28.4 Monetary Policy and Economic Outcomes.&quot; <a href="https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes">https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes</a> (accessed 2026-10-30)</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="en" aria-labelledby="demo-check-title" data-check-done="All three are covered: the core of this article is in place." data-check-pending="One item is still open: go back to the matching section and retell it with a number or counterexample." data-check-count="Ticked"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">Worked demo</p> <button class="demo-reset" type="button" data-demo-reset>Reset</button> </div> <h2 id="demo-check-title">Read-through check: can you say three things?</h2> <p class="demo-intro">No recitation needed. Tick each sentence below and see whether you can explain the mechanism, one worked example and one boundary in your own words.</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>Work through policy rate, lending rate and project return to show why one cut changes viability</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>List the lags and leakages in transmission and explain why a cut need not raise aggregate demand</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>Name one condition under which the article’s conclusion does not hold</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> Ticked 0 / 3
+</p> </div> <p class="demo-footnote">The numbers are teaching assumptions that show relationships, not forecasts or investment advice.</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> This article has passed the current publication gate. Factual, calculation and translation revisions update both language versions together. </p> <p> <a class="button secondary" href="/en/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>Back to station </a> </p> </div> <aside class="article-aside" aria-label="Article information"> <section class="aside-card"> <h2>Learning objectives</h2> <ul> <li>Work through policy rate, lending rate and project return to show why one cut changes viability</li><li>List the lags and leakages in transmission and explain why a cut need not raise aggregate demand</li> </ul> </section> <section class="aside-card"> <h2>Required prerequisites</h2> <ul> <li> <a href="/en/learn/gdp-and-national-accounts/">ECO-011 · GDP and National Accounts</a> </li><li> <a href="/en/learn/price-indices-and-inflation/">ECO-013 · Price Indices and Inflation</a> </li><li> <a href="/en/learn/business-cycle/">ECO-018 · The Business Cycle</a> </li> </ul> </section> <section class="aside-card"> <h2>Recommended reading</h2> <ul> <li> <a href="https://finance.51invest.com/en/learn/central-bank-balance-sheets/">FIN-005 · Central Bank Balance Sheets</a> </li><li> <a href="/en/learn/fiscal-policy-and-multiplier/">ECO-020 · Fiscal Policy and the Multiplier</a> </li> </ul> </section> <section class="aside-card"> <h2>AI review record</h2> <p class="muted"> There is no human sign-off; these states come from the AI-only editorial review. </p> <ul> <li> Facts and calculations : AI review passed </li><li> Subject : AI review passed </li><li> English : AI review passed </li><li> Page : AI review passed </li> </ul> </section> <section class="aside-card"> <h2>Sources</h2> <div class="source"> <a href="https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm" rel="noopener noreferrer" target="_blank">Monetary Policy: What Are Its Goals? How Does It Work?</a> <p>Board of Governors of the Federal Reserve System · Board of Governors of the Federal Reserve System</p> <p>Accessed: 2026-10-30 · License: U.S. Government work (public domain), 17 U.S.C. §105</p> <p>Supports: The Fed&#39;s goals are maximum employment and stable prices, with a 2 percent annual PCE inflation goal; the federal funds rate is the overnight rate banks pay to borrow reserve balances; policy affects household and business spending, and thus aggregate demand, through interest rates, asset prices, exchange rates, credit conditions, and expectations; near-zero nominal rates limit conventional cuts; large-scale asset purchases and forward guidance are additional crisis-era tools, the former lowering longer-term rates and raising asset valuations, the latter guiding expectations about future policy through communication.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/28-3-how-a-central-bank-executes-monetary-policy" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 28.3 How a Central Bank Executes Monetary Policy</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Open market operations buy or sell Treasury bonds to influence the quantity of bank reserves and the level of interest rates, targeting the federal funds rate; higher reserves can support lending and expand the money supply; the IORB is the rate paid on excess reserves; when the federal funds rate changes, most other interest rates eventually change too.</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 28.4 Monetary Policy and Economic Outcomes</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>Accessed: 2026-10-30 · License: CC BY-NC-SA 4.0</p> <p>Supports: Expansionary monetary policy lowers interest rates and stimulates borrowing, while contractionary policy raises rates and reduces borrowing; policy affects investment and consumption through interest rates and shifts aggregate demand; the short-run result is a change in the price level and real GDP; near zero, open market operations cannot push rates much lower.</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">A free, non-commercial knowledge site. Sources and definitions are labelled; nothing here is investment advice.</p> </div> </div> <nav class="footer-links" aria-label="Knowledge stations"> <a href="https://51invest.com/en/" data-main-home>Home</a> <a href="https://51invest.com/en/contents/">Content map</a> <a href="/en/glossary/">Glossary</a> <a href="/en/search/">Search</a> <a href="https://51invest.com/en/charts/" data-main-link>Charts</a> <a href="https://51invest.com/en/sources/" data-main-link>Data &amp; licences</a> <a href="/en/">Station home</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="Knowledge stations"> <a class="mobile-link" href="https://51invest.com/en/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>Home</span> </a> <a class="mobile-link" href="https://51invest.com/en/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>Knowledge stations</span> </a> <a class="mobile-link active" href="/en/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>Station home</span> </a> <a class="mobile-link" href="/learn/monetary-policy-transmission/" data-language-link="zh"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>中文</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

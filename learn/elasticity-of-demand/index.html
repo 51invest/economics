@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>需求弹性 · 巫妖投资</title><meta name="description" content="需求价格弹性衡量需求量对价格的敏感程度，决定提价后销量与收入如何变化。"><link rel="canonical" href="https://economics.51invest.com/learn/elasticity-of-demand/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/elasticity-of-demand/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/elasticity-of-demand/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/elasticity-of-demand/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/elasticity-of-demand/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">需求弹性</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">需求弹性</h1> <p class="article-summary">需求价格弹性衡量需求量对价格的敏感程度，决定提价后销量与收入如何变化。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M02 · 消费者与家庭</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>4 分钟 · 11 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>需求价格弹性</strong>（price elasticity of demand）衡量需求量对价格的敏感程度，等于需求量变动百分比除以价格变动百分比。OpenStax《Principles of Economics 3e》的定义是：需求量变动的百分比，除以价格变动的百分比[1]。</p>
+<h2>直觉</h2>
+<p>胰岛素涨价 10%，处方量几乎不变；某品牌咖啡涨价 10%，顾客转去别家。相同的涨幅，销量反应可能差很多，卖家的收入结果也不同：前者多收钱，后者可能少收钱。弹性就是给这种“反应大小”一个可比较的刻度。（这两例是本文构造的直觉场景：胰岛素与品牌咖啡的代表性数字没有取自本篇登记的任何来源，USDA ERS 提供的是农产品估计值而非这两个例子。）</p>
+<h2>正式表达</h2>
+<div class="formula" role="math" aria-label="需求价格弹性等于需求量变动百分比除以价格变动百分比">E_d = 需求量变动百分比 ÷ 价格变动百分比</div>
+
+<p>按起点直接计算，来回数值不同，因此常用<strong>中点法</strong>（midpoint method），以两点的平均值为分母[1]：</p>
+<div class="formula" role="math" aria-label="中点法公式">E_d = [ΔQ ÷ ((Q₁ + Q₂) ÷ 2)] ÷ [ΔP ÷ ((P₁ + P₂) ÷ 2)]</div>
+
+<table>
+<thead>
+<tr>
+<th>绝对值</th>
+<th>名称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>大于 1</td>
+<td>富有弹性（elastic）</td>
+<td>数量反应大于价格变动</td>
+</tr>
+<tr>
+<td>等于 1</td>
+<td>单位弹性（unitary）</td>
+<td>两者百分比相同</td>
+</tr>
+<tr>
+<td>小于 1</td>
+<td>缺乏弹性（inelastic）</td>
+<td>数量反应小于价格变动</td>
+</tr>
+</tbody></table>
+<p>需求曲线向下，E_d 通常为负，习惯上比较绝对值。总收益 <code>TR = P × Q</code>：富有弹性时提价，数量下降的百分比更大，总收益下降；缺乏弹性时提价，总收益上升[2]。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>沿给定需求曲线。</strong> 弹性比较的是价格与数量的关系；收入、替代品价格或偏好变化会使曲线移动，不能用弹性描述这类变化。</li>
+<li><strong>区分时间跨度。</strong> 本文按&quot;长期通常更有弹性&quot;来提醒读者留出调整时间，这是本文的一般性表述；本轮抓取的两个 OpenStax 页面在静态 HTML 里没有可读的对应原句（去标签文本中 time horizon 词面为 0），因此不把它写成引用。</li>
+<li><strong>影响因素。</strong> 本文用四条直觉来提醒读者判断弹性：替代品越接近、越是奢侈品、支出占预算比重越大、用途越多，需求通常越有弹性。这是本文自己的归纳，四条均未被本篇 supports 覆盖，故不挂引用标记。</li>
+<li><strong>弹性不是斜率。</strong> 同一条线性需求曲线上，高价段富有弹性、低价段缺乏弹性；只有常弹性需求曲线的弹性才处处相同。</li>
+<li><strong>估计值有适用边界。</strong> 美国农业部经济研究服务局的弹性数据库汇集学术与政府研究的估计，且已停止更新[3]；其中数字不能直接当作另一市场、另一时期的参数。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>某咖啡店一款饮品：价格 10 元时每天卖 100 杯，价格 12 元时每天卖 80 杯（教学假设）。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">原状态</th>
+<th align="right">新状态</th>
+<th align="right">中点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>价格（元）</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td>数量（杯/天）</td>
+<td align="right">100</td>
+<td align="right">80</td>
+<td align="right">90</td>
+</tr>
+</tbody></table>
+<p>数量变动为 20 ÷ 90 = 22.22%，价格变动为 2 ÷ 11 = 18.18%，所以 <code>E_d = -22.22% ÷ 18.18% = -1.22</code>，绝对值 1.22 大于 1，属于富有弹性。</p>
+<p>收入从 10 × 100 = 1,000 元变为 12 × 80 = 960 元，减少 40 元，即 -4%。按起点计提价 20% 而收入下降，与“富有弹性时提价减少总收益”一致。换一段价格区间，弹性数值会不同。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-ed-title fig-ed-desc" viewBox="0 0 440 260" width="100%">
+    <title id="fig-ed-title">需求曲线上的两个价格数量点</title>
+    <desc id="fig-ed-desc">横轴为每天杯数，纵轴为价格（元）。需求曲线向下倾斜，点 A 为价格 10 元、100 杯；点 B 为价格 12 元、80 杯。两点之间价格上升、数量下降。</desc>
+    <g stroke="var(--border)" stroke-width="1">
+      <line x1="70" y1="210" x2="400" y2="210"></line>
+      <line x1="70" y1="40" x2="70" y2="210"></line>
+      <line x1="70" y1="130" x2="330" y2="130" stroke-dasharray="3 4"></line>
+      <line x1="330" y1="130" x2="330" y2="210" stroke-dasharray="3 4"></line>
+      <line x1="70" y1="114" x2="280" y2="114" stroke-dasharray="3 4"></line>
+      <line x1="280" y1="114" x2="280" y2="210" stroke-dasharray="3 4"></line>
+    </g>
+    <line x1="80" y1="50" x2="380" y2="146" stroke="var(--accent)" stroke-width="2.5"></line>
+    <circle cx="330" cy="130" r="4" fill="var(--text)"></circle>
+    <circle cx="280" cy="114" r="4" fill="var(--text)"></circle>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="46" y="134">10</text>
+      <text x="46" y="118">12</text>
+      <text x="272" y="226">80</text>
+      <text x="322" y="226">100</text>
+      <text x="382" y="226">杯/天</text>
+      <text x="46" y="54">元</text>
+      <text x="338" y="126">A</text>
+      <text x="266" y="108">B</text>
+      <text x="300" y="166" fill="var(--accent)">需求</text>
+    </g>
+  </svg>
+  <figcaption>图 1：两点之间的需求曲线。图是教学模型，不是真实门店数据；数值见上表。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>弹性等于斜率。</strong> 斜率有单位，且同一条线性需求曲线上各点弹性不同；比较弹性要看百分比。</p>
+<p><strong>弹性越大越好。</strong> 弹性只描述反应程度：富有弹性时提价减少收入，缺乏弹性时相反，没有好坏之分。</p>
+<p><strong>提价总能增加收入。</strong> 只有在缺乏弹性时才如此；富有弹性时提价会减少总收益。</p>
+<p><strong>弹性是固定常数。</strong> 它随价格和区间变化，跨市场直接套用容易出错。</p>
+<h2>关联</h2>
+<ul>
+<li>先修：供给需求与均衡（ECO-005）。</li>
+<li>相关：边际与激励（ECO-004）、经济学研究什么（ECO-001）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">需求弹性：机制链</title>
+    <desc id="fig-batch-chain-desc">需求弹性 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">需求弹性：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">需求价格弹性衡量需求</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">量对价格的敏感程度…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">需求价格弹性衡量需</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">求量对价格的敏感程</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">度，决定提价后销量</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">与收入如何变化。</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：需求价格弹性（p</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">rice elasticity…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：需求价格弹性</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">（price elasticit</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">y of demand）衡量</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">需求量对价格的敏感</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">程度，等于需求量变…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">某咖啡店一款饮品：价</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">格 10 元时每天卖…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">某咖啡店一款饮品：</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">价格 10 元时每天</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">卖 100 杯，价格</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">12 元时每天卖 80</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">杯（教学假设）。…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：需求弹性的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">需求弹性：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">需求弹性：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">沿给定需求曲线。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">弹性等于斜率。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：需求弹性的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">需求弹性：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">需求弹性：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">需求价格弹性衡量需求量对</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">价格的敏感程度，决定提价…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">沿给定需求曲线。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">弹性等于斜率。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：需求弹性的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 下列哪项需求最可能缺乏弹性？A. 某品牌瓶装水；B. 城市通勤公交票价；C. 度假邮轮；D. 新款手机。</li>
+<li><strong>计算：</strong> 价格从 20 元降到 18 元，销量从 50 件升到 60 件。用中点法求弹性，并计算收入变化。</li>
+<li><strong>适用条件：</strong> 为什么不能用一条需求曲线上的弹性预测消费者收入上升后的销量？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>B。通勤者短期缺少替代方式，票价上涨对乘车人数影响较小；其余三项替代品较多。</li>
+<li>数量变动 10 ÷ 55 = 18.18%，价格变动 -2 ÷ 19 = -10.53%，<code>E_d = -1.73</code>，富有弹性。收入从 20 × 50 = 1,000 元变为 18 × 60 = 1,080 元，增加 80 元（+8%）。</li>
+<li>收入上升会使需求曲线整体移动，而不是沿同一条曲线移动。弹性描述价格与数量的关系；收入变化需要收入弹性或新的需求估计。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “5.1 Price Elasticity of Demand and Price Elasticity of Supply.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply">https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, “5.3 Elasticity and Pricing.” OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing">https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing</a>（访问日期：2026-10-30）</li>
+<li>USDA Economic Research Service. “Commodity and Food Elasticities.” 许可：Public domain。 <a href="https://www.ers.usda.gov/data-products/commodity-and-food-elasticities">https://www.ers.usda.gov/data-products/commodity-and-food-elasticities</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用 elasticity 定义式复算需求对价格变动的反应，并判断提价后销量与收入如何变化</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能说明弹性在时间、必需程度与替代品可得性上的差异，并指出估算口径</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用 elasticity 定义式复算需求对价格变动的反应，并判断提价后销量与收入如何变化</li><li>能说明弹性在时间、必需程度与替代品可得性上的差异，并指出估算口径</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/margin-and-incentives/">ECO-004 · 边际与激励</a> </li><li> <a href="/learn/what-economics-studies/">ECO-001 · 经济学研究什么</a> </li><li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 5.1 Price Elasticity of Demand and Price Elasticity of Supply</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：需求价格弹性是需求量变动百分比除以价格变动百分比；中点法用两点的平均值计算，弹性大于 1 为富有弹性、等于 1 为单位弹性、小于 1 为缺乏弹性。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 5.3 Elasticity and Pricing</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：富有弹性时提价，需求量的下降幅度大于价格涨幅，总收益（价格乘数量）下降；缺乏弹性时提价，总收益上升。</p> </div><div class="source"> <a href="https://www.ers.usda.gov/data-products/commodity-and-food-elasticities" rel="noopener noreferrer" target="_blank">Commodity and Food Elasticities</a> <p>USDA Economic Research Service · USDA Economic Research Service</p> <p>访问：2026-10-30 · 许可：U.S. Government work (public domain), 17 U.S.C. §105</p> <p>支持论点：该数据产品汇集美国学术与政府研究得到的价格弹性和收入弹性估计，并说明其已不再更新。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/elasticity-of-demand/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

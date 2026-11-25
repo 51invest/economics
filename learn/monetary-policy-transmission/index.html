@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>货币政策传导 · 巫妖投资</title><meta name="description" content="货币政策通过利率、信用、资产价格、汇率与预期影响总需求，从政策利率到产出和通胀存在时滞与漏损。"><link rel="canonical" href="https://economics.51invest.com/learn/monetary-policy-transmission/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/monetary-policy-transmission/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/monetary-policy-transmission/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/monetary-policy-transmission/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/monetary-policy-transmission/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">货币政策传导</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">货币政策传导</h1> <p class="article-summary">货币政策通过利率、信用、资产价格、汇率与预期影响总需求，从政策利率到产出和通胀存在时滞与漏损。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M11 · 货币政策与金融传导</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>8 分钟 · 12 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>货币政策传导</strong>（monetary policy transmission）是中央银行通过政策工具改变金融条件，进而影响总需求、产出、就业与通胀的过程。政策工具包括政策利率、准备金余额利率、资产购买与前瞻指引；渠道包括利率、信用、资产价格、汇率与预期 [1]。</p>
+<h2>直觉</h2>
+<p>央行降低政策利率，先影响银行间隔夜资金价格 [1][2]，再传导到贷款、债券和存款利率 [2]。融资成本下降使部分投资变得可行，资产价格上涨增加家庭财富，本币走弱提高出口竞争力 [1]。这些变化推高总需求 [3]，但需要时间，并会被银行风险偏好、债务和供给约束削弱。</p>
+<h2>正式表达</h2>
+<p>实际利率近似为 <code>r ≈ i - π^e</code>，<code>i</code> 为名义利率，<code>π^e</code> 为预期通胀。</p>
+<p>传导链可写为：</p>
+<p><code>政策利率 i_p → 市场利率 i_m → 贷款利率 i_l</code> [2]；<code>投资 I、消费 C、净出口 NX → 总需求 AD → 产出 Y、价格 P</code> [3]。</p>
+<p><code>AD = C + I + G + NX</code>；投资与耐用消费品对实际利率更敏感。短期产出受需求影响，通胀响应通常更慢。</p>
+<h2>适用条件</h2>
+<ol>
+<li><strong>传导不完全。</strong> 银行加点、固定利率合同和市场分割会使贷款利率不随政策利率一比一变化；资本不足或信贷配给也会削弱降息效果。</li>
+<li><strong>零下限与时滞。</strong> 名义利率接近零时常规降息空间有限 [1][3]；从政策到产出和通胀见效需要时间。</li>
+<li><strong>供给冲击。</strong> 紧缩能压低需求与通胀，但不能直接增加能源、粮食或劳动力供给，且会牺牲产出。</li>
+<li><strong>开放经济。</strong> 汇率、资本流动与外国政策会改变传导方向与强度。</li>
+</ol>
+<p>边界说明：实际利率近似式 r≈i−π^e、总需求恒等式 AD=C+I+G+NX、政策时滞、不完全传导与信贷配给均不在登记来源的 supports 之内；资产购买与前瞻指引由 [1] 支撑。本文把它们作为教科书通识与模型假设给出，属方法学表述，不是登记来源的引证结论。</p>
+<h2>例子与计算</h2>
+<p>假设某央行把政策利率从 4.50% 降到 4.00%（-50 个基点，即 0.50 个百分点）。这是不指定币种的教学模型，下表中所有利率均为年化百分比；预期通胀为 2.00%，银行平均贷款加点 1.50 个百分点。某项目预期名义收益率为 5.75%（年化）。本例假设贷款加点不变，且政策利率的变化一比一传导到贷款利率。</p>
+<table>
+<thead>
+<tr>
+<th>环节</th>
+<th align="right">降息前</th>
+<th align="right">降息后</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>政策利率</td>
+<td align="right">4.50%</td>
+<td align="right">4.00%</td>
+</tr>
+<tr>
+<td>预期通胀</td>
+<td align="right">2.00%</td>
+<td align="right">2.00%</td>
+</tr>
+<tr>
+<td>实际政策利率</td>
+<td align="right">2.50%</td>
+<td align="right">2.00%</td>
+</tr>
+<tr>
+<td>贷款利率</td>
+<td align="right">6.00%</td>
+<td align="right">5.50%</td>
+</tr>
+<tr>
+<td>项目名义收益率</td>
+<td align="right">5.75%</td>
+<td align="right">5.75%</td>
+</tr>
+<tr>
+<td>项目是否可行</td>
+<td align="right">否</td>
+<td align="right">是</td>
+</tr>
+</tbody></table>
+<p>降息前贷款利率 6.00% 高于项目收益率 5.75%，项目不融资；降息后 5.50% 低于 5.75%，项目变得可行。这里的可行性判断直接比较名义贷款利率与名义项目收益率。以上均为教学假设，不代表任何央行的实际利率或项目。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-trans-title fig-trans-desc" viewBox="0 0 420 210" width="100%">
+    <title id="fig-trans-title">贷款利率降到项目收益率之下，项目由不可行变可行</title>
+    <desc id="fig-trans-desc">水平数轴为百分率，零基线，每百分点四十五点七一四像素。上条为降息前贷款利率百分之六点零零，长度二百七十四点三像素；下条为降息后百分之五点五零，长度二百五十一点四像素。竖直虚线标在项目名义收益率百分之五点七五处：降息前利率条超过虚线，降息后不足。</desc>
+    <line x1="60" y1="170" x2="380" y2="170" stroke="var(--border)" stroke-width="2"></line>
+    <rect x="60" y="80" width="274.3" height="26" fill="var(--accent)" opacity="0.7"></rect>
+    <rect x="60" y="130" width="251.4" height="26" fill="var(--gold)" opacity="0.85"></rect>
+    <line x1="322.9" y1="55" x2="322.9" y2="165" stroke="var(--muted)" stroke-width="2" stroke-dasharray="5 3"></line>
+    <g fill="var(--muted)" font-size="11" font-family="inherit">
+      <text x="60" y="20">百分率（零基线，每 1 个百分点 = 45.714 像素）</text>
+      <text x="64" y="74">降息前贷款利率 6.00% ⇒ 项目不可行</text>
+      <text x="64" y="124">降息后贷款利率 5.50% ⇒ 项目可行</text>
+      <text x="228" y="50">项目名义收益率 5.75%</text>
+      <text x="60" y="192">政策利率 4.50→4.00%，实际 2.50→2.00%（通胀 2.00%）</text>
+    </g>
+  </svg>
+  <figcaption>图 1：传导链条的落点——项目名义收益率固定 5.75%（虚线），贷款利率从 6.00% 降到 5.50% 后由&quot;高于收益率&quot;变成&quot;低于收益率&quot;，项目可行性翻转（零基线条形，每百分点 45.714 像素）。上游是政策利率 4.50%→4.00%、实际政策利率 2.50%→2.00%。数值为教学假设。</figcaption>
+</figure>
+
+<p>图 1 只放大了链条的末端。图 2 把整条基准链连起来：政策利率下行先改变银行资金与市场利率，再传到贷款利率，最后才落到项目的可行性；每一环都可能被漏损削弱。</p>
+<h2>图解：从政策利率到项目</h2>
+<figure id="figure-trans-chain">
+  <svg role="img" aria-labelledby="fig-trans-chain-title fig-trans-chain-desc" viewBox="0 0 380 300" width="100%">
+    <title id="fig-trans-chain-title">货币政策传导的基准链条</title>
+    <desc id="fig-trans-chain-desc">四个环节：政策和市场利率从百分之四点五零降到百分之四点零零；贷款利率从百分之六点零零降到百分之五点五零；项目收益率保持百分之五点七五不变；项目由不可行变为可行。下方虚线框列出漏损：银行不传导、信用配给、需求不足、预期偏弱、供给约束。</desc>
+    <g font-family="inherit">
+      <rect x="4" y="44" width="88" height="84" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <rect x="98" y="44" width="88" height="84" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <rect x="192" y="44" width="88" height="84" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <rect x="286" y="44" width="88" height="84" rx="9" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <g text-anchor="middle">
+        <text x="48" y="66" font-size="11.2" font-weight="650" fill="var(--text)">政策 → 市场利率</text>
+        <text x="48" y="88" font-size="11.2" font-weight="600" fill="var(--accent)">4.50→4.00%</text>
+        <text x="48" y="106" font-size="10.2" fill="var(--secondary)">实际 2.50→2.00%</text>
+        <text x="48" y="120" font-size="10.2" fill="var(--muted)">−50 bp</text>
+        <text x="142" y="66" font-size="11.2" font-weight="650" fill="var(--text)">贷款利率</text>
+        <text x="142" y="88" font-size="11.2" font-weight="600" fill="var(--accent)">6.00→5.50%</text>
+        <text x="142" y="106" font-size="10.2" fill="var(--secondary)">加点 1.50pp</text>
+        <text x="142" y="120" font-size="10.2" fill="var(--muted)">银行传导</text>
+        <text x="236" y="66" font-size="11.2" font-weight="650" fill="var(--text)">项目收益率</text>
+        <text x="236" y="88" font-size="11.2" font-weight="600" fill="var(--accent)">5.75% 不变</text>
+        <text x="236" y="106" font-size="10.2" fill="var(--secondary)">名义、年化</text>
+        <text x="236" y="120" font-size="10.2" fill="var(--muted)">融资前</text>
+        <text x="330" y="66" font-size="11.2" font-weight="650" fill="var(--text)">投资可行性</text>
+        <text x="330" y="88" font-size="11.2" font-weight="600" fill="var(--gold)">否 → 是</text>
+        <text x="330" y="106" font-size="10.2" fill="var(--secondary)">贷款利率更低</text>
+        <text x="330" y="120" font-size="10.2" fill="var(--muted)">临界点翻转</text>
+      </g>
+      <g stroke="var(--muted)" stroke-width="1.5">
+        <line x1="92" y1="86" x2="95" y2="86"/>
+        <path d="M95 82 L98 86 L95 90 z" fill="var(--muted)" stroke="none"/>
+        <line x1="186" y1="86" x2="189" y2="86"/>
+        <path d="M189 82 L192 86 L189 90 z" fill="var(--muted)" stroke="none"/>
+        <line x1="280" y1="86" x2="283" y2="86"/>
+        <path d="M283 82 L286 86 L283 90 z" fill="var(--muted)" stroke="none"/>
+      </g>
+      <rect x="4" y="154" width="372" height="72" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-dasharray="5 4"/>
+      <text x="18" y="176" font-size="11.2" font-weight="650" fill="var(--gold)">漏损会让链条变短</text>
+      <text x="18" y="196" font-size="10.2" fill="var(--secondary)">银行不传导 · 信用配给 · 需求不足 · 预期偏弱 · 供给约束</text>
+      <text x="18" y="214" font-size="10.2" fill="var(--muted)">这些因素会改变幅度和时滞，极端时可能使链条中断。</text>
+      <text x="4" y="254" font-size="11.2" fill="var(--text)">判断落点只看一件事：贷款利率是否低于项目收益率。</text>
+      <text x="4" y="276" font-size="10.2" fill="var(--muted)">实际利率、增长、时滞与信用条件决定这条链走得多快、多远。</text>
+    </g>
+  </svg>
+  <figcaption>图 2：从政策利率到项目可行性的基准链条。图中数字与表 1 相同，均为教学假设；箭头表示基准情形，不表示必然发生，时滞和漏损会把链条拉长或削弱。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>央行直接决定房贷和信用卡利率。</strong> 央行主要通过政策利率与准备金操作影响短端资金价格 [2]，其他利率还由市场、期限与信用风险决定。</p>
+<p><strong>降息立刻提高 GDP。</strong> 传导有时滞，且可能被信用条件、预期和供给约束抵消。</p>
+<p><strong>货币政策可以精确控制通胀。</strong> 通胀还受能源、粮食、汇率、工资与供给冲击影响。</p>
+<p><strong>传导只通过利率。</strong> 信用、资产价格、汇率和预期同样是渠道。</p>
+<p><strong>低政策利率就是宽松政策。</strong> 通胀更低时，低名义利率对应的实际利率仍可能偏紧；判断松紧要看实际利率 <code>r ≈ i - π^e</code>。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>利率渠道</h3>
+<p><strong>定义</strong>：利率渠道是货币政策通过改变短期利率、进而影响借贷成本和资产价格来调节需求。</p>
+<p><strong>机制</strong>：政策利率下降降低融资成本、提高资产估值，刺激投资和耐用品消费；上升则相反，且存在时滞。</p>
+<p><strong>例子</strong>：例如降息后企业贷款建厂更便宜，家庭按揭月供下降，投资和消费可能增加。</p>
+<p><strong>边界</strong>：利率渠道在零利率附近、债务高企或预期悲观时可能失效；名义利率下降若实际利率仍高，刺激有限。</p>
+<h3>信用渠道</h3>
+<p><strong>定义</strong>：信用渠道是货币政策通过银行信贷供给、利差和抵押条件影响企业融资，而不只通过无风险利率。</p>
+<p><strong>机制</strong>：银行依赖存款和批发融资，政策变化会改变可贷资金、风险偏好和信贷标准，放大或削弱政策效果。</p>
+<p><strong>例子</strong>：例如央行降息但银行担心坏账收紧审批，中小企业仍借不到钱，信用渠道削弱了降息效果。</p>
+<p><strong>边界</strong>：信用渠道强度取决于银行资本、监管和借款人质量；直接融资占比高的经济体对银行信贷依赖较低。</p>
+<h3>资产负债表渠道</h3>
+<p><strong>定义</strong>：资产负债表渠道是政策通过资产价格、抵押品价值和债务负担改变借款人资产负债表，从而影响融资能力。</p>
+<p><strong>机制</strong>：降息抬升资产价格、减轻浮动利率债务，改善净值和抵押率；资产下跌则触发去杠杆和信贷收缩。</p>
+<p><strong>例子</strong>：例如房价下跌使家庭抵押品不足，银行减少贷款，家庭被迫削减消费，即使利率已经很低。</p>
+<p><strong>边界</strong>：该渠道可能加剧顺周期和分配不均；资产持有者受益更多，无资产家庭感受有限，估值也未必反映现金流。</p>
+<h3>政策工具</h3>
+<p><strong>定义</strong>：货币政策工具包括政策利率、准备金、公开市场操作、再贷款和前瞻指引，用于调节流动性与融资条件。</p>
+<p><strong>机制</strong>：常规工具通过价格和数量调节短端利率；非常规工具购买资产、提供定向贷款或管理预期，但退出更复杂。</p>
+<p><strong>例子</strong>：例如央行通过逆回购注入短期资金，或购买国债压低长期利率，以支持信贷和市场运转。</p>
+<p><strong>边界</strong>：工具效果受传导渠道、财政配合和金融监管影响；长期依赖非常规工具可能扭曲定价、积累风险。</p>
+<h3>预期与约束</h3>
+<p><strong>定义</strong>：预期与约束指政策效果受公众对未来政策、通胀和风险的判断，以及法律、汇率、财政和金融稳定限制。</p>
+<p><strong>机制</strong>：可信、持续和沟通清晰的政策能锚定预期；突然转向、规则模糊或政治干预会提高不确定性，削弱传导。</p>
+<p><strong>例子</strong>：例如央行明确长期通胀目标，工资谈判更少提前涨价，政策紧缩所需幅度可能更小。</p>
+<p><strong>边界</strong>：央行不是不受约束的行动者；汇率目标、债务可持续性、金融稳定和独立性都会限制选择，预期管理也不能替代实际调整。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>先修：GDP 与国民经济核算（ECO-011）、价格指数与通胀（ECO-013）、经济周期（ECO-018）。</li>
+<li>延伸：中央银行资产负债表（FIN-005）、财政政策与乘数（ECO-020）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">货币政策传导：机制链</title>
+    <desc id="fig-batch-chain-desc">货币政策传导 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">货币政策传导：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">货币政策通过利率、信</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">用、资产价格、汇率与…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">货币政策通过利率、</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">信用、资产价格、汇</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">率与预期影响总需求</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，从政策利率到产出</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">和通胀存在时滞与漏…</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：货币政策传导（m</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">onetary policy…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：货币政策传导</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">（monetary</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">policy transmiss</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">ion）是中央银行通</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">过政策工具改变金融…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">假设某央行把政策利率</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">从 4.50% 降到…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">假设某央行把政策利</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">率从 4.50% 降到</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">4.00%（-50</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">个基点，即 0.50</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">个百分点）。这是不…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 3：货币政策传导的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">货币政策传导：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">货币政策传导：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">传导不完全。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">央行直接决定房贷和信用卡利率。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：货币政策传导的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">货币政策传导：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">货币政策传导：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">货币政策通过利率、信用、</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">资产价格、汇率与预期影响…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">传导不完全。</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">央行直接决定房贷和信用卡利率。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 5：货币政策传导的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 列出三种传导渠道，并各写一个中间变量。</li>
+<li><strong>计算：</strong> 政策利率从 3.00% 降到 2.75%，预期通胀 2.00%，贷款加点 1.20 个百分点。求实际政策利率与贷款利率；项目名义收益率 4.10%，降息前后是否可行？</li>
+<li><strong>适用条件：</strong> 为什么降息后企业投资可能不增加？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>利率渠道：贷款利率；信用渠道：放贷标准；资产价格渠道：股价或房价；汇率渠道：本币汇率；预期渠道：未来政策利率预期。列出三种即可。</li>
+<li>实际政策利率从 <code>3.00%-2.00% = 1.00%</code> 降到 <code>2.75%-2.00% = 0.75%</code>；贷款利率从 <code>3.00% + 1.20% = 4.20%</code> 降到 <code>2.75% + 1.20% = 3.95%</code>。降息前 4.20% 高于 4.10%，不可行；降息后 3.95% 低于 4.10%，可行。</li>
+<li>银行不传导、企业悲观、需求不足、信贷配给、零下限、供给约束或时滞。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<p>正文中的 [1][2][3] 对应以下来源。</p>
+<ol>
+<li>Board of Governors of the Federal Reserve System. &quot;Monetary Policy: What Are Its Goals? How Does It Work?&quot; <a href="https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm">https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm</a>（访问日期：2026-10-30）</li>
+<li>Greenlaw, Steven A., David Shapiro, and Daniel MacDonald. <em>Principles of Economics 3e</em>, &quot;28.3 How a Central Bank Executes Monetary Policy.&quot; OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/28-3-how-a-central-bank-executes-monetary-policy">https://openstax.org/books/principles-economics-3e/pages/28-3-how-a-central-bank-executes-monetary-policy</a>（访问日期：2026-10-30）</li>
+<li>同上书，&quot;28.4 Monetary Policy and Economic Outcomes.&quot; <a href="https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes">https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能按政策利率、贷款利率与项目收益率的顺序复算一次降息为何改变可行性</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能列出传导链条上的时滞与漏损，并说明为何降息不必然扩大总需求</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能按政策利率、贷款利率与项目收益率的顺序复算一次降息为何改变可行性</li><li>能列出传导链条上的时滞与漏损，并说明为何降息不必然扩大总需求</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li><li> <a href="/learn/price-indices-and-inflation/">ECO-013 · 价格指数与通胀</a> </li><li> <a href="/learn/business-cycle/">ECO-018 · 经济周期</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="https://finance.51invest.com/learn/central-bank-balance-sheets/">FIN-005 · 中央银行资产负债表</a> </li><li> <a href="/learn/fiscal-policy-and-multiplier/">ECO-020 · 财政政策与乘数</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm" rel="noopener noreferrer" target="_blank">Monetary Policy: What Are Its Goals? How Does It Work?</a> <p>Board of Governors of the Federal Reserve System · Board of Governors of the Federal Reserve System</p> <p>访问：2026-10-30 · 许可：U.S. Government work (public domain), 17 U.S.C. §105</p> <p>支持论点：美联储的法定目标是最大就业、稳定物价与适度的长期利率，FOMC 以每年 2% 的 PCE 通胀率为目标；联邦基金利率是银行间隔夜准备金借贷利率；政策通过利率、资产价格、汇率、信用条件与预期影响家庭和企业支出，进而影响总需求；名义利率接近零时常规降息空间受限；资产购买与前瞻指引是危机期额外工具，前者压低长期利率并推高资产估值，后者通过沟通引导未来政策预期。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/28-3-how-a-central-bank-executes-monetary-policy" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 28.3 How a Central Bank Executes Monetary Policy</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：公开市场操作买卖国债以影响银行准备金数量与利率水平，目标是联邦基金利率；准备金增加可支持贷款并扩张货币供给；IORB 是央行对超额准备金支付的利率；联邦基金利率变化后，大多数其他利率最终也会变化。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/28-4-monetary-policy-and-economic-outcomes" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 28.4 Monetary Policy and Economic Outcomes</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：扩张性货币政策降低利率并刺激借贷，收缩性货币政策提高利率并减少借贷；政策通过利率影响投资与消费，使总需求移动；短期结果是价格水平与实际 GDP 变化；名义利率接近零时公开市场操作难以再降息。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/monetary-policy-transmission/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

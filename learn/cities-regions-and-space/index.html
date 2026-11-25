@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>城市区域与空间 · 巫妖投资</title><meta name="description" content="城市与区域经济把距离、密度和土地放在同一个分析框架里：集聚带来效率，拥挤与地租带来成本。"><link rel="canonical" href="https://economics.51invest.com/learn/cities-regions-and-space/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/cities-regions-and-space/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/cities-regions-and-space/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/cities-regions-and-space/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/cities-regions-and-space/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">城市区域与空间</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">城市区域与空间</h1> <p class="article-summary">城市与区域经济把距离、密度和土地放在同一个分析框架里：集聚带来效率，拥挤与地租带来成本。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M18 · 城市区域与空间</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>7 分钟 · 12 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p><strong>城市与区域经济学</strong>（urban and regional economics）研究经济活动为什么在空间上集中、土地与住房价格怎样形成、交通与公共服务如何改变可达性，以及区域之间的差距如何出现和延续。<strong>集聚经济</strong>（agglomeration economies）指企业与人口在空间上集中后，因共享劳动力、供应商、知识和基础设施而获得的效率提升[3]。</p>
+<h2>直觉</h2>
+<p>为什么大城市的工资高、房租也高？企业愿意靠近彼此，因为更容易找到供应商和员工；员工愿意靠近企业，因为工作机会多；但人越多，通勤越挤、地价越高。城市规模是集聚收益与拥挤成本相互拉扯的结果，不是“越大越好”或“越小越好”。</p>
+<h2>正式表达</h2>
+<h3>集聚</h3>
+<p><strong>集聚经济</strong>来自三类机制：劳动力池（企业更容易招到匹配的人）、供应商与投入品共享（中间品运输与库存成本下降）、知识溢出（面对面交流与观察降低学习成本）。集聚也可能带来负外部性：拥堵、污染、地价上涨与公共资源紧张[3]。</p>
+<h3>住房与土地</h3>
+<p><strong>住房与土地</strong>市场把空间变成价格。土地供给受规划、基础设施与地理约束；住房价格既反映建造成本，也反映可达性与预期。把房价上涨全部归因于“炒房”，会忽略供给约束、收入增长与利率变化（这一段是本文的分析判断，不是来源统计结论）。</p>
+<h3>交通</h3>
+<p><strong>交通</strong>改变可达性（accessibility）：通勤时间缩短会扩大有效劳动力市场与消费市场，也可能把房价推到更高。交通项目的收益与成本应按项目口径计算，至少把时间节省、拥堵缓解、土地价值与财政支出纳入（本文归纳的评估维度）；交通成本如何塑造空间格局见[4]。</p>
+<h3>地方经济与区域结构</h3>
+<p><strong>地方经济</strong>依赖产业基础、技能结构与制度；单一产业城市在冲击面前更脆弱。<strong>区域结构</strong>（regional structure）关注核心—外围关系、人口流动与公共服务差距；区域收敛不是自动的，取决于迁移、投资与转移支付（本文判断）。区域人均产出差异最终取决于劳动生产率、资本积累与技能互补[2]。比较地方经济规模时，GDP 是产出口径的总收入，不是收入分配或福利口径；跨国与跨地区比较还要处理汇率与价格差异[1][4]。</p>
+<h2>适用条件</h2>
+<ol>
+<li>集聚收益的估计要区分“集中带来效率”与“高效率企业选择集中”的选择效应。</li>
+<li>住房供给模型依赖规划、土地所有权与建造周期；供给刚性时，需求冲击更多体现为价格而非数量。</li>
+<li>交通收益依赖通勤行为、替代路线与诱导需求；只看项目前后的通行时间会低估或高估效果。</li>
+<li>区域比较要控制初始条件、产业结构与测量口径，不能把相关差距直接读成政策效果。</li>
+</ol>
+<h2>例子与计算</h2>
+<p>假设城市 A 月工资 10,000 元、月租金 4,000 元；城市 B 月工资 7,000 元、月租金 1,500 元。两地其他生活成本忽略，数字为本文教学假设。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">城市 A</th>
+<th align="right">城市 B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>月工资</td>
+<td align="right">10,000 元</td>
+<td align="right">7,000 元</td>
+</tr>
+<tr>
+<td>月租金</td>
+<td align="right">4,000 元</td>
+<td align="right">1,500 元</td>
+</tr>
+<tr>
+<td>工资减租金</td>
+<td align="right">6,000 元</td>
+<td align="right">5,500 元</td>
+</tr>
+</tbody></table>
+<p>城市 A 的工资高 3,000 元，但租金高 2,500 元，净优势只有 500 元。若通勤时间每周多 5 小时、按小时价值 100 元计（按每月 4 周折算），每月多 2,000 元成本，城市 A 的净优势就转为负。这个算例说明：比较城市机会要把工资、租金、通勤与公共服务一起算，不能只看名义工资。</p>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-eco-028-chain-title fig-eco-028-chain-desc" viewBox="0 0 560 310" width="100%">
+    <title id="fig-eco-028-chain-title">城市区域与空间：三段判断链</title>
+    <desc id="fig-eco-028-chain-desc">集聚：密度带来效率，也推高土地与通勤成本；住房与交通：空间成本决定谁可以留下；区域分配：地方经济结构决定收益落在哪里</desc>
+    <rect x="0.5" y="0.5" width="559" height="309" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+    <rect x="24" y="16" width="512" height="86" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1"/>
+    <rect x="24" y="16" width="5" height="86" rx="2.5" fill="var(--accent)"/>
+    <text x="44" y="35" font-size="9.5" letter-spacing="1.1" fill="var(--accent)" font-family="inherit">起点</text>
+    <text x="44" y="56" font-size="13" font-weight="650" fill="var(--text)" font-family="inherit">集聚</text>
+    <text x="44" y="76" font-size="10.5" fill="var(--secondary)" font-family="inherit">密度带来效率，也推高土地与通勤成本</text>
+    <line x1="280" y1="102" x2="280" y2="108" stroke="var(--border)" stroke-width="1.5"/>
+    <path d="M276 106 L280 110 L284 106" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="24" y="112" width="512" height="86" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1"/>
+    <rect x="24" y="112" width="5" height="86" rx="2.5" fill="var(--accent)"/>
+    <text x="44" y="131" font-size="9.5" letter-spacing="1.1" fill="var(--accent)" font-family="inherit">机制</text>
+    <text x="44" y="152" font-size="13" font-weight="650" fill="var(--text)" font-family="inherit">住房与交通</text>
+    <text x="44" y="172" font-size="10.5" fill="var(--secondary)" font-family="inherit">空间成本决定谁可以留下</text>
+    <line x1="280" y1="198" x2="280" y2="204" stroke="var(--border)" stroke-width="1.5"/>
+    <path d="M276 202 L280 206 L284 202" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="24" y="208" width="512" height="86" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1"/>
+    <rect x="24" y="208" width="5" height="86" rx="2.5" fill="var(--accent)"/>
+    <text x="44" y="227" font-size="9.5" letter-spacing="1.1" fill="var(--accent)" font-family="inherit">判断</text>
+    <text x="44" y="248" font-size="13" font-weight="650" fill="var(--text)" font-family="inherit">区域分配</text>
+    <text x="44" y="268" font-size="10.5" fill="var(--secondary)" font-family="inherit">地方经济结构决定收益落在哪里</text>
+  </svg>
+  <figcaption>图 1：城市区域与空间的三段判断链——集聚 → 住房与交通 → 区域分配。三段是判断链，不是唯一路径；图中文字取自本文正文，不含统计数据。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>常见误解</h2>
+<p><strong>城市越大越好。</strong> 集聚收益会被拥堵、地价与污染抵消；最优规模取决于产业、基础设施与治理能力。</p>
+<p><strong>房价只由土地供应决定。</strong> 房价还受收入、利率、预期、规划与建造周期影响；供给只是其中一条约束。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>集聚</h3>
+<p><strong>定义</strong>：集聚是人口、企业和活动在地理上集中，通过共享劳动池、供应商和知识溢出提高生产率。</p>
+<p><strong>机制</strong>：集聚收益随规模上升，但通勤、地价和拥挤产生负效应；运输成本下降和产业关联会强化中心。</p>
+<p><strong>例子</strong>：例如软件企业集中在同一城市，招聘、合作和咖啡馆交流降低搜寻与协调成本。</p>
+<p><strong>边界</strong>：集聚不是无限正循环；拥堵、住房成本和污染会限制规模，远程工作与数字基础设施也在改变地理优势。</p>
+<h3>住房土地</h3>
+<p><strong>定义</strong>：住房土地市场把土地用途、区位、开发许可和住房需求连接起来，价格同时反映居住价值和稀缺。</p>
+<p><strong>机制</strong>：土地供给、规划、信贷和人口迁移决定房价与租金；住房既是消费品也是资产，金融化会放大周期。</p>
+<p><strong>例子</strong>：例如大城市就业集中但新增住宅有限，房价和租金上涨，通勤圈向外扩张。</p>
+<p><strong>边界</strong>：住房不是普通商品；地段不可复制、交易成本高、公共品配套和租户保护使市场出清受限，价格也受预期和信贷影响。</p>
+<h3>交通</h3>
+<p><strong>定义</strong>：交通基础设施通过降低旅行时间和运输成本改变市场范围、通勤、产业选址和土地价值。</p>
+<p><strong>机制</strong>：道路、轨道、港口和机场的连接产生可达性收益，也带来拥堵、污染和沿线分配效应；定价和投资时点很关键。</p>
+<p><strong>例子</strong>：例如地铁开通缩短通勤，沿线住房需求上升，企业更愿在站点周边设店。</p>
+<p><strong>边界</strong>：交通不是越多越好；诱导需求、债务和维护成本会抵消收益，项目评估需计入拥堵、环境和公平影响。</p>
+<h3>地方经济</h3>
+<p><strong>定义</strong>：地方经济是一个地区内的生产、就业、收入和公共服务体系，受产业基础、劳动技能、资本和制度影响。</p>
+<p><strong>机制</strong>：地方通过产业集群、税基、公共服务和通勤网络竞争与协作；外部冲击会沿供应链和人口流动传导。</p>
+<p><strong>例子</strong>：例如一座汽车城依赖整车厂，工厂减产会迅速影响零部件、零售和地方税收。</p>
+<p><strong>边界</strong>：地方不是封闭系统；通勤、转移支付和远程工作使边界模糊，单一产业依赖会放大周期风险。</p>
+<h3>区域与空间结构</h3>
+<p><strong>定义</strong>：区域与空间结构是人口、产业、城市和基础设施在空间上的分布，包括核心—边缘、城市体系和城乡关系。</p>
+<p><strong>机制</strong>：规模经济、运输成本、资源禀赋和政策决定集中与分散；核心区提供市场和就业，边缘区提供资源、粮食和生态服务。</p>
+<p><strong>例子</strong>：例如沿海城市群吸引制造和服务，内陆资源区提供能源和劳动力，区域间通过贸易和迁移相互依赖。</p>
+<p><strong>边界</strong>：空间结构不是自然给定；行政区划、基础设施和土地政策会重塑机会，区域差距过大也会带来政治和社会压力。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<table>
+<thead>
+<tr>
+<th>知识 ID</th>
+<th>标题</th>
+<th>关系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ECO-005</td>
+<td>供给需求与均衡</td>
+<td>先修</td>
+</tr>
+<tr>
+<td>ECO-016</td>
+<td>投资与资本形成</td>
+<td>建议阅读</td>
+</tr>
+<tr>
+<td>ECO-017</td>
+<td>增长与生产率</td>
+<td>建议阅读</td>
+</tr>
+<tr>
+<td>ECO-024</td>
+<td>收入分配与不平等</td>
+<td>建议阅读</td>
+</tr>
+</tbody></table>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">城市区域与空间：机制链</title>
+    <desc id="fig-batch-chain-desc">城市区域与空间 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">城市区域与空间：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">城市与区域经济把距离</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">、密度和土地放在同一…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">城市与区域经济把距</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">离、密度和土地放在</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">同一个分析框架里：</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">集聚带来效率，拥挤</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">与地租带来成本。</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：城市与区域经济</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">学（urban and…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：城市与区域经</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">济学（urban and</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">regional economi</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">cs）研究经济活动为</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">什么在空间上集中、…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">假设城市 A 月工资</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">10,000 元、月租金…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">假设城市 A</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">月工资 10,000</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">元、月租金 4,000</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">元；城市 B 月工资</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">7,000 元、月租金…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 2：城市区域与空间的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">城市区域与空间：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">城市区域与空间：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">集聚收益的估计要区分“集中带来效</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">率”与“高效率企业选择集中”的选择</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">效应。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">城市越大越好。</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：城市区域与空间的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">城市区域与空间：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">城市区域与空间：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">城市与区域经济把距离、密</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">度和土地放在同一个分析框…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">集聚收益的估计要区分“集</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">中带来效率”与“高效率企…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">城市越大越好。</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：城市区域与空间的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li>概念辨别：区分集聚经济与规模经济，各举一个城市例子。</li>
+<li>计算或推理：在上例中加入每月 1,500 元的通勤成本，重算两地净优势。</li>
+<li>适用条件：说明什么情况下交通改善会推高房价而不是降低通勤成本。</li>
+</ol>
+<h2>来源</h2>
+<ol>
+<li>World Bank. <em>GDP (current US$), indicator NY.GDP.MKTP.CD, metadata definition</em>. World Bank Data. <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD%EF%BC%88%E8%AE%BF%E9%97%AE%E6%97%A5%E6%9C%9F%EF%BC%9A2026-10-30%EF%BC%89">https://data.worldbank.org/indicator/NY.GDP.MKTP.CD（访问日期：2026-10-30）</a></li>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald. <em>Principles of Economics 3e, 20.2 Labor Productivity and Economic Growth</em>. OpenStax. <a href="https://openstax.org/books/principles-economics-3e/pages/20-2-labor-productivity-and-economic-growth%EF%BC%88%E8%AE%BF%E9%97%AE%E6%97%A5%E6%9C%9F%EF%BC%9A2026-10-30%EF%BC%89">https://openstax.org/books/principles-economics-3e/pages/20-2-labor-productivity-and-economic-growth（访问日期：2026-10-30）</a></li>
+<li>World Bank. <em>Building Productive Cities for an Urbanizing World</em>. World Bank Data360. <a href="https://data360.worldbank.org/en/atlas/urban-development%EF%BC%88%E8%AE%BF%E9%97%AE%E6%97%A5%E6%9C%9F%EF%BC%9A2026-11-21%EF%BC%89">https://data360.worldbank.org/en/atlas/urban-development（访问日期：2026-11-21）</a></li>
+<li>World Bank. <em>World Development Report 2009: Reshaping Economic Geography</em>. World Bank. <a href="https://digitallibrary.un.org/record/1305303/files/WDR2009Eng.pdf%EF%BC%88%E8%AE%BF%E9%97%AE%E6%97%A5%E6%9C%9F%EF%BC%9A2026-11-21%EF%BC%89">https://digitallibrary.un.org/record/1305303/files/WDR2009Eng.pdf（访问日期：2026-11-21）</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用集聚经济解释为什么企业在地理上集中，并说明拥挤与地租如何形成反向力量</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能区分住房供给约束、交通可达性与地方产业基础对同一城市房价和工资的不同影响</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用集聚经济解释为什么企业在地理上集中，并说明拥挤与地租如何形成反向力量</li><li>能区分住房供给约束、交通可达性与地方产业基础对同一城市房价和工资的不同影响</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/supply-demand-equilibrium/">ECO-005 · 供给需求与均衡</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/investment-and-capital-formation/">ECO-016 · 投资与资本形成</a> </li><li> <a href="/learn/growth-and-productivity/">ECO-017 · 增长与生产率</a> </li><li> <a href="/learn/income-distribution-and-inequality/">ECO-024 · 收入分配与不平等</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.CD" rel="noopener noreferrer" target="_blank">GDP (current US$), indicator NY.GDP.MKTP.CD, metadata definition</a> <p>World Bank · World Bank Data</p> <p>访问：2026-10-30 · 许可：CC BY 4.0 (World Bank Data Access and Licensing)</p> <p>支持论点：国内生产总值是在一个经济领土内、一定核算期内生产货物和服务所得的总收入，属于有明确定义的官方统计口径。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/20-2-labor-productivity-and-economic-growth" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 20.2 Labor Productivity and Economic Growth</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：劳动生产率是单位劳动投入创造的产出价值；人力资本、技术变化与规模经济是其决定因素；人均 GDP 的持续增长依赖生产率提高或互补的资本增加；复合增长可用 GDP 期初值 × (1 + 增长率)^年数 计算。</p> </div><div class="source"> <a href="https://data360.worldbank.org/en/atlas/urban-development" rel="noopener noreferrer" target="_blank">Building Productive Cities for an Urbanizing World</a> <p>World Bank · World Bank Data360</p> <p>访问：2026-11-21 · 许可：CC BY 3.0 IGO</p> <p>支持论点：城市化通过规模、专业化与创新提高生产率；企业集聚降低采购与匹配成本、促进知识溢出；连通基础设施帮助人们接近机会。</p> </div><div class="source"> <a href="https://digitallibrary.un.org/record/1305303/files/WDR2009Eng.pdf" rel="noopener noreferrer" target="_blank">World Development Report 2009: Reshaping Economic Geography</a> <p>World Bank · World Bank</p> <p>访问：2026-11-21 · 许可：CC BY 3.0 IGO</p> <p>支持论点：发展可沿密度、距离、分割三个维度理解；集聚经济、迁移与交通成本塑造城市与区域格局；增长在空间上不平衡，政策应改善人们接近机会的条件。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/cities-regions-and-space/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

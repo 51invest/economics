@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>教育回报、人口结构与劳动参与 · 巫妖投资</title><meta name="description" content="教育提高生产率和劳动参与，但回报受质量、匹配、人口结构和计量偏误影响，不能只看学历溢价。"><link rel="canonical" href="https://economics.51invest.com/learn/education-returns-population-and-labor-participation/"><link rel="alternate" hreflang="zh-CN" href="https://economics.51invest.com/learn/education-returns-population-and-labor-participation/"><link rel="alternate" hreflang="en" href="https://economics.51invest.com/en/learn/education-returns-population-and-labor-participation/"><link rel="alternate" hreflang="x-default" href="https://economics.51invest.com/learn/education-returns-population-and-labor-participation/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link active" href="/" aria-current="page"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link" href="https://history.51invest.com/"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/education-returns-population-and-labor-participation/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济学</a> <span class="sep">/</span> <span aria-current="page">教育回报、人口结构与劳动参与</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">概念</span> <h1 class="article-title">教育回报、人口结构与劳动参与</h1> <p class="article-summary">教育提高生产率和劳动参与，但回报受质量、匹配、人口结构和计量偏误影响，不能只看学历溢价。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>ECO-M15 · 劳动人口与教育</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>7 分钟 · 16 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>定义</h2>
+<p>本文讨论的对象英文常写作（returns to education）。</p>
+<p><strong>人力资本</strong>是劳动者通过教育、培训和经验获得的知识与技能。<strong>教育回报</strong>通常用多受一年教育带来的收入增幅衡量，但收入差异还包含能力、家庭背景、地区和市场匹配。<strong>劳动参与率</strong>是劳动力（就业加失业）占劳动年龄人口的比例；<strong>人口结构</strong>指年龄、性别、教育和城乡分布。教育年限增加不自动等于生产率提高，质量与匹配同样重要[1][3]。</p>
+<h2>直觉</h2>
+<p>教育像买一台长期使用的机器：今天交学费、放弃工作收入，未来每年多赚一点，机器还会折旧、过时，甚至买错了型号。教育回报不是“多读一年一定多赚多少”，而是“在给定专业、学校、能力和劳动力市场下，多读一年的现金流是否值得”。人口结构则像机器的使用年限：年轻劳动力多、退休人口少时，缴费的人多、领钱的人少；反过来，劳动参与率下降会放大缺口。</p>
+<h2>机制</h2>
+<p>教育通过三条渠道影响劳动市场：认知和非认知技能提高单位劳动产出；学历信号帮助雇主筛选；社会网络和机会改变就业匹配。若教育质量低，年限增加可能只带来证书而非技能。人口结构通过 cohort size 影响劳动供给：青年 cohort 大时，进入市场的竞争加剧；老龄化提高参与率以外的人口负担，也可能压低潜在增长。参与率还受育儿、退休年龄、迁移和岗位可得性影响[2][3]。</p>
+<h2>例子与计算</h2>
+<p>假设多读四年大学的总成本为 20 万元（学费加放弃的工资），毕业后每年收入比高中毕业生高 3 万元，工作 40 年，折现率 5%。用年金现值近似，3 万元 × 17.16 ≈ 51.5 万元，净现值约 31.5 万元；若折现率为 8%，年金因子约 11.93，现值 35.8 万元，净现值 15.8 万元。若工作年限只有 20 年，5% 折现率下现值约 37.4 万元，净现值 17.4 万元。回报对起薪、工作年限和折现率都敏感。以上为教学假设，不含税、失业风险和学费上涨。</p>
+<h2>第二个算例：教育投资的净现值</h2>
+<p>假设多读一年书直接成本 5 万元，放弃一年工资 6 万元，总成本 11 万元。毕业后每年工资溢价 1 万元，工作 40 年，折现率 5%，年金系数约 17.16，现值约 17.16 万元，净现值 6.16 万元。若工资溢价只有 0.5 万元，现值约 8.58 万元，净现值 −2.42 万元，读书不划算。若劳动参与率下降、毕业后只能工作 30 年，年金系数约 15.37，1 万元溢价的现值约 15.37 万元，净现值 4.37 万元。以上为教学假设，不含税、学费上涨、能力偏差和信号效应；实际回报应用个体或队列数据估计。</p>
+<h2>正式表达</h2>
+<p>教育回报的常用写法是明瑟方程：<code>ln W = α + β S + γ X + ε</code>。其中 <code>W</code> 是工资，<code>S</code> 是受教育年限，<code>X</code> 是一组工作经验、地区、行业等控制变量，<code>β</code> 近似表示多读一年书带来的工资变化。它是统计估计，不是因果保证：能力、家庭背景、学校质量和职业选择都可能同时影响工资与受教育年限。</p>
+<h2>边界与误区</h2>
+<p>第一，学历溢价不等于教育回报，可能包含能力筛选和家庭背景。第二，教育扩张会带来 credential inflation，文凭数量增加但相对工资不一定上升。第三，人口 cohort 大的时期，毕业生供给增加会压低入门工资。第四，参与率上升不必然提高产出，可能是低质量就业或统计口径变化。第五，平均回报不能直接套到个人，专业、地区、能力和家庭约束会造成巨大差异。</p>
+<h2>失败模式</h2>
+<p>第一种失败是忽略能力偏差：高能力者既更可能多读书，也更容易高收入，把收入差全归因于教育会高估回报。第二种失败是把教育当纯信号：如果学历主要用于筛选，个人仍可能值得投资，但公共回报不同。第三种失败是忽略专业与学校差异：同样多读一年，工程、医学与文科的回报曲线不同，第四种失败是忽略劳动参与和就业质量：兼职、非正规就业和失业会压缩实际工作年限与工资溢价。第五种失败是把历史回报外推到未来：技术变化、人口结构和全球化会改变技能溢价。</p>
+<h2>三问自检</h2>
+<p>第一，成本是否完整：学费、生活费、放弃的工资和延迟进入劳动力市场的机会成本是否都计入？第二，回报是否按个体特征调整：专业、学校、能力、地区、就业质量和劳动参与率是否匹配？第三，折现率和时间跨度是否合理：40 年工作期、5% 折现率只是假设，寿命、退休年龄和行业变化都会改变结果？三问之外，还要区分私人回报与社会回报，不能用一个数字回答所有问题。</p>
+<h2>相邻概念与反例</h2>
+<p>教育回报容易和私人回报、社会回报、信号价值混淆。私人回报是个人多读书带来的税后收入增量；社会回报还包括生产率、创新、公共健康和犯罪率下降等外部性；信号价值是学历向雇主传递能力信息，即使不提高生产率也可能提高个人收入。三者可能方向不同。反例是“平均回报高就每个人都该读”：平均回报掩盖专业、学校、能力和地区差异，低能力或低需求专业的学生可能回报为负。另一个反例是“教育投入越多社会越富”：如果教育质量低、技能与岗位不匹配，更多年限不一定转化为生产率；人口老龄化和劳动参与下降还会改变回报的分配。比较教育政策，应同时看私人回报、社会回报、质量、公平和劳动力需求。</p>
+<h2>适用边界</h2>
+<p>本文的教育回报框架适用于有可比收入、教育年限、专业和地区信息、且能控制能力与家庭背景的队列数据。若数据只覆盖正式就业、忽略自雇和迁移，或教育质量差异大，回报估计会有偏。它不适用于把平均回报当作个人决策，也不适用于忽略信号、外部性和一般均衡效应。使用时先看数据覆盖、能力偏差和贴现率，再用私人回报与社会回报两套口径复算；平均不是个体。</p>
+<p>最后，回报估计应报告置信区间。</p>
+<h2>关联</h2>
+<ul>
+<li>ECO-026 劳动人口与教育：本文的相邻主文，先读它再读本补篇。</li>
+<li>ECO-017 增长与生产率：本文的相邻主文，先读它再读本补篇。</li>
+<li>ECO-024 收入分配与不平等：本文的相邻主文，先读它再读本补篇。</li>
+<li>ECO-014 就业与失业：本文的相邻主文，先读它再读本补篇。</li>
+</ul>
+<h2>资料说明</h2>
+<p>本文用 World Bank、United Nations、OpenStax 核对定义、制度或统计口径；具体条款、数字与日期以来源原文为准[1][2][3]。</p>
+<p>把 <code>β</code> 直接当成“多读一年一定多赚多少”是常见误区；它没有自动处理能力偏差和选择效应。第二个误区是用全国平均回报套到个人，忽略专业、地区、行业和劳动力市场结构。第三个误区是把受教育年限与学习质量混为一谈：同样三年，学到什么、学校质量如何，可能完全不同。</p>
+<h2>图解</h2>
+<p>下面四张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-chain-title fig-batch-chain-desc" viewBox="0 0 340 304" width="100%">
+    <title id="fig-batch-chain-title">教育回报、人口结构与劳动参与：机制链</title>
+    <desc id="fig-batch-chain-desc">教育回报、人口结构与劳动参与 的三段结构：问题、机制、判断。图内文字取自本文小节，不是新的数据估计。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">教育回报、人口结构与劳动参与：机制链</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图内文字取自本文小节；三段缺一不可。</text>
+    <line x1="14" y1="46" x2="326" y2="46" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="14" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="22" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">问题</text>
+      <text x="22" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">教育提高生产率和劳动</text>
+      <text x="22" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">参与，但回报受质量、…</text>
+      <text x="22" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">教育提高生产率和劳</text>
+      <text x="22" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">动参与，但回报受质</text>
+      <text x="22" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">量、匹配、人口结构</text>
+      <text x="22" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">和计量偏误影响，不</text>
+      <text x="22" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">能只看学历溢价。</text>
+    </g>
+      <g>
+      <rect x="123" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="131" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">定义</text>
+      <text x="131" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">定义：人力资本是劳动</text>
+      <text x="131" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">者通过教育、培训和经…</text>
+      <text x="131" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">定义：人力资本是劳</text>
+      <text x="131" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">动者通过教育、培训</text>
+      <text x="131" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">和经验获得的知识与</text>
+      <text x="131" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">技能。教育回报通常</text>
+      <text x="131" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">用多受一年教育带来…</text>
+    </g>
+      <g>
+      <rect x="232" y="54" width="94" height="180" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="240" y="72" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">例子与计算</text>
+      <text x="240" y="90" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">假设多读四年大学的总</text>
+      <text x="240" y="102" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成本为 20 万元（学费…</text>
+      <text x="240" y="124" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">假设多读四年大学的</text>
+      <text x="240" y="141" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">总成本为 20</text>
+      <text x="240" y="158" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">万元（学费加放弃的</text>
+      <text x="240" y="175" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">工资），毕业后每年</text>
+      <text x="240" y="192" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">收入比高中毕业生高…</text>
+    </g>
+    <line x1="108" y1="144" x2="123" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M120 140 L125 144 L120 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="217" y1="144" x2="232" y2="144" stroke="var(--border)" stroke-width="1.1"/>
+    <path d="M229 140 L234 144 L229 148" fill="none" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="14" y1="250" x2="326" y2="250" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="266" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先看问题能否成立，再看机制能否连通，最后看判断会不会越界。</text>
+    <text x="14" y="280" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">若中间一步缺证据，后面的结论只能当假设，不能当事实。</text>
+    <text x="14" y="294" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意，不是新的数据图；样本为本文论证。</text>
+  </svg>
+  <figcaption>图 1：教育回报、人口结构与劳动参与的机制链：从问题、机制到判断。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">教育回报、人口结构与劳动参与：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">教育回报、人口结构与劳动参与：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">第一，学历溢价不等于教育回报，可</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">能包含能力筛选和家庭背景。第二，</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">教育扩张会带来 credential</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">inflation，文凭数量增加但相对工…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">第一，学历溢价不等于教育回报，可</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">能包含能力筛选和家庭背景。第二，</text>
+      <text x="188" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">教育扩张会带来 credential</text>
+      <text x="188" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">inflation，文凭数量增加但相对工…</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 2：教育回报、人口结构与劳动参与的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">教育回报、人口结构与劳动参与：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">教育回报、人口结构与劳动参与：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">教育提高生产率和劳动参与</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，但回报受质量、匹配、人…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">第一，学历溢价不等于教育</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">回报，可能包含能力筛选和…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">第一，学历溢价不等于教育回报，可能包</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">含能力筛选和家庭背景。第二，教育扩张…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：教育回报、人口结构与劳动参与的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-033-education-returns-population-and-labor-participation-example-title fig-033-education-returns-population-and-labor-participation-example-desc" viewBox="0 0 460 290" width="100%">
+    <title id="fig-033-education-returns-population-and-labor-participation-example-title">算例三行卡：教育回报：成本、折现率与净现值</title>
+    <desc id="fig-033-education-returns-population-and-labor-participation-example-desc">读图路径：三行分别给出关键数字、单位和算例条件；不是市场数据。</desc>
+    <text x="16" y="24" font-size="12.2" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">算例三行卡</text>
+    <text x="16" y="40" font-size="9.2" fill="var(--muted)" font-family="inherit" text-anchor="start">单位为文中标注；样本为本文教学假设</text>
+    <line x1="12" y1="48" x2="448" y2="48" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <rect x="12" y="58" width="436" height="58" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="24" y="76" font-size="10.2" fill="var(--muted)" font-family="inherit" text-anchor="start">四年总成本</text>
+      <text x="448" y="80" font-size="17" font-weight="700" fill="var(--accent)" font-family="inherit" text-anchor="end">20 万元</text>
+      <text x="24" y="96" font-size="9.3" fill="var(--text)" font-family="inherit" text-anchor="start">学费加放弃的工资，教学假设</text>
+    </g>
+    <g>
+      <rect x="12" y="128" width="436" height="58" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="24" y="146" font-size="10.2" fill="var(--muted)" font-family="inherit" text-anchor="start">5% 折现净现值</text>
+      <text x="448" y="150" font-size="17" font-weight="700" fill="var(--accent)" font-family="inherit" text-anchor="end">31.5 万元</text>
+      <text x="24" y="166" font-size="9.3" fill="var(--text)" font-family="inherit" text-anchor="start">年溢价 3 万元、工作 40 年</text>
+    </g>
+    <g>
+      <rect x="12" y="198" width="436" height="58" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="24" y="216" font-size="10.2" fill="var(--muted)" font-family="inherit" text-anchor="start">8% 折现净现值</text>
+      <text x="448" y="220" font-size="17" font-weight="700" fill="var(--accent)" font-family="inherit" text-anchor="end">15.8 万元</text>
+      <text x="24" y="236" font-size="9.3" fill="var(--text)" font-family="inherit" text-anchor="start">同一现金流，折现率更高</text>
+    </g>
+    <line x1="12" y1="266" x2="448" y2="266" stroke="var(--border)" stroke-width="1"/>
+    <text x="16" y="280" font-size="8.8" fill="var(--muted)" font-family="inherit" text-anchor="start">只看数量关系，不构成预测或投资建议</text>
+  </svg>
+  <figcaption>图 4：教育投资的成本与净现值随折现率变化。单位为文中标注；样本为本文教学假设，不是市场或统计数据；只用于展示数量关系。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>概念辨别：</strong> 概念辨别：为什么“多读一年书”的收入增幅不等于教育的因果回报？</li>
+<li><strong>计算或推理：</strong> 计算：成本 20 万元、年增收 3 万元、40 年、折现率 5%，年金因子 17.16，净现值约多少？</li>
+<li><strong>适用条件：</strong> 适用条件：人口 cohort 变大时，为什么毕业生起薪可能下降？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>收入增幅还包含能力、家庭背景、地区、专业和就业匹配；这些因素可能同时影响教育与收入。</li>
+<li>现值 3 × 17.16 = 51.48 万元，净现值 31.48 万元。</li>
+<li>同一时点进入市场的毕业生供给增加，而岗位需求短期不变，竞争加剧压低入门工资；长期还取决于岗位创造。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>World Bank. <em>World Development Report 2018: Learning to Realize Education&#39;s Promise</em>. World Bank. CC BY 3.0 IGO. <a href="https://documents1.worldbank.org/curated/en/816941569915893983/pdf/World-Development-Report-2018-Learning-to-Realize-Educations-Promise.pdf">https://documents1.worldbank.org/curated/en/816941569915893983/pdf/World-Development-Report-2018-Learning-to-Realize-Educations-Promise.pdf</a>（访问日期：2026-11-21）</li>
+<li>United Nations Department of Economic and Social Affairs, Population Division. <em>World Population Prospects 2024: Summary of Results</em>. United Nations. United Nations publication; citation only. <a href="https://population.un.org/wpp/assets/Files/WPP2024_Summary-of-Results.pdf">https://population.un.org/wpp/assets/Files/WPP2024_Summary-of-Results.pdf</a>（访问日期：2026-11-21）</li>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald. <em>Principles of Economics 3e, 4.1 Demand and Supply at Work in Labor Markets</em>. OpenStax. CC BY-NC-SA 4.0. <a href="https://openstax.org/books/principles-economics-3e/pages/4-1-demand-and-supply-at-work-in-labor-markets">https://openstax.org/books/principles-economics-3e/pages/4-1-demand-and-supply-at-work-in-labor-markets</a>（访问日期：2026-11-21）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>区分教育年限、教育质量和技能匹配，说明它们对劳动生产率的传导。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>计算一个简单教育投资的私人回报，并说明机会成本和折现率的影响。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>区分教育年限、教育质量和技能匹配，说明它们对劳动生产率的传导。</li><li>计算一个简单教育投资的私人回报，并说明机会成本和折现率的影响。</li><li>解释人口年龄结构、 cohort size 和参与率如何改变劳动力供给与工资。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/labor-population-and-education/">ECO-026 · 劳动人口与教育</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/growth-and-productivity/">ECO-017 · 增长与生产率</a> </li><li> <a href="/learn/income-distribution-and-inequality/">ECO-024 · 收入分配与不平等</a> </li><li> <a href="/learn/employment-and-unemployment/">ECO-014 · 就业与失业</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://documents1.worldbank.org/curated/en/816941569915893983/pdf/World-Development-Report-2018-Learning-to-Realize-Educations-Promise.pdf" rel="noopener noreferrer" target="_blank">World Development Report 2018: Learning to Realize Education&#39;s Promise</a> <p>World Bank · World Bank</p> <p>访问：2026-11-21 · 许可：CC BY 3.0 IGO</p> <p>支持论点：用于核对“教育回报、人口结构与劳动参与”涉及的定义、制度、统计口径或产品条款；正文不把来源未写的内容当作事实，具体数字与日期以来源原文为准。</p> </div><div class="source"> <a href="https://population.un.org/wpp/assets/Files/WPP2024_Summary-of-Results.pdf" rel="noopener noreferrer" target="_blank">World Population Prospects 2024: Summary of Results</a> <p>United Nations Department of Economic and Social Affairs, Population Division · United Nations</p> <p>访问：2026-11-21 · 许可：United Nations publication; citation only</p> <p>支持论点：用于核对“教育回报、人口结构与劳动参与”涉及的定义、制度、统计口径或产品条款；正文不把来源未写的内容当作事实，具体数字与日期以来源原文为准。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/4-1-demand-and-supply-at-work-in-labor-markets" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 4.1 Demand and Supply at Work in Labor Markets</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-21 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：用于核对“教育回报、人口结构与劳动参与”涉及的定义、制度、统计口径或产品条款；正文不把来源未写的内容当作事实，具体数字与日期以来源原文为准。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/education-returns-population-and-labor-participation/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>
