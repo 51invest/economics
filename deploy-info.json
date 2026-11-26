@@ -1,7 +1,1 @@
-{
-  "site": "economics",
-  "domain": "economics.51invest.com",
-  "source": "dist/economics",
-  "builtAt": "2026-11-25T08:51:15.405Z",
-  "note": "Static GitHub Pages deployment."
-}
+{"site":"economics","servedDomain":"economics.51invest.com","canonical":"https://economics.51invest.com","source":"dist/economics","builtAt":"2026-11-26T01:53:50Z","pages":147,"articles":71,"commit":"250e8e6","tag":"release-351-2026-11-26","note":"Static GitHub Pages deployment for the 351 baseline at economics.51invest.com."}
